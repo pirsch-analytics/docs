@@ -1,2 +1,7 @@
-# docs
-Official Pirsch documentation.
+# Pirsch Documentation
+
+Official Pirsch documentation. See https://docs.pirsch.io/.
+
+## License
+
+MIT
