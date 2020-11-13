@@ -1,0 +1,3 @@
+[submodule "themes/seeker"]
+	path = themes/seeker
+	url = https://github.com/pirsch-analytics/seeker.git
