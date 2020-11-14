@@ -2,3 +2,25 @@ baseURL = "https://docs.pirsch.io/"
 languageCode = "en"
 title = "Pirsch Documentation"
 theme = "seeker"
+
+[menu]
+    [[menu.main]]
+        identifier = "website"
+        name = "Website"
+        url = "https://pirsch.io/"
+        weight = 1
+    [[menu.footer]]
+        identifier = "website"
+        name = "Website"
+        url = "https://pirsch.io/"
+        weight = 1
+    [[menu.footer]]
+        identifier = "privacy"
+        name = "Privacy"
+        url = "https://pirsch.io/privacy"
+        weight = 2
+    [[menu.footer]]
+        identifier = "legal"
+        name = "Legal"
+        url = "https://pirsch.io/legal"
+        weight = 3
