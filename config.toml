@@ -5,22 +5,29 @@ theme = "seeker"
 
 [menu]
     [[menu.main]]
-        identifier = "website"
         name = "Website"
         url = "https://pirsch.io/"
         weight = 1
-    [[menu.footer]]
-        identifier = "website"
-        name = "Website"
-        url = "https://pirsch.io/"
-        weight = 1
-    [[menu.footer]]
-        identifier = "privacy"
-        name = "Privacy"
-        url = "https://pirsch.io/privacy"
+    [[menu.main]]
+        name = "GitHub"
+        url = "https://github.com/pirsch-analytics/docs"
         weight = 2
     [[menu.footer]]
-        identifier = "legal"
+        name = "Website"
+        url = "https://pirsch.io/"
+        weight = 1
+    [[menu.footer]]
+        name = "GitHub"
+        url = "https://github.com/pirsch-analytics/docs"
+        weight = 2
+    [[menu.footer]]
+        name = "Privacy"
+        url = "https://pirsch.io/privacy"
+        weight = 3
+    [[menu.footer]]
         name = "Legal"
         url = "https://pirsch.io/legal"
-        weight = 3
+        weight = 4
+
+[params]
+    copyright = "© 2020 Emvi Software GmbH"
