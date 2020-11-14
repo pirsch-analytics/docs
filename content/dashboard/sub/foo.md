@@ -1,7 +1,7 @@
 +++
 title = "(Hu)go Template Primer"
 date = 2014-04-02
-draft = true
+draft = false
 +++
 
 Hugo uses the excellent [Go][] [html/template][gohtmltemplate] library for
