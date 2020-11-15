@@ -30,4 +30,5 @@ theme = "seeker"
         weight = 4
 
 [params]
+    title = "Pirsch"
     copyright = "© 2020 Emvi Software GmbH"
