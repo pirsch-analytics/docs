@@ -32,3 +32,10 @@ theme = "seeker"
 [params]
     title = "Pirsch"
     copyright = "© 2020 Emvi Software GmbH"
+
+[outputFormats.SearchIndex]
+baseName = "search"
+mediaType = "application/json"
+
+[outputs]
+home = ["HTML", "RSS", "SearchIndex"]
