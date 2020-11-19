@@ -13,14 +13,6 @@ theme = "seeker"
         url = "https://github.com/pirsch-analytics/docs"
         weight = 2
     [[menu.footer]]
-        name = "Website"
-        url = "https://pirsch.io/"
-        weight = 1
-    [[menu.footer]]
-        name = "GitHub"
-        url = "https://github.com/pirsch-analytics/docs"
-        weight = 2
-    [[menu.footer]]
         name = "Privacy"
         url = "https://pirsch.io/privacy"
         weight = 3
@@ -30,7 +22,7 @@ theme = "seeker"
         weight = 4
 
 [params]
-    title = "Pirsch"
+    title = "Pirsch Docs"
     copyright = "© 2020 Emvi Software GmbH"
 
 [outputFormats.SearchIndex]
