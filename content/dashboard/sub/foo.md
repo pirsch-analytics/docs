@@ -284,11 +284,13 @@ parameters, which are values which will be available to you in chrome.
 
 For instance, you might declare:
 
-```yaml
-params:
-  CopyrightHTML: "Copyright &#xA9; 2013 John Doe. All Rights Reserved."
-  TwitterUser: "spf13"
-  SidebarRecentLimit: 5
+```Go
+a := 5
+b := 6
+
+if a < b {
+    log.Println("Hallo Welt!")
+}
 ```
 
 Within a footer layout, you might then declare a `<footer>` which is only

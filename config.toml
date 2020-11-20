@@ -15,11 +15,11 @@ theme = "seeker"
     [[menu.footer]]
         name = "Privacy"
         url = "https://pirsch.io/privacy"
-        weight = 3
+        weight = 1
     [[menu.footer]]
         name = "Legal"
         url = "https://pirsch.io/legal"
-        weight = 4
+        weight = 2
 
 [params]
     title = "Pirsch Docs"
