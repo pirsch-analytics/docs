@@ -13,17 +13,22 @@ theme = "seeker"
         url = "https://github.com/pirsch-analytics/docs"
         weight = 2
     [[menu.footer]]
+        name = "Terms"
+        url = "https://pirsch.io/terms"
+        weight = 1
+    [[menu.footer]]
         name = "Privacy"
         url = "https://pirsch.io/privacy"
-        weight = 1
+        weight = 2
     [[menu.footer]]
         name = "Legal"
         url = "https://pirsch.io/legal"
-        weight = 2
+        weight = 3
 
 [params]
     title = "Pirsch Docs"
     copyright = "© 2020 Emvi Software GmbH"
+    url = "https://emvi.com"
 
 [outputFormats.SearchIndex]
 baseName = "search"
