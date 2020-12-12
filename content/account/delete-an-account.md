@@ -2,6 +2,7 @@
 title: "Delete an Account"
 date: 2020-12-11
 draft: false
+weight: 2
 description: "We will delete all your data for you, just let us know."
 ---
 
