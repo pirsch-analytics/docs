@@ -6,9 +6,25 @@ weight: 1
 description: "Use the API to monitor traffic and access your data."
 ---
 
-This document describes the REST endpoints used to interact with Pirsch. The easiest way to get started is through one of the client SDKs available on the left. If you're looking on how you can integrate Pirsch into your backend to monitor traffic, please check out the [backend integration]({{<  ref "get-started/backend-integration.md"  >}}).
+This document describes the REST endpoints used to interact with Pirsch. The easiest way to get started is through one of the client SDKs. If you're looking on how you can integrate Pirsch into your backend to monitor traffic, please check out the [backend integration]({{<  ref "get-started/backend-integration.md"  >}}).
 
-In case of an error, Pirsch will return JSON in the body describing the issue and what you can do about it together with a meaningful HTTP status code.
+## Error handling
+
+In case of an error, Pirsch will return a JSON object in the body describing the issue and what you can do about it together with a meaningful HTTP status code. Errors have the following structure.
+
+```JSON
+{
+    "validation": {
+        "field": "error message"
+    },
+    "error": [
+        "error message"
+    ]
+}
+```
+
+* `validation` lists errors related to input parameters
+* `error` lists general errors, like when an object could'nt be found. There will usually be only one error message
 
 ## Getting an access token
 
