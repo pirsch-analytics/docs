@@ -1,6 +1,6 @@
 ---
 title: "Get Started"
-date: 2020-11-14
+date: 2020-12-12
 draft: false
 weight: 1
 ---

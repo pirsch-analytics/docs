@@ -1,6 +1,6 @@
 ---
 title: "API"
-date: 2020-12-11
+date: 2020-12-12
 draft: false
 weight: 1
 description: "Use the API to monitor traffic and access your data."
@@ -8,7 +8,7 @@ description: "Use the API to monitor traffic and access your data."
 
 This document describes the REST endpoints used to interact with Pirsch. The easiest way to get started is through one of the client SDKs. If you're looking on how you can integrate Pirsch into your backend to monitor traffic, please check out the [backend integration]({{<  ref "get-started/backend-integration.md"  >}}).
 
-## Error handling
+## Error Handling
 
 In case of an error, Pirsch will return a JSON object in the body describing the issue and what you can do about it together with a meaningful HTTP status code. Errors have the following structure.
 
@@ -26,7 +26,7 @@ In case of an error, Pirsch will return a JSON object in the body describing the
 * `validation` lists errors related to input parameters
 * `error` lists general errors, like when an object could'nt be found. There will usually be only one error message
 
-## Getting an access token
+## Get an Access Token
 
 To make requests to the API, you need to get an access token first. The token must be send with every request in the `Authorization` header in the format `Bearer <token>`. If you receive a status code 401 (unauthorized), you need to create a new access token and try again.
 
@@ -52,7 +52,7 @@ POST https://api.pirsch.io/api/v1/token
 }
 ```
 
-## Sending a page hit
+## Sending a Page Hit
 
 This endpoint is used to send page hits to Pirsch. It requires you to send information about the request made by the client. How you get these depends on the programming language and framework you're using. The example shows which fields are required and which are optional. We recommend to send all of them to make the results as accurate as possible.
 
@@ -68,7 +68,7 @@ POST https://api.pirsch.io/api/v1/hit
     "x_forwarded_for":  "X-Forwarded-For header (optional)",
     "forwarded":        "Forwarded header (optional)",
     "x_real_ip"         "X-Real-IP header (optional)",
-    "user_agent":       "User-Agent header (optional)",
+    "user_agent":       "User-Agent header",
     "accept_language":  "Accept-Language header (optional)",
     "referrer" :        "Referer header (optional)",
 }

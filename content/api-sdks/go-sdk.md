@@ -1,6 +1,6 @@
 ---
 title: "Go SDK"
-date: 2020-12-11
+date: 2020-12-12
 draft: false
 weight: 2
 description: "SDK for Golang."
@@ -16,7 +16,7 @@ The Go SDK can be found on [GitHub](https://github.com/pirsch-analytics/pirsch-g
 go get github.com/pirsch-analytics/pirsch-go-sdk
 ```
 
-## Create a client
+## Create a Client
 
 To use the [API]({{<  ref "api-sdks/api.md"  >}}), you need to create a client on the settings page first and use the client ID, the secret, and hostname to set up the SDK.
 
@@ -28,7 +28,7 @@ client := pirsch.NewClient("client_id", "client_secret", "example.com", nil)
 
 From here on we can make API calls through the `client`. It will automatically update the access token using the credentials you provided. The last parameter is optional and can be set to nil.
 
-## Send a page hit
+## Send a Page Hit
 
 To monitor your website traffic, you need to send hits to Pirsch. This is done by calling the `Hit` method from a handler function.
 
