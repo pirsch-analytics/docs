@@ -34,7 +34,7 @@ The examples for the other endpoints in this document will omit the header.
 
 **Example request**
 
-```
+```Bash
 POST https://api.pirsch.io/api/v1/token
 
 {
@@ -45,7 +45,7 @@ POST https://api.pirsch.io/api/v1/token
 
 **Example response**
 
-```
+```Bash
 {
     "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCI...",
     "expires_at": "2020-12-12T00:11:39.903607271Z"
@@ -58,7 +58,7 @@ This endpoint is used to send page hits to Pirsch. It requires you to send infor
 
 **Example request**
 
-```
+```Bash
 POST https://api.pirsch.io/api/v1/hit
 
 {

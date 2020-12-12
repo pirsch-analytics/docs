@@ -25,7 +25,7 @@ The example below shows how you can make the API requests required to get an acc
 
 First, you need to gain an access token used to authenticate other requests. You need to do this before you make the first page hit request and everytime you receive a HTTP status code 401 (unauthorized) to refresh the access token.
 
-```
+```Bash
 POST https://api.pirsch.io/api/v1/token
 
 {
@@ -36,7 +36,7 @@ POST https://api.pirsch.io/api/v1/token
 
 This will return an access token like this.
 
-```
+```Bash
 {
     "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCI...",
     "expires_at": "2020-12-12T00:11:39.903607271Z"
@@ -45,7 +45,7 @@ This will return an access token like this.
 
 To monitor traffic, make sure you send a request to Pirsch everytime someone visits a page. How you do this depends on the programming language and framework you're using. Here is what a request could look like.
 
-```
+```Bash
 POST https://api.pirsch.io/api/v1/hit
 Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI...
 

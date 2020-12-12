@@ -12,7 +12,7 @@ The Go SDK can be found on [GitHub](https://github.com/pirsch-analytics/pirsch-g
 
 ## Installation
 
-```
+```Bash
 go get github.com/pirsch-analytics/pirsch-go-sdk
 ```
 

@@ -31,8 +31,12 @@ theme = "seeker"
     url = "https://emvi.com"
 
 [outputFormats.SearchIndex]
-baseName = "search"
-mediaType = "application/json"
+    baseName = "search"
+    mediaType = "application/json"
 
 [outputs]
-home = ["HTML", "RSS", "SearchIndex"]
+    home = ["HTML", "RSS", "SearchIndex"]
+
+[markup]
+    [markup.highlight]
+        noClasses = false
