@@ -39,4 +39,5 @@ theme = "seeker"
 
 [markup]
     [markup.highlight]
+        linenos = true
         noClasses = false
