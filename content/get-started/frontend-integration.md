@@ -8,7 +8,7 @@ description: "Learn on how to integrate Pirsch into your website using JavaScrip
 
 ## Add Pirsch to Your Website
 
-Once you have [created an account]({{<  ref "account/create-an-account.md"  >}}), you can add Pirsch to your website.
+Once you have created an account, you can add Pirsch to your website.
 
 1. open the dashboard and click on *Add Domain* in the menu
 2. enter the hostname of your website (like *example.com*) and chose a subdomain you would like to use for the Pirsch dashboard ![Add Domain](/integration/add-domain.png)
