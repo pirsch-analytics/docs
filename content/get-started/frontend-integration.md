@@ -15,7 +15,7 @@ Once you have created an account, you can add Pirsch to your website.
 3. click on *Add Domain*
 4. copy the JavaScript snippet on the right and add it to your websites `<head>` section ![Code snippet](/integration/add-domain-snippet.png)
 
-And you're done! Your website will now send page hits to Pirsch. Note that only hits for the hostname you have entered will be accepted. A page hit for *sub.example.com* won't be accepted for *example.com*. They are considered entirely different pages and you need to add a new website for all subdomains you would like to monitor.
+And you're done! Your website will now send page hits to Pirsch. Note that only hits for the hostname you have entered will be accepted. A page hit for *sub.example.com* won't be accepted for *example.com*. They are considered entirely different pages and you need to add a new website for all subdomains you would like to monitor. The only exception for this is `www` in front of your top-level domain. `www.example.com` for example will be accepted for `example.com`.
 
 ## Reset the Identification Code
 
