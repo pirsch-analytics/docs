@@ -62,4 +62,4 @@ Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI...
 }
 ```
 
-As you can see, you need to send the visitors IP, full URL, User-Agent header, and a few more headers. While only the IP, URL, and User-Agent are required, we recommend to send as much of these fields as possible, as they will improve the quality of the analytics data. Don't worry, we don't store personal information like the IP address. To learn more, please read the [details on privacy]({{< ref "get-started/privacy.md" >}}).
+As you can see, you need to send the visitors IP, full URL, User-Agent header, and a few more headers. While only the IP, URL, and User-Agent are required, we recommend to send as much of these fields as possible, as they will improve the quality of the analytics data. Don't worry, we don't store personal information like the IP address. To learn more, please read the [details on privacy]({{< ref "privacy.md" >}}).
