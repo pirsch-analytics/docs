@@ -8,10 +8,12 @@ description: "Overview of all changes."
 
 ## 0.16
 
-Released: unreleased
+Released: 2021-01-01
 
 * screen sizes are now grouped
 * added buttons to copy client ID, client secret, and JavaScript snippet to clipboard
+* fixed displaying some error messages
+* fixed inviting someone to more than one domain with the same mail address
 
 ## 0.15
 
