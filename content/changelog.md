@@ -6,6 +6,13 @@ weight: 6
 description: "Overview of all changes."
 ---
 
+## 0.17
+
+Released: unreleased
+
+* fixed time range selection when switching domain or filtering for path
+* fixed ignoring subdomains for referrer
+
 ## 0.16
 
 Released: 2021-01-01
