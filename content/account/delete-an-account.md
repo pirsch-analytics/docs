@@ -3,9 +3,11 @@ title: "Delete an Account"
 date: 2020-12-11
 draft: false
 weight: 2
-description: "We will delete all your data for you, just let us know."
+description: "Delete your account and all data belonging to it."
 ---
 
-We are sad to see you go, but we will happily remove your personal and website data from our database, if you decide to leave Pirsch behind. As of today, there is no button you can click to achieve this. Please write us a short email to [support@pirsch.io](mailto:support@pirsch.io) and we will proceed with the deletion - usually within a couple of hours. 
+If you wish to delete your account and all data we collected for you, visit the account settings page (top right on the dashboard) and scroll to the bottom. Click on the *Delete Your Account* button. This will open up a dialog where you are asked to enter your password to confirm the action. You can leave us a message on why you decided to leave Pirsch if you like.
 
-Make sure to use the email address linked to your account to verify the action.
+![Add Domain](/account/delete-account.png)
+
+If you have an active subscription, it will be cancelled immediately. Note that we do not give refunds for any outstanding balance. The account and all data belonging to it will be marked for deletion. You have one week to cancel the action. Should you decide to do so, you need to reactivate your subscription manually afterwards.

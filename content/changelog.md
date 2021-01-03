@@ -10,6 +10,8 @@ description: "Overview of all changes."
 
 Released: unreleased
 
+* added account deletion on the settings page
+* accounts that haven't been activated after a month are now automatically deleted
 * fixed time range selection when switching domain or filtering for path
 * fixed ignoring subdomains for referrer
 
