@@ -8,7 +8,7 @@ description: "Overview of all changes."
 
 ## 0.17
 
-Released: unreleased
+Released: 2021-01-03
 
 * added account deletion on the settings page
 * accounts that haven't been activated after a month are now automatically deleted
