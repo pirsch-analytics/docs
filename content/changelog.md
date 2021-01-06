@@ -6,6 +6,12 @@ weight: 6
 description: "Overview of all changes."
 ---
 
+## 0.18
+
+Released: unreleased
+
+* added public access links to settings
+
 ## 0.17
 
 Released: 2021-01-03
