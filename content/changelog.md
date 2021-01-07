@@ -10,7 +10,12 @@ description: "Overview of all changes."
 
 Released: unreleased
 
-* added public access links to settings
+* added public access links to the settings page
+* added profile pictures for members to the settings page
+* "(unknown)" is no longer displayed, except you open the detailed view or no other data is present
+* opening the detailed view for statistics now show all stats immediately
+* better time and day format
+* added favicons to referrers
 
 ## 0.17
 
