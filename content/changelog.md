@@ -8,7 +8,7 @@ description: "Overview of all changes."
 
 ## 0.18
 
-Released: unreleased
+Released: 2021-01-07
 
 * added public access links to the settings page
 * added profile pictures for members to the settings page
