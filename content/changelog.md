@@ -6,6 +6,11 @@ weight: 6
 description: "Overview of all changes."
 ---
 
+## 0.19
+
+* fixed "(unknown)" for languages
+* fixed referrer icon for direct/none
+
 ## 0.18
 
 Released: 2021-01-07
