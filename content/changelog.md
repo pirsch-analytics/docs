@@ -1,10 +1,18 @@
 ---
 title: "Changelog"
-date: 2020-12-28
+date: 2021-01-14
 draft: false
 weight: 6
 description: "Overview of all changes."
 ---
+
+## 0.21
+
+* added a custom favicon service (open-source, you can find it [here](https://github.com/pirsch-analytics/faser))
+
+## 0.20
+
+* updated dependencies
 
 ## 0.19
 
