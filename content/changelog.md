@@ -8,9 +8,13 @@ description: "Overview of all changes."
 
 ## 0.21
 
+Release: 2021-01-14
+
 * added a custom favicon service (open-source, you can find it [here](https://github.com/pirsch-analytics/faser))
 
 ## 0.20
+
+Release: 2021-01-13
 
 * updated dependencies
 
