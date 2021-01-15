@@ -6,6 +6,11 @@ weight: 6
 description: "Overview of all changes."
 ---
 
+## 0.22
+
+* show selected domain in title
+* updated dependencies
+
 ## 0.21
 
 Release: 2021-01-14
