@@ -1,9 +1,24 @@
 ---
 title: "Create an Account"
-date: 2020-12-11
-draft: true
+date: 2021-01-16
+draft: false
 weight: 1
 description: "Getting started with Pirsch only takes a couple of minutes, see how to do it."
 ---
 
-WIP
+You need to have an account to access non-public dashboards and add your domains. To create a new account, follow the steps below. We only require you to enter your full name and email address. Should you decide to continue using Pirsch after your 30-day free trial, you need to add your address and payment details.
+
+1. visit [pirsch.io/signup](https://pirsch.io/signup)
+2. enter your full name, email address, and confirm that you're human
+3. confirm your email address by clicking on the link inside the mail that has been sent to you
+4. on the confirmation page, enter your password and accept the [privacy policy](https://pirsch.io/privacy) and [terms and conditions](https://pirsch.io/terms)
+
+And you're done! You can now start adding your first domain and integrate Pirsch into your website. Make sure you read our [getting started]({{< ref "get-started/_index.md" >}}) articles.
+
+## I Didn't Receive the Confirmation Mail
+
+In case you didn't receive the confirmation mail, please check your junk inbox, try to sign up again, or send a mail to [support@pirsch.io](mailto:support@pirsch.io), we will then manually activate your account.
+
+## Privacy Policy and Terms and Conditions
+
+Make sure you've read our [privacy policy](https://pirsch.io/privacy) and [terms and conditions](https://pirsch.io/terms) before you sign up. You can also read the [privacy article]({{< ref "privacy.md" >}}) to learn more about how we respect the privacy of your visitors.
