@@ -6,7 +6,15 @@ weight: 6
 description: "Overview of all changes."
 ---
 
+## 0.23
+
+Release: unreleased
+
+* fixed documentation links after adding a domain
+
 ## 0.22
+
+Release: 2021-01-15
 
 * show selected domain in title
 * updated dependencies
