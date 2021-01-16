@@ -1,8 +1,8 @@
 ---
 title: "Dashboard"
-date: 2020-12-21
-draft: true
-weight: 3
+date: 2021-01-16
+draft: false
+weight: 2
 ---
 
-WIP
+Pirch provides a simple, yet powerful dashboard for your website statistics. In this section you can learn how to use it and how the statistics are calculated.

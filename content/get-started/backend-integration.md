@@ -1,10 +1,12 @@
 ---
 title: "Backend Integration"
-date: 2020-12-12
+date: 2021-01-16
 draft: false
 weight: 2
 description: "Learn on how to integrate Pirsch into your backend using our API and client SDKs."
 ---
+
+This guide assumes you have already added a domain to your dashboard. If that's not the case, read the [website integration article]({{< ref "get-started/frontend-integration.md" >}}).
 
 ## Add Pirsch to Your Backend
 
