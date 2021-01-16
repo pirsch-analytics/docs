@@ -8,9 +8,10 @@ description: "Overview of all changes."
 
 ## 0.23
 
-Release: unreleased
+Release: 2021-01-16
 
 * fixed documentation links after adding a domain
+* updated Pirsch library (added source and utm_source as query parameters for referrers)
 
 ## 0.22
 
