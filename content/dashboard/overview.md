@@ -3,6 +3,7 @@ title: "Overview"
 date: 2021-01-16
 draft: false
 weight: 1
+description: "Get an overview over the dashboard."
 ---
 
 Pirsch provides a simple, yet powerful dashboard for your website statistics. This article gives an overview of all of its parts and how to use the filter.
@@ -25,13 +26,15 @@ The time range is set to one week by default. To change it, click on the time ra
 
 ## Panels
 
-Below the menu, you can find the panels showing different statistics. You can read about how these are calculated [here]({{< ref "dashboard/metrics.md" >}}).
+Below the menu, you can find the panels showing different statistics.
 
 ### Unique Visitor Count, Sessions, and Bounces
 
 The first three panels show the unique visitor count, sessions, and bounces. If you click on one of them you can enlarge the graph. The panels include the growth rate relative to the previous time range (the past week when the filter is set to the past 7 days for example) and are coloured in green, red, or yellow depending on if they have increased, fallen, or stayed the same.
 
 ![Panels](/dashboard/visitors.png)
+
+Visitors shows the unique visitor count for a day. Sessions shows the number of sessions for the day, corresponding to a two-hour time frame. Bounces shows how many visitors have left your website after their first page hit.
 
 ### Active Visitors
 

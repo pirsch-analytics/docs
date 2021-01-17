@@ -1,5 +1,5 @@
 ---
-title: "Account Settings"
+title: "Settings"
 date: 2021-01-16
 draft: false
 weight: 3

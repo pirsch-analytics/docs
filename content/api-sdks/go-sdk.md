@@ -6,7 +6,7 @@ weight: 2
 description: "SDK for Golang."
 ---
 
-[![GoDoc](https://godoc.org/github.com/pirsch-analytics/pirsch-go-sdk?status.svg)](https://godoc.org/github.com/pirsch-analytics/pirsch-go-sdk)
+[![Go Reference](https://pkg.go.dev/badge/github.com/pirsch-analytics/pirsch-go-sdk?status.svg)](https://pkg.go.dev/github.com/pirsch-analytics/pirsch-go-sdk?status)
 
 The Go SDK can be found on [GitHub](https://github.com/pirsch-analytics/pirsch-go-sdk).
 
