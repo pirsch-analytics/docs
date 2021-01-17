@@ -6,7 +6,7 @@ weight: 3
 description: "Manage your account."
 ---
 
-To manage your account settings, login in to the dashboard and visit the account settings page. You can do that by clicking on your name in the top right corner and clicking on *Account*.
+To manage your account settings, log in in to the dashboard and visit the account settings page. You can do that by clicking on your name in the top right corner and clicking on *Account*.
 
 ![Manage Account](/account/account.png)
 

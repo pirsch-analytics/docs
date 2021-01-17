@@ -6,7 +6,7 @@ weight: 3
 description: "Manage your websites settings and access."
 ---
 
-To manage your website settings, login to the dashboard and visit the settings page from the navigation.
+To manage your website settings, log in to the dashboard and visit the settings page from the navigation.
 
 ## Access
 
@@ -18,11 +18,11 @@ The *Public Access* and *Access Links* section both give anyone access to your d
 
 *Public Access* will make your dashboard public to anyone on the subdomain you have chosen when creating the website. An example for this is our live demo on [pirsch.pirsch.io](https://pirsch.pirsch.io/), where the first *pirsch* in the domain is replaced by the one you have configured.
 
-*Access Links* can be used to generate a link which allows anyone who has it to read your dashboard. The advantage over the *Public Access* is that you can delete links to deny access, without interrupting everyone who has a different link.
+*Access Links* can be used to generate a link which allows anyone who has it to read your dashboard. The advantage over the *Public Access* is that you can delete links to deny access, without interrupting anyone who has a different link.
 
 ### Private Access
 
-If you don't want to send out links or make your dashboard public to everyone, you can invite members instead. Click *Invite Member* to add new members to your website and enter all email addresses you would like to invite. The invited members will have to create an account at Pirsch if they don't already have one and accept the invitation.
+If you don't want to send out links or make your dashboard public to anyone, you can invite members instead. Click *Invite Member* to add new members to your website and enter all email addresses you would like to invite. The invited members will have to create an account for Pirsch if they don't already have one and accept the invitation.
 
 After the members have joined, they will be able to view all statistics without modifing settings. You can change the member role to give them administrative access to your dashboard, including:
 
@@ -37,7 +37,7 @@ To remove a member, just click on the trash icon.
 
 ## Changing the Subdomain
 
-You can change the subdomain for public access by entering a new one and pressing *Save*. Note that the subdomain needs to be free and some subdomains are reserved.
+You can change the subdomain for public access by entering a new one and pressing *Save*. Note that the subdomain needs to be available and some subdomains are reserved.
 
 ## Resetting the Identifcation Code
 
@@ -51,7 +51,7 @@ The snippet for the [website integration]({{< ref "get-started/frontend-integrat
 
 Clients are used to access the [Pirsch API]({{< ref "api-sdks/_index.md" >}}). You will need one if you decide to use the [backend integration]({{< ref "get-started/backend-integration.md" >}}) or to access your data from an external application.
 
-To create a new client, click *Add Client* and enter a description. The next dialog will show the unique client ID and secret, which you should save and treat like a password. One the dialog is closed, there is no way to view the secret again and you will have to create a new client.
+To create a new client, click *Add Client* and enter a description. The next dialog will show the unique client ID and secret, which you should save and treat like a password. Once the dialog is closed, there is no way to view the secret again and you will have to create a new client.
 
 ![Clients](/dashboard/settings-client.png)
 

@@ -30,11 +30,11 @@ Below the menu, you can find the panels showing different statistics.
 
 ### Unique Visitor Count, Sessions, and Bounces
 
-The first three panels show the unique visitor count, sessions, and bounces. If you click on one of them you can enlarge the graph. The panels include the growth rate relative to the previous time range (the past week when the filter is set to the past 7 days for example) and are coloured in green, red, or yellow depending on if they have increased, fallen, or stayed the same.
+The first three panels show the unique visitor count, sessions, and bounces. If you click on one of them you can enlarge the graph. The panels include the growth rate relative to the previous time range (the past week when the filter is set to the past 7 days for example) and are colored in green, red, or yellow depending on if they have increased, decreased, or remained the same.
 
 ![Panels](/dashboard/visitors.png)
 
-Visitors shows the unique visitor count for a day. Sessions shows the number of sessions for the day, corresponding to a two-hour time frame. Bounces shows how many visitors have left your website after their first page hit.
+Visitors displays the unique visitor count for a day. Sessions tells you the number of sessions for the day, corresponding to a two-hour time frame. Bounces shows how many visitors have left your website after their first page hit.
 
 ### Active Visitors
 
@@ -44,15 +44,15 @@ Next you will find data related to the active visitors of your page. These are v
 
 ### Pages, Referrers, Countries, ...
 
-The next panels show various statistics regarding unique visitors. *Pages* for example shows how many visitors have visited a single page. Referrers list all websites a visitor came from.
+The following panels show various statistics regarding unique visitors. *Pages* for example shows how many visitors have visited a single page. Referrers list all websites a visitor came from.
 
-A panel will only show the top 10 results. You can enlarge it to see more results. The *Screen Sizes* panel is only available if you have embedded the [JavaScript snippet]({{< ref "get-started/frontend-integration.md" >}}). The [backend integration]({{< ref "get-started/backend-integration.md" >}}) does not collect this metric.
+A panel will only display the top 10 results, but you can enlarge it to see all results. The *Screen Sizes* panel is only available if you have embedded the [JavaScript snippet]({{< ref "get-started/frontend-integration.md" >}}). The [backend integration]({{< ref "get-started/backend-integration.md" >}}) does not collect this metric.
 
 ![Panels](/dashboard/panels.png)
 
 ### Time of Day for the Week
 
-The table at the bottom of the dashboard shows unique visitors for the time of day for the past week. The colors show at what time visitors have visited your website the most. The brighter the color, the more visitors.
+The table at the bottom of the dashboard lists unique visitors for the time of day for the past week. The colors show at what time visitors have visited your website the most. The brighter the color, the more visitors.
 
 ![Panels](/dashboard/time-of-day.png)
 
