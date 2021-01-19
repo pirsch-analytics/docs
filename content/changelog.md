@@ -6,6 +6,14 @@ weight: 6
 description: "Overview of all changes."
 ---
 
+## 0.24
+
+Release: 2021-01-19
+
+* the bounce rate is now displayed as a relative number instead of showing the total number of bounces
+* fixed updating JavaScript snippet when identification code is reset
+* fixed filtering the hostname as a referrer (including www as a prefix)
+
 ## 0.23
 
 Release: 2021-01-16
