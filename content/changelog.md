@@ -6,6 +6,14 @@ weight: 6
 description: "Overview of all changes."
 ---
 
+## 0.25
+
+Release: unreleased
+
+* export your data to CSV in the settings
+* improved dashboard design and usability
+* fixed filter limits when start date was swapped with end date and and end date was before the limit
+
 ## 0.24
 
 Release: 2021-01-19
