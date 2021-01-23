@@ -11,7 +11,8 @@ description: "Overview of all changes."
 Release: unreleased
 
 * export your data to CSV in the settings
-* improved dashboard design and usability
+* add email addresses to send reports (weekly, monthly)
+* improved dashboard design and usability (better colors, sticky header)
 * fixed filter limits when start date was swapped with end date and and end date was before the limit
 
 ## 0.24
