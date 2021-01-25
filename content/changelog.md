@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-date: 2021-01-14
+date: 2021-01-25
 draft: false
 weight: 6
 description: "Overview of all changes."
@@ -8,7 +8,7 @@ description: "Overview of all changes."
 
 ## 0.25
 
-Release: unreleased
+Release: 2021-01-25
 
 * export your data to CSV in the settings
 * add email addresses to send reports (weekly, monthly)

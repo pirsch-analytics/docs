@@ -1,6 +1,6 @@
 ---
 title: "Settings"
-date: 2021-01-17
+date: 2021-01-25
 draft: false
 weight: 3
 description: "Manage your websites settings and access."
@@ -35,6 +35,14 @@ To remove a member, just click on the trash icon.
 
 ![Access Management](/dashboard/settings-access.png)
 
+## Email Reports
+
+Send email reports to yourself or external recipients every week, two weeks, three weeks, or once per month. To add email addresses, click on *Add Reports*, enter the recipients and the preferred interval. The report will look something like this:
+
+![Email Report](/dashboard/email-report.png)
+
+Please make sure you only add recipients who want to receive reports.
+
 ## Changing the Subdomain
 
 You can change the subdomain for public access by entering a new one and pressing *Save*. Note that the subdomain needs to be available and some subdomains are reserved.
@@ -54,6 +62,12 @@ Clients are used to access the [Pirsch API]({{< ref "api-sdks/_index.md" >}}). Y
 To create a new client, click *Add Client* and enter a description. The next dialog will show the unique client ID and secret, which you should save and treat like a password. Once the dialog is closed, there is no way to view the secret again and you will have to create a new client.
 
 ![Clients](/dashboard/settings-client.png)
+
+## Export to CSV
+
+You can export your data for up to the past 12 months. Click on *Export Data to CSV* and select the start date, end date, and the statistics you would like to export. Clicking on *Create CSV File* will start the download. The statistics are separated into individual CSV files and bundled within a zip archive.
+
+![CSV Export](/dashboard/csv-export.png)
 
 ## Delete Your Domain
 
