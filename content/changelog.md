@@ -6,6 +6,12 @@ weight: 6
 description: "Overview of all changes."
 ---
 
+## 0.26
+
+* removed enlarge button from active page panel (this is a fix)
+* fixed modal border when it's scrollable
+* fixed referrer in email reports
+
 ## 0.25
 
 Release: 2021-01-25
