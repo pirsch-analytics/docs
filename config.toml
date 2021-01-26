@@ -5,7 +5,7 @@ theme = "seeker"
 
 [menu]
     [[menu.main]]
-        name = "Website"
+        name = "Homepage"
         url = "https://pirsch.io/"
         weight = 1
     [[menu.main]]
