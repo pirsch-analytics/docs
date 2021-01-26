@@ -1,6 +1,6 @@
 ---
 title: "Privacy"
-date: 2020-12-21
+date: 2020-12-26
 draft: false
 weight: 5
 description: "Learn how Pirsch respects the privacy of your visitors."
@@ -31,4 +31,4 @@ Pirsch collects and stores the following datapoints, depending on the integratio
 
 ## You Are in Charge
 
-You are in charge of the data we collect for you. You can wipe all data by deleting the website on the dashboard or by sending us a support request ([support@pirsch.io](mailto:support@pirsch.io)). To export statistics, please send us a support request with the desired format. We plan to add CSV exports in the near future.
+You are in charge of the data we collect for you. You can wipe all data by deleting the website on the dashboard or by sending us a support request ([support@pirsch.io](mailto:support@pirsch.io)). You can export your data to CSV for the last 12 months.
