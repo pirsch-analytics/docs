@@ -6,6 +6,14 @@ weight: 6
 description: "Overview of all changes."
 ---
 
+## 0.27
+
+Release: unreleased
+
+* filter parameters are now displayed in the URL and no longer stored locally
+* percentages are now formatted with two decimal places and localized to en-US
+* small optimizations for the dashboard
+
 ## 0.26
 
 Release: 2021-01-26
