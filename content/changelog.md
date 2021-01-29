@@ -13,6 +13,7 @@ Release: unreleased
 * filter parameters are now displayed in the URL and no longer stored locally
 * percentages are now formatted with two decimal places and localized to en-US
 * small optimizations for the dashboard
+* only allow following referrers if it's a valid URL
 
 ## 0.26
 
