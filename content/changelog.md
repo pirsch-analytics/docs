@@ -14,6 +14,7 @@ Release: unreleased
 * percentages are now formatted with two decimal places and localized to en-US
 * small optimizations for the dashboard
 * only allow following referrers if it's a valid URL
+* we no longer show referrers on our live demo for our own subdomains, like docs.pirsch.io or our customer public dashboards
 
 ## 0.26
 
