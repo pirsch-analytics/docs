@@ -15,6 +15,9 @@ Release: unreleased
 * small optimizations for the dashboard
 * only allow following referrers if it's a valid URL
 * we no longer show referrers on our live demo for our own subdomains, like docs.pirsch.io or our customer public dashboards
+* added bounce rate per page and referrer
+* added relative visitor count for pages
+* display the name and icon for Android apps
 
 ## 0.26
 
