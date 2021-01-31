@@ -8,7 +8,7 @@ description: "Overview of all changes."
 
 ## 0.27
 
-Release: unreleased
+Release: 2ß21-01-31
 
 * filter parameters are now displayed in the URL and no longer stored locally
 * percentages are now formatted with two decimal places and localized to en-US
