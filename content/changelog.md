@@ -6,6 +6,13 @@ weight: 6
 description: "Overview of all changes."
 ---
 
+## 0.28
+
+Release: unreleased
+
+* fixed country statistics
+* performance improvements
+
 ## 0.27
 
 Release: 2021-01-31
