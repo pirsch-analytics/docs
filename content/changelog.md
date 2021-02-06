@@ -8,9 +8,10 @@ description: "Overview of all changes."
 
 ## 0.28
 
-Release: unreleased
+Release: 2021-02-06
 
 * fixed country statistics
+* fixed order of page statistics
 * performance improvements
 
 ## 0.27
