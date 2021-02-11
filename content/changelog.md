@@ -6,6 +6,12 @@ weight: 6
 description: "Overview of all changes."
 ---
 
+## 0.29
+
+Release: unreleased
+
+* added absolute and relative visitor and bounce statistics to CSV export for pages and referrer
+
 ## 0.28
 
 Release: 2021-02-06
