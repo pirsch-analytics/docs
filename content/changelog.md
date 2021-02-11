@@ -11,6 +11,7 @@ description: "Overview of all changes."
 Release: unreleased
 
 * added absolute and relative visitor and bounce statistics to CSV export for pages and referrer
+* fixed saving history state when navigating
 
 ## 0.28
 
