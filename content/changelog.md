@@ -12,6 +12,7 @@ Release: unreleased
 
 * added absolute and relative visitor and bounce statistics to CSV export for pages and referrer
 * fixed saving history state when navigating
+* fixed selecting export dates
 
 ## 0.28
 
