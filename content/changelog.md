@@ -8,7 +8,7 @@ description: "Overview of all changes."
 
 ## 0.29
 
-Release: unreleased
+Release: 2021-02-14
 
 * added absolute and relative visitor and bounce statistics to CSV export for pages and referrer
 * fixed saving history state when navigating
