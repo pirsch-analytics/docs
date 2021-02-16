@@ -6,6 +6,13 @@ weight: 6
 description: "Overview of all changes."
 ---
 
+## 0.30
+
+Release: 2021-02-16
+
+* added tooltips to dashboard
+* infrastructure and maintenance
+
 ## 0.29
 
 Release: 2021-02-14
