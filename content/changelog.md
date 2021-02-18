@@ -6,6 +6,13 @@ weight: 6
 description: "Overview of all changes."
 ---
 
+## 0.31
+
+Release: unreleased
+
+* fixed tooltip triggering clicks on mobile and opening up panels
+* fixed showing visitors today graph while filtering by page
+
 ## 0.30
 
 Release: 2021-02-16
