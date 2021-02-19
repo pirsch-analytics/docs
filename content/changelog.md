@@ -10,6 +10,7 @@ description: "Overview of all changes."
 
 Release: unreleased
 
+* added number formatting (separators) to all numbers in lists and tables
 * fixed tooltip triggering clicks on mobile and opening up panels
 * fixed showing visitors today graph while filtering by page
 
