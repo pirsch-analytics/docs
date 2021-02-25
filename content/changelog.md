@@ -11,8 +11,13 @@ description: "Overview of all changes."
 Release: unreleased
 
 * added number formatting (separators) to all numbers in lists and tables
+* added average session duration to the dashboard
+* added time on page to the detailed page statistics (modal dialog)
+* added page views to the dashboard
 * fixed tooltip triggering clicks on mobile and opening up panels
 * fixed showing visitors today graph while filtering by page
+* fixed deleting accounts marked for deletion
+* fixed accepting hits for domains starting with www if the domain has been configured with www as a subdomain
 
 ## 0.30
 
