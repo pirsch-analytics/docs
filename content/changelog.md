@@ -14,6 +14,8 @@ Release: unreleased
 * added average session duration to the dashboard
 * added time on page to the detailed page statistics (modal dialog)
 * added page views to the dashboard
+* bounce graph now shows the bounce rate instead of absolute bounces for each day
+* added label formatting to graphs
 * fixed tooltip triggering clicks on mobile and opening up panels
 * fixed showing visitors today graph while filtering by page
 * fixed deleting accounts marked for deletion
