@@ -8,6 +8,8 @@ description: "Overview of all changes."
 
 ## 0.32
 
+Release: 2021-02-26
+
 * fixed green bar for propotion in lists
 * fixed calculating average time on page/session duration
 * fixed visitors today showing NaN on load
