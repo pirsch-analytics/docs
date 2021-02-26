@@ -6,6 +6,12 @@ weight: 6
 description: "Overview of all changes."
 ---
 
+## 0.32
+
+* fixed green bar for propotion in lists
+* fixed calculating average time on page/session duration
+* fixed visitors today showing NaN on load
+
 ## 0.31
 
 Release: 2021-02-26
