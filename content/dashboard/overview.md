@@ -20,6 +20,10 @@ Right below the navigation you will find the website selection, the active visit
 
 Should you have added more than one website, you can switch between them by clicking on the domain. The dashboard will automatically reload and show the statistics for the new page. The selection works on the settings page too.
 
+To see which pages are viewed right now, click on the active visitors. This will show all pages that have been opened in the past 10 minutes. Note that the number of open pages might be higher than the total visitor count, as they can switch pages within the time period.
+
+![Panels](/dashboard/active-visitors.png)
+
 The time range is set to one week by default. To change it, click on the time range and select a different one from the dropdown, or enter dates. The selection will be saved, so that you can compare different websites for example and still have it in place when you come back later.
 
 ![Panels](/dashboard/menu.png)
@@ -28,19 +32,17 @@ The time range is set to one week by default. To change it, click on the time ra
 
 Below the menu, you can find the panels showing different statistics.
 
-### Unique Visitor Count, Sessions, and Bounces
-
-The first three panels show the unique visitor count, sessions, and bounces. If you click on one of them you can enlarge the graph. The panels include the growth rate relative to the previous time range (the past week when the filter is set to the past 7 days for example) and are colored in green, red, or yellow depending on if they have increased, decreased, or remained the same.
-
 ![Panels](/dashboard/visitors.png)
 
-Visitors displays the unique visitor count for a day. Sessions tells you the number of sessions for the day, corresponding to a two-hour time frame. Bounces shows how many visitors have left your website after their first page hit.
+### Page Views, Unique Visitors, and Sessions
 
-### Active Visitors
+The first three panels show the page views, unique visitors, and sessions. If you click on one of them you can enlarge the graph. The panels include the growth rate relative to the previous time range (the past week when the filter is set to the past 7 days for example) and are colored in green, red, or yellow depending on if they have increased, decreased, or remained the same.
 
-Next you will find data related to the active visitors of your page. These are visitors that have been visiting your website in the past 5 minutes. You can see which pages they have opened and at what time of day the have visited. Note that the number of pages opened might be higher than than the total visitors, as they might switched pages within the 5 minute time frame.
+Page views and unique visitors are self-explanatory. Sessions tells you the number of recurring visitors for the day, corresponding to a 15-minute time frame.
 
-![Panels](/dashboard/active-visitors.png)
+### Bounce Rate, Average Session Duration, and Unique Visitors Today
+
+The next three panels show the bounce rate, average session duration, and the unique visitor count for today. The bounce rate shows how many visitors have left your website after the landing page. The average session duration is the time visitors spent on your website. If someone bounces, they won't appear in this statistics. The unique visitor count for today works like the unique visitor graph above, but shows how many visitors were on your website at which time of the day.
 
 ### Pages, Referrers, Countries, ...
 

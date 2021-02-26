@@ -8,14 +8,15 @@ description: "Overview of all changes."
 
 ## 0.31
 
-Release: unreleased
+Release: 2021-02-26
 
 * added number formatting (separators) to all numbers in lists and tables
 * added average session duration to the dashboard
 * added time on page to the detailed page statistics (modal dialog)
 * added page views to the dashboard
 * bounce graph now shows the bounce rate instead of absolute bounces for each day
-* added label formatting to graphs
+* added formatting for labels to graphs (on hover)
+* moved active pages to a modal dialog (click on the active visitors on top of the dashboard)
 * fixed tooltip triggering clicks on mobile and opening up panels
 * fixed showing visitors today graph while filtering by page
 * fixed deleting accounts marked for deletion
