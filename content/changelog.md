@@ -6,6 +6,12 @@ weight: 6
 description: "Overview of all changes."
 ---
 
+## 0.33
+
+Release: 2021-03-02
+
+* fixed average time on page calculation for today
+
 ## 0.32
 
 Release: 2021-02-26
