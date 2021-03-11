@@ -6,6 +6,12 @@ weight: 6
 description: "Overview of all changes."
 ---
 
+## 1.0.0
+
+Release: unreleased
+
+* added payments
+
 ## 0.33
 
 Release: 2021-03-02
