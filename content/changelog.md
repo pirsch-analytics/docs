@@ -11,6 +11,8 @@ description: "Overview of all changes."
 Release: unreleased
 
 * added payments
+* fixed calculating bounce rate growth
+* fixed filtering by path for growth statistics
 
 ## 0.33
 
