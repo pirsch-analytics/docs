@@ -8,7 +8,7 @@ description: "Overview of all changes."
 
 ## 1.0.0
 
-Release: unreleased
+Release: 2021-03-12
 
 * added payments
 * fixed calculating bounce rate growth
