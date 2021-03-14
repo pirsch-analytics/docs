@@ -6,6 +6,12 @@ weight: 6
 description: "Overview of all changes."
 ---
 
+## 1.0.1
+
+Release: 2021-03-14
+
+* fixed some issues with updating subscriptions
+
 ## 1.0.0
 
 Release: 2021-03-12
