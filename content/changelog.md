@@ -6,6 +6,13 @@ weight: 6
 description: "Overview of all changes."
 ---
 
+## 1.0.2
+
+Release: 2021-03-17
+
+* fixed CSV export being limited to one week
+* fixed small styling issue
+
 ## 1.0.1
 
 Release: 2021-03-14
