@@ -10,7 +10,7 @@ The PHP SDK can be found on [GitHub](https://github.com/pirsch-analytics/pirsch-
 
 ## Installation
 
-You can the SDK using Composer or by copying the `pirsch.php` directly.
+You can install the SDK using Composer or by copying the `pirsch.php` directly.
 
 ```Bash
 composer require pirsch-analytics/sdk
