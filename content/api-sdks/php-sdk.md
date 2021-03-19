@@ -1,6 +1,6 @@
 ---
 title: "PHP SDK"
-date: 2021-03-18
+date: 2021-03-19
 draft: false
 weight: 3
 description: "SDK for PHP."
@@ -23,7 +23,7 @@ To use the [API]({{<  ref "api-sdks/api.md"  >}}), you need to create a client o
 ```PHP
 require __DIR__ . '/vendor/autoload.php'; // or require_once 'pirsch.php'; if you downloaded the file manually
 
-$client = new PirschClient('client_id', 'client_secret', 'example.com');
+$client = new Pirsch\Client('client_id', 'client_secret', 'example.com');
 ```
 
 From here on we can make API calls through the `$client`. It will automatically update the access token using the credentials you provided.
