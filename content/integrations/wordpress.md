@@ -1,7 +1,7 @@
 ---
 title: "WordPress"
-date: 2021-03-21
-draft: true
+date: 2021-03-23
+draft: false
 weight: 3
 description: "Learn how to integrate Pirsch into wordpress."
 ---
@@ -10,15 +10,17 @@ description: "Learn how to integrate Pirsch into wordpress."
 
 The plugin provides an easy way to integrate Pirsch into WordPress. It doesn't use JavaScript and works from your server. This is the [recommended approach]({{< ref "get-started/backend-integration.md" >}}). For the script integration, see below.
 
-*WIP*
+To install the plugin, navigate to the plugins page on your WordPress administration dashboard and click on *Install* next to the title. Search for "Pirsch Analytics" and click on *Install* for the plugin. Once it is installed, click on *Active* and navigate to *Tools* -> *Pirsch Analytics* from the left menu. This will open up the settings page.
 
 ![WordPress Plugin](/integration/wordpress.png)
+
+Enter the hostname you used to set up the website on the Pirsch dashboard and the client ID and secret. You can create new clients on the [settings page]({{< ref "dashboard/settings.md" >}}) for your website. After you clicked on save, Pirsch will start collecting statistics for your website.
 
 ## Installing the Script (Frontend Integration)
 
 To add the JavaScript snippet on your WordPress website, install the "Insert Headers and Footers" plugin. Navigate to the settings page of the plugin and paste the snippet inside the "header" section and save.
 
-The snippet can be found on the settings page of your [dashboard]({{< ref "dashboard/settings.md" >}}).
+The snippet can be found on the [settings page]({{< ref "dashboard/settings.md" >}}) of your dashboard.
 
 ## Permalink Settings
 
