@@ -12,7 +12,7 @@ Pirsch provides a simple, yet powerful dashboard for your website statistics. Th
 
 On top you will find the navigation. The Pirsch logo will bring you back to the dashboard. You can add a new domain, manage the settings of your currently active website, access resources, and manage your account or log out in the top right corner.
 
-![Panels](/dashboard/navigation.png)
+![Navigation](/dashboard/navigation.png)
 
 ## Menu
 
@@ -22,17 +22,17 @@ Should you have added more than one website, you can switch between them by clic
 
 To see which pages are viewed right now, click on the active visitors. This will show all pages that have been opened in the past 10 minutes. Note that the number of open pages might be higher than the total visitor count, as they can switch pages within the time period.
 
-![Panels](/dashboard/active-visitors.png)
+![Active Visitors](/dashboard/active-visitors.png)
 
 The time range is set to one week by default. To change it, click on the time range and select a different one from the dropdown, or enter dates. The selection will be saved, so that you can compare different websites for example and still have it in place when you come back later.
 
-![Panels](/dashboard/menu.png)
+![Menu](/dashboard/menu.png)
 
 ## Panels
 
 Below the menu, you can find the panels showing different statistics.
 
-![Panels](/dashboard/visitors.png)
+![Visitors](/dashboard/visitors.png)
 
 ### Page Views, Unique Visitors, and Sessions
 
@@ -56,7 +56,7 @@ A panel will only display the top 10 results, but you can enlarge it to see all 
 
 The table at the bottom of the dashboard lists unique visitors for the time of day for the past week. The colors show at what time visitors have visited your website the most. The brighter the color, the more visitors.
 
-![Panels](/dashboard/time-of-day.png)
+![Time of Day](/dashboard/time-of-day.png)
 
 ## Filters
 
