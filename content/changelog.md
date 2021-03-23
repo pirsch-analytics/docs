@@ -6,6 +6,12 @@ weight: 6
 description: "Overview of all changes."
 ---
 
+## 1.1.0
+
+Release: unreleased
+
+* added setting to define a default time range for the filter
+
 ## 1.0.2
 
 Release: 2021-03-17
@@ -145,6 +151,8 @@ Release: 2021-01-13
 * updated dependencies
 
 ## 0.19
+
+Released: 2021-01-07
 
 * fixed "(unknown)" for languages
 * fixed referrer icon for direct/none
