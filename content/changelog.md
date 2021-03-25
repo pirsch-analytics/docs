@@ -11,6 +11,9 @@ description: "Overview of all changes."
 Release: unreleased
 
 * added setting to define a default time range for the filter
+* added sitemap.xml
+* added robots.txt
+* updated dependencies
 
 ## 1.0.2
 
