@@ -1,6 +1,6 @@
 ---
 title: "Overview"
-date: 2021-01-16
+date: 2021-03-28
 draft: false
 weight: 1
 description: "Get an overview over the dashboard."
@@ -30,7 +30,7 @@ The time range is set to one week by default. To change it, click on the time ra
 
 ## Panels
 
-Below the menu, you can find the panels showing different statistics.
+Below the menu, you will find the panels showing different statistics. Some of the panels can be opened to show detailed statistics. To do that, click on the expand icon in the top right corner of the panel.
 
 ![Visitors](/dashboard/visitors.png)
 
@@ -51,6 +51,12 @@ The following panels show various statistics regarding unique visitors. *Pages* 
 A panel will only display the top 10 results, but you can enlarge it to see all results. The *Screen Sizes* panel is only available if you have embedded the [JavaScript snippet]({{< ref "get-started/frontend-integration.md" >}}). The [backend integration]({{< ref "get-started/backend-integration.md" >}}) does not collect this metric.
 
 ![Panels](/dashboard/panels.png)
+
+### Google Keywords From the Search Console
+
+In case you have enabled the Google Search Console integration on the [settings page]({{< ref "dashboard/settings.md" >}}) the panel will show the number of clicks, impressions, CTR, and the average search rank for keywords visitors use to find your website on Google.
+
+![Search Console](/dashboard/search-console.png)
 
 ### Time of Day for the Week
 

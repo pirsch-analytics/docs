@@ -8,11 +8,13 @@ description: "Overview of all changes."
 
 ## 1.1.0
 
-Release: unreleased
+Release: 2021-03-28
 
 * added setting to define a default time range for the filter
-* added sitemap.xml
-* added robots.txt
+* added Google Search Console integration to show keywords
+* added sortable tables
+* added more content on website and better design
+* added robots.txt and sitemap.xml to website
 * updated dependencies
 
 ## 1.0.2
