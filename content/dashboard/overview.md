@@ -30,7 +30,7 @@ The time range is set to one week by default. To change it, click on the time ra
 
 ## Panels
 
-Below the menu, you will find the panels showing different statistics. Some of the panels can be opened to show detailed statistics. To do that, click on the expand icon in the top right corner of the panel.
+Below the menu, you will find the panels showing different statistics. Some of the panels can be opened to show detailed statistics. To do that, click on the expand icon in the top right corner of the panel. Tables in the detailed view can be sorted by column. Simply click on one of the columns to sort them in ascending or descending order, or to remove the sorting.
 
 ![Visitors](/dashboard/visitors.png)
 

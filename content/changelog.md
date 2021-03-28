@@ -6,6 +6,11 @@ weight: 6
 description: "Overview of all changes."
 ---
 
+## 1.1.1
+
+* fixed Google redirect URI
+* fixed logo on live demo
+
 ## 1.1.0
 
 Release: 2021-03-28
