@@ -6,7 +6,16 @@ weight: 6
 description: "Overview of all changes."
 ---
 
+## 1.1.2
+
+Release: 2021-03-30
+
+* fixed sign up (wrong sender for emails)
+* fixed connecting to Google account
+
 ## 1.1.1
+
+Release: 2021-03-29
 
 * fixed Google redirect URI
 * fixed logo on live demo
