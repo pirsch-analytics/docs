@@ -6,6 +6,12 @@ weight: 6
 description: "Overview of all changes."
 ---
 
+## 1.1.3
+
+Release: 2021-03-30
+
+* fixed setting default filter time range on registration
+
 ## 1.1.2
 
 Release: 2021-03-30
