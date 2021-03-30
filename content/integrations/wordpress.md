@@ -8,7 +8,7 @@ description: "Learn how to integrate Pirsch into wordpress."
 
 ## Using the Plugin (Backend Integration)
 
-The plugin provides an easy way to integrate Pirsch into WordPress. It doesn't use JavaScript and works from your server. This is the [recommended approach]({{< ref "get-started/backend-integration.md" >}}). For the script integration, see below.
+[The plugin](https://wordpress.org/plugins/pirsch-analytics/#description) provides an easy way to integrate Pirsch into WordPress. It doesn't use JavaScript and works from your server. This is the [recommended approach]({{< ref "get-started/backend-integration.md" >}}). For the script integration, see below.
 
 To install the plugin, navigate to the plugins page on your WordPress administration dashboard and click on *Install* next to the title. Search for "Pirsch Analytics" and click on *Install* for the plugin. Once it is installed, click on *Active* and navigate to *Tools* -> *Pirsch Analytics* from the left menu. This will open up the settings page.
 
