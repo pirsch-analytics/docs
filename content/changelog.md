@@ -6,6 +6,13 @@ weight: 6
 description: "Overview of all changes."
 ---
 
+## 1.1.4
+
+Release: 2021-03-31
+
+* improved keywords panel
+* fixed panels hiding "unknown" not showing ten results
+
 ## 1.1.3
 
 Release: 2021-03-30
