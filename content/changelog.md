@@ -12,6 +12,7 @@ Release: unreleased
 
 * better labels for Search Console domains (no "sc-domain:" at the beginning)
 * added tabs to the settings page
+* added data deletion for selected statistics, all statistics, and a time range
 
 ## 1.1.4
 
