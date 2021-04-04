@@ -8,7 +8,7 @@ description: "Overview of all changes."
 
 ## 1.2.0
 
-Release: unreleased
+Release: 2021-04-04
 
 * better labels for Search Console domains (no "sc-domain:" at the beginning)
 * added tabs to the settings page
