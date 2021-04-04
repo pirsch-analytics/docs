@@ -13,6 +13,8 @@ Release: unreleased
 * better labels for Search Console domains (no "sc-domain:" at the beginning)
 * added tabs to the settings page
 * added data deletion for selected statistics, all statistics, and a time range
+* added transfer of ownership for domains
+* improved sign up process and page
 * fixed cleaning up statistics if a domain gets deleted
 
 ## 1.1.4
