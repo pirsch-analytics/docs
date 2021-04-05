@@ -6,6 +6,17 @@ weight: 6
 description: "Overview of all changes."
 ---
 
+## 1.2.0
+
+Release: 2021-04-04
+
+* better labels for Search Console domains (no "sc-domain:" at the beginning)
+* added tabs to the settings page
+* added data deletion for selected statistics, all statistics, and a time range
+* added transfer of ownership for domains
+* improved sign up process and page
+* fixed cleaning up statistics if a domain gets deleted
+
 ## 1.1.4
 
 Release: 2021-03-31
