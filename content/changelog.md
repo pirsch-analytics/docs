@@ -6,6 +6,12 @@ weight: 6
 description: "Overview of all changes."
 ---
 
+## 1.3.0
+
+Release: unreleased
+
+* added white fallback favicon for referrers for dark mode
+
 ## 1.2.0
 
 Release: 2021-04-04
