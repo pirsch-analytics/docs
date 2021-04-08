@@ -14,13 +14,13 @@ To install the plugin, navigate to the plugins page on your WordPress administra
 
 ![WordPress Plugin](/integration/wordpress.png)
 
-Enter the hostname you used to set up the website on the Pirsch dashboard and the client ID and secret. You can create new clients on the [settings page]({{< ref "dashboard/settings.md" >}}) for your website. After you clicked on save, Pirsch will start collecting statistics for your website.
+Enter the hostname you used to set up the website on the Pirsch dashboard and the client ID and secret. You can create new clients on the [settings page]({{< ref "dashboard/developer-settings.md" >}}) for your website. After you clicked on save, Pirsch will start collecting statistics for your website.
 
 ## Installing the Script (Frontend Integration)
 
 To add the JavaScript snippet on your WordPress website, install the "Insert Headers and Footers" plugin. Navigate to the settings page of the plugin and paste the snippet inside the "header" section and save.
 
-The snippet can be found on the [settings page]({{< ref "dashboard/settings.md" >}}) of your dashboard.
+The snippet can be found on the [settings page]({{< ref "dashboard/developer-settings.md" >}}) of your dashboard.
 
 ## Permalink Settings
 

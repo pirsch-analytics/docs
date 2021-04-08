@@ -54,7 +54,7 @@ A panel will only display the top 10 results, but you can enlarge it to see all 
 
 ### Google Keywords From the Search Console
 
-In case you have enabled the Google Search Console integration on the [settings page]({{< ref "dashboard/settings.md" >}}) the panel will show the number of clicks, impressions, CTR, and the average search rank for keywords visitors use to find your website on Google.
+In case you have enabled the Google Search Console integration on the [settings page]({{< ref "dashboard/general-settings.md" >}}) the panel will show the number of clicks, impressions, CTR, and the average search rank for keywords visitors use to find your website on Google.
 
 ![Search Console](/dashboard/search-console.png)
 
