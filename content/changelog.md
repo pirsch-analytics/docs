@@ -6,6 +6,12 @@ weight: 6
 description: "Overview of all changes."
 ---
 
+## 1.2.2
+
+Release: 2021-04-09
+
+See below.
+
 ## 1.2.1
 
 Release: 2021-04-09
