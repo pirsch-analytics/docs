@@ -6,11 +6,15 @@ weight: 6
 description: "Overview of all changes."
 ---
 
-## 1.3.0
+## 1.2.1
 
-Release: unreleased
+Release: 2021-04-09
 
 * added white fallback favicon for referrers for dark mode
+* added blacklist for disposable email domains
+* improved email texts
+* fixed account settings not showing default filter time range
+* fixed live demo showing the past two days instead of the past week
 
 ## 1.2.0
 
