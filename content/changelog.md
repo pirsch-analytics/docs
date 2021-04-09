@@ -12,6 +12,7 @@ Release: 2021-04-09
 
 * added white fallback favicon for referrers for dark mode
 * added blacklist for disposable email domains
+* added copy button after domain creation
 * improved email texts
 * fixed account settings not showing default filter time range
 * fixed live demo showing the past two days instead of the past week
