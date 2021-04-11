@@ -6,6 +6,14 @@ weight: 6
 description: "Overview of all changes."
 ---
 
+## 1.2.3
+
+Release: unreleased
+
+* improved email templates
+* keep charts open on page reload
+* send email for upcoming invoices
+
 ## 1.2.2
 
 Release: 2021-04-09
