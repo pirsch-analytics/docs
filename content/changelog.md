@@ -14,7 +14,7 @@ Release: unreleased
 * keep charts open on page reload
 * send email for upcoming invoices
 * added missing number formatting on billing page
-* added loading states to pages, lists, and tables
+* added loading states (spinner) to pages, lists, and tables
 
 ## 1.2.2
 
