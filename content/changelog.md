@@ -8,13 +8,16 @@ description: "Overview of all changes."
 
 ## 1.2.3
 
-Release: unreleased
+Release: 2021-04-15
 
 * improved email templates
 * keep charts open on page reload
 * send email for upcoming invoices
 * added missing number formatting on billing page
 * added loading states (spinner) to pages, lists, and tables
+* fixed deleting domains with email reports
+* fixed showing subscription banner to members (only the owner of the current domain is supposed to see warnings)
+* updated dependencies
 
 ## 1.2.2
 
