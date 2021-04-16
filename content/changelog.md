@@ -6,12 +6,6 @@ weight: 6
 description: "Overview of all changes."
 ---
 
-## 1.2.5
-
-Release: 2021-04-16
-
-* removed loading state from active visitor modal dialog
-
 ## 1.2.4
 
 Release: 2021-04-16
