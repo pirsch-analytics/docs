@@ -6,6 +6,15 @@ weight: 6
 description: "Overview of all changes."
 ---
 
+## 1.2.4
+
+Release: 2021-04-16
+
+* opt out of Google FLoC
+* fixed deleting accounts
+* fixed active visitors modal z-index (it was above header)
+* fixed flickering on modal dialoges while loading more data
+
 ## 1.2.3
 
 Release: 2021-04-15
