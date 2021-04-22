@@ -1,6 +1,6 @@
 ---
 title: "Website Integration"
-date: 2020-12-12
+date: 2021-04-22
 draft: false
 weight: 1
 description: "Learn on how to integrate Pirsch into your website using JavaScript."
@@ -15,7 +15,7 @@ Once you have created an account, you can add Pirsch to your website.
 3. click on *Add Domain*
 4. copy the JavaScript snippet on the right and add it to your websites `<head>` section ![Code snippet](/integration/add-domain-snippet.png)
 
-And you're done! Your website will now send page hits to Pirsch. Note that only hits for the hostname you have entered will be accepted. A page hit for *sub.example.com* won't be accepted for *example.com*. They are considered entirely different pages and you need to add a new website for all subdomains you would like to monitor. The only exception for this is `www` in front of your top-level domain. `www.example.com` for example will be accepted for `example.com` and the other way around.
+And you're done! Your website will now send page hits to Pirsch. Note that only hits for the hostname you have entered will be accepted. A page hit for *sub.example.com* won't be accepted for *example.com*. They are considered entirely different pages and you need to add a new website for all subdomains you would like to monitor. The only exception for this is `www` in front of your top-level domain. `www.example.com` for example will be accepted for `example.com` and the other way around. Note that this only counts for top-level domains, so `www` in front of an australian top-level domain like `com.au` won't be accepted for example. In that case, you explicitly need to configure the full hostname including `www` and redirect non-www requests to that domain (or the other way around).
 
 ## Test the Integration
 
