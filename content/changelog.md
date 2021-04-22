@@ -6,6 +6,14 @@ weight: 6
 description: "Overview of all changes."
 ---
 
+## 1.2.5
+
+Release: 2021-04-22
+
+* added missing DNT (do not track) header to API and JS integrations
+* require billing address collection on checkout
+* updated dependencies
+
 ## 1.2.4
 
 Release: 2021-04-16

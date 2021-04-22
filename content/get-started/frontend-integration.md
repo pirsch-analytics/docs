@@ -23,7 +23,7 @@ To test the script, navigate to your website and open the network tab of the dev
 
 ![Developer Tools](/integration/network-tab.png)
 
-In case you don't, check your identification code and the domain you have configured. Should you still not see the request going through, please contact our support.
+In case you don't, check your identification code and the domain you have configured. Also, make sure you don't send the *Do Not Track* HTTP header (DNT) as the hit will be ignored then. Should you still not see the request going through, please contact our support.
 
 ## Reset the Identification Code
 
