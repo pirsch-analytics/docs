@@ -8,7 +8,7 @@ description: "Overview of all changes."
 
 ## 1.2.5
 
-Release: unreleased
+Release: 2021-04-23
 
 * added missing DNT (do not track) header to API and JS integrations
 * require billing address collection on checkout
