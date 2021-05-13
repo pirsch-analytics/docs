@@ -1,10 +1,24 @@
 ---
 title: "Changelog"
-date: 2021-01-25
+date: 2021-05-13
 draft: false
 weight: 6
 description: "Overview of all changes."
 ---
+
+## 1.3.0
+
+Release: 2021-05-13
+
+* added UTM parameters to track ad campaigns and customized URLs
+* added number formatting to email reports
+* added stackable filters to better analyze data
+* removed visitors by time of day for the past week
+* switched to ClickHouse to generate statistics, this should improve the performance and scalability
+* detailed graphs are now shown in modal dialogues
+* improved loading indicators on panels
+* fixed graph rendering on some email clients for email reports
+* fixed styling on Safari desktop and mobile
 
 ## 1.2.5
 
