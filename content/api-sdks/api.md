@@ -28,7 +28,7 @@ In case of an error, Pirsch will return a JSON object in the body describing the
 
 ## Get an Access Token
 
-To make requests to the API, you need to get an access token first. The token must be send with every request in the `Authorization` header in the format `Bearer <token>`. If you receive a status code 401 (unauthorized), you need to create a new access token and try again.
+To make requests to the API, you need to get an access token first. The token must be send with every request in the `Authorization` header in the format `Bearer <token>`. If you receive a status code 401 (unauthorized), you need to create a new access token and try again. `expires_at` time zone is set to UTC.
 
 The examples for the other endpoints in this document will omit the header.
 

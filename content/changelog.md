@@ -6,6 +6,12 @@ weight: 6
 description: "Overview of all changes."
 ---
 
+## 1.3.2
+
+Release: 2021-05-14
+
+* token expiration is now set to UTC
+
 ## 1.3.1
 
 Release: 2021-05-14
