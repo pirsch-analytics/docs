@@ -68,8 +68,13 @@ POST https://api.pirsch.io/api/v1/hit
     "x_forwarded_for":  "X-Forwarded-For header (optional)",
     "forwarded":        "Forwarded header (optional)",
     "x_real_ip"         "X-Real-IP header (optional)",
+    "dnt":              "DNT header (optional)",
     "user_agent":       "User-Agent header",
     "accept_language":  "Accept-Language header (optional)",
     "referrer" :        "Referer header (optional)",
+    "screen_width":     1920,
+    "screen_height":    1080
 }
 ```
+
+One small optimization you can make is to check the `DNT` (Do Not Track) header before you make the request. Check if the header is set to `1`, if true you can ignore the request, otherwise send it.
