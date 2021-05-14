@@ -6,6 +6,14 @@ weight: 6
 description: "Overview of all changes."
 ---
 
+## 1.3.1
+
+Release: 2021-05-14
+
+* fixed screen panel displayed if no statistics available
+* fixed countries showing 9 instead of 10 results due to "empty" country code containing null bytes
+* fixed integration for pirsch.io
+
 ## 1.3.0
 
 Release: 2021-05-13
