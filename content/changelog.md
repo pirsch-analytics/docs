@@ -11,6 +11,7 @@ description: "Overview of all changes."
 Release: 2021-05-14
 
 * token expiration is now set to UTC
+* fixed access token validation if a token was created on another server
 
 ## 1.3.1
 
