@@ -1,6 +1,6 @@
 ---
 title: "General Settings"
-date: 2021-04-08
+date: 2021-05-14
 draft: false
 weight: 3
 description: "Manage your websites settings."
@@ -37,6 +37,6 @@ In case you would like to remove the integration, click on *Unlink Account*.
 
 ## Export to CSV
 
-You can export your data for up to the past 12 months. Click on *Export Data to CSV* and select the start date, end date, and the statistics you would like to export. Clicking on *Create CSV File* will start the download. The statistics are separated into individual CSV files and bundled within a zip archive.
+You can export your data for the last 12 months. Click on *Export Data to CSV* and select the start date and end date. Click on *Create CSV File* to start the download. The statistics are separated into individual CSV files and bundled within a zip archive.
 
 ![CSV Export](/dashboard/csv-export.png)

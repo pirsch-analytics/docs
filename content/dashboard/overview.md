@@ -58,12 +58,8 @@ In case you have enabled the Google Search Console integration on the [settings 
 
 ![Search Console](/dashboard/search-console.png)
 
-### Time of Day for the Week
-
-The table at the bottom of the dashboard lists unique visitors for the time of day for the past week. The colors show at what time visitors have visited your website the most. The brighter the color, the more visitors.
-
-![Time of Day](/dashboard/time-of-day.png)
-
 ## Filters
 
-Right now there are two filters. You can select a different time range, as described above, or by page. To select a page, click on one of the entries below *Pages*. This also works while the panel is enlarged. After you have selected a page, the dashboard will update itself and show statistics for the page you have selected. To clear the filter, click on the close icon in the green bar at the top.
+Filters are stackable. You can select the time range, as described above, and filter by clicking on anything. To select a page for example, click on one of the entries below *Pages*. This also works while the panel is enlarged. After you have selected a page, the dashboard will update itself and show statistics for the page you have selected. To clear all filters, click on the close icon in the green bar at the top or remove filters individually.
+
+![Filter](/dashboard/filter.png)
