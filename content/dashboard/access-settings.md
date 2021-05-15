@@ -2,7 +2,7 @@
 title: "Access Settings"
 date: 2021-04-08
 draft: false
-weight: 4
+weight: 3
 description: "Manage who has access to your dashboard."
 ---
 

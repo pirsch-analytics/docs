@@ -2,7 +2,7 @@
 title: "General Settings"
 date: 2021-05-14
 draft: false
-weight: 3
+weight: 2
 description: "Manage your websites settings."
 ---
 

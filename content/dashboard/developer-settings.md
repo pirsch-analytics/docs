@@ -2,7 +2,7 @@
 title: "Developer Settings"
 date: 2021-04-08
 draft: false
-weight: 5
+weight: 4
 description: "Manage integrations and other development related settings."
 ---
 
