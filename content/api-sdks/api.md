@@ -85,29 +85,27 @@ The following endpoints can be used to read statistics from Pirsch. To receive d
 
 ### Filter
 
-Here is a full example for a filter. Only the required fields need to be set when making a request.
+The following list contains all possible filter options. Only the required fields need to be set when making a request. Set the fields using URL query parameters, like `?from=2021-05-08&to=2021-05-15&language=en`.
 
-```JSON
-{
-    "from":                     "2021-05-08",                     // YYYY-MM-DD, required
-    "to":                       "2021-05-15",                     // YYYY-MM-DD, required
-    "path":                     "/home",                          // the page path
-    "language":                 "en",                             // ISO-639-1 language code, like en for English
-    "country":                  "jp",                             // ISO-3166 Alpha-2 country code, like jp for Japan
-    "referrer":                 "https://referring-website.com/", // the referrer, usually a URL or name (note that the Pirsch dashboard does trim the protocol)
-    "os":                       "Windows",                        // the operating system
-    "browser":                  "Firefox",                        // the browser
-    "platform":                 "desktop",                        // the platform, desktop, mobile, or unknown (not set)
-    "screen_class":             "XXL",                            // the screen class, XXL, XL, L, M, S
-    "utm_source":               "Newsletter",                     // the UTM source
-    "utm_medium":               "Email",                          // the UTM medium
-    "utm_campaign":             "Summer Sale",                    // the UTM campaign
-    "utm_content":              "Header",                         // the UTM content
-    "utm_term":                 "search terms",                   // the UTM term
-    "limit":                    20,                               // limits the number of results, note that this is hard limited to 100
-    "include_avg_time_on_page": true                              // set to true, to include the average time on page when reading page statistics
-}
-```
+| Parameter | Required | Example | Format/Description |
+| - | - | - | - |
+| from | yes | 2021-05-08 | YYYY-MM-DD |
+| to | yes | 2021-05-15 | YYYY-MM-DD |
+| path | no | /home | The page path |
+| language | no | en | ISO-639-1 language code, like en for English |
+| country | no | jp | ISO-3166 Alpha-2 country code, like jp for Japan |
+| referrer | no | https://referring-website.com/ | The referrer, usually a URL or name (note that the Pirsch dashboard does trim the protocol) |
+| os | no | Windows | The operating system |
+| browser | no | Firefox | The browser |
+| platform | no | desktop | The platform, desktop, mobile, or unknown (not set) |
+| screen_class | no | XXL | The screen class, XXL, XL, L, M, S |
+| utm_source | no | Newsletter | The UTM source |
+| utm_medium | no | Email | The UTM medium |
+| utm_campaign | no | Summer Sale | The UTM campaign |
+| utm_content | no | Header | The UTM content |
+| utm_term | no | search terms | The UTM term |
+| limit | no | 20 | Limits the number of results, note that this is hard limited to 100 |
+| include_avg_time_on_page | no | true | Set to true, to include the average time on page when reading page statistics |
 
 ### Session Duration
 
