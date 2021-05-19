@@ -6,6 +6,13 @@ weight: 6
 description: "Overview of all changes."
 ---
 
+## 1.3.3
+
+Release: 2021-05-19
+
+* added views to email reports
+* fixed percentage formatting in reports and colors
+
 ## 1.3.2
 
 Release: 2021-05-14
