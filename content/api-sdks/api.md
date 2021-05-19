@@ -79,6 +79,75 @@ POST https://api.pirsch.io/api/v1/hit
 
 One small optimization you can make is to check the `DNT` (Do Not Track) header before you make the request. Check if the header is set to `1`, if true you can ignore the request, otherwise send it.
 
+## Manage Domains
+
+You can create, list, and delete domains using the API. This can become handy if you plan to automate the domain management in an external tool, like a CMS that automatically adds Pirsch to the website on creation.
+
+### Create a Domain
+
+To add a new domain, send the hostname of the website and the subdomain you would like to use. The response is the full domain including the identification code required for the frontend integration.
+
+**Example request**
+
+```Bash
+POST https://api.pirsch.io/api/v1/domain
+
+{
+    "hostname": "example.com",
+    "subdomain": "example"
+}
+```
+
+**Example response**
+
+```JSON
+{
+    "id": "0a8sf7d",
+    "def_time": "2021-05-19T12:13:14.012345Z",
+    "mod_time": "2021-05-19T12:13:14.012345Z",
+    "user_id": "x3jvdfa",
+    "hostname": "example.com",
+    "subdomain": "example",
+    "identification_code": "034nf0kfdo...",
+    "public": false,
+    "google_user_id": null,
+    "google_user_email": null,
+    "gsc_domain": null,
+    "new_owner": null,
+    "user_role": "Owner"
+}
+```
+
+### List Domains
+
+This method returns the domain the client has access to. Usually this would returns all domains you have access to as a user, but clients are tied to a single domain, so the list will always contain a single result.
+
+**Example request**
+
+```Bash
+GET https://api.pirsch.io/api/v1/domain
+```
+
+**Example response**
+
+```JSON
+[
+    {
+        // domain object, see above
+    }
+]
+```
+
+### Delete Domains
+
+To delete a domain, set the domain `$ID` in the URL.
+
+**Example request**
+
+```Bash
+DELETE https://api.pirsch.io/api/v1/domain?id=$ID
+```
+
 ## Statistics
 
 The following endpoints can be used to read statistics from Pirsch. To receive data, you need to set the filter. It will be skipped in the example requests for brevity.
