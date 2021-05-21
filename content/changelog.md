@@ -6,6 +6,16 @@ weight: 6
 description: "Overview of all changes."
 ---
 
+## 1.4.0
+
+Release: unreleased
+
+* added client scopes to API
+* added support for timezones (user settings and on a domain basis)
+* added API access to create, list, and delete domains
+* fixed loading indicator position on some pages
+* fixed unique visitor sum and unique visitors by time of day sum not matching
+
 ## 1.3.3
 
 Release: 2021-05-19
