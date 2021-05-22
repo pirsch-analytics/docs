@@ -89,6 +89,7 @@ The following list contains all possible filter options. Only the required field
 
 | Parameter | Required | Example | Format/Description |
 | - | - | - | - |
+| id | yes | A5kgYzK14m | The domain ID. Use the list endpoint to get the domain ID for the client. |
 | from | yes | 2021-05-08 | YYYY-MM-DD |
 | to | yes | 2021-05-15 | YYYY-MM-DD |
 | path | no | /home | The page path |
@@ -106,6 +107,36 @@ The following list contains all possible filter options. Only the required field
 | utm_term | no | search terms | The UTM term |
 | limit | no | 20 | Limits the number of results, note that this is hard limited to 100 |
 | include_avg_time_on_page | no | true | Set to true, to include the average time on page when reading page statistics |
+
+### Getting the Domain ID
+
+Before you can make requests, you need to know the domain ID for the client. Make a request to the following endpoint and store the ID for the domain. Note that the domain will be returned in an array. The endpoint usually returns all domains a user has access to, but in this case it will always have one entry (except there is some permission error, then it will be empty).
+
+**Example request**
+
+`GET /api/v1/domain`
+
+**Example response**
+
+```JSON
+[
+    {
+        "id": "A5kgYzK14m",
+        "def_time": "2021-05-22T10:11:12.123456Z",
+        "mod_time": "2021-05-22T10:11:12.123456Z",
+        "user_id": "pzy1bjD1lv",
+        "hostname": "example.com",
+        "subdomain": "example",
+        "identification_code": "oSdiAe...",
+        "public": false,
+        "google_user_id": null,
+        "google_user_email": null,
+        "gsc_domain": null,
+        "new_owner": null,
+        "user_role": ""
+    }
+]
+```
 
 ### Session Duration
 

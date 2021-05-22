@@ -12,7 +12,7 @@ Release: unreleased
 
 * added client scopes to API
 * added support for timezones (user settings and on a domain basis)
-* added API access to create, list, and delete domains
+* added API access read domains for clients
 * fixed loading indicator position on some pages
 * fixed unique visitor sum and unique visitors by time of day sum not matching
 
