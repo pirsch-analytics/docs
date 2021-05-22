@@ -13,8 +13,8 @@ Release: unreleased
 * added client scopes to API
 * added support for timezones (user settings and on a domain basis)
 * added API access read domains for clients
+* removed visitor by time of day sum as that was confusing and didn't make much sense (the sum is correct, but has a different meaning than the unique visitor sum above)
 * fixed loading indicator position on some pages
-* fixed unique visitor sum and unique visitors by time of day sum not matching
 
 ## 1.3.3
 
