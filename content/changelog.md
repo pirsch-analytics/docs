@@ -6,6 +6,13 @@ weight: 6
 description: "Overview of all changes."
 ---
 
+## 1.4.1
+
+Release: 2021-05-25
+
+* added blog link to resources on dashboard
+* fixed preselected timezone when adding domain and on account page
+
 ## 1.4.0
 
 Release: 2021-05-25
