@@ -8,7 +8,7 @@ description: "Overview of all changes."
 
 ## 1.4.0
 
-Release: unreleased
+Release: 2021-05-25
 
 * added client scopes to API
 * added support for timezones (user settings and on a domain basis)
