@@ -1,12 +1,14 @@
 ---
 title: "API"
-date: 2021-05-15
+date: 2021-05-27
 draft: false
 weight: 1
 description: "Use the API to monitor traffic and access your data."
 ---
 
-This document describes the REST endpoints used to interact with Pirsch. The easiest way to get started is through one of the client SDKs. If you're looking on how you can integrate Pirsch into your backend to monitor traffic, please check out the [backend integration]({{<  ref "get-started/backend-integration.md"  >}}).
+This document describes the REST endpoints used to interact with Pirsch. The easiest way to get started is through one of the client SDKs. If you're looking on how you can integrate Pirsch into your backend to monitor traffic, please check out the [backend integration]({{< ref "get-started/backend-integration.md" >}}).
+
+To use the API, you must create a client. New clients can be created on the [settings page]({{< ref "dashboard/developer-settings.md" >}}).
 
 ## Error Handling
 
@@ -28,7 +30,7 @@ In case of an error, Pirsch will return a JSON object in the body describing the
 
 ## Get an Access Token
 
-To make requests to the API, you need to get an access token first. The token must be send with every request in the `Authorization` header in the format `Bearer <token>`. If you receive a status code 401 (unauthorized), you need to create a new access token and try again. `expires_at` time zone is set to UTC.
+To make requests to the API, you need to get an access token first. The token must be send with every request in the `Authorization` header in the format `Bearer <token>`. If you receive a status code 401 (unauthorized), you need to create a new access token and try again. `expires_at` timezone is set to UTC.
 
 The examples for the other endpoints in this document will omit the header.
 

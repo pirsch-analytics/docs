@@ -1,6 +1,6 @@
 ---
 title: "General Settings"
-date: 2021-05-14
+date: 2021-05-27
 draft: false
 weight: 2
 description: "Manage your websites settings."
@@ -17,6 +17,12 @@ Send email reports to yourself or external recipients every week, two weeks, thr
 ![Email Report](/dashboard/email-report.png)
 
 Please make sure you only add recipients who want to receive reports.
+
+## Timezone
+
+The timezone can be set on a per-domain basis. It will be used to display times and dates on the dashboard and to filter the results.
+
+Please note that your personal timezone (from the [account settings]({{< ref "account/account-settings.md" >}}) page) will only be used to pre-select a timezone when adding *new* domains. This ensures that you can show whatever timezone you desire on public dashboards or use the one best suited for your customers when creating a website for them.
 
 ## Search Console
 

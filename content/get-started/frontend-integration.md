@@ -1,6 +1,6 @@
 ---
 title: "Website Integration"
-date: 2021-04-22
+date: 2021-05-27
 draft: false
 weight: 1
 description: "Learn on how to integrate Pirsch into your website using JavaScript."
@@ -11,7 +11,7 @@ description: "Learn on how to integrate Pirsch into your website using JavaScrip
 Once you have created an account, you can add Pirsch to your website.
 
 1. open the dashboard and click on *Add Domain* in the menu
-2. enter the hostname of your website (like *example.com*) and chose a subdomain you would like to use for the Pirsch dashboard ![Add Domain](/integration/add-domain.png)
+2. enter the hostname of your website (like *example.com*) and chose a subdomain and timezone you would like to use for the Pirsch dashboard ![Add Domain](/integration/add-domain.png)
 3. click on *Add Domain*
 4. copy the JavaScript snippet on the right and add it to your websites `<head>` section ![Code snippet](/integration/add-domain-snippet.png)
 

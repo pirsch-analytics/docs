@@ -1,6 +1,6 @@
 ---
 title: "Developer Settings"
-date: 2021-04-08
+date: 2021-05-27
 draft: false
 weight: 4
 description: "Manage integrations and other development related settings."
@@ -18,6 +18,10 @@ The identification code is used for the JavaScript snippet which must be embedde
 
 Clients are used to access the [Pirsch API]({{< ref "api-sdks/_index.md" >}}). You will need one if you decide to use the [backend integration]({{< ref "get-started/backend-integration.md" >}}) or to access your data from an external application.
 
-To create a new client, click *Add Client* and enter a description. The next dialog will show the unique client ID and secret, which you should save and treat like a password. Once the dialog is closed, there is no way to view the secret again and you will have to create a new client.
+To create a new client, click *Add Client*, enter a description and select scopes. Scopes define what capabilities the client has. You can create a client with read-only access by unchecking all the write operations for example.
+
+![Clients](/dashboard/create-client.png)
+
+The dialog popping up will show the unique client ID and secret, which you need to save. Treat the secret like a password. Once the dialog is closed, there is no way to view the secret again. Should you lose the secret, you will have to create a new client.
 
 ![Clients](/dashboard/settings-client.png)

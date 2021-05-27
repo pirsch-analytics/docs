@@ -6,6 +6,12 @@ weight: 6
 description: "Overview of all changes."
 ---
 
+## 1.4.2
+
+Release: unreleased
+
+* fixed filter not showing today if set to today from URL parameter
+
 ## 1.4.1
 
 Release: 2021-05-25

@@ -1,6 +1,6 @@
 ---
 title: "Settings"
-date: 2021-01-16
+date: 2021-05-27
 draft: false
 weight: 3
 description: "Manage your account."
@@ -13,6 +13,10 @@ To manage your account settings, log in in to the dashboard and visit the accoun
 ## User Interface
 
 We offer a dark mode (default) and a light mode for the dashboard. You can switch between them by clicking the toggle.
+
+The default time range filter will be used to filter the statistics when no range has been selected.
+
+The timezone will be used to pre-select a timezone when adding new domains. Note that the timezone must be set on a pre-domain basis and won't be used if none is set. It will fallback to UTC in that case. You can learn more about timezones on the [website settings]({{< ref "dashboard/general-settings.md" >}}) page.
 
 ## Picture
 
