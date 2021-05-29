@@ -1,15 +1,16 @@
 ---
 title: "Changelog"
-date: 2021-05-13
+date: 2021-05-29
 draft: false
 weight: 6
 description: "Overview of all changes."
 ---
 
-## 1.4.2
+## 1.5.0
 
 Release: unreleased
 
+* added hard limit for the number of domains a user can have (to 1000 by default, as spam protection)
 * fixed filter not showing today if set to today from URL parameter
 
 ## 1.4.1
