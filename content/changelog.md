@@ -10,6 +10,12 @@ description: "Overview of all changes."
 
 Release: unreleased
 
+* added entry and exit pages
+
+## 1.4.2
+
+Release: 2021-05-30
+
 * added hard limit for the number of domains a user can have (to 1000 by default, as spam protection)
 * fixed filter not showing today if set to today from URL parameter
 
