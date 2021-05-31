@@ -11,6 +11,7 @@ description: "Overview of all changes."
 Release: unreleased
 
 * added entry and exit pages
+* fixed report colors
 
 ## 1.4.2
 
