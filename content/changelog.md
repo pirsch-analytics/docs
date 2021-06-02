@@ -11,6 +11,7 @@ description: "Overview of all changes."
 Release: unreleased
 
 * added entry and exit pages
+* optimized loading statistics (invisible panels are first loaded when needed)
 * fixed report colors
 
 ## 1.4.2
