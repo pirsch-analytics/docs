@@ -8,11 +8,12 @@ description: "Overview of all changes."
 
 ## 1.5.0
 
-Release: unreleased
+Release: 2021-06-03
 
 * added entry and exit pages
 * optimized loading statistics (invisible panels are first loaded when needed)
 * fixed report colors
+* updated dependencies
 
 ## 1.4.2
 
