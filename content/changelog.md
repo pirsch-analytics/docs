@@ -1,10 +1,16 @@
 ---
 title: "Changelog"
-date: 2021-05-29
+date: 2021-06-04
 draft: false
 weight: 7
 description: "Overview of all changes."
 ---
+
+## 1.5.1
+
+Release: unreleased
+
+* optimized loading pages and referrer (invisible panels are first loaded when needed)
 
 ## 1.5.0
 
