@@ -1,6 +1,6 @@
 ---
 title: "API"
-date: 2021-05-27
+date: 2021-06-06
 draft: false
 weight: 1
 description: "Use the API to monitor traffic and access your data."
@@ -441,6 +441,26 @@ Before you can make requests, you need to know the domain ID for the client. Mak
 ]
 ```
 
+### Operating System Version
+
+**Example request**
+
+`GET /api/v1/statistics/os`
+
+**Example response**
+
+```JSON
+[
+    {
+        "visitors": 42,
+        "relative_visitors": 0.24,
+        "os": "Windows",
+        "os_version": "10.0"
+    },
+    // ...
+]
+```
+
 ### Browser
 
 **Example request**
@@ -455,6 +475,26 @@ Before you can make requests, you need to know the domain ID for the client. Mak
         "visitors": 42,
         "relative_visitors": 0.24,
         "browser": "Firefox"
+    },
+    // ...
+]
+```
+
+### Browser Version
+
+**Example request**
+
+`GET /api/v1/statistics/browser/version`
+
+**Example response**
+
+```JSON
+[
+    {
+        "visitors": 42,
+        "relative_visitors": 0.24,
+        "browser": "Firefox",
+        "browser_version": "89.0"
     },
     // ...
 ]

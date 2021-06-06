@@ -8,9 +8,10 @@ description: "Overview of all changes."
 
 ## 1.5.1
 
-Release: unreleased
+Release: 2021-06-06
 
 * optimized loading pages and referrer (invisible panels are first loaded when needed)
+* added browser and operating system versions (enlarge the panel)
 
 ## 1.5.0
 
