@@ -6,6 +6,13 @@ weight: 7
 description: "Overview of all changes."
 ---
 
+## 1.5.2
+
+Release: 2021-06-10
+
+* remove member from domain on ownership transfer to that particular user
+* show usage for domains that have been deleted on billing page
+
 ## 1.5.1
 
 Release: 2021-06-06
