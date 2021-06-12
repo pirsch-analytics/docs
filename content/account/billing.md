@@ -1,6 +1,6 @@
 ---
 title: "Billing"
-date: 2021-03-13
+date: 2021-06-12
 draft: false
 weight: 4
 description: "Manage your subscription."
@@ -14,7 +14,7 @@ To manage your subscription, navigate to the billing page from the top right men
 
 ![Manage your subscription](/account/billing.png)
 
-The page shows your current page view usage for all of your domains. Click on *Show Details* to view individual domains. Below, you have the option to receive a warning notification by email if you reach a certain percentage of your usage limit. You can also disable it. The usage limit is updated once a day.
+The page shows your current page view usage for all of your domains (including deleted domains). Click on *Show Details* to view individual domains. Below, you have the option to receive a warning notification by email if you reach a certain percentage of your usage limit. You can also disable it. The usage limit is updated once a day.
 
 To start a subscription, select the billing cycle and subscription plan from the menu and click *Checkout*. This will redirect you to our checkout page. Payments, subscriptions, and credit card numbers are managed by [Stripe](https://stripe.com/). We do not save your payment details by ourselves. After you have subscribed, you will be redirected back to our dashboard. To change your plan, cancel your subscription, or update your payment details, click on the *Manage Your Subscription* button. This will redirect you to the Stripe portal.
 
@@ -23,6 +23,8 @@ Should you not see the *Manage Your Subscription* button after you have successf
 ## The Page View Limit
 
 The page view limit is bound to your subscription plan. On your free-trial, you will have 10,000 page views before you need to subscribe to one of our plans. The limit is updated once a day and reset after a month. You can see the reset date below the subscription limit progress bar.
+
+Deleted domains count towards your page view limit and will be reset at the end of the billing cycle.
 
 ## What Happens if I Reach the Limit?
 

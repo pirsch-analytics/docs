@@ -1,10 +1,16 @@
 ---
 title: "Changelog"
-date: 2021-06-04
+date: 2021-06-12
 draft: false
 weight: 7
 description: "Overview of all changes."
 ---
+
+## 1.5.3
+
+Release: 2021-06-12
+
+* fixed limiting access when calculating number of hits (now includes deleted domains)
 
 ## 1.5.2
 
