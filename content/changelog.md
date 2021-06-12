@@ -6,6 +6,14 @@ weight: 7
 description: "Overview of all changes."
 ---
 
+## 1.6.0
+
+Release: unreleased
+
+* added page view goals
+* updated Pirsch library
+* updated dependencies
+
 ## 1.5.3
 
 Release: 2021-06-12
