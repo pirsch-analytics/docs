@@ -11,6 +11,7 @@ description: "Overview of all changes."
 Release: unreleased
 
 * added conversion goals for pages (using a pattern)
+* added conversion goals to CSV export
 * swapped views and visitors in page details modal dialog
 * updated Pirsch library
 * updated dependencies
