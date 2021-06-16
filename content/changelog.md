@@ -10,9 +10,12 @@ description: "Overview of all changes."
 
 Release: unreleased
 
-* added page view goals
+* added conversion goals for pages (using a pattern)
+* swapped views and visitors in page details modal dialog
 * updated Pirsch library
 * updated dependencies
+* fixed updating keywords panel
+* fixed calculating relative visitors and views
 
 ## 1.5.3
 
