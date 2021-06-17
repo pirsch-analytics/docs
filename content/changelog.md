@@ -8,7 +8,7 @@ description: "Overview of all changes."
 
 ## 1.6.0
 
-Release: unreleased
+Release: 2021-06-17
 
 * added conversion goals for pages (using a pattern)
 * added conversion goals to CSV export
@@ -17,6 +17,7 @@ Release: unreleased
 * updated dependencies
 * fixed updating keywords panel
 * fixed calculating relative visitors and views
+* fixed database transaction leaks
 
 ## 1.5.3
 
