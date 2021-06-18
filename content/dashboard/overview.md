@@ -50,7 +50,7 @@ The following panels show various statistics regarding unique visitors.
 
 *Pages* shows how many visitors have visited a single page. Entry and exit pages are the pages visitors use to enter or leave your website. They can be helpful to identify issues with specific sites. When a lot of visitors leave on your checkout page, you might have an issue there.
 
-*Referrers* list all websites a visitor came from. *[UTM parameters]({{< ref "dashboard/utm.md" >}})* help you to track marketing campaigns or gain more detailed insight into referrering websites.
+*Referrers* list all websites a visitor came from. *[UTM parameters]({{< ref "features/utm.md" >}})* help you to track marketing campaigns or gain more detailed insight into referrering websites.
 
 A panel will only display the top 10 results, but you can enlarge it to see all results and more details. The *Screen Sizes* panel is only available if you have embedded the [JavaScript snippet]({{< ref "get-started/frontend-integration.md" >}}). The [backend integration]({{< ref "get-started/backend-integration.md" >}}) does not collect this metric.
 

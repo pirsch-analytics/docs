@@ -2,7 +2,7 @@
 title: "Privacy"
 date: 2021-06-03
 draft: false
-weight: 6
+weight: 7
 description: "Learn how Pirsch respects the privacy of your visitors."
 ---
 

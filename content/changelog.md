@@ -2,7 +2,7 @@
 title: "Changelog"
 date: 2021-06-12
 draft: false
-weight: 7
+weight: 8
 description: "Overview of all changes."
 ---
 
