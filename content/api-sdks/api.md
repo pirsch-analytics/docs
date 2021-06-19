@@ -8,7 +8,7 @@ description: "Use the API to monitor traffic and access your data."
 
 This document describes the REST endpoints used to interact with Pirsch. The easiest way to get started is through one of the client SDKs. If you're looking on how you can integrate Pirsch into your backend to monitor traffic, please check out the [backend integration]({{< ref "get-started/backend-integration.md" >}}).
 
-To use the API, you must create a client. New clients can be created on the [settings page]({{< ref "dashboard/developer-settings.md" >}}).
+To use the API, you must create a client. New clients can be created on the [settings page]({{< ref "settings/developer.md" >}}).
 
 ## Error Handling
 
@@ -559,7 +559,7 @@ Before you can make requests, you need to know the domain ID for the client. Mak
 
 ### Keywords
 
-This endpoints requires the [Google Search Console integration]({{< ref "dashboard/general-settings.md#search-console" >}}). **We recommend using the Search Console API directly instead of calling it through Pirsch.**
+This endpoints requires the [Google Search Console integration]({{< ref "settings/general.md#search-console" >}}). **We recommend using the Search Console API directly instead of calling it through Pirsch.**
 
 **Example request**
 

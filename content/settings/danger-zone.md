@@ -1,8 +1,8 @@
 ---
 title: "Danger Zone"
-date: 2021-04-08
+date: 2021-06-19
 draft: false
-weight: 5
+weight: 6
 description: "Delete statistics, transfer ownership or delete the website entirely."
 ---
 

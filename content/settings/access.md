@@ -1,5 +1,5 @@
 ---
-title: "Access Settings"
+title: "Access and Permissions"
 date: 2021-04-08
 draft: false
 weight: 3

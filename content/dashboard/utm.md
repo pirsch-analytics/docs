@@ -2,7 +2,7 @@
 title: "Referrer and UTM Parameters"
 date: 2021-06-18
 draft: false
-weight: 1
+weight: 3
 description: "Learn how to use referrer and UTM parameters to gain better insight on your traffic."
 ---
 

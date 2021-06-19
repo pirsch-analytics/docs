@@ -16,7 +16,7 @@ We offer a dark mode (default) and a light mode for the dashboard. You can switc
 
 The default time range filter will be used to filter the statistics when no range has been selected.
 
-The timezone will be used to pre-select a timezone when adding new domains. Note that the timezone must be set on a pre-domain basis and won't be used if none is set. It will fallback to UTC in that case. You can learn more about timezones on the [website settings]({{< ref "dashboard/general-settings.md" >}}) page.
+The timezone will be used to pre-select a timezone when adding new domains. Note that the timezone must be set on a pre-domain basis and won't be used if none is set. It will fallback to UTC in that case. You can learn more about timezones on the [website settings]({{< ref "settings/general.md" >}}) page.
 
 ## Picture
 

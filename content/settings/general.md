@@ -1,5 +1,5 @@
 ---
-title: "General Settings"
+title: "General"
 date: 2021-05-27
 draft: false
 weight: 2
