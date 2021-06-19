@@ -6,6 +6,13 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.6.1
+
+Release: 2021-06-19
+
+* improved create goals modal dialog
+* fixed path patterns for conversion goals
+
 ## 1.6.0
 
 Release: 2021-06-17
