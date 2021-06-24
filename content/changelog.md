@@ -6,6 +6,13 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.6.2
+
+Release: unreleased
+
+* fixed sending conversion goal reached emails
+* fixed link to dashboard on website
+
 ## 1.6.1
 
 Release: 2021-06-19
