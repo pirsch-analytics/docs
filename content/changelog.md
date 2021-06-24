@@ -8,7 +8,7 @@ description: "Overview of all changes."
 
 ## 1.6.2
 
-Release: unreleased
+Release: 2021-06-24
 
 * fixed sending conversion goal reached emails
 * fixed link to dashboard on website
