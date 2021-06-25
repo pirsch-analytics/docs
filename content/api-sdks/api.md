@@ -1,6 +1,6 @@
 ---
 title: "API"
-date: 2021-06-06
+date: 2021-06-25
 draft: false
 weight: 1
 description: "Use the API to monitor traffic and access your data."
@@ -91,10 +91,11 @@ The following list contains all possible filter options. Only the required field
 
 | Parameter | Required | Example | Format/Description |
 | - | - | - | - |
-| id | yes | A5kgYzK14m | The domain ID. Use the list endpoint to get the domain ID for the client. |
+| id | yes | A5kgYzK14m | The domain ID. Use the list endpoint to get the domain ID for the client |
 | from | yes | 2021-05-08 | YYYY-MM-DD |
 | to | yes | 2021-05-15 | YYYY-MM-DD |
 | path | no | /home | The page path |
+| pattern | no | (?i)^\\/path/[^\\/]+$ | A [regular expression](https://github.com/google/re2/wiki/Syntax) to filter and group pages. This option is used with [conversion goals]({{< ref "dashboard/conversion-goals.md" >}}) |
 | language | no | en | ISO-639-1 language code, like en for English |
 | country | no | jp | ISO-3166 Alpha-2 country code, like jp for Japan |
 | referrer | no | https://referring-website.com/ | The referrer, usually a URL or name (note that the Pirsch dashboard does trim the protocol) |
@@ -318,6 +319,42 @@ Before you can make requests, you need to know the domain ID for the client. Mak
     // ...
 ]
 ```
+
+### Conversion Goals
+
+**Example request**
+
+`GET /api/v1/statistics/goals`
+
+**Example response**
+
+```JSON
+[
+    {
+        "page_goal": {
+            "id": "A5kgYzK14m",
+            "def_time": "2021-05-22T10:11:12.123456Z",
+            "mod_time": "2021-05-22T10:11:12.123456Z",
+            "domain_id": "M03loiem34",
+            "name": "My Conversion Goal",
+            "path_pattern": "/path/**",
+            "pattern": "(?i)^\/path/[^\/]+$",
+            "visitor_goal": 5432,
+            "cr_goal": 42.11,
+            "delete_reached": true,
+            "email_reached": true
+        }
+        "stats": {
+            "visitors": 432,
+            "views": 563,
+            "cr": 0.065
+        }
+    },
+    // ...
+]
+```
+
+`pattern` is the regex pattern stored for the conversion goal and can be used as the `pattern` parameter in the filter. `path_pattern` is the path pattern as configured by the user on the dashboard. The `pattern` will be generated from it.
 
 ### Growth Rates
 
