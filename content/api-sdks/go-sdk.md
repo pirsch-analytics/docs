@@ -1,6 +1,6 @@
 ---
 title: "Go SDK"
-date: 2020-12-12
+date: 2021-06-26
 draft: false
 weight: 2
 description: "SDK for Golang."
@@ -53,3 +53,27 @@ if r.URL.Path == "/" {
 ```
 
 You can send a hit whenever you want. If you have a page with dynamic content for example, you can check if the content was found and send a hit in that case, or otherwise ignore it.
+
+## Accessing Your Data
+
+The client offers methods to access your statistics. Before you can use them, read the domain and construct the filter. The filter requires the domain ID and filter range to be set (start and end date). Here is an example on how to read the domain belonging to the client and constructing a simple filter (make sure you handle the errors).
+
+```Go
+domain, err := client.Domain()
+
+filter := &pirsch.Filter{
+    DomainID: domain.ID,
+    From:     time.Now().Add(-time.Hour * 24 * 7), // one week
+    To:       time.Now(),
+}
+```
+
+You can now use the filter to select results.
+
+```Go
+visitors, err := client.Visitors(filter)
+
+// do something with visitors
+```
+
+Please refer to the full documentation for more methods and data types.

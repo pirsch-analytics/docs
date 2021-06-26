@@ -1,6 +1,6 @@
 ---
 title: "JavaScript SDK"
-date: 2021-03-21
+date: 2021-06-26
 draft: false
 weight: 4
 description: "SDK for JavaScript."
@@ -57,3 +57,27 @@ if(url.pathname === "/") {
 ```
 
 You can send a hit whenever you want. If you have a page with dynamic content for example, you can check if the content was found and send a hit in that case, or otherwise ignore it.
+
+## Accessing Your Data
+
+The client offers methods to access your statistics. Before you can use them, read the domain and construct the filter. The filter requires the domain ID and filter range to be set (start and end date). Here is an example on how to read the domain belonging to the client and constructing a simple filter (make sure you handle errors).
+
+```JavaScript
+// all client methods might return an APIError, make sure to handle that...
+const domain = await client.domain() as Domain;
+
+const filter = new Filter();
+filter.id = domain.id;
+filter.from = new Date("2021-06-19");
+filter.to = new Date("2021-06-26");
+```
+
+You can now use the filter to select results.
+
+```JavaScript
+const visitors = await client.visitors(filter) as VisitorStats[];
+
+// do something with visitors
+```
+
+Please refer to the GitHub repository or inline documentation for more methods and data types.

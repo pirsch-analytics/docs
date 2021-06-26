@@ -1,6 +1,6 @@
 ---
 title: "PHP SDK"
-date: 2021-03-19
+date: 2021-06-26
 draft: false
 weight: 3
 description: "SDK for PHP."
@@ -43,3 +43,34 @@ try {
 `hit` sends all relevant data to Pirsch. Note that the call is made for all requests made by a client and will therefore lead to a lot of different paths being tracked, depending on what the PHP file does. You should make sure to call it for page requests only, and not for resource requests for example.
 
 You can send a hit whenever you want. If you have a page with dynamic content for example, you can check if the content was found and send a hit in that case, or otherwise ignore it.
+
+## Accessing Your Data
+
+The client offers methods to access your statistics. Before you can use them, read the domain and construct the filter. The filter requires the domain ID and filter range to be set (start and end date). Here is an example on how to read the domain belonging to the client and constructing a simple filter (make sure you handle errors).
+
+```PHP
+try {
+	$domain = $client->domain();
+
+	$filter = new Pirsch\Filter(); // you might need to import the Filter class if you don't use autoload
+	$filter->id = $domain->id;
+	$filter->from = "2021-06-19";
+	$filter->to = "2021-06-26";
+} catch {
+	// ...
+}
+```
+
+You can now use the filter to select results.
+
+```PHP
+try {
+	$visitors = $client->visitors($filter);
+
+	// do something with visitors
+} catch {
+	// ...
+}
+```
+
+Please refer to the GitHub repository for more methods and data types.
