@@ -6,6 +6,12 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.6.3
+
+Release: 2021-07-01
+
+* increased access token leeway to reduce errors when requests are made to a different node from the one the JWT was scheduled on
+
 ## 1.6.2
 
 Release: 2021-06-24
