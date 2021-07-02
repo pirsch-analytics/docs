@@ -10,7 +10,7 @@ description: "Overview of all changes."
 
 Release: 2021-07-02
 
-* visitors are now tracked accross days (GDPR compliant)
+* visitors are now tracked across days (GDPR compliant)
 * time on page is now limited to one hour so that idle visitors have less impact on the average time on page
 * updated dependencies
 
