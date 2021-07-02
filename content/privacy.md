@@ -1,6 +1,6 @@
 ---
 title: "Privacy"
-date: 2021-06-03
+date: 2021-07-02
 draft: false
 weight: 7
 description: "Learn how Pirsch respects the privacy of your visitors."
@@ -12,7 +12,7 @@ Unlike other web analytics solutions, Pirsch does not track your visitors. By tr
 
 ## How Does Pirsch Recognize Visitors?
 
-Pirsch makes use of the HTTP protocol to recognize visitors using a technique called fingerprinting. It generates a hash for each page visit calculated from the visitors IP address, the User-Agent header, the current date, and a salt. The date makes sure visitors won't be recognized across days, while the salt makes sure the hash has some variety between websites, so they cannot be matched. Hashing the combination of these datapoints ensures they are anonymized. **We do not use cookies**. For details, check out the [open-source core](https://github.com/pirsch-analytics/pirsch) of Pirsch.
+Pirsch makes use of the HTTP protocol to recognize visitors using a technique called fingerprinting. It generates a hash for each page visit calculated from the visitors IP address, the User-Agent header, and a salt. The salt makes sure the hash has some variety between websites, so they cannot be matched. Hashing the combination of these datapoints ensures they are anonymized. **We do not use cookies**. For details, check out the [open-source core](https://github.com/pirsch-analytics/pirsch) of Pirsch.
 
 ## What Data Do We Collect?
 

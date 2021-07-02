@@ -1,10 +1,18 @@
 ---
 title: "Changelog"
-date: 2021-06-12
+date: 2021-07-02
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
+
+## 1.6.4
+
+Release: 2021-07-02
+
+* visitors are now tracked accross days (GDPR compliant)
+* time on page is now limited to one hour so that idle visitors have less impact on the average time on page
+* updated dependencies
 
 ## 1.6.3
 
