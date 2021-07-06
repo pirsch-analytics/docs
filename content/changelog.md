@@ -6,6 +6,13 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.6.6
+
+Release: 2021-07-06
+
+* fixed link in social proof section (full width)
+* added referrer to outgoing links in social proof section
+
 ## 1.6.5
 
 Release: 2021-07-06
