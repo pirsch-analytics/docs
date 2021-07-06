@@ -6,6 +6,12 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.6.5
+
+Release: 2021-07-06
+
+* added social proof section to landing page
+
 ## 1.6.4
 
 Release: 2021-07-02
