@@ -6,6 +6,14 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.7.0
+
+Release: unreleased
+
+* added custom event tracking
+* added white background to favicon
+* updated dependencies
+
 ## 1.6.6
 
 Release: 2021-07-06
