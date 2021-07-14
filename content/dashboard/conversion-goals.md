@@ -1,9 +1,9 @@
 ---
 title: "Conversion Goals"
-date: 2021-06-19
+date: 2021-07-15
 draft: false
-weight: 2
-description: ""
+weight: 3
+description: "Measure your conversion goals for certain actions, pages, and groups of pages using wildcard selectors."
 ---
 
 Conversion goals measure how many visitors took a certain action, like visiting a blog article or a checkout page and calculate the conversion rate. You can filter the dashboard by conversion goals and track the referrers and campaigns that drive traffic. Once a set number of visitors or a conversion rate is reached, you can optionally receive a notification and automatically delete the goal.
