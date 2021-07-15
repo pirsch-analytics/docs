@@ -18,7 +18,7 @@ go get github.com/pirsch-analytics/pirsch-go-sdk
 
 ## Create a Client
 
-To use the [API]({{< ref "api-sdks/api.md" >}}), you need to create a client on the settings page first and use the client ID, the secret, and hostname to set up the SDK.
+To use the [API]({{<ref "api-sdks/api.md">}}), you need to create a client on the settings page first and use the client ID, the secret, and hostname to set up the SDK.
 
 ```Go
 import "github.com/pirsch-analytics/pirsch-go-sdk"

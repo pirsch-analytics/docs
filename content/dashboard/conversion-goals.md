@@ -10,7 +10,7 @@ Conversion goals measure how many visitors took a certain action, like visiting 
 
 ## Creating Conversion Goals
 
-Conversion Goals can be created from the [settings page]({{< ref "settings/goals-events.md" >}}).
+Conversion Goals can be created from the [settings page]({{<ref "settings/goals-events.md">}}).
 
 ## Dashboard and Filtering
 

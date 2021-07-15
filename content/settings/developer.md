@@ -8,15 +8,15 @@ description: "Manage integrations and other development related settings."
 
 ## JavaScript Snippet
 
-The snippet for the [website integration]({{< ref "get-started/frontend-integration.md" >}}). This is just here for your convenience.
+The snippet for the [website integration]({{<ref "get-started/frontend-integration.md">}}). This is just here for your convenience.
 
 ## Resetting the Identifcation Code
 
-The identification code is used for the JavaScript snippet which must be embedded on your page if you decide to use the [website integration]({{< ref "get-started/frontend-integration.md" >}}). Usually, you don't need to change it, but should your identification code get hijacked, you can reset it here. Note that you need to update all pages containing the snippet should you reset it.
+The identification code is used for the JavaScript snippet which must be embedded on your page if you decide to use the [website integration]({{<ref "get-started/frontend-integration.md">}}). Usually, you don't need to change it, but should your identification code get hijacked, you can reset it here. Note that you need to update all pages containing the snippet should you reset it.
 
 ## Clients
 
-Clients are used to access the [Pirsch API]({{< ref "api-sdks/_index.md" >}}). You will need one if you decide to use the [backend integration]({{< ref "get-started/backend-integration.md" >}}) or to access your data from an external application.
+Clients are used to access the [Pirsch API]({{<ref "api-sdks/_index.md">}}). You will need one if you decide to use the [backend integration]({{<ref "get-started/backend-integration.md">}}) or to access your data from an external application.
 
 To create a new client, click *Add Client*, enter a description and select scopes. Scopes define what capabilities the client has. You can create a client with read-only access by unchecking all the write operations for example.
 

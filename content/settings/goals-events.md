@@ -8,7 +8,7 @@ description: "Manage conversion goals and event settings."
 
 ## Goals
 
-Conversion goals are described in more detail in their own [article]({{< ref "dashboard/conversion-goals.md" >}}). You can create, edit, and remove goals and use a path pattern to group up pages.
+Conversion goals are described in more detail in their own [article]({{<ref "dashboard/conversion-goals.md">}}). You can create, edit, and remove goals and use a path pattern to group up pages.
 
 ![Goals](/dashboard/goals.png)
 

@@ -6,11 +6,11 @@ weight: 2
 description: "Learn on how to integrate Pirsch into your backend using our API and client SDKs."
 ---
 
-This guide assumes you have already added a domain to your dashboard. If that's not the case, read the [website integration article]({{< ref "get-started/frontend-integration.md" >}}).
+This guide assumes you have already added a domain to your dashboard. If that's not the case, read the [website integration article]({{<ref "get-started/frontend-integration.md">}}).
 
 ## Add Pirsch to Your Backend
 
-The backend integration is the recommended way to integrate Pirsch into your website, as it cannot be blocked by the browser. Instead of relying on a script, you will make an [API]({{< ref "api-sdks/api.md" >}}) request to monitor traffic.
+The backend integration is the recommended way to integrate Pirsch into your website, as it cannot be blocked by the browser. Instead of relying on a script, you will make an [API]({{<ref "api-sdks/api.md">}}) request to monitor traffic.
 
 ## Create a Client
 
@@ -23,7 +23,7 @@ To get started, you first need to create a client ID and secret.
 
 ## Monitor Traffic
 
-The example below shows how you can make the API requests required to get an access token and send a page hit. This is sufficient for most websites. For full reference, please visit the [API]({{< ref "api-sdks/api.md" >}}) documentation.
+The example below shows how you can make the API requests required to get an access token and send a page hit. This is sufficient for most websites. For full reference, please visit the [API]({{<ref "api-sdks/api.md">}}) documentation.
 
 First, you need to gain an access token used to authenticate other requests. You need to do this before you make the first page hit request and everytime you receive a HTTP status code 401 (unauthorized) to refresh the access token.
 
@@ -64,4 +64,4 @@ Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI...
 }
 ```
 
-As you can see, you need to send the visitors IP, full URL, User-Agent header, and a few more headers. While only the IP, URL, and User-Agent are required, we recommend to send as much of these fields as possible, as they will improve the quality of the analytics data. Don't worry, we don't store personal information like the IP address. To learn more, please read the [details on privacy]({{< ref "privacy.md" >}}).
+As you can see, you need to send the visitors IP, full URL, User-Agent header, and a few more headers. While only the IP, URL, and User-Agent are required, we recommend to send as much of these fields as possible, as they will improve the quality of the analytics data. Don't worry, we don't store personal information like the IP address. To learn more, please read the [details on privacy]({{<ref "privacy.md">}}).

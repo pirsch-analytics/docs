@@ -6,9 +6,9 @@ weight: 1
 description: "Use the API to monitor traffic and access your data."
 ---
 
-This document describes the REST endpoints used to interact with Pirsch. The easiest way to get started is through one of the client SDKs. If you're looking on how you can integrate Pirsch into your backend to monitor traffic, please check out the [backend integration]({{< ref "get-started/backend-integration.md" >}}).
+This document describes the REST endpoints used to interact with Pirsch. The easiest way to get started is through one of the client SDKs. If you're looking on how you can integrate Pirsch into your backend to monitor traffic, please check out the [backend integration]({{<ref "get-started/backend-integration.md">}}).
 
-To use the API, you must create a client. New clients can be created on the [settings page]({{< ref "settings/developer.md" >}}).
+To use the API, you must create a client. New clients can be created on the [settings page]({{<ref "settings/developer.md">}}).
 
 ## Error Handling
 
@@ -95,7 +95,7 @@ The following list contains all possible filter options. Only the required field
 | from | yes | 2021-05-08 | YYYY-MM-DD |
 | to | yes | 2021-05-15 | YYYY-MM-DD |
 | path | no | /home | The page path |
-| pattern | no | (?i)^\\/path/[^\\/]+$ | A [regular expression](https://github.com/google/re2/wiki/Syntax) to filter and group pages. This option is used with [conversion goals]({{< ref "dashboard/conversion-goals.md" >}}) |
+| pattern | no | (?i)^\\/path/[^\\/]+$ | A [regular expression](https://github.com/google/re2/wiki/Syntax) to filter and group pages. This option is used with [conversion goals]({{<ref "dashboard/conversion-goals.md">}}) |
 | language | no | en | ISO-639-1 language code, like en for English |
 | country | no | jp | ISO-3166 Alpha-2 country code, like jp for Japan |
 | referrer | no | https://referring-website.com/ | The referrer, usually a URL or name (note that the Pirsch dashboard does trim the protocol) |
@@ -596,7 +596,7 @@ Before you can make requests, you need to know the domain ID for the client. Mak
 
 ### Keywords
 
-This endpoints requires the [Google Search Console integration]({{< ref "settings/general.md#search-console" >}}). **We recommend using the Search Console API directly instead of calling it through Pirsch.**
+This endpoints requires the [Google Search Console integration]({{<ref "settings/general.md#search-console">}}). **We recommend using the Search Console API directly instead of calling it through Pirsch.**
 
 **Example request**
 

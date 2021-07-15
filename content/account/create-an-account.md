@@ -13,7 +13,7 @@ You need to have an account to access non-public dashboards and add your domains
 3. confirm your email address by clicking on the link inside the email that has been sent to you
 4. on the confirmation page, enter your password, and accept the [privacy policy](https://pirsch.io/privacy) and [terms and conditions](https://pirsch.io/terms)
 
-And you're done! You can now start adding your first domain and integrate Pirsch into your website. Make sure you read our [getting started]({{< ref "get-started/_index.md" >}}) articles.
+And you're done! You can now start adding your first domain and integrate Pirsch into your website. Make sure you read our [getting started]({{<ref "get-started/_index.md">}}) articles.
 
 ## I Didn't Receive the Confirmation Email
 
@@ -21,4 +21,4 @@ In case you didn't receive the confirmation email, please check your junk inbox,
 
 ## Privacy Policy and Terms and Conditions
 
-Make sure you've read our [privacy policy](https://pirsch.io/privacy) and [terms and conditions](https://pirsch.io/terms) before signing up. You can also read the [privacy article]({{< ref "privacy.md" >}}) to learn more about how we respect the privacy of your visitors.
+Make sure you've read our [privacy policy](https://pirsch.io/privacy) and [terms and conditions](https://pirsch.io/terms) before signing up. You can also read the [privacy article]({{<ref "privacy.md">}}) to learn more about how we respect the privacy of your visitors.

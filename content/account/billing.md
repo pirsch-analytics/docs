@@ -32,7 +32,7 @@ Should you reach the usage limit before the end of the month, your access will b
 
 ## What Happens if I Delete My Account?
 
-Should you mark your account for deletion on the [account settings page]({{< ref "account/account-settings.md" >}}), your subscription will be stopped. When your account is finally deleted, the subscription will be cancelled immediately. Should you stop the deletion process, your subscription will be continued. In case you change the subscription plan while your account is marked for deletion, the deletion will be cancelled, and you will keep your account.
+Should you mark your account for deletion on the [account settings page]({{<ref "account/account-settings.md">}}), your subscription will be stopped. When your account is finally deleted, the subscription will be cancelled immediately. Should you stop the deletion process, your subscription will be continued. In case you change the subscription plan while your account is marked for deletion, the deletion will be cancelled, and you will keep your account.
 
 ## Payment Methods
 

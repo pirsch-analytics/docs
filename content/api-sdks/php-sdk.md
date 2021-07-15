@@ -18,7 +18,7 @@ composer require pirsch-analytics/sdk
 
 ## Create a Client
 
-To use the [API]({{< ref "api-sdks/api.md" >}}), you need to create a client on the settings page first and use the client ID, the secret, and hostname to set up the SDK.
+To use the [API]({{<ref "api-sdks/api.md">}}), you need to create a client on the settings page first and use the client ID, the secret, and hostname to set up the SDK.
 
 ```PHP
 require __DIR__ . '/vendor/autoload.php'; // or require_once 'pirsch.php'; if you downloaded the file manually
