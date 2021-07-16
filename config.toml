@@ -33,6 +33,10 @@ theme = "seeker"
     title = "Pirsch Docs"
     copyright = "© 2021 Emvi Software GmbH"
     url = "https://emvi.com"
+    titleColor = "#ffffff"
+    themeColor = "#000000"
+    twitter = "@PirschAnalytics"
+    twitterCard = "product"
     pirsch = "6V8bSjEHJ19PK2hVxaaqJhItHUpSUekW"
 
 [outputFormats.SearchIndex]
