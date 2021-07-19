@@ -13,6 +13,9 @@ Release: unreleased
 * added custom event tracking
 * added white background to favicon
 * updated dependencies
+* fixed filter showing regex instead of pattern for conversion goals
+* fixed redirect to login if token runs out or is invalid
+* fixed displaying 0% in lists on the dashboard
 
 ## 1.6.6
 
