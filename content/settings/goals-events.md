@@ -1,6 +1,6 @@
 ---
 title: "Goals and Events"
-date: 2021-06-19
+date: 2021-07-23
 draft: false
 weight: 4
 description: "Manage conversion goals and event settings."
@@ -32,4 +32,4 @@ The pattern specifies a single page or a group of pages. You can use single or d
 
 ## Events
 
-Coming soon.
+Events are described in more detail in their own [article]({{<ref "dashboard/events.md">}}). To send events, copy the JavaScript snippet and add it to the `head` section of your website or use the [API]({{<ref "api-sdks/api.md">}}).

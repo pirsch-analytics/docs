@@ -6,6 +6,18 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.7.2
+
+Release: 2021-07-23
+
+* added missing event average duration to panel and metadata
+
+## 1.7.1
+
+Release: 2021-07-23
+
+* fixed event metadata value label in table
+
 ## 1.7.0
 
 Release: 2021-07-23

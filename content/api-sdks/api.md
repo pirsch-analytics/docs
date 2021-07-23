@@ -1,6 +1,6 @@
 ---
 title: "API"
-date: 2021-06-25
+date: 2021-07-23
 draft: false
 weight: 1
 description: "Use the API to monitor traffic and access your data."
@@ -56,7 +56,7 @@ POST https://api.pirsch.io/api/v1/token
 
 ## Sending a Page Hit
 
-This endpoint is used to send page hits to Pirsch. It requires you to send information about the request made by the client. How you get these depends on the programming language and framework you're using. The example shows which fields are required and which are optional. We recommend to send all of them to make the results as accurate as possible.
+This endpoint is used to send page hits to Pirsch. It requires you to send information about the request made by the client. How you get these depends on the programming language and framework you're using. The example shows which fields are required and which are optional. We recommend sending all of them to make the results as accurate as possible.
 
 **Example request**
 
@@ -80,6 +80,43 @@ POST https://api.pirsch.io/api/v1/hit
 ```
 
 One small optimization you can make is to check the `DNT` (Do Not Track) header before you make the request. Check if the header is set to `1`, if true you can ignore the request, otherwise send it.
+
+## Sending an Event
+
+This endpoint is used to send events to Pirsch. It requires you to send information about the request made by the client. How you get these depends on the programming language and framework you're using. The example shows which fields are required and which are optional. We recommend sending all of them to make the results as accurate as possible.
+
+**Example request**
+
+*Fields with underscores are comments.*
+
+```Bash
+POST https://api.pirsch.io/api/v1/event
+
+{
+    "event_name":       "Button Clicked",
+    "_duration":        "event_duration is an optional number of seconds.",
+    "event_duration":   42,
+    "_metadata":        "event_meta is a single dimension object of scalar values (strings, numbers, and booleans)."
+    "event_meta": {
+        "key":             "value",
+        "metadata fields": "are optional"
+    },
+
+    "_hit":             "The fields below are the same as for hits."
+    "url":              "https://example.com/full/url?including=parameters",
+    "ip":               "123.456.789.0",
+    "cf_connecting_ip": "CF-Connecting-IP header (optional)",
+    "x_forwarded_for":  "X-Forwarded-For header (optional)",
+    "forwarded":        "Forwarded header (optional)",
+    "x_real_ip"         "X-Real-IP header (optional)",
+    "dnt":              "DNT header (optional)",
+    "user_agent":       "User-Agent header",
+    "accept_language":  "Accept-Language header (optional)",
+    "referrer" :        "Referer header (optional)",
+    "screen_width":     1920,
+    "screen_height":    1080
+}
+```
 
 ## Statistics
 
