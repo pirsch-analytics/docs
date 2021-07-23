@@ -8,14 +8,17 @@ description: "Overview of all changes."
 
 ## 1.7.0
 
-Release: unreleased
+Release: 2021-07-23
 
 * added custom event tracking
+* added custom events to CSV export (not including metadata yet)
 * added white background to favicon
+* simplified email report content
 * updated dependencies
 * fixed filter showing regex instead of pattern for conversion goals
 * fixed redirect to login if token runs out or is invalid
 * fixed displaying 0% in lists on the dashboard
+* fixed charts in panels on Safari
 
 ## 1.6.6
 
