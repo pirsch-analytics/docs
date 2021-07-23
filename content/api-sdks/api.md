@@ -133,6 +133,8 @@ The following list contains all possible filter options. Only the required field
 | to | yes | 2021-05-15 | YYYY-MM-DD |
 | path | no | /home | The page path |
 | pattern | no | (?i)^\\/path/[^\\/]+$ | A [regular expression](https://github.com/google/re2/wiki/Syntax) to filter and group pages. This option is used with [conversion goals]({{<ref "dashboard/conversion-goals.md">}}) |
+| event | no | Button clicked | The name of an event to filter for. |
+| event_meta_key | no | Clicks | The event meta key to filter for. This field is used to break down a single event. |
 | language | no | en | ISO-639-1 language code, like en for English |
 | country | no | jp | ISO-3166 Alpha-2 country code, like jp for Japan |
 | referrer | no | https://referring-website.com/ | The referrer, usually a URL or name (note that the Pirsch dashboard does trim the protocol) |
@@ -392,6 +394,54 @@ Before you can make requests, you need to know the domain ID for the client. Mak
 ```
 
 `pattern` is the regex pattern stored for the conversion goal and can be used as the `pattern` parameter in the filter. `path_pattern` is the path pattern as configured by the user on the dashboard. The `pattern` will be generated from it.
+
+### Events
+
+This endpoint lists all events and their metadata keys. You can use the event metadata endpoint to receive the values for the event and a key.
+
+**Example request**
+
+`GET /api/v1/statistics/events`
+
+**Example response**
+
+```JSON
+[
+    {
+        "name": "event name",
+        "visitors": 432,
+        "views": 563,
+        "cr": 0.065,
+        "average_duration_seconds": 42,
+        "meta_keys": ["meta", "keys"]
+    },
+    // ...
+]
+```
+
+### Event Metadata
+
+This endpoint will break down the event meta keys and values for a single event. You must filter for an event name and meta key in order for this to work.
+
+**Example request**
+
+`GET /api/v1/statistics/event/meta`
+
+**Example response**
+
+```JSON
+[
+    {
+        "name": "event name",
+        "visitors": 432,
+        "views": 563,
+        "cr": 0.065,
+        "average_duration_seconds": 42,
+        "meta_value": "value",
+    },
+    // ...
+]
+```
 
 ### Growth Rates
 
