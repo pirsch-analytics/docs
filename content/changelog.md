@@ -6,6 +6,13 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.7.3
+
+Release: 2021-07-24
+
+* fixed event scope being used to send hits
+* fixed missing event scope when creating JWTs
+
 ## 1.7.2
 
 Release: 2021-07-23
