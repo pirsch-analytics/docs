@@ -1,6 +1,6 @@
 ---
 title: "PHP SDK"
-date: 2021-06-26
+date: 2021-07-24
 draft: false
 weight: 3
 description: "SDK for PHP."
@@ -43,6 +43,20 @@ try {
 `hit` sends all relevant data to Pirsch. Note that the call is made for all requests made by a client and will therefore lead to a lot of different paths being tracked, depending on what the PHP file does. You should make sure to call it for page requests only, and not for resource requests for example.
 
 You can send a hit whenever you want. If you have a page with dynamic content for example, you can check if the content was found and send a hit in that case, or otherwise ignore it.
+
+## Send an Event
+
+You can send [events]({{<ref "dashboard/events.md">}}) to Pirsch including custom metadata fields and a duration. This is done by calling the `event` method.
+
+```PHP
+try {
+	$client->event('Event Name', 42, ['meta' => 'data', 'clicks' => '19']);
+} catch(Exception $e) {
+	// something went wrong...
+}
+```
+
+`event` takes the event name, the duration and a metadata map and sends all relevant data to Pirsch.
 
 ## Accessing Your Data
 

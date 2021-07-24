@@ -1,6 +1,6 @@
 ---
 title: "JavaScript SDK"
-date: 2021-06-26
+date: 2021-07-24
 draft: false
 weight: 4
 description: "SDK for JavaScript."
@@ -57,6 +57,20 @@ if(url.pathname === "/") {
 ```
 
 You can send a hit whenever you want. If you have a page with dynamic content for example, you can check if the content was found and send a hit in that case, or otherwise ignore it.
+
+## Send an Event
+
+You can send [events]({{<ref "dashboard/events.md">}}) to Pirsch including custom metadata fields and a duration. This is done by calling the `event` method from a handler function.
+
+```JavaScript
+http.createServer((req, res) => {
+    client.event("Event Name", client.hitFromRequest(req), 42, {meta: "data", clicks: 19}).catch(e => {
+        console.log(e);
+    });
+}).listen(8080);
+```
+
+`event` takes the event name, the hit object, the duration and a metadata map and sends all relevant data to Pirsch.
 
 ## Accessing Your Data
 
