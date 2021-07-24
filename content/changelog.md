@@ -6,6 +6,13 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.7.4
+
+Release: 2021-07-24
+
+* updated pirsch.js ("modernized")
+* updated pirsch-events.js to return a promise
+
 ## 1.7.3
 
 Release: 2021-07-24
