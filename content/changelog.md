@@ -6,6 +6,12 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.7.5
+
+Release: 2021-07-25
+
+* added registration event to website
+
 ## 1.7.4
 
 Release: 2021-07-24
