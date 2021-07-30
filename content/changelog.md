@@ -6,6 +6,14 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.7.6
+
+Release: 2021-07-29
+
+* updated landing page
+* fixed double minus sign in reports
+* fixed loading metadata if no keys are present
+
 ## 1.7.5
 
 Release: 2021-07-25
