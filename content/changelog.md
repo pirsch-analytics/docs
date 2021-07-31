@@ -8,7 +8,7 @@ description: "Overview of all changes."
 
 ## 1.7.7
 
-Release: unreleased
+Release: 2021-07-31
 
 * enabled tax ID collection on checkout
 
