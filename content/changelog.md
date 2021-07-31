@@ -6,6 +6,12 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.7.7
+
+Release: unreleased
+
+* enabled tax ID collection on checkout
+
 ## 1.7.6
 
 Release: 2021-07-29
