@@ -6,6 +6,14 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.7.8
+
+Release: unreleased
+
+* added "yesterday" option to time range filter
+* added news modal dialog
+* added event metadata to CSV export
+
 ## 1.7.7
 
 Release: 2021-07-31
