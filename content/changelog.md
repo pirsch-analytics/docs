@@ -12,7 +12,8 @@ Release: unreleased
 
 * added "yesterday" option to time range filter
 * added news modal dialog
-* small improvements to the website, links, and more
+* small improvements to the website, settings, and more
+* updated dependencies
 
 ## 1.7.7
 
