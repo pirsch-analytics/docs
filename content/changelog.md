@@ -13,6 +13,7 @@ Release: unreleased
 * added "yesterday" option to time range filter
 * added news modal dialog
 * added event metadata to CSV export
+* small improvements to the website, links, and more
 
 ## 1.7.7
 
