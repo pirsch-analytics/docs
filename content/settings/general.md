@@ -43,6 +43,6 @@ In case you would like to remove the integration, click on *Unlink Account*.
 
 ## Export to CSV
 
-You can export your data for the last 12 months. Click on *Export Data to CSV* and select the start date and end date. Click on *Create CSV File* to start the download. The statistics are separated into individual CSV files and bundled within a zip archive.
+You can export your data for the past 12 months. Click on *Export Data to CSV*, select the statistics you would like to export, start date, end date, and click on *Create CSV File* to begin the download. The statistics are separated into individual CSV files and bundled within a zip archive. Event metadata cannot be exported.
 
 ![CSV Export](/dashboard/csv-export.png)
