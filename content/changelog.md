@@ -14,6 +14,7 @@ Release: unreleased
 * added news modal dialog
 * small improvements to the website, settings, and more
 * updated dependencies
+* fixed reading email report domains
 
 ## 1.7.7
 
