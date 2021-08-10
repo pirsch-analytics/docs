@@ -8,7 +8,7 @@ description: "Overview of all changes."
 
 ## 1.7.8
 
-Release: unreleased
+Release: 2021-08-10
 
 * added "yesterday" option to time range filter
 * added news modal dialog
