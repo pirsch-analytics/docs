@@ -6,6 +6,14 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.7.9
+
+Release: 2021-08-13
+
+* added more testimonials to website
+* fixed default time range interval for public dashboards (back to one week)
+* updated dependencies
+
 ## 1.7.8
 
 Release: 2021-08-10
