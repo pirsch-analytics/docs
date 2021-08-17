@@ -6,6 +6,12 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.7.10
+
+Release: 2021-08-17
+
+* added JavaScript event function mock for easier debugging
+
 ## 1.7.9
 
 Release: 2021-08-13
