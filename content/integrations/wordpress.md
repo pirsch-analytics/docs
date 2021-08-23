@@ -2,7 +2,7 @@
 title: "WordPress"
 date: 2021-03-23
 draft: false
-weight: 3
+weight: 1
 description: "Learn how to integrate Pirsch into wordpress."
 ---
 
