@@ -6,6 +6,14 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.8.0
+
+Release: unreleased
+
+* numbers are now shortened when greater than 1000 (displayed as 1.2k and 1.23m)
+* added titles to all numbers to display their raw value (31% = 0.3195..., 1.2k = 1234, and so on)
+* fixed displaying hours in durations
+
 ## 1.7.10
 
 Release: 2021-08-17
