@@ -14,6 +14,7 @@ Release: unreleased
 * added titles to all numbers to display their raw value (31% = 0.3195..., 1.2k = 1234, and so on)
 * added active domain to URL so that it sets the correct domain when sharing a link to a private dashboard
 * added descriptive time interval values to the URL (like "today", "7d", ... instead of the index)
+* added text filter to modal dialogues
 * fixed displaying hours in durations
 * fixed deleting conversion goals when deleting domain
 
