@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-date: 2021-07-02
+date: 2021-08-26
 draft: false
 weight: 8
 description: "Overview of all changes."
@@ -17,6 +17,7 @@ Release: unreleased
 * added text filter to modal dialogues
 * fixed displaying hours in durations
 * fixed deleting conversion goals when deleting domain
+* fixed deleting conversion goals when deleting account
 
 ## 1.7.10
 
