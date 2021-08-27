@@ -15,9 +15,12 @@ Release: unreleased
 * added active domain to URL so that it sets the correct domain when sharing a link to a private dashboard
 * added descriptive time interval values to the URL (like "today", "7d", ... instead of the index)
 * added text filter to modal dialogues
+* added dynamic page view limit to overwrite default plans
+* added country flags
 * fixed displaying hours in durations
 * fixed deleting conversion goals when deleting domain
 * fixed deleting conversion goals when deleting account
+* updated dependencies
 
 ## 1.7.10
 
