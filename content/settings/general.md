@@ -26,7 +26,7 @@ Please note that your personal timezone (from the [account settings]({{<ref "acc
 
 ## Grouping Pages
 
-Pirsch supports two ways to group page statistics. The default is to use the path without any parameters, like `/my/page`). You can change it to group pages by the title instead. This can be useful if you use dynamically generated pages, like `/my/article?id=123`. The two options cannot be mixed. If you use the second option, make sure you sent the page title for every page view (pirsch.js does this automatically). We recommend using the human-readable paths (the default), as they are more user-friendly and reliable (users can add any parameter they want to the URL).
+Pirsch supports two ways to group page statistics. The default is to use the path without any parameters, like `/my/page`). You can change it to group pages by the title instead. This can be useful if you use dynamically generated pages, like `/my/article?id=123`. The two options cannot be mixed. If you use the second option, make sure you sent the page title for every page view (pirsch.js does this automatically). We recommend using the human-readable paths (the default), as they are more user-friendly.
 
 ## Search Console
 
