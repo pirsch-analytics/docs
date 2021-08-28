@@ -24,6 +24,10 @@ The timezone can be set on a per-domain basis. It will be used to display times 
 
 Please note that your personal timezone (from the [account settings]({{<ref "account/account-settings.md">}}) page) will only be used to pre-select a timezone when adding *new* domains. This ensures that you can show whatever timezone you desire on public dashboards or use the one best suited for your customers when creating a website for them.
 
+## Grouping Pages
+
+Pirsch supports two ways to group page statistics. The default is to use the path without any parameters, like `/my/page`). You can change it to group pages by the title instead. This can be useful if you use dynamically generated pages, like `/my/article?id=123`. The two options cannot be mixed. If you use the second option, make sure you sent the page title for every page view (pirsch.js does this automatically). We recommend using the human-readable paths (the default), as they are more user-friendly and reliable (users can add any parameter they want to the URL).
+
 ## Search Console
 
 The integration can be used to connect your dashboard to Google Search Console. After activation, it will show a list of keywords on the dashboard visitors use to find your website. We use the minimal amount of data required to connect to your account. This includes your user ID, email address, and a refresh token. You can remove Pirsch from your account by navigating to the [Account Permissions](https://myaccount.google.com/permissions) page for your Google account.

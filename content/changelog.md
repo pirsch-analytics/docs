@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-date: 2021-08-26
+date: 2021-08-28
 draft: false
 weight: 8
 description: "Overview of all changes."
@@ -8,7 +8,7 @@ description: "Overview of all changes."
 
 ## 1.8.0
 
-Release: unreleased
+Release: 2021-08-28
 
 * numbers are now shortened when greater than 1000 (displayed as 1.2k and 1.23m)
 * added titles to all numbers to display their raw value (31% = 0.3195..., 1.2k = 1234, and so on)
@@ -17,9 +17,11 @@ Release: unreleased
 * added text filter to modal dialogues
 * added dynamic page view limit to overwrite default plans
 * added country flags
+* added grouping page results by title instead of path (for dynamic pages, like `/article?id=123`)
 * fixed displaying hours in durations
 * fixed deleting conversion goals when deleting domain
 * fixed deleting conversion goals when deleting account
+* fixed updating domain on settings page
 * updated dependencies
 
 ## 1.7.10
