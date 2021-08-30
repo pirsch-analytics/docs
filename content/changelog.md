@@ -6,6 +6,12 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.8.1
+
+Release: 2021-08-30
+
+* added response to JWT middleware
+
 ## 1.8.0
 
 Release: 2021-08-28
