@@ -6,6 +6,12 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.8.2
+
+Release: 2021-08-31
+
+* fixed UTM parameters when using pirsch.js and encode URL parameters
+
 ## 1.8.1
 
 Release: 2021-08-30
