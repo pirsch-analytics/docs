@@ -62,7 +62,7 @@ The function returns a promise you can use to continue with your code after the 
 
 ### Example 2
 
-Here is an example on how you can sent an event by clicking a link.
+Here is an example on how you can send an event by clicking a link.
 
 ```HTML
 <a href="https://external-page.com/" target="_blank" onclick="pirsch('Link Clicked')">Visit external page</a>
