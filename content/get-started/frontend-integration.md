@@ -1,6 +1,6 @@
 ---
 title: "Website Integration"
-date: 2021-05-27
+date: 2021-09-02
 draft: false
 weight: 1
 description: "Learn on how to integrate Pirsch into your website using JavaScript."
@@ -30,7 +30,7 @@ In case you don't, check your identification code and the domain you have config
 Your website is identified by the hostname the request is made from and an identification code. The identification code must be placed inside the JavaScript snippet. Should you ever need to recreate the code, navigate to the *Settings* page for your website and click on *Generate a New Identification Code*. This will invalidate your active code and create a new one you need to place the old one with.
 
 ```html
-<script type="text/javascript" src="https://api.pirsch.io/pirsch.js" 
+<script defer type="text/javascript" src="https://api.pirsch.io/pirsch.js" 
     id="pirschjs" 
     data-code="YOUR_IDENTIFICATION_CODE"></script>
 ```
