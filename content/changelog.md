@@ -6,6 +6,12 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.8.3
+
+Release: 2021-09-02
+
+* fixed pirsch-events.js parameter encoding
+
 ## 1.8.2
 
 Release: 2021-08-31
