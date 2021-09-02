@@ -1,6 +1,6 @@
 ---
 title: "Events"
-date: 2021-08-17
+date: 2021-09-02
 draft: false
 weight: 4
 description: "Events allow you to track actions and attach metadata to them."
@@ -27,6 +27,8 @@ Before you can send your first event, you need to add the JavaScript snippet to 
 ```
 
 The `data-code` is the identification code for your domain. Should you reset it (below the **Developer** tab), you will also have to replace it in the snippet.
+
+### Example 1
 
 You can now start sending events. Here is a simple example of how to send an event with a button click.
 
@@ -57,6 +59,14 @@ You can now start sending events. Here is a simple example of how to send an eve
 The script sends an event on each button click and adds one to the counter. The important part here is the invocation of the `pirsch` function. The first parameter is the event name, followed by optional parameters. The `duration` parameter can be used to send a number (seconds) with the event which will be used to calculate the average duration. This can be the time on page for example, or anything you want, like the time it took to read a blog article. The `meta` parameter is an object containing key-value pairs and is displayed below the event on the dashboard. Attached metadata can later be used to further break down the event. Note that you can only use scalar values (strings, numbers, and booleans). There is no limit to the number of metadata fields you can send.
 
 The function returns a promise you can use to continue with your code after the event was sent or handle any errors. We recommend that you perform your action even if the event cannot be sent, to prevent any disruptions.
+
+### Example 2
+
+Here is an example on how you can sent an event by clicking a link.
+
+```HTML
+<a href="https://external-page.com/" target="_blank" onclick="pirsch('Link Clicked')">Visit external page</a>
+```
 
 ### Testing
 
