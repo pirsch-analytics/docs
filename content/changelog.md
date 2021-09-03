@@ -6,6 +6,14 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.8.4
+
+Release: unreleased
+
+* added defer to JavaScript snippets
+* added different number formatting for axis and values to charts
+* platforms (desktop, mobile, unknown) with no visitors are now hidden
+
 ## 1.8.3
 
 Release: 2021-09-02
