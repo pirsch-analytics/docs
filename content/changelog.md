@@ -8,7 +8,7 @@ description: "Overview of all changes."
 
 ## 1.8.4
 
-Release: unreleased
+Release: 2021-09-04
 
 * added defer to JavaScript snippets
 * added different number formatting for axis and values to charts
