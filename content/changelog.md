@@ -13,6 +13,9 @@ Release: unreleased
 * added defer to JavaScript snippets
 * added different number formatting for axis and values to charts
 * platforms (desktop, mobile, unknown) with no visitors are now hidden
+* added more screen classes
+* updated Pirsch library
+* updated dependencies
 
 ## 1.8.3
 
