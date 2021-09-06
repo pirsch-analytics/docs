@@ -6,6 +6,13 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.8.5
+
+Release: unreleased
+
+* changed session time from 15 to 30 minutes
+* updated website
+
 ## 1.8.4
 
 Release: 2021-09-04

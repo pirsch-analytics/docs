@@ -1,6 +1,6 @@
 ---
 title: "Overview"
-date: 2021-06-19
+date: 2021-09-06
 draft: false
 weight: 1
 description: "Get an overview over the dashboard."
@@ -38,7 +38,7 @@ Below the menu, you will find the panels showing different statistics. Some of t
 
 The first three panels show the page views, unique visitors, and sessions. If you click on one of them you can enlarge the graph. The panels include the growth rate relative to the previous time range (the past week when the filter is set to the past 7 days for example) and are colored in green, red, or yellow depending on if they have increased, decreased, or remained the same.
 
-Page views and unique visitors are self-explanatory. Sessions tells you the number of recurring visitors for the day, corresponding to a 15-minute time frame.
+Page views and unique visitors are self-explanatory. Sessions tells you the number of recurring visitors for the day, corresponding to a 30-minute time frame.
 
 ### Bounce Rate, Average Session Duration, and Unique Visitors Today
 
