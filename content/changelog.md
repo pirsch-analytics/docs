@@ -8,7 +8,7 @@ description: "Overview of all changes."
 
 ## 1.8.5
 
-Release: unreleased
+Release: 2021-09-07
 
 * changed session time from 15 to 30 minutes
 * updated website
