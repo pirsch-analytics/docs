@@ -6,6 +6,12 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.8.6
+
+Release: 2021-09-07
+
+* updated Pirsch library
+
 ## 1.8.5
 
 Release: 2021-09-07
