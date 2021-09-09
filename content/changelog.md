@@ -6,6 +6,13 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.8.7
+
+Release: unreleased
+
+* added gzip compression to pirsch.js, pirsch-event.js, and pictures
+* added filter inversion
+
 ## 1.8.6
 
 Release: 2021-09-07
