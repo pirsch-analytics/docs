@@ -12,6 +12,10 @@ Release: unreleased
 
 * added gzip compression to pirsch.js, pirsch-event.js, and pictures
 * added filter inversion
+* added individual pages for each settings tab
+* added dashboard button (the logo will be used differently in the future)
+* updated Pirsch library
+* updated dependencies
 
 ## 1.8.6
 
