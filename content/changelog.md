@@ -8,12 +8,13 @@ description: "Overview of all changes."
 
 ## 1.8.7
 
-Release: unreleased
+Release: 2021-09-10
 
 * added gzip compression to pirsch.js, pirsch-event.js, and pictures
 * added filter inversion
 * added individual pages for each settings tab
 * added dashboard button (the logo will be used differently in the future)
+* fixed filtering by unknown/none in detailed view
 * updated Pirsch library
 * updated dependencies
 
