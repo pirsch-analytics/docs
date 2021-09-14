@@ -1,10 +1,17 @@
 ---
 title: "Changelog"
-date: 2021-08-28
+date: 2021-09-14
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
+
+## 1.8.8
+
+Release: 2021-09-14
+
+* show individual usage limits on billing page
+* updated Pirsch library
 
 ## 1.8.7
 
