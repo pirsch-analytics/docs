@@ -6,6 +6,12 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.8.9
+
+Release: 2021-09-16
+
+* updated website and dashboard UI
+
 ## 1.8.8
 
 Release: 2021-09-14
