@@ -1,6 +1,6 @@
 ---
 title: "API"
-date: 2021-07-23
+date: 2021-09-24
 draft: false
 weight: 1
 description: "Use the API to monitor traffic and access your data."
@@ -638,6 +638,25 @@ This endpoint will break down the event meta keys and values for a single event.
         "visitors": 42,
         "relative_visitors": 0.24,
         "country": "jp"
+    },
+    // ...
+]
+```
+
+### City
+
+**Example request**
+
+`GET /api/v1/statistics/city`
+
+**Example response**
+
+```JSON
+[
+    {
+        "visitors": 42,
+        "relative_visitors": 0.24,
+        "city": "London"
     },
     // ...
 ]
