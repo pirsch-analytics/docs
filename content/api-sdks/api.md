@@ -1,6 +1,6 @@
 ---
 title: "API"
-date: 2021-07-23
+date: 2021-09-25
 draft: false
 weight: 1
 description: "Use the API to monitor traffic and access your data."
@@ -132,14 +132,20 @@ The following list contains all possible filter options. Only the required field
 | from | yes | 2021-05-08 | YYYY-MM-DD |
 | to | yes | 2021-05-15 | YYYY-MM-DD |
 | path | no | /home | The page path |
+| entry_path | no | /home | The entry page path |
+| exit_path | no | /yte | The exit page path |
 | pattern | no | (?i)^\\/path/[^\\/]+$ | A [regular expression](https://github.com/google/re2/wiki/Syntax) to filter and group pages. This option is used with [conversion goals]({{<ref "dashboard/conversion-goals.md">}}) |
 | event | no | Button clicked | The name of an event to filter for. |
 | event_meta_key | no | Clicks | The event meta key to filter for. This field is used to break down a single event. |
 | language | no | en | ISO-639-1 language code, like en for English |
 | country | no | jp | ISO-3166 Alpha-2 country code, like jp for Japan |
+| city | no | London | Name of a city |
 | referrer | no | https://referring-website.com/ | The referrer, usually a URL or name (note that the Pirsch dashboard does trim the protocol) |
+| referrer_name | no | referring-website.com | The referrer name, usually the hostname |
 | os | no | Windows | The operating system |
+| os_version | no | 10.0 | The operating system version |
 | browser | no | Firefox | The browser |
+| browser_version | no | 89.0 | The browser version |
 | platform | no | desktop | The platform, desktop, mobile, or unknown (not set) |
 | screen_class | no | XXL | The screen class, XXL, XL, L, M, S |
 | utm_source | no | Newsletter | The UTM source |
@@ -148,6 +154,7 @@ The following list contains all possible filter options. Only the required field
 | utm_content | no | Header | The UTM content |
 | utm_term | no | search terms | The UTM term |
 | limit | no | 20 | Limits the number of results, note that this is hard limited to 100 |
+| include_title | no | true | Set to true, to include the page title when reading statistics |
 | include_avg_time_on_page | no | true | Set to true, to include the average time on page when reading page statistics |
 
 ### Getting the Domain ID
@@ -346,6 +353,7 @@ Before you can make requests, you need to know the domain ID for the client. Mak
 [
     {
         "path": "/home",
+        "title": "Home",
         "visitors": 42,
         "views": 56,
         "sessions": 48,
@@ -354,6 +362,49 @@ Before you can make requests, you need to know the domain ID for the client. Mak
         "relative_views": 0.298,
         "bounce_rate": 0.765,
         "average_time_spent_seconds": 42
+    },
+    // ...
+]
+```
+
+### Entry Pages
+
+**Example request**
+
+`GET /api/v1/statistics/page/entry`
+
+**Example response**
+
+```JSON
+[
+    {
+        "path": "/home",
+        "title": "Home",
+        "visitors": 42,
+        "entries": 56,
+        "entry_rate": 0.298,
+        "average_time_spent_seconds": 42
+    },
+    // ...
+]
+```
+
+### Exit Pages
+
+**Example request**
+
+`GET /api/v1/statistics/page/exit`
+
+**Example response**
+
+```JSON
+[
+    {
+        "path": "/bye",
+        "title": "Bye",
+        "visitors": 42,
+        "exits": 56,
+        "exit_rate": 0.298
     },
     // ...
 ]
@@ -538,6 +589,7 @@ This endpoint will break down the event meta keys and values for a single event.
         "referrer_name": "Name",
         "referrer_icon": "Icon",
         "visitors": 42,
+        "sessions": 123,
         "relative_visitors": 0.256,
         "bounces": 21,
         "bounce_rate": 0.5
@@ -638,6 +690,25 @@ This endpoint will break down the event meta keys and values for a single event.
         "visitors": 42,
         "relative_visitors": 0.24,
         "country": "jp"
+    },
+    // ...
+]
+```
+
+### City
+
+**Example request**
+
+`GET /api/v1/statistics/city`
+
+**Example response**
+
+```JSON
+[
+    {
+        "visitors": 42,
+        "relative_visitors": 0.24,
+        "city": "London"
     },
     // ...
 ]

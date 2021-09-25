@@ -1,6 +1,6 @@
 ---
 title: "Billing"
-date: 2021-06-12
+date: 2021-09-24
 draft: false
 weight: 4
 description: "Manage your subscription."
@@ -8,7 +8,7 @@ description: "Manage your subscription."
 
 ## Managing Your Subscription
 
-After your 30 day free-trial or 10,000 page visits, you will have to subscribe to keep using our service. You will be notified a few days before your trial ends, so that you will have enough time to subscribe. Should you decide not to upgrade, we will stop analyzing the traffic for your websites and the date filter on the dashboard will be limited to the end date of your free-trial.
+After your 60 day free-trial or 100,000 page visits, you will have to subscribe to keep using our service. You will be notified a few days before your trial ends, so that you will have enough time to subscribe. Should you decide not to upgrade, we will stop analyzing the traffic for your websites and the date filter on the dashboard will be limited to the end date of your free-trial.
 
 To manage your subscription, navigate to the billing page from the top right menu (on your name).
 
@@ -22,7 +22,7 @@ Should you not see the *Manage Your Subscription* button after you have successf
 
 ## The Page View Limit
 
-The page view limit is bound to your subscription plan. On your free-trial, you will have 10,000 page views before you need to subscribe to one of our plans. The limit is updated once a day and reset after a month. You can see the reset date below the subscription limit progress bar.
+The page view limit is bound to your subscription plan. On your free-trial, you will have 100,000 page views before you need to subscribe to one of our plans. The limit is updated once a day and reset after a month. You can see the reset date below the subscription limit progress bar.
 
 Deleted domains count towards your page view limit and will be reset at the end of the billing cycle.
 
