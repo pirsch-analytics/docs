@@ -6,9 +6,43 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.9.1
+
+Release: 2021-09-25
+
+* fixed referrer modal dialog
+
 ## 1.9.0
 
-Release: unreleased
+Release: 2021-09-25
+
+### Changes to the Dashboard
+
+* referrers are now grouped by hostname (if possible)
+* filtering for a referrer will reveal the full list of links visitors came from
+* statistics can now be filtered by the entry and exit page, in addition to the regular page filter
+* the entry and exit page panels now include the entry and exit rates
+* filtering for a country now displays a city panel
+* statistics can now be filtered by "unknown" and are displayed as "null" in the filter list (e.g. "Referrer is null")
+* tabs in panels are no longer reset to the first tab if you change the filter
+
+### Technical Changes to the Core
+
+* added rolling forward page view information for deeper analysis of sessions
+* added filtering for entry and exit page
+* added filtering for "none"/"unknown" (empty strings) by setting a filter to "null"
+* added all statistics available for hits to events as well
+* added optional limit for active visitor statistics
+* added merging referrers by hostname and detailed statistics by filtering for the referrer name
+* added city statistics
+* added method to clear session cache to tracker
+* optimized data layout
+* optimized statistics queries
+* optimized filter (non required fields are now longer selected)
+* the User-Agent header is now stored in a separate table for later analysis (filtering bots)
+* removed unused UserAgent and full URL from hit and event table
+* remove trailing slashes from referrer URLs
+* updated dependencies
 
 ## 1.8.9
 

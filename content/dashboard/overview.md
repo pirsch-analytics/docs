@@ -1,6 +1,6 @@
 ---
 title: "Overview"
-date: 2021-09-06
+date: 2021-09-25
 draft: false
 weight: 1
 description: "Get an overview over the dashboard."
@@ -53,6 +53,8 @@ The following panels show various statistics regarding unique visitors.
 *Referrers* list all websites a visitor came from. *[UTM parameters]({{<ref "dashboard/utm.md">}})* help you to track marketing campaigns or gain more detailed insight into referrering websites.
 
 *[Conversion Goals]({{<ref "dashboard/conversion-goals.md">}})* list custom created visitor and conversion rate goals.
+
+*Cities* will be displayed when filtering for a country.
 
 A panel will only display the top 10 results, but you can enlarge it to see all results and more details. The *Screen Sizes* panel is only available if you have embedded the [JavaScript snippet]({{<ref "get-started/frontend-integration.md">}}). The [backend integration]({{<ref "get-started/backend-integration.md">}}) does not collect this metric.
 
