@@ -1,10 +1,16 @@
 ---
 title: "Changelog"
-date: 2021-09-14
+date: 2021-09-27
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
+
+## 1.9.2
+
+Release: 2021-09-27
+
+* fixed filtering for entry/exit pages while filtering for a page
 
 ## 1.9.1
 
