@@ -1,10 +1,17 @@
 ---
 title: "Changelog"
-date: 2021-09-27
+date: 2021-09-28
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
+
+## 1.9.3
+
+Release: 2021-09-28
+
+* use Redis as a session cache
+* added filtering entry/exit pages for paths back in
 
 ## 1.9.2
 
