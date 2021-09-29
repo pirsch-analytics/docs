@@ -1,6 +1,6 @@
 ---
 title: "API"
-date: 2021-09-25
+date: 2021-09-29
 draft: false
 weight: 1
 description: "Use the API to monitor traffic and access your data."
@@ -381,6 +381,7 @@ Before you can make requests, you need to know the domain ID for the client. Mak
         "path": "/home",
         "title": "Home",
         "visitors": 42,
+        "sessions": 67,
         "entries": 56,
         "entry_rate": 0.298,
         "average_time_spent_seconds": 42
@@ -403,6 +404,7 @@ Before you can make requests, you need to know the domain ID for the client. Mak
         "path": "/bye",
         "title": "Bye",
         "visitors": 42,
+        "sessions": 67,
         "exits": 56,
         "exit_rate": 0.298
     },

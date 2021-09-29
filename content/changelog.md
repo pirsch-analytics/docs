@@ -1,10 +1,19 @@
 ---
 title: "Changelog"
-date: 2021-09-28
+date: 2021-09-29
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
+
+## 1.9.4
+
+Release: 2021-09-29
+
+* fixed path filter for entry/exit pages
+* fixed entry/exit rate calculation
+* fixed total bounce rate calculation
+* fixed signup confirmation email sender
 
 ## 1.9.3
 
