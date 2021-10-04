@@ -1,9 +1,9 @@
 ---
 title: "WordPress"
-date: 2021-03-23
+date: 2021-10-04
 draft: false
 weight: 1
-description: "Learn how to integrate Pirsch into wordpress."
+description: "Learn how to integrate Pirsch into WordPress."
 ---
 
 ## Using the Plugin (Backend Integration)
