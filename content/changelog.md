@@ -1,10 +1,16 @@
 ---
 title: "Changelog"
-date: 2021-09-29
+date: 2021-10-05
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
+
+## 1.9.5
+
+Release: 2021-10-05
+
+* fixed timezone settings
 
 ## 1.9.4
 
