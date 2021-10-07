@@ -6,6 +6,14 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.9.6
+
+Release: unreleased
+
+* added autofocus for search fields in modal dialogues
+* fixed filtering for null when pressing Ctrl + A in modal dialog search field
+* fixed too many calls of history.replaceState
+
 ## 1.9.5
 
 Release: 2021-10-05
