@@ -8,11 +8,12 @@ description: "Overview of all changes."
 
 ## 1.9.6
 
-Release: unreleased
+Release: 2021-10-07
 
 * added autofocus for search fields in modal dialogues
 * fixed filtering for null when pressing Ctrl + A in modal dialog search field
 * fixed too many calls of history.replaceState
+* fixed average session duration being distorted by broken session lengths
 
 ## 1.9.5
 
