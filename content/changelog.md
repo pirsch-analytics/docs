@@ -6,6 +6,15 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.9.7
+
+Release: 2021-10-10
+
+* fixed updating referrer panel when the referrer name and URL are equal
+* fixed timezones
+* fixed setting filter date when the end date is today
+* updated dependencies
+
 ## 1.9.6
 
 Release: 2021-10-07
