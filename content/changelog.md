@@ -6,6 +6,13 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.9.8
+
+Release: 2021-10-11
+
+* added endpoint to manually extend sessions
+* fixed events counting up page views
+
 ## 1.9.7
 
 Release: 2021-10-10

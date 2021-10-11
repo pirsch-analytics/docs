@@ -1,6 +1,6 @@
 ---
 title: "API"
-date: 2021-09-29
+date: 2021-10-11
 draft: false
 weight: 1
 description: "Use the API to monitor traffic and access your data."
@@ -101,7 +101,6 @@ POST https://api.pirsch.io/api/v1/event
         "key":             "value",
         "metadata fields": "are optional"
     },
-
     "_hit":             "The fields below are the same as for hits."
     "url":              "https://example.com/full/url?including=parameters",
     "ip":               "123.456.789.0",
@@ -115,6 +114,26 @@ POST https://api.pirsch.io/api/v1/event
     "referrer" :        "Referer header (optional)",
     "screen_width":     1920,
     "screen_height":    1080
+}
+```
+
+## Keeping a Session Alive
+
+This endpoint is used to *manually* keep sessions alive. A session will usually be reset if no request (hit or event) is sent within a 30 minute timeframe. This feature can be used to extend a session indefinitely. It's not recommended to use this for regular websites, but can be useful to track apps or other custom build software.
+
+**Example request**
+
+```Bash
+POST https://api.pirsch.io/api/v1/session
+
+{
+    "ip":               "123.456.789.0",
+    "cf_connecting_ip": "CF-Connecting-IP header (optional)",
+    "x_forwarded_for":  "X-Forwarded-For header (optional)",
+    "forwarded":        "Forwarded header (optional)",
+    "x_real_ip"         "X-Real-IP header (optional)",
+    "dnt":              "DNT header (optional)",
+    "user_agent":       "User-Agent header"
 }
 ```
 
