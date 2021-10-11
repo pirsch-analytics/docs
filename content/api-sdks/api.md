@@ -119,7 +119,7 @@ POST https://api.pirsch.io/api/v1/event
 
 ## Keeping a Session Alive
 
-This endpoint is used to *manually* keep sessions alive. A session will usually be reset if no request (hit or event) is sent within a 30 minute timeframe. This feature can be used to extend a session indefinitely. It's not recommended to use this for regular websites, but can be useful to track apps or other custom build software.
+This endpoint is used to *manually* keep sessions alive. A session will usually be reset if no request (hit or event) is sent within a 30-minute timeframe. This feature can be used to extend a session indefinitely. It's not recommended to use this for regular websites, but can be useful to track apps or other custom build software.
 
 **Example request**
 
