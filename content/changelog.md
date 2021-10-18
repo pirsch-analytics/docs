@@ -6,6 +6,16 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.10.0
+
+Release: 2021-10-18
+
+* added hostname to fingerprint salt
+* performance improvements for all queries
+* improved panel labels when filtering for an event
+* removed bounce rate for events
+* updated dependencies
+
 ## 1.9.8
 
 Release: 2021-10-11
