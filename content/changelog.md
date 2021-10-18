@@ -6,6 +6,13 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.10.2
+
+Release: 2021-10-18
+
+* fixed reading active visitors directly from hit table
+* fixed reading full referrer (for favicon URL)
+
 ## 1.10.1
 
 Release: 2021-10-18
