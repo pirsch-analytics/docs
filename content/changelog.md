@@ -6,6 +6,12 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.10.1
+
+Release: 2021-10-18
+
+* fixed visitor statistics limit
+
 ## 1.10.0
 
 Release: 2021-10-18
