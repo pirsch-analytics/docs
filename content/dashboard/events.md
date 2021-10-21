@@ -1,6 +1,6 @@
 ---
 title: "Events"
-date: 2021-09-02
+date: 2021-10-22
 draft: false
 weight: 4
 description: "Events allow you to track actions and attach metadata to them."
@@ -15,6 +15,8 @@ The main difference to [conversion goals]({{<ref "dashboard/conversion-goals.md"
 ## Creating Events
 
 Events are automatically created and added to your dashboard as you send them. Events can be send from your website using JavaScript, or from your backend using our [API]({{<ref "api-sdks/api.md">}}) or one of our [SDKs]({{<ref "api-sdks/_index.md">}}).
+
+**Before you can send an event, you must first send a page view. A page view creates the session required to bind the event. Events without a session will be ignored.**
 
 ## Sending Events From Your Website
 

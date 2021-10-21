@@ -6,6 +6,13 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.10.3
+
+Release: 2021-10-22
+
+* fixed statistics that were wrong due to last larger update (v1.10)
+* updated dependencies
+
 ## 1.10.2
 
 Release: 2021-10-18

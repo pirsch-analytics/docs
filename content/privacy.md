@@ -1,6 +1,6 @@
 ---
 title: "Privacy"
-date: 2021-07-02
+date: 2021-10-22
 draft: false
 weight: 7
 description: "Learn how Pirsch respects the privacy of your visitors."
@@ -8,7 +8,7 @@ description: "Learn how Pirsch respects the privacy of your visitors."
 
 ## We Do Not Track
 
-Unlike other web analytics solutions, Pirsch does not track your visitors. By tracking we mean recognizing visitors across multiple websites. Google Analytics for example will identify a person on two websites that are unrelated to each other to deliver targeted ads. We strictly separate the data for each website and don't sell any information to third party.
+Unlike other web analytics solutions, Pirsch does not track your visitors. By tracking we mean recognizing visitors across multiple websites. Google Analytics for example will identify a person on two websites that are unrelated to each other to deliver targeted ads. We strictly separate the data for each website and don't sell any information to third party. The data separation is ensured by generating different fingerprints for each domain.
 
 ## How Does Pirsch Recognize Visitors?
 
@@ -18,8 +18,8 @@ Pirsch makes use of the HTTP protocol to recognize visitors using a technique ca
 
 Pirsch collects and stores the following datapoints, depending on the integration you use ([frontend]({{<ref "get-started/frontend-integration.md">}}) or [backend]({{<ref "get-started/backend-integration.md">}})):
 
-* User-Agent header
-* URL visited
+* User-Agent header (separate from a page view for up to three months)
+* page visited (just the path, not the entire URL)
 * referrer
 * UTM source, campaign, medium, content, term
 * language
@@ -27,6 +27,7 @@ Pirsch collects and stores the following datapoints, depending on the integratio
 * browser (extracted from the User-Agent)
 * operating system (extracted from the User-Agent)
 * country
+* city
 * device type (desktop or mobile, extracted from the User-Agent)
 * screen size (frontend only)
 
