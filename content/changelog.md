@@ -8,7 +8,7 @@ description: "Overview of all changes."
 
 ## 1.10.4
 
-Release: unreleased
+Release: 2021-10-22
 
 * renamed views to events in event details panel
 * removed focus of table search on mobile devices
