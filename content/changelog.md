@@ -1,10 +1,21 @@
 ---
 title: "Changelog"
-date: 2021-10-18
+date: 2021-10-22
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
+
+## 1.10.4
+
+Release: unreleased
+
+* renamed views to events in event details panel
+* removed focus of table search on mobile devices
+* removed the requirement to send a page view before an event can be tracked
+* fixed line chart labels
+* fixed setting timezone for dates in frontend
+* fixed active pages keeps loading after switching to dashboard from another page
 
 ## 1.10.3
 

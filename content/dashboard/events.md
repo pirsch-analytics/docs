@@ -16,8 +16,6 @@ The main difference to [conversion goals]({{<ref "dashboard/conversion-goals.md"
 
 Events are automatically created and added to your dashboard as you send them. Events can be send from your website using JavaScript, or from your backend using our [API]({{<ref "api-sdks/api.md">}}) or one of our [SDKs]({{<ref "api-sdks/_index.md">}}).
 
-**Before you can send an event, you must first send a page view. A page view creates the session required to bind the event. Events without a session will be ignored.**
-
 ## Sending Events From Your Website
 
 Before you can send your first event, you need to add the JavaScript snippet to your website. It's different from the regular `pirsch.js` to reduce the page load and keep the script lightweight. Navigate to the settings page on the dashboard and select the **Goals and Events** tab. Copy the code snippet for your domain and add it to the `head` section on all pages you would like to send events from. The snippet looks like this.
