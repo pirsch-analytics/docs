@@ -6,6 +6,13 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.10.5
+
+Release: 2021-10-23
+
+* fixed setting start date in frontend
+* fixed session collapsing
+
 ## 1.10.4
 
 Release: 2021-10-22
