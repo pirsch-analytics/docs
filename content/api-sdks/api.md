@@ -1,6 +1,6 @@
 ---
 title: "API"
-date: 2021-10-11
+date: 2021-10-25
 draft: false
 weight: 1
 description: "Use the API to monitor traffic and access your data."
@@ -162,9 +162,7 @@ The following list contains all possible filter options. Only the required field
 | referrer | no | https://referring-website.com/ | The referrer, usually a URL or name (note that the Pirsch dashboard does trim the protocol) |
 | referrer_name | no | referring-website.com | The referrer name, usually the hostname |
 | os | no | Windows | The operating system |
-| os_version | no | 10.0 | The operating system version |
 | browser | no | Firefox | The browser |
-| browser_version | no | 89.0 | The browser version |
 | platform | no | desktop | The platform, desktop, mobile, or unknown (not set) |
 | screen_class | no | XXL | The screen class, XXL, XL, L, M, S |
 | utm_source | no | Newsletter | The UTM source |
@@ -173,7 +171,6 @@ The following list contains all possible filter options. Only the required field
 | utm_content | no | Header | The UTM content |
 | utm_term | no | search terms | The UTM term |
 | limit | no | 20 | Limits the number of results, note that this is hard limited to 100 |
-| include_title | no | true | Set to true, to include the page title when reading statistics |
 | include_avg_time_on_page | no | true | Set to true, to include the average time on page when reading page statistics |
 
 ### Getting the Domain ID
