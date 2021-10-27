@@ -8,9 +8,14 @@ description: "Overview of all changes."
 
 ## 1.10.6
 
-Release: unreleased
+Release: 2021-10-27
 
+* added timeout for GSC requests
 * fixed collecting page title if enabled
+* fixed email report scale
+* fixed sending email report without previous data
+* fixed email report chart time range
+* updated dependencies
 
 ## 1.10.5
 
