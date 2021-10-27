@@ -1,6 +1,6 @@
 ---
 title: "API"
-date: 2021-10-25
+date: 2021-10-27
 draft: false
 weight: 1
 description: "Use the API to monitor traffic and access your data."
@@ -73,6 +73,7 @@ POST https://api.pirsch.io/api/v1/hit
     "dnt":              "DNT header (optional)",
     "user_agent":       "User-Agent header",
     "accept_language":  "Accept-Language header (optional)",
+    "title":            "Page title (optional)",
     "referrer" :        "Referer header (optional)",
     "screen_width":     1920,
     "screen_height":    1080
@@ -111,6 +112,7 @@ POST https://api.pirsch.io/api/v1/event
     "dnt":              "DNT header (optional)",
     "user_agent":       "User-Agent header",
     "accept_language":  "Accept-Language header (optional)",
+    "title":            "Page title (optional)",
     "referrer" :        "Referer header (optional)",
     "screen_width":     1920,
     "screen_height":    1080

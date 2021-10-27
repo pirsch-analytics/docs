@@ -1,10 +1,16 @@
 ---
 title: "Changelog"
-date: 2021-10-22
+date: 2021-10-27
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
+
+## 1.10.6
+
+Release: unreleased
+
+* fixed collecting page title if enabled
 
 ## 1.10.5
 
