@@ -6,6 +6,12 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.10.7
+
+Release: unreleased
+
+* fixed small Pirsch (library) configuration issue
+
 ## 1.10.6
 
 Release: 2021-10-27
