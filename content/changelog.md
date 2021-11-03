@@ -6,9 +6,15 @@ weight: 8
 description: "Overview of all changes."
 ---
 
-## 1.10.7
+## 1.11.0
 
 Release: unreleased
+
+* added domain search to selection
+
+## 1.10.7
+
+Release: 2021-11-01
 
 * fixed small Pirsch (library) configuration issue
 
