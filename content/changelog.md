@@ -11,6 +11,8 @@ description: "Overview of all changes."
 Release: unreleased
 
 * added domain search to selection
+* added auto selection for light/dark mode
+* optimized CORS by setting max age header
 
 ## 1.10.7
 
