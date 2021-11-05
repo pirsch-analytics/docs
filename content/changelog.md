@@ -14,6 +14,8 @@ Release: unreleased
 * added auto selection for light/dark mode
 * optimized CORS by setting max age header
 * news are now served from the API and will be set to latest news on registration (so none is displayed on first login)
+* removed user timezone settings
+* added automatic timezone selection when creating a domain
 
 ## 1.10.7
 
