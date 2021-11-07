@@ -15,6 +15,7 @@ Release: 2021-11-07
 * added automatic timezone selection when creating a domain
 * added link to public dashboard on settings pages
 * added query parameter to hide UI elements when embedding a dashboard into an iframe
+* added live view
 * optimized CORS by setting max age header
 * news are now served from the API and will be set to latest news on registration (so none is displayed on first login)
 * deny embedding the registration, login, or any other related page in iframes (X-Frame-Options)
