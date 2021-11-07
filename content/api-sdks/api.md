@@ -1,6 +1,6 @@
 ---
 title: "API"
-date: 2021-10-27
+date: 2021-11-07
 draft: false
 weight: 1
 description: "Use the API to monitor traffic and access your data."
@@ -149,31 +149,32 @@ The following list contains all possible filter options. Only the required field
 
 | Parameter | Required | Example | Format/Description |
 | - | - | - | - |
-| id | yes | A5kgYzK14m | The domain ID. Use the list endpoint to get the domain ID for the client |
+| id | yes | A5kgYzK14m | The domain ID. Use the list endpoint to get the domain ID for the client. |
 | from | yes | 2021-05-08 | YYYY-MM-DD |
 | to | yes | 2021-05-15 | YYYY-MM-DD |
-| path | no | /home | The page path |
-| entry_path | no | /home | The entry page path |
-| exit_path | no | /yte | The exit page path |
+| start | no | 600 | Queries data for the past seconds (10 minutes in this example). The date range filters will be ignored if set. The maximum is one hour (3600 seconds). |
+| path | no | /home | The page path. |
+| entry_path | no | /home | The entry page path. |
+| exit_path | no | /yte | The exit page path. |
 | pattern | no | (?i)^\\/path/[^\\/]+$ | A [regular expression](https://github.com/google/re2/wiki/Syntax) to filter and group pages. This option is used with [conversion goals]({{<ref "dashboard/conversion-goals.md">}}) |
 | event | no | Button clicked | The name of an event to filter for. |
 | event_meta_key | no | Clicks | The event meta key to filter for. This field is used to break down a single event. |
-| language | no | en | ISO-639-1 language code, like en for English |
-| country | no | jp | ISO-3166 Alpha-2 country code, like jp for Japan |
-| city | no | London | Name of a city |
-| referrer | no | https://referring-website.com/ | The referrer, usually a URL or name (note that the Pirsch dashboard does trim the protocol) |
-| referrer_name | no | referring-website.com | The referrer name, usually the hostname |
-| os | no | Windows | The operating system |
-| browser | no | Firefox | The browser |
-| platform | no | desktop | The platform, desktop, mobile, or unknown (not set) |
-| screen_class | no | XXL | The screen class, XXL, XL, L, M, S |
-| utm_source | no | Newsletter | The UTM source |
-| utm_medium | no | Email | The UTM medium |
-| utm_campaign | no | Summer Sale | The UTM campaign |
-| utm_content | no | Header | The UTM content |
-| utm_term | no | search terms | The UTM term |
-| limit | no | 20 | Limits the number of results, note that this is hard limited to 100 |
-| include_avg_time_on_page | no | true | Set to true, to include the average time on page when reading page statistics |
+| language | no | en | ISO-639-1 language code, like en for English. |
+| country | no | jp | ISO-3166 Alpha-2 country code, like jp for Japan. |
+| city | no | London | Name of a city. |
+| referrer | no | https://referring-website.com/ | The referrer, usually a URL or name (note that the Pirsch dashboard does trim the protocol). |
+| referrer_name | no | referring-website.com | The referrer name, usually the hostname. |
+| os | no | Windows | The operating system. |
+| browser | no | Firefox | The browser. |
+| platform | no | desktop | The platform, desktop, mobile, or unknown (not set). |
+| screen_class | no | XXL | The screen class, XXL, XL, L, M, S. |
+| utm_source | no | Newsletter | The UTM source. |
+| utm_medium | no | Email | The UTM medium. |
+| utm_campaign | no | Summer Sale | The UTM campaign. |
+| utm_content | no | Header | The UTM content. |
+| utm_term | no | search terms | The UTM term. |
+| limit | no | 20 | Limits the number of results, note that this is hard limited to 100. |
+| include_avg_time_on_page | no | true | Set to true, to include the average time on page when reading page statistics. |
 
 ### Getting the Domain ID
 

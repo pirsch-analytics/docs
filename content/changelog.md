@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-date: 2021-11-06
+date: 2021-11-07
 draft: false
 weight: 8
 description: "Overview of all changes."
@@ -8,17 +8,18 @@ description: "Overview of all changes."
 
 ## 1.11.0
 
-Release: unreleased
+Release: 2021-11-07
 
 * added domain search to selection
 * added auto selection for light/dark mode
-* optimized CORS by setting max age header
-* news are now served from the API and will be set to latest news on registration (so none is displayed on first login)
-* removed user timezone settings
 * added automatic timezone selection when creating a domain
-* deny embedding the registration, login, or any other related page in iframes (X-Frame-Options)
 * added link to public dashboard on settings pages
 * added query parameter to hide UI elements when embedding a dashboard into an iframe
+* optimized CORS by setting max age header
+* news are now served from the API and will be set to latest news on registration (so none is displayed on first login)
+* deny embedding the registration, login, or any other related page in iframes (X-Frame-Options)
+* removed user timezone settings
+* fixed some statistics loading twice on a single filter change
 * updated Hugo
 * updated dependencies
 
