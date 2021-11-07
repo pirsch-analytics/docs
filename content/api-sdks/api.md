@@ -338,6 +338,26 @@ Before you can make requests, you need to know the domain ID for the client. Mak
 ]
 ```
 
+### Total Visitors
+
+This endpoint returns the total visitor count, views, sessions, bounces, and bounce rate. The difference to the visitors' endpoint (see below) is that the results are not grouped by day. Manually summing up the visitors for multiple days will return a different result, as returning visitors will be counted multiple times that way.
+
+**Example request**
+
+`GET /api/v1/statistics/total`
+
+**Example response**
+
+```JSON
+{
+    "visitors": 42,
+    "views": 56,
+    "sessions": 48,
+    "bounces": 23,
+    "bounce_rate": 0.4791
+}
+```
+
 ### Visitors
 
 **Example request**
