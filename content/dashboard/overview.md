@@ -1,6 +1,6 @@
 ---
 title: "Overview"
-date: 2021-09-25
+date: 2021-11-07
 draft: false
 weight: 1
 description: "Get an overview over the dashboard."
@@ -27,6 +27,8 @@ To see which pages are viewed right now, click on the active visitors. This will
 The time range is set to one week by default. To change it, click on the time range and select a different one from the dropdown, or enter dates. The selection will be saved, so that you can compare different websites for example and still have it in place when you come back later.
 
 ![Menu](/dashboard/menu.png)
+
+The *Live* filter will update the dashboard every 30 seconds and returns the statistics for the past 10 minutes.
 
 ## Panels
 
