@@ -20,6 +20,7 @@ Release: 2021-11-07
 * deny embedding the registration, login, or any other related page in iframes (X-Frame-Options)
 * removed user timezone settings
 * fixed some statistics loading twice on a single filter change
+* fixed panels showing different totals than chart due to grouping by day and summing up results
 * updated Hugo
 * updated dependencies
 
