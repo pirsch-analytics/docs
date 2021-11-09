@@ -6,6 +6,15 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.11.1
+
+Release: 2021-11-09
+
+* removed visitors by hour when live filter is active
+* fixed light/dark mode settings on account page
+* fixed styling for filter and domain selection
+* updated dependencies
+
 ## 1.11.0
 
 Release: 2021-11-07
