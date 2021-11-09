@@ -1,10 +1,16 @@
 ---
 title: "Changelog"
-date: 2021-11-07
+date: 2021-11-09
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
+
+## 1.11.2
+
+Release: 2021-11-09
+
+* fixed X-Frame-Options header for dashboard
 
 ## 1.11.1
 
