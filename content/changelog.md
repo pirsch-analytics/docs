@@ -6,6 +6,13 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.11.3
+
+Release: unreleased
+
+* swapped JWT library
+* updated dependencies
+
 ## 1.11.2
 
 Release: 2021-11-09
