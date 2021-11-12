@@ -10,7 +10,14 @@ description: "Overview of all changes."
 
 Release: unreleased
 
+* merged panels where it makes sense
+* load all news instead of the latest three
+* always show CR vor conversion goals and events
+* improved titles (on hover) wherever possible
+* removed titles (on hover) for values (redundant)
+* removed obvious hints from panels
 * swapped JWT library
+* updated Pirsch library
 * updated dependencies
 
 ## 1.11.2
