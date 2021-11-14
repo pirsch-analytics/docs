@@ -1,6 +1,6 @@
 ---
 title: "Events"
-date: 2021-10-22
+date: 2021-11-14
 draft: false
 weight: 4
 description: "Events allow you to track actions and attach metadata to them."
@@ -27,6 +27,8 @@ Before you can send your first event, you need to add the JavaScript snippet to 
 ```
 
 The `data-code` is the identification code for your domain. Should you reset it (below the **Developer** tab), you will also have to replace it in the snippet.
+
+> The snippet cannot be used as a replacement for the regular `pirsch.js` that needs to be added to send page views. `pirsch-events.js` can only be used to programmatically send events. If you want to do both, add both snippets to the `head` section of our website.
 
 ### Example 1
 
