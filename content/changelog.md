@@ -8,17 +8,16 @@ description: "Overview of all changes."
 
 ## 1.11.3
 
-Release: unreleased
+Release: 2021-11-14
 
-* merged panels where it makes sense
+* merged panels where it makes sense and only load data when opened
 * load all news instead of the latest three
-* always show CR vor conversion goals and events
-* improved titles (on hover) wherever possible
-* removed titles (on hover) for values (redundant)
+* always show CR for conversion goals and events
+* improved title (on hover) wherever possible
+* removed title (on hover) for values (redundant)
 * removed obvious hints from panels
-* swapped JWT library
-* updated Pirsch library
-* updated dependencies
+* fixed login, logout, and sign up buttons not working on public dashboards
+* updated dependencies and replaced JWT library
 
 ## 1.11.2
 
