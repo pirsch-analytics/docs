@@ -6,6 +6,12 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.11.4
+
+Release: unreleased
+
+* added missing defer for event script snippet
+
 ## 1.11.3
 
 Release: 2021-11-14
