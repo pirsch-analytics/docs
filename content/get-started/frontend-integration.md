@@ -1,6 +1,6 @@
 ---
 title: "Website Integration"
-date: 2021-10-10
+date: 2021-11-18
 draft: false
 weight: 1
 description: "Learn on how to integrate Pirsch into your website using JavaScript."
@@ -19,11 +19,11 @@ And you're done! Your website will now send page hits to Pirsch. Note that only 
 
 ## Test the Integration
 
-To test the script, navigate to your website and open the network tab of the developer tools in your browser (usally F12 or `Ctrl/Control + Shift + I`). Search for "hit" and make sure you get a 200 response code in the status column.
+To test the script, navigate to your website and open the network tab of the developer tools in your browser (usually F12 or `Ctrl/Control + Shift + I`). Search for "hit" and make sure you get a 200 response code in the status column.
 
 ![Developer Tools](/integration/network-tab.png)
 
-In case you don't, check your identification code and the domain you have configured. Also, make sure you don't send the *Do Not Track* HTTP header (DNT) as the hit will be ignored then. Should you still not see the request going through, please contact our [support](mailto:support@pirsch.io).
+In case you don't, check your identification code and the domain you have configured. Also, make sure you don't send the *Do Not Track* HTTP header (DNT) or set the `disable_pirsch` option in your local storage as the hit will be ignored then. Should you still not see the request going through, please contact our [support](mailto:support@pirsch.io).
 
 ## Reset the Identification Code
 
@@ -34,3 +34,9 @@ Your website is identified by the hostname the request is made from and an ident
     id="pirschjs" 
     data-code="YOUR_IDENTIFICATION_CODE"></script>
 ```
+
+## Ignoring Your Own Page Views
+
+You can disable the integration by setting the DNT (Do Not Track) header to `1` in your browser or by adding a value called `disable_pirsch` to your local storage.
+
+For the latter option, open the developer tools (usually F12 or `Ctrl/Control + Shift + I`) in your browser and navigate to the *web storage* tab. Click on *local storage* and add a new value `disable_pirsch` and `1` as value. After reloading the page, no page view or event (in case you also use the event script) should be sent to Pirsch.
