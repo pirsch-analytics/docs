@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-date: 2021-11-14
+date: 2021-11-18
 draft: false
 weight: 8
 description: "Overview of all changes."
@@ -8,9 +8,10 @@ description: "Overview of all changes."
 
 ## 1.11.4
 
-Release: unreleased
+Release: 2021-11-18
 
 * added missing defer for event script snippet
+* added option to ignore `pirsch.js` and `pirsch-event.js` using the localStorage
 
 ## 1.11.3
 
