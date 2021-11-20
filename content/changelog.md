@@ -6,6 +6,13 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.11.5
+
+Release: unreleased
+
+* new graph for top statistics
+* fixed events label for event metadata
+
 ## 1.11.4
 
 Release: 2021-11-18
