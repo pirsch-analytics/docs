@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-date: 2021-11-18
+date: 2021-11-25
 draft: false
 weight: 8
 description: "Overview of all changes."
@@ -8,10 +8,10 @@ description: "Overview of all changes."
 
 ## 1.11.5
 
-Release: unreleased
+Release: 2021-11-25
 
 * new graph for top statistics
-* fixed events label for event metadata
+* fixed events label for event metadata table
 
 ## 1.11.4
 
