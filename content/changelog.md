@@ -8,7 +8,7 @@ description: "Overview of all changes."
 
 ## 1.11.6
 
-Release: unreleased
+Release: 2021-11-26
 
 * hide growth in live filter
 * fixed switching country/city/language tabs when adding or removing filters
