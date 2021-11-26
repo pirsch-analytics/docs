@@ -6,6 +6,15 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.11.6
+
+Release: unreleased
+
+* hide growth in live filter
+* fixed switching country/city/language tabs when adding or removing filters
+* fixed charts being updated multiple times
+* fixed GSC keywords loading infinitely
+
 ## 1.11.5
 
 Release: 2021-11-25
