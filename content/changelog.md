@@ -1,10 +1,26 @@
 ---
 title: "Changelog"
-date: 2021-11-25
+date: 2021-12-11
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
+
+## 1.12.0
+
+Release: unreleased
+
+* added entry/exit path filter to events
+* added filters for screen width and height (exact match)
+* added filtering for event metadata (API only right now)
+* added new API endpoint to list events including metadata
+* added user client API to perform actions that previously could only be performed by a user
+* popular referrers are now grouped (like google.com and google.de -> Google)
+* OS versions will now be grouped by minor version instead of the full version string (10.12 instead of 10.12.3 for example)
+* sessions are now reset when the referrer or UTM parameters change
+* sessions will no longer count as bounced when an event is received
+* set filter limit to the release of Pirsch instead of one year back
+* updated dependencies
 
 ## 1.11.6
 
