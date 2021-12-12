@@ -8,7 +8,7 @@ description: "Overview of all changes."
 
 ## 1.12.0
 
-Release: unreleased
+Release: 2021-12-12
 
 * added entry/exit path filter to events
 * added filters for screen width and height (exact match)
@@ -20,6 +20,7 @@ Release: unreleased
 * sessions are now reset when the referrer or UTM parameters change
 * sessions will no longer count as bounced when an event is received
 * set filter limit to the release of Pirsch instead of one year back
+* optimized checking permissions on hit/event/session requests
 * updated dependencies
 
 ## 1.11.6
