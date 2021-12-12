@@ -6,6 +6,13 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.12.1
+
+Release: 2021-12-12
+
+* fixed smaller configuration issues
+* fixed entry/exit page panels not being displayed when filtering for an event
+
 ## 1.12.0
 
 Release: 2021-12-12
