@@ -1,6 +1,6 @@
 ---
 title: "API"
-date: 2021-12-11
+date: 2021-12-12
 draft: false
 weight: 1
 description: "Use the API to monitor traffic and access your data."
@@ -28,9 +28,11 @@ In case of an error, Pirsch will return a JSON object in the body describing the
 * `validation` lists errors related to input parameters
 * `error` lists general errors, like when an object could'nt be found. There will usually be only one error message
 
-## Get an Access Token
+## Getting an Access Token
 
 To make requests to the API, you need to get an access token first. The token must be send with every request in the `Authorization` header in the format `Bearer <token>`. If you receive a status code 401 (unauthorized), you need to create a new access token and try again. `expires_at` timezone is set to UTC.
+
+Client IDs and secrets can be created from the domain settings page (under *Developer*) or from the account settings page. Domain clients are created for a specific domain and can only access and manipulate the domain they were created for. User clients have more privileges and can access all domains the user has access to (with the same permissions, viewer, or admin).
 
 The examples for the other endpoints in this document will omit the header.
 
@@ -57,6 +59,8 @@ POST https://api.pirsch.io/api/v1/token
 ## Sending a Page Hit
 
 This endpoint is used to send page hits to Pirsch. It requires you to send information about the request made by the client. How you get these depends on the programming language and framework you're using. The example shows which fields are required and which are optional. We recommend sending all of them to make the results as accurate as possible.
+
+If you use a user client, you also have to add the `hostname` in the request (`example.com` in the example below).
 
 **Example request**
 
@@ -85,6 +89,8 @@ One small optimization you can make is to check the `DNT` (Do Not Track) header 
 ## Sending an Event
 
 This endpoint is used to send events to Pirsch. It requires you to send information about the request made by the client. How you get these depends on the programming language and framework you're using. The example shows which fields are required and which are optional. We recommend sending all of them to make the results as accurate as possible.
+
+If you use a user client, you also have to add the `hostname` in the request (`example.com` in the example below).
 
 **Example request**
 
@@ -849,4 +855,80 @@ This endpoints requires the [Google Search Console integration]({{<ref "settings
     },
     // ...
 ]
+```
+
+## Managing Domains
+
+Domains can be managed by creating a user client (on the account settings page).
+
+### Creating a Domain
+
+This endpoint adds a new domain.
+
+**Example request**
+
+`POST /api/v1/domain`
+
+```JSON
+{
+    "hostname": "example.com",
+    "subdomain": "example",
+    "timezone": "Europe/Berlin"
+}
+```
+
+**Example response**
+
+```JSON
+{
+    "id": "A5kgYzK14m",
+    "def_time": "2021-05-22T10:11:12.123456Z",
+    "mod_time": "2021-05-22T10:11:12.123456Z",
+    "user_id": "04jmfg0",
+    "hostname": "example.com",
+    "subdomain": "example",
+    "identification_code": "...",
+    "public": false,
+    "google_user_id": null,
+    "google_user_email": null,
+    "gsc_domain": null,
+    "new_owner": null,
+    "timezone": "Europe/Berlin",
+    "group_by_title": false,
+    "user_role": "Owner"
+}
+```
+
+### Deleting a Domain
+
+This endpoint deletes a domain.
+
+**Example request**
+
+`DELETE /api/v1/domain?id=A5kgYzK14m`
+
+### Listing Domains
+
+This endpoint is described in the [statistics section]({{<ref "api-sdks/api.md#getting-the-domain-id">}}). The only difference is that it will return all domains if you use a user client.
+
+### Resetting the Identification Code
+
+This endpoint will reset the identifcation code for the domain and returns a new one.
+
+**Example request**
+
+`PUT /api/v1/domain`
+
+```JSON
+{
+    "id": "A5kgYzK14m"
+}
+```
+
+**Example response**
+
+```JSON
+{
+    "identification_code": "..."
+}
 ```
