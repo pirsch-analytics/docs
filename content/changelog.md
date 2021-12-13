@@ -6,6 +6,12 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.12.2
+
+Release: 2021-12-13
+
+* fixed grouping referrers with trailing slashes
+
 ## 1.12.1
 
 Release: 2021-12-12
