@@ -1,6 +1,6 @@
 ---
 title: "API"
-date: 2021-12-12
+date: 2021-12-15
 draft: false
 weight: 1
 description: "Use the API to monitor traffic and access your data."
@@ -60,8 +60,6 @@ POST https://api.pirsch.io/api/v1/token
 
 This endpoint is used to send page hits to Pirsch. It requires you to send information about the request made by the client. How you get these depends on the programming language and framework you're using. The example shows which fields are required and which are optional. We recommend sending all of them to make the results as accurate as possible.
 
-If you use a user client, you also have to add the `hostname` in the request (`example.com` in the example below).
-
 **Example request**
 
 ```Bash
@@ -89,8 +87,6 @@ One small optimization you can make is to check the `DNT` (Do Not Track) header 
 ## Sending an Event
 
 This endpoint is used to send events to Pirsch. It requires you to send information about the request made by the client. How you get these depends on the programming language and framework you're using. The example shows which fields are required and which are optional. We recommend sending all of them to make the results as accurate as possible.
-
-If you use a user client, you also have to add the `hostname` in the request (`example.com` in the example below).
 
 **Example request**
 

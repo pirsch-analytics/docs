@@ -1,10 +1,16 @@
 ---
 title: "Changelog"
-date: 2021-12-11
+date: 2021-12-15
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
+
+## 1.12.3
+
+Release: unreleased
+
+* removed `hostname` from API (not required)
 
 ## 1.12.2
 
