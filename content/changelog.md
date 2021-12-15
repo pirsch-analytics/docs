@@ -8,9 +8,10 @@ description: "Overview of all changes."
 
 ## 1.12.3
 
-Release: unreleased
+Release: 2021-12-15
 
 * removed `hostname` from API (not required)
+* fixed collapsing issues
 
 ## 1.12.2
 
