@@ -11,7 +11,8 @@ description: "Overview of all changes."
 Release: 2021-12-15
 
 * removed `hostname` from API (not required)
-* fixed collapsing issues
+* fixed session collapsing issues
+* updated dependencies
 
 ## 1.12.2
 
