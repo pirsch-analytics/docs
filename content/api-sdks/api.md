@@ -1,6 +1,6 @@
 ---
 title: "API"
-date: 2021-12-15
+date: 2021-12-19
 draft: false
 weight: 1
 description: "Use the API to monitor traffic and access your data."
@@ -8,7 +8,9 @@ description: "Use the API to monitor traffic and access your data."
 
 This document describes the REST endpoints used to interact with Pirsch. The easiest way to get started is through one of the client SDKs. If you're looking on how you can integrate Pirsch into your backend to monitor traffic, please check out the [backend integration]({{<ref "get-started/backend-integration.md">}}).
 
-To use the API, you must create a client. New clients can be created on the [settings page]({{<ref "settings/developer.md">}}).
+To use the API, you must create a client. New clients can be created on the [settings page]({{<ref "settings/developer.md">}}) or on the [account page]({{<ref "account/account-settings.md">}}).
+
+> Note that all samples do not necessarily show correct data. IDs from a request might not match the response. You should also be careful not to confuse IDs in their context. Fields are oftentimes just called *id*, but represent different objects.
 
 ## Error Handling
 
@@ -928,3 +930,156 @@ This endpoint will reset the identifcation code for the domain and returns a new
     "identification_code": "..."
 }
 ```
+
+## Managing Access Links
+
+### Listing Access Links
+
+This endpoint lists all access links.
+
+**Example request**
+
+`GET /api/v1/domain/link?domain_id=A5kgYzK14m`
+
+**Example response**
+
+```JSON
+[
+    {
+        "id": "A5kgYzK14m",
+        "def_time": "2021-05-22T10:11:12.123456Z",
+        "mod_time": "2021-05-22T10:11:12.123456Z",
+        "domain_id": "A5kgYzK14m",
+        "code": "...",
+        "description": "..."
+    },
+    // ...
+]
+```
+
+The code can be used to create a URL with read access to a domain. To do that, replace `<subdomain>` and `<code` for the domain in the following URL: `https://<subdomain>.pirsch.io/?access=<code>`
+
+### Creating an Access Link
+
+This endpoint creates a new access link.
+
+**Example request**
+
+`POST /api/v1/domain/link`
+
+```JSON
+{
+    "domain_id": "A5kgYzK14m",
+    "description": "..."
+}
+```
+
+**Example response**
+
+```JSON
+{
+    "id": "A5kgYzK14m",
+    "def_time": "2021-05-22T10:11:12.123456Z",
+    "mod_time": "2021-05-22T10:11:12.123456Z",
+    "domain_id": "A5kgYzK14m",
+    "code": "...",
+    "description": "..."
+}
+```
+
+### Updating an Access Link
+
+This endpoint updates an existing access link.
+
+**Example request**
+
+`PUT /api/v1/domain/link`
+
+```JSON
+{
+    "id": "A5kgYzK14m",
+    "description": "..."
+}
+```
+
+### Deleting an Access Link
+
+This endpoint deletes an access link.
+
+**Example request**
+
+`DELETE /api/v1/domain/link?id=0DJ0mo934`
+
+## Managing Members and Permissions
+
+### Listing Members
+
+This endpoint lists all members.
+
+**Example request**
+
+`GET /api/v1/member?id=A5kgYzK14m`
+
+**Example response**
+
+```JSON
+[
+    {
+        "id": "A5kgYzK14m",
+        "def_time": "2021-05-22T10:11:12.123456Z",
+        "mod_time": "2021-05-22T10:11:12.123456Z",
+        "user_id": "pzy1bjD1lv",
+        "domain_id": "A5kgYzK14m",
+        "role": "admin",
+        "user": {
+            "id": "0DJ0mo934",
+            "email": "...",
+            "full_name": "...",
+            "picture": "..."
+        }
+    },
+    // ...
+]
+```
+
+### Inviting Members
+
+This endpoints invites new member to a domain by email. New members will have the *Viewer* role.
+
+**Example request**
+
+`POST /api/v1/member`
+
+```JSON
+{
+    "id": "A5kgYzK14m",
+    "emails": ["member@foo.com", "member@bar.com" /* ... */]
+}
+```
+
+`id` is the domain ID.
+
+### Updating the Role of a Member
+
+This endpoint will update the role of a single member. Valid roles are *Viewer* and *Admin* (the *Owner* role requires a domain transfer).
+
+**Example request**
+
+`PUT /api/v1/member`
+
+```JSON
+{
+    "id": "A5kgYzK14m",
+    "role": "admin"
+}
+```
+
+`id` is the member ID.
+
+### Removing a Member
+
+This endpoints removes a member from a domain.
+
+**Example request**
+
+`DELETE /api/v1/member?id=0DJ0mo934`

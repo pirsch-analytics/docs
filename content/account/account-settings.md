@@ -1,6 +1,6 @@
 ---
 title: "Settings"
-date: 2021-05-27
+date: 2021-12-19
 draft: false
 weight: 3
 description: "Manage your account."
@@ -33,6 +33,10 @@ Here you can change your password. Enter your current password to confirm the ac
 ## Newsletter
 
 Toggle the checkbox to receive our newsletter. We promise we won't bother you too often.
+
+## Clients
+
+Clients allow you to access the [API]({{<ref "api-sdks/api.md">}}) from your account. A client created for your account has more permissions than a regular (per domain) client (created on the [domain settings page]({{<ref "settings/developer.md">}})), so you should be careful what you do with them.
 
 ## Delete Your Account
 
