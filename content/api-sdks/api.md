@@ -931,6 +931,64 @@ This endpoint will reset the identifcation code for the domain and returns a new
 }
 ```
 
+### Updating the Subdomain
+
+This endpoint will update the subdomain for your dashboard (on `your-sub-domain.pirsch.io`).
+
+**Example request**
+
+`POST /api/v1/domain/subdomain`
+
+```JSON
+{
+    "domain_id": "A5kgYzK14m",
+    "subdomain": "new-subdomain"
+}
+```
+
+### Toggle the Visiblity of Your Dashboard
+
+This endpoint will toggle the visibility of your dashboard from private to public or vise-versa.
+
+**Example request**
+
+`POST /api/v1/domain/subdomain`
+
+```JSON
+{
+    "domain_id": "A5kgYzK14m"
+}
+```
+
+### Toggle Grouping by Title
+
+This endpoint will toggle if statistics are grouped by page title.
+
+**Example request**
+
+`POST /api/v1/domain/title`
+
+```JSON
+{
+    "domain_id": "A5kgYzK14m"
+}
+```
+
+### Changing the Timezone
+
+This endpoint will change the timezone for the dashboard.
+
+**Example request**
+
+`POST /api/v1/domain/timezone`
+
+```JSON
+{
+    "domain_id": "A5kgYzK14m",
+    "timezone": "Europe/Berlin"
+}
+```
+
 ## Managing Access Links
 
 ### Listing Access Links
@@ -1083,3 +1141,337 @@ This endpoints removes a member from a domain.
 **Example request**
 
 `DELETE /api/v1/member?id=0DJ0mo934`
+
+## Managing Clients
+
+It's possible to manage domain clients with a user client.
+
+### Listing Clients
+
+This endpoint will list all clients.
+
+**Example request**
+
+`GET /api/v1/client?id=0DJ0mo934`
+
+**Example response**
+
+```JSON
+[
+    {
+        "id": "A5kgYzK14m",
+        "def_time": "2021-05-22T10:11:12.123456Z",
+        "mod_time": "2021-05-22T10:11:12.123456Z",
+        "domain_id": "0DJ0mo934",
+        "client_id": "...", // 32 characters
+        "description": "...",
+        "scope_hit": "w",
+        "scope_event": "w",
+        "scope_statistics": "r",
+        "scope_domains": "w"
+    },
+    // ...
+]
+```
+
+### Creating a Client
+
+This endpoint will create a new client.
+
+**Example request**
+
+`POST /api/v1/client`
+
+```JSON
+{
+    "domain_id": "0DJ0mo934",
+    "description": "...",
+    "scope_hit": "w",
+    "scope_event": "w",
+    "scope_statistics": "r",
+    "scope_domains": "w"
+}
+```
+
+Scopes can give read or write access. The table below shows which values are possible for available scopes.
+
+| Scope | Read | Write |
+| - | - | - |
+| hit | | x |
+| event | | x |
+| statistics | x | |
+| domains | x | x |
+
+The `domains` scope has two different meanins, depending on if it's used for a domain or user client:
+
+* for user clients, it will give access to most of the user actions, like creating or deleting domains and settings
+* for domain clients, it will give access to domain specific settings, like the subdomain or access links
+
+**Example response**
+
+```JSON
+{
+    "id": "A5kgYzK14m",
+    "def_time": "2021-05-22T10:11:12.123456Z",
+    "mod_time": "2021-05-22T10:11:12.123456Z",
+    "domain_id": "0DJ0mo934",
+    "client_id": "...", // 32 characters
+    "client_secret": "...", // 64 characters
+    "description": "...",
+    "scope_hit": "w",
+    "scope_event": "w",
+    "scope_statistics": "r",
+    "scope_domains": "w"
+}
+```
+
+### Updating a Client
+
+This endpoint will update the description for a client.
+
+**Example request**
+
+`POST /api/v1/client`
+
+```JSON
+{
+    "id": "A5kgYzK14m",
+    "description": "..."
+}
+```
+
+**Example response**
+
+```JSON
+{
+    "id": "A5kgYzK14m",
+    "def_time": "2021-05-22T10:11:12.123456Z",
+    "mod_time": "2021-05-22T10:11:12.123456Z",
+    "domain_id": "0DJ0mo934",
+    "client_id": "...", // 32 characters
+    "description": "...",
+    "scope_hit": "w",
+    "scope_event": "w",
+    "scope_statistics": "r",
+    "scope_domains": "w"
+}
+```
+
+### Deleting a Client
+
+This endpoint will delete a client.
+
+`DELETE /api/v1/client?id=A5kgYzK14m`
+
+## Managing Email Reports
+
+### Listing Email Reports
+
+This endpoint will list all email reports.
+
+**Example request**
+
+`GET /api/v1/report?id=0DJ0mo934`
+
+**Example response**
+
+```JSON
+[
+    {
+        "id": "A5kgYzK14m",
+        "def_time": "2021-05-22T10:11:12.123456Z",
+        "mod_time": "2021-05-22T10:11:12.123456Z",
+        "domain_id": "0DJ0mo934",
+        "email": "...",
+        "interval": 2,
+        "next_report": "2021-05-22T10:11:12.123456Z"
+    },
+    // ...
+]
+```
+
+### Creating Email Reports
+
+This endpoint will create a new email report.
+
+**Example request**
+
+`POST /api/v1/report`
+
+```JSON
+{
+    "domain_id": "0DJ0mo934",
+    "emails": ["member@foo.com", "member@bar.com"],
+    "interval": 1 // weeks
+}
+```
+
+**Example response**
+
+```JSON
+[
+    {
+        "id": "A5kgYzK14m",
+        "def_time": "2021-05-22T10:11:12.123456Z",
+        "mod_time": "2021-05-22T10:11:12.123456Z",
+        "domain_id": "0DJ0mo934",
+        "email": "...",
+        "interval": 1,
+        "next_report": "2021-05-22T10:11:12.123456Z"
+    },
+    // ...
+]
+```
+
+### Updating an Email Report
+
+This endpoint will update an existing email report.
+
+**Example request**
+
+`PUT /api/v1/report`
+
+```JSON
+{
+    "id": "A5kgYzK14m",
+    "interval": 4 // weeks
+}
+```
+
+**Example response**
+
+```JSON
+{
+    "id": "A5kgYzK14m",
+    "def_time": "2021-05-22T10:11:12.123456Z",
+    "mod_time": "2021-05-22T10:11:12.123456Z",
+    "domain_id": "0DJ0mo934",
+    "email": "...",
+    "interval": 4,
+    "next_report": "2021-05-22T10:11:12.123456Z"
+}
+```
+
+### Deleting an Email Report
+
+This endpoint will delete an email report.
+
+**Example request**
+
+`DELETE /api/v1/report?id=A5kgYzK14m`
+
+## Managing Conversion Goals
+
+### Listing Conversion Goals
+
+This endpoint will list all conversion goals.
+
+**Example request**
+
+`GET /api/v1/goal?id=0DJ0mo934`
+
+**Example response**
+
+```JSON
+[
+    {
+        "id": "A5kgYzK14m",
+        "def_time": "2021-05-22T10:11:12.123456Z",
+        "mod_time": "2021-05-22T10:11:12.123456Z",
+        "domain_id": "0DJ0mo934",
+        "name": "...",
+        "path_pattern": "...", // regex
+        "pattern": "/checkout/**",
+        "visitor_goal": 123, // or null if unset
+        "cr_goal": 1.23, // or null if unset
+        "delete_reached": false,
+        "email_reached": true
+    },
+    // ...
+]
+```
+
+### Creating a Conversion Goal
+
+This endpoint will create a new conversion goal.
+
+**Example request**
+
+`POST /api/v1/goal`
+
+```JSON
+{
+    "domain_id": "0DJ0mo934",
+    "name": "...",
+    "path_pattern": "/checkout/**",
+    "visitors": 123, // 0 to pass
+    "cr": 1.23, // 0 to pass
+    "delete_reached": false,
+    "email_reached": true
+}
+```
+
+**Example response**
+
+```JSON
+{
+    "id": "A5kgYzK14m",
+    "def_time": "2021-05-22T10:11:12.123456Z",
+    "mod_time": "2021-05-22T10:11:12.123456Z",
+    "domain_id": "0DJ0mo934",
+    "name": "...",
+    "path_pattern": "...", // regex
+    "pattern": "/checkout/**",
+    "visitor_goal": 123, // or null if unset
+    "cr_goal": 1.23, // or null if unset
+    "delete_reached": false,
+    "email_reached": true
+}
+```
+
+### Updating a Conversion Goal
+
+This endpoint will update an existing converion goal.
+
+**Example request**
+
+`PUT /api/v1/goal`
+
+```JSON
+{
+    "id": "A5kgYzK14m",
+    "domain_id": "0DJ0mo934",
+    "name": "...",
+    "path_pattern": "/checkout/**",
+    "visitors": 123, // 0 to pass
+    "cr": 1.23, // 0 to pass
+    "delete_reached": false,
+    "email_reached": true
+}
+```
+
+**Example response**
+
+```JSON
+{
+    "id": "A5kgYzK14m",
+    "def_time": "2021-05-22T10:11:12.123456Z",
+    "mod_time": "2021-05-22T10:11:12.123456Z",
+    "domain_id": "0DJ0mo934",
+    "name": "...",
+    "path_pattern": "...", // regex
+    "pattern": "/checkout/**",
+    "visitor_goal": 123, // or null if unset
+    "cr_goal": 1.23, // or null if unset
+    "delete_reached": false,
+    "email_reached": true
+}
+```
+
+### Deleting a Conversion Goal
+
+This endpoint will delete a conversion goal.
+
+**Example request**
+
+`DELETE /api/v1/goal?id=A5kgYzK14m`

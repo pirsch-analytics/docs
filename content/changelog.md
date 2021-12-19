@@ -1,10 +1,16 @@
 ---
 title: "Changelog"
-date: 2021-12-15
+date: 2021-12-19
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
+
+## 1.12.4
+
+Release: unreleased
+
+* fixed updating a client returning the client secret again
 
 ## 1.12.3
 
