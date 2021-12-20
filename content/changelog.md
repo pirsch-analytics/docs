@@ -10,7 +10,10 @@ description: "Overview of all changes."
 
 Release: unreleased
 
+* integrated blog into website
 * fixed updating a client returning the client secret again
+* fixed detecting Windows 11
+* updated dependencies
 
 ## 1.12.3
 
