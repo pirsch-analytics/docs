@@ -8,7 +8,7 @@ description: "Overview of all changes."
 
 ## 1.12.4
 
-Release: unreleased
+Release: 2021-12-21
 
 * integrated blog into website
 * fixed updating a client returning the client secret again
