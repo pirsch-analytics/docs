@@ -1,10 +1,16 @@
 ---
 title: "Changelog"
-date: 2021-12-21
+date: 2021-12-22
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
+
+## 1.12.5
+
+Release: unreleased
+
+* website and blog optimizations
 
 ## 1.12.4
 
