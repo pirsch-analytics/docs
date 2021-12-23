@@ -10,7 +10,9 @@ description: "Overview of all changes."
 
 Release: 2021-12-23
 
+* set theme-color depending on light or dark mode settings
 * website and blog optimizations
+* fixed round corners for modal dialogues on Safari
 * fixed cleaning up non-confirmed accounts
 
 ## 1.12.4
