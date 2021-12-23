@@ -14,6 +14,7 @@ Release: 2021-12-23
 * website and blog optimizations
 * fixed round corners for modal dialogues on Safari
 * fixed cleaning up non-confirmed accounts
+* updated dependencies
 
 ## 1.12.4
 
