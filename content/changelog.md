@@ -8,9 +8,10 @@ description: "Overview of all changes."
 
 ## 1.12.5
 
-Release: unreleased
+Release: 2021-12-23
 
 * website and blog optimizations
+* fixed cleaning up non-confirmed accounts
 
 ## 1.12.4
 
