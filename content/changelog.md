@@ -1,10 +1,16 @@
 ---
 title: "Changelog"
-date: 2021-12-23
+date: 2021-12-29
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
+
+## 1.12.6
+
+Release: unreleased
+
+* updated dependencies
 
 ## 1.12.5
 
