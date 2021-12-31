@@ -8,8 +8,11 @@ description: "Overview of all changes."
 
 ## 1.12.6
 
-Release: unreleased
+Release: 2021-12-31
 
+* fixed opening language details
+* fixed displaying "unknown" in lists
+* updated pricing
 * updated dependencies
 
 ## 1.12.5
