@@ -1,10 +1,16 @@
 ---
 title: "Changelog"
-date: 2021-12-31
+date: 2022-01-05
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
+
+## 1.12.7
+
+Release: 2022-01-05
+
+* fixed chart color
 
 ## 1.12.6
 
