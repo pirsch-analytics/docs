@@ -1,10 +1,16 @@
 ---
 title: "Changelog"
-date: 2022-01-05
+date: 2022-01-06
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
+
+## 1.12.8
+
+Release: 2022-01-06
+
+* fixed session collapsing and caching
 
 ## 1.12.7
 
