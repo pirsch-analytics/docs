@@ -1,10 +1,16 @@
 ---
 title: "Changelog"
-date: 2022-01-06
+date: 2022-01-09
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
+
+## 1.12.9
+
+Release: 2022-01-09
+
+* fixed subscription checkout
 
 ## 1.12.8
 
