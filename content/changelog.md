@@ -6,6 +6,14 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.12.10
+
+Release: unreleased
+
+* updated Hugo version for docs
+* retry generating docs after an error
+* updated dependencies
+
 ## 1.12.9
 
 Release: 2022-01-09
