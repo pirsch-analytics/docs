@@ -1,6 +1,6 @@
 ---
 title: "Overview"
-date: 2021-11-07
+date: 2022-01-13
 draft: false
 weight: 1
 description: "Get an overview over the dashboard."
@@ -30,21 +30,19 @@ The time range is set to one week by default. To change it, click on the time ra
 
 The *Live* filter will update the dashboard every 30 seconds and returns the statistics for the past 10 minutes.
 
-## Panels
+## Charts
 
-Below the menu, you will find the panels showing different statistics. Some of the panels can be opened to show detailed statistics. To do that, click on the expand icon in the top right corner of the panel. Tables in the detailed view can be sorted by column. Simply click on one of the columns to sort them in ascending or descending order, or to remove the sorting.
+Below the menu, you will find charts showing different statistics. On mobile, charts can be opened by clicking on the numbers. On desktop, this will change the currently active chart. You can toggle between a line and a bar chart.
 
 ![Visitors](/dashboard/visitors.png)
 
-### Page Views, Unique Visitors, and Sessions
+The numbers also show the growth rate relative to the previous time range (the past week when the filter is set to the past 7 days, for example) and are colored green, red, or yellow depending on if they have increased, decreased, or remained the same.
 
-The first three panels show the page views, unique visitors, and sessions. If you click on one of them you can enlarge the graph. The panels include the growth rate relative to the previous time range (the past week when the filter is set to the past 7 days for example) and are colored in green, red, or yellow depending on if they have increased, decreased, or remained the same.
+Page views and unique visitors are self-explanatory. Sessions tells you the number of recurring visitors for the day, corresponding to a 30-minute time frame. The bounce rate shows how many visitors have left your website after their first page view. The average session duration is the time visitors spend on your website. If someone bounces, they won't appear in this statistic.
 
-Page views and unique visitors are self-explanatory. Sessions tells you the number of recurring visitors for the day, corresponding to a 30-minute time frame.
+## Panels
 
-### Bounce Rate, Average Session Duration, and Unique Visitors Today
-
-The next three panels show the bounce rate, average session duration, and the unique visitor count for today. The bounce rate shows how many visitors have left your website after the landing page. The average session duration is the time visitors spent on your website. If someone bounces, they won't appear in this statistics. The unique visitor count for today works like the unique visitor graph above, but shows how many visitors were on your website at which time of the day.
+Below the charts, you will find the panels showing different statistics. Some of the panels can be opened to show detailed statistics. To do that, click on the expand icon in the top right corner of the panel. Tables in the detailed view can be sorted by column. Simply click on one of the columns to sort them in ascending or descending order, or to remove the sorting altogether.
 
 ### Pages, Referrers, Countries, ...
 
