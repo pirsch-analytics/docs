@@ -1,6 +1,6 @@
 ---
 title: "API"
-date: 2021-12-19
+date: 2022-01-19
 draft: false
 weight: 1
 description: "Use the API to monitor traffic and access your data."
@@ -626,10 +626,18 @@ This endpoint will list all events including metadata. Note that this can be an 
     {
         "hour": 0,
         "visitors": 42,
+        "views": 56,
+        "sessions": 48,
+        "bounces": 23,
+        "bounce_rate": 0.4791
     },
     {
         "hour": 1,
         "visitors": 29,
+        "views": 52,
+        "sessions": 21,
+        "bounces": 19,
+        "bounce_rate": 0.3219
     },
     // ...
 ]
