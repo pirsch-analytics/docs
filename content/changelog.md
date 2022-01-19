@@ -1,17 +1,19 @@
 ---
 title: "Changelog"
-date: 2022-01-09
+date: 2022-01-18
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
 
-## 1.12.10
+## 1.13.0
 
-Release: unreleased
+Release: 2022-01-19
 
+* added sessions, views, bounces, and bounce rate to hourly visitor statistics
 * updated Hugo version for docs
 * retry generating docs after an error
+* fixed average session duration calculation
 * updated dependencies
 
 ## 1.12.9
