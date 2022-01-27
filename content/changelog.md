@@ -1,10 +1,16 @@
 ---
 title: "Changelog"
-date: 2022-01-18
+date: 2022-01-27
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
+
+## 1.13.1
+
+Release: unreleased
+
+* added automatic incremential backups
 
 ## 1.13.0
 
