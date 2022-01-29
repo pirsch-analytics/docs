@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-date: 2022-01-27
+date: 2022-01-29
 draft: false
 weight: 8
 description: "Overview of all changes."
@@ -8,9 +8,11 @@ description: "Overview of all changes."
 
 ## 1.13.1
 
-Release: unreleased
+Release: 2022-01-29
 
 * added automatic incremential backups
+* always display cities panel
+* fixed charts on mobile when filtering for a single day
 
 ## 1.13.0
 
