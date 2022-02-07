@@ -1,10 +1,19 @@
 ---
 title: "Changelog"
-date: 2022-01-29
+date: 2022-02-07
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
+
+## 1.13.2
+
+Release: unreleased
+
+* merged system and device panels
+* improved backup folder structure
+* fixed screens not displaying "no data found" when no data is present
+* updated dependencies
 
 ## 1.13.1
 
