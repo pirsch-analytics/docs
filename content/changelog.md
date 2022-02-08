@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-date: 2022-02-07
+date: 2022-02-08
 draft: false
 weight: 8
 description: "Overview of all changes."
@@ -10,7 +10,9 @@ description: "Overview of all changes."
 
 Release: unreleased
 
+* added month to date and last month time range filter
 * merged system and device panels
+* changed size of main graph
 * improved backup folder structure
 * fixed screens not displaying "no data found" when no data is present
 * updated dependencies
