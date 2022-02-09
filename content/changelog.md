@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-date: 2022-02-08
+date: 2022-02-09
 draft: false
 weight: 8
 description: "Overview of all changes."
@@ -11,6 +11,8 @@ description: "Overview of all changes."
 Release: unreleased
 
 * added month to date and last month time range filter
+* added support for custom conversion goal patterns using regular expressions (regex)
+* added GSC validation and automatic removal and email on error
 * merged system and device panels
 * changed size of main graph
 * improved backup folder structure
