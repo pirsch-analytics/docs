@@ -13,6 +13,7 @@ Release: unreleased
 * added month to date and last month time range filter
 * added support for custom conversion goal patterns using regular expressions (regex)
 * added GSC validation and automatic removal and email on error
+* added arrows to move the time interval
 * merged system and device panels
 * changed size of main graph
 * improved backup folder structure
