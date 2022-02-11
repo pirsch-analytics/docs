@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-date: 2022-02-09
+date: 2022-02-11
 draft: false
 weight: 8
 description: "Overview of all changes."
@@ -8,12 +8,13 @@ description: "Overview of all changes."
 
 ## 1.13.2
 
-Release: unreleased
+Release: 2022-02-11
 
 * added month to date and last month time range filter
 * added support for custom conversion goal patterns using regular expressions (regex)
 * added GSC validation and automatic removal and email on error
 * added arrows to move the time interval
+* added country flag to city panel
 * merged system and device panels
 * changed size of main graph
 * improved backup folder structure
