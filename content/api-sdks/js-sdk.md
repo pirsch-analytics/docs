@@ -1,6 +1,6 @@
 ---
 title: "JavaScript SDK"
-date: 2021-07-24
+date: 2022-02-12
 draft: false
 weight: 4
 description: "SDK for JavaScript."
@@ -80,10 +80,11 @@ The client offers methods to access your statistics. Before you can use them, re
 // all client methods might return an APIError, make sure to handle that...
 const domain = await client.domain() as Domain;
 
-const filter = new Filter();
-filter.id = domain.id;
-filter.from = new Date("2021-06-19");
-filter.to = new Date("2021-06-26");
+const filter = {
+    id: domain.id,
+    from: new Date("2021-06-19"),
+    to: new Date("2021-06-26")
+};
 ```
 
 You can now use the filter to select results.
