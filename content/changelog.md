@@ -1,10 +1,16 @@
 ---
 title: "Changelog"
-date: 2022-02-11
+date: 2022-02-13
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
+
+## 1.13.3
+
+Release: 2022-02-13
+
+* updated Pirsch library
 
 ## 1.13.2
 
