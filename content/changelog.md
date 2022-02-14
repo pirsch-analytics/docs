@@ -1,10 +1,18 @@
 ---
 title: "Changelog"
-date: 2022-02-13
+date: 2022-02-14
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
+
+## 1.13.4
+
+Release: 2022-02-14
+
+* handle bad GSC integrations
+* don't unlink GSC on the first error, keep trying for up to three days
+* fixed counting bounces multiple times when grouping by pages
 
 ## 1.13.3
 
