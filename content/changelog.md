@@ -1,10 +1,17 @@
 ---
 title: "Changelog"
-date: 2022-02-14
+date: 2022-02-15
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
+
+## 1.13.5
+
+Release: 2022-02-15
+
+* fixed resetting filter after selecting dates
+* updated dependencies
 
 ## 1.13.4
 
