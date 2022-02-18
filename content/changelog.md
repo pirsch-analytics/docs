@@ -1,10 +1,16 @@
 ---
 title: "Changelog"
-date: 2022-02-15
+date: 2022-02-18
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
+
+## 1.13.6
+
+Release: 2022-02-18
+
+* fixed checking access for client SDKs
 
 ## 1.13.5
 
