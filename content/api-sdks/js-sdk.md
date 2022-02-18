@@ -1,6 +1,6 @@
 ---
 title: "JavaScript SDK"
-date: 2022-02-12
+date: 2022-02-18
 draft: false
 weight: 4
 description: "SDK for JavaScript."
@@ -78,7 +78,8 @@ The client offers methods to access your statistics. Before you can use them, re
 
 ```JavaScript
 // all client methods might return an APIError, make sure to handle that...
-const domain = await client.domain() as Domain;
+const domains = await client.domain() as Domain[];
+const domain = domains[0]; // the returned list will contain only the client domain
 
 const filter = {
     id: domain.id,
