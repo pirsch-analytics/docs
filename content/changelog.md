@@ -1,10 +1,18 @@
 ---
 title: "Changelog"
-date: 2022-02-18
+date: 2022-03-17
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
+
+## 1.14.0
+
+Release: unreleased
+
+* fixed live filter after page reload
+* fixed subscription warning when free trial has run out but subscription has been activated
+* updated dependencies
 
 ## 1.13.6
 
