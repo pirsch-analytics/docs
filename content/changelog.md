@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-date: 2022-03-17
+date: 2022-03-21
 draft: false
 weight: 8
 description: "Overview of all changes."
@@ -10,8 +10,12 @@ description: "Overview of all changes."
 
 Release: unreleased
 
+* added hostname to domain deletion dialog for easy copy and paste
+* removed FLoC header (no longer needed)
 * fixed live filter after page reload
 * fixed subscription warning when free trial has run out but subscription has been activated
+* fixed usage on billing page when free trial is still active
+* fixed updating usage when deleting data
 * updated dependencies
 
 ## 1.13.6
