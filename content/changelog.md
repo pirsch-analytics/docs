@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-date: 2022-03-21
+date: 2022-03-23
 draft: false
 weight: 8
 description: "Overview of all changes."
@@ -11,6 +11,9 @@ description: "Overview of all changes."
 Release: unreleased
 
 * added hostname to domain deletion dialog for easy copy and paste
+* added date filter by clicking a day in the graph
+* improved conversion goal dialog to make it clearer when regex or pattern is used
+* sample for conversion goals regex is now saved and loaded on edit
 * removed FLoC header (no longer needed)
 * fixed live filter after page reload
 * fixed subscription warning when free trial has run out but subscription has been activated
