@@ -1,6 +1,6 @@
 ---
 title: "API"
-date: 2022-01-19
+date: 2022-03-23
 draft: false
 weight: 1
 description: "Use the API to monitor traffic and access your data."
@@ -1483,3 +1483,28 @@ This endpoint will delete a conversion goal.
 **Example request**
 
 `DELETE /api/v1/goal?id=A5kgYzK14m`
+
+### Testing the Regular Expression for a Conversion Goal
+
+This endpoint will test if a regular expression is valid for a conversion goal. Use it to see if you can use an expression before creating or updating a conversion goal fist.
+
+**Example request**
+
+`POST /api/v1/goal/regex`
+
+```JSON
+{
+    "regex": "(?i)^/regular/expression/[^/]*$",
+    "sample": "/regular/expression/example"
+}
+```
+
+**Example response**
+
+```JSON
+{
+    "match": true
+}
+```
+
+An error will be returned in case the expression is invalid. Otherwise it will return if the regular expression matches the sample.
