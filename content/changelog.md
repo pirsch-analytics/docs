@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-date: 2022-03-23
+date: 2022-03-28
 draft: false
 weight: 8
 description: "Overview of all changes."
@@ -12,6 +12,9 @@ Release: unreleased
 
 * added hostname to domain deletion dialog for easy copy and paste
 * added date filter by clicking a day in the graph
+* added `data-exclude` to JS snippets to exclude pages using regular expressions
+* optimized JS snippets
+* improved email report text
 * improved conversion goal dialog to make it clearer when regex or pattern is used
 * sample for conversion goals regex is now saved and loaded on edit
 * removed FLoC header (no longer needed)
@@ -19,6 +22,8 @@ Release: unreleased
 * fixed subscription warning when free trial has run out but subscription has been activated
 * fixed usage on billing page when free trial is still active
 * fixed updating usage when deleting data
+* fixed number formatting in email reports
+* fixed email report interval
 * updated dependencies
 
 ## 1.13.6
