@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-date: 2022-03-28
+date: 2022-04-01
 draft: false
 weight: 8
 description: "Overview of all changes."
@@ -13,9 +13,13 @@ Release: unreleased
 * added hostname to domain deletion dialog for easy copy and paste
 * added date filter by clicking a day in the graph
 * added `data-exclude` to JS snippets to exclude pages using regular expressions
+* added filtering pages by configuring a list of regular expressions in the JS snippet
+* added grouping results by week, month, and year
 * optimized JS snippets
 * improved email report text
 * improved conversion goal dialog to make it clearer when regex or pattern is used
+* improved bot filtering using simple heuristic
+* calculating the growth for today will now take the time into account, and not compare it to the full past day
 * sample for conversion goals regex is now saved and loaded on edit
 * removed FLoC header (no longer needed)
 * fixed live filter after page reload
@@ -24,6 +28,8 @@ Release: unreleased
 * fixed updating usage when deleting data
 * fixed number formatting in email reports
 * fixed email report interval
+* fixed moving day filter with arrows
+* fixed grouping referrers with path in URL
 * updated dependencies
 
 ## 1.13.6
