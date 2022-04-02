@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-date: 2022-04-01
+date: 2022-04-02
 draft: false
 weight: 8
 description: "Overview of all changes."
@@ -8,12 +8,11 @@ description: "Overview of all changes."
 
 ## 1.14.0
 
-Release: unreleased
+Release: 2022-04-02
 
 * added hostname to domain deletion dialog for easy copy and paste
 * added date filter by clicking a day in the graph
-* added `data-exclude` to JS snippets to exclude pages using regular expressions
-* added filtering pages by configuring a list of regular expressions in the JS snippet
+* added filtering pages (`data-exclude`) by configuring a list of regular expressions in the JS snippet
 * added grouping results by week, month, and year
 * optimized JS snippets
 * improved email report text

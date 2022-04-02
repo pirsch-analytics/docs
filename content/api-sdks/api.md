@@ -1,6 +1,6 @@
 ---
 title: "API"
-date: 2022-03-23
+date: 2022-04-02
 draft: false
 weight: 1
 description: "Use the API to monitor traffic and access your data."
@@ -157,6 +157,7 @@ The following list contains all possible filter options. Only the required field
 | from | yes | 2021-05-08 | YYYY-MM-DD |
 | to | yes | 2021-05-15 | YYYY-MM-DD |
 | start | no | 600 | Queries data for the past seconds (10 minutes in this example). The date range filters will be ignored if set. The maximum is one hour (3600 seconds). |
+| scale | no | week | The scale to group results. Can either be day (default), week, month, or year. |
 | path | no | /home | The page path. |
 | entry_path | no | /home | The entry page path. |
 | exit_path | no | /yte | The exit page path. |
@@ -221,10 +222,15 @@ Before you can make requests, you need to know the domain ID for the client. Mak
 
 **Example response**
 
+Which time component is set depends on the `scale` filter. Setting it to `day` (default) sets the `day` field. Otherwise the corresponding field will be set.
+
 ```JSON
 [
     {
         "day": "2021-05-12T00:00:00Z",
+        "week": null,
+        "month": null,
+        "year": null,
         "average_time_spent_seconds": 42
     },
     // ...
@@ -239,10 +245,15 @@ Before you can make requests, you need to know the domain ID for the client. Mak
 
 **Example response**
 
+Which time component is set depends on the `scale` filter. Setting it to `day` (default) sets the `day` field. Otherwise the corresponding field will be set.
+
 ```JSON
 [
     {
         "day": "2021-05-12T00:00:00Z",
+        "week": null,
+        "month": null,
+        "year": null,
         "path" "/home",
         "average_time_spent_seconds": 42
     },
@@ -373,10 +384,15 @@ This endpoint returns the total visitor count, views, sessions, bounces, and bou
 
 **Example response**
 
+Which time component is set depends on the `scale` filter. Setting it to `day` (default) sets the `day` field. Otherwise the corresponding field will be set.
+
 ```JSON
 [
     {
         "day": "2021-05-12T00:00:00Z",
+        "week": null,
+        "month": null,
+        "year": null,
         "visitors": 42,
         "views": 56,
         "sessions": 48,

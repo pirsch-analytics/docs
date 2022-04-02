@@ -1,6 +1,6 @@
 ---
 title: "Website Integration"
-date: 2021-11-18
+date: 2022-04-02
 draft: false
 weight: 1
 description: "Learn on how to integrate Pirsch into your website using JavaScript."
@@ -34,6 +34,21 @@ Your website is identified by the hostname the request is made from and an ident
     id="pirschjs" 
     data-code="YOUR_IDENTIFICATION_CODE"></script>
 ```
+
+## Exclude Pages
+
+The snippet offers a very flexible way to exclude pages. You can exclude a single or multiple pages by specifing the `data-exclude` attribute. The content is a list of regular expressions that will be used to filter pages.
+
+```html
+<script defer type="text/javascript" src="https://api.pirsch.io/pirsch.js" 
+    id="pirschjs" 
+    data-code="YOUR_IDENTIFICATION_CODE"
+    data-exclude="\/exact\/match,\/exclude\/page\/(en|de)/.*"></script>
+```
+
+This example will match the page `/exact/match` and every page the starts with `/exclude/page/en/` or `/exclude/page/de/`.
+
+Please always [validate](https://regex101.com/) your expressions before using them and make sure you don't see any errors on the browser console. Special regex characters need to be masked (like the forward slash above). For a simple single page filter use a pattern like `\/your\/page`.
 
 ## Ignoring Your Own Page Views
 
