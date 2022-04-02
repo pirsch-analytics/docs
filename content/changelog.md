@@ -6,6 +6,13 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.14.1
+
+Release: 2022-04-02
+
+* hide scale selection when viewing a single day
+* fixed live view
+
 ## 1.14.0
 
 Release: 2022-04-02
