@@ -11,6 +11,7 @@ description: "Overview of all changes."
 Release: 2022-04-03
 
 * fixed excluding pages in JS snippet
+* updated dependencies (including Pirsch SDK)
 
 ## 1.14.1
 
