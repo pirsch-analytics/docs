@@ -1,10 +1,16 @@
 ---
 title: "Changelog"
-date: 2022-04-02
+date: 2022-04-03
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
+
+## 1.14.2
+
+Release: 2022-04-03
+
+* fixed excluding pages in JS snippet
 
 ## 1.14.1
 

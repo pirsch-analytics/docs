@@ -1,6 +1,6 @@
 ---
 title: "Website Integration"
-date: 2022-04-02
+date: 2022-04-03
 draft: false
 weight: 1
 description: "Learn on how to integrate Pirsch into your website using JavaScript."
@@ -43,7 +43,7 @@ The snippet offers a very flexible way to exclude pages. You can exclude a singl
 <script defer type="text/javascript" src="https://api.pirsch.io/pirsch.js" 
     id="pirschjs" 
     data-code="YOUR_IDENTIFICATION_CODE"
-    data-exclude="\/exact\/match,\/exclude\/page\/(en|de)/.*"></script>
+    data-exclude="/exact/match,/exclude/page/(en|de)/.*"></script>
 ```
 
 This example will match the page `/exact/match` and every page the starts with `/exclude/page/en/` or `/exclude/page/de/`.
