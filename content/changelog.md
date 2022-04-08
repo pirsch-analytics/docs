@@ -1,10 +1,17 @@
 ---
 title: "Changelog"
-date: 2022-04-05
+date: 2022-04-08
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
+
+## 1.14.4
+
+Release: 2022-04-08
+
+* updated Pirsch core
+* updated dependencies
 
 ## 1.14.3
 
