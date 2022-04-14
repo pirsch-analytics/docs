@@ -1,10 +1,18 @@
 ---
 title: "Changelog"
-date: 2022-04-08
+date: 2022-04-14
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
+
+## 1.14.5
+
+Release: 2022-04-14
+
+* fixed and improved CSV export filename
+* fixed entry/exit queries when filtering for a path and grouping by page titles
+* updated dependencies
 
 ## 1.14.4
 
