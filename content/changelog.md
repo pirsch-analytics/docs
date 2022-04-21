@@ -1,10 +1,24 @@
 ---
 title: "Changelog"
-date: 2022-04-14
+date: 2022-04-21
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
+
+## 1.14.6
+
+Release: 2022-04-21
+
+* scale now shows "Hour" when filtering for a single day
+* numbers previously rounded to "0%" are now displayed as "< 0.1%"
+* changed to bar graph as default
+* added tooltips to unexplained numbers
+* added hint that it can't take a few seconds before any data is displayed after adding a website
+* fixed filtering entry/exit pages by conversion goal
+* fixed filtering by period when clicking on the graph instead of the first day of the week/month/year
+* fixed sticky filter on mobile in combination with the scale selection
+* fixed alignment of conversion goal patterns
 
 ## 1.14.5
 
