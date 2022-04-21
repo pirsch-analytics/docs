@@ -10,11 +10,12 @@ description: "Overview of all changes."
 
 Release: 2022-04-21
 
+* added tooltips to unexplained numbers
+* added hint that it can't take a few seconds before any data is displayed after adding a website
 * scale now shows "Hour" when filtering for a single day
 * numbers previously rounded to "0%" are now displayed as "< 0.1%"
 * changed to bar graph as default
-* added tooltips to unexplained numbers
-* added hint that it can't take a few seconds before any data is displayed after adding a website
+* lots of smaller improvements to texts and design
 * fixed filtering entry/exit pages by conversion goal
 * fixed filtering by period when clicking on the graph instead of the first day of the week/month/year
 * fixed sticky filter on mobile in combination with the scale selection
