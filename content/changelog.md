@@ -14,6 +14,7 @@ Release: unreleased
 * always show conversion goals and events panels
 * added multi-domain support to combine statistics from different websites into a single dashboard
 * allow multiple email reports for the same email address at different intervals
+* made the chart labels responsive
 
 ## 1.14.6
 

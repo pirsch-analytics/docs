@@ -14,6 +14,10 @@ The snippet for the [website integration]({{<ref "get-started/frontend-integrati
 
 The identification code is used for the JavaScript snippet which must be embedded on your page if you decide to use the [website integration]({{<ref "get-started/frontend-integration.md">}}). Usually, you don't need to change it, but should your identification code get hijacked, you can reset it here. Note that you need to update all pages containing the snippet should you reset it.
 
+## Additional Domains
+
+*WIP*
+
 ## Clients
 
 Clients are used to access the [Pirsch API]({{<ref "api-sdks/_index.md">}}). You will need one if you decide to use the [backend integration]({{<ref "get-started/backend-integration.md">}}) or to access your data from an external application.
