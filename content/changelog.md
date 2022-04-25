@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-date: 2022-04-22
+date: 2022-04-25
 draft: false
 weight: 8
 description: "Overview of all changes."
@@ -14,6 +14,13 @@ Release: unreleased
 * always show conversion goals and events panels
 * added multi-domain support to combine statistics from different websites into a single dashboard
 * allow multiple email reports for the same email address at different intervals
+
+## 1.14.7
+
+Release: 2022-04-25
+
+* period selection will now be set when using arrows to change period
+* fixed time ranges showing one more day than expected
 
 ## 1.14.6
 
