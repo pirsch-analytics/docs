@@ -12,8 +12,9 @@ Release: unreleased
 
 * added conversion goals and events modal dialog to panels
 * always show conversion goals and events panels
-* added multi-domain support to combine statistics from different websites into a single dashboard
+* added multi-domain support to combine statistics from different websites into a single dashboard or sending statistics to multiple dashboards from a single website
 * allow multiple email reports for the same email address at different intervals
+* added 25% separators in panel lines
 * made the chart labels responsive
 
 ## 1.14.7
