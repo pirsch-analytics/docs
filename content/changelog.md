@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-date: 2022-04-25
+date: 2022-04-29
 draft: false
 weight: 8
 description: "Overview of all changes."
@@ -11,10 +11,11 @@ description: "Overview of all changes."
 Release: unreleased
 
 * added conversion goals and events modal dialog to panels
-* always show conversion goals and events panels
 * added multi-domain support to combine statistics from different websites into a single dashboard or sending statistics to multiple dashboards from a single website
-* allow multiple email reports for the same email address at different intervals
 * added 25% separators in panel lines
+* added keyboard shortcuts to filter periods
+* always show conversion goals and events panels
+* allow multiple email reports for the same email address at different intervals
 * made the chart labels responsive
 * fixed adding another website when clicking on add website in menu again
 
