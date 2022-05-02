@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-date: 2022-04-29
+date: 2022-05-02
 draft: false
 weight: 8
 description: "Overview of all changes."
@@ -17,6 +17,7 @@ Release: unreleased
 * always show conversion goals and events panels
 * allow multiple email reports for the same email address at different intervals
 * made the chart labels responsive
+* the chart can now be hidden and saves which one was opened last
 * fixed adding another website when clicking on add website in menu again
 
 ## 1.14.7
