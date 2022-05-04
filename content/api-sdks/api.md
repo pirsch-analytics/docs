@@ -1,6 +1,6 @@
 ---
 title: "API"
-date: 2022-04-02
+date: 2022-05-04
 draft: false
 weight: 1
 description: "Use the API to monitor traffic and access your data."
@@ -1191,6 +1191,7 @@ This endpoint will list all clients.
         "description": "...",
         "scope_hit": "w",
         "scope_event": "w",
+        "scope_session": "w",
         "scope_statistics": "r",
         "scope_domains": "w"
     },
@@ -1212,6 +1213,7 @@ This endpoint will create a new client.
     "description": "...",
     "scope_hit": "w",
     "scope_event": "w",
+    "scope_session": "w",
     "scope_statistics": "r",
     "scope_domains": "w"
 }
@@ -1244,6 +1246,7 @@ The `domains` scope has two different meanins, depending on if it's used for a d
     "description": "...",
     "scope_hit": "w",
     "scope_event": "w",
+    "scope_session": "w",
     "scope_statistics": "r",
     "scope_domains": "w"
 }
@@ -1276,6 +1279,7 @@ This endpoint will update the description for a client.
     "description": "...",
     "scope_hit": "w",
     "scope_event": "w",
+    "scope_session": "w",
     "scope_statistics": "r",
     "scope_domains": "w"
 }
