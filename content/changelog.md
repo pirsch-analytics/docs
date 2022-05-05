@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-date: 2022-05-04
+date: 2022-05-05
 draft: false
 weight: 8
 description: "Overview of all changes."
@@ -15,7 +15,7 @@ Release: unreleased
 * added 25% separators in panel lines
 * added keyboard shortcuts to filter periods
 * added scope to keep sessions alive (scope_session)
-* added access token as an alternative to oAuth clients
+* added access tokens as an alternative to oAuth clients
 * always show conversion goals and events panels
 * allow multiple email reports for the same email address at different intervals
 * made the chart labels responsive

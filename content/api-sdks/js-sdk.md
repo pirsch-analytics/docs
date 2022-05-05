@@ -1,6 +1,6 @@
 ---
 title: "JavaScript SDK"
-date: 2022-02-18
+date: 2022-05-05
 draft: false
 weight: 4
 description: "SDK for JavaScript."
@@ -28,6 +28,8 @@ var client = new Client({
     protocol: "https" // used to parse the request URL, default is http
 });
 ```
+
+The `client_id` is optional if you use a client with a single access token (starting with `pa_`). Clients using this kind of access tokens can only send data (page views, events, or keep alive sessions). Both types should treat the secret/access token as a password.
 
 From here on we can make API calls through the `client`. It will automatically update the access token using the credentials you provided.
 

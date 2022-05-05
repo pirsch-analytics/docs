@@ -1,6 +1,6 @@
 ---
 title: "API"
-date: 2022-05-04
+date: 2022-05-05
 draft: false
 weight: 1
 description: "Use the API to monitor traffic and access your data."
@@ -35,6 +35,8 @@ In case of an error, Pirsch will return a JSON object in the body describing the
 To make requests to the API, you need to get an access token first. The token must be send with every request in the `Authorization` header in the format `Bearer <token>`. If you receive a status code 401 (unauthorized), you need to create a new access token and try again. `expires_at` timezone is set to UTC.
 
 Client IDs and secrets can be created from the domain settings page (under *Developer*) or from the account settings page. Domain clients are created for a specific domain and can only access and manipulate the domain they were created for. User clients have more privileges and can access all domains the user has access to (with the same permissions, viewer, or admin).
+
+Single access tokens (starting with `pa_`) can only be used to send data (page views, events, and keep alive sessions) and don't require a client ID, nor do they need to be refreshed. Treat both, client secrets and single access tokens, as passwords and store them securely.
 
 The examples for the other endpoints in this document will omit the header.
 
