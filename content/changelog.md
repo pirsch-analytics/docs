@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-date: 2022-05-05
+date: 2022-05-07
 draft: false
 weight: 8
 description: "Overview of all changes."
@@ -20,7 +20,9 @@ Release: unreleased
 * allow multiple email reports for the same email address at different intervals
 * made the chart labels responsive
 * the chart can now be hidden and saves which one was opened last
+* detailed lists now use the backend to search and sort results and use pagination to show as many results as required
 * fixed adding another website when clicking on add website in menu again
+* fixed conversion goal table label
 * updated dependencies
 
 ## 1.14.7
