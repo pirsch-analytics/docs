@@ -1,6 +1,6 @@
 ---
 title: "PHP SDK"
-date: 2021-07-24
+date: 2022-05-05
 draft: false
 weight: 3
 description: "SDK for PHP."
@@ -25,6 +25,8 @@ require __DIR__ . '/vendor/autoload.php'; // or require_once 'pirsch.php'; if yo
 
 $client = new Pirsch\Client('client_id', 'client_secret', 'example.com');
 ```
+
+The `client_id` is optional if you use a client with a single access token (starting with `pa_`). Clients using this kind of access tokens can only send data (page views, events, or keep alive sessions). Both types should treat the secret/access token as a password.
 
 From here on we can make API calls through the `$client`. It will automatically update the access token using the credentials you provided.
 

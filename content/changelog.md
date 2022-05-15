@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-date: 2022-04-25
+date: 2022-05-15
 draft: false
 weight: 8
 description: "Overview of all changes."
@@ -8,12 +8,23 @@ description: "Overview of all changes."
 
 ## 1.15.0
 
-Release: unreleased
+Release: 2022-05-15
 
 * added conversion goals and events modal dialog to panels
+* added multi-domain support to combine statistics from different websites into a single dashboard or sending statistics to multiple dashboards from a single website
+* added 25% separators in panel lines
+* added keyboard shortcuts to filter periods
+* added scope to keep sessions alive (scope_session)
+* added access tokens as an alternative to oAuth clients
 * always show conversion goals and events panels
-* added multi-domain support to combine statistics from different websites into a single dashboard
 * allow multiple email reports for the same email address at different intervals
+* made the chart labels responsive
+* the chart can now be hidden and saves which one was opened last
+* detailed lists now use the backend to search and sort results and use pagination to show as many results as required
+* fixed adding another website when clicking on add website in menu again
+* fixed conversion goal table label
+* fixed endless loading of charts after joining a dashboard
+* updated dependencies
 
 ## 1.14.7
 
