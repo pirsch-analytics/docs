@@ -1,10 +1,20 @@
 ---
 title: "Changelog"
-date: 2022-05-15
+date: 2022-05-16
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
+
+## 1.15.1
+
+Release: 2022-05-16
+
+* fixed showing conversion goal dialog to members without admin permissions
+* fixed inconsistent relative values in panels on desktop and mobile
+* fixed updating keywords when period is changed
+* fixed selecting period after clicking in graph
+* updated dependencies
 
 ## 1.15.0
 
