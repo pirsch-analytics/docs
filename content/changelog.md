@@ -6,6 +6,15 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.15.2
+
+Release: 2022-05-17
+
+* fixed sorting active visitors
+* fixed filter limit for free-trials
+* fixed accepting traffic for additional domains that also exist on their own
+* fixed styling for code blocks on blog
+
 ## 1.15.1
 
 Release: 2022-05-16
