@@ -1,10 +1,19 @@
 ---
 title: "Changelog"
-date: 2022-05-16
+date: 2022-05-18
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
+
+## 1.15.3
+
+Release: 2022-05-18
+
+* fixed accepting traffic if the hostname exists more than once
+* fixed initial labels on mobile
+* fixed opening charts on mobile require two clicks
+* fixed an error that occurred when filtering for events while another chart other than the visitors/views chart was open
 
 ## 1.15.2
 
