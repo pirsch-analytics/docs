@@ -1,6 +1,6 @@
 ---
 title: "Website Integration"
-date: 2022-04-03
+date: 2022-05-20
 draft: false
 weight: 1
 description: "Learn on how to integrate Pirsch into your website using JavaScript."
@@ -49,6 +49,10 @@ The snippet offers a very flexible way to exclude pages. You can exclude a singl
 This example will match the page `/exact/match` and every page the starts with `/exclude/page/en/` or `/exclude/page/de/`.
 
 Please always [validate](https://regex101.com/) your expressions before using them and make sure you don't see any errors on the browser console. Special regex characters need to be masked (like the forward slash above). For a simple single page filter use a pattern like `\/your\/page`.
+
+## Creating Rollup Views and Sending Data to Multiple Dashboards
+
+It's possible to create rollup-views and to send data to multiple dashboards. Please read the [developer settings article]({{<ref "settings/developer.md#additional-domains">}}) for details.
 
 ## Ignoring Your Own Page Views
 

@@ -1,6 +1,6 @@
 ---
 title: "API"
-date: 2022-05-05
+date: 2022-05-20
 draft: false
 weight: 1
 description: "Use the API to monitor traffic and access your data."
@@ -185,6 +185,9 @@ The following list contains all possible filter options. Only the required field
 | utm_term | no | search terms | The UTM term. |
 | limit | no | 20 | Limits the number of results, note that this is hard limited to 100. |
 | include_avg_time_on_page | no | true | Set to true, to include the average time on page when reading page statistics. |
+| sort | no | visitors | Sort results by given field. This is only available for pages, entry/exit pages, referrers, UTM statistics, conversion goals, events, demographics, and device statistics. |
+| direction | no | desc | Sort results in ascending (asc) or descending (desc) order. This is only available for pages, entry/exit pages, referrers, UTM statistics, conversion goals, events, demographics, and device statistics. |
+| search | no | /home | Search the primary field for given string (contains). For pages this will be the path, for browsers the browser name, and so on. This is only available for pages, entry/exit pages, referrers, UTM statistics, conversion goals, events, demographics, and device statistics. |
 
 ### Getting the Domain ID
 
@@ -1167,6 +1170,83 @@ This endpoints removes a member from a domain.
 **Example request**
 
 `DELETE /api/v1/member?id=0DJ0mo934`
+
+## Managing Alternative Domains
+
+Alternative domains need to be created when you send statistics to multiple dashboards or create rollup views.
+
+### Listing Alternative Domains
+
+This endpoint returns all alternative domains belonging to a website.
+
+**Example request**
+
+`GET /api/v1/domain/alternative?domain_id=0DJ0mo934`
+
+**Example response**
+
+```JSON
+[
+    {
+        "id": "A5kgYzK14m",
+        "def_time": "2021-05-22T10:11:12.123456Z",
+        "mod_time": "2021-05-22T10:11:12.123456Z",
+        "domain_id": "0DJ0mo934",
+        "hostname": "alternative.domain.com"
+    },
+    // ...
+]
+```
+
+### Creating Alternative Domains
+
+This endpoint creates a new alternative domain for a website.
+
+**Example request**
+
+`POST /api/v1/domain/alternative`
+
+```JSON
+{
+    "domain_id": "0DJ0mo934",
+    "hostname": "alternative.domain.com"
+}
+```
+
+**Example response**
+
+```JSON
+{
+    "id": "A5kgYzK14m",
+    "def_time": "2021-05-22T10:11:12.123456Z",
+    "mod_time": "2021-05-22T10:11:12.123456Z",
+    "domain_id": "0DJ0mo934",
+    "hostname": "alternative.domain.com"
+}
+```
+
+### Updating Alternative Domains
+
+This endpoint updates the hostname for an alternative domain.
+
+**Example request**
+
+`PUT /api/v1/domain/alternative`
+
+```JSON
+{
+    "id": "A5kgYzK14m",
+    "hostname": "new-alternative.domain.com"
+}
+```
+
+### Deleting Alternative Domains
+
+This endpoint deletes an alternative domain by ID.
+
+**Example request**
+
+`DELETE /api/v1/domain/alternative?id=A5kgYzK14m`
 
 ## Managing Clients
 
