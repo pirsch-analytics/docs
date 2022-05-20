@@ -2,7 +2,7 @@
 title: "Website Integration"
 date: 2022-05-20
 draft: false
-weight: 1
+weight: 2
 description: "Learn on how to integrate Pirsch into your website using JavaScript."
 ---
 

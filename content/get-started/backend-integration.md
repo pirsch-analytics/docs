@@ -2,7 +2,7 @@
 title: "Backend Integration"
 date: 2021-01-16
 draft: false
-weight: 2
+weight: 3
 description: "Learn on how to integrate Pirsch into your backend using our API and client SDKs."
 ---
 
