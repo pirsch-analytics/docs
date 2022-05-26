@@ -1,6 +1,6 @@
 ---
 title: "API"
-date: 2022-05-20
+date: 2022-05-26
 draft: false
 weight: 1
 description: "Use the API to monitor traffic and access your data."
@@ -615,9 +615,13 @@ This endpoint will list all events including metadata. Note that this can be an 
 
 ### Active Visitors
 
+Returns active visitors and pages for the past *n* seconds. *n* can be defined by passing the `start` query parameter and will be set to 10 minutes by default.
+
 **Example request**
 
-`GET /api/v1/statistics/active`
+Return the active visitors for the past minute.
+
+`GET /api/v1/statistics/active?start=60`
 
 **Example response**
 

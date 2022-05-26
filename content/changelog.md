@@ -1,10 +1,17 @@
 ---
 title: "Changelog"
-date: 2022-05-18
+date: 2022-05-26
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
+
+## 1.15.4
+
+Release: 2022-05-26
+
+* added a parameter to specify the time (in seconds) active visitors are returned to
+* fixed color in email report
 
 ## 1.15.3
 
