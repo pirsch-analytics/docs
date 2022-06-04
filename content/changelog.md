@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-date: 2022-06-03
+date: 2022-06-04
 draft: false
 weight: 8
 description: "Overview of all changes."
@@ -8,10 +8,12 @@ description: "Overview of all changes."
 
 ## 1.15.5
 
-Release: unreleased
+Release: 2022-06-04
 
 * fixed event and conversion goal buttons being displayed when logged in and viewing public dashboard
 * fixed statistics when using a different period other than "day"
+* fixed mapping dates back to period
+* updated dependencies
 
 ## 1.15.4
 
