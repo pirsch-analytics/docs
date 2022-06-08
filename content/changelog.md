@@ -1,10 +1,16 @@
 ---
 title: "Changelog"
-date: 2022-06-04
+date: 2022-06-08
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
+
+## 1.15.6
+
+Release: 2022-06-08
+
+* moved database backups to Hetzner
 
 ## 1.15.5
 
