@@ -6,6 +6,12 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.16.0
+
+Release: unreleased
+
+* removed tooltip from UTM content and term panels
+
 ## 1.15.6
 
 Release: 2022-06-08
