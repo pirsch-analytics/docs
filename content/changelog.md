@@ -6,11 +6,12 @@ weight: 8
 description: "Overview of all changes."
 ---
 
-## 1.16.0
+## 1.15.7
 
 Release: unreleased
 
 * removed tooltip from UTM content and term panels
+* fixed light theme browser color
 
 ## 1.15.6
 
