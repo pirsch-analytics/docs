@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-date: 2022-06-10
+date: 2022-06-13
 draft: false
 weight: 8
 description: "Overview of all changes."
@@ -8,10 +8,14 @@ description: "Overview of all changes."
 
 ## 1.15.7
 
-Release: unreleased
+Release: 2022-06-13
 
 * removed tooltip from UTM content and term panels
 * fixed light theme browser color
+* fixed create client modal dialog fields depending on the type selected
+* fixed displaying "Unknown" in countries panel
+* fixed table styling
+* updated dependencies
 
 ## 1.15.6
 
