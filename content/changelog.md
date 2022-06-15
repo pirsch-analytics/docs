@@ -1,10 +1,19 @@
 ---
 title: "Changelog"
-date: 2022-06-13
+date: 2022-06-15
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
+
+## 1.15.8
+
+Release: 2022-06-15
+
+* fixed setting hostname for page views send using the API using an access token
+* fixed panels showing statistics for previous website when adding new website
+* fixed referrer for the domain when it was not set in all lower-case
+* updated dependencies
 
 ## 1.15.7
 
