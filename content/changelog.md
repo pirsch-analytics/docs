@@ -1,10 +1,19 @@
 ---
 title: "Changelog"
-date: 2022-06-15
+date: 2022-06-19
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
+
+## 1.15.9
+
+Release: 2022-06-19
+
+* translated website to German
+* fixed dashboard button still being displayed on website after redirect to login
+* fixed event meta data table not updating when changing filter or key does not exist
+* updated dependencies
 
 ## 1.15.8
 
