@@ -6,6 +6,14 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.15.10
+
+Release: 2022-06-20
+
+* fixed passing dates without timezone
+* fixed using scale URL parameter on dashboard
+* fixed meta description on home page
+
 ## 1.15.9
 
 Release: 2022-06-19
