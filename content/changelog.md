@@ -1,10 +1,16 @@
 ---
 title: "Changelog"
-date: 2022-06-20
+date: 2022-06-22
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
+
+## 1.15.11
+
+Release: 2022-06-22
+
+* fixed timezone related issues on dashboard
 
 ## 1.15.10
 
