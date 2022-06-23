@@ -1,6 +1,6 @@
 ---
 title: "API"
-date: 2022-05-26
+date: 2022-06-24
 draft: false
 weight: 1
 description: "Use the API to monitor traffic and access your data."
@@ -1021,6 +1021,93 @@ This endpoint will change the timezone for the dashboard.
     "timezone": "Europe/Berlin"
 }
 ```
+
+## Managing Additional Domains
+
+### Listing Additional Domains
+
+This endpoint lists all additional domains.
+
+**Example request**
+
+`GET /api/v1/domain/alternative`
+
+**Example response**
+
+```JSON
+[
+    {
+        "id": "39JDm291x2",
+        "def_time": "2021-05-22T10:11:12.123456Z",
+        "mod_time": "2021-05-22T10:11:12.123456Z",
+        "domain_id": "A5kgYzK14m",
+        "hostname": "alternative-domain.com"
+    },
+    // ...
+]
+```
+
+### Creating an Additional Domain
+
+This endpoint creates a new additonal domain.
+
+**Example request**
+
+`POST /api/v1/domain/alternative`
+
+```JSON
+{
+    "domain_id": "A5kgYzK14m",
+    "hostname": "alternative-domain.com"
+}
+```
+
+**Example response**
+
+```JSON
+{
+    "id": "39JDm291x2",
+    "def_time": "2021-05-22T10:11:12.123456Z",
+    "mod_time": "2021-05-22T10:11:12.123456Z",
+    "domain_id": "A5kgYzK14m",
+    "hostname": "alternative-domain.com"
+}
+```
+
+### Updating an Additional Domain
+
+This endpoint will update the hostname for an additional domain.
+
+**Example request**
+
+`PUT /api/v1/domain/alternative`
+
+```JSON
+{
+    "id": "39JDm291x2",
+    "hostname": "new-alternative-domain.com"
+}
+```
+
+**Example response**
+
+```JSON
+{
+    "id": "39JDm291x2",
+    "def_time": "2021-05-22T10:11:12.123456Z",
+    "mod_time": "2021-05-22T10:11:12.123456Z",
+    "domain_id": "A5kgYzK14m",
+    "hostname": "new-alternative-domain.com"
+}
+```
+
+### Deleting an Additional Domain
+
+This endpoint will delete an additonal domain.
+
+**Example request**
+
+`DELETE /api/v1/domain/alternative?id=39JDm291x2`
 
 ## Managing Access Links
 
