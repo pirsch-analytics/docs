@@ -1,6 +1,6 @@
 ---
 title: "Embedding the Dashboard"
-date: 2021-11-06
+date: 2022-06-23
 draft: false
 weight: 6
 description: "Learn how you can embed your dashboard on another website using an iframe."
@@ -25,4 +25,11 @@ The last step is to add your public dashboard URL or access link to an iframe. C
     style="border-width: 0;"></iframe>
 ```
 
-In this example, we set the width and height of the iframe and removed the border. The URL has some additional parameters (`?domain=...`). You can copy these from your regular dashboard URL in case you would like to add filter options. In this case, the interval is set to the past 14 days and the menu and footer will be hidden (by setting `ui` to `hide`).
+In this example, we set the width and height of the iframe and removed the border. The URL has some additional parameters (`?domain=...`). You can copy these from your regular dashboard URL in case you would like to add filter options.
+
+## UI Options
+
+There are additional parameters to modify the dashboard UI.
+
+* `ui=hide` will hide the Pirsch header and footer, so you get a clean dashboard
+* `mode=dark` or `mode=light` set the dark or light mode for the dashboard. This overwrites the user's system settings

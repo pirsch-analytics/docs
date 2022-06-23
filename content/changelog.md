@@ -6,6 +6,13 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.15.12
+
+Release: unreleased
+
+* improved rounding of percentages on the dashboard
+* added a `mode` parameter to set the light (`mode=light`) or dark (`mode=dark`) on the dashboard
+
 ## 1.15.11
 
 Release: 2022-06-22
