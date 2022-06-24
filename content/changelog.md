@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-date: 2022-06-22
+date: 2022-06-24
 draft: false
 weight: 8
 description: "Overview of all changes."
@@ -8,10 +8,12 @@ description: "Overview of all changes."
 
 ## 1.15.12
 
-Release: unreleased
+Release: 2022-06-24
 
 * improved rounding of percentages on the dashboard
 * added a `mode` parameter to set the light (`mode=light`) or dark (`mode=dark`) on the dashboard
+* added IP spoofing prevention
+* updated dependencies
 
 ## 1.15.11
 
