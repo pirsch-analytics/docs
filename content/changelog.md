@@ -10,7 +10,7 @@ description: "Overview of all changes."
 
 Release: unreleased
 
-* **deprecated `cf_connecting_ip`, `x_forwarded_for`, `forwarded`, and `x_real_ip` parameters**
+* **removed `cf_connecting_ip`, `x_forwarded_for`, `forwarded`, and `x_real_ip` parameters from API**
 
 ## 1.15.12
 
