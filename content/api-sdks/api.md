@@ -1,6 +1,6 @@
 ---
 title: "API"
-date: 2022-06-24
+date: 2022-06-25
 draft: false
 weight: 1
 description: "Use the API to monitor traffic and access your data."
@@ -66,16 +66,14 @@ This endpoint is used to send page hits to Pirsch. It requires you to send infor
 
 **Example request**
 
+**The `cf_connecting_ip`, `x_forwarded_for`, `forwarded`, and `x_real_ip` parameters are now deprecated! They can easily be manipulated for IP spoofing. Please make sure you set the `ip` parameter correctly. If you're behind a proxy or load balancer, look up the documentation to see which header to use and how to parse it. Our SDKs will be updated to handle this in a more comfortable fashion.**
+
 ```Bash
 POST https://api.pirsch.io/api/v1/hit
 
 {
     "url":              "https://example.com/full/url?including=parameters",
     "ip":               "123.456.789.0",
-    "cf_connecting_ip": "CF-Connecting-IP header (optional)",
-    "x_forwarded_for":  "X-Forwarded-For header (optional)",
-    "forwarded":        "Forwarded header (optional)",
-    "x_real_ip"         "X-Real-IP header (optional)",
     "dnt":              "DNT header (optional)",
     "user_agent":       "User-Agent header",
     "accept_language":  "Accept-Language header (optional)",
@@ -94,6 +92,8 @@ This endpoint is used to send events to Pirsch. It requires you to send informat
 
 **Example request**
 
+**The `cf_connecting_ip`, `x_forwarded_for`, `forwarded`, and `x_real_ip` parameters are now deprecated! They can easily be manipulated for IP spoofing. Please make sure you set the `ip` parameter correctly. If you're behind a proxy or load balancer, look up the documentation to see which header to use and how to parse it. Our SDKs will be updated to handle this in a more comfortable fashion.**
+
 *Fields with underscores are comments.*
 
 ```Bash
@@ -111,10 +111,6 @@ POST https://api.pirsch.io/api/v1/event
     "_hit":             "The fields below are the same as for hits."
     "url":              "https://example.com/full/url?including=parameters",
     "ip":               "123.456.789.0",
-    "cf_connecting_ip": "CF-Connecting-IP header (optional)",
-    "x_forwarded_for":  "X-Forwarded-For header (optional)",
-    "forwarded":        "Forwarded header (optional)",
-    "x_real_ip"         "X-Real-IP header (optional)",
     "dnt":              "DNT header (optional)",
     "user_agent":       "User-Agent header",
     "accept_language":  "Accept-Language header (optional)",
@@ -131,15 +127,13 @@ This endpoint is used to *manually* keep sessions alive. A session will usually 
 
 **Example request**
 
+**The `cf_connecting_ip`, `x_forwarded_for`, `forwarded`, and `x_real_ip` parameters are now deprecated! They can easily be manipulated for IP spoofing. Please make sure you set the `ip` parameter correctly. If you're behind a proxy or load balancer, look up the documentation to see which header to use and how to parse it. Our SDKs will be updated to handle this in a more comfortable fashion.**
+
 ```Bash
 POST https://api.pirsch.io/api/v1/session
 
 {
     "ip":               "123.456.789.0",
-    "cf_connecting_ip": "CF-Connecting-IP header (optional)",
-    "x_forwarded_for":  "X-Forwarded-For header (optional)",
-    "forwarded":        "Forwarded header (optional)",
-    "x_real_ip"         "X-Real-IP header (optional)",
     "dnt":              "DNT header (optional)",
     "user_agent":       "User-Agent header"
 }

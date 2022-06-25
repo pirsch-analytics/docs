@@ -1,6 +1,6 @@
 ---
 title: "Backend Integration"
-date: 2021-01-16
+date: 2022-06-25
 draft: false
 weight: 3
 description: "Learn on how to integrate Pirsch into your backend using our API and client SDKs."
@@ -54,14 +54,12 @@ Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI...
 {
     "url":              "https://example.com/full/url?including=parameters",
     "ip":               "123.456.789.0",
-    "cf_connecting_ip": "CF-Connecting-IP header (optional)",
-    "x_forwarded_for":  "X-Forwarded-For header (optional)",
-    "forwarded":        "Forwarded header (optional)",
-    "x_real_ip"         "X-Real-IP header (optional)",
     "user_agent":       "User-Agent header",
     "accept_language":  "Accept-Language header (optional)",
     "referrer" :        "Referer header (optional)",
 }
 ```
+
+**The `cf_connecting_ip`, `x_forwarded_for`, `forwarded`, and `x_real_ip` parameters are now deprecated! They can easily be manipulated for IP spoofing. Please make sure you set the `ip` parameter correctly. If you're behind a proxy or load balancer, look up the documentation to see which header to use and how to parse it. Our SDKs will be updated to handle this in a more comfortable fashion.**
 
 As you can see, you need to send the visitors IP, full URL, User-Agent header, and a few more headers. While only the IP, URL, and User-Agent are required, we recommend to send as much of these fields as possible, as they will improve the quality of the analytics data. Don't worry, we don't store personal information like the IP address. To learn more, please read the [details on privacy]({{<ref "privacy.md">}}).

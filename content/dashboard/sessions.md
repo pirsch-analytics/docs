@@ -1,6 +1,6 @@
 ---
 title: "Sessions"
-date: 2021-10-22
+date: 2022-06-25
 draft: false
 weight: 5
 description: "Manually extend visitor sessions."
@@ -19,14 +19,12 @@ POST https://api.pirsch.io/api/v1/session
 
 {
     "ip":               "123.456.789.0",
-    "cf_connecting_ip": "CF-Connecting-IP header (optional)",
-    "x_forwarded_for":  "X-Forwarded-For header (optional)",
-    "forwarded":        "Forwarded header (optional)",
-    "x_real_ip"         "X-Real-IP header (optional)",
     "dnt":              "DNT header (optional)",
     "user_agent":       "User-Agent header"
 }
 ```
+
+**The `cf_connecting_ip`, `x_forwarded_for`, `forwarded`, and `x_real_ip` parameters are now deprecated! They can easily be manipulated for IP spoofing. Please make sure you set the `ip` parameter correctly. If you're behind a proxy or load balancer, look up the documentation to see which header to use and how to parse it. Our SDKs will be updated to handle this in a more comfortable fashion.**
 
 The data must be identical to the data used when sending a regular page view.
 

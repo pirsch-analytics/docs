@@ -1,10 +1,16 @@
 ---
 title: "Changelog"
-date: 2022-06-24
+date: 2022-06-25
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
+
+## 1.16.0
+
+Release: unreleased
+
+* **deprecated `cf_connecting_ip`, `x_forwarded_for`, `forwarded`, and `x_real_ip` parameters**
 
 ## 1.15.12
 
