@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-date: 2022-06-25
+date: 2022-06-26
 draft: false
 weight: 8
 description: "Overview of all changes."
@@ -11,6 +11,12 @@ description: "Overview of all changes."
 Release: unreleased
 
 * **removed `cf_connecting_ip`, `x_forwarded_for`, `forwarded`, and `x_real_ip` parameters from API**
+
+## 1.15.13
+
+Release: 2022-06-26
+
+* increased maximum subdomain length to 100 characters
 
 ## 1.15.12
 
