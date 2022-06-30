@@ -12,6 +12,13 @@ Release: unreleased
 
 * **removed `cf_connecting_ip`, `x_forwarded_for`, `forwarded`, and `x_real_ip` parameters from API**
 
+## 1.15.14
+
+Release: unreleased
+
+* added whitelist to JavaScript snippet (`data-include`)
+* updated dependencies
+
 ## 1.15.13
 
 Release: 2022-06-26
