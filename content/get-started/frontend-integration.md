@@ -1,6 +1,6 @@
 ---
 title: "Website Integration"
-date: 2022-05-20
+date: 2022-07-01
 draft: false
 weight: 2
 description: "Learn on how to integrate Pirsch into your website using JavaScript."
@@ -35,9 +35,9 @@ Your website is identified by the hostname the request is made from and an ident
     data-code="YOUR_IDENTIFICATION_CODE"></script>
 ```
 
-## Exclude Pages
+## Including/Exclude Pages
 
-The snippet offers a very flexible way to exclude pages. You can exclude a single or multiple pages by specifing the `data-exclude` attribute. The content is a list of regular expressions that will be used to filter pages.
+The snippet offers a very flexible way to include or exclude pages. You can exclude a single or multiple pages by specifing the `data-exclude` attribute. The content is a list of regular expressions that will be used to filter pages.
 
 ```html
 <script defer type="text/javascript" src="https://api.pirsch.io/pirsch.js" 
@@ -48,7 +48,9 @@ The snippet offers a very flexible way to exclude pages. You can exclude a singl
 
 This example will match the page `/exact/match` and every page the starts with `/exclude/page/en/` or `/exclude/page/de/`.
 
-Please always [validate](https://regex101.com/) your expressions before using them and make sure you don't see any errors on the browser console. Special regex characters need to be masked (like the forward slash above). For a simple single page filter use a pattern like `\/your\/page`.
+Please always [validate](https://regex101.com/) your expressions before using them and make sure you don't see any errors on the browser console. Special regex characters need to be masked. For a simple single page filter use a pattern like `\/your\/page`.
+
+`data-include` can be used to whitelist pages. In the case of whitelisting, only pages that match a pattern in the list will send a page view. The blacklist still applies afterwards.
 
 ## Creating Rollup Views and Sending Data to Multiple Dashboards
 
