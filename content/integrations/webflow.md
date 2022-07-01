@@ -1,6 +1,6 @@
 ---
 title: "Webflow"
-date: 2022-05-01
+date: 2022-07-01
 draft: false
 weight: 5
 description: "Learn how to integrate Pirsch into Webflow."
@@ -17,3 +17,5 @@ If the template has e-commerce features, Webflow apparently automatically checks
 **Solution**
 
 To turn off the GA site tag field, first type something into the Google Analytics Tracking ID field. Now you can turn off the GA site tag button. Delete the tracking ID/characters you put in and save the changes. Pirsch should now work as expected.
+
+You do need to add the UA code to the site tag filed in a typical UA code format. After you’ve turned off the site tag field, make sure to delete the UA you entered. Otherwise the code stays live, even if the button is turned of – so must be deleted.
