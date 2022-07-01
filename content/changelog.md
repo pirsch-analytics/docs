@@ -1,22 +1,20 @@
 ---
 title: "Changelog"
-date: 2022-06-26
+date: 2022-07-01
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
 
-## 1.16.0
-
-Release: unreleased
-
-* **removed `cf_connecting_ip`, `x_forwarded_for`, `forwarded`, and `x_real_ip` parameters from API**
-
 ## 1.15.14
 
-Release: unreleased
+Release: 2022-07-01
 
 * added whitelist to JavaScript snippet (`data-include`)
+* added icons for browser and operating system
+* **removed `cf_connecting_ip`, `x_forwarded_for`, `forwarded`, and `x_real_ip` parameters from API**
+* fixed grouping cities and countries when city is unknown
+* fixed duplicate keys for referrers when there are two entries with the same referrer but different protocols (http vs https)
 * updated dependencies
 
 ## 1.15.13

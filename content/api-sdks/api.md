@@ -1,6 +1,6 @@
 ---
 title: "API"
-date: 2022-06-25
+date: 2022-07-01
 draft: false
 weight: 1
 description: "Use the API to monitor traffic and access your data."
@@ -66,8 +66,6 @@ This endpoint is used to send page hits to Pirsch. It requires you to send infor
 
 **Example request**
 
-**The `cf_connecting_ip`, `x_forwarded_for`, `forwarded`, and `x_real_ip` parameters are now deprecated! They can easily be manipulated for IP spoofing. Please make sure you set the `ip` parameter correctly. If you're behind a proxy or load balancer, look up the documentation to see which header to use and how to parse it. Our SDKs will be updated to handle this in a more comfortable fashion.**
-
 ```Bash
 POST https://api.pirsch.io/api/v1/hit
 
@@ -91,8 +89,6 @@ One small optimization you can make is to check the `DNT` (Do Not Track) header 
 This endpoint is used to send events to Pirsch. It requires you to send information about the request made by the client. How you get these depends on the programming language and framework you're using. The example shows which fields are required and which are optional. We recommend sending all of them to make the results as accurate as possible.
 
 **Example request**
-
-**The `cf_connecting_ip`, `x_forwarded_for`, `forwarded`, and `x_real_ip` parameters are now deprecated! They can easily be manipulated for IP spoofing. Please make sure you set the `ip` parameter correctly. If you're behind a proxy or load balancer, look up the documentation to see which header to use and how to parse it. Our SDKs will be updated to handle this in a more comfortable fashion.**
 
 *Fields with underscores are comments.*
 
@@ -126,8 +122,6 @@ POST https://api.pirsch.io/api/v1/event
 This endpoint is used to *manually* keep sessions alive. A session will usually be reset if no request (hit or event) is sent within a 30-minute timeframe. This feature can be used to extend a session indefinitely. It's not recommended to use this for regular websites, but can be useful to track apps or other custom build software.
 
 **Example request**
-
-**The `cf_connecting_ip`, `x_forwarded_for`, `forwarded`, and `x_real_ip` parameters are now deprecated! They can easily be manipulated for IP spoofing. Please make sure you set the `ip` parameter correctly. If you're behind a proxy or load balancer, look up the documentation to see which header to use and how to parse it. Our SDKs will be updated to handle this in a more comfortable fashion.**
 
 ```Bash
 POST https://api.pirsch.io/api/v1/session
