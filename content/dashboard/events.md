@@ -14,7 +14,7 @@ The main difference to [conversion goals]({{<ref "dashboard/conversion-goals.md"
 
 ## Creating Events
 
-Events are automatically created and added to your dashboard as you send them. Events can be send from your website using JavaScript, or from your backend using our [API]({{<ref "api-sdks/api.md">}}) or one of our [SDKs]({{<ref "api-sdks/_index.md">}}).
+Events are automatically created and added to your dashboard as you send them. Events can be sent from your website using JavaScript, or from your backend using our [API]({{<ref "api-sdks/api.md">}}) or one of our [SDKs]({{<ref "api-sdks/_index.md">}}).
 
 ## Sending Events From Your Website
 
