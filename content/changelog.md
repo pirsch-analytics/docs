@@ -1,10 +1,20 @@
 ---
 title: "Changelog"
-date: 2022-07-01
+date: 2022-07-05
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
+
+## 1.15.15
+
+Release: 2022-07-05
+
+* changed weekly timescale to start on Monday
+* fixed reading IP for JS snippet endpoints
+* fixed description for single access token client deletion
+* fixed visitor statistics having the right date set depending on the timescale
+* updated dependencies
 
 ## 1.15.14
 
