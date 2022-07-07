@@ -1,10 +1,17 @@
 ---
 title: "Changelog"
-date: 2022-07-05
+date: 2022-07-07
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
+
+## 1.15.16
+
+Release: unreleased
+
+* debounced keyboard shortcuts
+* fixed table only showing top results when changing period using a keyboard shortcut
 
 ## 1.15.15
 
