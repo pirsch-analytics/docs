@@ -10,8 +10,10 @@ description: "Overview of all changes."
 
 Release: unreleased
 
-* debounced keyboard shortcuts
+* debounced keyboard shortcuts and inverting filters
+* don't log regex errors when filtering for a pattern
 * fixed table only showing top results when changing period using a keyboard shortcut
+* updated dependencies
 
 ## 1.15.15
 
