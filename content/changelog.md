@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-date: 2022-07-07
+date: 2022-07-09
 draft: false
 weight: 8
 description: "Overview of all changes."
@@ -8,7 +8,7 @@ description: "Overview of all changes."
 
 ## 1.15.16
 
-Release: unreleased
+Release: 2022-07-09
 
 * debounced keyboard shortcuts and inverting filters
 * don't log regex errors when filtering for a pattern
