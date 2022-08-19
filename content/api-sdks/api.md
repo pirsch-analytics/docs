@@ -1,6 +1,6 @@
 ---
 title: "API"
-date: 2022-07-01
+date: 2022-08-19
 draft: false
 weight: 1
 description: "Use the API to monitor traffic and access your data."
@@ -876,6 +876,42 @@ This endpoints requires the [Google Search Console integration]({{<ref "settings
 ]
 ```
 
+## Filter Options
+
+The following endpoints return available filter options for a time period. For brevity, only one example request and response is given.
+
+```
+GET /api/v1/statistics/options/utm/source
+GET /api/v1/statistics/options/utm/medium
+GET /api/v1/statistics/options/utm/campaign
+GET /api/v1/statistics/options/utm/content
+GET /api/v1/statistics/options/utm/term
+GET /api/v1/statistics/options/referrer/name
+GET /api/v1/statistics/options/page
+GET /api/v1/statistics/options/referrer
+GET /api/v1/statistics/options/event
+GET /api/v1/statistics/options/country
+GET /api/v1/statistics/options/city
+GET /api/v1/statistics/options/language
+```
+
+**Example request**
+
+It's possible to use an access code by setting the `access` query parameter.
+
+`GET /api/v1/statistics/options/page?id=A5kgYzK14m&from=2022-02-01&to=2022-03-27`
+
+***Example response**
+
+```JSON
+[
+    "/",
+    "/some/path",
+    "/other/path",
+    // ...
+]
+```
+
 ## Managing Domains
 
 Domains can be managed by creating a user client (on the account settings page).
@@ -1007,6 +1043,20 @@ This endpoint will change the timezone for the dashboard.
 {
     "domain_id": "A5kgYzK14m",
     "timezone": "Europe/Berlin"
+}
+```
+
+### Setting a Domain as Favorite
+
+This endpoint sets one of your domains as favorite. This requires a user client.
+
+**Example request**
+
+`POST /api/v1/user/favorite`
+
+```JSON
+{
+    "id": "A5kgYzK14m"
 }
 ```
 
@@ -1689,3 +1739,230 @@ This endpoint will test if a regular expression is valid for a conversion goal. 
 ```
 
 An error will be returned in case the expression is invalid. Otherwise it will return if the regular expression matches the sample.
+
+## Managing Views
+
+### Listing Views
+
+This endpoint returns a list of views for a given domain.
+
+**Example request**
+
+`GET /api/v1/view?domain_id=A5kgYzK14m`
+
+**Example response**
+
+```JSON
+[
+    {
+        "id": "Jk49fgm38",
+        "def_time": "2021-05-22T10:11:12.123456Z",
+        "mod_time": "2021-05-22T10:11:12.123456Z",
+        "domain_id": "A5kgYzK14m",
+        "user_id": "94jO3jDM2",
+        "name": "My View",
+        "from": "2022-01-02",
+        "to": "2022-03-04",
+        "period": 5,
+        "path": ["/sample/path"],
+        "entry_path": null,
+        "exit_path": null,
+        "path_pattern": null,
+        "pattern": null,
+        "language": null,
+        "country": null,
+        "city": null,
+        "referrer": null,
+        "referrer_name": null,
+        "os": null,
+        "browser": null,
+        "platform": null,
+        "screen_class": null,
+        "utm_source": null,
+        "utm_medium": null,
+        "utm_campaign": null,
+        "utm_content": null,
+        "utm_term": null,
+        "event": null,
+        "event_meta_key": null,
+        "event_meta_value": null,
+    },
+    // ...
+]
+```
+
+### Creating/Updating a View
+
+This endpoint creates a new view or updates an existing one. It will update an existing view if the ID is set.
+
+**Example request**
+
+`POST /api/v1/view`
+
+```JSON
+{
+    "id": "Jk49fgm38",
+    "domain_id": "A5kgYzK14m",
+    "name": "My View",
+    "public": true,
+    "overwrite": true,
+    "from": "2022-01-02",
+    "to": "2022-03-04",
+    "period": 5,
+    "path": ["/sample/path"],
+    "entry_path": null,
+    "exit_path": null,
+    "path_pattern": null,
+    "pattern": null,
+    "language": null,
+    "country": null,
+    "city": null,
+    "referrer": null,
+    "referrer_name": null,
+    "os": null,
+    "browser": null,
+    "platform": null,
+    "screen_class": null,
+    "utm_source": null,
+    "utm_medium": null,
+    "utm_campaign": null,
+    "utm_content": null,
+    "utm_term": null,
+    "event": null,
+    "event_meta_key": null,
+    "event_meta_value": null,
+}
+```
+
+**Example response**
+
+```JSON
+{
+    "id": "Jk49fgm38",
+    "def_time": "2021-05-22T10:11:12.123456Z",
+    "mod_time": "2021-05-22T10:11:12.123456Z",
+    "domain_id": "A5kgYzK14m",
+    "user_id": "94jO3jDM2",
+    "name": "My View",
+    "from": "2022-01-02",
+    "to": "2022-03-04",
+    "period": 5,
+    "path": ["/sample/path"],
+    "entry_path": null,
+    "exit_path": null,
+    "path_pattern": null,
+    "pattern": null,
+    "language": null,
+    "country": null,
+    "city": null,
+    "referrer": null,
+    "referrer_name": null,
+    "os": null,
+    "browser": null,
+    "platform": null,
+    "screen_class": null,
+    "utm_source": null,
+    "utm_medium": null,
+    "utm_campaign": null,
+    "utm_content": null,
+    "utm_term": null,
+    "event": null,
+    "event_meta_key": null,
+    "event_meta_value": null,
+}
+```
+
+### Deleting a View
+
+This endpoint deletes a view.
+
+**Example request**
+
+`DELETE /api/v1/view?id=Jk49fgm38`
+
+## Importing Data from Google Universal Analytics
+
+### Getting an Import Job
+
+This endpoint returns the import job for given domain, if any.
+
+**Example request**
+
+`GET /api/v1/google/import/job?domain_id=A5kgYzK14m`
+
+**Example response**
+
+```JSON
+{
+    "id": "Jk49fgm38",
+    "def_time": "2021-05-22T10:11:12.123456Z",
+    "mod_time": "2021-05-22T10:11:12.123456Z",
+    "domain_id": "A5kgYzK14m",
+	"google_user_id": "...",
+	"google_user_email": "...",
+	"domain": null,
+    "from": null,
+	"to": null
+}
+```
+
+### Cancel an Import Job
+
+This endpoint cancels the import job for given domain.
+
+**Example request**
+
+`DELTE /api/v1/google/import/job?domain_id=A5kgYzK14m`
+
+### Listing Google Analytics Profiles
+
+This endpoint lists available profiles (views) for the connected Google account.
+
+**Example request**
+
+`GET /api/v1/google/import/profile?domain_id=A5kgYzK14m`
+
+**Example response**
+
+```JSON
+[
+    {
+        "name": "Name",
+        "id": "..."
+    },
+    // ...
+]
+```
+
+### Starting the Import
+
+This endpoint starts the import after connecting the dashboard to the Google account.
+
+**Example request**
+
+`POST /api/v1/google/import`
+
+```JSON
+{
+    "domain_id": "A5kgYzK14m",
+    "property": "<GA view ID>",
+    "from": "2022-01-01",
+    "to": "2022-08-01",
+}
+```
+
+**Example response**
+
+```JSON
+{
+    "id": "Jk49fgm38",
+    "def_time": "2021-05-22T10:11:12.123456Z",
+    "mod_time": "2021-05-22T10:11:12.123456Z",
+    "domain_id": "A5kgYzK14m",
+	"google_user_id": "...",
+	"google_user_email": "...",
+	"domain": "<GA view ID>",
+    "from": "2022-01-01",
+	"to": "2022-08-01"
+}
+```
