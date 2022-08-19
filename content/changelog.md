@@ -1,10 +1,31 @@
 ---
 title: "Changelog"
-date: 2022-07-09
+date: 2022-08-19
 draft: false
 weight: 8
 description: "Overview of all changes."
 ---
+
+## 1.16.0
+
+Release: 2022-08-19
+
+* added multi-filter support
+** filter on the same field connected by logical OR
+** added "contains" option in addition to "is" and "is not"
+** added listing filter options
+** added filtering options by clicking inside a filter
+* added the option to save filters as "views"
+* added setting a dashboard as favorite that will be loaded after login
+* added PWA support for the dashboard
+* added a checkbox to stay logged in
+* added import from Google Universal Analytics
+* changed redirect to login page after the session times out
+* overall improvements to the dashboard and changed positions of some elements
+* fixed entry/exit rate calculation
+* fixed some minor concurrency issues
+* fixed month to date and last month date range filters
+* updated dependencies
 
 ## 1.15.16
 
