@@ -1,6 +1,6 @@
 ---
 title: "General"
-date: 2021-05-27
+date: 2022-08-19
 draft: false
 weight: 2
 description: "Manage your websites settings."
@@ -50,3 +50,20 @@ In case you would like to remove the integration, click on *Unlink Account*.
 You can export your data for the past 12 months. Click on *Export Data to CSV*, select the statistics you would like to export, start date, end date, and click on *Create CSV File* to begin the download. The statistics are separated into individual CSV files and bundled within a zip archive. Event metadata cannot be exported.
 
 ![CSV Export](/dashboard/csv-export.png)
+
+## Google Analytics Import
+
+You can import existing data from Google Universal Analytics (GA3). Follow these steps to import your data:
+
+1. click on *Continue with Google*, this will redirect you to login with the Google account you would like to use to connect
+2. select the account that has access to your property on Google Analytics
+3. grant access to your analytics data
+4. confirm the choices on the next screen
+5. after you have been redirected back to the settings page, select the website you would like to import and chose a start and end date
+6. click *Start Import* to start the import
+
+The import will run in the background and it take a while to complete. Note that you cannot import data after the creation date of a dashboard. Setting the end date after the creation date of your dashboard (the first day your website started using Pirsch) will overwrite it with the creation date of your website. This is to ensure you don't accedentially mix data.
+
+### Deleting Imported Data
+
+You can use the regular [data deletion process]({{<ref "settings/danger-zone.md">}}) to delete any imported statistics.
