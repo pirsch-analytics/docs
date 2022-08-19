@@ -11,10 +11,10 @@ description: "Overview of all changes."
 Release: 2022-08-19
 
 * added multi-filter support
-** filter on the same field connected by logical OR
-** added "contains" option in addition to "is" and "is not"
-** added listing filter options
-** added filtering options by clicking inside a filter
+ * filter on the same field connected by logical OR
+ * added "contains" option in addition to "is" and "is not"
+ * added listing filter options
+ * added filtering options by clicking inside a filter
 * added the option to save filters as "views"
 * added setting a dashboard as favorite that will be loaded after login
 * added PWA support for the dashboard
