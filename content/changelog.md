@@ -6,6 +6,15 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.16.1
+
+Release: 2022-08-19
+
+* removed last hr tag from the news
+* fixed some typos in the news
+* fixed public dashboards
+* fixed loading event metadata
+
 ## 1.16.0
 
 Release: 2022-08-19
