@@ -6,6 +6,13 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.16.2
+
+Release: 2022-08-20
+
+* fixed views on public dashboards
+* fixed language selection
+
 ## 1.16.1
 
 Release: 2022-08-19
