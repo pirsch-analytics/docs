@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-date: 2022-08-19
+date: 2022-08-20
 draft: false
 weight: 8
 description: "Overview of all changes."
