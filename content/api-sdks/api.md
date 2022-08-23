@@ -1,6 +1,6 @@
 ---
 title: "API"
-date: 2022-08-19
+date: 2022-08-23
 draft: false
 weight: 1
 description: "Use the API to monitor traffic and access your data."
@@ -1009,7 +1009,7 @@ This endpoint will toggle the visibility of your dashboard from private to publi
 
 **Example request**
 
-`POST /api/v1/domain/subdomain`
+`POST /api/v1/domain/public`
 
 ```JSON
 {
