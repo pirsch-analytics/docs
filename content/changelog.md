@@ -3,7 +3,7 @@ title: "Changelog"
 date: 2022-08-26
 draft: false
 weight: 8
-description: "Overview of all changes."
+description: "A list of changes made to Pirsch for each new version."
 ---
 
 ## 1.16.3
