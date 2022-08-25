@@ -6,6 +6,17 @@ weight: 8
 description: "Overview of all changes."
 ---
 
+## 1.16.3
+
+Release: 2022-08-26
+
+* added visitors, sessions, entry/exit rate, and average time on page to entry/exit page statistics when filtering for an event
+* fixed entry/exit pages showing 0 visitors when filtering for an event
+* fixed statistics not loading when switching to dashboard after reloading/opening the dashboards on one of the settings pages
+* fixed displaying month scale on graph
+* fixed batch database connection issues
+* updated dependencies
+
 ## 1.16.2
 
 Release: 2022-08-20
