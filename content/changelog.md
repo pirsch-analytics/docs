@@ -1,10 +1,17 @@
 ---
 title: "Changelog"
-date: 2022-08-26
+date: 2022-08-28
 draft: false
 weight: 8
 description: "A list of changes made to Pirsch for each new version."
 ---
+
+## 1.16.4
+
+Release: 2022-08-28
+
+* fixed filter overwriting access code
+* fixed switching between views that contain an event in the filter
 
 ## 1.16.3
 
