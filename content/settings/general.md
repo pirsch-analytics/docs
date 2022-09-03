@@ -30,7 +30,7 @@ Pirsch supports two ways to group page statistics. The default is to use the pat
 
 ## Active Visitors
 
-This configuration option determines how long a visitor is considered active on your website after they were last seen. The default value is 10 minutes. Any visitor who has accessed your website within the last 10 minutes is shown as active.
+This configuration option determines how long a visitor is considered active on your website after their last page view. The default value is 10 minutes. Any visitor who has accessed your website within the last 10 minutes is shown as active.
 
 ## Search Console
 
