@@ -1,10 +1,18 @@
 ---
 title: "Changelog"
-date: 2022-08-28
+date: 2022-09-03
 draft: false
 weight: 8
 description: "A list of changes made to Pirsch for each new version."
 ---
+
+## 1.16.5
+
+Release: 2022-09-03
+
+* added active visitor time configuration
+* added account option to display active visitors in tab
+* updated dependencies
 
 ## 1.16.4
 

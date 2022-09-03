@@ -1,6 +1,6 @@
 ---
 title: "General"
-date: 2022-08-19
+date: 2022-09-03
 draft: false
 weight: 2
 description: "Manage your websites settings."
@@ -27,6 +27,10 @@ Please note that your personal timezone (from the [account settings]({{<ref "acc
 ## Grouping Pages
 
 Pirsch supports two ways to group page statistics. The default is to use the path without any parameters, like `/my/page`). You can change it to group pages by the title instead. This can be useful if you use dynamically generated pages, like `/my/article?id=123`. The two options cannot be mixed. If you use the second option, make sure you sent the page title for every page view (pirsch.js does this automatically). We recommend using the human-readable paths (the default), as they are more user-friendly.
+
+## Active Visitors
+
+This configuration option determines how long a visitor is considered active on your website after they were last seen. The default value is 10 minutes. Any visitor who has accessed your website within the last 10 minutes is shown as active.
 
 ## Search Console
 

@@ -1,6 +1,6 @@
 ---
 title: "API"
-date: 2022-08-23
+date: 2022-09-03
 draft: false
 weight: 1
 description: "Use the API to monitor traffic and access your data."
@@ -1031,6 +1031,21 @@ This endpoint will toggle if statistics are grouped by page title.
 }
 ```
 
+### Changing the Active Visitors Time
+
+This endpoint will change the time visitors are considered active on your website in seconds.
+
+**Example request**
+
+`POST /api/v1/domain/active`
+
+```JSON
+{
+    "domain_id": "A5kgYzK14m",
+    "time": 123
+}
+```
+
 ### Changing the Timezone
 
 This endpoint will change the timezone for the dashboard.
@@ -1059,6 +1074,14 @@ This endpoint sets one of your domains as favorite. This requires a user client.
     "id": "A5kgYzK14m"
 }
 ```
+
+### Showing Active Visitors in the Page Title
+
+This endpoint toggles whether you would like to see the active visitors in the page title (tab) or not.
+
+**Example request**
+
+`POST /api/v1/user/active`
 
 ## Managing Additional Domains
 
