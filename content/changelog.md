@@ -8,7 +8,7 @@ description: "A list of changes made to Pirsch for each new version."
 
 ## 1.16.5
 
-Release: 2022-09-03
+Release: 2022-09-04
 
 * added active visitor time configuration
 * added account option to display active visitors in tab
