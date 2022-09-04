@@ -43,7 +43,7 @@ The snippet offers a very flexible way to include or exclude pages. You can excl
 <script defer type="text/javascript" src="https://api.pirsch.io/pirsch.js" 
     id="pirschjs" 
     data-code="YOUR_IDENTIFICATION_CODE"
-    data-exclude="/exact/match,/exclude/page/(en|de)/.*"></script>
+    data-exclude="\/exact\/match,\/exclude\/page\/(en|de)\/.*"></script>
 ```
 
 This example will match the page `/exact/match` and every page the starts with `/exclude/page/en/` or `/exclude/page/de/`.
