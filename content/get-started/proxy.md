@@ -1,6 +1,6 @@
 ---
 title: "Proxing the Scripts"
-date: 2022-05-31
+date: 2022-09-04
 draft: false
 weight: 4
 description: "Learn on how to set up a proxy for the Pirsch JavaScript snippets."
@@ -10,7 +10,7 @@ description: "Learn on how to set up a proxy for the Pirsch JavaScript snippets.
 
 ## What Is a Proxy and Why Should You Use It
 
-A proxy is self-hosted middleware that allows you to serve the Pirsch JavaScript snippets from your own domain.
+A proxy is a self-hosted middleware that allows you to serve the Pirsch JavaScript snippets from your own domain.
 
 The benefit of this is that your website will only make first-party requests. Requests to pirsch.io will be proxied through your server, preventing them from being blocked by ad or script blockers.
 
