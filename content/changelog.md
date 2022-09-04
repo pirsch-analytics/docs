@@ -12,6 +12,7 @@ Release: 2022-09-04
 
 * added active visitor time configuration
 * added account option to display active visitors in tab
+* added snippet configurator
 * updated dependencies
 
 ## 1.16.4

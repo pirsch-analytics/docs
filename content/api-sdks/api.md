@@ -1,6 +1,6 @@
 ---
 title: "API"
-date: 2022-09-03
+date: 2022-09-04
 draft: false
 weight: 1
 description: "Use the API to monitor traffic and access your data."
@@ -202,6 +202,9 @@ Before you can make requests, you need to know the domain ID for the client. Mak
         "google_user_email": null,
         "gsc_domain": null,
         "new_owner": null,
+        "timezone": "Europe/Berlin",
+	    "group_by_title": false,
+	    "active_visitors_seconds": 600,
         "user_role": ""
     }
 ]
@@ -1399,6 +1402,57 @@ This endpoint deletes an alternative domain by ID.
 **Example request**
 
 `DELETE /api/v1/domain/alternative?id=A5kgYzK14m`
+
+## Managing snippets
+
+The snippets can be customized for advanced usage. There are two snippet configurations: `page view` and `event`.
+
+### Updating a Snippet
+
+This endpoint will update a snippet for a domain and type. The type can either be `page view` or `event`.
+
+**Example request**
+
+`POST /api/v1/domain/snippet`
+
+```JSON
+{
+    "domain_id": "A5kgYzK14m",
+    "type": "page view",
+	"dev": true,
+	"include": "\/include,\/path\/.*",
+	"exclude": "\/exclude,\/path\/.*",
+	"domains": "example.com,domain.com",
+	"endpoint": "https://pirsch.proxy.com/hit",
+	"sample": "/sample,/paths"
+}
+```
+
+### Getting a Snippet
+
+This endpoint returns a snippet for a domain and type. The type can either be `page view` or `event`.
+
+**Example request**
+
+`GET /api/v1/domain/snippet?domain_id=A5kgYzK14m&type=event`
+
+**Example response**
+
+```JSON
+{
+    "id": "9do3JD31z",
+    "def_time": "2021-05-22T10:11:12.123456Z",
+    "mod_time": "2021-05-22T10:11:12.123456Z",
+    "domain_id": "A5kgYzK14m",
+    "type": "event",
+	"dev": true,
+	"include": "\/include,\/path\/.*",
+	"exclude": "\/exclude,\/path\/.*",
+	"domains": "example.com,domain.com",
+	"endpoint": "https://pirsch.proxy.com/hit",
+	"sample": "/sample,/paths"
+}
+```
 
 ## Managing Clients
 
