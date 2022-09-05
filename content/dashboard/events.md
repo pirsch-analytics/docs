@@ -1,6 +1,6 @@
 ---
 title: "Events"
-date: 2022-04-02
+date: 2022-09-05
 draft: false
 weight: 4
 description: "Events allow you to track actions and attach metadata to them."
@@ -48,11 +48,9 @@ You can now start sending events. Here is a simple example of how to send an eve
             meta: {
                 Clicks: clicks
             }
-        })
-        .then(() => {
+        }).then(() => {
             clicks++;
-        })
-        .catch(e => {
+        }).catch(e => {
             console.error(e); // log the error but still count up
             clicks++;
         });
@@ -66,10 +64,30 @@ The function returns a promise you can use to continue with your code after the 
 
 ### Example 2
 
-Here is an example on how you can send an event by clicking a link.
+Here is an example on how you can send an event by clicking a link. Note that navigating to a different page will cancel the request that sends the event. You will have to cancel the navigation and wait until the event has been sent. Then trigger the link click again without cancelling the navigation.
 
 ```HTML
-<a href="https://external-page.com/" target="_blank" onclick="pirsch('Link Clicked')">Visit external page</a>
+<a href="https://external-page.com/" target="_blank" id="link">Visit external page</a>
+
+<script type="text/javascript">
+    // cancel the first time the link is clicked
+    let cancelClick = true;
+
+    document.getElementById("link").addEventListener("click", e => {
+        if(cancelClick) {
+            e.preventDefault();
+            cancelClick = false;
+
+            pirsch("Link Clicked").then(() => {
+                // wait for the request to be processed and trigger the click again
+                e.target.click();
+            }).catch(e => {
+                // in case of an error we still want the user to be able to navigate to a different page
+                e.target.click();
+            });
+        }
+    });
+</script>
 ```
 
 ### Testing
