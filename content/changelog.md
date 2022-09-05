@@ -1,10 +1,17 @@
 ---
 title: "Changelog"
-date: 2022-09-04
+date: 2022-09-05
 draft: false
 weight: 8
 description: "A list of changes made to Pirsch for each new version."
 ---
+
+## 1.16.6
+
+Release: 2022-09-05
+
+* fixed public dashboards
+* fixed displaying active visitors in tab when opening dashboard for the first time
 
 ## 1.16.5
 
