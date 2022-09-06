@@ -1,10 +1,16 @@
 ---
 title: "Changelog"
-date: 2022-09-05
+date: 2022-09-06
 draft: false
 weight: 8
 description: "A list of changes made to Pirsch for each new version."
 ---
+
+## 1.16.7
+
+Release: unreleased
+
+* fixed loading 9 instead of 10 entries
 
 ## 1.16.6
 
