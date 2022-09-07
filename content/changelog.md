@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-date: 2022-09-06
+date: 2022-09-07
 draft: false
 weight: 8
 description: "A list of changes made to Pirsch for each new version."
@@ -10,7 +10,11 @@ description: "A list of changes made to Pirsch for each new version."
 
 Release: unreleased
 
+* clicking on a month will now change to day scale instead of displaying weeks
 * fixed loading 9 instead of 10 entries
+* fixed duplicate entries in referrer panel when quickly changing between periods
+* fixed country filter displaying an "empty" entry
+* fixed scale when clicking on a month
 
 ## 1.16.6
 
