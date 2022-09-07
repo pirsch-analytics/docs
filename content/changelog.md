@@ -11,10 +11,12 @@ description: "A list of changes made to Pirsch for each new version."
 Release: unreleased
 
 * clicking on a month will now change to day scale instead of displaying weeks
+* events are now send asynchronously, so it's no longer required to wait for the request to go through before switching the page
 * fixed loading 9 instead of 10 entries
 * fixed duplicate entries in referrer panel when quickly changing between periods
 * fixed country filter displaying an "empty" entry
 * fixed scale when clicking on a month
+* fixed `data-dev` attribute for scripts
 
 ## 1.16.6
 
