@@ -1,6 +1,6 @@
 ---
 title: "Events"
-date: 2022-09-05
+date: 2022-09-08
 draft: false
 weight: 4
 description: "Events allow you to track actions and attach metadata to them."
@@ -64,28 +64,21 @@ The function returns a promise you can use to continue with your code after the 
 
 ### Example 2
 
-Here is an example on how you can send an event by clicking a link. Note that navigating to a different page will cancel the request that sends the event. You will have to cancel the navigation and wait until the event has been sent. Then trigger the link click again without cancelling the navigation.
+Here is an example on how you can sent an event when an external link is clicked. The custom attribute `pirsch-link` will be used to query the links that should create an event and is also used as the event name.
 
 ```HTML
-<a href="https://external-page.com/" target="_blank" id="link">Visit external page</a>
+<a href="https://external-page.com/"
+   target="_blank"
+   pirsch-link="Link Clicked">
+    Visit external page
+</a>
 
 <script type="text/javascript">
-    // cancel the first time the link is clicked
-    let cancelClick = true;
-
-    document.getElementById("link").addEventListener("click", e => {
-        if(cancelClick) {
-            e.preventDefault();
-            cancelClick = false;
-
-            pirsch("Link Clicked").then(() => {
-                // wait for the request to be processed and trigger the click again
-                e.target.click();
-            }).catch(e => {
-                // in case of an error we still want the user to be able to navigate to a different page
-                e.target.click();
-            });
-        }
+    // select all elements with the "pirsch-link" attribute
+    document.querySelector("[pirsch-link]").addEventListener("click", e => {
+        // use the attribute as the event name
+        const eventName = e.target.getAttribute("pirsch-link");
+        pirsch(eventName);
     });
 </script>
 ```

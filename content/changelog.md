@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-date: 2022-09-07
+date: 2022-09-08
 draft: false
 weight: 8
 description: "A list of changes made to Pirsch for each new version."
@@ -12,11 +12,14 @@ Release: unreleased
 
 * clicking on a month will now change to day scale instead of displaying weeks
 * events are now send asynchronously, so it's no longer required to wait for the request to go through before switching the page
+* improved filtering bots
 * fixed loading 9 instead of 10 entries
 * fixed duplicate entries in referrer panel when quickly changing between periods
 * fixed country filter displaying an "empty" entry
 * fixed scale when clicking on a month
 * fixed `data-dev` attribute for scripts
+* fixed sorting entry/exit pages by visitors instead of entries/exits
+* updated dependencies
 
 ## 1.16.6
 
