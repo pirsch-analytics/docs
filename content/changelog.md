@@ -8,10 +8,11 @@ description: "A list of changes made to Pirsch for each new version."
 
 ## 1.16.7
 
-Release: unreleased
+Release: 2022-09-08
 
 * clicking on a month will now change to day scale instead of displaying weeks
 * events are now send asynchronously, so it's no longer required to wait for the request to go through before switching the page
+* improved profile picture on settings page
 * improved filtering bots
 * fixed loading 9 instead of 10 entries
 * fixed duplicate entries in referrer panel when quickly changing between periods
