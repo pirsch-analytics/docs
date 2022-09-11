@@ -1,10 +1,16 @@
 ---
 title: "Changelog"
-date: 2022-09-08
+date: 2022-09-11
 draft: false
 weight: 8
 description: "A list of changes made to Pirsch for each new version."
 ---
+
+## 1.16.8
+
+Release: 2022-09-11
+
+* reverted entry/exit panels showing visitors instead of the number of entries/exits
 
 ## 1.16.7
 
