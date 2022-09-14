@@ -1,6 +1,6 @@
 ---
 title: "Privacy"
-date: 2021-10-22
+date: 2022-09-14
 draft: false
 weight: 7
 description: "Learn how Pirsch respects the privacy of your visitors."
@@ -12,7 +12,7 @@ Unlike other web analytics solutions, Pirsch does not track your visitors. By tr
 
 ## How Does Pirsch Recognize Visitors?
 
-Pirsch makes use of the HTTP protocol to recognize visitors using a technique called fingerprinting. It generates a hash for each page visit calculated from the visitors IP address, the User-Agent header, and a salt. The salt makes sure the hash has some variety between websites, so they cannot be matched. Hashing the combination of these datapoints ensures they are anonymized. **We do not use cookies**. For details, check out the [open-source core](https://github.com/pirsch-analytics/pirsch) of Pirsch.
+Pirsch makes use of the HTTP protocol to recognize visitors using a technique called fingerprinting. It generates a hash for each page visit calculated from the visitors IP address, the User-Agent header, the date, and a salt. The salt makes sure the hash has some variety between websites, so they cannot be matched. Hashing the combination of these datapoints ensures they are anonymized. The date makes sure that visitors can only be recognized for up to 24 hours, making Pirsch fully GDPR compliant. **We do not use cookies**. For details, check out the [open-source core](https://github.com/pirsch-analytics/pirsch) of Pirsch.
 
 ## What Data Do We Collect?
 
@@ -31,6 +31,8 @@ Pirsch collects and stores the following datapoints, depending on the integratio
 * device type (desktop or mobile, extracted from the User-Agent)
 * screen size (frontend only)
 
+The visitors IP address is never stored nor logged!
+
 ## You Are in Charge
 
-You are in charge of the data we collect for you. You can wipe all or parts of the data from the settings page and export statistics to CSV for the last 12 months.
+You are in charge of the data we collect for you. You can wipe all, or parts of your data from the settings and export statistics to CSV for the past 12 months.
