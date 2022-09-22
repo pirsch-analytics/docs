@@ -1,10 +1,20 @@
 ---
 title: "Changelog"
-date: 2022-09-14
+date: 2022-09-22
 draft: false
 weight: 8
 description: "A list of changes made to Pirsch for each new version."
 ---
+
+## 1.16.10
+
+Release: 2022-09-22
+
+* added daily email reports
+* fixed title showing "undefined" when loading the dashboard
+* fixed platform statistics returning sessions instead of unique visitors
+* fixed entry/exit pages title showing "Unique visitors" instead of "Entries"/"Exits"
+* updated dependencies
 
 ## 1.16.9
 
