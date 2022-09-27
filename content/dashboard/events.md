@@ -1,6 +1,6 @@
 ---
 title: "Events"
-date: 2022-09-08
+date: 2022-09-27
 draft: false
 weight: 4
 description: "Events allow you to track actions and attach metadata to them."
@@ -74,11 +74,15 @@ Here is an example on how you can sent an event when an external link is clicked
 </a>
 
 <script type="text/javascript">
-    // select all elements with the "pirsch-link" attribute
-    document.querySelector("[pirsch-link]").addEventListener("click", e => {
-        // use the attribute as the event name
-        const eventName = e.target.getAttribute("pirsch-link");
-        pirsch(eventName);
+    // wait until the page has loaded before adding the event listener
+    document.addEventListener("DOMContentLoaded", () => {
+        // select all elements with the "pirsch-link" attribute
+        document.querySelector("[pirsch-link]").addEventListener("click", e => {
+            // use the attribute as the event name
+            const eventName = e.target.getAttribute("pirsch-link");
+            pirsch(eventName);
+            console.log("Pirsch event sent"); // optional to see if it is working
+        });
     });
 </script>
 ```
