@@ -40,19 +40,22 @@ You can now start sending events. Here is a simple example of how to send an eve
 <button id="button">Send Event</button>
 
 <script type="text/javascript">
-    let clicks = 1;
+    // wait until the page has finished loading before adding the event listener
+    document.addEventListener("DOMContentLoaded", () => {
+        let clicks = 1;
 
-    document.getElementById("button").addEventListener("click", () => {
-        pirsch("Button Clicked", {
-            duration: 42,
-            meta: {
-                Clicks: clicks
-            }
-        }).then(() => {
-            clicks++;
-        }).catch(e => {
-            console.error(e); // log the error but still count up
-            clicks++;
+        document.getElementById("button").addEventListener("click", () => {
+            pirsch("Button Clicked", {
+                duration: 42,
+                meta: {
+                    Clicks: clicks
+                }
+            }).then(() => {
+                clicks++;
+            }).catch(e => {
+                console.error(e); // log the error but still count up
+                clicks++;
+            });
         });
     });
 </script>
@@ -74,7 +77,7 @@ Here is an example on how you can sent an event when an external link is clicked
 </a>
 
 <script type="text/javascript">
-    // wait until the page has loaded before adding the event listener
+    // wait until the page has finished loading before adding the event listener
     document.addEventListener("DOMContentLoaded", () => {
         // select all elements with the "pirsch-link" attribute
         document.querySelector("[pirsch-link]").addEventListener("click", e => {
