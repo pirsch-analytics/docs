@@ -1,10 +1,18 @@
 ---
 title: "Changelog"
-date: 2022-09-22
+date: 2022-10-01
 draft: false
 weight: 8
 description: "A list of changes made to Pirsch for each new version."
 ---
+
+## 1.16.11
+
+Release: 2022-10-01
+
+* connect negated parameters using logical AND instead of OR
+* fixed sending daily reports and removed time from report date
+* updated dependencies
 
 ## 1.16.10
 
