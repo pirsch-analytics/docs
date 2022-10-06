@@ -1,6 +1,6 @@
 ---
 title: "Website Integration"
-date: 2022-07-01
+date: 2022-10-06
 draft: false
 weight: 2
 description: "Learn on how to integrate Pirsch into your website using JavaScript."
@@ -51,6 +51,23 @@ This example will match the page `/exact/match` and every page the starts with `
 Please always [validate](https://regex101.com/) your expressions before using them and make sure you don't see any errors on the browser console. Special regex characters need to be masked. For a simple single page filter use a pattern like `\/your\/page`.
 
 `data-include` can be used to whitelist pages. In the case of whitelisting, only pages that match a pattern in the list will send a page view. The blacklist still applies afterwards.
+
+## Disabling Certain Features
+
+It's possible to disable certain features of the script. Disabling a feature will prevent the data from being sent to Pirsch. To disable a feature, simply add an attribute to the script tag.
+
+* `data-disable-query` removes all query parameters from the URL, including UTM parameters
+* `data-disable-referrer` removes the referrer
+* `data-disable-resolution` removes the screen resolution (width and height)
+
+Here is an example:
+
+```html
+<script defer type="text/javascript" src="https://api.pirsch.io/pirsch.js" 
+    id="pirschjs" 
+    data-code="YOUR_IDENTIFICATION_CODE"
+    data-disable-query></script>
+```
 
 ## Creating Rollup Views and Sending Data to Multiple Dashboards
 

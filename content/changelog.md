@@ -1,10 +1,19 @@
 ---
 title: "Changelog"
-date: 2022-10-01
+date: 2022-10-06
 draft: false
 weight: 8
 description: "A list of changes made to Pirsch for each new version."
 ---
+
+## 1.16.12
+
+Release: 2022-10-06
+
+* added options to disable the collection of query parameters, referrers, and resolution in scripts
+* improved bot filter
+* updated Pirsch library
+* updated dependencies
 
 ## 1.16.11
 
