@@ -1,10 +1,18 @@
 ---
 title: "Changelog"
-date: 2022-10-06
+date: 2022-10-07
 draft: false
 weight: 8
 description: "A list of changes made to Pirsch for each new version."
 ---
+
+## 1.16.13
+
+Release: 2022-10-07
+
+* added prefilling the email address when switching from login to forgot password page
+* added resending registration email
+* added captcha for registration
 
 ## 1.16.12
 
