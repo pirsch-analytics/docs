@@ -1,10 +1,16 @@
 ---
 title: "Changelog"
-date: 2022-10-07
+date: 2022-10-11
 draft: false
 weight: 8
 description: "A list of changes made to Pirsch for each new version."
 ---
+
+## 1.16.14
+
+Release: 2022-10-11
+
+* added error message when GA import fails
 
 ## 1.16.13
 
