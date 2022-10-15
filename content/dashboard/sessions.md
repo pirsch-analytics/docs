@@ -35,7 +35,7 @@ const identificationCode = "website_identification_code";
 
 setInterval(() => {
     const req = new XMLHttpRequest();
-    req.open("POST", `https://api.pirsch.io/session?nc=${new Date().getTime()}&code=${identificationCode}&url=${encodeURIComponent(location.href.substr(0, 1800))}`);
+    req.open("POST", `https://api.pirsch.io/session?nc=${new Date().getTime()}&code=${identificationCode}&url=${encodeURIComponent(location.href.substring(0, 1800))}`);
     req.send();
 }, 60_000);
 ```
