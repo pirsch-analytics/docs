@@ -1,6 +1,6 @@
 ---
 title: "Sessions"
-date: 2022-07-01
+date: 2022-10-15
 draft: false
 weight: 5
 description: "Manually extend visitor sessions."
@@ -8,7 +8,7 @@ description: "Manually extend visitor sessions."
 
 Pirsch has the option to keep sessions alive. We do not recommend using this feature for regular websites, but it can be handy for mobile apps, single-page applications, and other types of software where you have long-running sessions. Otherwise, a session will only be kept alive if you send a page view, which is usually the desired behavior.
 
-Extending a session prevents creating unnesseccary page views.
+Extending a session prevents creating unnecessary page views.
 
 ## Extending Sessions Using the API
 
