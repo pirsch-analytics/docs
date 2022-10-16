@@ -1,10 +1,21 @@
 ---
 title: "Changelog"
-date: 2022-10-11
+date: 2022-10-16
 draft: false
 weight: 8
 description: "A list of changes made to Pirsch for each new version."
 ---
+
+## 1.16.15
+
+Release: 2022-10-16
+
+* made GA import more reliable for long periods
+* fixed page view calculation for GA import
+* fixed sorting table entries on frontend
+* fixed resending registration email changing the language
+* fixed scrolling in domain selection
+* updated dependencies
 
 ## 1.16.14
 

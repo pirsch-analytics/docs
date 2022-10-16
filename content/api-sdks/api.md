@@ -1,6 +1,6 @@
 ---
 title: "API"
-date: 2022-09-04
+date: 2022-10-16
 draft: false
 weight: 1
 description: "Use the API to monitor traffic and access your data."
@@ -151,7 +151,7 @@ The following list contains all possible filter options. Only the required field
 | path | no | /home | The page path. |
 | entry_path | no | /home | The entry page path. |
 | exit_path | no | /yte | The exit page path. |
-| pattern | no | (?i)^\\/path/[^\\/]+$ | A [regular expression](https://github.com/google/re2/wiki/Syntax) to filter and group pages. This option is used with [conversion goals]({{<ref "dashboard/conversion-goals.md">}}) |
+| pattern | no | (?i)^\\/path/[^\\/]+$ | A [regular expression](https://github.com/google/re2/wiki/Syntax) to filter and group pages. |
 | event | no | Button clicked | The name of an event to filter for. |
 | event_meta_key | no | Clicks | The event meta key to filter for. This field is used to break down a single event. |
 | meta_(key) | no | `meta_key0=value0&meta_key1=value1` | The event metadata key and values to filter for. Multiple keys can be set by prefixing them using `meta_` and appending them to the URL. Only events with all key-value pairs will be returned. |
