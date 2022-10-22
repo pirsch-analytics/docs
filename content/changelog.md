@@ -11,6 +11,7 @@ description: "A list of changes made to Pirsch for each new version."
 Release: 2022-10-22
 
 * fixed page title for page views
+* updated dependencies
 
 ## 1.16.15
 
