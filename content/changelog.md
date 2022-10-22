@@ -1,10 +1,16 @@
 ---
 title: "Changelog"
-date: 2022-10-16
+date: 2022-10-22
 draft: false
 weight: 8
 description: "A list of changes made to Pirsch for each new version."
 ---
+
+## 1.16.16
+
+Release: 2022-10-22
+
+* fixed page title for page views
 
 ## 1.16.15
 
