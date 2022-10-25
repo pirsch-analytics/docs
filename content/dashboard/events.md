@@ -1,6 +1,6 @@
 ---
 title: "Events"
-date: 2022-09-27
+date: 2022-10-25
 draft: false
 weight: 4
 description: "Events allow you to track actions and attach metadata to them."
@@ -40,10 +40,12 @@ You can now start sending events. Here is a simple example of how to send an eve
 <button id="button">Send Event</button>
 
 <script type="text/javascript">
-    // wait until the page has finished loading before adding the event listener
+    // Wait until the page has finished loading before adding the event listener.
     document.addEventListener("DOMContentLoaded", () => {
         let clicks = 1;
 
+        // You might need to use a different selector, like if you have other elements in your button.
+        // See the second example on how you could solve that.
         document.getElementById("button").addEventListener("click", () => {
             pirsch("Button Clicked", {
                 duration: 42,
@@ -73,22 +75,31 @@ Here is an example on how you can sent an event when an external link is clicked
 <a href="https://external-page.com/"
    target="_blank"
    pirsch-link="Link Clicked">
-    Visit external page
+    Visit external <span>page</span>
 </a>
 
 <script type="text/javascript">
-    // wait until the page has finished loading before adding the event listener
+    // Wait until the page has finished loading before adding the event listener.
     document.addEventListener("DOMContentLoaded", () => {
-        // select all elements with the "pirsch-link" attribute
+        // Select all elements with the "pirsch-link" attribute.
         document.querySelector("[pirsch-link]").addEventListener("click", e => {
-            // use the attribute as the event name
-            const eventName = e.target.getAttribute("pirsch-link");
+            // Find clicked element.
+            let target = e.target;
+
+            while(!target.hasAttribute("pirsch-link")) {
+                target = target.parentNode;
+            }
+
+            // Use the attribute as the event name.
+            const eventName = target.getAttribute("pirsch-link");
             pirsch(eventName);
-            console.log("Pirsch event sent"); // optional to see if it is working
+            console.log("Pirsch event sent", eventName); // optional to see if it is working
         });
     });
 </script>
 ```
+
+The span inside the HTML code is just there to demonstrate how you can get the actual element that was clicked should it contain child elements. You can skip this step for links that contain text only.
 
 ### Testing
 
