@@ -1,6 +1,6 @@
 ---
 title: "JavaScript SDK"
-date: 2022-05-05
+date: 2022-10-30
 draft: false
 weight: 4
 description: "SDK for JavaScript."
@@ -23,7 +23,7 @@ var { Client } = require("pirsch-sdk");
 
 var client = new Client({
     hostname: "example.com",
-    clientID: "<client_id>",
+    clientId: "<client_id>",
     clientSecret: "<client_secret>",
     protocol: "https" // used to parse the request URL, default is http
 });
