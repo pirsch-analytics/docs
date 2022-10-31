@@ -1,10 +1,16 @@
 ---
 title: "Changelog"
-date: 2022-10-22
+date: 2022-10-31
 draft: false
 weight: 8
 description: "A list of changes made to Pirsch for each new version."
 ---
+
+## 1.16.17
+
+Release: 2022-10-31
+
+* return the actual parse error on HTTP 400 bad request
 
 ## 1.16.16
 
