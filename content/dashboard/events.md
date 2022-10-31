@@ -82,7 +82,7 @@ Here is an example on how you can sent an event when an external link is clicked
     // Wait until the page has finished loading before adding the event listener.
     document.addEventListener("DOMContentLoaded", () => {
         // Select all elements with the "pirsch-link" attribute.
-        document.querySelector("[pirsch-link]").addEventListener("click", e => {
+        document.querySelectorAll("[pirsch-link]").addEventListener("click", e => {
             // Find clicked element.
             let target = e.target;
 
