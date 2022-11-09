@@ -1,6 +1,6 @@
 ---
 title: "Website Integration"
-date: 2022-10-06
+date: 2022-11-09
 draft: false
 weight: 2
 description: "Learn on how to integrate Pirsch into your website using JavaScript."
@@ -78,3 +78,7 @@ It's possible to create rollup-views and to send data to multiple dashboards. Pl
 You can disable the integration by setting the DNT (Do Not Track) header to `1` in your browser or by adding a value called `disable_pirsch` to your local storage.
 
 For the latter option, open the developer tools (usually F12 or `Ctrl/Control + Shift + I`) in your browser and navigate to the *web storage* tab. Click on *local storage* and add a new value `disable_pirsch` and `1` as value. After reloading the page, no page view or event (in case you also use the event script) should be sent to Pirsch.
+
+## Testing on Localhost
+
+The scripts ignore any requests created on localhost. In case you would like to overwrite this behavior, like for testing, you can add the `data-dev` attribute.

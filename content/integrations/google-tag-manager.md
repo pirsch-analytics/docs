@@ -1,6 +1,6 @@
 ---
 title: "Google Tag Manager"
-date: 2021-08-23
+date: 2022-11-09
 draft: false
 weight: 2
 description: "Learn how to integrate Pirsch using the Google Tag Manager."
@@ -15,6 +15,8 @@ You can use the Google Tag Manager (GTM) to add the Pirsch snippet to your websi
 5. to finish the setup, click *Save*, *Submit* (top right corner), and *Publish*
 
 After you have finished the setup, you can test the integration as described [here]({{<ref "get-started/frontend-integration.md#test-the-integration">}}).
+
+Should GTM strip the parameters from the snippet. You can try [dynamically creating and embedding the snippet](https://support.google.com/tagmanager/thread/18040523/what-attributes-are-preserved-on-custom-html-tags-and-what-attributes-are-stripped?hl=en).
 
 ## Considerations When Using the Tag Manager
 
