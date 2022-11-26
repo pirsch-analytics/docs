@@ -14,6 +14,7 @@ Release: 2022-11-27
 * added bot filter based on IP address
 * added event pages as new statistic
 * added support email to resources in menu
+* added a setting to disable the JavaScript snippets
 * moved UTM content and terms panel into referrer panel
 * filtering for an event will now include all pages a visitor has visited
 * fixed inverting event filter
