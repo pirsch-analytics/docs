@@ -17,8 +17,8 @@ Extending a session prevents the creation of unnecessary page views.
 To extends sessions from the browser, add the `pirsch-sessions.js` snippet to your website and adjust the identification code.
 
 ```html
-<script defer type="text/javascript" src="https://api.pirsch.io/pirsch.js" 
-    id="pirschjs" 
+<script defer type="text/javascript" src="https://api.pirsch.io/pirsch-sessions.js" 
+    id="pirschsessionsjs" 
     data-code="YOUR_IDENTIFICATION_CODE"></script>
 ```
 
