@@ -1,6 +1,6 @@
 ---
 title: "Developer"
-date: 2022-05-20
+date: 2022-11-26
 draft: false
 weight: 5
 description: "Manage integrations and other development related settings."
@@ -58,3 +58,7 @@ To create a new client, click *Add Client*, select the type, enter a description
 The dialog popping up will show the unique client ID and secret, which you need to save. Treat the secret like a password. Once the dialog is closed, there is no way to view the secret again. Should you lose the secret, you will have to create a new client.
 
 ![Clients](/dashboard/settings-client.png)
+
+## Disable Scripts
+
+You can disable the option to send page views and events via the JavaScript snippets. This will deny any requests made by browsers.
