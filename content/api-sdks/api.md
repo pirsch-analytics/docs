@@ -1048,6 +1048,20 @@ This endpoint will toggle the visibility of your dashboard from private to publi
 }
 ```
 
+### Disable Scripts
+
+This endpoint will toggle the option to send data via scripts for given domain.
+
+**Example request**
+
+`POST /api/v1/domain/scripts`
+
+```JSON
+{
+    "domain_id": "A5kgYzK14m"
+}
+```
+
 ### Toggle Grouping by Title
 
 This endpoint will toggle if statistics are grouped by page title.
