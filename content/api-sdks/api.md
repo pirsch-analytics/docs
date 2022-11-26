@@ -1,6 +1,6 @@
 ---
 title: "API"
-date: 2022-10-16
+date: 2022-11-26
 draft: false
 weight: 1
 description: "Use the API to monitor traffic and access your data."
@@ -465,6 +465,34 @@ Which time component is set depends on the `scale` filter. Setting it to `day` (
         "sessions": 67,
         "exits": 56,
         "exit_rate": 0.298
+    },
+    // ...
+]
+```
+
+### Event Pages
+
+This endpoint returns all pages an event was triggered on. It requires the event name filter to be set.
+
+**Example request**
+
+`GET /api/v1/statistics/event/page`
+
+**Example response**
+
+```JSON
+[
+    {
+        "path": "/home",
+        "title": "Home",
+        "visitors": 42,
+        "views": 56,
+        "sessions": 48,
+        "bounces": 23,
+        "relative_visitors": 0.342,
+        "relative_views": 0.298,
+        "bounce_rate": 0.765,
+        "average_time_spent_seconds": 42
     },
     // ...
 ]

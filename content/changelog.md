@@ -1,10 +1,24 @@
 ---
 title: "Changelog"
-date: 2022-10-31
+date: 2022-11-26
 draft: false
 weight: 8
 description: "A list of changes made to Pirsch for each new version."
 ---
+
+## 1.16.18
+
+Release: 2022-11-27
+
+* added pirsch-sessions.js script to automatically extend sessions
+* added bot filter based on IP address
+* added event pages as new statistic
+* added support email to resources in menu
+* moved UTM content and terms panel into referrer panel
+* filtering for an event will now include all pages a visitor has visited
+* fixed inverting event filter
+* fixed extending sessions
+* updated dependencies
 
 ## 1.16.17
 
