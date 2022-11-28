@@ -1,10 +1,17 @@
 ---
 title: "Changelog"
-date: 2022-11-26
+date: 2022-11-28
 draft: false
 weight: 8
 description: "A list of changes made to Pirsch for each new version."
 ---
+
+## 1.16.19
+
+Release: 2022-11-28
+
+* fixed searching by path
+* updated dependencies
 
 ## 1.16.18
 
