@@ -1,6 +1,6 @@
 ---
 title: "Privacy"
-date: 2022-09-14
+date: 2022-11-30
 draft: false
 weight: 7
 description: "Learn how Pirsch respects the privacy of your visitors."
@@ -36,3 +36,9 @@ The visitors IP address is never stored nor logged!
 ## You Are in Charge
 
 You are in charge of the data we collect for you. You can wipe all, or parts of your data from the settings and export statistics to CSV for the past 12 months.
+
+## Data Processing Agreement
+
+We provide a data processing agreement (AV-Vertrag in German). A data processing agreement (DPA) ensures that businesses handle all data belonging to EU citizens in accordance with the GDPR. It's a contract between the data processor (us) and the controller (you).
+
+You can download and sign the DPA yourself. The latest version can always be found [here](https://pirsch.io/static/files/pirsch-data-processing-agreement.pdf). We recommend anyone running a business to sign it.

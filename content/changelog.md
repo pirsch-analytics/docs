@@ -1,10 +1,18 @@
 ---
 title: "Changelog"
-date: 2022-11-28
+date: 2022-11-30
 draft: false
 weight: 8
 description: "A list of changes made to Pirsch for each new version."
 ---
+
+## 1.16.20
+
+Release: 2022-11-30
+
+* added data processing agreement
+* fixed copying snippets
+* fixed duplicate errors on login and sign up
 
 ## 1.16.19
 
