@@ -1,10 +1,17 @@
 ---
 title: "Changelog"
-date: 2022-11-30
+date: 2022-12-01
 draft: false
 weight: 8
 description: "A list of changes made to Pirsch for each new version."
 ---
+
+## 1.16.21
+
+Release: 2022-12-01
+
+* added sessions snippet to settings page
+* updated dependencies
 
 ## 1.16.20
 
