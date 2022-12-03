@@ -1,10 +1,16 @@
 ---
 title: "Changelog"
-date: 2022-12-01
+date: 2022-12-03
 draft: false
 weight: 8
 description: "A list of changes made to Pirsch for each new version."
 ---
+
+## 1.16.22
+
+Release: 2022-12-03
+
+* fixed page view limit calculation when subscription was created before the end of the free trial
 
 ## 1.16.21
 
