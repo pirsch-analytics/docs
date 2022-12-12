@@ -1,6 +1,6 @@
 ---
 title: "Google Tag Manager"
-date: 2022-11-09
+date: 2022-12-12
 draft: false
 weight: 2
 description: "Learn how to integrate Pirsch using the Google Tag Manager."
@@ -24,3 +24,7 @@ There are a few things to consider when using the Google Tag Manager:
 
 * GTM adds extra complexity to your site. The Pirsch snippet is very lightweight and simple, adding any of the extra configuration options might affect how the snippet is triggered. Please verify the page hits are fired correctly from the browser console
 * GTM is blocked by many adblockers and browsers (just like Google Analytics), so using the snippet directly will be more reliable (or even better, using our [backend integration]({{<ref "get-started/backend-integration.md">}}))
+
+## Template
+
+You can use the template provided by Markus Bärsch for an easy integration. Instructions can be found on [GitHub](https://github.com/mbaersch/pirsch-tag-server).
