@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-date: 2022-12-12
+date: 2022-12-13
 draft: false
 weight: 8
 description: "A list of changes made to Pirsch for each new version."
@@ -8,11 +8,12 @@ description: "A list of changes made to Pirsch for each new version."
 
 ## 1.16.23
 
-Release: unreleased
+Release: 2022-12-13
 
 * disable filtering on click in lists and tables if there is only one entry
 * merged path_pattern and pattern query parameters
 * fixed endless loading for pattern filter
+* fixed a few styling issues
 * updated dependencies
 
 ## 1.16.22
