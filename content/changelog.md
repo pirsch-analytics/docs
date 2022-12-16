@@ -6,6 +6,12 @@ weight: 8
 description: "A list of changes made to Pirsch for each new version."
 ---
 
+## 1.16.25
+
+Release: 2022-12-16
+
+* revert: disable filtering on click in lists and tables if there is only one entry
+
 ## 1.16.24
 
 Release: 2022-12-16
