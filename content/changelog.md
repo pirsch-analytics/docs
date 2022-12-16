@@ -1,10 +1,20 @@
 ---
 title: "Changelog"
-date: 2022-12-13
+date: 2022-12-16
 draft: false
 weight: 8
 description: "A list of changes made to Pirsch for each new version."
 ---
+
+## 1.16.24
+
+Release: 2022-12-16
+
+* update all time date range when switching domains
+* fixed adding filters
+* fixed invoice charge failed emails for new subscriptions if the first charge fails
+* updated Pirsch core
+* updated dependencies
 
 ## 1.16.23
 
