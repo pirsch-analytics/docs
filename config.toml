@@ -31,7 +31,7 @@ theme = "seeker"
 
 [params]
     title = "Pirsch Docs"
-    copyright = "© 2021 Emvi Software GmbH"
+    copyright = "© 2022 Emvi Software GmbH"
     url = "https://emvi.com"
     titleColor = "#ffffff"
     themeColor = "#000000"
