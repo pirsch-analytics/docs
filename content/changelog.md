@@ -11,6 +11,7 @@ description: "A list of changes made to Pirsch for each new version."
 Release: 2022-12-18
 
 * added a rewrite option using the `data-dev` attribute
+* added maximum fingerprint lifetime note to website
 
 ## 1.16.25
 
