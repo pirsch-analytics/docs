@@ -1,10 +1,16 @@
 ---
 title: "Changelog"
-date: 2022-12-16
+date: 2022-12-18
 draft: false
 weight: 8
 description: "A list of changes made to Pirsch for each new version."
 ---
+
+## 1.16.26
+
+Release: 2022-12-18
+
+* added a rewrite option using the `data-dev` attribute
 
 ## 1.16.25
 

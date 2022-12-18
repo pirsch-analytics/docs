@@ -1,6 +1,6 @@
 ---
 title: "Website Integration"
-date: 2022-11-09
+date: 2022-12-18
 draft: false
 weight: 2
 description: "Learn on how to integrate Pirsch into your website using JavaScript."
@@ -81,4 +81,13 @@ For the latter option, open the developer tools (usually F12 or `Ctrl/Control + 
 
 ## Testing on Localhost
 
-The scripts ignore any requests created on localhost. In case you would like to overwrite this behavior, like for testing, you can add the `data-dev` attribute.
+The scripts ignore any requests created on localhost. In case you would like to overwrite this behavior, like for testing, you can add the `data-dev` attribute. The hostnames need to match. If you test on localhost, rewrite the hostname using the `data-dev` attribute like this:
+
+```
+<script defer type="text/javascript" src="https://api.pirsch.io/pirsch.js" 
+    id="pirschjs" 
+    data-code="YOUR_IDENTIFICATION_CODE"
+    data-dev="example.com"></script>
+```
+
+In this case, the hostname you've configured on the dashboard is `example.com`. So you need to add `data-dev="example.com"` to rewrite the hostname.
