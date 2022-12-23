@@ -1,10 +1,16 @@
 ---
 title: "Changelog"
-date: 2022-12-18
+date: 2022-12-23
 draft: false
 weight: 8
 description: "A list of changes made to Pirsch for each new version."
 ---
+
+## 1.17.0
+
+Release: unreleased
+
+* added locks to prevent accidentially modifing settings
 
 ## 1.16.26
 
