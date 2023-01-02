@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-date: 2023-01-01
+date: 2023-01-02
 draft: false
 weight: 8
 description: "A list of changes made to Pirsch for each new version."
@@ -14,6 +14,7 @@ Release: unreleased
 * added request cancellation to improve performance
 * added pre-filling subdomain field when adding a domain
 * added missing plus button to invite members
+* added batch inserts for page views, events, and session extensions
 * improved authentication
 
 ## 1.16.26

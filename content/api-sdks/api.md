@@ -1,6 +1,6 @@
 ---
 title: "API"
-date: 2022-11-26
+date: 2023-01-02
 draft: false
 weight: 1
 description: "Use the API to monitor traffic and access your data."
@@ -42,9 +42,9 @@ The examples for the other endpoints in this document will omit the header.
 
 **Example request**
 
-```Bash
-POST https://api.pirsch.io/api/v1/token
+`POST https://api.pirsch.io/api/v1/token`
 
+```JSON
 {
     "client_id": "<client_id>",
     "client_secret": "<client_secret>"
@@ -66,9 +66,9 @@ This endpoint is used to send page hits to Pirsch. It requires you to send infor
 
 **Example request**
 
-```Bash
-POST https://api.pirsch.io/api/v1/hit
+`POST https://api.pirsch.io/api/v1/hit`
 
+```JSON
 {
     "url":              "https://example.com/full/url?including=parameters",
     "ip":               "123.456.789.0",
@@ -84,6 +84,22 @@ POST https://api.pirsch.io/api/v1/hit
 
 One small optimization you can make is to check the `DNT` (Do Not Track) header before you make the request. Check if the header is set to `1`, if true you can ignore the request, otherwise send it.
 
+It's possible to send multiple page views at once. If you use the batch endpoint, make sure the page views are in order, or otherwise they will mess up your statistics. This works well for websites that run on a single server where you can buffer page views.
+
+**Example request**
+
+`POST https://api.pirsch.io/api/v1/hit/batch`
+
+```JSON
+[
+    {
+        // Same parameters as for singe page views, plus the time the request was made to your server.
+        "time": "2023-01-02T14:15:32Z"
+    },
+    // ...
+]
+```
+
 ## Sending an Event
 
 This endpoint is used to send events to Pirsch. It requires you to send information about the request made by the client. How you get these depends on the programming language and framework you're using. The example shows which fields are required and which are optional. We recommend sending all of them to make the results as accurate as possible.
@@ -92,9 +108,9 @@ This endpoint is used to send events to Pirsch. It requires you to send informat
 
 *Fields with underscores are comments.*
 
-```Bash
-POST https://api.pirsch.io/api/v1/event
+`POST https://api.pirsch.io/api/v1/event`
 
+```JSON
 {
     "event_name":       "Button Clicked",
     "_duration":        "event_duration is an optional number of seconds.",
@@ -117,20 +133,52 @@ POST https://api.pirsch.io/api/v1/event
 }
 ```
 
+It's possible to send multiple events at once. If you use the batch endpoint, make sure the events are in order, or otherwise they will mess up your statistics. This works well for websites that run on a single server where you can buffer events.
+
+**Example request**
+
+`POST https://api.pirsch.io/api/v1/event/batch`
+
+```JSON
+[
+    {
+        // Same parameters as for singe event, plus the time the request was made to your server.
+        "time": "2023-01-02T14:15:32Z"
+    },
+    // ...
+]
+```
+
 ## Keeping a Session Alive
 
 This endpoint is used to *manually* keep sessions alive. A session will usually be reset if no request (hit or event) is sent within a 30-minute timeframe. This feature can be used to extend a session indefinitely. It's not recommended to use this for regular websites, but can be useful to track apps or other custom build software.
 
 **Example request**
 
-```Bash
-POST https://api.pirsch.io/api/v1/session
+`POST https://api.pirsch.io/api/v1/session`
 
+```JSON
 {
     "ip":               "123.456.789.0",
     "dnt":              "DNT header (optional)",
     "user_agent":       "User-Agent header"
 }
+```
+
+It's possible to send multiple requests at once. If you use the batch endpoint, make sure the updates are in order, or otherwise they will mess up your statistics. This works well for websites that run on a single server where you can buffer requests.
+
+**Example request**
+
+`POST https://api.pirsch.io/api/v1/session/batch`
+
+```JSON
+[
+    {
+        // Same parameters as for a singe update, plus the time the request was made to your server.
+        "time": "2023-01-02T14:15:32Z"
+    },
+    // ...
+]
 ```
 
 ## Statistics
