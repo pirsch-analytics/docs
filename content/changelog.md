@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-date: 2023-01-02
+date: 2023-01-03
 draft: false
 weight: 8
 description: "A list of changes made to Pirsch for each new version."
@@ -15,7 +15,10 @@ Release: unreleased
 * added pre-filling subdomain field when adding a domain
 * added missing plus button to invite members
 * added batch inserts for page views, events, and session extensions
+* added timezone parameter `tz`
+* the dashboard now uses the timezone of the viewers browser if set
 * improved authentication
+* fixed time range filter step calculation
 
 ## 1.16.26
 
