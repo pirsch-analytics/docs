@@ -1,6 +1,6 @@
 ---
 title: "API"
-date: 2023-01-03
+date: 2023-01-04
 draft: false
 weight: 1
 description: "Use the API to monitor traffic and access your data."
@@ -194,7 +194,7 @@ The following list contains all possible filter options. Only the required field
 | id | yes | A5kgYzK14m | The domain ID. Use the list endpoint to get the domain ID for the client. |
 | from | yes | 2021-05-08 | YYYY-MM-DD |
 | to | yes | 2021-05-15 | YYYY-MM-DD |
-| tz | no | Europe/Berlin | The timezone. If not set, the default timezone for the dashboard will be used. |
+| tz | no | Europe/Berlin | The time zone. If not set, the default time zone for the dashboard will be used. |
 | start | no | 600 | Queries data for the past seconds (10 minutes in this example). The date range filters will be ignored if set. The maximum is one hour (3600 seconds). |
 | scale | no | week | The scale to group results. Can either be day (default), week, month, or year. |
 | path | no | /home | The page path. |
@@ -1140,9 +1140,9 @@ This endpoint will change the time visitors are considered active on your websit
 }
 ```
 
-### Changing the Timezone
+### Changing the Time Zone
 
-This endpoint will change the timezone for the dashboard.
+This endpoint will change the time zone for the dashboard.
 
 **Example request**
 

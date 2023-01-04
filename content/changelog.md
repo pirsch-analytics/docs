@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-date: 2023-01-03
+date: 2023-01-04
 draft: false
 weight: 8
 description: "A list of changes made to Pirsch for each new version."
@@ -15,8 +15,8 @@ Release: unreleased
 * added pre-filling subdomain field when adding a domain
 * added missing plus button to invite members
 * added batch inserts for page views, events, and session extensions
-* added timezone parameter `tz`
-* the dashboard now uses the timezone of the viewers browser if set
+* added time zone parameter `tz`
+* the dashboard now uses the time zone of the viewers browser if set
 * improved authentication
 * fixed time range filter step calculation
 
@@ -310,13 +310,13 @@ Release: 2022-06-24
 
 Release: 2022-06-22
 
-* fixed timezone related issues on dashboard
+* fixed time zone related issues on dashboard
 
 ## 1.15.10
 
 Release: 2022-06-20
 
-* fixed passing dates without timezone
+* fixed passing dates without time zone
 * fixed using scale URL parameter on dashboard
 * fixed meta description on home page
 
@@ -702,14 +702,14 @@ Release: 2021-11-07
 
 * added domain search to selection
 * added auto selection for light/dark mode
-* added automatic timezone selection when creating a domain
+* added automatic time zone selection when creating a domain
 * added link to public dashboard on settings pages
 * added query parameter to hide UI elements when embedding a dashboard into an iframe
 * added live view
 * optimized CORS by setting max age header
 * news are now served from the API and will be set to latest news on registration (so none is displayed on first login)
 * deny embedding the registration, login, or any other related page in iframes (X-Frame-Options)
-* removed user timezone settings
+* removed user time zone settings
 * fixed some statistics loading twice on a single filter change
 * fixed panels showing different totals than chart due to grouping by day and summing up results
 * updated Hugo
@@ -747,7 +747,7 @@ Release: 2021-10-22
 * removed focus of table search on mobile devices
 * removed the requirement to send a page view before an event can be tracked
 * fixed line chart labels
-* fixed setting timezone for dates in frontend
+* fixed setting time zone for dates in frontend
 * fixed active pages keeps loading after switching to dashboard from another page
 
 ## 1.10.3
@@ -792,7 +792,7 @@ Release: 2021-10-11
 Release: 2021-10-10
 
 * fixed updating referrer panel when the referrer name and URL are equal
-* fixed timezones
+* fixed time zones
 * fixed setting filter date when the end date is today
 * updated dependencies
 
@@ -809,7 +809,7 @@ Release: 2021-10-07
 
 Release: 2021-10-05
 
-* fixed timezone settings
+* fixed time zone settings
 
 ## 1.9.4
 
@@ -1135,14 +1135,14 @@ Release: 2021-05-30
 Release: 2021-05-25
 
 * added blog link to resources on dashboard
-* fixed preselected timezone when adding domain and on account page
+* fixed preselected time zone when adding domain and on account page
 
 ## 1.4.0
 
 Release: 2021-05-25
 
 * added client scopes to API
-* added support for timezones (user settings and on a domain basis)
+* added support for time zones (user settings and on a domain basis)
 * added API access read domains for clients
 * removed visitor by time of day sum as that was confusing and didn't make much sense (the sum is correct, but has a different meaning than the unique visitor sum above)
 * fixed loading indicator position on some pages
