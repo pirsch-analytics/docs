@@ -16,8 +16,10 @@ Release: unreleased
 * added missing plus button to invite members
 * added batch inserts for page views, events, and session extensions
 * added time zone parameter `tz`
+* added dashboard panel customization
 * the dashboard now uses the time zone of the viewers browser if set
 * improved authentication
+* improved the structure of the settings pages
 * fixed time range filter step calculation
 
 ## 1.16.26
