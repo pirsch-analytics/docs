@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-date: 2023-01-04
+date: 2023-01-05
 draft: false
 weight: 8
 description: "A list of changes made to Pirsch for each new version."
@@ -8,7 +8,7 @@ description: "A list of changes made to Pirsch for each new version."
 
 ## 1.17.0
 
-Release: unreleased
+Release: 2023-01-05
 
 * added locks to prevent accidentially modifing settings
 * added request cancellation to improve performance
