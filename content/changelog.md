@@ -1,10 +1,17 @@
 ---
 title: "Changelog"
-date: 2023-01-05
+date: 2023-01-12
 draft: false
 weight: 8
 description: "A list of changes made to Pirsch for each new version."
 ---
+
+## 1.17.1
+
+Release: 2023-01-12
+
+* fixed loading locks
+* fixed downgrading plan before subscription cycle ends
 
 ## 1.17.0
 
