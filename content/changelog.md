@@ -1,10 +1,19 @@
 ---
 title: "Changelog"
-date: 2023-01-12
+date: 2023-01-14
 draft: false
 weight: 8
 description: "A list of changes made to Pirsch for each new version."
 ---
+
+## 1.17.2
+
+Release: 2023-01-14
+
+* fixed GSC and GA redirects
+* fixed page views spikes from GA import
+* fixed all time filter not including imported statistics
+* fixed moving time range using arrows or arrow keys for imported statistics
 
 ## 1.17.1
 
