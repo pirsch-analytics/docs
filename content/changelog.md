@@ -1,10 +1,17 @@
 ---
 title: "Changelog"
-date: 2023-01-14
+date: 2023-01-15
 draft: false
 weight: 8
 description: "A list of changes made to Pirsch for each new version."
 ---
+
+## 1.17.3
+
+Release: 2023-01-15
+
+* improved performance of GA import
+* fixed imported statistics from GA
 
 ## 1.17.2
 
