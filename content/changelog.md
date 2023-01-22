@@ -1,10 +1,18 @@
 ---
 title: "Changelog"
-date: 2023-01-15
+date: 2023-01-22
 draft: false
 weight: 8
 description: "A list of changes made to Pirsch for each new version."
 ---
+
+## 1.17.4
+
+Release: 2023-01-22
+
+* allow digits at the beginning of a subdomain
+* removed screen width and height from the database (only store screen class)
+* updated dependencies
 
 ## 1.17.3
 

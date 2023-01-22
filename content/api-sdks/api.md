@@ -1,6 +1,6 @@
 ---
 title: "API"
-date: 2023-01-04
+date: 2023-01-22
 draft: false
 weight: 1
 description: "Use the API to monitor traffic and access your data."
@@ -213,8 +213,6 @@ The following list contains all possible filter options. Only the required field
 | browser | no | Firefox | The browser. |
 | platform | no | desktop | The platform, desktop, mobile, or unknown (not set). |
 | screen_class | no | XXL | The screen class, XXL, XL, L, M, S. |
-| screen_width | no | 1920 | The screen width. Note that this is a string and not a number! |
-| screen_height | no | 1080 | The screen height. Note that this is a string and not a number! |
 | utm_source | no | Newsletter | The UTM source. |
 | utm_medium | no | Email | The UTM medium. |
 | utm_campaign | no | Summer Sale | The UTM campaign. |
