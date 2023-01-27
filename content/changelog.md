@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-date: 2023-01-25
+date: 2023-01-27
 draft: false
 weight: 9
 description: "A list of changes made to Pirsch for each new version."
@@ -8,9 +8,10 @@ description: "A list of changes made to Pirsch for each new version."
 
 ## 1.17.5
 
-Release: unreleased
+Release: 2023-01-27
 
 * added affiliate program
+* improved GSC error email
 * fixed account deletion
 * updated dependencies
 
