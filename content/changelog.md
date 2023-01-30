@@ -1,10 +1,17 @@
 ---
 title: "Changelog"
-date: 2023-01-27
+date: 2023-01-30
 draft: false
 weight: 9
 description: "A list of changes made to Pirsch for each new version."
 ---
+
+## 1.17.6
+
+Release: 2023-01-30
+
+* fixed write access for user clients
+* fixed redirect to login
 
 ## 1.17.5
 
