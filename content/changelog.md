@@ -1,10 +1,17 @@
 ---
 title: "Changelog"
-date: 2023-01-30
+date: 2023-02-01
 draft: false
 weight: 9
 description: "A list of changes made to Pirsch for each new version."
 ---
+
+## 1.17.7
+
+Release: 2023-02-01
+
+* updated DPA
+* fixed broken events settings link
 
 ## 1.17.6
 
