@@ -1,10 +1,17 @@
 ---
 title: "Changelog"
-date: 2023-02-01
+date: 2023-02-03
 draft: false
 weight: 9
 description: "A list of changes made to Pirsch for each new version."
 ---
+
+## 1.17.8
+
+Release: unreleased
+
+* fixed reloading entry/exit/event pages when switching domain
+* fixed switching domain after accepting invitation
 
 ## 1.17.7
 
