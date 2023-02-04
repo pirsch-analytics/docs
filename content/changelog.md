@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-date: 2023-02-03
+date: 2023-02-04
 draft: false
 weight: 9
 description: "A list of changes made to Pirsch for each new version."
@@ -10,8 +10,11 @@ description: "A list of changes made to Pirsch for each new version."
 
 Release: unreleased
 
+* added titles for all icons without a label
+* added note to dashboard customization settings about security
 * fixed reloading entry/exit/event pages when switching domain
 * fixed switching domain after accepting invitation
+* updated dependencies
 
 ## 1.17.7
 
