@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-date: 2023-02-05
+date: 2023-02-08
 draft: false
 weight: 9
 description: "A list of changes made to Pirsch for each new version."
@@ -8,10 +8,11 @@ description: "A list of changes made to Pirsch for each new version."
 
 ## 1.17.8
 
-Release: unreleased
+Release: 2023-02-08
 
 * added titles for all icons without a label
 * added note to dashboard customization settings about security
+* added affiliate links to public dashboard
 * fixed reloading entry/exit/event pages when switching domain
 * fixed switching domain after accepting invitation
 * fixed live filter when free trial is about to expire
