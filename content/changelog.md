@@ -1,10 +1,17 @@
 ---
 title: "Changelog"
-date: 2023-02-08
+date: 2023-02-09
 draft: false
 weight: 9
 description: "A list of changes made to Pirsch for each new version."
 ---
+
+## 1.17.9
+
+Release: 2023-02-09
+
+* added event metadata filter
+* fixed resetting filter value after closing dropdown when it is empty
 
 ## 1.17.8
 
