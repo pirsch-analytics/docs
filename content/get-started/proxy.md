@@ -1,6 +1,6 @@
 ---
-title: "Proxing the Scripts"
-date: 2022-09-04
+title: "Proxying the Scripts"
+date: 2023-02-09
 draft: false
 weight: 4
 description: "Learn on how to set up a proxy for the Pirsch JavaScript snippets."
