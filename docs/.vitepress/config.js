@@ -21,9 +21,9 @@ export default {
     themeConfig: {
         logo: "/static/favicon.png",
         algolia: {
-            appId: "",
-            apiKey: "",
-            indexName: ""
+            appId: "VAP7DI3OBV",
+            apiKey: "20b32dacd2f4e3522a9c0848b54055ea",
+            indexName: "pirsch"
         },
         nav: [
             {text: "Website", link: "https://pirsch.io"},
