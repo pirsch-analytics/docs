@@ -1,10 +1,4 @@
----
-title: "Website Integration"
-date: 2023-01-04
-draft: false
-weight: 2
-description: "Learn on how to integrate Pirsch into your website using JavaScript."
----
+# Website Integration
 
 ## Add Pirsch to Your Website
 
@@ -71,7 +65,7 @@ Here is an example:
 
 ## Creating Rollup Views and Sending Data to Multiple Dashboards
 
-It's possible to create rollup-views and to send data to multiple dashboards. Please read the [developer settings article]({{<ref "settings/developer.md#additional-domains">}}) for details.
+It's possible to create rollup-views and to send data to multiple dashboards. Please read the [developer settings article](/settings/developer.md#additional-domains) for details.
 
 ## Ignoring Your Own Page Views
 

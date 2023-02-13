@@ -1,10 +1,4 @@
----
-title: "Webflow"
-date: 2022-07-01
-draft: false
-weight: 5
-description: "Learn how to integrate Pirsch into Webflow."
----
+# Webflow
 
 ## Troubleshooting
 

@@ -1,6 +1,4 @@
-# Pirsch Docs
-
-Last update: 2022-07-13
+# Pirsch Documentation
 
 Welcome to the documentation of [Pirsch](https://pirsch.io/), a simple, privacy-friendly, open-source alternative to Google Analytics that does not rely on cookies. We are an independent company based in Germany. The core of Pirsch is [open-source](https://github.com/pirsch-analytics/pirsch).
 

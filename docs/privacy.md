@@ -1,7 +1,5 @@
 # Privacy
 
-Last update: 2022-11-30
-
 ## We Do Not Track
 
 Unlike other web analytics solutions, Pirsch does not track your visitors. By tracking we mean recognizing visitors across multiple websites. Google Analytics for example will identify a person on two websites that are unrelated to each other to deliver targeted ads. We strictly separate the data for each website and don't sell any information to third party. The data separation is ensured by generating different fingerprints for each domain.
@@ -12,7 +10,7 @@ Pirsch makes use of the HTTP protocol to recognize visitors using a technique ca
 
 ## What Data Do We Collect?
 
-Pirsch collects and stores the following datapoints, depending on the integration you use ([frontend]({{<ref "get-started/frontend-integration.md">}}) or [backend]({{<ref "get-started/backend-integration.md">}})):
+Pirsch collects and stores the following datapoints, depending on the integration you use ([frontend](/get-started/frontend-integration.md) or [backend](/get-started/backend-integration.md)):
 
 * User-Agent header (separate from a page view for up to three months)
 * page visited (just the path, not the entire URL)

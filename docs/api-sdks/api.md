@@ -1,14 +1,8 @@
----
-title: "API"
-date: 2023-02-09
-draft: false
-weight: 1
-description: "Use the API to monitor traffic and access your data."
----
+# API
 
-This document describes the REST endpoints used to interact with Pirsch. The easiest way to get started is through one of the client SDKs. If you're looking on how you can integrate Pirsch into your backend to monitor traffic, please check out the [backend integration]({{<ref "get-started/backend-integration.md">}}).
+This document describes the REST endpoints used to interact with Pirsch. The easiest way to get started is through one of the client SDKs. If you're looking on how you can integrate Pirsch into your backend to monitor traffic, please check out the [backend integration](/get-started/backend-integration.md).
 
-To use the API, you must create a client. New clients can be created on the [settings page]({{<ref "settings/developer.md">}}) or on the [account page]({{<ref "account/account-settings.md">}}).
+To use the API, you must create a client. New clients can be created on the [settings page](/settings/developer.md) or on the [account page](/account/account-settings.md).
 
 > Note that all samples do not necessarily show correct data. IDs from a request might not match the response. You should also be careful not to confuse IDs in their context. Fields are oftentimes just called *id*, but represent different objects.
 
@@ -933,7 +927,7 @@ Return the active visitors for the past minute.
 
 ### Keywords
 
-This endpoints requires the [Google Search Console integration]({{<ref "settings/general.md#search-console">}}). **We recommend using the Search Console API directly instead of calling it through Pirsch.**
+This endpoints requires the [Google Search Console integration](/settings/general.md#search-console). **We recommend using the Search Console API directly instead of calling it through Pirsch.**
 
 **Example request**
 
@@ -1042,7 +1036,7 @@ This endpoint deletes a domain.
 
 ### Listing Domains
 
-This endpoint is described in the [statistics section]({{<ref "api-sdks/api.md#getting-the-domain-id">}}). The only difference is that it will return all domains if you use a user client.
+This endpoint is described in the [statistics section](/api-sdks/api.md#getting-the-domain-id). The only difference is that it will return all domains if you use a user client.
 
 ### Resetting the Identification Code
 

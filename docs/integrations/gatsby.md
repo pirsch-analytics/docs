@@ -1,10 +1,4 @@
----
-title: "Gatsby"
-date: 2021-10-14
-draft: false
-weight: 4
-description: "Learn how to integrate Pirsch into Gatsby."
----
+# Gatsby
 
 > This is an unofficial plugin created by the community. Unofficial plugins are not supported by us. Please open issues on GitHub if you experience any problems.
 

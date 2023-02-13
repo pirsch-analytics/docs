@@ -1,10 +1,4 @@
----
-title: "Changelog"
-date: 2023-02-09
-draft: false
-weight: 9
-description: "A list of changes made to Pirsch for each new version."
----
+# Changelog
 
 ## 1.17.9
 

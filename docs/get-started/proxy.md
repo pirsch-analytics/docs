@@ -1,12 +1,6 @@
----
-title: "Proxying the Scripts"
-date: 2023-02-09
-draft: false
-weight: 4
-description: "Learn on how to set up a proxy for the Pirsch JavaScript snippets."
----
+# Proxying the Scripts
 
-> Proxies are a more advanced setup and require you to install software on your server. We recommend starting with the [backend]({{<ref "get-started/backend-integration.md">}}) or [frontend]({{<ref "get-started/frontend-integration.md">}}) integration.
+> Proxies are a more advanced setup and require you to install software on your server. We recommend starting with the [backend](/get-started/backend-integration.md) or [frontend](/get-started/frontend-integration.md) integration.
 
 ## What Is a Proxy and Why Should You Use It
 

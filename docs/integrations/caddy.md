@@ -1,10 +1,4 @@
----
-title: "Caddy"
-date: 2021-10-04
-draft: false
-weight: 3
-description: "Learn how to integrate Pirsch into Caddy."
----
+# Caddy
 
 > This is an unofficial plugin created by the community. Unofficial plugins are not supported by us. Please open issues on GitHub if you experience any problems.
 

@@ -1,10 +1,4 @@
----
-title: "Affiliate"
-date: 2023-01-25
-draft: false
-weight: 7
-description: "Learn about our affiliate program and add money to your account balance."
----
+# Affiliate
 
 Our affiliate program allows you to earn rewards for bringing new customers to Pirsch.
 

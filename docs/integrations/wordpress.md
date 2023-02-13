@@ -1,14 +1,8 @@
----
-title: "WordPress"
-date: 2023-01-03
-draft: false
-weight: 1
-description: "Learn how to integrate Pirsch into WordPress."
----
+# WordPress
 
 ## Using the Plugin (Backend Integration)
 
-[The plugin](https://wordpress.org/plugins/pirsch-analytics/#description) provides an easy way to integrate Pirsch into WordPress. It doesn't use JavaScript and works from your server. This is the [recommended approach]({{<ref "get-started/backend-integration.md">}}). For the script integration, see below.
+[The plugin](https://wordpress.org/plugins/pirsch-analytics/#description) provides an easy way to integrate Pirsch into WordPress. It doesn't use JavaScript and works from your server. This is the [recommended approach](/get-started/backend-integration.md). For the script integration, see below.
 
 > The plugin is triggered on each page visit. Some caching plugins might block it from being executed. If you don't receive traffic after installing and activating the Pirsch plugin, please try to disable your cache or switch to the JavaScript snippet.
 
@@ -16,13 +10,13 @@ To install the plugin, navigate to the plugins page on your WordPress administra
 
 ![WordPress Plugin](/integration/wordpress.png)
 
-Enter the hostname you used to set up the website on the Pirsch dashboard and the client ID and/or secret. You can create new clients on the [settings page]({{<ref "settings/developer.md">}}) for your website. We recommend using an *Access Token* instead of an oAuth client, as this won't make unneccessary roundtrips.
+Enter the hostname you used to set up the website on the Pirsch dashboard and the client ID and/or secret. You can create new clients on the [settings page](/settings/developer.md) for your website. We recommend using an *Access Token* instead of an oAuth client, as this won't make unneccessary roundtrips.
 
 After you click *Save*, Pirsch will start collecting statistics for your website.
 
 There are a few optional fields you can configure to fine-tune the integration.
 
-* The base URL can be set if you use our [proxy]({{ref "get-started/proxy.md"}}).
+* The base URL can be set if you use our [proxy](/get-started/proxy.md).
 * The header can be set to extract the IP address from, if your server is behind a proxy or load balancer.
 * The path filter can be used to exclude pages using regular expressions.
 
@@ -30,7 +24,7 @@ There are a few optional fields you can configure to fine-tune the integration.
 
 To add the JavaScript snippet to your WordPress website, install the "Insert Headers and Footers" plugin. Navigate to the settings page of the plugin and paste the snippet inside the "header" section and save.
 
-The snippet can be found on the [settings page]({{<ref "settings/developer.md">}}) of your dashboard.
+The snippet can be found on the [settings page](/settings/developer.md">) of your dashboard.
 
 ## Permalink Settings
 
