@@ -1,10 +1,6 @@
----
-title: "Privacy"
-date: 2022-11-30
-draft: false
-weight: 8
-description: "Learn how Pirsch respects the privacy of your visitors."
----
+# Privacy
+
+Last update: 2022-11-30
 
 ## We Do Not Track
 

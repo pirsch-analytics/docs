@@ -1,4 +1,2 @@
-resources/
-public/
-hugo
-.hugo_build.lock
+node_modules/
+docs/.vitepress/cache/
