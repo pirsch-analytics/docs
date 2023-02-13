@@ -8,7 +8,7 @@
 
 To install the plugin, navigate to the plugins page on your WordPress administration dashboard and click on *Install* next to the title. Search for "Pirsch Analytics" and click on *Install* for the plugin. Once it is installed, click on *Activate* and navigate to *Tools* -> *Pirsch Analytics* from the left menu. This will open up the settings page.
 
-![WordPress Plugin](/integration/wordpress.png)
+![WordPress Plugin](../static/integration/wordpress.png)
 
 Enter the hostname you used to set up the website on the Pirsch dashboard and the client ID and/or secret. You can create new clients on the [settings page](/settings/developer.md) for your website. We recommend using an *Access Token* instead of an oAuth client, as this won't make unneccessary roundtrips.
 

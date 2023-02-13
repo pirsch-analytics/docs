@@ -1,4 +1,4 @@
-# Backend Integration
+# Server-side Integration
 
 This guide assumes you have already added a domain to your dashboard. If that's not the case, read the [website integration article](/get-started/frontend-integration.md).
 
@@ -11,9 +11,9 @@ The backend integration is the recommended way to integrate Pirsch into your web
 To get started, you first need to create a client ID and secret.
 
 1. open the dashboard and navigate to the *Settings* page for your website
-2. under the *Client* section, click *Add Client* ![Add Client](/integration/backend-client.png)
-3. enter a description and click *Save* ![Client Creation](/integration/backend-create-client.png)
-4. this will open a new dialog showing a client ID and secret. Copy and store them in a secure place ![Client ID and Secret](/integration/backend-client-id-secret.png)
+2. under the *Client* section, click *Add Client* ![Add Client](../static/integration/backend-client.png)
+3. enter a description and click *Save* ![Client Creation](../static/integration/backend-create-client.png)
+4. this will open a new dialog showing a client ID and secret. Copy and store them in a secure place ![Client ID and Secret](../static/integration/backend-client-id-secret.png)
 
 ## Monitor Traffic
 
@@ -54,4 +54,4 @@ Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI...
 }
 ```
 
-As you can see, you need to send the visitors IP, full URL, User-Agent header, and a few more headers. While only the IP, URL, and User-Agent are required, we recommend to send as much of these fields as possible, as they will improve the quality of the analytics data. Don't worry, we don't store personal information like the IP address. To learn more, please read the [details on privacy](privacy.md).
+As you can see, you need to send the visitors IP, full URL, User-Agent header, and a few more headers. While only the IP, URL, and User-Agent are required, we recommend to send as much of these fields as possible, as they will improve the quality of the analytics data. Don't worry, we don't store personal information like the IP address. To learn more, please read the [details on privacy](/privacy.md).
