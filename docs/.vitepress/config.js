@@ -15,14 +15,20 @@ export default {
         ["meta", {name: "og:description", content: "Pirsch is a simple, privacy-friendly, and open-source web analytics solution."}],
         ["meta", {name: "og:image", content: "https://docs.pirsch.io/static/twitter-card.png"}],
         ["meta", {name: "og:type", content: "article"}],
+        ["link", {rel: "shortcut icon", type: "image/png", href: "/static/favicon.png"}],
         ["script", {defer: true, type: "text/javascript", src: "https://api.pirsch.io/pirsch.js", id: "pirschjs", "data-code": "6V8bSjEHJ19PK2hVxaaqJhItHUpSUekW"}]
     ],
     themeConfig: {
+        logo: "/static/favicon.png",
         algolia: {
             appId: "",
             apiKey: "",
             indexName: ""
         },
+        nav: [
+            {text: "Website", link: "https://pirsch.io"},
+            {text: "GitHub", link: "https://github.com/pirsch-analytics/docs"}
+        ],
         sidebar: [
             {
                 text: "Getting started",
