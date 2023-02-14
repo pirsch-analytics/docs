@@ -1,7 +1,7 @@
 {
   "name": "docs",
   "version": "1.0.0",
-  "description": "Official Pirsch documentation.",
+  "description": "Official Pirsch Analytics documentation.",
   "main": "index.js",
   "scripts": {
     "docs:dev": "vitepress dev docs",

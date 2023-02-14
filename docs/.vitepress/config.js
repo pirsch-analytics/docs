@@ -1,6 +1,6 @@
 export default {
     lang: "en-US",
-    title: "Pirsch Documentation",
+    title: "Documentation",
     description: "Pirsch is a simple, privacy-friendly, and open-source web analytics solution — lightweight, cookie-free and easily integrated into any website or backend.",
     head: [
         ["meta", {name: "msapplication-TileColor", content: "#ffffff"}],
@@ -19,7 +19,7 @@ export default {
         ["script", {defer: true, type: "text/javascript", src: "https://api.pirsch.io/pirsch.js", id: "pirschjs", "data-code": "6V8bSjEHJ19PK2hVxaaqJhItHUpSUekW"}]
     ],
     themeConfig: {
-        logo: "/static/favicon.png",
+        logo: "/static/logo.png",
         algolia: {
             appId: "",
             apiKey: "",
@@ -31,7 +31,7 @@ export default {
         ],
         sidebar: [
             {
-                text: "Getting started",
+                text: "Getting Started",
                 items: [
                     {text: "Website Integration", link: "/get-started/frontend-integration"},
                     {text: "Server-side Integration", link: "/get-started/backend-integration"},
@@ -58,7 +58,7 @@ export default {
             },
             {
                 items: [
-                    {text: "Affiliate", link: "/affiliate"},
+                    {text: "Affiliate Program", link: "/affiliate"},
                     {text: "Privacy", link: "/privacy"},
                     {text: "Changelog", link: "/changelog"}
                 ]

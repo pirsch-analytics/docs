@@ -1,4 +1,4 @@
-# Affiliate
+# Affiliate Program
 
 Our affiliate program allows you to earn rewards for bringing new customers to Pirsch.
 

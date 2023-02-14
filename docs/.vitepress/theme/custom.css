@@ -1,0 +1,137 @@
+@font-face {
+    font-family: "DM Sans";
+    src: url("/static/fonts/DM-Sans-Regular.woff2");
+    font-weight: 400;
+    font-display: swap;
+}
+  
+@font-face {
+    font-family: "DM Sans";
+    src: url("/static/fonts/DM-Sans-Medium.woff2");
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "DM Sans";
+    src: url("/static/fonts/DM-Sans-Bold.woff2");
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "DM Mono";
+    src: url("/static/fonts/DM-Mono-Regular.woff2");
+    font-weight: 400;
+    font-display: swap;
+}
+
+:root {
+    --grey-100: #f5f5f5;
+    --grey-200: #ebebeb;
+    --grey-300: #d6d6d6;
+    --grey-400: #adadad;
+    --grey-500: #707070;
+    --grey-600: #333333;
+    --grey-700: #1f1f1f;
+    --grey-800: #141414;
+    --grey-900: #0a0a0a;
+
+    --green: #6ece9d;
+    --green-hover: #91dab4;
+    --beige: #f8f5ed;
+    --yellow: #ffce3d;
+    --red: #e87b7b;
+    --blue: #73b1f0;
+
+    --vp-font-family-base: "DM Sans", "Roboto", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --vp-font-family-mono: "DM Mono", Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+
+    --vp-c-green: var(--green);
+    --vp-c-green-light: var(--green-hover);
+    --vp-c-yellow: var(--yellow);
+    --vp-c-red: var(--red);
+    --vp-code-block-bg: var(--grey-800);
+    --docsearch-container-background: rgba(0,0,0,.5);
+
+
+    --vp-c-bg: var(--beige);
+    --vp-c-bg-alt: white;
+    --vp-c-bg-soft: white;
+    --vp-sidebar-bg-color: white;
+    --vp-c-text-1: black;
+    --vp-c-text-2: var(--grey-500);
+    --vp-c-divider: var(--grey-300);
+    --vp-c-text-code: var(--grey-500);
+    --vp-c-mute: white;
+    --vp-c-gray: var(--grey-400);
+    --docsearch-primary-color: var(--grey-500);
+    --docsearch-logo-color: var(--grey-500);
+}
+
+html {
+    font-feature-settings: "ss03" 1, "ss04" 1;
+}
+
+.dark {
+    --vp-c-bg: var(--grey-900);
+    --vp-c-bg-alt: var(--grey-800);
+    --vp-c-bg-soft: var(--grey-800);
+    --vp-sidebar-bg-color: var(--grey-800);
+    --vp-c-text-1: white;
+    --vp-c-text-2: var(--grey-400);
+    --vp-c-divider: var(--grey-600);
+    --vp-c-text-code: var(--grey-400);
+    --vp-c-mute: var(--grey-800);
+    --vp-c-gray: var(--grey-500);
+    --docsearch-primary-color: var(--grey-400);
+    --docsearch-logo-color: var(--grey-400);
+}
+
+.VPSidebarItem.level-1 .text, .has-outline .content {
+    font-weight: 400 !important;
+}
+
+.vp-doc h1, .vp-doc h2, .vp-doc h3, .vp-doc h4, .vp-doc h5, .vp-doc h6, .title, .VPSidebarItem.level-0 .text, .vp-doc strong, .outline-title, .outline-link.active {
+    font-weight: 500 !important;
+}
+
+.VPNavBar .title, .vp-doc h2, .prev-next, .pager-link, .has-outline .content, .group + .group, .VPSwitch, .VPNavScreenMenuLink {
+    border-width: 2px !important;
+}
+
+.VPMenu, .DocSearch-Button {
+    border-width: 0 !important;
+    border-radius: 6px !important;
+}
+
+.VPSwitch {
+    width: 42px !important;
+    height: 24px !important;
+    border-radius: 12px !important;
+}
+
+.pager-link {
+    border-radius: 6px !important;
+}
+
+.outline-marker {
+    left: -2px !important;
+    width: 2px !important;
+}
+
+.menu + *::before {
+    width: 2px !important;
+}
+
+.cls-1, .cls-2 {
+    fill: var(--docsearch-logo-color) !important;
+}
+
+.curtain {
+    display: none !important;
+}
+
+img {
+    border-radius: 6px;
+}
