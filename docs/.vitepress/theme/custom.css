@@ -111,6 +111,10 @@ html {
     border-radius: 12px !important;
 }
 
+.vp-doc .header-anchor {
+    padding: 0; 
+}
+
 .pager-link {
     border-radius: 6px !important;
 }
