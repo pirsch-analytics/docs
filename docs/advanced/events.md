@@ -122,12 +122,12 @@ Sending an event from your backend works just like submitting a hit, except that
 
 Events are listed in their own panel on the dashboard. The panel is available if you have sent at least one event within the selected time period. It shows the number of unique visitors and the conversion rate, and can be expanded to show more details. You can click on an event to filter for it.
 
-![Events](/dashboard/events.png)
+![Events](../static/advanced/events.png)
 
 The detailed view shows the event name, the number of views, the number of unique visitors, the conversion rate, and the average duration.
 
-![Events](/dashboard/events-metadata.png)
+![Events](../static/advanced/events-metadata.png)
 
 To filter for an event, click on one of the entries in the Panel or Detail view. It will be added to the list of filters. Here is an example for all visitors who have subscribed to the newsletter. Panels that are not relevant to events (such as number of sessions, average time on page, etc.) will be hidden.
 
-![Events Filter](/dashboard/events-filter.png)
+![Events Filter](../static/advanced/events-filter.png)

@@ -23,4 +23,4 @@ After the members have joined, they will be able to view all statistics without 
 
 To remove a member, just click on the trash icon.
 
-![Access Management](/dashboard/settings-access.png)
+![Access Management](../static/advanced/settings-access.png)

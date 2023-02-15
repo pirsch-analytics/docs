@@ -11,9 +11,9 @@ Backend integration is the recommended way to integrate Pirsch into your website
 To get started, you will first need to create a Client ID and a Secret.
 
 1. Open the dashboard and navigate to the **Settings** page for your site
-2. Under the **Client** section, click **Add Client** ![Add Client](../static/integration/backend-client.png)
-3. Enter a description and click **Save** ![Client Creation](../static/integration/backend-create-client.png)
-4. This will open a new dialogue with a client ID and secret. Copy these and save them in a safe place ![Client ID and Secret](../static/integration/backend-client-id-secret.png)
+2. Under the **Client** section, click **Add Client** ![Add Client](../static/get-started/backend-client.png)
+3. Enter a description and click **Save** ![Client Creation](../static/get-started/backend-create-client.png)
+4. This will open a new dialogue with a client ID and secret. Copy these and save them in a safe place ![Client ID and Secret](../static/get-started/backend-client-id-secret.png)
 
 ## Monitoring Traffic
 

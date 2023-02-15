@@ -11,7 +11,7 @@ Once you have created an account, you can add Pirsch to your website.
 3. Click on **Add Domain**.
 4. Copy and paste the JavaScript snippet into the `<head>` section of your website.
 
-![Code Snippet](../static/integration/add-domain-snippet.png)
+![Code Snippet](../static/get-started/add-domain-snippet.png)
 
 And you're done! Your website is now sending page views to Pirsch. Note that only page views for the hostname you enter will be accepted. A pageview for **sub.example.com** won't be accepted if you've configured **example.com**. They are considered completely different websites and you will need to add a new dashboard or [additional domain](/advanced/domains-rollup) for them. The only exception to this is `www` in front of your top level domain. For example, `www.example.com` will be accepted for `example.com` and vice versa.
 
@@ -19,7 +19,7 @@ And you're done! Your website is now sending page views to Pirsch. Note that onl
 
 To test the script, navigate to your website and open the Network tab of the developer tools in your browser (usually F12 or `Ctrl/Command + Shift + I`). Search for 'hit' and make sure you get a 200 response code in the status column.
 
-![Developer Tools](../static/integration/network-tab.png)
+![Developer Tools](../static/get-started/network-tab.png)
 
 If you don't, check your identification code and the domain you have configured. Also, make sure you don't send the **Do Not Track** (DNT) HTTP header or set the `disable_pirsch` option in your local cache, as the hit will be ignored. Adblockers will also block our script.
 

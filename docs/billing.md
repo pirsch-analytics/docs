@@ -6,7 +6,7 @@ After your 30 day free-trial or 100,000 page visits, you will have to subscribe 
 
 To manage your subscription, navigate to the billing page from the top right menu.
 
-![Manage your subscription](/account/billing.png)
+![Manage your subscription](static/billing.png)
 
 The page shows your current page view usage for all of your domains (including deleted domains). Click on *Show Details* to view individual domains. Below, you have the option to receive a warning notification by email if you reach a certain percentage of your usage limit. You can also disable it. The usage limit is updated once a day.
 

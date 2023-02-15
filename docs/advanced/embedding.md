@@ -8,7 +8,7 @@ To embed your dashboard, you must first make your dashboard public or create an 
 
 Navigate to the access settings page and toggle the **Public Dashboard** option or click **Add Access Link**. If you are creating an access link, choose a name that you will recognize later.
 
-![Access Settings](/dashboard/embed-access.png)
+![Access Settings](../static/advanced/embed-access.png)
 
 The final step is to add your public dashboard URL or access link to an iframe. Copy the URL/access link and paste it into the `src` attribute of the iframe. The URL will appear below the **Public Dashboard** toggle, the access link will appear once created.
 

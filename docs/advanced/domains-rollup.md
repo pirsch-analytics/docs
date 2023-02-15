@@ -41,8 +41,8 @@ Clients are used to access the [Pirsch API](/api-sdks/api). You will need one if
 
 To create a new client, click **Add Client**, select the type, enter a description and select the scopes. The scopes define the capabilities of the client. For example, you can create a read-only client by deselecting all write operations. The type can be either **oAuth** or **access token**. An oAuth client is the default and requires you to [get an access token](/api-sdks/api#getting-an-access-token) before you can make any other requests. The **access token** type can be used to make write-only requests. It only uses the client secret to make requests and doesn't require you to request an oAuth token, which is useful for stateless applications, such as a PHP client that cannot reuse an access token for multiple page views.
 
-![Clients](/dashboard/create-client.png)
+![Clients](../static/advanced/create-client.png)
 
 The dialogue that pops up will show the unique client ID and the secret you need to save. Treat the secret as a password. Once the dialogue is closed, there is no way to retrieve the secret. If you lose your secret, you will need to create a new client.
 
-![Clients](/dashboard/settings-client.png)
+![Clients](../static/advanced/settings-client.png)

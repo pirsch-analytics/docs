@@ -8,7 +8,7 @@ Every time someone signs up through your affiliate link and becomes a paying cus
 
 To copy your affiliate link, sign in and click on your account (top-right corner). Copy the link displayed at the top and send it to someone to sign up.
 
-![Affiliate Link](../static/affiliate/link.png)
+![Affiliate Link](static/link.png)
 
 After clicking the link, the sign-up will be linked to your account for up to 24 hours. Afterwards, it will be counted as a regular sign-up, and you won't receive a reward. The visitor can click your link again to make sure it is linked to your account.
 
