@@ -2,6 +2,7 @@ export default {
     lang: "en-US",
     title: "Documentation",
     description: "Pirsch is a simple, privacy-friendly, and open-source web analytics solution — lightweight, cookie-free and easily integrated into any website or backend.",
+    cleanUrls: true,
     head: [
         ["meta", {name: "msapplication-TileColor", content: "#ffffff"}],
         ["meta", {name: "theme-color", content: "#000000"}],

@@ -115,6 +115,10 @@ html {
     padding: 0; 
 }
 
+.VPNavBarTitle.has-sidebar {
+    background-color: var(--vp-sidebar-bg-color) !important;
+}
+
 .pager-link {
     border-radius: 6px !important;
 }

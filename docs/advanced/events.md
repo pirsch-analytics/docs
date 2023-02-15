@@ -2,13 +2,13 @@
 
 Events measure how many visitors took a certain action, like clicking on a button or filling out a form, and calculate the conversion rate and (optional) average time. You can filter the dashboard by events and track additional metadata fields (key-value pairs).
 
-The main difference to [conversion goals](/advanced/conversion-goals.md) is, that you programmatically control when an event is sent and can attach metadata.
+The main difference to [conversion goals](/advanced/conversion-goals) is, that you programmatically control when an event is sent and can attach metadata.
 
 > Note that events count towards your billable monthly page views.
 
 ## Creating Events
 
-Events are automatically created and added to your dashboard as you send them. Events can be sent from your website using JavaScript, or from your backend using our [API](/api-sdks/api.md) or one of our [SDKs](/api-sdks/sdks.md).
+Events are automatically created and added to your dashboard as you send them. Events can be sent from your website using JavaScript, or from your backend using our [API](/api-sdks/api) or one of our [SDKs](/api-sdks/sdks).
 
 ## Sending Events From Your Website
 
@@ -22,7 +22,7 @@ Before you can send your first event, you need to add the JavaScript snippet to 
 
 The `data-code` is the identification code for your domain. Should you reset it (below the **Developer** tab), you will also have to replace it in the snippet.
 
-The `data-exclude` attribute used in the regular `pirsch.js` can also be used for the event snippet. See the [frontend integration](/get-started/frontend-integration.md) for details.
+The `data-exclude` attribute used in the regular `pirsch.js` can also be used for the event snippet. See the [frontend integration](/get-started/frontend-integration) for details.
 
 > The snippet **can not** be used as a replacement for the regular `pirsch.js` that needs to be added to send page views. `pirsch-events.js` can only be used to programmatically send events. If you want to do both, add both snippets to the `head` section of our website.
 

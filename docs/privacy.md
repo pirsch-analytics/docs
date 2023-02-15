@@ -10,7 +10,7 @@ Pirsch makes use of the HTTP protocol to recognize visitors using a technique ca
 
 ## What Data Do We Collect?
 
-Pirsch collects and stores the following datapoints, depending on the integration you use ([frontend](/get-started/frontend-integration.md) or [backend](/get-started/backend-integration.md)):
+Pirsch collects and stores the following datapoints, depending on the integration you use ([frontend](/get-started/frontend-integration) or [backend](/get-started/backend-integration)):
 
 * User-Agent header (separate from a page view for up to three months)
 * page visited (just the path, not the entire URL)

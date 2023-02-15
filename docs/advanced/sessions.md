@@ -20,7 +20,7 @@ This will automatically send a ping to Pirsch every 60 seconds. If you wish to a
 
 ## Extending Sessions Using the API
 
-Sessions can be extended by sending a simple request to the [API](/api-sdks/api.md).
+Sessions can be extended by sending a simple request to the [API](/api-sdks/api).
 
 ```Bash
 POST https://api.pirsch.io/api/v1/session

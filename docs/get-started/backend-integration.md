@@ -1,25 +1,25 @@
 # Server-side Integration
 
-This guide assumes you have already added a domain to your dashboard. If that's not the case, read the [website integration article](/get-started/frontend-integration.md).
+This guide assumes that you have already added a domain to your dashboard. If you haven't, please read the [Website integration article](/get-started/frontend-integration).
 
-## Add Pirsch to Your Backend
+## Adding Pirsch to Your Backend
 
-The backend integration is the recommended way to integrate Pirsch into your website, as it cannot be blocked by the browser. Instead of relying on a script, you will make an [API](/api-sdks/api.md") request to monitor traffic.
+Backend integration is the recommended way to integrate Pirsch into your website as it cannot be blocked by the browser. Instead of relying on a script, you make an [API](/api-sdks/api) request to monitor traffic.
 
-## Create a Client
+## Creating a Client
 
-To get started, you first need to create a client ID and secret.
+To get started, you will first need to create a Client ID and a Secret.
 
-1. open the dashboard and navigate to the *Settings* page for your website
+1. open the dashboard and navigate to the *Settings* page for your site
 2. under the *Client* section, click *Add Client* ![Add Client](../static/integration/backend-client.png)
 3. enter a description and click *Save* ![Client Creation](../static/integration/backend-create-client.png)
-4. this will open a new dialog showing a client ID and secret. Copy and store them in a secure place ![Client ID and Secret](../static/integration/backend-client-id-secret.png)
+4. this will open a new dialogue with a client ID and secret. Copy these and save them in a safe place ![Client ID and Secret](../static/integration/backend-client-id-secret.png)
 
-## Monitor Traffic
+## Monitoring Traffic
 
-The example below shows how you can make the API requests required to get an access token and send a page hit. This is sufficient for most websites. For full reference, please visit the [API](/api-sdks/api.md) documentation.
+The example below shows how to make the API requests needed to get an access token and send a page request. This should be sufficient for most websites. For a full reference, see the [API](/api-sdks/api) documentation.
 
-First, you need to gain an access token used to authenticate other requests. You need to do this before you make the first page hit request and everytime you receive a HTTP status code 401 (unauthorized) to refresh the access token.
+You must first obtain an access token, which is used to authenticate other requests. You need to do this before making your first page request and every time you receive an HTTP status code 401 (unauthorised) to update the access token
 
 ```Bash
 POST https://api.pirsch.io/api/v1/token
@@ -39,7 +39,7 @@ This will return an access token like this.
 }
 ```
 
-To monitor traffic, make sure you send a request to Pirsch everytime someone visits a page. How you do this depends on the programming language and framework you're using. Here is what a request could look like.
+To monitor traffic, make sure you send a request to Pirsch every time someone visits a page. How you do this depends on the programming language and framework you're using. Here is what a request might look like.
 
 ```Bash
 POST https://api.pirsch.io/api/v1/hit
@@ -54,4 +54,4 @@ Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI...
 }
 ```
 
-As you can see, you need to send the visitors IP, full URL, User-Agent header, and a few more headers. While only the IP, URL, and User-Agent are required, we recommend to send as much of these fields as possible, as they will improve the quality of the analytics data. Don't worry, we don't store personal information like the IP address. To learn more, please read the [details on privacy](/privacy.md).
+As you can see, you need to send the visitor's IP, full URL, User-Agent header and a few other headers. Although only the IP, URL and User-Agent are required, we recommend that you send as many of these fields as possible as they improve the quality of the analytics data. Don't worry, we don't store any personal information such as your IP address. To find out more, please read the [privacy details](/privacy).
