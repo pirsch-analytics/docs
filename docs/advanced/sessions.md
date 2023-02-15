@@ -1,14 +1,16 @@
 # Extending Sessions
 
-Pirsch has the option to keep sessions alive. We do not recommend using this feature for regular websites, but it can be handy for mobile apps, single-page applications, and other types of software where you have long-running sessions. Otherwise, a session will only be kept alive if you send a page view, which is usually the desired behavior.
+Pirsch has the ability to keep sessions alive. We do not recommend using this feature for regular websites, but it can be useful for mobile applications, single page applications and other types of software where you have long running sessions. Otherwise, a session will only be kept alive if you send a pageview, which is usually the desired behaviour.
 
-Extending a session prevents the creation of unnecessary page views.
+Extending a session prevents unnecessary page views from being generated.
 
-> Note that a single session extension is counted as 10% of a page view and therefore counts towards your page view limit. Updating a session 10 times will be counted as one page view.
+::: info
+A single session extension is counted as 10% of a page view and therefore counts towards your page view limit. Updating a session 10 times will be counted as one page view.
+:::
 
 ## Extending Sessions Using Javascript
 
-To extends sessions from the browser, add the `pirsch-sessions.js` snippet to your website and adjust the identification code.
+To extend sessions from the browser, add the `pirsch-sessions.js` snippet to your website and adjust the identification code.
 
 ```html
 <script defer type="text/javascript" src="https://api.pirsch.io/pirsch-sessions.js" 
@@ -16,7 +18,7 @@ To extends sessions from the browser, add the `pirsch-sessions.js` snippet to yo
     data-code="YOUR_IDENTIFICATION_CODE"></script>
 ```
 
-This will automatically send a ping to Pirsch every 60 seconds. If you wish to adjust the interval, add the `data-interval-ms` attribute. You can then specifiy the interval in milliseconds.
+This will automatically send a ping to Pirsch every 60 seconds. If you want to change the interval, add the `data-interval-ms` attribute. You can then specify the interval in milliseconds.
 
 ## Extending Sessions Using the API
 
@@ -32,4 +34,4 @@ POST https://api.pirsch.io/api/v1/session
 }
 ```
 
-The data must be identical to the data used when sending a regular page view.
+The data must be identical to the data used to send a regular page view.

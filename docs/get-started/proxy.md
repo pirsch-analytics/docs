@@ -1,6 +1,6 @@
 # Proxying the Scripts
 
-> Proxies are a more advanced setup and require you to install software on your server. We recommend you start with the [backend](/get-started/backend-integration) or [frontend](/get-started/frontend-integration) integration.
+Proxies are a more advanced setup and require you to install software on your server. We recommend you start with the [backend](/get-started/backend-integration) or [frontend](/get-started/frontend-integration) integration.
 
 ## What Is a Proxy and Why Should You Use It
 

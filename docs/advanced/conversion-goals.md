@@ -4,13 +4,13 @@ Conversion goals are described in more detail in their own [article](/advanced/c
 
 ![Goals](/dashboard/goals.png)
 
-To create a new goal, click *Add Goal*, enter a name, the pattern, and the visitor and conversion rate goal.
+To create a new goal, click **Add Goal**, enter a name, the pattern, and the visitor and conversion rate goal.
 
 ![Goals](/dashboard/create-goal.png)
 
-The name is used to identify the goal on the dashboard. The visitor and CR target are optional. If you leave them empty, the goal will measure the number of visitors and conversion rate indefinitely. To automatically delete the goal and receive a notification once it's reached, toggle the two checkboxes that will show up if you set a visitor and/or CR target. If you don't automatically delete the goal, the notification will only be sent once, but you can reactivate it by editing the goal and check the checkbox again.
+The name is used to identify the goal on the dashboard. The visitor and CR target are optional. If you leave them empty, the goal will measure the number of visitors and conversion rate indefinitely. To automatically delete the goal and receive a notification once it's reached, toggle the two checkboxes that will appear when you set a visitor and/or CR target. If you don't automatically delete the goal, the notification will only be sent once, but you can reactivate it by editing the goal and ticking the checkbox again.
 
-The pattern specifies a single page or a group of pages. You can use single or double asterisks as wildcards for parts of the path. A single asterisk is used as a wildcard for a single part of the path. It matches everything that is not a slash (with a length of zero or more). Double asterisks are used to match multiple parts of the path, including slashes (with a length of zero or more). Here are some examples:
+The pattern specifies a single page or a group of pages. You can use single or double asterisks as wildcards for parts of the path. A single asterisk is used as a wildcard for a single part of the path. It matches anything that is not a forward slash (with a length of zero or more). Double asterisks are used to match multiple parts of the path, including slashes (with a length of zero or more). Here are some examples:
 
 | Pattern | Description |
 | - | - |
