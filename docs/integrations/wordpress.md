@@ -8,7 +8,7 @@
 
 To install the plugin, navigate to the plugins page on your WordPress administration dashboard and click on *Install* next to the title. Search for "Pirsch Analytics" and click on *Install* for the plugin. Once it is installed, click on *Activate* and navigate to *Tools* -> *Pirsch Analytics* from the left menu. This will open up the settings page.
 
-![WordPress Plugin](../static/integration/wordpress.png)
+![WordPress Plugin](../static/integrations/wordpress.png)
 
 Enter the hostname you used to set up the website on the Pirsch dashboard and the client ID and/or secret. You can create new clients on the [Settings page](/get-started/backend-integration#creating-a-client) for your website. We recommend using an *Access Token* instead of an oAuth client, as this won't make unneccessary roundtrips.
 
@@ -24,7 +24,7 @@ There are a few optional fields you can configure to fine-tune the integration.
 
 To add the JavaScript snippet to your WordPress website, install the "Insert Headers and Footers" plugin. Navigate to the settings page of the plugin and paste the snippet inside the "header" section and save.
 
-The snippet can be found on the [settings page](/settings/developer">) of your dashboard.
+The snippet can be found on the settings page of your dashboard.
 
 ## Permalink Settings
 

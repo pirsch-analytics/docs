@@ -2,11 +2,11 @@
 
 Conversion goals are described in more detail in their own [article](/advanced/conversion-goals). You can create, edit, and remove goals and use a path pattern to group up pages.
 
-![Goals](/dashboard/goals.png)
+![Goals](../static/advanced/goals.png)
 
 To create a new goal, click *Add Goal*, enter a name, the pattern, and the visitor and conversion rate goal.
 
-![Goals](/dashboard/create-goal.png)
+![Goals](../static/advanced/create-goal.png)
 
 The name is used to identify the goal on the dashboard. The visitor and CR target are optional. If you leave them empty, the goal will measure the number of visitors and conversion rate indefinitely. To automatically delete the goal and receive a notification once it's reached, toggle the two checkboxes that will show up if you set a visitor and/or CR target. If you don't automatically delete the goal, the notification will only be sent once, but you can reactivate it by editing the goal and check the checkbox again.
 

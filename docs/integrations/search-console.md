@@ -5,10 +5,10 @@ The integration can be used to connect your dashboard to Google Search Console. 
 Before you can use the integration, add your website to Search Console and verify that you are the owner of your domain. Afterwards, navigate back to the Pirsch dashboard settings page and follow these steps:
 
 1. click on *Continue with Google*, this will redirect you to login with the Google account you would like to use to connect
-2. select the account that has access to your property on Google Search Console ![Site Selection](/dashboard/settings-gsc-accounts.png)
-3. grant access to your Search Console data ![Site Selection](/dashboard/settings-gsc-permissions.png)
-4. confirm the choices on the next screen ![Site Selection](/dashboard/settings-gsc-confirmation.png)
-5. after you have been redirected back to the settings page, select the website you would like to pull data from. The list will only show **verified** sites ![Site Selection](/dashboard/settings-gsc-integration.png)
+2. select the account that has access to your property on Google Search Console ![Site Selection](../static/integrations/settings-gsc-accounts.png)
+3. grant access to your Search Console data ![Site Selection](../static/integrations/settings-gsc-permissions.png)
+4. confirm the choices on the next screen ![Site Selection](../static/integrations/settings-gsc-confirmation.png)
+5. after you have been redirected back to the settings page, select the website you would like to pull data from. The list will only show **verified** sites ![Site Selection](../static/integrations/settings-gsc-integration.png)
 6. navigate to the dashboard and check if you see a new panel *Keywords* with the data from the Search Console
 
 In case you don't see any data, please wait a few hours. The data on Search Console is not updated in real-time, and it might take a while before you see the results.
