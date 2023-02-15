@@ -1,27 +1,27 @@
 @font-face {
     font-family: "DM Sans";
-    src: url("/static/fonts/DM-Sans-Regular.woff2");
+    src: url("/fonts/DM-Sans-Regular.woff2");
     font-weight: 400;
     font-display: swap;
 }
   
 @font-face {
     font-family: "DM Sans";
-    src: url("/static/fonts/DM-Sans-Medium.woff2");
+    src: url("/fonts/DM-Sans-Medium.woff2");
     font-weight: 500;
     font-display: swap;
 }
 
 @font-face {
     font-family: "DM Sans";
-    src: url("/static/fonts/DM-Sans-Bold.woff2");
+    src: url("/fonts/DM-Sans-Bold.woff2");
     font-weight: 700;
     font-display: swap;
 }
 
 @font-face {
     font-family: "DM Mono";
-    src: url("/static/fonts/DM-Mono-Regular.woff2");
+    src: url("/fonts/DM-Mono-Regular.woff2");
     font-weight: 400;
     font-display: swap;
 }

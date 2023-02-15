@@ -10,17 +10,17 @@ export default {
         ["meta", {name: "twitter:site", content: "@PirschAnalytics"}],
         ["meta", {name: "twitter:title", content: "Pirsch Analytics Documentation"}],
         ["meta", {name: "twitter:description", content: "Pirsch is a simple, privacy-friendly, and open-source web analytics solution."}],
-        ["meta", {name: "twitter:image", content: "https://docs.pirsch.io/static/twitter-card.png"}],
+        ["meta", {name: "twitter:image", content: "https://docs.pirsch.io/twitter-card.png"}],
         ["meta", {name: "og:url", content: "https://docs.pirsch.io"}],
         ["meta", {name: "og:title", content: "Pirsch Analytics Documentation"}],
         ["meta", {name: "og:description", content: "Pirsch is a simple, privacy-friendly, and open-source web analytics solution."}],
-        ["meta", {name: "og:image", content: "https://docs.pirsch.io/static/twitter-card.png"}],
+        ["meta", {name: "og:image", content: "https://docs.pirsch.io/twitter-card.png"}],
         ["meta", {name: "og:type", content: "article"}],
-        ["link", {rel: "shortcut icon", type: "image/png", href: "/static/favicon.png"}],
+        ["link", {rel: "shortcut icon", type: "image/png", href: "/favicon.png"}],
         ["script", {defer: true, type: "text/javascript", src: "https://api.pirsch.io/pirsch.js", id: "pirschjs", "data-code": "6V8bSjEHJ19PK2hVxaaqJhItHUpSUekW"}]
     ],
     themeConfig: {
-        logo: "/static/logo.png",
+        logo: "/logo.png",
         algolia: {
             appId: "VAP7DI3OBV",
             apiKey: "20b32dacd2f4e3522a9c0848b54055ea",
