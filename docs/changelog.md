@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.17.10
+
+Release: unreleased
+
+* migrated from Hugo to VitePress
+
 ## 1.17.9
 
 Release: 2023-02-09
