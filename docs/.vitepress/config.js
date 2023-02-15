@@ -35,14 +35,28 @@ export default {
                 items: [
                     {text: "Website Integration", link: "/get-started/frontend-integration"},
                     {text: "Server-side Integration", link: "/get-started/backend-integration"},
-                    {text: "Proxying the Scripts", link: "/get-started/proxy"}
+                    {text: "Proxying the Scripts", link: "/get-started/proxy"},
+                    {text: "Google Analytics Import", link: "/get-started/ga-import"}
+                ]
+            },
+            {
+                text: "Advanced",
+                items: [
+                    {text: "Access Management", link: "/advanced/access"},
+                    {text: "Referrer and UTM Parameters", link: "/advanced/referrer-utm"},
+                    {text: "Events", link: "/advanced/events"},
+                    {text: "Conversion Goals", link: "/advanced/conversion-goals"},
+                    {text: "Embedding the Dashboard", link: "/advanced/embedding"},
+                    {text: "Additional Domains and Rollup Views", link: "/advanced/domains-rollup"},
+                    {text: "Extending Sessions", link: "/advanced/sessions"}
                 ]
             },
             {
                 text: "Integrations",
                 items: [
-                    {text: "WordPress", link: "/integrations/wordpress"},
+                    {text: "Google Search Console", link: "/integrations/search-console"},
                     {text: "Google Tag Manager", link: "/integrations/tag-manager"},
+                    {text: "WordPress", link: "/integrations/wordpress"},
                     {text: "Laravel", link: "/integrations/laravel"},
                     {text: "Caddy", link: "/integrations/caddy"},
                     {text: "Gatsby", link: "/integrations/gatsby"},
@@ -59,6 +73,7 @@ export default {
             {
                 items: [
                     {text: "Affiliate Program", link: "/affiliate"},
+                    {text: "Billing", link: "/billing"},
                     {text: "Privacy", link: "/privacy"},
                     {text: "Changelog", link: "/changelog"}
                 ]

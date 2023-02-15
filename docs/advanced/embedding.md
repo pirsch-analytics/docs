@@ -1,10 +1,4 @@
----
-title: "Embedding the Dashboard"
-date: 2022-06-23
-draft: false
-weight: 6
-description: "Learn how you can embed your dashboard on another website using an iframe."
----
+# Embedding the Dashboard
 
 You can embed your dashboard on another website using an iframe, allowing you to showcase your statistics or integrate them into an application.
 

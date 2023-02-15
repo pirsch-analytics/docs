@@ -1,20 +1,14 @@
----
-title: "Events"
-date: 2022-11-06
-draft: false
-weight: 4
-description: "Events allow you to track actions and attach metadata to them."
----
+# Events
 
 Events measure how many visitors took a certain action, like clicking on a button or filling out a form, and calculate the conversion rate and (optional) average time. You can filter the dashboard by events and track additional metadata fields (key-value pairs).
 
-The main difference to [conversion goals]({{<ref "dashboard/conversion-goals.md">}}) is, that you programmatically control when an event is sent and can attach metadata.
+The main difference to [conversion goals](/advanced/conversion-goals.md) is, that you programmatically control when an event is sent and can attach metadata.
 
 > Note that events count towards your billable monthly page views.
 
 ## Creating Events
 
-Events are automatically created and added to your dashboard as you send them. Events can be sent from your website using JavaScript, or from your backend using our [API]({{<ref "api-sdks/api.md">}}) or one of our [SDKs]({{<ref "api-sdks/_index.md">}}).
+Events are automatically created and added to your dashboard as you send them. Events can be sent from your website using JavaScript, or from your backend using our [API](/api-sdks/api.md) or one of our [SDKs](/api-sdks/sdks.md).
 
 ## Sending Events From Your Website
 
@@ -28,7 +22,7 @@ Before you can send your first event, you need to add the JavaScript snippet to 
 
 The `data-code` is the identification code for your domain. Should you reset it (below the **Developer** tab), you will also have to replace it in the snippet.
 
-The `data-exclude` attribute used in the regular `pirsch.js` can also be used for the event snippet. See the [frontend integration]({{<ref "get-started/frontend-integration.md">}}) for details.
+The `data-exclude` attribute used in the regular `pirsch.js` can also be used for the event snippet. See the [frontend integration](/get-started/frontend-integration.md) for details.
 
 > The snippet **can not** be used as a replacement for the regular `pirsch.js` that needs to be added to send page views. `pirsch-events.js` can only be used to programmatically send events. If you want to do both, add both snippets to the `head` section of our website.
 
@@ -114,7 +108,7 @@ Pirsch event: Button Clicked {"duration":42,"meta":{"Clicks":1}}
 
 ## Sending Events From Your Backend
 
-Sending an event from your backend works like sending a hit, except that you also attach the event name, duration, and metadata fields. Before you can use the backend integration, make sure you have [created a client]({{<ref "/get-started/backend-integration#create-a-client">}}). You can then [send an event]({{<ref "/api-sdks/api#sending-an-event">}}) using that client.
+Sending an event from your backend works like sending a hit, except that you also attach the event name, duration, and metadata fields. Before you can use the backend integration, make sure you have [created a client](/get-started/backend-integration#create-a-client). You can then [send an event](/api-sdks/api#sending-an-event) using that client.
 
 ## Dashboard and Filtering
 

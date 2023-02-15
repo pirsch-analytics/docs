@@ -1,10 +1,4 @@
----
-title: "Sessions"
-date: 2022-11-26
-draft: false
-weight: 5
-description: "Manually extend visitor sessions."
----
+# Extending Sessions
 
 Pirsch has the option to keep sessions alive. We do not recommend using this feature for regular websites, but it can be handy for mobile apps, single-page applications, and other types of software where you have long-running sessions. Otherwise, a session will only be kept alive if you send a page view, which is usually the desired behavior.
 
@@ -26,7 +20,7 @@ This will automatically send a ping to Pirsch every 60 seconds. If you wish to a
 
 ## Extending Sessions Using the API
 
-Sessions can be extended by sending a simple request to the [API]({{<ref "api-sdks/api.md">}}).
+Sessions can be extended by sending a simple request to the [API](/api-sdks/api.md).
 
 ```Bash
 POST https://api.pirsch.io/api/v1/session

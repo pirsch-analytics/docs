@@ -1,16 +1,10 @@
----
-title: "Billing"
-date: 2022-10-15
-draft: false
-weight: 4
-description: "Manage your subscription."
----
+# Billing
 
 ## Managing Your Subscription
 
 After your 30 day free-trial or 100,000 page visits, you will have to subscribe to keep using our service. You will be notified a few days before your trial ends, so that you will have enough time to subscribe. Should you decide not to upgrade, we will stop analyzing the traffic for your websites and the date filter on the dashboard will be limited to the end date of your free-trial.
 
-To manage your subscription, navigate to the billing page from the top right menu (on your name).
+To manage your subscription, navigate to the billing page from the top right menu.
 
 ![Manage your subscription](/account/billing.png)
 
@@ -26,13 +20,17 @@ The page view limit is bound to your subscription plan. On your free-trial, you 
 
 Deleted domains count towards your page view limit and will be reset at the end of the billing cycle.
 
+## Where Do I Find My Invoices?
+
+You can find your invoices on the Stripe portal. Navigate to the billing page from the top right menu and click *Mangage Subscription*.
+
 ## What Happens if I Reach the Limit?
 
 Should you reach the usage limit before the end of the month, your access will be limited to the day you reached the limit. We will keep collecting data for your websites for five days, before we stop accepting page views. To regain access to your statistics and prevent gaps, upgrade your plan within those five days or wait until your usage limit has been reset.
 
 ## What Happens if I Delete My Account?
 
-Should you mark your account for deletion on the [account settings page]({{<ref "account/account-settings.md">}}), your subscription will be stopped. When your account is finally deleted, the subscription will be cancelled immediately. Should you stop the deletion process, your subscription will be continued. In case you change the subscription plan while your account is marked for deletion, the deletion will be cancelled, and you will keep your account.
+Should you mark your account for deletion on the account settings page, your subscription will be stopped. When your account is finally deleted, the subscription will be cancelled immediately. Should you stop the deletion process, your subscription will be continued. In case you change the subscription plan while your account is marked for deletion, the deletion will be cancelled, and you will keep your account.
 
 ## Payment Methods
 

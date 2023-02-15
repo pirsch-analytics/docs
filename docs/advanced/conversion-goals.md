@@ -1,14 +1,6 @@
----
-title: "Goals and Events"
-date: 2021-07-23
-draft: false
-weight: 4
-description: "Manage conversion goals and event settings."
----
+# Conversion Goals
 
-## Goals
-
-Conversion goals are described in more detail in their own [article]({{<ref "dashboard/conversion-goals.md">}}). You can create, edit, and remove goals and use a path pattern to group up pages.
+Conversion goals are described in more detail in their own [article](/advanced/conversion-goals.md). You can create, edit, and remove goals and use a path pattern to group up pages.
 
 ![Goals](/dashboard/goals.png)
 
@@ -29,7 +21,3 @@ The pattern specifies a single page or a group of pages. You can use single or d
 | `/blog/**` | Matches all pages below `/blog`, like `/blog/article` and `/blog/article/first`. |
 | `/blog/*/first` | Matches all pages below `/blog` that end with `/first` with one part in between, like `/blog/article/first`, but not `/blog/page/first` or `/blog/some/page/first`. |
 | `/blog/**/first` | Matches all pages below `/blog` that end with `/first` with one or more parts in between, like `/blog/article/first` or `/blog/some/page/first`, but not `/blog/some/page/second`. |
-
-## Events
-
-Events are described in more detail in their own [article]({{<ref "dashboard/events.md">}}). To send events, copy the JavaScript snippet and add it to the `head` section of your website or use the [API]({{<ref "api-sdks/api.md">}}).

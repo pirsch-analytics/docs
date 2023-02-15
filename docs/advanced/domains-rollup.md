@@ -1,18 +1,4 @@
----
-title: "Developer"
-date: 2022-11-26
-draft: false
-weight: 5
-description: "Manage integrations and other development related settings."
----
-
-## JavaScript Snippet
-
-Displays the snippet for the [website integration]({{<ref "get-started/frontend-integration.md">}}).
-
-## Resetting the Identifcation Code
-
-The identification code is used for the JavaScript snippet which must be embedded on your page if you decide to use the [website integration]({{<ref "get-started/frontend-integration.md">}}). Usually, you don't need to change it, but should your identification code get hijacked, you can reset it here. Note that you need to update all pages containing the snippet after you reset it.
+# Additional Domains and Rollup Views
 
 ## Additional Domains
 
@@ -49,16 +35,12 @@ To send statistics to more than one additional dashboard, you can comma-separate
 
 ## Clients
 
-Clients are used to access the [Pirsch API]({{<ref "api-sdks/_index.md">}}). You will need one if you decide to use the [backend integration]({{<ref "get-started/backend-integration.md">}}) or to access your data from an external application.
+Clients are used to access the [Pirsch API](/api-sdks/api.md). You will need one if you decide to use the [backend integration](/get-started/backend-integration.md) or to access your data from an external application.
 
-To create a new client, click *Add Client*, select the type, enter a description, and select scopes. Scopes define what capabilities the client has. You can create a client with read-only access by unchecking all the write operations for example. The type can be either *oAuth* or *Access token*. An oAuth client is the default and requires you to [request an access token]({{<ref "api-sdks/api.md#getting-an-access-token">}}) before you can make other requests. The *Access token* type can be used to make write-only requests. It only uses the client secret to make requests and doesn't require you to request an oAuth access token, which is useful for stateless applications, like a PHP client that cannot reuse an access token for multiple page views.
+To create a new client, click *Add Client*, select the type, enter a description, and select scopes. Scopes define what capabilities the client has. You can create a client with read-only access by unchecking all the write operations for example. The type can be either *oAuth* or *Access token*. An oAuth client is the default and requires you to [request an access token](/api-sdks/api.md#getting-an-access-token) before you can make other requests. The *Access token* type can be used to make write-only requests. It only uses the client secret to make requests and doesn't require you to request an oAuth access token, which is useful for stateless applications, like a PHP client that cannot reuse an access token for multiple page views.
 
 ![Clients](/dashboard/create-client.png)
 
 The dialog popping up will show the unique client ID and secret, which you need to save. Treat the secret like a password. Once the dialog is closed, there is no way to view the secret again. Should you lose the secret, you will have to create a new client.
 
 ![Clients](/dashboard/settings-client.png)
-
-## Disable Scripts
-
-You can disable the option to send page views and events via the JavaScript snippets. This will deny any requests made by browsers.

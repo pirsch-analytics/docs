@@ -1,10 +1,4 @@
----
-title: "Referrer and UTM Parameters"
-date: 2021-07-15
-draft: false
-weight: 2
-description: "Learn how to use referrer and UTM parameters to gain better insight on your traffic."
----
+# Referrer and UTM Parameters
 
 Pirsch supports special URL query parameters to improve the quality of your statistics. They can be used to reduce the number of *unknown* referrers on the dashboard and to track your paid or unpaid marketing campaigns.
 

@@ -1,10 +1,4 @@
----
-title: "Access and Permissions"
-date: 2021-04-08
-draft: false
-weight: 3
-description: "Manage who has access to your dashboard."
----
+# Access and Permissions
 
 There are multiple ways to manage access to your websites statistics. They always refer to the currently active domain. To give the same person access to two websites for example, you need to add them to both separately.
 
