@@ -2,17 +2,17 @@
 
 ## Managing Your Subscription
 
-After your 30 day free-trial or 100,000 page visits, you will have to subscribe to keep using our service. You will be notified a few days before your trial ends, so that you will have enough time to subscribe. Should you decide not to upgrade, we will stop analyzing the traffic for your websites and the date filter on the dashboard will be limited to the end date of your free-trial.
+After your 30 day free-trial or 100,000 page views, you will have to subscribe to keep using our service. You will be notified a few days before your trial ends, so that you will have enough time to upgrade your subscription. Should you decide not to upgrade, we will stop analyzing the traffic for your websites and the date filter on the dashboard will be limited to the end of your free-trial.
 
-To manage your subscription, navigate to the billing page from the top right menu.
+To manage your subscription, navigate to the billing page from the top-right menu.
 
 ![Manage your subscription](static/billing.png)
 
 The page shows your current page view usage for all of your domains (including deleted domains). Click on *Show Details* to view individual domains. Below, you have the option to receive a warning notification by email if you reach a certain percentage of your usage limit. You can also disable it. The usage limit is updated once a day.
 
-To start a subscription, select the billing cycle and subscription plan from the menu and click *Checkout*. This will redirect you to our checkout page. Payments, subscriptions, and credit card numbers are managed by [Stripe](https://stripe.com/). We do not save your payment details by ourselves. After you have subscribed, you will be redirected back to our dashboard. To change your plan, cancel your subscription, or update your payment details, click on the *Manage Your Subscription* button. This will redirect you to the Stripe portal.
+To start a subscription, select the billing cycle and subscription plan from the menu and click *Checkout*. This will redirect you to our checkout page. Payments, subscriptions, and credit card numbers are managed by [Stripe](https://stripe.com/). We do not save your payment details by ourselves. After you have subscribed, you will be redirected back to our dashboard. To change your plan, cancel your subscription, or update your payment details, click on the **Manage Your Subscription** button. This will redirect you to the Stripe portal.
 
-Should you not see the *Manage Your Subscription* button after you have successfully subscribed, please wait a few minutes and refresh the page. It might take a few minutes before your subscription is activated.
+Should you not see the **Manage Your Subscription** button after you have successfully subscribed, please wait a few minutes and refresh the page. It might take a few minutes before your subscription is activated.
 
 ## The Page View Limit
 
@@ -22,7 +22,7 @@ Deleted domains count towards your page view limit and will be reset at the end 
 
 ## Where Do I Find My Invoices?
 
-You can find your invoices on the Stripe portal. Navigate to the billing page from the top right menu and click *Mangage Subscription*.
+You can find your invoices on the Stripe portal. Navigate to the billing page from the top right menu and click **Mangage Your Subscription**.
 
 ## What Happens if I Reach the Limit?
 
