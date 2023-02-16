@@ -1,6 +1,6 @@
 export default {
     lang: "en-US",
-    title: "Documentation",
+    title: "Pirsch Documentation",
     description: "Pirsch is a simple, privacy-friendly, and open-source web analytics solution — lightweight, cookie-free and easily integrated into any website or backend.",
     cleanUrls: true,
     head: [
