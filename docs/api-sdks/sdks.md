@@ -4,7 +4,9 @@ Pirsch offers an API to store page views, events, manage access, read statistics
 
 There are official and community provided SDKs to make it easier to work with the API.
 
-> Unofficial SDKs are not supported by us. Please open issues on GitHub if you experience any problems.
+::: info
+Unofficial SDKs are not supported by us. Please open issues on GitHub if you experience any problems.
+:::
 
 ## Official SDKs
 
