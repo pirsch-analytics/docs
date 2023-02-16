@@ -7,6 +7,7 @@ Release: 2023-02-16
 * migrated from Hugo to VitePress
 * renamed "Access Token" to "Access Key" to prevent any confusions
 * fixed and modernized gzip compression
+* fixed loading when searching or sorting in panels
 
 ## 1.17.9
 
