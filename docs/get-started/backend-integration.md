@@ -1,6 +1,6 @@
 # Server-side Integration
 
-This guide assumes that you have already added a domain to your dashboard. If you haven't, please read the [website integration article](/get-started/frontend-integration).
+This guide assumes that you already added a domain to your dashboard. If you didn't, please read the [website integration article](/get-started/frontend-integration).
 
 ## Adding Pirsch to Your Backend
 
@@ -19,7 +19,7 @@ First, you need to create an access key or client ID and secret. We recommend us
 
 The example below shows how to make the API requests needed to get an access token and send a page request. This should be sufficient for most websites. For a full reference, see the [API](/api-sdks/api) documentation.
 
-Requesting an access token is only required if you have created a client ID and secret instead of an access key. You need to fetch a new access token before making your first request and every time you receive a HTTP status code 401 (unauthorised).
+Requesting an access token is only required if you created a client ID and secret instead of an access key. You need to fetch a new access token before making your first request and every time you receive a HTTP status code 401 (unauthorised).
 
 ```Bash
 POST https://api.pirsch.io/api/v1/token
@@ -41,7 +41,7 @@ This will return an access token like this.
 
 To now track traffic, send a page view everytime someone visits a page on your website. How you do this depends on the programming language and framework you're using. We recommend creating a middleware added to your router to handle it automatically for each page view.
 
-If you have created an access key, you can directly use that instead of the access token (`eyJhbGciOiJSUzI1NiIsInR5cCI...` in the example below).
+If you created an access key, you can directly use that instead of the access token (`eyJhbGciOiJSUzI1NiIsInR5cCI...` in the example below).
 
 ```Bash
 POST https://api.pirsch.io/api/v1/hit

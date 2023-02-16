@@ -1,10 +1,10 @@
 # Website Integration
 
-Our JavaScript snippet is the easiest way to integrate pirsch into your website. If you don't want to load javascript on your website, have a look at our [server-side solution](/get-started/backend-integration).
+Our JavaScript snippet is the easiest way to integrate pirsch into your website. If you don't want to load javascript on your website, a look at our [server-side solution](/get-started/backend-integration).
 
 ## Adding Pirsch to Your Website
 
-After you have created an account, you can add Pirsch to your website.
+After you created an account, you can add Pirsch to your website.
 
 1. Open the dashboard and click on **Add Domain** in the menu.
 2. Enter the hostname of your website (such as **example.com**) and select a subdomain and time zone you wish to use for the Pirsch dashboard.
@@ -21,7 +21,7 @@ To test the script, navigate to your website and open the Network tab of the dev
 
 ![Developer Tools](../static/get-started/network-tab.png)
 
-If you don't, check your identification code and the domain you have configured. Also, make sure you don't send the **Do Not Track** (DNT) HTTP header or set the `disable_pirsch` option in your local cache, as the hit will be ignored. Adblockers will also block our script.
+If you don't, check your identification code and the domain you configured. Also, make sure you don't send the **Do Not Track** (DNT) HTTP header or set the `disable_pirsch` option in your local cache, as the hit will be ignored. Adblockers will also block our script.
 
 If you still do not see the request go through, please contact our [support](mailto:support@pirsch.io).
 

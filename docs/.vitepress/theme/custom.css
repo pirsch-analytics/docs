@@ -163,13 +163,10 @@ html {
     display: none !important;
 }
 
-img {
-    border-radius: 6px;
-}
-
 main img {
-    max-height: 350px;
-    margin: 20px auto;
+    max-height: 384px;
+    margin: 24px auto;
+    border-radius: 6px;
 }
 
 @media only screen and (min-width: 513px) {
