@@ -163,7 +163,7 @@ html {
     display: none !important;
 }
 
-img {
+main img {
     max-height: 384px;
     margin: 24px auto;
     border-radius: 6px;
