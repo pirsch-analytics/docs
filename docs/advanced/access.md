@@ -6,7 +6,7 @@ There are several ways to manage access to your site statistics. They always ref
 
 The *Public Access* and *Access Links* sections both allow anyone to access your dashboard.
 
-*Public Access* makes your dashboard available to anyone on the subdomain you chose when creating the website. An example of this is our live demo on [pirsch.pirsch.io](https://pirsch.pirsch.io/), where the first *pirsch* in the domain is replaced by the one you onfigured.
+*Public Access* makes your dashboard available to anyone on the subdomain you chose when creating the website. An example of this is our live demo on [pirsch.pirsch.io](https://pirsch.pirsch.io/), where the first *pirsch* in the domain is replaced by the one you configured.
 
 *Access Links* can be used to generate a link that allows anyone who has it to read your dashboard. The advantage over *Public Access* is that you can delete links to deny access without disrupting anyone who has another link.
 
