@@ -51,6 +51,7 @@
     --vp-c-green-light: var(--green-hover);
     --vp-c-yellow: var(--yellow);
     --vp-c-red: var(--red);
+    --vp-c-text-code: var(--vp-c-text-1);
     --vp-code-block-bg: var(--grey-800);
     --docsearch-container-background: rgba(0,0,0,.5);
 
@@ -68,6 +69,7 @@
     --vp-custom-block-danger-bg: transparent;
     --vp-custom-block-danger-code-bg: var(--vp-c-bg-soft);
     --vp-custom-block-details-bg: transparent;
+    --vp-custom-block-details-code-bg: var(--vp-code-block-bg);
 
     --vp-c-bg: white;
     --vp-c-bg-alt: var(--grey-100);
@@ -76,7 +78,6 @@
     --vp-c-text-1: black;
     --vp-c-text-2: var(--grey-500);
     --vp-c-divider: var(--grey-300);
-    --vp-c-text-code: var(--grey-500);
     --vp-c-mute: var(--grey-100);
     --vp-c-gray: var(--grey-400);
     --docsearch-primary-color: var(--grey-500);
@@ -91,7 +92,6 @@
     --vp-c-text-1: white;
     --vp-c-text-2: var(--grey-400);
     --vp-c-divider: var(--grey-600);
-    --vp-c-text-code: var(--grey-400);
     --vp-c-mute: var(--grey-800);
     --vp-c-gray: var(--grey-500);
     --docsearch-primary-color: var(--grey-400);
@@ -129,10 +129,6 @@ html {
     padding: 0; 
 }
 
-.VPNavBarTitle.has-sidebar {
-    background-color: var(--vp-sidebar-bg-color) !important;
-}
-
 .pager-link {
     border-radius: 6px !important;
 }
@@ -164,9 +160,18 @@ html {
 }
 
 main img {
+    width: auto;
+    max-width: 80%;
+    height: auto;
     max-height: 384px;
     margin: 24px auto;
     border-radius: 6px;
+}
+
+@media only screen and (max-width: 512px) {
+    main img {
+        max-width: 100%;
+    }
 }
 
 @media only screen and (min-width: 513px) {
@@ -192,5 +197,11 @@ main img {
     
     body *::-webkit-scrollbar-corner {
         background-color: transparent;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .VPNavBarTitle.has-sidebar {
+        background-color: var(--vp-sidebar-bg-color) !important;
     }
 }
