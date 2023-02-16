@@ -165,6 +165,8 @@ html {
 
 img {
     border-radius: 6px;
+    max-height: 350px;
+    margin: 20px auto;
 }
 
 @media only screen and (min-width: 513px) {

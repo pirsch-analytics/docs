@@ -1,25 +1,25 @@
 # Server-side Integration
 
-This guide assumes that you have already added a domain to your dashboard. If you haven't, please read the [Website integration article](/get-started/frontend-integration).
+This guide assumes that you have already added a domain to your dashboard. If you haven't, please read the [website integration article](/get-started/frontend-integration).
 
 ## Adding Pirsch to Your Backend
 
-Backend integration is the recommended way to integrate Pirsch into your website as it cannot be blocked by the browser. Instead of relying on a script, you make an [API](/api-sdks/api) request to monitor traffic.
+The server-side integration is the recommended way to integrate Pirsch into your website as it cannot be blocked by the browser. Instead of relying on a script, you make an [API](/api-sdks/api) request to monitor traffic.
 
 ## Creating a Client
 
-To get started, you will first need to create a Client ID and a Secret.
+First, you need to create an access key or client ID and secret. We recommend using an access key, as that doesn't require getting an access token before making the actual request.
 
 1. Open the dashboard and navigate to the **Settings** page for your site
-2. Under the **Client** section, click **Add Client** ![Add Client](../static/get-started/backend-client.png)
-3. Enter a description and click **Save** ![Client Creation](../static/get-started/backend-create-client.png)
-4. This will open a new dialogue with a client ID and secret. Copy these and save them in a safe place ![Client ID and Secret](../static/get-started/backend-client-id-secret.png)
+2. Under the **Integration** section and **Clients**, click **Add Client**
+3. Select **Access Key** as type, enter a description and click **Create Client** ![Client Creation](../static/get-started/backend-create-client.png)
+4. This will open a new dialogue with the secret. Copy and save it in a safe place ![Client ID and Secret](../static/get-started/backend-client-id-secret.png)
 
 ## Monitoring Traffic
 
 The example below shows how to make the API requests needed to get an access token and send a page request. This should be sufficient for most websites. For a full reference, see the [API](/api-sdks/api) documentation.
 
-You must first obtain an access token, which is used to authenticate other requests. You need to do this before making your first page request and every time you receive an HTTP status code 401 (unauthorised) to update the access token
+Requesting an access token is only required if you have created a client ID and secret instead of an access key. You need to fetch a new access token before making your first request and every time you receive a HTTP status code 401 (unauthorised).
 
 ```Bash
 POST https://api.pirsch.io/api/v1/token
@@ -39,7 +39,9 @@ This will return an access token like this.
 }
 ```
 
-To monitor traffic, make sure you send a request to Pirsch every time someone visits a page. How you do this depends on the programming language and framework you're using. Here is what a request might look like.
+To now track traffic, send a page view everytime someone visits a page on your website. How you do this depends on the programming language and framework you're using. We recommend creating a middleware added to your router to handle it automatically for each page view.
+
+If you have created an access key, you can directly use that instead of the access token (`eyJhbGciOiJSUzI1NiIsInR5cCI...` in the example below).
 
 ```Bash
 POST https://api.pirsch.io/api/v1/hit

@@ -1,10 +1,26 @@
 # API
 
-This document describes the REST endpoints used to interact with Pirsch. The easiest way to get started is through one of the client SDKs. If you're looking on how you can integrate Pirsch into your backend to monitor traffic, please check out the [backend integration](/get-started/backend-integration).
+This document describes the API endpoints used to interact with Pirsch. The easiest way to get started is through one of the client SDKs. If you're looking on how you can integrate Pirsch into your backend to monitor traffic, please check out the [server-side integration](/get-started/backend-integration).
 
-To use the API, you must [create a client](/get-started/backend-integration#creating-a-client).
+::: info
+Note that the samples do not necessarily show correct data. IDs from a request might not match the response. You should also be careful not to confuse IDs in their context. Fields are oftentimes just called *id*, but represent different objects.
+:::
 
-> Note that all samples do not necessarily show correct data. IDs from a request might not match the response. You should also be careful not to confuse IDs in their context. Fields are oftentimes just called *id*, but represent different objects.
+## Creating a Client
+
+Clients are used to access the [Pirsch API](/api-sdks/api). You will need one if you decide to use the [server-side integration](/get-started/backend-integration) or if you want to access your data from an external application.
+
+To create a new client, navigate to the **Integration** settings page and click **Add Client**. Select the type, scopes, and enter a description.
+
+The scopes define the capabilities of the client. You can create a read-only client by deselecting all write operations.
+
+The type can be either **oAuth** or **Access Key**. An oAuth client is the default and requires you to [get an access token](/api-sdks/api#getting-an-access-token) before you can make any other requests. The **Access Key** type can be used to make write-only requests. It only uses the client secret to make requests and doesn't require you to request an oAuth token first, which is useful for stateless applications, such as a PHP client that cannot reuse an access token for multiple page views.
+
+![Clients](../static/api-sdks/create-client.png)
+
+The dialogue that pops up will show the unique client ID and the secret you need to save. Treat the secret as a password. Once the dialogue is closed, there is no way to retrieve the secret. If you lose your secret, you will need to create a new client.
+
+![Clients](../static/api-sdks/settings-client.png)
 
 ## Error Handling
 

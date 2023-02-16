@@ -9,16 +9,16 @@ Events count towards your billable monthly page views.
 :::
 
 ::: danger
-You must ensure that no [Personally Identifiable Information (PII)](https://en.wikipedia.org/wiki/Personal_data) is sent within a metadata field. All other information is anonymized, as is the case for hits. PII includes any information that can be used to uniquely identify an individual, such as a full name, email address, phone or credit card number, IP address, etc.
+You must ensure that no [Personally Identifiable Information (PII)](https://en.wikipedia.org/wiki/Personal_data) is sent within a metadata field. All other information is anonymized, as is the case for page views. PII includes any information that can be used to uniquely identify an individual, such as a full name, email address, phone or credit card number, IP address, etc.
 :::
 
 ## Creating Events
 
-Events are automatically created and added to your dashboard when you send them. Events can be sent from your website using JavaScript, or from your backend using our [API](/api-sdks/api) or one of our [SDKs](/api-sdks/sdks).
+Events are automatically created and added to your dashboard when you send them. They can be sent from your website using JavaScript, or from your backend using our [API](/api-sdks/api) or one of our [SDKs](/api-sdks/sdks).
 
 ## Sending Events From Your Website
 
-Before you can send your first event, you need to add the JavaScript snippet to your website. It's different from the normal `pirsch.js` to reduce page load and keep the script lightweight. Navigate to the Settings page on the dashboard and select the **Goals and Events** tab. Copy the code snippet for your domain and add it to the `head` section of each page you want to send events from. The snippet looks like this:
+Before you can send your first event, you need to add the JavaScript snippet to your website. It's different from the normal `pirsch.js` to reduce page load and keep the scripts lightweight. Navigate to the Settings page on the dashboard and select the **Integration** tab. Copy the code snippet for your domain and add it to the `head` section of each page you want to send events from. The snippet looks like this:
 
 ```HTML
 <script defer type="text/javascript" src="https://api.pirsch.io/pirsch-events.js"
@@ -26,12 +26,12 @@ Before you can send your first event, you need to add the JavaScript snippet to 
     data-code="5gXQXdNTvteM4eVY35fNBkcU5CbStFSq"></script>
 ```
 
-The `data-code` is the identification code for your domain. If you reset it (under the **Developer** tab), you will also need to replace it in the snippet.
+The `data-code` is the identification code for your domain. If you reset it, you also need to replace it in the snippet.
 
-The `data-exclude` attribute used in the regular `pirsch.js` can also be used for the event snippet. See [frontend integration](/get-started/frontend-integration) for details.
+The `data-exclude` attribute used in the regular `pirsch.js` can also be used for the event snippet. Please refer to the [website integration](/get-started/frontend-integration) for details.
 
 ::: info
-The snippet **can't** be used as a replacement for the regular `pirsch.js`, which needs to be added to send page views. `pirsch-events.js` can only be used to send events programmatically. If you want to do both, add both snippets to the `head` section of your website.
+The snippet **can't** be used as a replacement for the regular `pirsch.js`, which needs to be added to send page views. `pirsch-events.js` can only be used to send events programmatically.
 :::
 
 ### Example 1
@@ -106,17 +106,17 @@ Here is an example of how to send an event when an external link is clicked. The
 
 The span inside the HTML code is only there to demonstrate how you can get the actual element that was clicked if it contains child elements. You can skip this step for links that contain text only.
 
-### Testing
+## Sending Events From Your Backend
 
-On `localhost` events are ignored and the event details are printed to the console instead. You can open the browser console to confirm that an event is being sent in production. The output should look something like this
+Sending an event from your backend works just like submitting a page view, except that you need to append the event name, duration and metadata fields. Before you can use the backend integration, make sure you have [created a client](/get-started/backend-integration#create-a-client). You can then use the client to [send an event](/api-sdks/api#sending-an-event).
+
+## Testing
+
+Events are ignored on localhost and printed to the console instead. You can open the browser console to confirm that an event is being sent in production. The output should look something like this
 
 ```
 Pirsch event: Button Clicked {"duration":42,"meta":{"Clicks":1}}
 ```
-
-## Sending Events From Your Backend
-
-Sending an event from your backend works just like submitting a hit, except that you also append the event name, duration and metadata fields. Before you can use the backend integration, make sure you have [created a client](/get-started/backend-integration#create-a-client). You can then use this client to [send an event](/api-sdks/api#sending-an-event).
 
 ## Dashboard and Filtering
 
@@ -131,3 +131,5 @@ The detailed view shows the event name, the number of views, the number of uniqu
 To filter for an event, click on one of the entries in the Panel or Detail view. It will be added to the list of filters. Here is an example for all visitors who have subscribed to the newsletter. Panels that are not relevant to events (such as number of sessions, average time on page, etc.) will be hidden.
 
 ![Events Filter](../static/advanced/events-filter.png)
+
+You can also filter for metadata. Simply click the entry in the detailed view below the event.

@@ -1,6 +1,6 @@
 # Extending Sessions
 
-Pirsch has the ability to keep sessions alive. We do not recommend using this feature for regular websites, but it can be useful for mobile applications, single page applications and other types of software where you have long running sessions. Otherwise, a session will only be kept alive if you send a pageview, which is usually the desired behaviour.
+Pirsch has the capability to keep sessions alive. We do not recommend using this feature for regular websites, but it can be useful for mobile applications, single page applications and other types of software where you have long running sessions. Otherwise, a session will only be kept alive if you send a pageview, which is usually the desired behaviour.
 
 Extending a session prevents unnecessary page views from being generated.
 

@@ -1,10 +1,10 @@
 # Website Integration
 
-Our JavaScript snippet is the easiest way to integrate pirsch into your website. If you don't want to load javascript in the frontend, have a look at our [backend solution](/get-started/backend-integration) which offers the same functionality.
+Our JavaScript snippet is the easiest way to integrate pirsch into your website. If you don't want to load javascript on your website, have a look at our [server-side solution](/get-started/backend-integration).
 
 ## Adding Pirsch to Your Website
 
-Once you have created an account, you can add Pirsch to your website.
+After you have created an account, you can add Pirsch to your website.
 
 1. Open the dashboard and click on **Add Domain** in the menu.
 2. Enter the hostname of your website (such as **example.com**) and select a subdomain and time zone you wish to use for the Pirsch dashboard.
@@ -57,7 +57,7 @@ Please always [validate](https://regex101.com/) your expressions before using th
 It's possible to disable certain features of the script. Disabling a feature will prevent the data from being sent to Pirsch. To disable a feature, simply add an attribute to the script tag.
 
 * `data-disable-query` will remove all query parameters from the URL, including UTM parameters.
-* data-disable-referer` removes the referer
+* `data-disable-referer` removes the referer
 * `data-disable-resolution` removes the screen resolution (width and height).
 
 Here is an example:
@@ -69,17 +69,13 @@ Here is an example:
     data-disable-query></script>
 ```
 
-## Creating Rollup Views and Sending Data to Multiple Dashboards
-
-It's possible to create rollup views and send data to multiple dashboards. Please see [this article](/advanced/domains-rollup) for details.
-
 ## Ignoring Your Own Page Views
 
 You can disable this integration by setting the DNT (Do Not Track) header to `1` in your browser, or by adding a value called `disable_pirsch` to your local storage.
 
 For the latter option, open the developer tools (usually F12 or `Ctrl + Shift + I`) in your browser and navigate to the **web storage** tab. Click on **local storage** and add a new value `disable_pirsch` and `1` as the value. After reloading the page, no page views or events (if you also use the event script) should be sent to Pirsch.
 
-## Testing on Localhost
+## Testing Pirsch Locally
 
 The scripts will ignore any requests made on localhost. If you want to override this behaviour, e.g. for testing, you can add the `data-dev` attribute. The host names must match. If you are testing on localhost, rewrite the hostname with the `data-dev` attribute like this
 

@@ -1,8 +1,10 @@
 # Additional Domains and Rollup Views
 
+Additional domains are required if you want to send statistics to multiple dashboards or create rollup views.
+
 ## Additional Domains
 
-Additional domains are required if you want to send statistics to multiple dashboards or create rollup views. A Pirsch dashboard will only accept traffic from its configured domain and identification code. If the origin is different, you can add an additional domain to accept requests.
+A Pirsch dashboard will only accept traffic for its configured domain and identification code. If the origin is different, you can add an additional domain to accept requests.
 
 Below are the two use cases covered. It's also possible to combine the two and create rollup views while sending the statistics to multiple dashboards.
 
@@ -35,14 +37,6 @@ Once you have configured the additional domain, you can send statistics from **e
 
 To send statistics to more than one additional dashboard, you can comma-separate the list, such as `data-domain="rollup.example.com,my-website.com"`.
 
-## Clients
+## Using the Server-Side Integration
 
-Clients are used to access the [Pirsch API](/api-sdks/api). You will need one if you decide to use the [backend integration](/get-started/backend-integration) or if you want to access your data from an external application.
-
-To create a new client, click **Add Client**, select the type, enter a description and select the scopes. The scopes define the capabilities of the client. For example, you can create a read-only client by deselecting all write operations. The type can be either **oAuth** or **access token**. An oAuth client is the default and requires you to [get an access token](/api-sdks/api#getting-an-access-token) before you can make any other requests. The **access token** type can be used to make write-only requests. It only uses the client secret to make requests and doesn't require you to request an oAuth token, which is useful for stateless applications, such as a PHP client that cannot reuse an access token for multiple page views.
-
-![Clients](../static/advanced/create-client.png)
-
-The dialogue that pops up will show the unique client ID and the secret you need to save. Treat the secret as a password. Once the dialogue is closed, there is no way to retrieve the secret. If you lose your secret, you will need to create a new client.
-
-![Clients](../static/advanced/settings-client.png)
+Rollup views and additional domains can also be used through the server-side integration. You'll need a [client](/api-sdks/api#creating-a-client) to make the same requests as above from your server.

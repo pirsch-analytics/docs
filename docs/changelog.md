@@ -5,6 +5,7 @@
 Release: unreleased
 
 * migrated from Hugo to VitePress
+* renamed "Access Token" to "Access Key" to prevent any confusions
 
 ## 1.17.9
 
