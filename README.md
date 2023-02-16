@@ -1,6 +1,6 @@
-# Pirsch Documentation
+# Pirsch Analytics Documentation
 
-Official Pirsch documentation. See https://docs.pirsch.io/.
+Official Pirsch Analytics documentation. See https://docs.pirsch.io/.
 
 ## License
 
