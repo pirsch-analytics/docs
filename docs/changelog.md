@@ -2,10 +2,11 @@
 
 ## 1.17.10
 
-Release: unreleased
+Release: 2023-02-16
 
 * migrated from Hugo to VitePress
 * renamed "Access Token" to "Access Key" to prevent any confusions
+* fixed and modernized gzip compression
 
 ## 1.17.9
 
