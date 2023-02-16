@@ -8,7 +8,7 @@
 The plugin is triggered on every page visit. Some caching plugins may block it from running. If you don't receive traffic after installing and enabling the Pirsch plugin, please try disabling your cache or switching to the JavaScript snippet.
 :::
 
-To install the plugin, go to the plugins page in your WordPress admin dashboard and click on **Install** next to the title. Search for "Pirsch Analytics" and click **Install** for the plugin. Once installed, click **Activate** and navigate to **Tools** -> **Pirsch Analytics** from the left hand menu. This will take you to the settings page.
+To install the plugin, go to the Plugins page in your WordPress admin dashboard and click on **Install** next to the title. Search for "Pirsch Analytics" and click **Install** for the plugin. Once installed, click **Activate** and navigate to **Tools** -> **Pirsch Analytics** from the left hand menu. This will take you to the settings page.
 
 ![WordPress Plugin](../static/integrations/wordpress.png)
 
@@ -26,7 +26,7 @@ There are a few optional fields you can configure to fine-tune the integration.
 
 To add the JavaScript snippet to your WordPress website, install the Insert Headers and Footers plugin. Navigate to the settings page of the plugin and paste the snippet into the `<header>` section and save.
 
-The snippet can be found on the settings page of your dashboard.
+The snippet can be found on the Settings page of your dashboard.
 
 ## Permalink Settings
 

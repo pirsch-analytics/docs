@@ -44,7 +44,7 @@ In case of an error, Pirsch returns a JSON object in the body describing the iss
 
 To make requests to the API, you must first obtain an access token. The token must be sent with each request in the `Authorization` header in the format `Bearer <token>`. If you receive a status code 401 (unauthorized), you must create a new token and try again. The `expires_at' timezone is set to UTC.
 
-Client IDs and secrets can be created from the domain Settings page (under **Developer**) or from the account settings page. Domain clients are created for a specific domain and can only access and manipulate the domain for which they were created. User clients have more rights and can access all domains the user has access to (with the same rights, viewer or admin).
+Client IDs and secrets can be created from the domain Settings page (under **Developer**) or from the Account Settings page. Domain clients are created for a specific domain and can only access and manipulate the domain for which they were created. User clients have more rights and can access all domains the user has access to (with the same rights, viewer or admin).
 
 Single-Access tokens (starting with `pa_`) can only be used to send data (page views, events, and keep-alive sessions) and don't require a client ID, nor do they need to be refreshed. Treat both client secrets and individual access tokens as passwords and store them securely.
 
@@ -52,7 +52,7 @@ The examples for the other endpoints in this document omit the header.
 
 `POST https://api.pirsch.io/api/v1/token`
 
-::: details Example Request
+::: details EXAMPLE REQUEST
 ```JSON
 {
     "client_id": "<client_id>",
@@ -61,7 +61,7 @@ The examples for the other endpoints in this document omit the header.
 ```
 :::
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 {
     "access_token": "eyJhbGciOiJSUzI1NiIsInR5cCI...",
@@ -76,7 +76,7 @@ This endpoint is used to send page hits to Pirsch. It requires you to send infor
 
 `POST https://api.pirsch.io/api/v1/hit`
 
-::: details Example Request
+::: details EXAMPLE REQUEST
 ```JSON
 {
     "url":              "https://example.com/full/url?including=parameters",
@@ -98,7 +98,7 @@ It's possible to send multiple page views at once. If you use the batch endpoint
 
 `POST https://api.pirsch.io/api/v1/hit/batch`
 
-::: details Example Request
+::: details EXAMPLE REQUEST
 ```JSON
 [
     {
@@ -121,7 +121,7 @@ This endpoint is used to send events to Pirsch. It requires you to send informat
 Fields with underscores are comments.
 :::
 
-::: details Example Request
+::: details EXAMPLE REQUEST
 ```JSON
 {
     "event_name":       "Button Clicked",
@@ -150,7 +150,7 @@ It's possible to send multiple events at once. If you use the batch endpoint, ma
 
 `POST https://api.pirsch.io/api/v1/event/batch`
 
-::: details Example Request
+::: details EXAMPLE REQUEST
 ```JSON
 [
     {
@@ -168,7 +168,7 @@ This endpoint is used to **manually** keep sessions alive. A session is normally
 
 `POST https://api.pirsch.io/api/v1/session`
 
-::: details Example Request
+::: details EXAMPLE REQUEST
 ```JSON
 {
     "ip":               "123.456.789.0",
@@ -182,7 +182,7 @@ It's possible to send multiple requests at once. If you use the batch endpoint, 
 
 `POST https://api.pirsch.io/api/v1/session/batch`
 
-::: details Example Request
+::: details EXAMPLE REQUEST
 ```JSON
 [
     {
@@ -245,7 +245,7 @@ Before you can make any requests, you must know the domain ID for the client. Ma
 
 `GET /api/v1/domain`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 [
     {
@@ -275,7 +275,7 @@ Before you can make any requests, you must know the domain ID for the client. Ma
 `GET /api/v1/statistics/duration/session`
 
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 Which time component is set depends on the `scale` filter. Setting it to `day` (default) sets the `day` field. Otherwise the corresponding field will be set.
 
 ```JSON
@@ -296,7 +296,7 @@ Which time component is set depends on the `scale` filter. Setting it to `day` (
 
 `GET /api/v1/statistics/duration/page`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 Which time component is set depends on the `scale` filter. Setting it to `day` (default) sets the `day` field. Otherwise the corresponding field is set.
 
 ```JSON
@@ -318,7 +318,7 @@ Which time component is set depends on the `scale` filter. Setting it to `day` (
 
 `GET /api/v1/statistics/utm/source`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 [
     {
@@ -335,7 +335,7 @@ Which time component is set depends on the `scale` filter. Setting it to `day` (
 
 `GET /api/v1/statistics/utm/medium`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 [
     {
@@ -352,7 +352,7 @@ Which time component is set depends on the `scale` filter. Setting it to `day` (
 
 `GET /api/v1/statistics/utm/campaign`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 [
     {
@@ -369,7 +369,7 @@ Which time component is set depends on the `scale` filter. Setting it to `day` (
 
 `GET /api/v1/statistics/utm/content`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 [
     {
@@ -386,7 +386,7 @@ Which time component is set depends on the `scale` filter. Setting it to `day` (
 
 `GET /api/v1/statistics/utm/term`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 [
     {
@@ -405,7 +405,7 @@ This endpoint returns the total number of visitors, views, sessions, bounces, an
 
 `GET /api/v1/statistics/total`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 {
     "visitors": 42,
@@ -421,7 +421,7 @@ This endpoint returns the total number of visitors, views, sessions, bounces, an
 
 `GET /api/v1/statistics/visitor`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 Which time component is set depends on the `scale` filter. Setting it to `day` (default) sets the `day` field. Otherwise the corresponding field is set.
 
 ```JSON
@@ -446,7 +446,7 @@ Which time component is set depends on the `scale` filter. Setting it to `day` (
 
 `GET /api/v1/statistics/page`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 [
     {
@@ -470,7 +470,7 @@ Which time component is set depends on the `scale` filter. Setting it to `day` (
 
 `GET /api/v1/statistics/page/entry`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 [
     {
@@ -491,7 +491,7 @@ Which time component is set depends on the `scale` filter. Setting it to `day` (
 
 `GET /api/v1/statistics/page/exit`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 [
     {
@@ -513,7 +513,7 @@ This endpoint returns all pages on which an event was triggered. It requires the
 
 `GET /api/v1/statistics/event/page`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 [
     {
@@ -537,7 +537,7 @@ This endpoint returns all pages on which an event was triggered. It requires the
 
 `GET /api/v1/statistics/goals`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 [
     {
@@ -574,7 +574,7 @@ This endpoint lists all events and their metadata keys. You can use the event me
 
 `GET /api/v1/statistics/events`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 [
     {
@@ -596,7 +596,7 @@ This endpoint breaks down the event meta keys and values for a single event. You
 
 `GET /api/v1/statistics/event/meta`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 [
     {
@@ -618,7 +618,7 @@ This endpoint lists all events, including metadata. Note that this can be an exp
 
 `GET /api/v1/statistics/event/list`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 [
     {
@@ -646,7 +646,7 @@ This endpoint lists all events, including metadata. Note that this can be an exp
 
 `GET /api/v1/statistics/growth`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 {
     "visitors_growth": 0.34,
@@ -666,7 +666,7 @@ Return the active visitors for the last minute.
 
 `GET /api/v1/statistics/active?start=60`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 {
     "stats": [
@@ -685,7 +685,7 @@ Return the active visitors for the last minute.
 
 `GET /api/v1/statistics/hours`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 [
     {
@@ -713,7 +713,7 @@ Return the active visitors for the last minute.
 
 `GET /api/v1/statistics/language`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 [
     {
@@ -730,7 +730,7 @@ Return the active visitors for the last minute.
 
 `GET /api/v1/statistics/referrer`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 [
     {
@@ -752,7 +752,7 @@ Return the active visitors for the last minute.
 
 `GET /api/v1/statistics/os`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 [
     {
@@ -769,7 +769,7 @@ Return the active visitors for the last minute.
 
 `GET /api/v1/statistics/os`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 [
     {
@@ -787,7 +787,7 @@ Return the active visitors for the last minute.
 
 `GET /api/v1/statistics/browser`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 [
     {
@@ -804,7 +804,7 @@ Return the active visitors for the last minute.
 
 `GET /api/v1/statistics/browser/version`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 [
     {
@@ -822,7 +822,7 @@ Return the active visitors for the last minute.
 
 `GET /api/v1/statistics/country`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 [
     {
@@ -839,7 +839,7 @@ Return the active visitors for the last minute.
 
 `GET /api/v1/statistics/city`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 [
     {
@@ -856,7 +856,7 @@ Return the active visitors for the last minute.
 
 `GET /api/v1/statistics/platform`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 {
     "platform_desktop": 457,
@@ -873,7 +873,7 @@ Return the active visitors for the last minute.
 
 `GET /api/v1/statistics/screen`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 [
     {
@@ -896,7 +896,7 @@ We recommend using the Search Console API directly instead of calling it through
 
 `GET /api/v1/statistics/keywords`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 [
     {
@@ -936,7 +936,7 @@ It's possible to use an access code by setting the `access` query parameter.
 
 `GET /api/v1/statistics/options/page?id=A5kgYzK14m&from=2022-02-01&to=2022-03-27`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 [
     "/",
@@ -957,7 +957,7 @@ This endpoint adds a new domain.
 
 `POST /api/v1/domain`
 
-::: details Example Request
+::: details EXAMPLE REQUEST
 ```JSON
 {
     "hostname": "example.com",
@@ -967,7 +967,7 @@ This endpoint adds a new domain.
 ```
 :::
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 {
     "id": "A5kgYzK14m",
@@ -1005,7 +1005,7 @@ This endpoint resets the identification code for the domain and return a new one
 
 `PUT /api/v1/domain`
 
-::: details Example Request
+::: details EXAMPLE REQUEST
 ```JSON
 {
     "id": "A5kgYzK14m"
@@ -1013,7 +1013,7 @@ This endpoint resets the identification code for the domain and return a new one
 ```
 :::
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 {
     "identification_code": "..."
@@ -1028,7 +1028,7 @@ This endpoint updates the subdomain for your dashboard (on `your-sub-domain.pirs
 
 `POST /api/v1/domain/subdomain`
 
-::: details Example Request
+::: details EXAMPLE REQUEST
 ```JSON
 {
     "domain_id": "A5kgYzK14m",
@@ -1043,7 +1043,7 @@ This endpoint toggles the visibility of your dashboard from private to public or
 
 `POST /api/v1/domain/public`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 {
     "domain_id": "A5kgYzK14m"
@@ -1058,7 +1058,7 @@ This endpoint toggles the option to send data via scripts for a given domain.
 
 `POST /api/v1/domain/scripts`
 
-::: details Example Request
+::: details EXAMPLE REQUEST
 ```JSON
 {
     "domain_id": "A5kgYzK14m"
@@ -1072,7 +1072,7 @@ This endpoint toggles if statistics are grouped by page title.
 
 `POST /api/v1/domain/title`
 
-::: details Example Request
+::: details EXAMPLE REQUEST
 ```JSON
 {
     "domain_id": "A5kgYzK14m"
@@ -1086,7 +1086,7 @@ This endpoint changes the time in seconds that visitors are considered active on
 
 `POST /api/v1/domain/active`
 
-::: details Example Request
+::: details EXAMPLE REQUEST
 ```JSON
 {
     "domain_id": "A5kgYzK14m",
@@ -1101,7 +1101,7 @@ This endpoint changes the time zone for the dashboard.
 
 `POST /api/v1/domain/timezone`
 
-::: details Example Request
+::: details EXAMPLE REQUEST
 ```JSON
 {
     "domain_id": "A5kgYzK14m",
@@ -1116,7 +1116,7 @@ This endpoint sets one of your domains as a favorite. This requires a user clien
 
 `POST /api/v1/user/favorite`
 
-::: details Example Request
+::: details EXAMPLE REQUEST
 ```JSON
 {
     "id": "A5kgYzK14m"
@@ -1138,7 +1138,7 @@ This endpoint lists all access links.
 
 `GET /api/v1/domain/link?domain_id=A5kgYzK14m`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 [
     {
@@ -1162,7 +1162,7 @@ This endpoint creates a new access link.
 
 `POST /api/v1/domain/link`
 
-::: details Example Request
+::: details EXAMPLE REQUEST
 ```JSON
 {
     "domain_id": "A5kgYzK14m",
@@ -1171,7 +1171,7 @@ This endpoint creates a new access link.
 ```
 :::
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 {
     "id": "A5kgYzK14m",
@@ -1190,7 +1190,7 @@ This endpoint updates an existing access link.
 
 `PUT /api/v1/domain/link`
 
-::: details Example Request
+::: details EXAMPLE REQUEST
 ```JSON
 {
     "id": "A5kgYzK14m",
@@ -1213,7 +1213,7 @@ This endpoint lists all members.
 
 `GET /api/v1/member?id=A5kgYzK14m`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 [
     {
@@ -1242,7 +1242,7 @@ This endpoint invites new members to a domain via email. New members have the **
 
 `POST /api/v1/member`
 
-::: details Example Request
+::: details EXAMPLE REQUEST
 ```JSON
 {
     "id": "A5kgYzK14m",
@@ -1259,7 +1259,7 @@ This endpoint updates a single member's role. Valid roles are **Viewer** and **A
 
 `PUT /api/v1/member`
 
-::: details Example Request
+::: details EXAMPLE REQUEST
 ```JSON
 {
     "id": "A5kgYzK14m",
@@ -1285,7 +1285,7 @@ This endpoint returns all alternative domains associated with a website.
 
 `GET /api/v1/domain/alternative?domain_id=0DJ0mo934`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 [
     {
@@ -1306,7 +1306,7 @@ This endpoint creates a new alternate domain for a Wwebsite.
 
 `POST /api/v1/domain/alternative`
 
-::: details Example Request
+::: details EXAMPLE REQUEST
 ```JSON
 {
     "domain_id": "0DJ0mo934",
@@ -1315,7 +1315,7 @@ This endpoint creates a new alternate domain for a Wwebsite.
 ```
 :::
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 {
     "id": "A5kgYzK14m",
@@ -1334,7 +1334,7 @@ This endpoint updates the hostname for an alternative domain.
 
 `PUT /api/v1/domain/alternative`
 
-::: details Example Request
+::: details EXAMPLE REQUEST
 ```JSON
 {
     "id": "A5kgYzK14m",
@@ -1359,7 +1359,7 @@ This endpoint updates a snippet for a domain and type. The type can either be `p
 
 `POST /api/v1/domain/snippet`
 
-::: details Example Request
+::: details EXAMPLE REQUEST
 ```JSON
 {
     "domain_id": "A5kgYzK14m",
@@ -1380,7 +1380,7 @@ This endpoint returns a snippet for a domain and type. The type can be either `p
 
 `GET /api/v1/domain/snippet?domain_id=A5kgYzK14m&type=event`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 {
     "id": "9do3JD31z",
@@ -1408,7 +1408,7 @@ This endpoint lists all clients.
 
 `GET /api/v1/client?id=0DJ0mo934`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 [
     {
@@ -1435,7 +1435,7 @@ This endpoint creates a new client.
 
 `POST /api/v1/client`
 
-::: details Example Request
+::: details EXAMPLE REQUEST
 ```JSON
 {
     "domain_id": "0DJ0mo934",
@@ -1463,7 +1463,7 @@ The `domains` scope has two different meanings, depending on whether it's used f
 * For user clients, it provides access to most user actions, such as creating or deleting domains and settings.
 * For domain clients, it provides access to domain-specific settings, such as the subdomain or access links.
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 {
     "id": "A5kgYzK14m",
@@ -1488,7 +1488,7 @@ This endpoint updates the description for a client.
 
 `POST /api/v1/client`
 
-::: details Example Request
+::: details EXAMPLE REQUEST
 ```JSON
 {
     "id": "A5kgYzK14m",
@@ -1497,7 +1497,7 @@ This endpoint updates the description for a client.
 ```
 :::
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 {
     "id": "A5kgYzK14m",
@@ -1529,7 +1529,7 @@ This endpoint lists all email reports.
 
 `GET /api/v1/report?id=0DJ0mo934`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 [
     {
@@ -1552,7 +1552,7 @@ This endpoint creates a new email report.
 
 `POST /api/v1/report`
 
-::: details Example Request
+::: details EXAMPLE REQUEST
 ```JSON
 {
     "domain_id": "0DJ0mo934",
@@ -1562,7 +1562,7 @@ This endpoint creates a new email report.
 ```
 :::
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 [
     {
@@ -1585,7 +1585,7 @@ This endpoint updates an existing email report.
 
 `PUT /api/v1/report`
 
-::: details Example Request
+::: details EXAMPLE REQUEST
 ```JSON
 {
     "id": "A5kgYzK14m",
@@ -1594,7 +1594,7 @@ This endpoint updates an existing email report.
 ```
 :::
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 {
     "id": "A5kgYzK14m",
@@ -1622,7 +1622,7 @@ This endpoint lists all conversion goals.
 
 `GET /api/v1/goal?id=0DJ0mo934`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 [
     {
@@ -1649,7 +1649,7 @@ This endpoint creates a new conversion goal.
 
 `POST /api/v1/goal`
 
-::: details Example Request
+::: details EXAMPLE REQUEST
 ```JSON
 {
     "domain_id": "0DJ0mo934",
@@ -1663,7 +1663,7 @@ This endpoint creates a new conversion goal.
 ```
 :::
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 {
     "id": "A5kgYzK14m",
@@ -1687,7 +1687,7 @@ This endpoint updates an existing converion goal.
 
 `PUT /api/v1/goal`
 
-::: details Example Request
+::: details EXAMPLE REQUEST
 ```JSON
 {
     "id": "A5kgYzK14m",
@@ -1702,7 +1702,7 @@ This endpoint updates an existing converion goal.
 ```
 :::
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 {
     "id": "A5kgYzK14m",
@@ -1732,7 +1732,7 @@ This endpoint tests whether a regular expression is valid for a conversion goal.
 
 `POST /api/v1/goal/regex`
 
-::: details Example Request
+::: details EXAMPLE REQUEST
 ```JSON
 {
     "regex": "(?i)^/regular/expression/[^/]*$",
@@ -1741,7 +1741,7 @@ This endpoint tests whether a regular expression is valid for a conversion goal.
 ```
 :::
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 {
     "match": true
@@ -1759,7 +1759,7 @@ This endpoint returns a list of views for a given domain.
 
 `GET /api/v1/view?domain_id=A5kgYzK14m`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 [
     {
@@ -1806,7 +1806,7 @@ This endpoint creates a new view or updates an existing view. It updates an exis
 
 `POST /api/v1/view`
 
-::: details Example Request
+::: details EXAMPLE REQUEST
 ```JSON
 {
     "id": "Jk49fgm38",
@@ -1843,7 +1843,7 @@ This endpoint creates a new view or updates an existing view. It updates an exis
 ```
 :::
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 {
     "id": "Jk49fgm38",
@@ -1895,7 +1895,7 @@ This endpoint returns the import job, if any, for the specified domain.
 
 `GET /api/v1/google/import/job?domain_id=A5kgYzK14m`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 {
     "id": "Jk49fgm38",
@@ -1923,7 +1923,7 @@ This endpoint lists available profiles (views) for the connected Google Account.
 
 `GET /api/v1/google/import/profile?domain_id=A5kgYzK14m`
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 [
     {
@@ -1941,7 +1941,7 @@ This endpoint starts the import after connecting the dashboard to your Google ac
 
 `POST /api/v1/google/import`
 
-::: details Example Request
+::: details EXAMPLE REQUEST
 ```JSON
 {
     "domain_id": "A5kgYzK14m",
@@ -1952,7 +1952,7 @@ This endpoint starts the import after connecting the dashboard to your Google ac
 ```
 :::
 
-::: details Example Response
+::: details EXAMPLE RESPONSE
 ```JSON
 {
     "id": "Jk49fgm38",
