@@ -16,7 +16,7 @@ We recommend using **ref** as it is the shortest, or **utm_source** when used wi
 
 ## Adding UTM Parameters to Your Links
 
-Urchin Tracking Module (UTM) parameters were first introduced by Google Analytics' predecessor, Urchin, and are a widely accepted tool for tracking the effectiveness of online marketing campaigns. With Pirsch, you can use UTM parameters to break down how many people have visited your website and compare the results of your campaigns.
+Urchin Tracking Module (UTM) parameters were first introduced by Google Analytics' predecessor, Urchin, and are a widely accepted tool for tracking the effectiveness of online marketing campaigns. With Pirsch, you can use UTM parameters to break down how many people visited your website and compare the results of your campaigns.
 
 A UTM parameter is added to a link in the same way as referrers, as described above. For example, to track how many visitors came from a paid newsletter, you can add the source, medium and campaign to the URL: **https://example.com/?utm_source=Newsletter&utm_medium=Email&utm_campaign=Paid+Newsletter**. How you use these parameters is up to you. To add spaces to a parameter, use **%20** or a plus sign (**+**): **?utm_source=with+space** or **?utm_source=with%20space**.
 

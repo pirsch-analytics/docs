@@ -164,9 +164,9 @@ html {
 }
 
 img {
+    max-height: 384px;
+    margin: 24px auto;
     border-radius: 6px;
-    max-height: 350px;
-    margin: 20px auto;
 }
 
 @media only screen and (min-width: 513px) {

@@ -26,7 +26,7 @@ Let's say you have your top-level domain **example.com** and a subdomain **sub.e
 
 The second use case for additional domains is to send statistics to multiple dashboards. This allows you to create rollup views for two websites, each with its own dashboard. Each dashboard to which you send traffic requires an additional domain. For example, if you make an additional request from **example.com** to **rollup.example.com**, you need to add *example.com** to your **rollup.example.com** dashboard.
 
-Once you have configured the additional domain, you can send statistics from **example.com** to **rollup.example.com** as follows.
+Once you configured the additional domain, you can send statistics from **example.com** to **rollup.example.com** as follows.
 
 ```html
 <script defer type="text/javascript" src="https://api.pirsch.io/pirsch.js" 

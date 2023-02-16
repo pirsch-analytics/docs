@@ -17,7 +17,7 @@ Copy the URL or access link and paste it into the `src` attribute of the iframe.
     style="border-width: 0;"></iframe>
 ```
 
-In this example, we have set the width and height of the iframe and removed the border. The URL has some additional parameters (`?domain=...`). You can copy these from your regular dashboard URL if you want to add a filter.
+In this example, we set the width and height of the iframe and removed the border. The URL has some additional parameters (`?domain=...`). You can copy these from your regular dashboard URL if you want to add a filter.
 
 ## UI Options
 

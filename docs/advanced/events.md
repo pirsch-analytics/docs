@@ -108,7 +108,7 @@ The span inside the HTML code is only there to demonstrate how you can get the a
 
 ## Sending Events From Your Backend
 
-Sending an event from your backend works just like submitting a page view, except that you need to append the event name, duration and metadata fields. Before you can use the backend integration, make sure you have [created a client](/get-started/backend-integration#create-a-client). You can then use the client to [send an event](/api-sdks/api#sending-an-event).
+Sending an event from your backend works just like submitting a page view, except that you need to append the event name, duration and metadata fields. Before you can use the backend integration, make sure you [created a client](/get-started/backend-integration#create-a-client). You can then use the client to [send an event](/api-sdks/api#sending-an-event).
 
 ## Testing
 
