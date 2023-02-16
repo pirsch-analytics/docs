@@ -1,6 +1,6 @@
 export default {
     lang: "en-US",
-    title: "Documentation",
+    title: "Pirsch Documentation",
     description: "Pirsch is a simple, privacy-friendly, and open-source web analytics solution — lightweight, cookie-free and easily integrated into any website or backend.",
     cleanUrls: true,
     head: [
@@ -78,11 +78,14 @@ export default {
                     {text: "Privacy", link: "/privacy"},
                     {text: "Changelog", link: "/changelog"}
                 ]
+            },
+            {
+                items: [
+                    {text: "Terms and Conditions", link: "https://pirsch.io/terms"},
+                    {text: "Privacy Policy", link: "https://pirsch.io/privacy"},
+                    {text: "Legal Notice", link: "https://pirsch.io/legal"}
+                ]
             }
-        ],
-        footer: {
-            message: "<a href='https://github.com/pirsch-analytics/docs'>GitHub</a> <a href='https://pirsch.io/terms'>Terms</a> <a href='https://pirsch.io/privacy'>Privacy</a> <a href='https://pirsch.io/legal'>Legal</a>",
-            copyright: "Copyright Emvi Software GmbH"
-        }
+        ]
     }
 }
