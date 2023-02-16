@@ -4,7 +4,7 @@ You can use Google Tag Manager (GTM) to add the Pirsch snippet to your website.
 
 1. Click on **Tags** and **New** in your Google Tag Manager account
 2. Enter a name for the tag and click **Choose a tag type to begin setup**.
-3. Select **Custom HTML** and paste the Pirsch snippet (from the [domain setup](/getting-started/frontend-integration#add-pirsch-to-your-website) into the HTML field **and activate document.write**.
+3. Select **Custom HTML** and paste the Pirsch snippet (from the [domain setup](/get-started/frontend-integration#add-pirsch-to-your-website) into the HTML field **and activate document.write**.
 4. Next click on **Choose a trigger to make this tag fire** and select **All pages** (or filter the pages you want to use the script on)
 5. To finish the setup, click **Save**, **Submit** (top right corner) and **Publish**.
 
