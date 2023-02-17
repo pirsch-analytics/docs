@@ -202,7 +202,7 @@ The following endpoints can be used to read statistics from Pirsch. To receive d
 
 The following list contains all possible filter options. Only the required fields need to be set when making a request. Set the fields using URL query parameters, such as `?from=2021-05-08&to=2021-05-15&language=en`.
 
-::: details Filter Options
+::: details FILTER OPTIONS
 | Parameter | Required | Example | Format/Description |
 | - | - | - | - |
 | id | yes | A5kgYzK14m | The domain ID. Use the list endpoint to get the domain ID for the client. |
@@ -915,7 +915,7 @@ We recommend using the Search Console API directly instead of calling it through
 
 The following endpoints return available filtering options for a time period. For brevity, only one example request and response is given.
 
-::: details Filter Options
+::: details FILTER OPTIONS
 ```
 GET /api/v1/statistics/options/utm/source
 GET /api/v1/statistics/options/utm/medium
