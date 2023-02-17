@@ -1439,6 +1439,7 @@ This endpoint creates a new client.
 ```JSON
 {
     "domain_id": "0DJ0mo934",
+    "type": "token",
     "description": "...",
     "scope_hit": "w",
     "scope_event": "w",
@@ -1448,6 +1449,8 @@ This endpoint creates a new client.
 }
 ```
 :::
+
+The type can either be `oauth` or `token`. `oauth` will create an oAuth client with a client ID and secret that can be used to read and write data. The `token` type is read-only and typically used to send statistics.
 
 Scopes can grant read or write access. The table below shows the possible values for available scopes.
 
