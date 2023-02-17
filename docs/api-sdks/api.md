@@ -1376,7 +1376,7 @@ This endpoint updates a snippet for a domain and type. The type can either be `p
 
 ### Getting a Snippet
 
-This endpoint returns a snippet for a domain and type. The type can be either `page view` or `event`.
+This endpoint returns the snippet details for a domain and type. The type can be either `page view`, `event`, or `session`.
 
 `GET /api/v1/domain/snippet?domain_id=A5kgYzK14m&type=event`
 
