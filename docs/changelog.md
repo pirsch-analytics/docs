@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.17.11
+
+Release: 2023-02-23
+
+* added region for US cities
+* updated dependencies
+
 ## 1.17.10
 
 Release: 2023-02-16
