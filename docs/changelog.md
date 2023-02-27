@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.17.12
+
+Release: 2023-02-27
+
+* added automatic account deletion of accounts that haven't been used in the past 12 months
+* fixed counting imported statistics towards usage limit
+* fixed resetting passwords for inactive accounts
+* fixed saving views with event metadata
+* updated dependencies
+
 ## 1.17.11
 
 Release: 2023-02-23
