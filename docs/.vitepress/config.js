@@ -61,7 +61,8 @@ export default {
                     {text: "Laravel", link: "/integrations/laravel"},
                     {text: "Caddy", link: "/integrations/caddy"},
                     {text: "Gatsby", link: "/integrations/gatsby"},
-                    {text: "Webflow", link: "/integrations/webflow"}
+                    {text: "Webflow", link: "/integrations/webflow"},
+                    {text: "Docusaurus", link: "/integrations/docusaurus"}
                 ]
             },
             {
