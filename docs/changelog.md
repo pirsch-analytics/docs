@@ -6,6 +6,7 @@ Release: 2023-03-14
 
 * fixed light mode
 * fixed changing period when switching to tab while holding down a key
+* fixed loading statistics after deleting a domain
 
 ## 1.17.12
 
