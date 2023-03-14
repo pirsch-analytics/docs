@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.17.13
+
+Release: 2023-03-14
+
+* fixed light mode
+* fixed changing period when switching to tab while holding down a key
+
 ## 1.17.12
 
 Release: 2023-02-27

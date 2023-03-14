@@ -70,9 +70,9 @@ The examples for the other endpoints in this document omit the header.
 ```
 :::
 
-## Sending a Page Hit
+## Sending Page Views
 
-This endpoint is used to send page hits to Pirsch. It requires you to send information about the request made by the client. How you get this information depends on the programming language and framework you're using. The example shows which fields are required and which are optional. We recommend sending all of them to make the results as accurate as possible.
+This endpoint is used to send page views to Pirsch. It requires you to send information about the request made by the client. How you get this information depends on the programming language and framework you're using. The example shows which fields are required and which are optional. We recommend sending all of them to make the results as accurate as possible.
 
 `POST https://api.pirsch.io/api/v1/hit`
 
