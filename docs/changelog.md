@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.17.14
+
+Release: 2023-03-15
+
+* fixed updating email report date to Monday
+* fixed branding in email templates
+
 ## 1.17.13
 
 Release: 2023-03-14
