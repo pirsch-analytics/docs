@@ -2,9 +2,11 @@
 
 ## 1.17.15
 
-Release: unreleased
+Release: 2023-03-23
 
 * URLs from the referrer header and query parameters (ref, utm_source, ...) are now parsed
+* daily email reports now compare the past day with the day before yesterday
+* added year to graph tooltips if necessary
 * updated dependencies
 
 ## 1.17.14
