@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.17.15
+
+Release: unreleased
+
+* URLs from the referrer header and query parameters (ref, utm_source, ...) are now parsed
+* updated dependencies
+
 ## 1.17.14
 
 Release: 2023-03-15
