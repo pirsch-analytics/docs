@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.18.0
+
+Release: unreleased
+
+* added keyboard controls to domain and time range filter selection
+* added check to prevent filter fields from being added twice with the same value
+* fixed closing view selection on enter
+
 ## 1.17.15
 
 Release: 2023-03-23
