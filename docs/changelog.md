@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.18.0
+## 2.0.0
 
 Release: unreleased
 
