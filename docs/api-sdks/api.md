@@ -417,9 +417,9 @@ This endpoint returns the total number of visitors, views, sessions, bounces, an
 ```
 :::
 
-### Total Visitors and Page Views
+### Total Visitors, Page Views, and Members
 
-This endpoint returns the total number of visitors and page views. Responses are cached for up to 30 minutes.
+This endpoint returns the total number of visitors, page views, and team members. Responses are cached for up to 30 minutes.
 
 `GET /api/v1/statistics/overview`
 
@@ -429,7 +429,8 @@ This endpoint returns the total number of visitors and page views. Responses are
     "visitors": 42,
     "views": 56,
     "visitors_growth": 0.42,
-    "views_growth": 0.57
+    "views_growth": 0.57,
+    "member": 7
 }
 ```
 :::
