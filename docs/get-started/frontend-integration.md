@@ -1,6 +1,6 @@
 # Website Integration
 
-Our JavaScript snippet is the easiest way to integrate pirsch into your website. If you don't want to load javascript on your website, a look at our [server-side solution](/get-started/backend-integration).
+Our JavaScript snippet is the easiest way to integrate pirsch into your website. If you don't want to load JavaScript on your website, take a look at our [server-side integration](/get-started/backend-integration).
 
 ## Adding Pirsch to Your Website
 
@@ -13,27 +13,13 @@ After you created an account, you can add Pirsch to your website.
 
 ![Code Snippet](../static/get-started/add-domain-snippet.png)
 
-And you're done! Your website is now sending page views to Pirsch. Note that only page views for the hostname you enter will be accepted. A pageview for **sub.example.com** won't be accepted if you've configured **example.com**. They are considered completely different websites and you will need to add a new dashboard or [additional domain](/advanced/domains-rollup) for them. The only exception to this is `www` in front of your top level domain. For example, `www.example.com` will be accepted for `example.com` and vice versa.
+And you're done! Your website is now sending page views to Pirsch.
+
+Note that only page views for the hostname you enter will be accepted. A pageview for **sub.example.com** won't be accepted if you've configured **example.com**. They are considered completely different websites and you will need to add a new dashboard or [additional domain](/advanced/domains-rollup) for them. The only exception to this is `www` in front of your top level domain. For example, `www.example.com` will be accepted for `example.com` and vice versa. You can also create [roll-up views](/advanced/domains-rollup) to combine data from multile websites.
 
 ## Testing the Integration
 
-To test the script, navigate to your website and open the Network tab of the developer tools in your browser (usually F12 or `Ctrl/Command + Shift + I`). Search for 'hit' and make sure you get a 200 response code in the status column.
-
-![Developer Tools](../static/get-started/network-tab.png)
-
-If you don't, check your identification code and the domain you configured. Also, make sure you don't send the **Do Not Track** (DNT) HTTP header or set the `disable_pirsch` option in your local cache, as the hit will be ignored. Adblockers will also block our script.
-
-If you still do not see the request go through, please contact our [support](mailto:support@pirsch.io).
-
-## Resetting the Identification Code
-
-Your website is identified by the hostname from which the request is made and an identification code. The identification code must be placed within the JavaScript snippet. If you ever need to recreate the code, go to the Settings page for your site and generate a new one. You'll then need to replace the old code.
-
-```html
-<script defer type="text/javascript" src="https://api.pirsch.io/pirsch.js" 
-    id="pirschjs" 
-    data-code="YOUR_IDENTIFICATION_CODE"></script>
-```
+Please refer to the [troubleshooting article](/get-started/troubleshooting).
 
 ## Including or Excluding Pages
 
@@ -87,3 +73,13 @@ The scripts will ignore any requests made on localhost. If you want to override 
 ```
 
 In this case, the hostname you've configured on the Dashboard is `example.com`. So you need to add `data-dev="example.com"` to rewrite the hostname.
+
+## Resetting the Identification Code
+
+Your website is identified by the hostname from which the request is made and an identification code. The identification code must be placed within the JavaScript snippet. If you ever need to recreate the code, go to the Settings page for your site and generate a new one. You'll then need to replace the old code.
+
+```html
+<script defer type="text/javascript" src="https://api.pirsch.io/pirsch.js" 
+    id="pirschjs" 
+    data-code="YOUR_IDENTIFICATION_CODE"></script>
+```
