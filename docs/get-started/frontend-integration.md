@@ -2,6 +2,10 @@
 
 Our JavaScript snippet is the easiest way to integrate pirsch into your website. If you don't want to load JavaScript on your website, take a look at our [server-side integration](/get-started/backend-integration).
 
+::: info
+Looking for code? Check out our [demo repository](https://github.com/pirsch-analytics/demo) on GitHub!
+:::
+
 ## Adding Pirsch to Your Website
 
 After you created an account, you can add Pirsch to your website.

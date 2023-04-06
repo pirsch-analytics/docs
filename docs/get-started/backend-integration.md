@@ -2,6 +2,10 @@
 
 This guide assumes that you already created a dashboard for your website on Pirsch. If you didn't, please read the [website integration article](/get-started/frontend-integration).
 
+::: info
+Looking for code? Check out our [demo repository](https://github.com/pirsch-analytics/demo) on GitHub!
+:::
+
 ## Adding Pirsch to Your Backend
 
 The server-side integration is the **recommended** way to integrate Pirsch into your website as it cannot be blocked by the browser. Instead of relying on JavaScript, you'll make a HTTP [API](/api-sdks/api) request to track traffic.
