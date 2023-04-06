@@ -11,6 +11,14 @@ Release: unreleased
 * fixed closing view selection on enter
 * fixed clearing referrer cache
 
+## 1.17.16
+
+Release: unreleased
+
+* added new utility script `pirsch-ext.js`
+* fixed loading script configuration
+* updated dependencies
+
 ## 1.17.15
 
 Release: 2023-03-23
