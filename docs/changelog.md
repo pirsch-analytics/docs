@@ -13,10 +13,11 @@ Release: unreleased
 
 ## 1.17.16
 
-Release: unreleased
+Release: 2023-04-07
 
-* added new utility script `pirsch-ext.js`
+* added new utility script `pirsch-extended.js`
 * fixed loading script configuration
+* fixed clearing HTTP request cancellation
 * updated dependencies
 
 ## 1.17.15
