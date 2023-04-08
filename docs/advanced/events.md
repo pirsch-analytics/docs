@@ -18,7 +18,7 @@ Events are automatically created and added to your dashboard when you send them.
 
 ## Sending Events From Your Website
 
-Before you can send your first event, you need to add the JavaScript snippet to your website. It's different from the normal `pirsch.js` to reduce page load and keep the scripts lightweight. Navigate to the Settings page on the dashboard and select the **Integration** tab. Copy the code snippet for your domain and add it to the `head` section of each page you want to send events from. The snippet looks like this:
+Before you can send your first event, you need to add the JavaScript snippet to your website. It's different from the normal `pirsch.js` to reduce page load and keep the scripts lightweight. Navigate to the settings page on the dashboard and select the **Integration** tab. Copy the code snippet for your domain and add it to the `head` section of each page you want to send events from. The snippet looks like this:
 
 ```HTML
 <script defer type="text/javascript" src="https://api.pirsch.io/pirsch-events.js"
