@@ -8,7 +8,7 @@ Tracking 404 error pages count towards your billable monthly page views.
 
 ## Adding Tracking to 404 Error Pages
 
-Tracking 404 error pages requires adding the `pirsch-extended.js` script to your website. If you have the regular `pirsch.js` and/or `pirsch-events.js` scripts installed, tracking page views and events, you need to replace them with the extended script. The extended script combines the functionality of the other scripts, including tracking [outbound links](/advanced/outbind-links) and [file downloads](/advanced/file-downloads).
+Tracking 404 error pages requires adding the `pirsch-extended.js` script to your website. If you have the regular `pirsch.js` and/or `pirsch-events.js` scripts installed, tracking page views and events, you need to replace them with the extended script. The extended script combines the functionality of the other scripts, including tracking [outbound links](/advanced/outbound-links) and [file downloads](/advanced/file-downloads).
 
 Navigate to the settings page on the dashboard and select the **Integration** tab. Copy the code snippet for your domain and add it to the `head` section of each page you want to track file downloads on. Here is a simple example on what it will look like. You can use the advanced options on the settings page to customize the snippet.
 

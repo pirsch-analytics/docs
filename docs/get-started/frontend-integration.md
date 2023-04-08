@@ -25,7 +25,7 @@ Note that only page views for the hostname you enter will be accepted. A pagevie
 
 Please refer to the [troubleshooting article](/get-started/troubleshooting).
 
-## Including or Excluding Pages
+## Including and Excluding Pages
 
 The snippet provides a very flexible way of including or excluding pages. You can exclude one or more pages by specifying the `data-exclude` attribute. The content is a list of regular expressions used to filter pages.
 

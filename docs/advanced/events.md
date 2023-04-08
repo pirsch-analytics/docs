@@ -9,7 +9,7 @@ Events count towards your billable monthly page views.
 :::
 
 ::: danger
-You must ensure that no [Personally Identifiable Information (PII)](https://en.wikipedia.org/wiki/Personal_data) is sent within a metadata field. All other information is anonymized, as is the case for page views. PII includes any information that can be used to uniquely identify an individual, such as a full name, email address, phone or credit card number, IP address, etc.
+You must ensure that no [Personally Identifiable Information (PII)](https://en.wikipedia.org/wiki/Personal_data) is sent within a metadata field. All other information is anonymized, as is the case for page views. PII includes any information that can be used to uniquely identify an individual, such as the full name, email address, phone or credit card number, etc.
 :::
 
 ## Creating Events
@@ -18,7 +18,9 @@ Events are automatically created and added to your dashboard when you send them.
 
 ## Sending Events From Your Website
 
-Before you can send your first event, you need to add the JavaScript snippet to your website. It's different from the normal `pirsch.js` to reduce page load and keep the scripts lightweight. Navigate to the settings page on the dashboard and select the **Integration** tab. Copy the code snippet for your domain and add it to the `head` section of each page you want to send events from. The snippet looks like this:
+Before you can send your first event, you need to add the `pirsch-events.js` or `pirsch-extended.js` JavaScript snippet to your website. They're different from the regular `pirsch.js` to reduce page load and keep the scripts lightweight.
+
+Navigate to the settings page on the dashboard and select the **Integration** tab. Copy the code snippet for your domain and add it to the `head` section of each page you want to send events from. The snippet looks like this:
 
 ```HTML
 <script defer type="text/javascript" src="https://api.pirsch.io/pirsch-events.js"
@@ -28,10 +30,12 @@ Before you can send your first event, you need to add the JavaScript snippet to 
 
 The `data-code` is the identification code for your domain. If you reset it, you also need to replace it in the snippet.
 
-The `data-exclude` attribute used in the regular `pirsch.js` can also be used for the event snippet. Please refer to the [website integration](/get-started/frontend-integration) for details.
+The `data-exclude` and `data-include` attributes from the regular `pirsch.js` can also be used for the event snippet. Please refer to the [website integration](/get-started/frontend-integration) for details.
+
+`pirsch-extended.js` is a lot more powerful and provides automatic tracking of [outbound link clicks](/advanced/outbound-links) and [file downloads](/advanced/file-downloads). It also allows you to track events using HTML attributes and CSS class names. Please refer to the examples below to decide which one to use.
 
 ::: info
-The snippet **can't** be used as a replacement for the regular `pirsch.js`, which needs to be added to send page views. `pirsch-events.js` can only be used to send events programmatically.
+`pirsch-events.js` **can't** be used as a replacement for the regular `pirsch.js`. It can only be used to send events programmatically. `pirsch.js` is still required to send page views. However, `pirsch-extended.js` provides all features, so you can use it to replace the other scripts.
 :::
 
 ### Example 1
