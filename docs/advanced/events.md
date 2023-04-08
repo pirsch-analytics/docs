@@ -38,9 +38,49 @@ The `data-exclude` and `data-include` attributes from the regular `pirsch.js` ca
 `pirsch-events.js` **can't** be used as a replacement for the regular `pirsch.js`. It can only be used to send events programmatically. `pirsch.js` is still required to send page views. However, `pirsch-extended.js` provides all features, so you can use it to replace the other scripts.
 :::
 
-### Example 1
+### Example 1: Using CSS Classes
 
-You are now ready to start sending events. Here is a simple example of how to send an event at the click of a button.
+::: info
+The `pirsch-extended.js` script is required to use this feature.
+:::
+
+If you don't have access to the HTML of your website and cannot or don't want to use JavaScript, adding CSS classes is the easiest way to add event tracking. The downside is that only click events are supported at the moment. The example below will trigger an event when the button is clicked.
+
+```HTML
+<button class="pirsch-event=Event+Name pirsch-meta-key=Meta+Value pirsch-duration=32">
+    Button
+</button>
+```
+
+The event name is set by adding the `pirsch-event=<Name>` class. Plus characters will be replaced with a space.
+
+You can add as many `pirsch-meta-<Key>=<Value>` classes as you want. They'll be attached as metadata to the event.
+
+`pirsch-duration=<Number>` can be used to send a number that the average of will be displayed on the events details panel.
+
+### Example 2: Using HTML Attributes
+
+::: info
+The `pirsch-extended.js` script is required to use this feature.
+:::
+
+If you have access to the HTML of your website, adding attributes is an easy way to add event tracking. The downside is that only click events are supported at the moment. The example below will trigger an event when the button is clicked.
+
+```HTML
+<button pirsch-event="Event Name" pirsch-meta-key="Meta Value" pirsch-duration="32">
+    Button
+</button>
+```
+
+The event name is set by adding the `pirsch-event="<Name>"` attribute.
+
+You can add as many `pirsch-meta-<Key>="<Value>"` parameters as you want. They'll be attached as metadata to the event.
+
+`pirsch-duration="<Number>"` can be used to send a number that the average of will be displayed on the events details panel.
+
+### Example 3: Using JavaScript
+
+Here is a simple example of how to send an event at the click of a button using JavaScript.
 
 ```HTML
 <button id="button">Send Event</button>
@@ -72,43 +112,6 @@ You are now ready to start sending events. Here is a simple example of how to se
 The script sends an event on every button click and adds one to the counter. The important part here is the call to the `pirsch` function. The first parameter is the event name, followed by optional parameters. The `duration` parameter can be used to send a number (seconds) with the event, which is used to calculate the average duration. This can be the time spent on the page, for example, or anything you want, such as the time it took to read a blog post. The 'meta' parameter is an object containing key-value pairs and is displayed below the event on the dashboard. The attached metadata can be used later to further break down the event. Note that you can only use scalar values (strings, numbers and booleans). There is no limit to the number of metadata fields you can send.
 
 The function returns a promise, which you can use to continue with your code after the event has been sent, or to handle any errors. We recommend that you perform your action even if the event cannot be sent, to avoid any interruption.
-
-### Example 2
-
-Here is an example of how to send an event when an external link is clicked. The custom attribute `pirsch-link` is used to query the links that should generate an event and is also used as the event name.
-
-```HTML
-<a href="https://external-page.com/"
-   target="_blank"
-   pirsch-link="Link Clicked">
-    Visit external <span>page</span>
-</a>
-
-<script type="text/javascript">
-    // Wait until the page has finished loading before adding the event listener.
-    document.addEventListener("DOMContentLoaded", () => {
-        // Select all elements with the "pirsch-link" attribute.
-        const links = document.querySelectorAll("[pirsch-link]");
-        
-        // Add an event listener to each link to send an event on click.
-        links.forEach(link => link.addEventListener("click", e => {
-            // Find clicked element.
-            let target = e.target;
-
-            while(!target.hasAttribute("pirsch-link")) {
-                target = target.parentNode;
-            }
-
-            // Use the attribute as the event name.
-            const eventName = target.getAttribute("pirsch-link");
-            pirsch(eventName);
-            console.log("Pirsch event sent", eventName); // optional to see if it is working
-        }));
-    });
-</script>
-```
-
-The span inside the HTML code is only there to demonstrate how you can get the actual element that was clicked if it contains child elements. You can skip this step for links that contain text only.
 
 ## Sending Events From Your Backend
 
