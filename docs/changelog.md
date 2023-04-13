@@ -7,9 +7,16 @@ Release: unreleased
 * added domain overview with some basic statistics
 * added keyboard controls to domain and time range filter selection
 * added check to prevent filter fields from being added twice with the same value
+* added log out from all devices on password change or reset
 * changed design for top menu and navigation
 * fixed closing view selection on enter
 * fixed clearing referrer cache
+
+## 1.17.17
+
+Release: 2023-04-13
+
+* fixed sending page views on programmatic navigation using JavaScript
 
 ## 1.17.16
 
