@@ -12,6 +12,14 @@ Release: unreleased
 * fixed closing view selection on enter
 * fixed clearing referrer cache
 
+## 1.17.18
+
+Release: 2023-04-14
+
+* improved error handling in `pirsch-extended.js`
+* added `data-disable-history` to ignore programmatic URL changes
+* fixed entries/exits when filtering for a path pattern
+
 ## 1.17.17
 
 Release: 2023-04-13
