@@ -11,6 +11,7 @@ Release: unreleased
 * changed design for top menu and navigation
 * fixed closing view selection on enter
 * fixed clearing referrer cache
+* fixed offset and limit for conversion goals
 
 ## 1.17.18
 
