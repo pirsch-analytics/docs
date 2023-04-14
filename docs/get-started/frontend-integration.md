@@ -8,10 +8,10 @@ Looking for code? Check out our [demo repository](https://github.com/pirsch-anal
 
 ## Adding Pirsch to Your Website
 
-After you created an account, you can add Pirsch to your website.
+After creating your account, you can add Pirsch to your website.
 
 1. Open the dashboard and click on **Add Domain** in the menu.
-2. Enter the hostname of your website (such as **example.com**) and select a subdomain and time zone you wish to use for the Pirsch dashboard.
+2. Enter the hostname of your website (such as **example.com**), the subdomain, and select a time zone.
 3. Click on **Add Domain**.
 4. Copy and paste the JavaScript snippet into the `<head>` section of your website.
 
@@ -20,6 +20,8 @@ After you created an account, you can add Pirsch to your website.
 And you're done! Your website is now sending page views to Pirsch.
 
 Note that only page views for the hostname you enter will be accepted. A pageview for **sub.example.com** won't be accepted if you've configured **example.com**. They are considered completely different websites and you will need to add a new dashboard or [additional domain](/advanced/domains-rollup) for them. The only exception to this is `www` in front of your top level domain. For example, `www.example.com` will be accepted for `example.com` and vice versa. You can also create [roll-up views](/advanced/domains-rollup) to combine data from multile websites.
+
+The script will also track programmatic URL changes by default. This is useful if your website is a SPA (single-page application) or if you use anchors. You can disable this behavior by adding the `data-disable-history` parameter to the script. This also works for the `pirsch-extended.js` script.
 
 ## Testing the Integration
 
