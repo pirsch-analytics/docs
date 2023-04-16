@@ -84,6 +84,7 @@ export default {
             },
             {
                 items: [
+                    {text: "FAQ", link: "/faq"},
                     {text: "Affiliate Program", link: "/affiliate"},
                     {text: "Billing", link: "/billing"},
                     {text: "Privacy", link: "/privacy"},

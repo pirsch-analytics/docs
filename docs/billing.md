@@ -6,7 +6,7 @@ After your 30-day free trial or 100,000 page views, you will need to subscribe t
 
 If you decide not to upgrade, we will stop analyzing traffic for your sites and the date filter on the dashboard will be limited to the end of your free trial.
 
-To manage your subscription, go to the Billing page from the top right menu.
+To manage your subscription, go to the Billing page from the top-right menu.
 
 ![Manage Your Subscription](static/billing.png)
 
@@ -24,7 +24,7 @@ Deleted domains count against your page view limit and are reset at the end of y
 
 ## Where Do I Find My Invoices?
 
-You can find your invoices in the Stripe portal. Navigate to the Billing page from the top right menu and click **Manage Your Subscription**.
+You can find your invoices in the Stripe portal. Navigate to the billing page from the top-right menu and click **Manage Your Subscription**.
 
 ## What Happens if I Reach the Limit?
 
