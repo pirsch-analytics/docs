@@ -50,16 +50,17 @@ export default {
             {
                 text: "Advanced",
                 items: [
-                    {text: "Access Management", link: "/advanced/access"},
                     {text: "Referrer and UTM Parameters", link: "/advanced/referrer-utm"},
-                    {text: "Events", link: "/advanced/events"},
                     {text: "Conversion Goals", link: "/advanced/conversion-goals"},
+                    {text: "Events", link: "/advanced/events"},
                     {text: "Tracking Outbound Links", link: "/advanced/outbound-links"},
                     {text: "Tracking File Downloads", link: "/advanced/file-downloads"},
                     {text: "404 Error Page Tracking", link: "/advanced/not-found-tracking"},
-                    {text: "Embedding the Dashboard", link: "/advanced/embedding"},
                     {text: "Additional Domains and Rollup Views", link: "/advanced/domains-rollup"},
-                    {text: "Extending Sessions", link: "/advanced/sessions"}
+                    {text: "Extending Sessions", link: "/advanced/sessions"},
+                    {text: "Embedding the Dashboard", link: "/advanced/embedding"},
+                    {text: "Access Management", link: "/advanced/access"},                    
+                    {text: "Proxying Through Cloudflare Workers", link: "/advanced/cf-workers"}
                 ]
             },
             {

@@ -29,3 +29,5 @@ The [PHP proxy](https://github.com/pirsch-analytics/pirsch-php-proxy) can be eas
 The [Go server](https://github.com/pirsch-analytics/pirsch-go-proxy) is suitable for any VPS (virtual private server) and can be installed using Docker or by running the executable directly on your server (e.g. using systemd on Linux). No additional software is required, making it lightweight and easy to install.
 
 See the readme on GitHub for details and installation instructions.
+
+You can also set up [Cloudflare Workers](https://workers.cloudflare.com/) to do the job. They are free for up to 100,000 requests per day. The instructions for the setup can be found [here](../advanced/cf-workers).
