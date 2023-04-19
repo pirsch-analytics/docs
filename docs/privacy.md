@@ -12,7 +12,7 @@ Pirsch uses the HTTP protocol to recognize visitors using a technique called fin
 
 The salt ensures that the hash varies from site to site so that they cannot be matched. Hashing the combination of these data points ensures that they are anonymized.
 
-The date ensures that visitors can only be recognized for up to 24 hours, making Pirsch fully GDPR compliant. **We do not use cookies**. See the [open-source core](https://github.com/pirsch-analytics/pirsch) of Pirsch for details.
+The date ensures that visitors can only be recognized for up to 24 hours, making Pirsch fully GDPR, CCPA, and PECR compliant. **We do not use cookies**. See the [open-source core](https://github.com/pirsch-analytics/pirsch) of Pirsch for details.
 
 ## What Data Do We Collect?
 
