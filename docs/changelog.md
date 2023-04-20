@@ -13,6 +13,14 @@ Release: unreleased
 * fixed clearing referrer cache
 * fixed offset and limit for conversion goals
 
+## 1.17.19
+
+Release: 2023-04-20
+
+* referrers that are an alternative domain will no longer start new sessions
+* fixed distributed locks for sessions
+* updated dependencies
+
 ## 1.17.18
 
 Release: 2023-04-14
