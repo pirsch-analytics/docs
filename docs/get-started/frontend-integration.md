@@ -44,13 +44,18 @@ Please always [validate](https://regex101.com/) your expressions before using th
 
 `data-include` can be used to whitelist pages. In the case of whitelisting, only pages that match a pattern in the list will send a page view. The blacklist still applies.
 
-## Disabling Certain Features
+## Enabling/Disabling Certain Features
 
-It's possible to disable certain features of the script. Disabling a feature will prevent the data from being sent to Pirsch. To disable a feature, simply add an attribute to the script tag.
+It's possible to enable or disable certain features of the scripts. To enable or disable a feature, simply add an attribute to the script tag.
 
 * `data-disable-query` will remove all query parameters from the URL, including UTM parameters.
-* `data-disable-referer` removes the referer
+* `data-disable-referrer` removes the referrer
 * `data-disable-resolution` removes the screen resolution (width and height).
+* `data-disable-history` disable tracking programmatic URL changes as page views (like PWAs for example).
+* `data-disable-page-views` disable collecting page views (`pirsch-extended.js` only).
+* `data-disable-outbound-links` disable tracking outbound link clicks (`pirsch-extended.js` only).
+* `data-disable-downloads` disable tracking file downloads (`pirsch-extended.js` only).
+* `data-enable-sessions` enable [session extension](/advanced/sessions) (`pirsch-extended.js` only).
 
 Here is an example:
 
