@@ -13,6 +13,12 @@ Release: unreleased
 * fixed clearing referrer cache
 * fixed offset and limit for conversion goals
 
+## 1.17.21
+
+Release: unreleased
+
+* added settings to change the hostname for a domain
+
 ## 1.17.20
 
 Release: 2023-04-27

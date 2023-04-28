@@ -114,7 +114,6 @@ It's possible to send multiple page views at once. If you use the batch endpoint
 
 This endpoint is used to send events to Pirsch. It requires you to send information about the request made by the client. How you get this depends on the programming language and framework you're using. The example shows which fields are required and which are optional. We recommend sending all of them to make the results as accurate as possible.
 
-
 `POST https://api.pirsch.io/api/v1/event`
 
 ::: info
@@ -1039,10 +1038,24 @@ This endpoint resets the identification code for the domain and return a new one
 ```
 :::
 
+### Updating the Hostname
+
+This endpoint updates the hostname for your domain.
+
+`POST /api/v1/domain/hostname`
+
+::: details EXAMPLE REQUEST
+```JSON
+{
+    "domain_id": "A5kgYzK14m",
+    "hostname": "new-hostname.com"
+}
+```
+:::
+
 ### Updating the Subdomain
 
 This endpoint updates the subdomain for your dashboard (on `your-sub-domain.pirsch.io`).
-
 
 `POST /api/v1/domain/subdomain`
 
@@ -1072,7 +1085,6 @@ This endpoint toggles the visibility of your dashboard from private to public or
 ### Disable Scripts
 
 This endpoint toggles the option to send data via scripts for a given domain.
-
 
 `POST /api/v1/domain/scripts`
 
@@ -1256,7 +1268,6 @@ This endpoint lists all members.
 ### Inviting Members
 
 This endpoint invites new members to a domain via email. New members have the **Viewer** role.
-
 
 `POST /api/v1/member`
 
