@@ -15,9 +15,11 @@ Release: unreleased
 
 ## 1.17.21
 
-Release: unreleased
+Release: 2023-04-28
 
 * added settings to change the hostname for a domain
+* fixed page view count when session is created on an event
+* updated dependencies
 
 ## 1.17.20
 
