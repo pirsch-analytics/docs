@@ -19,7 +19,9 @@ After creating your account, you can add Pirsch to your website.
 
 And you're done! Your website is now sending page views to Pirsch.
 
-Note that only page views for the hostname you enter will be accepted. A pageview for **sub.example.com** won't be accepted if you've configured **example.com**. They are considered completely different websites and you will need to add a new dashboard or [additional domain](/advanced/domains-rollup) for them. The only exception to this is `www` in front of your top level domain. For example, `www.example.com` will be accepted for `example.com` and vice versa. You can also create [roll-up views](/advanced/domains-rollup) to combine data from multile websites.
+Note that only page views for the hostname you enter will be accepted. A pageview for **sub.example.com** won't be accepted if you've configured **example.com**. They are considered completely different websites and you will need to add a new dashboard or [additional domain](/advanced/domains-rollup) for them.
+
+You can also create [roll-up views](/advanced/domains-rollup) to combine data from multiple websites.
 
 The script will also track programmatic URL changes by default. This is useful if your website is a SPA (single-page application) or if you use anchors. You can disable this behavior by adding the `data-disable-history` parameter to the script. This also works for the `pirsch-extended.js` script.
 

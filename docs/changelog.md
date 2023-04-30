@@ -8,6 +8,7 @@ Release: unreleased
 * added keyboard controls to domain and time range filter selection
 * added check to prevent filter fields from being added twice with the same value
 * added log out from all devices on password change or reset
+* added label on hover to table and list entries
 * changed design for top menu and navigation
 * fixed closing view selection on enter
 * fixed clearing referrer cache
