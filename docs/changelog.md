@@ -14,6 +14,12 @@ Release: unreleased
 * fixed clearing referrer cache
 * fixed offset and limit for conversion goals
 
+## 1.17.23
+
+Release: 2023-05-02
+
+* fixed some Google Analytics statistics
+
 ## 1.17.22
 
 Release: 2023-05-02
