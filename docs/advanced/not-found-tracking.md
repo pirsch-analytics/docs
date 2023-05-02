@@ -24,7 +24,7 @@ After you have added the script, trigger the 404 error event. You need to do thi
 
 ```html
 <script type="text/javascript">
-    document.addEventListener("DOMContentLoaded", () => pirschNotFound());
+    document.addEventListener("load", () => pirschNotFound());
 </script>
 ```
 
