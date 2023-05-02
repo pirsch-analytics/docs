@@ -14,6 +14,14 @@ Release: unreleased
 * fixed clearing referrer cache
 * fixed offset and limit for conversion goals
 
+## 1.17.22
+
+Release: 2023-05-02
+
+* increased timeout for HTTP requests to Google Analytics
+* fixed closing delete domain modal dialog
+* fixed Google Analytics paths import
+
 ## 1.17.21
 
 Release: 2023-04-28
