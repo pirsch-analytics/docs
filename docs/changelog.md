@@ -14,6 +14,13 @@ Release: unreleased
 * fixed clearing referrer cache
 * fixed offset and limit for conversion goals
 
+## 1.17.25
+
+Release: 2023-05-05
+
+* fixed missing event placeholder function in extended script
+* fixed www in referrer
+
 ## 1.17.24
 
 Release: 2023-05-03
