@@ -1979,7 +1979,7 @@ This endpoint starts the import after connecting the dashboard to your Google ac
     "domain_id": "A5kgYzK14m",
     "property": "<GA view ID>",
     "from": "2022-01-01",
-    "to": "2022-08-01",
+    "to": "2022-08-01"
 }
 ```
 :::
