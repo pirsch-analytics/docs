@@ -10,7 +10,7 @@ To manage your subscription, go to the Billing page from the top-right menu.
 
 ![Manage Your Subscription](static/billing.png)
 
-The page shows your current page view usage for all your domains (including deleted domains). Click on **Show Details** to view individual domains. At the bottom, you have the option to receive an email alert when you reach a certain percentage of your usage limit. You can also turn this off. The usage limit will be updated once a day.
+The page shows your current page view, events, and 10% of session extension usage for all of your domains (including deleted ones). Click on **Show Details** to view individual domains. At the bottom, you have the option to receive an email alert when you reach a certain percentage of your usage limit. You can also turn this off.
 
 To start a subscription, select the billing cycle and subscription plan from the menu and click **Checkout**. This will take you to our checkout page. Payments, subscriptions and credit card numbers are handled by [Stripe](https://stripe.com/). We do not store your payment information ourselves.
 
@@ -18,9 +18,11 @@ After subscribing, you will be returned to our dashboard. To change your plan, c
 
 ## The Page View Limit
 
-The page view limit is tied to your subscription plan. Your free trial allows you to have 100,000 page views before you need to subscribe to one of our plans. The limit is updated once a day and resets after one month. You can see the reset date below the subscription limit progress bar.
+The page view limit is tied to your subscription plan. Your free trial allows you to have 100,000 page views before you need to subscribe to one of our plans. It's reset at the end of your subscription cycle once a month. You can see the reset date below the subscription limit progress bar.
 
-Deleted domains count against your page view limit and are reset at the end of your billing cycle.
+Page views and events are both counted towards your page view limit. If you extend sessions, 10% of the requests will be counted towards the limit.
+
+Deleted domains count towards your page view limit and are reset at the end of your billing cycle.
 
 ## Where Do I Find My Invoices?
 

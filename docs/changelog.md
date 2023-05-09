@@ -14,6 +14,16 @@ Release: unreleased
 * fixed clearing referrer cache
 * fixed offset and limit for conversion goals
 
+## 1.17.27
+
+Release: 2023-05-09
+
+* changed label for limits on billing page
+* added missing labels for larger plans
+* increased wait time between Google Analytics report requests
+* fixed importing long dimensions
+* fixed returning null for imported statistics
+
 ## 1.17.26
 
 Release: 2023-05-08
