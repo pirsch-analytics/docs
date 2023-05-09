@@ -52,4 +52,4 @@ We block certain IP addresses, so if your service is behind a load balancer or p
 
 If you don't see your visits appearing on your dashboard immediately, don't worry. There is usually a small delay of a few seconds as we buffer page visits before writing them to the database.
 
-In case you don't see your visits appearing after a small delay, make sure you didn't [disable Pirsch](/get-started/frontend-integration#ignoring-your-own-page-views), have an adblocker active, or modified your DNT or User-Agent headers. In rare cases, your page views might be blocked by our bot filter. Try a different device on a different network in that case.
+In case you don't see your visits appearing after a small delay, make sure you didn't [disable Pirsch](/get-started/frontend-integration#ignoring-your-own-page-views), have an adblocker active, a VPN, or modified your DNT or User-Agent headers. In rare cases, your page views might be blocked by our bot filter. Try a different device on a different network in that case.
