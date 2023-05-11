@@ -19,6 +19,7 @@ Release: unreleased
 Release: 2023-05-11
 
 * fixed calculations for some of the imported statistics
+* fixed displaying imported referrers
 
 ## 1.17.27
 
