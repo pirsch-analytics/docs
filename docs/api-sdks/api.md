@@ -8,17 +8,17 @@ Please note that the examples do not necessarily show correct data. IDs from a r
 
 ## Creating a Client
 
-Clients are used to access the [Pirsch API](/api-sdks/api). You need one if you decide to use the [server-side integration](/get-started/backend-integration) or if you want to access your data from an external application.
+Clients are used to access the API. You will need one if you choose to use the [server-side integration](/get-started/backend-integration) or if you want to access your data from an external application.
 
-To create a new client, navigate to the Integration Settings page and click Add Client. Select the type, the scopes, and enter a description.
+To create a new client, navigate to the **Integration Settings** or **Account Settings** page and click **Add Client**. Select the type, scope and enter a description. A Client created on the **Account Settings** page can access **everything** and has essentially the same permissions as you.
 
 The scopes define the client's capabilities. You can create a read-only client by deselecting all write operations.
 
-The type can be either **oAuth** or **Access Key**. An oAuth client is the default and requires you to [get an access token](/api-sdks/api#getting-an-access-token) before you can make any other requests. The **Access Key** type can be used to make write-only requests. It uses only the client secret to make requests and doesn't require you to request an oAuth token first, which is useful for stateless applications such as a PHP client that cannot reuse an access token for multiple page views.
+The type can be either **oAuth** or **Access Key**. An oAuth client requires you to [get an access token](/api-sdks/api#getting-an-access-token) before you can make any other requests. The **Access Key** type can be used for write-only operations. It uses only the client secret to make requests and doesn't require you to request an oAuth token first, which is useful for stateless applications such as a PHP client that cannot reuse an access token for multiple page views.
 
 ![Clients](../static/api-sdks/create-client.png)
 
-The dialog that pops up shows the unique client ID and the secret you need to store. Think of the secret as a password. Once the dialog is closed, there is no way to retrieve the secret. If you lose your secret, you must create a new client.
+The dialogue that pops up shows the unique client ID and the secret you need to store. Think of the secret as a password. Once the dialogue is closed, there is no way to retrieve the secret. If you lose your secret, you will need to create a new client.
 
 ![Clients](../static/api-sdks/settings-client.png)
 
@@ -42,11 +42,11 @@ In case of an error, Pirsch returns a JSON object in the body describing the iss
 
 ## Getting an Access Token
 
-To make requests to the API, you must first obtain an access token. The token must be sent with each request in the `Authorization` header in the format `Bearer <token>`. If you receive a status code 401 (unauthorized), you must create a new token and try again. The `expires_at' timezone is set to UTC.
+In order to make requests to the API, you must first obtain an access token. The token must be sent with each request in the `Authorisation` header in the format `Bearer <token>`. If you receive a status code of 401 (unauthorised), you must create a new token and try again. The `expires_at' timezone is set to UTC.
 
-Client IDs and secrets can be created from the domain Settings page (under **Developer**) or from the Account Settings page. Domain clients are created for a specific domain and can only access and manipulate the domain for which they were created. User clients have more rights and can access all domains the user has access to (with the same rights, viewer or admin).
+Client IDs and secrets can be created from the **Integration Settings** page or from the **Account Settings** page. Domain clients are created for a specific domain and can only access and manipulate the domain for which they have been created. User clients have more rights and can access all domains that the user has access to (with the same rights, viewer or admin).
 
-Single-Access tokens (starting with `pa_`) can only be used to send data (page views, events, and keep-alive sessions) and don't require a client ID, nor do they need to be refreshed. Treat both client secrets and individual access tokens as passwords and store them securely.
+Access keys (starting with `pa_`) can only be used to send data (page views, events and keep-alive sessions) and don't require a client ID or need to be refreshed. Treat both client secrets and individual access tokens as passwords and store them securely.
 
 The examples for the other endpoints in this document omit the header.
 
