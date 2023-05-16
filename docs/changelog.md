@@ -16,9 +16,11 @@ Release: unreleased
 
 ## 1.17.30
 
-Release: unreleased
+Release: 2023-05-16
 
+* decreased number of parallel email report processors
 * fixed missing plans on backend
+* fixed null pointer when sending email reports
 
 ## 1.17.29
 
