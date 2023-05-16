@@ -14,6 +14,12 @@ Release: unreleased
 * fixed clearing referrer cache
 * fixed offset and limit for conversion goals
 
+## 1.17.30
+
+Release: unreleased
+
+* fixed missing plans on backend
+
 ## 1.17.29
 
 Release: 2023-05-15
