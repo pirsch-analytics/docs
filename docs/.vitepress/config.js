@@ -60,7 +60,8 @@ export default {
                     {text: "Extending Sessions", link: "/advanced/sessions"},
                     {text: "Embedding the Dashboard", link: "/advanced/embedding"},
                     {text: "Access Management", link: "/advanced/access"},                    
-                    {text: "Proxying Through Cloudflare Workers", link: "/advanced/cf-workers"}
+                    {text: "Proxying Through Cloudflare Workers", link: "/advanced/cf-workers"},
+                    {text: "Theming", link: "/advanced/theme"}
                 ]
             },
             {
