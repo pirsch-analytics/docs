@@ -14,6 +14,13 @@ Release: unreleased
 * fixed clearing referrer cache
 * fixed offset and limit for conversion goals
 
+## 1.17.31
+
+Release: 2023-05-18
+
+* improved domain cache
+* fixed sending data to other dashboards
+
 ## 1.17.30
 
 Release: 2023-05-16
