@@ -113,6 +113,38 @@ The script sends an event on every button click and adds one to the counter. The
 
 The function returns a promise, which you can use to continue with your code after the event has been sent, or to handle any errors. We recommend that you perform your action even if the event cannot be sent, to avoid any interruption.
 
+### Example 4: Tracking a Form Submission
+
+Here is an example of how you can use events to track form submissions. Note that you should be careful about what data you include in the metadata. PII (personally identifiable information) should be removed before sending it to Pirsch, or you will need the user's consent.
+
+```HTML
+<form method="post" id="form">
+    <label>Message</label>
+    <input type="text" name="message" id="message" required />
+    <input type="submit" value="Submit" />
+</form>
+
+<script type="text/javascript">
+    // Wait until the page has fully loaded.
+    document.addEventListener("DOMContentLoaded", () => {
+        // Get the form using the id attribute and add a submission event handler.
+        document.getElementById("form").addEventListener("submit", e => {
+            // Get the input field.
+            const input = document.getElementById("message");
+
+            // Send the event to Pirsch.
+            pirsch("Form Submission", {
+                meta: {
+                    message: input.value
+                }
+            });
+        });
+    });
+</script>
+```
+
+The script adds an event listener to the form. When it is submitted, an event is sent to Pirsch, including the message entered by the user as metadata.
+
 ## Sending Events From Your Backend
 
 Sending an event from your backend works just like submitting a page view, except that you need to append the event name, duration and metadata fields. Before you can use the backend integration, make sure you [created a client](/get-started/backend-integration#create-a-client). You can then use the client to [send an event](/api-sdks/api#sending-an-event).
