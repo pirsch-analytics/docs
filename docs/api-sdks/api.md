@@ -1001,7 +1001,17 @@ This endpoint adds a new domain.
     "new_owner": null,
     "timezone": "Europe/Berlin",
     "group_by_title": false,
-    "user_role": "Owner"
+    "user_role": "Owner",
+    "active_visitors_seconds": 600,
+    "disable_scripts": false,
+    "statistics_start": null,
+    "imported_statistics": false,
+    "metadata": {
+        // generic object
+    },
+    "settings": {
+        // key value pairs
+    }
 }
 ```
 :::
@@ -1136,6 +1146,23 @@ This endpoint changes the time zone for the dashboard.
 {
     "domain_id": "A5kgYzK14m",
     "timezone": "Europe/Berlin"
+}
+```
+:::
+
+### Updating the metadata field.
+
+This endpoint will update the metadata field. The field can be used to store user defined tags or configuration. Do what you want with it.
+
+`POST /api/v1/domain/metadata`
+
+::: details EXAMPLE REQUEST
+```JSON
+{
+    "domain_id": "A5kgYzK14m",
+    "metadata": {
+        // generic object
+    }
 }
 ```
 :::

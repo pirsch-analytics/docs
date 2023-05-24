@@ -14,6 +14,14 @@ Release: unreleased
 * fixed clearing referrer cache
 * fixed offset and limit for conversion goals
 
+## 1.17.32
+
+Release: 2023-05-24
+
+* added generic metadata field to domains (API only for now)
+* allow cancellation of running import jobs
+* fixed Google Analytics import sending multiple emails on error
+
 ## 1.17.31
 
 Release: 2023-05-18
