@@ -9,7 +9,9 @@ Release: unreleased
 * added check to prevent filter fields from being added twice with the same value
 * added log out from all devices on password change or reset
 * added label on hover to table and list entries
+* added themes and theme settings to white label dashboards and emails
 * changed design for top menu and navigation
+* moved login, password reset, and changing the email to dashboard
 * fixed closing view selection on enter
 * fixed clearing referrer cache
 * fixed offset and limit for conversion goals
