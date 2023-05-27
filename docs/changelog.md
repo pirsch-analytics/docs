@@ -16,6 +16,13 @@ Release: unreleased
 * fixed clearing referrer cache
 * fixed offset and limit for conversion goals
 
+## 1.17.33
+
+Release: 2023-05-27
+
+* upgraded Pirsch core
+* updated dependencies
+
 ## 1.17.32
 
 Release: 2023-05-24
