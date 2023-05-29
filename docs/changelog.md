@@ -12,6 +12,7 @@ Release: unreleased
 * added themes and theme settings to white label dashboards and emails
 * changed design for top menu and navigation
 * moved login, password reset, and changing the email to dashboard
+* start free trial when first website is added
 * fixed closing view selection on enter
 * fixed clearing referrer cache
 * fixed offset and limit for conversion goals
