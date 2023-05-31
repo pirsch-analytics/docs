@@ -17,6 +17,12 @@ Release: unreleased
 * fixed clearing referrer cache
 * fixed offset and limit for conversion goals
 
+## 1.17.35
+
+Release: 2023-05-31
+
+* ignore pirsch.js and pirsch-events.js when extended script is present
+
 ## 1.17.34
 
 Release: 2023-05-29
