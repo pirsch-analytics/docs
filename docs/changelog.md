@@ -10,6 +10,7 @@ Release: unreleased
 * added log out from all devices on password change or reset
 * added label on hover to table and list entries
 * added themes and theme settings to white label dashboards and emails
+* added organizations for team, website, and theme management
 * changed design for top menu and navigation
 * moved login, password reset, and changing the email to dashboard
 * start free trial when first website is added
@@ -18,6 +19,7 @@ Release: unreleased
 * fixed closing view selection on enter
 * fixed clearing referrer cache
 * fixed offset and limit for conversion goals
+* fixed a small permission issue when deleting domain invitations
 
 ## 1.17.35
 
