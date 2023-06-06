@@ -21,6 +21,14 @@ Release: unreleased
 * fixed offset and limit for conversion goals
 * fixed a small permission issue when deleting domain invitations
 
+## 1.17.36
+
+Release: 2023-06-06
+
+* added more payment methods
+* added Euro pricing
+* added ID parameter to read specific domain from `/api/v1/domain`
+
 ## 1.17.35
 
 Release: 2023-05-31

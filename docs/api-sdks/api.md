@@ -1024,7 +1024,41 @@ This endpoint deletes a domain.
 
 ### Listing Domains
 
-This endpoint is described in the [Statistics section](/api-sdks/api#getting-the-domain-id). The only difference is that it returns all domains if you are using a user client.
+This endpoint is described in more detail in the [Statistics section](/api-sdks/api#getting-the-domain-id). It returns all domains if you are using a user client. If you have the ID, you can pass it to get a specific domain.
+
+`GET /api/v1/domain?id=A5kgYzK14m`
+
+::: details EXAMPLE RESPONSE
+```JSON
+{
+    "id": "A5kgYzK14m",
+    "def_time": "2021-05-22T10:11:12.123456Z",
+    "mod_time": "2021-05-22T10:11:12.123456Z",
+    "user_id": "04jmfg0",
+    "hostname": "example.com",
+    "subdomain": "example",
+    "identification_code": "...",
+    "public": false,
+    "google_user_id": null,
+    "google_user_email": null,
+    "gsc_domain": null,
+    "new_owner": null,
+    "timezone": "Europe/Berlin",
+    "group_by_title": false,
+    "user_role": "Owner",
+    "active_visitors_seconds": 600,
+    "disable_scripts": false,
+    "statistics_start": null,
+    "imported_statistics": false,
+    "metadata": {
+        // generic object
+    },
+    "settings": {
+        // key value pairs
+    }
+}
+```
+:::
 
 ### Resetting the Identification Code
 
