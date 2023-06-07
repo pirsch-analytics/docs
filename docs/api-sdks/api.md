@@ -1367,7 +1367,9 @@ This endpoint removes a member from a domain.
 
 ## Managing Alternative Domains
 
-Alternative domains must be created if you are sending statistics to multiple dashboards or creating rollup views.
+Alternative domains allow you to add additional traffic sources. By default, Pirsch will block a request that doesn't come from the domain configured on the dashboard. For example, if you want to create a roll-up view, you will need to add any domain that could send traffic to the dashboard as an additional domain.
+
+Always add the domain alternatives at the **receiving** end.
 
 ### Listing Alternative Domains
 
@@ -1392,7 +1394,7 @@ This endpoint returns all alternative domains associated with a website.
 
 ### Creating Alternative Domains
 
-This endpoint creates a new alternate domain for a Wwebsite.
+This endpoint creates a new alternate domain for a Website.
 
 `POST /api/v1/domain/alternative`
 
