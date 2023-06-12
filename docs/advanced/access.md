@@ -24,3 +24,7 @@ After the members joined, they will be able to view all statistics without modif
 To remove a member, just click on the trash icon.
 
 ![Access Management](../static/advanced/settings-access.png)
+
+## Organizations
+
+*WIP*
