@@ -21,6 +21,12 @@ Release: unreleased
 * fixed offset and limit for conversion goals
 * fixed a small permission issue when deleting domain invitations
 
+## 1.17.37
+
+Release: 2023-06-14
+
+* fixed CSS selector for events in extended script
+
 ## 1.17.36
 
 Release: 2023-06-06
