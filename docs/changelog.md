@@ -20,6 +20,7 @@ Release: unreleased
 * fixed clearing referrer cache
 * fixed offset and limit for conversion goals
 * fixed a small permission issue when deleting domain invitations
+* fixed API returning 401 if domain is not found
 
 ## 1.17.37
 
