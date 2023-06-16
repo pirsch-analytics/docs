@@ -27,6 +27,7 @@ Release: unreleased
 Release: 2023-06-16
 
 * use batch for import jobs
+* fixed setting start date for imported statistics
 
 ## 1.17.37
 
