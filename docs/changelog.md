@@ -22,6 +22,12 @@ Release: unreleased
 * fixed a small permission issue when deleting domain invitations
 * fixed API returning 401 if domain is not found
 
+## 1.17.38
+
+Release: 2023-06-16
+
+* use batch for import jobs
+
 ## 1.17.37
 
 Release: 2023-06-14
