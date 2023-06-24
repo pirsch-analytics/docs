@@ -10,7 +10,7 @@ To copy your affiliate link, sign in and click on your account (top right corner
 
 ![Affiliate Link](static/link.png)
 
-Once the link is clicked, the sign-up will be associated with your account for up to 24 hours. After that, it will count as a regular sign-up and you will not receive any commission. The visitor can click your link again to make sure it is associated with your account.
+Once the link is clicked, the sign-up will be associated with your account for up to 72 hours. After that, it will count as a regular sign-up and you will not receive any commission. The visitor can click your link again to make sure it is associated with your account.
 
 ## How Much Can I Earn?
 
