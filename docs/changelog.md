@@ -2,7 +2,7 @@
 
 ## 2.0.0
 
-Release: unreleased
+Release: 2023-07-08
 
 * added domain overview with some basic statistics
 * added keyboard controls to domain and time range filter selection
@@ -11,6 +11,8 @@ Release: unreleased
 * added label on hover to table and list entries
 * added themes and theme settings to white label dashboards and emails
 * added organizations for team, website, and theme management
+* added custom domains
+* added a limit of 50 websites
 * changed design for top menu and navigation
 * moved login, password reset, and changing the email to dashboard
 * start free trial when first website is added
