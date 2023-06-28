@@ -23,6 +23,18 @@ Release: 2023-07-08
 * fixed offset and limit for conversion goals
 * fixed a small permission issue when deleting domain invitations
 * fixed API returning 401 if domain is not found
+* updated dependencies
+
+## 1.17.39
+
+Release: 2023-06-28
+
+* improved page title collection in settings
+* do not increase page view count on bounce
+* do not store page view if the session bounced before
+* fixed calculating average session duration and time on page
+* updated User-Agent blacklist
+* updated dependencies
 
 ## 1.17.38
 

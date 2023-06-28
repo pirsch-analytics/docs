@@ -56,4 +56,6 @@ In case you don't see your visits appearing after a small delay, make sure you d
 
 ## I Cannot Sign In
 
-If you have trouble signing in, try deleting your temporary browser files and clear your cache. This can usually be done from the history settings in most browser. The cache can be cleared by reloading the page using `Ctrl/Cmd + Shift + R` or `Ctrl/Cmd + F5`.
+If you have trouble signing in, try deleting your temporary browser files (cookies and local storage) and clear your cache. This can usually be done from the history settings in most browser. The cache can be cleared by reloading the page using `Ctrl/Cmd + Shift + R` or `Ctrl/Cmd + F5`.
+
+To clean up cookies and the local storage, open the developer console (`Ctrl/Cmd + Shift + I`, `F12` or right click - inspect) and navigate to **Web Storage** (or similar). Select everything in the cookies and local storage tab and delete it.
