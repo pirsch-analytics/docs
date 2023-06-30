@@ -13,6 +13,8 @@ Release: 2023-07-08
 * added organizations for team, website, and theme management
 * added custom domains
 * added a limit of 50 websites
+* added current subscription plan to user menu
+* disallow adding websites without a subscription or free-trial
 * changed design for top menu and navigation
 * moved login, password reset, and changing the email to dashboard
 * start free trial when first website is added
