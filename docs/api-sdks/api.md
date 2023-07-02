@@ -269,10 +269,27 @@ Before you can make any requests, you must know the domain ID for the client. Ma
 ```
 :::
 
+### Overview
+
+This endpoint returns basic statistics and the number of members for given domain ID. The results are cached.
+
+`GET /api/v1/statistics/overview?id=A5kgYzK14m`
+
+::: details EXAMPLE RESPONSE
+```JSON
+{
+    "visitors": 52,
+    "views": 102,
+    "visitor_growth": 0.02,
+    "views_growth": 0.23,
+    "member": 4
+}
+```
+:::
+
 ### Session Duration
 
 `GET /api/v1/statistics/duration/session`
-
 
 ::: details EXAMPLE RESPONSE
 Which time component is set depends on the `scale` filter. Setting it to `day` (default) sets the `day` field. Otherwise the corresponding field will be set.
@@ -1024,9 +1041,14 @@ This endpoint deletes a domain.
 
 ### Listing Domains
 
-This endpoint is described in more detail in the [Statistics section](/api-sdks/api#getting-the-domain-id). It returns all domains if you are using a user client. If you have the ID, you can pass it to get a specific domain.
+This endpoint is described in more detail in the [Statistics section](/api-sdks/api#getting-the-domain-id). It returns all domains for a user client or a specific domain for the ID, subdomain, custom domain, or access code.
 
-`GET /api/v1/domain?id=A5kgYzK14m`
+```
+GET /api/v1/domain?id=A5kgYzK14m
+GET /api/v1/domain?subdomain=example
+GET /api/v1/domain?domain=my-domain.com
+GET /api/v1/domain?access=03kDM6o...
+```
 
 ::: details EXAMPLE RESPONSE
 ```JSON
@@ -1035,6 +1057,7 @@ This endpoint is described in more detail in the [Statistics section](/api-sdks/
     "def_time": "2021-05-22T10:11:12.123456Z",
     "mod_time": "2021-05-22T10:11:12.123456Z",
     "user_id": "04jmfg0",
+    "organization_id": "0do3kD3",
     "hostname": "example.com",
     "subdomain": "example",
     "identification_code": "...",
@@ -1045,7 +1068,6 @@ This endpoint is described in more detail in the [Statistics section](/api-sdks/
     "new_owner": null,
     "timezone": "Europe/Berlin",
     "group_by_title": false,
-    "user_role": "Owner",
     "active_visitors_seconds": 600,
     "disable_scripts": false,
     "statistics_start": null,
@@ -1053,8 +1075,17 @@ This endpoint is described in more detail in the [Statistics section](/api-sdks/
     "metadata": {
         // generic object
     },
+    "theme_id": null,
+    "theme": {
+        // key value pairs
+    },
+    "custom_domain": "my-domain.com",
+    "user_role": "Owner",
     "settings": {
         // key value pairs
+    },
+    "theme_settings": {
+        // key value pairs applied to the dashboard
     }
 }
 ```
@@ -1221,6 +1252,12 @@ This endpoint toggles whether or not to display active visitors in the page titl
 
 `POST /api/v1/user/active`
 
+### Toggle Full Width
+
+This endpoint toggles displaying the dashboard at full width.
+
+`POST /api/v1/user/fullwidth`
+
 ## Managing Access Links
 
 ### Listing Access Links
@@ -1246,6 +1283,80 @@ This endpoint lists all access links.
 
 The code can be used to create a URL with read-only access to a domain. To do that, replace `<subdomain>` and `<code` for the domain in the following URL: `https://<subdomain>.pirsch.io/?access=<code>`
 :::
+
+### Set Base Theme
+
+This endpoint sets the base theme for a dashboard. The settings from the theme will be overwritten by specific settings for the dashboard.
+
+`PUT /api/v1/domain/theme`
+
+::: details EXAMPLE REQUEST
+```JSON
+{
+    "domain_id": "A5kgYzK14m",
+    "theme_id": "83MD02kxoe"
+}
+```
+:::
+
+::: details EXAMPLE RESPONSE
+```JSON
+{
+    // key value pairs with the theme settings
+}
+```
+:::
+
+### Update the Theme Settings
+
+This endpoint updates the theme settings for given domain. The settings will overwrite the base theme.
+
+`POST /api/v1/domain/theme`
+
+::: details EXAMPLE REQUEST
+```
+FormData:
+
+logo_light: File
+logo_dark: File
+favicon: File
+data: JSON {
+    "domain_id": "A5kgYzK14m",
+    "settings": {
+        // key value pairs
+    }
+}
+```
+:::
+
+::: details EXAMPLE RESPONSE
+```JSON
+{
+    // complete domain with the updated settings
+}
+```
+:::
+
+### Set a Custom Domain
+
+This endpoint updates the custom domain for given dashboard.
+
+`POST /api/v1/domain/custom`
+
+::: details EXAMPLE REQUEST
+```JSON
+{
+    "domain_id": "A5kgYzK14m",
+    "hostname": "my-domain.com"
+}
+```
+:::
+
+### Check Whether a Custom Domain Exists
+
+This endpoint checks whether a custom domain exists already. A custom domain can only be used for a single dashboard.
+
+`GET /api/v1/domain/custom?domain=my-domain.com`
 
 ### Creating an Access Link
 
@@ -1300,9 +1411,12 @@ This endpoint deletes an access link.
 
 ### Listing Members
 
-This endpoint lists all members.
+This endpoint lists all members for a domain or an organization.
 
-`GET /api/v1/member?id=A5kgYzK14m`
+```
+GET /api/v1/member?id=A5kgYzK14m
+GET /api/v1/member?organization_id=kco39ID2
+```
 
 ::: details EXAMPLE RESPONSE
 ```JSON
@@ -1313,6 +1427,7 @@ This endpoint lists all members.
         "mod_time": "2021-05-22T10:11:12.123456Z",
         "user_id": "pzy1bjD1lv",
         "domain_id": "A5kgYzK14m",
+        "organization_id": "kco39ID2",
         "role": "admin",
         "user": {
             "id": "0DJ0mo934",
@@ -1328,7 +1443,7 @@ This endpoint lists all members.
 
 ### Inviting Members
 
-This endpoint invites new members to a domain via email. New members have the **Viewer** role.
+This endpoint invites new members to a domain or an organization via email. New members have the **Viewer** role. They'll receive an account activation if they don't have an account yet.
 
 `POST /api/v1/member`
 
@@ -1336,16 +1451,17 @@ This endpoint invites new members to a domain via email. New members have the **
 ```JSON
 {
     "id": "A5kgYzK14m",
+    "organization_id": null,
     "emails": ["member@foo.com", "member@bar.com" /* ... */]
 }
 ```
 
-`id` is the domain ID.
+`id` is the domain ID. Either the `id` or `organization_id` must be set.
 :::
 
 ### Updating the Role of a Member
 
-This endpoint updates a single member's role. Valid roles are **Viewer** and **Admin** (the **Owner** role requires a domain transfer).
+This endpoint updates a single member's role. Valid roles are **Viewer** and **Admin** (the **Owner** role requires a domain transfer). This works for domains and organizations.
 
 `PUT /api/v1/member`
 
@@ -1356,14 +1472,77 @@ This endpoint updates a single member's role. Valid roles are **Viewer** and **A
     "role": "admin"
 }
 ```
+
 `id` is the member ID.
 :::
 
 ### Removing a Member
 
-This endpoint removes a member from a domain.
+This endpoint removes a member from a domain or an organization.
 
 `DELETE /api/v1/member?id=0DJ0mo934`
+
+### Listing Invitations
+
+This endpoint lists all invitations for the user, a domain, or an organization.
+
+```
+GET /api/v1/invitation
+GET /api/v1/invitation?domain_id=A5kgYzK14m
+GET /api/v1/invitation?organization_id=39oOw9mKD31
+```
+
+::: details EXAMPLE RESPONSE
+```JSON
+[
+    {
+        "id": "I309Dow31",
+        "def_time": "2021-05-22T10:11:12.123456Z",
+        "mod_time": "2021-05-22T10:11:12.123456Z",
+        "domain_id": "A5kgYzK14m",
+        "organization_id": null,
+        "email": "user@example.com",
+        "domain": {
+            // complete domain
+        },
+        "organization": null // or complete organization if ID is set
+    },
+    // ...
+]
+```
+:::
+
+### Deleting an Invitation
+
+This endpoint deletes an invitation to a domain or an organization.
+
+`DELETE /api/v1/invitation`
+
+::: details EXAMPLE REQUEST
+```JSON
+{
+    "domain_id": "A5kgYzK14m",
+    "organization_id": null,
+    "id": "I309Dow31"
+}
+```
+
+`domain_id` and `organization_id` are optional. They are used to look up the invitationf or a domain or an organization instead of the currently signed in user.
+:::
+
+### Accepting an Invitation
+
+This endpoint will accept an invitation for the currently signed in user.
+
+`POST /api/v1/invitation`
+
+::: details EXAMPLE REQUEST
+```JSON
+{
+    "id": "I309Dow31"
+}
+```
+:::
 
 ## Managing Alternative Domains
 
@@ -1981,6 +2160,241 @@ This endpoint creates a new view or updates an existing view. It updates an exis
 This endpoint deletes a view.
 
 `DELETE /api/v1/view?id=Jk49fgm38`
+
+## Managing Organizations
+
+### Listing Organizations
+
+This endpoint lists all organizations the user belongs to or is the owner of.
+
+`GET /api/v1/organization`
+
+::: details EXAMPLE RESPONSE
+```JSON
+[
+    {
+        "id": "Jk49fgm38",
+        "def_time": "2021-05-22T10:11:12.123456Z",
+        "mod_time": "2021-05-22T10:11:12.123456Z",
+        "user_id": "oOD28xa97",
+        "name": "Organization",
+        "member": 4,
+        "role": "Owner",
+        "can_edit": true
+    },
+    // ...
+]
+```
+
+Can edit will be set to true if a Pirsch Plus subscription is active and the current user is the owner of the organization.
+:::
+
+### Creating an Organization
+
+This endpoint creates a new organization.
+
+`POST /api/v1/organization`
+
+::: details EXAMPLE REQUEST
+```JSON
+{
+    "name": "Organization"
+}
+```
+:::
+
+::: details EXAMPLE RESPONSE
+```JSON
+{
+    "id": "Jk49fgm38",
+    "def_time": "2021-05-22T10:11:12.123456Z",
+    "mod_time": "2021-05-22T10:11:12.123456Z",
+    "user_id": "oOD28xa97",
+    "name": "Organization",
+    "member": 4,
+    "role": "Owner",
+    "can_edit": true
+}
+```
+:::
+
+### Updating an Organization
+
+This endpoint updates an existing organization.
+
+`PUT /api/v1/organization`
+
+::: details EXAMPLE REQUEST
+```JSON
+{
+    "id": "Jk49fgm38",
+    "name": "New Name"
+}
+```
+:::
+
+::: details EXAMPLE RESPONSE
+```JSON
+{
+    "id": "Jk49fgm38",
+    "def_time": "2021-05-22T10:11:12.123456Z",
+    "mod_time": "2021-05-22T10:11:12.123456Z",
+    "user_id": "oOD28xa97",
+    "name": "New Name",
+    "member": 4,
+    "role": "Owner",
+    "can_edit": true
+}
+```
+:::
+
+### Deleting an Organization
+
+This endpoint deletes an organization. If `delete_domains` is set to `true`, all domains belonging to this organization will also be deleted! Otherwise they will be removed from the organization.
+
+`DELETE /api/v1/organization?id=Jk49fgm38&delete_domains=true`
+
+### Setting a Default Theme
+
+This endpoint will set the default theme for given organization. The default theme is pre-selected when new websites are added to the organization.
+
+`PUT /api/v1/organization/theme`
+
+::: details EXAMPLE REQUEST
+```JSON
+{
+    "organization_id": "Jk49fgm38",
+    "theme_id": "93ODk5o1sL"
+}
+```
+:::
+
+### Listing Domains
+
+This endpoint will list all domains belonging to an organization.
+
+`GET /api/v1/organization/domain?id=Jk49fgm38`
+
+::: details EXAMPLE RESPONSE
+```JSON
+[
+    // domains
+]
+```
+:::
+
+### Adding a Domain
+
+This endpoint adds an existing domain to an organization.
+
+`POST /api/v1/organization/domain`
+
+::: details EXAMPLE REQUEST
+```JSON
+{
+    "id": "Jk49fgm38",
+    "domain_id": "93ODk5o1sL"
+}
+```
+:::
+
+::: details EXAMPLE RESPONSE
+```JSON
+{
+    // domain
+}
+```
+:::
+
+### Removing a Domain
+
+This endpoint removes a domain from given organization.
+
+`DELETE /api/v1/organization/domain?id=Jk49fgm38&domain_id=93ODk5o1sL`
+
+## Managing Themes
+
+Themes can either belong to a user or an organization. They are also used on domains to overwrite settings.
+
+### Creating/Updating/Copying a Theme
+
+This endpoint creates, updates, or copies a theme.
+
+`POST /api/v1/theme`
+
+::: details EXAMPLE REQUEST
+```
+FormData:
+
+logo_light: File
+logo_dark: File
+favicon: File
+data: JSON {
+    "id": "Jk49fgm38",
+	"copy_id": null,
+	"domain_id": null,
+	"organization_id": null,
+	"name": "My Theme",
+	"settings": {
+        // key value pairs
+    }
+}
+```
+
+If neither the `domain_id` nor the `organization_id` are set, the theme will be created for the user.
+:::
+
+::: details EXAMPLE RESPONSE
+```JSON
+{
+    "id": "Jk49fgm38",
+    "def_time": "2021-05-22T10:11:12.123456Z",
+    "mod_time": "2021-05-22T10:11:12.123456Z",
+    "user_id": "93ODk5o1sL",
+    "organization_id": null,
+    "name": "My Theme",
+    "settings": {
+        // key value pairs
+    },
+    "is_default": false
+}
+```
+:::
+
+### Listing Themes
+
+This endpoint lists themes for the user, an organization, a subdomain, or a custom domain. If `include_organizations` is set to `true`, the list will contain all themes the user has directly or indirectly access to.
+
+```
+GET /api/v1/theme
+GET /api/v1/theme?include_organizations=true
+GET /api/v1/theme?organization_id=Jk49fgm38
+GET /api/v1/theme?subdomain=sub
+GET /api/v1/theme?domain=my-domain.com
+```
+
+::: details EXAMPLE RESPONSE
+```JSON
+[
+    // themes
+]
+```
+:::
+
+### Deleting a Theme
+
+This endpoint deletes a theme. If `keep_settings` is set to `true`, the settings will be applied to the domains the themes is used in before deletion.
+
+`DELETE /api/v1/theme?id=Jk49fgm38&keep_settings=true`
+
+### Deleting a Theme File
+
+This endpoint will delete a theme file for a them or a domain. The file can either be `logo_light`, `logo_dark`, or `favicon`.
+
+```
+DELETE /api/v1/theme/file?theme_id=Jk49fgm38&file=logo_light
+DELETE /api/v1/theme/file?domain_id=93ODk5o1sL&file=favicon
+```
 
 ## Importing Data from Google Universal Analytics
 
