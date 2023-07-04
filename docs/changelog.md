@@ -27,6 +27,12 @@ Release: 2023-07-08
 * fixed API returning 401 if domain is not found
 * updated dependencies
 
+## 1.17.41
+
+Release: 2023-07-04
+
+* fixed reading usage for users with many websites
+
 ## 1.17.40
 
 Release: 2023-06-29
