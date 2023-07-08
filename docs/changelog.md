@@ -1,5 +1,16 @@
 # Changelog
 
+## 2.0.1
+
+Release: 2023-07-08
+
+* don't switch to the active website
+* fixed copying second IPv6 address
+* fixed website search in selection
+* fixed loading statistics on overview
+* fixed list styling in news
+* fixed loading theme logo on custom domain
+
 ## 2.0.0
 
 Release: 2023-07-08
