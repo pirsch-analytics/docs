@@ -1,5 +1,14 @@
 # Changelog
 
+## 2.0.2
+
+Release: 2023-07-10
+
+* pre-select active website in website selection
+* keep table order and query when changing filter
+* fixed sorting events by CR
+* fixed searching and sorting browsers and operating system
+
 ## 2.0.1
 
 Release: 2023-07-08
