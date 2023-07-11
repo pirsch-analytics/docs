@@ -1,5 +1,15 @@
 # Changelog
 
+## 2.0.3
+
+Release: 2023-07-11
+
+* show contact button instead of manage subscription for custom pricing on billing page
+* fixed applying free-trial to subscriptions that didn't add a website during free-trial
+* fixed downgrading subscriptions
+* fixed loading events and conversion goals
+* fixed loading time spent on page for pages and entry pages
+
 ## 2.0.2
 
 Release: 2023-07-10
