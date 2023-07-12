@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.0.4
+
+Release: 2023-07-12
+
+* fixed loading event metadata values if it's more than 10
+* fixed grouping events by metadata
+* updated dependencies
+
 ## 2.0.3
 
 Release: 2023-07-11
