@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.0.5
+
+Release: unreleased
+
+* added custom color picker
+* fixed downgrading from Pirsch Plus to Standard
+
 ## 2.0.4
 
 Release: 2023-07-12
