@@ -2,10 +2,12 @@
 
 ## 2.0.5
 
-Release: unreleased
+Release: 2023-07-14
 
 * added custom color picker
+* added scripts on custom domains
 * fixed downgrading from Pirsch Plus to Standard
+* fixed automated backups
 
 ## 2.0.4
 
