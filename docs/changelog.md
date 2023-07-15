@@ -1,5 +1,16 @@
 # Changelog
 
+## 2.0.6
+
+Release: 2023-07-15
+
+* improved loading statistics on the dashboard
+* improved filter value selection (now using enter and on blur)
+* fixed panels changing with tables in details view
+* fixed sorting tables
+* fixed clearing conversion goal filter
+* fixed duplicate entries in referrer panel
+
 ## 2.0.5
 
 Release: 2023-07-14
