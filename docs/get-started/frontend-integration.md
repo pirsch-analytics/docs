@@ -14,7 +14,7 @@ Once you have created your account, you can add Pirsch to your website.
 2. Enter the hostname of your website (such as **example.com**), the subdomain, and select a time zone.
 3. Click on **Create Dashboard**.
 4. Select and open your preferred integration.
-5. Copy and paste the JavaScript snippet into the <head> section of your website.
+5. Copy and paste the JavaScript snippet into the `<head>` section of your website.
 
 ![Code Snippet](../static/get-started/add-domain-snippet.png)
 
