@@ -61,7 +61,8 @@ export default {
                     {text: "Embedding the Dashboard", link: "/advanced/embedding"},
                     {text: "Access Management", link: "/advanced/access"},                    
                     {text: "Proxying Through Cloudflare Workers", link: "/advanced/cf-workers"},
-                    {text: "Theming", link: "/advanced/theme"}
+                    {text: "Theming", link: "/advanced/theme"},
+                    {text: "Custom Domains", link: "/advanced/custom-domains"}
                 ]
             },
             {
