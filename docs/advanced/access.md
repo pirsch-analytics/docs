@@ -52,4 +52,4 @@ You can use an organization to manage your dashboards in the following cases:
 
 It's possible to override organizational settings. For example, if a team member who is added to a dashboard is also added to the organization to which the dashboard belongs, the dashboard permissions will override the organization settings.
 
-You can also override the basic theme settings on the [themes settings page](/advanced/themes).
+You can also override the basic theme settings on the [themes settings page](/advanced/theme).
