@@ -31,7 +31,7 @@ To remove a member, just click on the trash icon.
 Organizations are a Pirsch Plus feature.
 :::
 
-Organizations allow you to group dashboards, provide access to team members and customers, and apply [themes](/advanced/themes).
+Organizations allow you to group dashboards, provide access to team members and customers, and apply [themes](/advanced/theme).
 
 ![Organization](../static/advanced/organization.png)
 
