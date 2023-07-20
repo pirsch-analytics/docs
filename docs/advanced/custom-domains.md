@@ -8,7 +8,7 @@ The dashboard and scripts can be served from your own domain. Combined with [the
 
 ## Configuring up a Custom Domain
 
-Custom domains can be configured on the **General** settings page of your dashboard.
+Custom domains can be configured on the **General** settings page of your dashboard. You will need an **unused** domain to serve the dashboard and scripts. This can be a subdomain like `dashboard.custom-domain.com` or any other unused top level/subdomain you have.
 
 ![Custom Domain Settings](../static/advanced/custom-domain-settings.png)
 
