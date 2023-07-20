@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.0.7
+
+Release: 2023-07-20
+
+* fixed concurrency issue with import jobs
+* updated dependencies
+
 ## 2.0.6
 
 Release: 2023-07-15
