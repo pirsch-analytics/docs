@@ -1,6 +1,6 @@
 # Troubleshooting
 
-This is a collection of methods to test if your Pirsch integration is working properly. If you are missing something, please don't hesitate to contact our [support] (mailto:support@pirsch.io).
+This is a collection of methods to test if your Pirsch integration is working properly. If you are missing something, please don't hesitate to contact our [support](mailto:support@pirsch.io).
 
 ## Make Sure the Snippet Is Installed
 
