@@ -1,54 +1,18 @@
 # API
 
-This document describes the API endpoints used to interact with Pirsch. The easiest way to get started is to use one of the client SDKs. If you're looking for how to integrate Pirsch into your backend to monitor traffic, please see the [server-side integration](/get-started/backend-integration).
+This document describes the API endpoints used to interact with Pirsch. The easiest way to get started is to use one of the client SDKs. If you're looking for how to integrate Pirsch into your backend to collect traffic, please see the [server-side integration](/get-started/backend-integration).
+
+If you're just getting started, we recommend reading the [API guide](/api-sdks/api-guide).
 
 ::: info
-Please note that the examples do not necessarily show correct data. IDs from a request may not match the response. You should also be careful not to confuse IDs in their context. Fields are often just called **id**, but represent different objects.
+Note that the examples do not necessarily show correct data. IDs from a request may not match the response. You should also be careful not to confuse IDs in their context. Fields are often just called **id**, but they represent different objects.
 :::
-
-## Creating a Client
-
-Clients are used to access the API. You will need one if you choose to use the [server-side integration](/get-started/backend-integration) or if you want to access your data from an external application.
-
-To create a new client, navigate to the **Integration Settings** or **Account Settings** page and click **Add Client**. Select the type, scope and enter a description. A Client created on the **Account Settings** page can access **everything** and has essentially the same permissions as you.
-
-The scopes define the client's capabilities. You can create a read-only client by deselecting all write operations.
-
-The type can be either **oAuth** or **Access Key**. An oAuth client requires you to [get an access token](/api-sdks/api#getting-an-access-token) before you can make any other requests. The **Access Key** type can be used for write-only operations. It uses only the client secret to make requests and doesn't require you to request an oAuth token first, which is useful for stateless applications such as a PHP client that cannot reuse an access token for multiple page views.
-
-![Clients](../static/api-sdks/create-client.png)
-
-The dialogue that pops up shows the unique client ID and the secret you need to store. Think of the secret as a password. Once the dialogue is closed, there is no way to retrieve the secret. If you lose your secret, you will need to create a new client.
-
-![Clients](../static/api-sdks/settings-client.png)
-
-## Error Handling
-
-In case of an error, Pirsch returns a JSON object in the body describing the issue and what you can do about it, along with a meaningful HTTP status code. Errors have the following structure.
-
-```JSON
-{
-    "validation": {
-        "field": "error message"
-    },
-    "error": [
-        "error message"
-    ]
-}
-```
-
-* `validation` lists errors related to input parameters
-* `error` lists general errors, like when an object could'nt be found. There usually is only one error message
 
 ## Getting an Access Token
 
-In order to make requests to the API, you must first obtain an access token. The token must be sent with each request in the `Authorisation` header in the format `Bearer <token>`. If you receive a status code of 401 (unauthorised), you must create a new token and try again. The `expires_at' timezone is set to UTC.
+In order to make requests to the API, you must first obtain an access token or use an access key (write-only). The token must be sent with each request in the `Authorisation` header in the format `Bearer <token>`. If you receive a status code of 401 (unauthorized), you must create a new token and try again. The `expires_at' timezone is set to UTC.
 
-Client IDs and secrets can be created from the **Integration Settings** page or from the **Account Settings** page. Domain clients are created for a specific domain and can only access and manipulate the domain for which they have been created. User clients have more rights and can access all domains that the user has access to (with the same rights, viewer or admin).
-
-Access keys (starting with `pa_`) can only be used to send data (page views, events and keep-alive sessions) and don't require a client ID or need to be refreshed. Treat both client secrets and individual access tokens as passwords and store them securely.
-
-The examples for the other endpoints in this document omit the header.
+**The examples for the other endpoints in this document omit the header.**
 
 `POST https://api.pirsch.io/api/v1/token`
 
@@ -110,7 +74,7 @@ It's possible to send multiple page views at once. If you use the batch endpoint
 ```
 :::
 
-## Sending an Event
+## Sending Events
 
 This endpoint is used to send events to Pirsch. It requires you to send information about the request made by the client. How you get this depends on the programming language and framework you're using. The example shows which fields are required and which are optional. We recommend sending all of them to make the results as accurate as possible.
 
@@ -161,7 +125,7 @@ It's possible to send multiple events at once. If you use the batch endpoint, ma
 ```
 :::
 
-## Keeping a Session Alive
+## Keeping Sessions Alive
 
 This endpoint is used to **manually** keep sessions alive. A session is normally reset if no request (hit or event) is sent within a 30 minute timeframe. This feature can be used to extend a session indefinitely. It's not recommended to use this for regular websites, but can be useful for tracking applications or other custom software.
 
@@ -238,33 +202,39 @@ The following list contains all possible filter options. Only the required field
 | search | no | /home | Search the primary field for given string (contains). For pages this is the path, for browsers the browser name, and so on. This is only available for pages, entry/exit pages, referrers, UTM statistics, conversion goals, events, demographics, and device statistics. |
 :::
 
-### Getting the Domain ID
+### Filter Options
 
-Before you can make any requests, you must know the domain ID for the client. Make a request to the following endpoint and store the ID for the domain. Note that the domain is returned in an array. The endpoint normally returns all the domains a user has access to, but in this case it always has an entry (unless there is a permission error, in which case it is empty).
+The following endpoints return available filtering options for a time period. For brevity, only one example request and response is given.
 
-`GET /api/v1/domain`
+::: details FILTER OPTIONS
+```
+GET /api/v1/statistics/options/referrer/name
+GET /api/v1/statistics/options/page
+GET /api/v1/statistics/options/referrer
+GET /api/v1/statistics/options/event
+GET /api/v1/statistics/options/country
+GET /api/v1/statistics/options/city
+GET /api/v1/statistics/options/language
+GET /api/v1/statistics/options/metadata
+GET /api/v1/statistics/options/utm/source
+GET /api/v1/statistics/options/utm/medium
+GET /api/v1/statistics/options/utm/campaign
+GET /api/v1/statistics/options/utm/content
+GET /api/v1/statistics/options/utm/term
+```
+:::
+
+It's possible to use an access code by setting the `access` query parameter.
+
+`GET /api/v1/statistics/options/page?id=A5kgYzK14m&from=2022-02-01&to=2022-03-27`
 
 ::: details EXAMPLE RESPONSE
 ```JSON
 [
-    {
-        "id": "A5kgYzK14m",
-        "def_time": "2021-05-22T10:11:12.123456Z",
-        "mod_time": "2021-05-22T10:11:12.123456Z",
-        "user_id": "pzy1bjD1lv",
-        "hostname": "example.com",
-        "subdomain": "example",
-        "identification_code": "oSdiAe...",
-        "public": false,
-        "google_user_id": null,
-        "google_user_email": null,
-        "gsc_domain": null,
-        "new_owner": null,
-        "timezone": "Europe/Berlin",
-	    "group_by_title": false,
-	    "active_visitors_seconds": 600,
-        "user_role": ""
-    }
+    "/",
+    "/some/path",
+    "/other/path",
+    // ...
 ]
 ```
 :::
@@ -945,46 +915,58 @@ We recommend using the Search Console API directly instead of calling it through
 ```
 :::
 
-## Filter Options
+## Managing Domains
 
-The following endpoints return available filtering options for a time period. For brevity, only one example request and response is given.
+Domains can be managed by creating a user client (on the account settings page).
 
-::: details FILTER OPTIONS
-```
-GET /api/v1/statistics/options/referrer/name
-GET /api/v1/statistics/options/page
-GET /api/v1/statistics/options/referrer
-GET /api/v1/statistics/options/event
-GET /api/v1/statistics/options/country
-GET /api/v1/statistics/options/city
-GET /api/v1/statistics/options/language
-GET /api/v1/statistics/options/metadata
-GET /api/v1/statistics/options/utm/source
-GET /api/v1/statistics/options/utm/medium
-GET /api/v1/statistics/options/utm/campaign
-GET /api/v1/statistics/options/utm/content
-GET /api/v1/statistics/options/utm/term
-```
-:::
+### Getting the Domain ID
 
-It's possible to use an access code by setting the `access` query parameter.
+Most API endpoints require you to set a domain ID. We call them domains, but you can also think of them as a single dashboard. The terms are used interchangeably.
 
-`GET /api/v1/statistics/options/page?id=A5kgYzK14m&from=2022-02-01&to=2022-03-27`
+For clients created for a dashboard, only one domain is returned. For clients created on the account settings page, this endpoint returns all domains that you have access to.
+
+Don't forget to set the access token or access key in the `Authorization` header: `Bearer <oAuth access token or access key>`.
+
+`GET /api/v1/domain`
 
 ::: details EXAMPLE RESPONSE
 ```JSON
 [
-    "/",
-    "/some/path",
-    "/other/path",
-    // ...
+    {
+        "id": "A5kgYzK14m",
+        "def_time": "2021-05-22T10:11:12.123456Z",
+        "mod_time": "2021-05-22T10:11:12.123456Z",
+        "user_id": "pzy1bjD1lv",
+        "organization_id": null,
+        "hostname": "example.com",
+        "subdomain": "example",
+        "identification_code": "oSdiAe...",
+        "public": false,
+        "google_user_id": null,
+        "google_user_email": null,
+        "gsc_domain": null,
+        "new_owner": null,
+        "timezone": "Europe/Berlin",
+	    "group_by_title": false,
+	    "active_visitors_seconds": 600,
+        "disable_scripts": false,
+        "statistics_start": null,
+        "imported_statistics": false,
+        "metadata": {},
+        "theme_id": "x98y1bjAm72",
+	    "theme": {
+            // key value pairs
+        },
+        "custom_domain": "my.custom-domain.com",
+        "user_role": "Owner", // Admin, Viewer
+        "settings": {},
+        "theme_settings": {
+            // key value pairs
+        }
+    }
 ]
 ```
 :::
-
-## Managing Domains
-
-Domains can be managed by creating a user client (on the Account Settings page).
 
 ### Creating a Domain
 

@@ -2,6 +2,8 @@
 
 Proxies are a more advanced setup and require you to install software. We recommend starting with the [server-side](/get-started/backend-integration) or [website](/get-started/frontend-integration) integration.
 
+For rewrites/redirects of the scripts, read [this](/faq#can-i-use-vercel-rewrites-redirects-to-proxy-the-scripts).
+
 ## What Is a Proxy and Why Should You Use It
 
 A proxy is self-hosted middleware that allows you to serve the Pirsch JavaScript snippets from your own domain.

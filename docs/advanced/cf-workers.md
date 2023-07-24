@@ -4,6 +4,8 @@
 
 The benefits of using a proxy are described [here](../get-started/proxy).
 
+For rewrites/redirects of the scripts, read [this](/faq#can-i-use-vercel-rewrites-redirects-to-proxy-the-scripts).
+
 ## Creating an Access Key
 
 Before we get into the Cloudflare setup, navigate to the integration settings page of your dashboard and create a new client by clicking **Add Client**. The type must be **Access Key**. Give it a name and click **Create Client**. Copy the access key and save it for later. It looks something like this: `pa_x93ko...`.

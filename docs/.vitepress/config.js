@@ -42,27 +42,8 @@ export default {
                 items: [
                     {text: "Website Integration", link: "/get-started/frontend-integration"},
                     {text: "Server-side Integration", link: "/get-started/backend-integration"},
-                    {text: "Proxying the Scripts", link: "/get-started/proxy"},
                     {text: "Google Analytics Import", link: "/get-started/ga-import"},
                     {text: "Troubleshooting", link: "/get-started/troubleshooting"}
-                ]
-            },
-            {
-                text: "Advanced",
-                items: [
-                    {text: "Referrer and UTM Parameters", link: "/advanced/referrer-utm"},
-                    {text: "Conversion Goals", link: "/advanced/conversion-goals"},
-                    {text: "Events", link: "/advanced/events"},
-                    {text: "Tracking Outbound Links", link: "/advanced/outbound-links"},
-                    {text: "Tracking File Downloads", link: "/advanced/file-downloads"},
-                    {text: "404 Error Page Tracking", link: "/advanced/not-found-tracking"},
-                    {text: "Additional Domains and Rollup Views", link: "/advanced/domains-rollup"},
-                    {text: "Extending Sessions", link: "/advanced/sessions"},
-                    {text: "Embedding the Dashboard", link: "/advanced/embedding"},
-                    {text: "Access Management", link: "/advanced/access"},                    
-                    {text: "Proxying Through Cloudflare Workers", link: "/advanced/cf-workers"},
-                    {text: "Theming", link: "/advanced/theme"},
-                    {text: "Custom Domains", link: "/advanced/custom-domains"}
                 ]
             },
             {
@@ -79,8 +60,28 @@ export default {
                 ]
             },
             {
+                text: "Advanced",
+                items: [
+                    {text: "Referrer and UTM Parameters", link: "/advanced/referrer-utm"},
+                    {text: "Conversion Goals", link: "/advanced/conversion-goals"},
+                    {text: "Events", link: "/advanced/events"},
+                    {text: "Tracking Outbound Links", link: "/advanced/outbound-links"},
+                    {text: "Tracking File Downloads", link: "/advanced/file-downloads"},
+                    {text: "404 Error Page Tracking", link: "/advanced/not-found-tracking"},
+                    {text: "Additional Domains and Rollup Views", link: "/advanced/domains-rollup"},
+                    {text: "Extending Sessions", link: "/advanced/sessions"},
+                    {text: "Embedding the Dashboard", link: "/advanced/embedding"},
+                    {text: "Access Management", link: "/advanced/access"},
+                    {text: "Proxying the Scripts", link: "/advanced/proxy"},
+                    {text: "Proxying Through Cloudflare Workers", link: "/advanced/cf-workers"},
+                    {text: "Theming", link: "/advanced/theme"},
+                    {text: "Custom Domains", link: "/advanced/custom-domains"}
+                ]
+            },
+            {
                 text: "API and SDKs",
                 items: [
+                    {text: "API Guide", link: "/api-sdks/api-guide"},
                     {text: "API", link: "/api-sdks/api"},
                     {text: "SDKs", link: "/api-sdks/sdks"}
                 ]
