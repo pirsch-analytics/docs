@@ -1,5 +1,18 @@
 # Changelog
 
+## 2.0.8
+
+Release: 2023-07-27
+
+* added raw values on hover to numbers
+* improved graphs jumping when data or color changes
+* improved GA import
+* fixed sitemap
+* fixed cycling through past 7, 14, 30, quarter, half year, and year filters
+* fixed footer font size on dashboard
+* fixed access links for custom domains
+* updated dependencies
+
 ## 2.0.7
 
 Release: 2023-07-20
