@@ -1,4 +1,4 @@
-# Events
+# Tracking Events
 
 Events measure how many visitors took a particular action, such as clicking a button or filling out a form, and calculate the conversion rate and (optional) average time. You can filter the dashboard by events and track additional metadata fields (key-value pairs).
 

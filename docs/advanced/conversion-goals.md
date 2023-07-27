@@ -1,4 +1,4 @@
-# Conversion Goals
+# Tracking Conversion Goals
 
 Conversion Goals allow you to group pages and calculate the conversion rate.
 

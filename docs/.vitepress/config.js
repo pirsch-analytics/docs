@@ -63,17 +63,17 @@ export default {
                 text: "Advanced",
                 items: [
                     {text: "Referrer and UTM Parameters", link: "/advanced/referrer-utm"},
-                    {text: "Conversion Goals", link: "/advanced/conversion-goals"},
-                    {text: "Events", link: "/advanced/events"},
+                    {text: "Tracking Conversion Goals", link: "/advanced/conversion-goals"},
+                    {text: "Tracking Events", link: "/advanced/events"},
                     {text: "Tracking Outbound Links", link: "/advanced/outbound-links"},
                     {text: "Tracking File Downloads", link: "/advanced/file-downloads"},
-                    {text: "404 Error Page Tracking", link: "/advanced/not-found-tracking"},
+                    {text: "Tracking 404 Errors", link: "/advanced/not-found-tracking"},
                     {text: "Additional Domains and Rollup Views", link: "/advanced/domains-rollup"},
                     {text: "Extending Sessions", link: "/advanced/sessions"},
-                    {text: "Embedding the Dashboard", link: "/advanced/embedding"},
-                    {text: "Access Management", link: "/advanced/access"},
                     {text: "Proxying the Scripts", link: "/advanced/proxy"},
                     {text: "Proxying Through Cloudflare Workers", link: "/advanced/cf-workers"},
+                    {text: "Access Management", link: "/advanced/access"},
+                    {text: "Embedding the Dashboard", link: "/advanced/embedding"},
                     {text: "Theming", link: "/advanced/theme"},
                     {text: "Custom Domains", link: "/advanced/custom-domains"}
                 ]
