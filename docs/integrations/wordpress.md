@@ -18,7 +18,7 @@ After you click *Save*, Pirsch will start collecting statistics for your site.
 
 There are a few optional fields you can configure to fine-tune the integration.
 
-* The base URL can be set if you are using our [proxy](/get-started/proxy).
+* The base URL can be set if you are using our [proxy](/advanced/proxy).
 * The header can be set to extract the IP address from if your server is behind a proxy or load balancer.
 * The path filter can be used to exclude pages using regular expressions.
 

@@ -2,7 +2,7 @@
 
 [Cloudflare Workers](https://workers.cloudflare.com/) can be used to proxy the Pirsch Analytics scripts. They are free for up to 100,000 requests a day. All you need is a free Cloudflare account.
 
-The benefits of using a proxy are described [here](../get-started/proxy).
+The benefits of using a proxy are described [here](proxy).
 
 For rewrites/redirects of the scripts, read [this](/faq#can-i-use-vercel-rewrites-redirects-to-proxy-the-scripts).
 

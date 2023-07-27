@@ -10,7 +10,7 @@ No, we rely on information provided by the visitor's browser. If you rewrite req
 
 In addition, there is no way to reliably extract this data. A header containing the forwarded IP address, as often provided by Cloudflare or similar, can be corrupted ([IP spoofing](https://en.wikipedia.org/wiki/IP_address_spoofing)), allowing an attacker to create as many fake visitors as they want from a single device.
 
-The real solution is to host a [proxy](/get-started/proxy) yourself or use a [Cloudflare worker](/advanced/cf-workers) (free).
+The real solution is to host a [proxy](/advanced/proxy) yourself or use a [Cloudflare worker](/advanced/cf-workers) (free).
 
 **But competitors X and Y have this!
 
