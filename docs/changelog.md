@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.0.9
+
+Release: 2023-07-29
+
+* fixed average session duration
+
 ## 2.0.8
 
 Release: 2023-07-27
