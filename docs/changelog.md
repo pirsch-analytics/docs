@@ -9,6 +9,7 @@ Release: unreleased
 * added option to set light/dark mode for custom domains and public dashboards
 * added link to themes from settings page
 * added number of websites and themes to organization panels
+* added color switch to public dashboards
 
 ## 2.0.10
 
