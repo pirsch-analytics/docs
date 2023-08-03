@@ -2162,6 +2162,8 @@ This endpoint lists all organizations the user belongs to or is the owner of.
         "user_id": "oOD28xa97",
         "name": "Organization",
         "member": 4,
+        "domains": 5,
+        "themes": 6,
         "role": "Owner",
         "can_edit": true
     },

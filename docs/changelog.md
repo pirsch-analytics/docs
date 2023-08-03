@@ -5,6 +5,10 @@
 Release: unreleased
 
 * improved conversion goal dialog
+* added options to hide the login button and footer on custom domains
+* added option to set light/dark mode for custom domains and public dashboards
+* added link to themes from settings page
+* added number of websites and themes to organization panels
 
 ## 2.0.10
 
