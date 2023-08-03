@@ -1,5 +1,19 @@
 # Changelog
 
+## 2.0.11
+
+Release: unreleased
+
+* improved conversion goal dialog
+
+## 2.0.10
+
+Release: 2023-08-02
+
+* fixed staying logged in
+* fixed OS/browser panels showing more than ten results
+* updated dependencies
+
 ## 2.0.9
 
 Release: 2023-07-29
