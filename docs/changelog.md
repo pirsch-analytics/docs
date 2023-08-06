@@ -2,7 +2,7 @@
 
 ## 2.0.11
 
-Release: unreleased
+Release: 2023-08-06
 
 * improved conversion goal dialog
 * added options to hide the login button and footer on custom domains
