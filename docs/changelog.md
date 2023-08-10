@@ -1,5 +1,14 @@
 # Changelog
 
+## 2.0.12
+
+Release: 2023-08-10
+
+* improved error logging
+* fixed light/dark mode query parameter being removed when changing the filter
+* fixed imported statistics with overlapping data from Pirsch
+* fixed gaps in imported statistics on the dashboard
+
 ## 2.0.11
 
 Release: 2023-08-06
