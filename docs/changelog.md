@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.1.0
+
+Release: unreleased
+
+* upgraded to Go version 1.21
+* updated dependencies
+
 ## 2.0.12
 
 Release: 2023-08-10
