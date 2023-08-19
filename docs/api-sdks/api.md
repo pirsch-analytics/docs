@@ -43,15 +43,21 @@ This endpoint is used to send page views to Pirsch. It requires you to send info
 ::: details EXAMPLE REQUEST
 ```JSON
 {
-    "url":              "https://example.com/full/url?including=parameters",
-    "ip":               "123.456.789.0",
-    "dnt":              "DNT header (optional)",
-    "user_agent":       "User-Agent header",
-    "accept_language":  "Accept-Language header (optional)",
-    "title":            "Page title (optional)",
-    "referrer" :        "Referer header (optional)",
-    "screen_width":     1920,
-    "screen_height":    1080
+    "url":                          "https://example.com/full/url?including=parameters",
+    "ip":                           "123.456.789.0",
+    "dnt":                          "DNT header (optional)",
+    "user_agent":                   "User-Agent header",
+    "accept_language":              "Accept-Language header (optional)",
+    "sec_ch_ua":                    "Sec-CH-UA header (optional)",
+	"sec_ch_ua_mobile":             "Sec-CH-UA-Mobile header (optional)",
+	"sec_ch_ua_platform":           "Sec-CH-UA-Platform header (optional)",
+	"sec_ch_ua_platform_version":   "Sec-CH-UA-Platform-Version header (optional)",
+	"sec_ch_width":                 "Sec-CH-Width header (optional)",
+    "sec_ch_viewport_width":        "Sec-CH-Viewport-Width header (optional)",
+    "title":                        "Page title (optional)",
+    "referrer" :                    "Referer header (optional)",
+    "screen_width":                 1920,
+    "screen_height":                1080
 }
 ```
 :::
@@ -90,21 +96,27 @@ Fields with underscores are comments.
     "event_name":       "Button Clicked",
     "_duration":        "event_duration is an optional number of seconds.",
     "event_duration":   42,
-    "_metadata":        "event_meta is a single dimension object of scalar values (strings, numbers, and booleans)."
+    "_metadata":        "event_meta is a single dimension object of scalar values (strings, numbers, and booleans).",
     "event_meta": {
         "key":             "value",
         "metadata fields": "are optional"
     },
-    "_hit":             "The fields below are the same as for hits."
-    "url":              "https://example.com/full/url?including=parameters",
-    "ip":               "123.456.789.0",
-    "dnt":              "DNT header (optional)",
-    "user_agent":       "User-Agent header",
-    "accept_language":  "Accept-Language header (optional)",
-    "title":            "Page title (optional)",
-    "referrer" :        "Referer header (optional)",
-    "screen_width":     1920,
-    "screen_height":    1080
+    "_hit":                         "The fields below are the same as for hits.",
+    "url":                          "https://example.com/full/url?including=parameters",
+    "ip":                           "123.456.789.0",
+    "dnt":                          "DNT header (optional)",
+    "user_agent":                   "User-Agent header",
+    "accept_language":              "Accept-Language header (optional)",
+    "sec_ch_ua":                    "Sec-CH-UA header (optional)",
+	"sec_ch_ua_mobile":             "Sec-CH-UA-Mobile header (optional)",
+	"sec_ch_ua_platform":           "Sec-CH-UA-Platform header (optional)",
+	"sec_ch_ua_platform_version":   "Sec-CH-UA-Platform-Version header (optional)",
+	"sec_ch_width":                 "Sec-CH-Width header (optional)",
+    "sec_ch_viewport_width":        "Sec-CH-Viewport-Width header (optional)",
+    "title":                        "Page title (optional)",
+    "referrer" :                    "Referer header (optional)",
+    "screen_width":                 1920,
+    "screen_height":                1080
 }
 ```
 :::
@@ -134,9 +146,15 @@ This endpoint is used to **manually** keep sessions alive. A session is normally
 ::: details EXAMPLE REQUEST
 ```JSON
 {
-    "ip":               "123.456.789.0",
-    "dnt":              "DNT header (optional)",
-    "user_agent":       "User-Agent header"
+    "ip":                           "123.456.789.0",
+    "dnt":                          "DNT header (optional)",
+    "user_agent":                   "User-Agent header",
+    "sec_ch_ua":                    "Sec-CH-UA header (optional)",
+	"sec_ch_ua_mobile":             "Sec-CH-UA-Mobile header (optional)",
+	"sec_ch_ua_platform":           "Sec-CH-UA-Platform header (optional)",
+	"sec_ch_ua_platform_version":   "Sec-CH-UA-Platform-Version header (optional)",
+	"sec_ch_width":                 "Sec-CH-Width header (optional)",
+    "sec_ch_viewport_width":        "Sec-CH-Viewport-Width header (optional)"
 }
 ```
 :::

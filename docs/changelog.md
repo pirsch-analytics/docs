@@ -4,6 +4,8 @@
 
 Release: unreleased
 
+* added support for client hints
+* added Chrome OS and Windows 11 detection
 * upgraded to Go version 1.21
 * updated dependencies
 

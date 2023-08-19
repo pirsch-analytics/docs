@@ -60,11 +60,17 @@ POST https://api.pirsch.io/api/v1/hit
 Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI...
 
 {
-    "url":              "https://example.com/full/url?including=parameters",
-    "ip":               "123.456.789.0",
-    "user_agent":       "User-Agent header",
-    "accept_language":  "Accept-Language header (optional)",
-    "referrer" :        "Referer header (optional)",
+    "url":                          "https://example.com/full/url?including=parameters",
+    "ip":                           "123.456.789.0",
+    "user_agent":                   "User-Agent header",
+    "accept_language":              "Accept-Language header (optional)",
+    "sec_ch_ua":                    "Sec-CH-UA header (optional)",
+	"sec_ch_ua_mobile":             "Sec-CH-UA-Mobile header (optional)",
+	"sec_ch_ua_platform":           "Sec-CH-UA-Platform header (optional)",
+	"sec_ch_ua_platform_version":   "Sec-CH-UA-Platform-Version header (optional)",
+	"sec_ch_width":                 "Sec-CH-Width header (optional)",
+    "sec_ch_viewport_width":        "Sec-CH-Viewport-Width header (optional)",
+    "referrer" :                    "Referer header (optional)"
 }
 ```
 

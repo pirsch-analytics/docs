@@ -37,9 +37,15 @@ Sessions can be extended by sending a simple request to the [API](/api-sdks/api)
 POST https://api.pirsch.io/api/v1/session
 
 {
-    "ip":               "123.456.789.0",
-    "dnt":              "DNT header (optional)",
-    "user_agent":       "User-Agent header"
+    "ip":                           "123.456.789.0",
+    "dnt":                          "DNT header (optional)",
+    "user_agent":                   "User-Agent header",
+    "sec_ch_ua":                    "Sec-CH-UA header (optional)",
+	"sec_ch_ua_mobile":             "Sec-CH-UA-Mobile header (optional)",
+	"sec_ch_ua_platform":           "Sec-CH-UA-Platform header (optional)",
+	"sec_ch_ua_platform_version":   "Sec-CH-UA-Platform-Version header (optional)",
+	"sec_ch_width":                 "Sec-CH-Width header (optional)",
+    "sec_ch_viewport_width":        "Sec-CH-Viewport-Width header (optional)"
 }
 ```
 

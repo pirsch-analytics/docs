@@ -147,15 +147,21 @@ Let's send a simple page view. This is usually done from your server ([server-si
 ::: details EXAMPLE REQUEST
 ```JSON
 {
-    "url":              "https://example.com/full/url?including=parameters",
-    "ip":               "123.456.789.0",
-    "dnt":              "DNT header (optional)",
-    "user_agent":       "User-Agent header",
-    "accept_language":  "Accept-Language header (optional)",
-    "title":            "Page title (optional)",
-    "referrer" :        "Referer header (optional)",
-    "screen_width":     1920,
-    "screen_height":    1080
+    "url":                          "https://example.com/full/url?including=parameters",
+    "ip":                           "123.456.789.0",
+    "dnt":                          "DNT header (optional)",
+    "user_agent":                   "User-Agent header",
+    "accept_language":              "Accept-Language header (optional)",
+    "sec_ch_ua":                    "Sec-CH-UA header (optional)",
+	"sec_ch_ua_mobile":             "Sec-CH-UA-Mobile header (optional)",
+	"sec_ch_ua_platform":           "Sec-CH-UA-Platform header (optional)",
+	"sec_ch_ua_platform_version":   "Sec-CH-UA-Platform-Version header (optional)",
+	"sec_ch_width":                 "Sec-CH-Width header (optional)",
+    "sec_ch_viewport_width":        "Sec-CH-Viewport-Width header (optional)",
+    "title":                        "Page title (optional)",
+    "referrer" :                    "Referer header (optional)",
+    "screen_width":                 1920,
+    "screen_height":                1080
 }
 ```
 :::
@@ -175,8 +181,16 @@ $request = array(
     // Set the User-Agent.
     'user_agent' => $_SERVER['HTTP_USER_AGENT'],
 
-    // Set the Accept-Language.
+    // Set the Accept-Language header.
     'accept_language' => $_SERVER['HTTP_ACCEPT_LANGUAGE'],
+
+    // Set the client hint headers.
+    'sec_ch_ua' => $_SERVER['Sec-CH-UA'],
+	'sec_ch_ua_mobile' => $_SERVER['Sec-CH-UA-Mobile'],
+	'sec_ch_ua_platform' => $_SERVER['Sec-CH-UA-Platform'],
+	'sec_ch_ua_platform_version' => $_SERVER['Sec-CH-UA-Platform-Version'],
+	'sec_ch_width' => $_SERVER['Sec-CH-Width'],
+    'sec_ch_viewport_width' => $_SERVER['Sec-CH-Viewport-Width'],
 
     // Set the referrer. Maybe from a query parameter, like: ?ref=My+Referrer
     'referrer' => $_SERVER['HTTP_REFERER']
