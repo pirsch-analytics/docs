@@ -10,6 +10,13 @@ Release: unreleased
 * upgraded to Go version 1.21
 * updated dependencies
 
+## 2.0.13
+
+Release: 2023-08-23
+
+* fixed deleting data taking a long time
+* removed link to Pirsch on logo when `ui=hide` is set
+
 ## 2.0.12
 
 Release: 2023-08-10
