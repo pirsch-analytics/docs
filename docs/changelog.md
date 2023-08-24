@@ -10,6 +10,13 @@ Release: unreleased
 * upgraded to Go version 1.21
 * updated dependencies
 
+## 2.0.14
+
+Release: 2023-08-24
+
+* disabled request cancellation for querying domains
+* fixed checking response errors if response is undefined
+
 ## 2.0.13
 
 Release: 2023-08-23
