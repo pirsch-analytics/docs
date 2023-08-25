@@ -10,6 +10,12 @@ Release: unreleased
 * upgraded to Go version 1.21
 * updated dependencies
 
+## 2.0.15
+
+Release: 2023-08-25
+
+* added missing database indices
+
 ## 2.0.14
 
 Release: 2023-08-24
