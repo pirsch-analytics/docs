@@ -25,7 +25,7 @@ $TTL 3600
 my IN A 49.12.191.129
    IN A 159.69.94.230
    IN AAAA 2a01:4f8:c012:cb50::1
-   IN AAAA 159.69.94.230
+   IN AAAA 2a01:4f8:1c1b:cb09::1
 ```
 
 And here is one for the top level domain `custom-domain.com`:
@@ -36,7 +36,7 @@ $TTL 3600
 @ IN A 49.12.191.129
   IN A 159.69.94.230
   IN AAAA 2a01:4f8:c012:cb50::1
-  IN AAAA 159.69.94.230
+  IN AAAA 2a01:4f8:1c1b:cb09::1
 ```
 
 After you add the records, make sure they are propagated. You can do this by entering your domain or subdomain into a tool such as [DNS Checker](https://dnschecker.org/).
