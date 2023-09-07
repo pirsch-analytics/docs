@@ -10,6 +10,13 @@ Release: unreleased
 * upgraded to Go version 1.21
 * updated dependencies
 
+## 2.0.16
+
+Release: 2023-09-07
+
+* updated and improved referrer mapping
+* keep import running on Google Analytics API error
+
 ## 2.0.15
 
 Release: 2023-08-25
