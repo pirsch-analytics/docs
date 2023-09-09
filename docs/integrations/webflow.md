@@ -4,6 +4,26 @@
 If you have a Webflow site with a template that has "e-commerce" features, even if not used, Pirsch may not work.
 :::
 
+## Adding Pirsch Analytics to Webflow
+
+1. Get your personal code snippet from the [Integration Settings](https://dashboard.pirsch.io/settings/integration). We recommend the Pirsch Extended script to enable all features.
+2. In your Webflow project, go to **Site settings** > **Custom code**.
+3. Paste your Pirsch snippet in the Head code section.
+4. Click **Save changes**.
+
+::: info
+Make sure that the hostname of your Webflow page and the Pirsch Dashboard are the same, otherwise the page views will not be displayed.
+:::
+
+## Tracking Events in Webflow
+
+The easiest way to track events in a Webflow is to use custom HTML attributes with the Pirsch extended script.
+
+1. In your Webflow project, select the element you want to track events with.
+2. Go to **Element settings panel** > **Custom attributes**.
+3. Click the **+** icon.
+4. Enter the name of your custom attributes following [the event guide](https://docs.pirsch.io/advanced/events#example-2-using-html-attributes).
+
 ## Troubleshooting
 
 ### Problem
