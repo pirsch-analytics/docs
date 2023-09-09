@@ -10,6 +10,13 @@ Release: unreleased
 * upgraded to Go version 1.21
 * updated dependencies
 
+## 2.0.17
+
+Release: 2023-09-09
+
+* fixed ref query parameter to set referrer
+* fixed resetting sessions when referrer name changes
+
 ## 2.0.16
 
 Release: 2023-09-07
