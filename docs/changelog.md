@@ -7,6 +7,8 @@ Release: unreleased
 * added support for client hints
 * added Chrome OS and Windows 11 detection
 * added direct/none/unknown to panels (previously only visible in tables)
+* added conversion rate to total, by period, and growth
+* added custom metrics for events
 * upgraded to Go version 1.21
 * updated dependencies
 
