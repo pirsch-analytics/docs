@@ -2,7 +2,7 @@
 
 ## 2.1.0
 
-Release: unreleased
+Release: 2023-09-17
 
 * added support for client hints
 * added Chrome OS and Windows 11 detection
