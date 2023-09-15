@@ -213,6 +213,8 @@ The following list contains all possible filter options. Only the required field
 | utm_campaign | no | Summer Sale | The UTM campaign. |
 | utm_content | no | Header | The UTM content. |
 | utm_term | no | search terms | The UTM term. |
+| custom_metric_type | no | integer | The custom metric type used to aggregate statistics. This will be used to parse the `custom_metric_key` event metadata key. It can be either `float` or `integer`. |
+| custom_metric_key | no | integer | The custom metric key used to aggregate statistics. This will be used to parse the an event metadata value. Used in combination with the `custom_metric_type`. |
 | limit | no | 20 | Limits the number of results, note that this is hard limited to 100. |
 | include_avg_time_on_page | no | true | Set to true, to include the average time on page when reading page statistics. |
 | sort | no | visitors | Sort results by given field. This is only available for pages, entry/exit pages, referrers, UTM statistics, conversion goals, events, demographics, and device statistics. |
@@ -405,7 +407,7 @@ Which time component is set depends on the `scale` filter. Setting it to `day` (
 
 ### Total Visitors
 
-This endpoint returns the total number of visitors, views, sessions, bounces, and bounce rate. The difference from the Visitors endpoint (see below) is that the results are not grouped by day. Manually summing visitors for multiple days gives a different result because returning visitors are counted multiple times.
+This endpoint returns the total number of visitors, views, sessions, bounces, bounce rate, conversion rate, and custom metrics. The difference from the visitors endpoint (see below) is that the results are not grouped by day. Manually summing visitors for multiple days gives a different result because returning visitors are counted multiple times.
 
 `GET /api/v1/statistics/total`
 
@@ -416,7 +418,10 @@ This endpoint returns the total number of visitors, views, sessions, bounces, an
     "views": 56,
     "sessions": 48,
     "bounces": 23,
-    "bounce_rate": 0.4791
+    "bounce_rate": 0.4791,
+    "cr": 0.25,
+	"custom_metric_avg": 42.1,
+	"custom_metric_total": 598
 }
 ```
 :::
@@ -457,7 +462,10 @@ Which time component is set depends on the `scale` filter. Setting it to `day` (
         "views": 56,
         "sessions": 48,
         "bounces": 23,
-        "bounce_rate": 0.4791
+        "bounce_rate": 0.4791,
+        "cr": 0.25,
+        "custom_metric_avg": 42.1,
+        "custom_metric_total": 598
     },
     // ...
 ]
@@ -571,8 +579,15 @@ This endpoint returns all pages on which an event was triggered. It requires the
             "name": "My Conversion Goal",
             "path_pattern": "/path/**",
             "pattern": "(?i)^\/path/[^\/]+$",
+            "event_name": "event",
+            "event_meta_key": "currency",
+            "event_meta_value": "USD",
+            "custom_metric_key": "amount",
+            "custom_metric_type": "float",
             "visitor_goal": 5432,
             "cr_goal": 42.11,
+            "custom_metric_total_goal": 346,
+	        "custom_metric_avg_goal": 95.3,
             "delete_reached": true,
             "email_reached": true
         }
@@ -586,7 +601,11 @@ This endpoint returns all pages on which an event was triggered. It requires the
 ]
 ```
 
-`pattern` is the regex pattern stored for the conversion goal, which can be used as the `pattern` parameter in the filter. path_pattern` is the path pattern as configured by the user in the dashboard. The `pattern` is generated from this.
+`pattern` is the regex pattern stored for the conversion goal, which can be used as the `pattern` parameter in the filter. `path_pattern` is the path pattern as configured by the user in the dashboard. The `pattern` is generated from this.
+
+`path_pattern`, `pattern` and any of the event/custom metric members are optional and `null` in case they're not set.
+
+`custom_metric_type` can be either `integer` or `float`.
 
 :::
 
@@ -675,7 +694,10 @@ This endpoint lists all events, including metadata. Note that this can be an exp
     "views_growth": -0.05,
     "sessions_growth": 0.32,
     "bounces_growth": 0.65,
-    "time_spent_growth": 0.45
+    "time_spent_growth": 0.45,
+    "cr_growth": 0.22,
+	"custom_metric_avg_growth": 0.09,
+	"custom_metric_total_growth": 0.11
 }
 ```
 :::
@@ -716,7 +738,10 @@ Return the active visitors for the last minute.
         "views": 56,
         "sessions": 48,
         "bounces": 23,
-        "bounce_rate": 0.4791
+        "bounce_rate": 0.4791,
+        "cr": 0.25,
+        "custom_metric_avg": 42.1,
+        "custom_metric_total": 598
     },
     {
         "hour": 1,
@@ -724,7 +749,10 @@ Return the active visitors for the last minute.
         "views": 52,
         "sessions": 21,
         "bounces": 19,
-        "bounce_rate": 0.3219
+        "bounce_rate": 0.3219,
+        "cr": 0.25,
+        "custom_metric_avg": 42.1,
+        "custom_metric_total": 598
     },
     // ...
 ]
@@ -1906,10 +1934,17 @@ This endpoint lists all conversion goals.
         "mod_time": "2021-05-22T10:11:12.123456Z",
         "domain_id": "0DJ0mo934",
         "name": "...",
-        "path_pattern": "...", // regex
-        "pattern": "/checkout/**",
-        "visitor_goal": 123, // or null if unset
-        "cr_goal": 1.23, // or null if unset
+        "path_pattern": "...", // regex, null if not set
+        "pattern": "/checkout/**", // or null if not set
+        "event_name": "event", // or null if not set
+        "event_meta_key": "currency", // or null if not set
+        "event_meta_value": "USD", // or null if not set
+        "custom_metric_key": "amount", // or null if not set
+        "custom_metric_type": "float", // integer, float, or null if not set
+        "visitor_goal": 123, // or null if not set
+        "cr_goal": 1.23, // or null if not set
+        "custom_metric_total_goal": 346, // or null if not set
+        "custom_metric_avg_goal": 95.3, // or null if not set
         "delete_reached": false,
         "email_reached": true
     },
@@ -1924,14 +1959,23 @@ This endpoint creates a new conversion goal.
 
 `POST /api/v1/goal`
 
+Either the `path_pattern` and/or event fields must be set.
+
 ::: details EXAMPLE REQUEST
 ```JSON
 {
     "domain_id": "0DJ0mo934",
     "name": "...",
-    "path_pattern": "/checkout/**",
+    "path_pattern": "/checkout/**", // or null
+    "event_name": "event", // or null
+    "event_meta_key": "currency", // or null
+    "event_meta_value": "USD", // or null
+    "custom_metric_key": "amount", // or null
+    "custom_metric_type": "float", // integer, float, or null
     "visitors": 123, // 0 to pass
     "cr": 1.23, // 0 to pass
+    "custom_metric_total_goal": 346, // 0 to pass
+    "custom_metric_avg_goal": 95.3, // 0 to pass
     "delete_reached": false,
     "email_reached": true
 }
@@ -1946,10 +1990,17 @@ This endpoint creates a new conversion goal.
     "mod_time": "2021-05-22T10:11:12.123456Z",
     "domain_id": "0DJ0mo934",
     "name": "...",
-    "path_pattern": "...", // regex
-    "pattern": "/checkout/**",
-    "visitor_goal": 123, // or null if unset
-    "cr_goal": 1.23, // or null if unset
+    "path_pattern": "...", // regex or null if not set
+    "pattern": "/checkout/**", // or null if not set
+    "event_name": "event", // or null if not set
+    "event_meta_key": "currency", // or null if not set
+    "event_meta_value": "USD", // or null if not set
+    "custom_metric_key": "amount", // or null if not set
+    "custom_metric_type": "float", // integer, float, or null
+    "visitor_goal": 123, // or null if not set
+    "cr_goal": 1.23, // or null if not set
+    "custom_metric_total_goal": 346, // or null if not set
+    "custom_metric_avg_goal": 95.3, // or null if not set
     "delete_reached": false,
     "email_reached": true
 }
@@ -1968,9 +2019,16 @@ This endpoint updates an existing converion goal.
     "id": "A5kgYzK14m",
     "domain_id": "0DJ0mo934",
     "name": "...",
-    "path_pattern": "/checkout/**",
+    "path_pattern": "/checkout/**", // or null
+    "event_name": "event", // or null
+    "event_meta_key": "currency", // or null
+    "event_meta_value": "USD", // or null
+    "custom_metric_key": "amount", // or null
+    "custom_metric_type": "float", // integer, float, or null
     "visitors": 123, // 0 to pass
     "cr": 1.23, // 0 to pass
+    "custom_metric_total_goal": 346, // 0 to pass
+    "custom_metric_avg_goal": 95.3, // 0 to pass
     "delete_reached": false,
     "email_reached": true
 }
@@ -1985,10 +2043,17 @@ This endpoint updates an existing converion goal.
     "mod_time": "2021-05-22T10:11:12.123456Z",
     "domain_id": "0DJ0mo934",
     "name": "...",
-    "path_pattern": "...", // regex
-    "pattern": "/checkout/**",
-    "visitor_goal": 123, // or null if unset
-    "cr_goal": 1.23, // or null if unset
+    "path_pattern": "...", // regex or null if not set
+    "pattern": "/checkout/**", // or null if not set
+    "event_name": "event", // or null if not set
+    "event_meta_key": "currency", // or null if not set
+    "event_meta_value": "USD", // or null if not set
+    "custom_metric_key": "amount", // or null if not set
+    "custom_metric_type": "float", // integer, float, or null
+    "visitor_goal": 123, // or null if not set
+    "cr_goal": 1.23, // or null if not set
+    "custom_metric_total_goal": 346, // or null if not set
+    "custom_metric_avg_goal": 95.3, // or null if not set
     "delete_reached": false,
     "email_reached": true
 }
