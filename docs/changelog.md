@@ -9,6 +9,7 @@ Release: 2023-09-17
 * added direct/none/unknown to panels (previously only visible in tables)
 * added conversion rate to total, by period, and growth
 * added custom metrics for events
+* added refresh button to dashboard
 * upgraded to Go version 1.21
 * updated dependencies
 
