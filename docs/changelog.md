@@ -1,5 +1,22 @@
 # Changelog
 
+## 2.1.1
+
+Release: 2023-09-21
+
+* cancel account deletion on login
+* switched to three months before deleting inactive accounts
+* switch to two years before marking inactive accounts for deletion
+* optimized loading imported statistics
+* fixed title in tables for first column
+* fixed refreshing graphs, growth, and total visitors on refresh button click
+* fixed UTM content panel showing UTM terms
+* fixed batch configuration
+* fixed enter selecting period from list while editing custom dates
+* fixed setting start date in import
+* fixed panels with imported statistics
+* updated dependencies
+
 ## 2.1.0
 
 Release: 2023-09-17
