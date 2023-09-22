@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.1.2
+
+Release: 2023-09-22
+
+* fixed time shift in daily visitor statistics
+* fixed local time to UTC conversion for dates
+* updated dependencies
+
 ## 2.1.1
 
 Release: 2023-09-21
