@@ -15,3 +15,9 @@ The real solution is to host a [proxy](/advanced/proxy) yourself or use a [Cloud
 **But competitors X and Y have this!
 
 Yes, but they are vulnerable to IP spoofing. We checked.
+
+## Can I Self-Host Pirsch Analytics?
+
+Yes, you can host Pirsch yourself by purchasing an [Enterprise License] (https://pirsch.io/pricing). Pricing depends on your size and needs, as it involves setting up a license agreement and requires more support from our side. [Contact us](mailto:support@pirsch.io) to discuss your requirements.
+
+We recommend the SaaS plan for smaller companies or personal projects.

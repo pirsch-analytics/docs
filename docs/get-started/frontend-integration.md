@@ -32,7 +32,7 @@ There are currently four scripts, each with a different purpose.
 
 * pirsch-extended.js is the full integration and combines all the other scripts. It automatically tracks outbound link clicks, file downloads, and allows tracking of custom events through HTML, CSS, and JavaScript.
 * pirsch.js' is the basic integration and **only** tracks page views.
-* pirsch-events.js' tracks **only** programmatic events through JavaScript. This is usually combined with `pirsch.js` so that you have two very lightweight scripts on your site.
+* pirsch-events.js tracks **only** programmatic events through JavaScript. This is usually combined with `pirsch.js` so that you have two very lightweight scripts on your site.
 * pirsch-sessions.js' automatically renews sessions. This can be useful for long running sessions without page switching.
 
 ## Testing the Integration

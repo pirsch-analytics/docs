@@ -54,6 +54,14 @@ If you don't see your visits on your dashboard immediately, don't worry. There i
 
 In case you don't see your visits appearing after a small delay, make sure you didn't [disable Pirsch](/get-started/frontend-integration#ignoring-your-own-page-views), have an ad blocker active, a VPN, or modified your DNT or User-Agent headers. In rare cases, your page views might be blocked by our bot filter. Try a different device on a different network in that case.
 
+## Script Features Are Not Being Tracked (Outbound Link Clicks, File Downloads, Custom Events)
+
+When running the `pirsch-extended.js` or `pirsch-events.js` script in combination with a Single Page Application (SPA) built with frameworks like React, Vue, Angular, Svelte, etc. to track outbound link clicks, file downloads, or custom events, you may run into the problem that certain features do not work.
+
+Page views usually work fine, but tracking custom events or clicks (on an outbound link, for example) may not work. This is because the script may be loaded **before** the SPA has finished rendering the HTML of your web application. As the script scans the HTML for links and attributes to add events to, it will find nothing, and so will not add any event handlers.
+
+To fix this, you can either delay loading the script, or better yet, use the [JavaScript SDK](/api-sdks/sdks). The SDK gives you full control over when an event is fired from your SPA code.
+
 ## I Cannot Sign In
 
 If you have trouble signing in, try deleting your temporary browser files (cookies and local storage) and clear your cache. This can usually be done from the history settings in most browser. The cache can be cleared by reloading the page using `Ctrl/Cmd + Shift + R` or `Ctrl/Cmd + F5`.
