@@ -108,3 +108,7 @@ Your site is identified by the host name from which the request is made and an i
     id="pirschjs" 
     data-code="YOUR_IDENTIFICATION_CODE"></script>
 ```
+
+## Privacy Policy
+
+If required in your country, you can use our [template](/privacy#privacy-policy-template) to add a paragraph to your privacy policy about the use of Pirsch.

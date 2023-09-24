@@ -42,3 +42,21 @@ You are in control of the data we collect for you. You can delete all or part of
 We provide a German Data Processing Agreement (DPA). A DPA ensures that companies handle all data of EU citizens in accordance with the GDPR. It's a contract between the data processor (us) and the data controller (you).
 
 You can download and sign the DPA yourself. The latest version is always available [here](https://pirsch.io/static/files/pirsch-data-processing-agreement.pdf). We recommend anyone who runs a business within the European Union to sign it.
+
+## Privacy Policy Template
+
+You can use the following template for your privacy policy.
+
+Please note that we're not legally responsible for any privacy risks on your site. Each country has different privacy laws, and we can't provide one that will work for all of them. However, the template should work for most privacy regulations and is as transparent as possible.
+
+### English
+
+For web analytics, we use Pirsch Analytics. Pirsch Analytics is a cookie-free web analytics software that was developed according to the Privacy by Design principle. To analyze visitor flows, Pirsch Analytics uses a hashing algorithm to generate a 16-digit number as the visitor ID when the page request is received. The input values are the IP address, the user agent, the date and a salt.
+
+The visitor's IP address is not persisted in whole or in part, and is anonymized completely and non-reversibly by the hash. The inclusion of the date and the use of one salt per website ensures that website visitors cannot be recognized for more than 24 hours and cannot be tracked across multiple websites. A rough localization (country/city) is performed via a locally integrated database.
+
+### German
+
+Für die Webanalyse setzen wir Pirsch Analytics ein. Bei Pirsch Analytics handelt es sich um eine cookiefreie Webanalysesoftware, die nach dem Grundsatz Privacy by Design entwickelt wurde. Zur Analyse der Besucherströme generiert Pirsch Analytics bei Erhalt des Seitenaufrufs mit Hilfe eines Hashing-Algorithmus eine 16-stellige Zahl als Besucher-ID. Als Eingabewerte dienen die IP-Adresse, der User Agent, das Datum und ein Salt.
+
+Die IP-Adresse des Besuchers wird weder vollständig noch in Teilen persistiert und durch den Hash vollständig und nicht reversierbar anonymisiert. Durch die Einbindung des Datums und der Verwendung von einem Salt pro Webseite ist gewährleistet, dass Webseitenbesucher nicht länger als 24 Stunden wiederzuerkennen sind und nicht über mehrere Webseiten hinweg getrackt werden können. Über eine lokal eingebundene Datenbank wird eine grobe Lokalisierung vorgenommen (Land/Stadt).

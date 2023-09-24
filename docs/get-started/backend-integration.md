@@ -81,3 +81,7 @@ Don't worry, we don't store the IP address. To find out more, please read the [p
 ### Client Hints
 
 Client Hints improve the accuracy of the statistics collected for you. Make sure to [forward them](/get-started/client-hints) to our service.
+
+## Privacy Policy
+
+If required in your country, you can use our [template](/privacy#privacy-policy-template) to add a paragraph to your privacy policy about the use of Pirsch.
