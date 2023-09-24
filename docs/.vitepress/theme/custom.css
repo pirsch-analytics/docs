@@ -52,6 +52,10 @@
     --vp-c-yellow: var(--yellow);
     --vp-c-red: var(--red);
     --vp-c-text-code: var(--vp-c-text-1);
+    --vp-c-brand-1: var(--green);
+    --vp-c-brand-2: var(--green);
+    --vp-c-brand-3: var(--green);
+    --vp-c-brand-soft: var(--green-hover);
     --vp-code-block-bg: var(--grey-800);
     --docsearch-container-background: rgba(0,0,0,.5);
 
