@@ -24,16 +24,18 @@ Note that only page views for the hostname you enter will be accepted. A pagevie
 
 You can also create [rollup views](/advanced/domains-rollup) to combine data from multiple sites.
 
-The script also tracks programmatic URL changes by default. This is useful if your site is a single page application (SPA) or if you use anchors. You can disable this behavior by adding the `data-disable-history' parameter to the script. This also works for the `pirsch-extended.js' script.
+The script also tracks programmatic URL changes by default. This is useful if your site is a single page application (SPA) or if you use anchors. You can disable this behavior by adding the `data-disable-history` parameter to the script. This also works for the `pirsch-extended.js` script. Certain features might not work on SPAs. [Check the troubleshooting article](/get-started/troubleshooting) to learn more.
+
+Client Hints improve the accuracy of the statistics collected for you. Make sure to [forward them](/get-started/client-hints) to our service.
 
 ## Choosing a Scripts
 
 There are currently four scripts, each with a different purpose.
 
 * pirsch-extended.js is the full integration and combines all the other scripts. It automatically tracks outbound link clicks, file downloads, and allows tracking of custom events through HTML, CSS, and JavaScript.
-* pirsch.js' is the basic integration and **only** tracks page views.
+* pirsch.js is the basic integration and **only** tracks page views.
 * pirsch-events.js tracks **only** programmatic events through JavaScript. This is usually combined with `pirsch.js` so that you have two very lightweight scripts on your site.
-* pirsch-sessions.js' automatically renews sessions. This can be useful for long running sessions without page switching.
+* pirsch-sessions.js automatically renews sessions. This can be useful for long running sessions without page switching.
 
 ## Testing the Integration
 
@@ -41,7 +43,7 @@ Please refer to the [troubleshooting article](/get-started/troubleshooting).
 
 ## Including and Excluding Pages
 
-The snippet provides a very flexible way to include or exclude pages. You can exclude one or more pages by specifying the `data-exclude' attribute. The content is a list of regular expressions used to filter pages.
+The snippet provides a very flexible way to include or exclude pages. You can exclude one or more pages by specifying the `data-exclude` attribute. The content is a list of regular expressions used to filter pages.
 
 ```html
 <script defer type="text/javascript" src="https://api.pirsch.io/pirsch.js" 

@@ -77,3 +77,7 @@ Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI...
 As you can see, you need to send the visitor's IP, full URL, User-Agent header and a few other headers. Although only the IP, URL and User-Agent are required, we recommend that you send as many of these fields as possible as they improve the quality of the analytics data.
 
 Don't worry, we don't store the IP address. To find out more, please read the [privacy article](/privacy).
+
+### Client Hints
+
+Client Hints improve the accuracy of the statistics collected for you. Make sure to [forward them](/get-started/client-hints) to our service.

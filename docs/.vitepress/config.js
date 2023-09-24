@@ -43,7 +43,8 @@ export default {
                     {text: "Website Integration", link: "/get-started/frontend-integration"},
                     {text: "Server-side Integration", link: "/get-started/backend-integration"},
                     {text: "Google Analytics Import", link: "/get-started/ga-import"},
-                    {text: "Troubleshooting", link: "/get-started/troubleshooting"}
+                    {text: "Troubleshooting", link: "/get-started/troubleshooting"},
+                    {text: "Client Hints", link: "/get-started/client-hints"}
                 ]
             },
             {
