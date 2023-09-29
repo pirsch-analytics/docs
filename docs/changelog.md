@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.1.4
+
+Release: 2023-09-29
+
+* fixed missing relative visitor calculation for imported referrers
+* updated Pirsch core
+
 ## 2.1.3
 
 Release: 2023-09-29
