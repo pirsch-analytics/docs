@@ -56,7 +56,9 @@
     --vp-c-brand-2: var(--green);
     --vp-c-brand-3: var(--green);
     --vp-c-brand-soft: var(--green-hover);
-    --vp-code-block-bg: var(--grey-800);
+    --vp-code-color: black;
+    --vp-code-bg: var(--grey-200);
+    --vp-code-block-bg: var(--grey-200);
     --docsearch-container-background: rgba(0,0,0,.5);
 
     --vp-custom-block-info-bg: transparent;
@@ -100,6 +102,9 @@
     --vp-c-divider: var(--grey-600);
     --vp-c-mute: var(--grey-800);
     --vp-c-gray: var(--grey-500);
+    --vp-code-color: white;
+    --vp-code-bg: var(--grey-800);
+    --vp-code-block-bg: var(--grey-800);
     --docsearch-primary-color: var(--grey-400);
     --docsearch-logo-color: var(--grey-400);
 }
