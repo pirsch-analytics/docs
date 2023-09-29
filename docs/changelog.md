@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.1.3
+
+Release: 2023-09-29
+
+* improved merging imported statistics with data from Pirsch
+* updated website privacy policy
+* updated dependencies
+
 ## 2.1.2
 
 Release: 2023-09-22
