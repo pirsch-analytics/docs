@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.1.5
+
+Release: 2023-09-30
+
+* fixed grouping and sorting imported referrers with data from Pirsch
+
 ## 2.1.4
 
 Release: 2023-09-29
