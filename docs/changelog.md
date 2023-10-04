@@ -2,9 +2,13 @@
 
 ## 2.1.6
 
-Release: unreleased
+Release: 2023-10-04
 
 * improved identification code not found error message
+* create page view when event is fired on a page that's different from the last page visited
+* update page views for session when event is fired on a page that's different from the last page visited
+* fixed missing page view when event creates a session
+* updated dependencies
 
 ## 2.1.5
 
