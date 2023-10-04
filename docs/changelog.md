@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.1.6
+
+Release: unreleased
+
+* improved identification code not found error message
+
 ## 2.1.5
 
 Release: 2023-09-30
