@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.1.7
+
+Release: 2023-10-05
+
+* fixed timezone for session duration and time on page
+
 ## 2.1.6
 
 Release: 2023-10-04
