@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.1.8
+
+Release: unreleased
+
+* added option to email reports to link to private or public dashboard or custom domain
+
 ## 2.1.7
 
 Release: 2023-10-05

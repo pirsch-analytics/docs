@@ -1842,6 +1842,7 @@ This endpoint lists all email reports.
         "domain_id": "0DJ0mo934",
         "email": "...",
         "interval": 2,
+        "link_to": "custom",
         "next_report": "2021-05-22T10:11:12.123456Z"
     },
     // ...
@@ -1853,6 +1854,8 @@ This endpoint lists all email reports.
 
 This endpoint creates a new email report.
 
+`link_to` sets the link to the dashboard within the email report. By default, it will link to the private dashboard (dashboard.pirsch.io). In order for it to link to public dashboards or custom domains, they need to be configured. Otherwise, the report will fall back to the private dashboard.
+
 `POST /api/v1/report`
 
 ::: details EXAMPLE REQUEST
@@ -1860,7 +1863,8 @@ This endpoint creates a new email report.
 {
     "domain_id": "0DJ0mo934",
     "emails": ["member@foo.com", "member@bar.com"],
-    "interval": 1 // weeks
+    "interval": 1, // weeks or 0 for daily
+    "link_to": "dashboard" // empty/dashboard, public, custom
 }
 ```
 :::
@@ -1875,6 +1879,7 @@ This endpoint creates a new email report.
         "domain_id": "0DJ0mo934",
         "email": "...",
         "interval": 1,
+        "link_to": "dashboard",
         "next_report": "2021-05-22T10:11:12.123456Z"
     },
     // ...
@@ -1892,7 +1897,8 @@ This endpoint updates an existing email report.
 ```JSON
 {
     "id": "A5kgYzK14m",
-    "interval": 4 // weeks
+    "interval": 4, // weeks or 0 for daily
+    "link_to": "public" // empty/dashboard, public, custom
 }
 ```
 :::
@@ -1906,6 +1912,7 @@ This endpoint updates an existing email report.
     "domain_id": "0DJ0mo934",
     "email": "...",
     "interval": 4,
+    "link_to": "public",
     "next_report": "2021-05-22T10:11:12.123456Z"
 }
 ```
