@@ -5,6 +5,8 @@
 Release: unreleased
 
 * added option to email reports to link to private or public dashboard or custom domain
+* added relative visitor/page view count and exit/entry rate for imported statistics
+* updated dependencies
 
 ## 2.1.7
 
