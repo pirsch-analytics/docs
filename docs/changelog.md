@@ -2,10 +2,14 @@
 
 ## 2.1.8
 
-Release: unreleased
+Release: 2023-10-09
 
 * added option to email reports to link to private or public dashboard or custom domain
 * added relative visitor/page view count and exit/entry rate for imported statistics
+* optimized loading conversion goals
+* fixed sorting conversion goals by name and path pattern
+* fixed limiting conversion goals
+* fixed dark mode for favicons on public dashboards
 * updated dependencies
 
 ## 2.1.7
