@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.1.9
+
+Release: 2023-10-09
+
+* fixed offset and limit for conversion goals
+
 ## 2.1.8
 
 Release: 2023-10-09
