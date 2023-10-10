@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.1.10
+
+Release: 2023-10-10
+
+* fixed logging out on token refresh if the status code is different from 401
+
 ## 2.1.9
 
 Release: 2023-10-09
