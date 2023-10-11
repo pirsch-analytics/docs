@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.1.11
+
+Release: 2023-10-11
+
+* optimized queries
+
 ## 2.1.10
 
 Release: 2023-10-10
