@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.1.12
+
+Release: 2023-10-16
+
+* fixed saving link target for email reports
+* fixed charts not being shown as clickable for today
+
 ## 2.1.11
 
 Release: 2023-10-11
