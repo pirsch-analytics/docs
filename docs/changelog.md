@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.1.13
+
+Release: unreleased
+
+* fixed charts not being shown as clickable for today
+* fixed reading event pages when filtering for a path and event
+* fixed canonical link
+
 ## 2.1.12
 
 Release: 2023-10-16
