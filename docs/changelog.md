@@ -2,8 +2,9 @@
 
 ## 2.1.13
 
-Release: unreleased
+Release: 2023-10-19
 
+* added number of events to event statistics
 * fixed charts not being shown as clickable for today
 * fixed reading event pages when filtering for a path and event
 * fixed canonical link

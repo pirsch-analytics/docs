@@ -620,6 +620,7 @@ This endpoint lists all events and their metadata keys. You can use the event me
 [
     {
         "name": "event name",
+        "count": 499,
         "visitors": 432,
         "views": 563,
         "cr": 0.065,
@@ -642,6 +643,7 @@ This endpoint breaks down the event meta keys and values for a single event. You
 [
     {
         "name": "event name",
+        "count": 499,
         "visitors": 432,
         "views": 563,
         "cr": 0.065,
