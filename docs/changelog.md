@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.1.14
+
+Release: 2023-10-21
+
+* fixed average session duration calculation with path filter
+* fixed session duration label when filtering for a conversion goal
+
 ## 2.1.13
 
 Release: 2023-10-19
