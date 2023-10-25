@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.1.15
+
+Release: 2023-10-25
+
+* fixed average time on page calculation in certain scenarios
+* fixed events resetting the time the session was last seen
+* updated dependencies
+
 ## 2.1.14
 
 Release: 2023-10-21
