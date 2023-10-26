@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.1.16
+
+Release: unreleased
+
+* increased dashboard request timeout to 30 seconds
+* added request and query cancellation
+* updated dependencies
+
 ## 2.1.15
 
 Release: 2023-10-25
