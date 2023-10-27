@@ -6,6 +6,7 @@ Release: unreleased
 
 * increased dashboard request timeout to 30 seconds
 * added server-side request and query cancellation
+* added sampling
 * fixed axios endless loop if request times out
 * updated dependencies
 
