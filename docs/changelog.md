@@ -2,7 +2,7 @@
 
 ## 2.1.16
 
-Release: unreleased
+Release: 2023-10-28
 
 * increased dashboard request timeout to 30 seconds
 * added server-side request and query cancellation
