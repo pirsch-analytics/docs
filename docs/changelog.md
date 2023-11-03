@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.1.17
+
+Release: unreleased
+
+* improved logging
+
 ## 2.1.16
 
 Release: 2023-10-28
