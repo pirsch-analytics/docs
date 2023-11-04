@@ -2,9 +2,12 @@
 
 ## 2.1.17
 
-Release: unreleased
+Release: 2023-11-04
 
 * improved logging
+* fixed reading event pages with title and sampling
+* fixed errors occurring when casting negative numbers to uint64
+* updated dependencies
 
 ## 2.1.16
 
