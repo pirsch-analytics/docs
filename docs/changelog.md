@@ -1,5 +1,15 @@
 # Changelog
 
+## 2.1.18
+
+Release: 2023-11-09
+
+* added icons for Android WebView, Brave, and Chrome OS
+* improved error logging
+* fixed loading organizations when accepting an invitation
+* fixed permissions on organization page
+* updated dependencies
+
 ## 2.1.17
 
 Release: 2023-11-04
