@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.1.19
+
+Release: 2023-11-11
+
+* fixed null pointer when sorting conversion goals
+* improved error logging
+
 ## 2.1.18
 
 Release: 2023-11-09
