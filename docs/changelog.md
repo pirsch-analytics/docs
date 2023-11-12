@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.1.20
+
+Release: 2023-11-12
+
+* added reading usage to API (statistics scope)
+* fixed missing deleted page views for total usage metric
+
 ## 2.1.19
 
 Release: 2023-11-11

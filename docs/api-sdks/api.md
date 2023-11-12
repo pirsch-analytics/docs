@@ -2553,3 +2553,30 @@ This endpoint starts the import after connecting the dashboard to your Google ac
 }
 ```
 :::
+
+## Billing
+
+### Usage
+
+This endpoint returns the total usage for a selected period or the current billing cycle, including page views for deleted domains. `from` and `to` are optional and can be left blank, in which case the current billing cycle will be used.
+
+If there are more than 50 dashboards on an account, this endpoint will return only one result called *All*.
+
+API clients require the scope *statistics* to use this endpoint.
+
+`GET /api/v1/billing?from=2023-11-01&to=2023-11-12`
+
+::: details EXAMPLE RESPONSE
+```JSON
+[
+    {
+        "domain": {
+            "id": "Jk49fgm38",
+            // ...
+        },
+        "page_views": 42
+    },
+    // ...
+]
+```
+:::
