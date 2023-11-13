@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.1.21
+
+Release: 2023-11-13
+
+* improved error logging
+
 ## 2.1.20
 
 Release: 2023-11-12
