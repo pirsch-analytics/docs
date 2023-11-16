@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.1.22
+
+Release: 2023-11-16
+
+* fixed exit rate calculation
+
 ## 2.1.21
 
 Release: 2023-11-13
