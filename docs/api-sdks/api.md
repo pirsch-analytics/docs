@@ -1277,6 +1277,20 @@ This endpoint sets one of your domains as a favorite. This requires a user clien
 ```
 :::
 
+### Pinning a Domain
+
+This endpoint pins a domain. This requires a user client.
+
+`POST /api/v1/user/pin`
+
+::: details EXAMPLE REQUEST
+```JSON
+{
+    "id": "A5kgYzK14m"
+}
+```
+:::
+
 ### Showing Active Visitors in the Page Title
 
 This endpoint toggles whether or not to display active visitors in the page title (tab).
@@ -1724,7 +1738,10 @@ This endpoint lists all clients.
         "scope_event": "w",
         "scope_session": "w",
         "scope_statistics": "r",
-        "scope_domains": "w"
+        "scope_domains": "w",
+        "scope_organizations": "w",
+	    "scope_themes": "w",
+	    "scope_billing": "r"
     },
     // ...
 ]
@@ -1747,7 +1764,10 @@ This endpoint creates a new client.
     "scope_event": "w",
     "scope_session": "w",
     "scope_statistics": "r",
-    "scope_domains": "w"
+    "scope_domains": "w",
+    "scope_organizations": "w",
+    "scope_themes": "w",
+    "scope_billing": "r"
 }
 ```
 :::
@@ -1782,7 +1802,10 @@ The `domains` scope has two different meanings, depending on whether it's used f
     "scope_event": "w",
     "scope_session": "w",
     "scope_statistics": "r",
-    "scope_domains": "w"
+    "scope_domains": "w",
+    "scope_organizations": "w",
+    "scope_themes": "w",
+    "scope_billing": "r"
 }
 ```
 :::
@@ -1815,7 +1838,10 @@ This endpoint updates the description for a client.
     "scope_event": "w",
     "scope_session": "w",
     "scope_statistics": "r",
-    "scope_domains": "w"
+    "scope_domains": "w",
+    "scope_organizations": "w",
+    "scope_themes": "w",
+    "scope_billing": "r"
 }
 ```
 :::

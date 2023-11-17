@@ -1,5 +1,16 @@
 # Changelog
 
+## 2.1.23
+
+Release: unreleased
+
+* added new client scope for billing endpoints
+* added search to domain and organization overview
+* added missing access check to set favorite dashboard
+* added pinning dashboards to the overview and list
+* added setting favorite to overview
+* added cleaning up views when an organization member is removed and loses access to a dashboard
+
 ## 2.1.22
 
 Release: 2023-11-16
