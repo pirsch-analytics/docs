@@ -37,6 +37,22 @@ Once you have configured the additional domain, you can send statistics from **e
 
 To send statistics to more than one additional dashboard, you can comma-separate the list, e.g. `data-domain="rollup.example.com,my-website.com"`.
 
+### Changing the Path
+
+Like any other Pirsch dashboard, rollup views group pages by path. This means that if you have duplicate paths on multiple domains, they will appear as the same page. To change this, you can add different prefixes to the path for each domain using the `data-path-prefix` attribute. Here is an example.
+
+```html
+<script defer type="text/javascript" src="https://api.pirsch.io/pirsch.js" 
+    id="pirschjs" 
+    data-code="example-com-identification-code-here"
+    data-domain="first.example.com,second.example.com"
+    data-path-prefix="/one,/two"></script>
+```
+
+If you now visit `example.com/foo`, the path send to `example.com` will be `/foo`. For `first.example.com` it will be `/one/foo` and for `second.example.com` it will be `/two/foo`.
+
+If you have fewer prefixes than rollup domains, the last one is used for subsequent requests. Having only `/one` in the example above would result in both rollup views receiving `/one/foo`.
+
 ## Using the Server-Side Integration
 
 Rollup views and additional domains can also be used via server-side integration. You'll need a [client](/api-sdks/api#creating-a-client) to make the same requests as above from your server.

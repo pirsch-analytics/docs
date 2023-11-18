@@ -10,6 +10,9 @@ Release: unreleased
 * added pinning dashboards to the overview and list
 * added setting favorite to overview
 * added cleaning up views when an organization member is removed and loses access to a dashboard
+* added new parameter to rewrite the URL path in the scripts
+* fixed rewrite for Pirsch Plus custom domain script endpoints
+* updated dependencies
 
 ## 2.1.22
 
