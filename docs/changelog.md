@@ -2,7 +2,7 @@
 
 ## 2.1.23
 
-Release: unreleased
+Release: 2023-11-19
 
 * added new client scope for billing endpoints
 * added search to domain and organization overview
@@ -11,7 +11,11 @@ Release: unreleased
 * added setting favorite to overview
 * added cleaning up views when an organization member is removed and loses access to a dashboard
 * added new parameter to rewrite the URL path in the scripts
+* added showing banner when last payment failed
+* added detection for Arc
+* added Arc and Samsung Internet browser icons
 * fixed rewrite for Pirsch Plus custom domain script endpoints
+* fixed domain created banner
 * updated dependencies
 
 ## 2.1.22
