@@ -53,6 +53,10 @@ If you now visit `example.com/foo`, the path send to `example.com` will be `/foo
 
 If you have fewer prefixes than rollup domains, the last one is used for subsequent requests. Having only `/one` in the example above would result in both rollup views receiving `/one/foo`.
 
+## Referrer
+
+Referrers for additional domains will not be counted. If you have set up a domain `foo.com` as an additional domain for `bar.com`, switching from `foo.com` to `bar.com` will ignore the domain as a referrer. The other way around, it will still be tracked.
+
 ## Using the Server-Side Integration
 
 Rollup views and additional domains can also be used via server-side integration. You'll need a [client](/api-sdks/api#creating-a-client) to make the same requests as above from your server.
