@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.1.24
+
+Release: 2023-11-21
+
+* fixed client creation
+
 ## 2.1.23
 
 Release: 2023-11-19
