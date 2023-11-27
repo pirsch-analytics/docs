@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.1.25
+
+Release: 2023-11-27
+
+* fixed very rare nil pointer
+* improved search field styling
+* updated dependencies
+
 ## 2.1.24
 
 Release: 2023-11-21
