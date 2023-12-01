@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.1.26
+
+Release: 2023-12-01
+
+* fixed time on page when using filters
+* updated dependencies
+
 ## 2.1.25
 
 Release: 2023-11-27
