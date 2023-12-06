@@ -12,7 +12,7 @@ In addition, there is no way to reliably extract this data. A header containing 
 
 The real solution is to host a [proxy](/advanced/proxy) yourself or use a [Cloudflare worker](/advanced/cf-workers) (free).
 
-**But competitors X and Y have this!
+**But competitors X and Y have this!**
 
 Yes, but they are vulnerable to IP spoofing. We checked.
 
