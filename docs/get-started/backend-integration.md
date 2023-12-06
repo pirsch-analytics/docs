@@ -19,7 +19,7 @@ First, you need to create an **access key** or **client ID and secret**. We reco
 3. Select **Access Key**, enter a description and click **Create Client** ![Client Creation](../static/get-started/backend-create-client.png)
 4. This will open a new dialogue with the secret. Copy and save it in a safe place ![Client ID and Secret](../static/get-started/backend-access-key.png)
 
-## Monitoring Traffic
+## Tracking Traffic
 
 The example below shows how to make the API requests needed to get an access token and send a page request. This should be sufficient for most websites. For a full reference, see the [API](/api-sdks/api) documentation. We also offer a range of [SDKs](/api-sdks/sdks) to help you with the integration.
 
