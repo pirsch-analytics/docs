@@ -1,5 +1,14 @@
 # Changelog
 
+## 2.1.27
+
+Release: 2023-12-09
+
+* sorted Google Search Console and Google Analytics domain selection lists
+* fixed dashboard redirects for other languages
+* fixed clearing filter when the selected period contains imported statistics
+* updated dependencies
+
 ## 2.1.26
 
 Release: 2023-12-01
