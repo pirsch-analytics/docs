@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.1.28
+
+Release: 2023-12-11
+
+* fixed deleting accounts with organization invitations
+
 ## 2.1.27
 
 Release: 2023-12-09
