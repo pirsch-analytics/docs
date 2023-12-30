@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.1.29
+
+Release: 2023-12-30
+
+* updated dependencies
+
 ## 2.1.28
 
 Release: 2023-12-11
