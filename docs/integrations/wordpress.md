@@ -10,7 +10,7 @@ The plugin is triggered on every page visit. Some caching plugins may block it f
 
 To install the plugin, go to the Plugins page in your WordPress admin dashboard and click on **Install** next to the title. Search for "Pirsch Analytics" and click **Install** for the plugin. Once installed, click **Activate** and navigate to **Tools** -> **Pirsch Analytics** from the left hand menu. This will take you to the settings page.
 
-![WordPress Plugin](../static/integrations/wordpress.png)
+![WordPress Plugin](../static/integrations/wp/wordpress.png)
 
 Enter the hostname you used to set up the website on the Pirsch dashboard and the client ID and/or secret. You can create new clients for your website in the [Settings page](/get-started/backend-integration#creating-a-client). We recommend that you use an **Access Token** instead of an oAuth client, as this avoids unnecessary roundtrips.
 
