@@ -53,6 +53,8 @@ If you now visit `example.com/foo`, the path send to `example.com` will be `/foo
 
 If you have fewer prefixes than rollup domains, the last one is used for subsequent requests. Having only `/one` in the example above would result in both rollup views receiving `/one/foo`.
 
+If no `data-domain` attribute is present, `data-path-prefix` will change the path for the current domain. In the example above this would mean only `example.com` would receive the page view with the path changed to `/one/foo`.
+
 ## Referrer
 
 Referrers for additional domains will not be counted. If you have set up a domain `foo.com` as an additional domain for `bar.com`, switching from `foo.com` to `bar.com` will ignore the domain as a referrer. The other way around, it will still be tracked.

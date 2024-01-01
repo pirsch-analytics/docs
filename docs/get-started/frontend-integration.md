@@ -1,6 +1,6 @@
 # Website Integration
 
-Our JavaScript snippet is the easiest way to integrate pirsch into your website. If you don't want to load JavaScript on your website, have a look at our [server-side integration](/get-started/backend-integration) and [custom domains](/advanced/custom-domains).
+Our JavaScript snippet is the easiest way to integrate Pirsch into your website. If you don't want to load JavaScript on your website, have a look at our [server-side integration](/get-started/backend-integration) and [custom domains](/advanced/custom-domains).
 
 ::: info
 Looking for code? Check out our [demo repository](https://github.com/pirsch-analytics/demo) on GitHub!
@@ -32,10 +32,10 @@ Client Hints improve the accuracy of the statistics collected for you. Make sure
 
 There are currently four scripts, each with a different purpose.
 
-* pirsch-extended.js is the full integration and combines all the other scripts. It automatically tracks outbound link clicks, file downloads, and allows tracking of custom events through HTML, CSS, and JavaScript.
-* pirsch.js is the basic integration and **only** tracks page views.
-* pirsch-events.js tracks **only** programmatic events through JavaScript. This is usually combined with `pirsch.js` so that you have two very lightweight scripts on your site.
-* pirsch-sessions.js automatically renews sessions. This can be useful for long running sessions without page switching.
+* `pirsch-extended.js` is the full integration and combines all the other scripts. It automatically tracks outbound link clicks, file downloads, and allows tracking of custom events through HTML, CSS, and JavaScript.
+* `pirsch.js` is the basic integration and **only** tracks page views.
+* `pirsch-events.js` tracks **only** programmatic events through JavaScript. This is usually combined with `pirsch.js` so that you have two very lightweight scripts on your site.
+* `pirsch-sessions.js` automatically renews sessions. This can be useful for long running sessions without page switching.
 
 ## Testing the Integration
 
@@ -79,6 +79,21 @@ Here is an example:
     data-code="YOUR_IDENTIFICATION_CODE"
     data-disable-query></script>
 ```
+
+## Adding a Path Prefix
+
+It's possible to alter the page path. For example, setting the `data-path-prefix` on the script to `/blog` and visiting your website on `/article/1` would be displayed as `/blog/article/1` on the dashboard.
+
+Here is how that would look like for the script:
+
+```html
+<script defer type="text/javascript" src="https://api.pirsch.io/pirsch.js" 
+    id="pirschjs" 
+    data-code="YOUR_IDENTIFICATION_CODE"
+    data-path-prefix="/blog"></script>
+```
+
+Please not that the `data-path-prefix` attribute interacts with the `data-domain` attribute used to create [rollup views](/advanced/domains-rollup.md).
 
 ## Ignoring Your Own Page Views
 

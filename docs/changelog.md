@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.1.30
+
+Release: 2024-01-01
+
+* use `data-path-prefix` to change path if `data-domain` is not present
+* fixed last month period in January
+* fixed resetting session between primary and additional domains
+
 ## 2.1.29
 
 Release: 2023-12-30
