@@ -25,7 +25,7 @@ Navigate to the settings page on the dashboard and select the **Integration** ta
 ```HTML
 <script defer type="text/javascript" src="https://api.pirsch.io/pirsch-events.js"
     id="pirscheventsjs"
-    data-code="5gXQXdNTvteM4eVY35fNBkcU5CbStFSq"></script>
+    data-code="IDENTIFICATION_CODE"></script>
 ```
 
 The `data-code` is the identification code for your domain. If you reset it, you also need to replace it in the snippet.
@@ -144,6 +144,10 @@ Here is an example of how you can use events to track form submissions. Note tha
 ```
 
 The script adds an event listener to the form. When it is submitted, an event is sent to Pirsch, including the message entered by the user as metadata.
+
+### More Examples
+
+We have a demo repository on [GitHub](https://github.com/pirsch-analytics/demo) that shows different ways to integrate and use Pirsch. It also includes more advanced examples, such as tracking the play time of Vimeo and YouTube videos.
 
 ## Sending Events From Your Backend
 
