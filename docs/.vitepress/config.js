@@ -41,23 +41,24 @@ export default {
                 text: "Getting Started",
                 items: [
                     {text: "Website Integration", link: "/get-started/frontend-integration"},
-                    {text: "Server-side Integration", link: "/get-started/backend-integration"},
+                    {text: "Server-Side Integration", link: "/get-started/backend-integration"},
+                    {text: "Client Hints", link: "/get-started/client-hints"},
                     {text: "Google Analytics Import", link: "/get-started/ga-import"},
-                    {text: "Troubleshooting", link: "/get-started/troubleshooting"},
-                    {text: "Client Hints", link: "/get-started/client-hints"}
+                    {text: "Troubleshooting", link: "/get-started/troubleshooting"}
                 ]
             },
             {
                 text: "Integrations",
                 items: [
+                    {text: "Caddy", link: "/integrations/caddy"},
+                    {text: "Docusaurus", link: "/integrations/docusaurus"},
+                    {text: "Framer", link: "/integrations/framer"},
+                    {text: "Gatsby", link: "/integrations/gatsby"},
                     {text: "Google Search Console", link: "/integrations/search-console"},
                     {text: "Google Tag Manager", link: "/integrations/tag-manager"},
-                    {text: "WordPress", link: "/integrations/wordpress"},
                     {text: "Laravel", link: "/integrations/laravel"},
-                    {text: "Caddy", link: "/integrations/caddy"},
-                    {text: "Gatsby", link: "/integrations/gatsby"},
                     {text: "Webflow", link: "/integrations/webflow"},
-                    {text: "Docusaurus", link: "/integrations/docusaurus"}
+                    {text: "WordPress", link: "/integrations/wordpress"}
                 ]
             },
             {

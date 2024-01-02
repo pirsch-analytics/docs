@@ -1,6 +1,6 @@
 # Webflow
 
-Pirsch can be easily integrated into Webflow in just a few minutes. In this article, you'll learn how to set it up and how to track events using custom attributes.
+Pirsch can easily be integrated into Webflow in just a few minutes. In this article, you'll learn how to set it up and how to track events using custom attributes.
 
 ::: info
 If you have a Webflow site with a template that has "e-commerce" features, even if not used, Pirsch may not work.
@@ -18,9 +18,9 @@ This is how the page looks in the Designer.
 
 ## Adding a Script to Webflow
 
-Before we can integrate Pirsch with Webflow, you will need to set up a dashboard on Pirsch. If you're testing your Webflow site, please use the test domain (`something.webflow.io`). If you're using a custom domain, use that instead. The domain on the Pirsch dashboard must match your Webflow domain. You can also use [additional domains](/advanced/domains-rollup.md) to set up both at the same time.
+Before we can integrate Pirsch with Webflow, you will need to set up a dashboard on Pirsch. If you're testing your Webflow site, please use the test domain (`something.webflow.io`). If you're using a custom domain, use that instead. The domain on the Pirsch dashboard must match your Webflow domain. You can also use [additional domains](/advanced/domains-rollup.md) to set up both at the same time. The domain can later be changed in the settings if needed.
 
-Once the dashboard has been created, copy your personal code snippet from the [integration settings](https://dashboard.pirsch.io/settings/integration) or select it from the confirmation page. We recommend the advanced script to enable all features, including event tracking.
+Once the dashboard has been created, copy your personal code snippet from the [integration settings](https://dashboard.pirsch.io/settings/integration) or select it from the confirmation page. We recommend the extended script to enable all features, including event tracking.
 
 In your Webflow project, go to **Site settings** > **Custom code**. You can open it from the dashboard (three dots) or from the top left menu.
 
@@ -50,7 +50,7 @@ Click the Settings tab on the right and open the **Custom attributes** section.
 
 Click the **+** sign to add an attribute for the event name, and additional metadata attributes if needed. The event name must always be present, the metadata fields are optional. In this example we set the `pirsch-event` name to `Visit Pirsch Button` and add a meta data attribute with the name `type` and the value `primary`. Meta data attributes must have the prefix `pirsch-meta-`.
 
-And that's it! Clicking the button on the page after publishing the changes will now fire an event. For more advanced use cases, see the [events article](/advanced/events.md).
+And that's it! After publishing the changes, clicking the button on the page after publishing the changes will now fire an event. For more advanced use cases, see the [events article](/advanced/events.md).
 
 ## Analyzing the Traffic
 
@@ -76,7 +76,7 @@ Here is an enlarged view of the network tab.
 
 ![Webflow Integration Test](/static/integrations/webflow/webflow-demo-network.png)
 
-The first request loads the script. The second one tracks the page view. The last one is only displayed when you click on the button. All of them should show a status code of 200. If you select one, you can see the request and response data. For the event, this will be what you configured in the designer.
+The first request loads the script. The second one tracks the page view. The last one is only displayed when you click on the button. All of them should show a status code of 200. If you select one, you can see the request and response data. For the event, this will be what you configured in the Designer.
 
 ## Troubleshooting
 

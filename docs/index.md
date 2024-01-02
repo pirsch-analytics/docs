@@ -13,4 +13,4 @@ Here are some places to get you started quickly:
 
 If you have any questions or find incorrect or outdated documentation, you can contact us by [email](mailto:support@pirsch.io), on Twitter [@PirschAnalytics](https://twitter.com/PirschAnalytics), or on [Mastodon](https://social.anoxinon.de/@pirsch).
 
-This documentation is [open-source](https://github.com/pirsch-analytics/docs) and built with [VitePress](https://vitepress.vuejs.org/guide/getting-started).
+This documentation is [open-source](https://github.com/pirsch-analytics/docs) and built with [VitePress](https://vitepress.dev/).
