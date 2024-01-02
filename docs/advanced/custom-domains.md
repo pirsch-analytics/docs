@@ -51,11 +51,13 @@ If you have configured a custom domain, the script snippets on the **Integration
 
 ![Custom Domain Snippets](../static/advanced/custom-domain-snippets.png)
 
-The names of the files are truncated to avoid being blocked by ad blockers.
+The files can now be served from your own domain. The names are truncated to avoid being blocked by ad blockers.
 
 * `pirsch.js` is shortened to `p.js`
 * `pirsch-events.js` is shortened to `e.js`
 * `pirsch-sessions.js` is shortened to `s.js`
 * `pirsch-extended.js` is shortened to `ext.js`
 
-You don't need to update your existing integration, both the regular scripts and the ones on your own domain will work. However, we recommend using your own to get around ad blockers.
+Additionally, the script now uses different endpoints (`data-hit-endpoint`, `data-event-endpoint`, `data-session-endpoint`) so that requests aren't made directly to `pirsch.io`.
+
+The regular snippet without the custom domain will still work. However, to use your custom domain, replace your existing snippet integration with the updated one.

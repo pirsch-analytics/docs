@@ -4,6 +4,8 @@ Proxies are a more advanced setup and require you to install software. We recomm
 
 For rewrites/redirects of the scripts, read [this](/faq#can-i-use-vercel-rewrites-redirects-to-proxy-the-scripts).
 
+As an alternative to using a proxy, you can set up a [custom domain](/advanced/custom-domains.md) with a Pirsch Plus subscription.
+
 ## What Is a Proxy and Why Should You Use It
 
 A proxy is self-hosted middleware that allows you to serve the Pirsch JavaScript snippets from your own domain.

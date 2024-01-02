@@ -124,6 +124,10 @@ Your site is identified by the host name from which the request is made and an i
     data-code="YOUR_IDENTIFICATION_CODE"></script>
 ```
 
+## Custom Domains
+
+It's possible to serve the Pirsch scripts from your own domain. You can learn how to do this [here](/advanced/custom-domains.md).
+
 ## Privacy Policy
 
 If required in your country, you can use our [template](/privacy#privacy-policy-template) to add a paragraph to your privacy policy about the use of Pirsch.
