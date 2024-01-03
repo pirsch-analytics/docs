@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.2.0
+
+Release: unreleased
+
+* added an event metadata limit of 30 key-value pairs
+* added an event metadata key length limit of 100
+* added an event metadata value length limit of 2000
+
 ## 2.1.30
 
 Release: 2024-01-01
