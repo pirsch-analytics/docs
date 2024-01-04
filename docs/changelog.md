@@ -1073,7 +1073,7 @@ Release: 2022-06-19
 
 * translated website to German
 * fixed dashboard button still being displayed on website after redirect to login
-* fixed event meta data table not updating when changing filter or key does not exist
+* fixed event metadata table not updating when changing filter or key does not exist
 * updated dependencies
 
 ## 1.15.8

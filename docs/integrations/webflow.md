@@ -48,7 +48,7 @@ Click the Settings tab on the right and open the **Custom attributes** section.
 
 ![Webflow Custom Attributes Details](/static/integrations/webflow/webflow-custom-attributes-small.png)
 
-Click the **+** sign to add an attribute for the event name, and additional metadata attributes if needed. The event name must always be present, the metadata fields are optional. In this example we set the `pirsch-event` name to `Visit Pirsch Button` and add a meta data attribute with the name `type` and the value `primary`. Meta data attributes must have the prefix `pirsch-meta-`.
+Click the **+** sign to add an attribute for the event name, and additional metadata attributes if needed. The event name must always be present, the metadata fields are optional. In this example we set the `pirsch-event` name to `Visit Pirsch Button` and add a metadata attribute with the name `type` and the value `primary`. Metadata attributes must have the prefix `pirsch-meta-`.
 
 And that's it! After publishing the changes, clicking the button on the page after publishing the changes will now fire an event. For more advanced use cases, see the [events article](/advanced/events.md).
 

@@ -4,7 +4,7 @@
 Themes are a Pirsch Plus feature.
 :::
 
-The dashboard is completely customizable. You can change the colors, border radius, meta data, logo, and more to white label Pirsch and make it your own.
+The dashboard is completely customizable. You can change the colors, border radius, metadata, logo, and more to white label Pirsch and make it your own.
 
 To create a theme, navigate to the settings page from the user menu in the top right corner. It's also possible to create a theme for an organization(/advanced/access#organizations). Themes can be shared across multiple dashboards and are visible on [Custom Domains](/advanced/custom-domains).
 
@@ -16,7 +16,7 @@ To create a theme, click **Add Theme** on the theme settings page or the organiz
 
 Colors, border radius, and logos can be set individually for the light and dark modes of the dashboard. When you open the dialog, the default or base theme colors are displayed. To change a color, click on the box of each color and select one. You can also insert a RGB hex code. Clicking the cross will reset the color to the default.
 
-The logos are displayed instead of the Pirsch logo in the upper left corner. The favicon is displayed in the browser tab. The meta data is rendered in the HTML of the dashboard. This is only visible when sharing a link to a (public) dashboard on social media.
+The logos are displayed instead of the Pirsch logo in the upper left corner. The favicon is displayed in the browser tab. The metadata is rendered in the HTML of the dashboard. This is only visible when sharing a link to a (public) dashboard on social media.
 
 ## Copying and Sharing a Theme
 
