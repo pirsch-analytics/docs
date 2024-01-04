@@ -4,7 +4,7 @@
 
 Release: unreleased
 
-* added an event metadata limit of 30 key-value pairs
+* added an event metadata limit of 20 key-value pairs
 * added an event metadata key length limit of 100
 * added an event metadata value length limit of 2000
 
