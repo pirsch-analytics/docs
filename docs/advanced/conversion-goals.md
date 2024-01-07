@@ -28,9 +28,16 @@ The pattern is used to filter for a single page or a group of pages. You can use
 | `/blog/*/first` | Matches all pages below `/blog` that end with `/first` with one part in between, like `/blog/article/first`, but not `/blog/page/first` or `/blog/some/page/first`. |
 | `/blog/**/first` | Matches all pages below `/blog` that end with `/first` with one or more parts in between, like `/blog/article/first` or `/blog/some/page/first`, but not `/blog/some/page/second`. |
 
-Using the advanced options allow you to define a custom regular expression and test it. You can use a tool like [regex101.com](https://regex101.com/) to test multiple paths instead of using the build-in field.
+Using the advanced options allow you to define a custom regular expression and test it. You can use a tool like [regex101.com](https://regex101.com/) to test multiple paths instead of using the build-in field. Just make sure to select *Golang* and *Match* on the left.
 
 ![Advanced Options](../static/advanced/goal-advanced.png)
+
+Here are a few examples:
+
+| Pattern | Description |
+| - | - |
+| `^\/fr.*$` | Matches all paths starting with `/fr`. |
+| `^\/([^f]\|f($\|[^r]\|r[^\/])\|\/?$).*\|^([^\/]+)` | Matches all paths **not** starting with `/fr`. |
 
 ### Tracking Events
 
