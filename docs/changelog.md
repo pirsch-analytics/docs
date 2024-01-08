@@ -7,6 +7,15 @@ Release: unreleased
 * added an event metadata limit of 20 key-value pairs
 * added an event metadata key length limit of 100
 * added an event metadata value length limit of 2000
+* added tags for segmentation (max. 20, 50 character keys and 50 character values)
+* updated dependencies
+
+## 2.1.31
+
+Release: 2024-01-08
+
+* improved User-Agent filter
+* fixed relative bounce rate calculation in email reports
 
 ## 2.1.30
 
