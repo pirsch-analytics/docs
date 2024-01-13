@@ -8,6 +8,9 @@ Release: unreleased
 * added an event metadata key length limit of 100
 * added an event metadata value length limit of 2000
 * added tags for segmentation (max. 20, 50 character keys and 50 character values)
+* added sorting conversion goals alphabetically for equal numbers
+* added icon for the Whale browser
+* added domain ID to client settings to make it easier to copy
 * updated dependencies
 
 ## 2.1.31
