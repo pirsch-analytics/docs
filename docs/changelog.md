@@ -11,6 +11,7 @@ Release: unreleased
 * added sorting conversion goals alphabetically for equal numbers
 * added icon for the Whale browser
 * added domain ID to client settings to make it easier to copy
+* added display name for dashboards
 * updated dependencies
 
 ## 2.1.31
