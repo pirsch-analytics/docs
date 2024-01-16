@@ -14,6 +14,12 @@ Release: unreleased
 * added display name for dashboards
 * updated dependencies
 
+## 2.1.32
+
+Release: 2024-01-16
+
+* added Discourse integration
+
 ## 2.1.31
 
 Release: 2024-01-08
