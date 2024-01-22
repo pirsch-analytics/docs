@@ -82,6 +82,6 @@ Filtering for the conversion goal on the dashboard will show two new graphs: the
 
 The graphs show the average purchase amount and total revenue over time. Of course, you could use a different metric, so how you interpret the graphs depends on your use case.
 
-### Receive a Notification When the Goal Is Reached
+## Receive a Notification When the Goal Is Reached
 
 The visitor, CR, custom metric total, and custom metric average targets are optional. If you leave them empty, the goal will measure the number of visitors and conversion rate indefinitely. To automatically delete the goal and receive a notification once it's reached, toggle the two checkboxes that will appear when you set one of the fields. If you don't automatically delete the goal, the notification will only be sent once, but you can reactivate it by editing the goal and selecting the checkbox again.
