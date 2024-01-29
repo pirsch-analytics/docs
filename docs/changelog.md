@@ -12,6 +12,7 @@ Release: unreleased
 * added icon for the Whale browser
 * added domain ID to client settings to make it easier to copy
 * added display name for dashboards
+* removed `type="text/javascript"` from scripts
 * updated dependencies
 
 ## 2.1.32

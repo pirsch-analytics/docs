@@ -13,7 +13,7 @@ A single session extension is counted as 10% of a page view and therefore counts
 To extend sessions from the browser, add the `pirsch-sessions.js` snippet to your website and adjust the identification code.
 
 ```html
-<script defer type="text/javascript" src="https://api.pirsch.io/pirsch-sessions.js"
+<script defer src="https://api.pirsch.io/pirsch-sessions.js"
     id="pirschsessionsjs"
     data-code="YOUR_IDENTIFICATION_CODE"></script>
 ```
@@ -23,7 +23,7 @@ This will automatically send a ping to Pirsch every 60 seconds. If you want to c
 Alternatively, you can also use the `pirsch-extended.js` and enable it by including the `data-enable-sessions` attribute.
 
 ```html
-<script defer type="text/javascript" src="https://api.pirsch.io/pirsch-extended.js"
+<script defer src="https://api.pirsch.io/pirsch-extended.js"
     id="pirschextendedjs"
     data-code="YOUR_IDENTIFICATION_CODE"
     data-enable-sessions></script>

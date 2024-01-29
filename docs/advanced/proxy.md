@@ -17,9 +17,7 @@ Additionally, you can create rollup views and send data to multiple dashboards w
 Here is an example of a JS snippet that uses your proxy. The integration for the event script is similar:
 
 ```html
-<script defer type="text/javascript"
-    src="/pirsch/pirsch.min.js"
-    id="pirschjs"></script>
+<script defer src="/pirsch/pirsch.min.js" id="pirschjs"></script>
 ```
 
 As you can see, it loads the script from your own domain, using a relative path (`/pirsch/pirsch.min.js`). Page views will be sent to your own domain (on `/pirsch/hit`) and then forwarded to your Pirsch dashboard.

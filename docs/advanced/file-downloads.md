@@ -13,7 +13,7 @@ Tracking file downloads requires adding the `pirsch-extended.js` script to your 
 Navigate to the settings page on the dashboard and select the **Integration** tab. Copy the code snippet for your domain and add it to the `head` section of each page you want to track file downloads on. Here is a simple example on what it will look like. You can use the advanced options on the settings page to customize the snippet.
 
 ```html
-<script defer type="text/javascript" src="https://api.pirsch.io/pirsch-extended.js"
+<script defer src="https://api.pirsch.io/pirsch-extended.js"
     id="pirschextendedjs"
     data-code="zddEQ4e6QGDno9GCe6dofGgWARPEyJWt"></script>
 ```
@@ -23,7 +23,7 @@ The script will also track outbound links by default. If you don't want this beh
 A lot of file formats will be tracked by default, but you can extend it by adding the `data-download-extensions` parameter. Here is an example on how you would add `.tar` and `.ttf` files.
 
 ```html
-<script defer type="text/javascript" src="https://api.pirsch.io/pirsch-extended.js"
+<script defer src="https://api.pirsch.io/pirsch-extended.js"
     id="pirschextendedjs"
     data-code="zddEQ4e6QGDno9GCe6dofGgWARPEyJWt"
     data-download-extensions="tar,ttf"></script>

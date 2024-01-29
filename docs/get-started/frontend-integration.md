@@ -46,7 +46,7 @@ Please refer to the [troubleshooting article](/get-started/troubleshooting).
 The snippet provides a very flexible way to include or exclude pages. You can exclude one or more pages by specifying the `data-exclude` attribute. The content is a list of regular expressions used to filter pages.
 
 ```html
-<script defer type="text/javascript" src="https://api.pirsch.io/pirsch.js" 
+<script defer src="https://api.pirsch.io/pirsch.js" 
     id="pirschjs" 
     data-code="YOUR_IDENTIFICATION_CODE"
     data-exclude="\/exact\/match,\/exclude\/page\/(en|de)\/.*"></script>
@@ -74,7 +74,7 @@ It's possible to enable or disable certain features of the scripts. To enable or
 Here is an example:
 
 ```html
-<script defer type="text/javascript" src="https://api.pirsch.io/pirsch.js" 
+<script defer src="https://api.pirsch.io/pirsch.js" 
     id="pirschjs" 
     data-code="YOUR_IDENTIFICATION_CODE"
     data-disable-query></script>
@@ -87,7 +87,7 @@ It's possible to alter the page path. For example, setting the `data-path-prefix
 Here is how that would look like for the script:
 
 ```html
-<script defer type="text/javascript" src="https://api.pirsch.io/pirsch.js" 
+<script defer src="https://api.pirsch.io/pirsch.js" 
     id="pirschjs" 
     data-code="YOUR_IDENTIFICATION_CODE"
     data-path-prefix="/blog"></script>
@@ -106,7 +106,7 @@ For the latter option, open the developer tools (usually F12 or `Ctrl + Shift + 
 The scripts will ignore any requests made on localhost. If you want to override this behavior, e.g. for testing, you can add the `data-dev` attribute. The host names must match. If you are testing on localhost, rewrite the hostname with the `data-dev' attribute like this
 
 ```html
-<script defer type="text/javascript" src="https://api.pirsch.io/pirsch.js" 
+<script defer src="https://api.pirsch.io/pirsch.js" 
     id="pirschjs" 
     data-code="YOUR_IDENTIFICATION_CODE"
     data-dev="example.com"></script>
@@ -119,7 +119,7 @@ In this case, the hostname you've configured on the Dashboard is `example.com`. 
 Your site is identified by the host name from which the request is made and an identification code. The identification code must be placed inside the JavaScript snippet. If you ever need to recreate the code, go to the Settings page for your site and generate a new one. You'll then need to replace the old code.
 
 ```html
-<script defer type="text/javascript" src="https://api.pirsch.io/pirsch.js" 
+<script defer src="https://api.pirsch.io/pirsch.js" 
     id="pirschjs" 
     data-code="YOUR_IDENTIFICATION_CODE"></script>
 ```

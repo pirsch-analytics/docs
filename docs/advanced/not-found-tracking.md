@@ -13,7 +13,7 @@ Tracking 404 error pages requires adding the `pirsch-extended.js` script to your
 Navigate to the settings page on the dashboard and select the **Integration** tab. Copy the code snippet for your domain and add it to the `head` section of each page you want to track file downloads on. Here is a simple example on what it will look like. You can use the advanced options on the settings page to customize the snippet.
 
 ```html
-<script defer type="text/javascript" src="https://api.pirsch.io/pirsch-extended.js"
+<script defer src="https://api.pirsch.io/pirsch-extended.js"
     id="pirschextendedjs"
     data-code="zddEQ4e6QGDno9GCe6dofGgWARPEyJWt"></script>
 ```
@@ -23,7 +23,7 @@ The script will also track outbound links and file downloads by default. If you 
 After you have added the script, trigger the 404 error event. You need to do this on each 404 error page. There is no way for the script to figure out if the content was found or not. You can add the trigger from your server, or just statically place it on the site, if you redirect if a page is not found. Place the following script somewhere in the `<body>` tag of your HTML.
 
 ```html
-<script type="text/javascript">
+<script>
     document.addEventListener("load", () => pirschNotFound());
 </script>
 ```

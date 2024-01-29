@@ -23,7 +23,7 @@ Before you can send your first event, you need to add the `pirsch-events.js` or 
 Navigate to the settings page on the dashboard and select the **Integration** tab. Copy the code snippet for your domain and add it to the `head` section of each page you want to send events from. The snippet looks like this:
 
 ```HTML
-<script defer type="text/javascript" src="https://api.pirsch.io/pirsch-events.js"
+<script defer src="https://api.pirsch.io/pirsch-events.js"
     id="pirscheventsjs"
     data-code="IDENTIFICATION_CODE"></script>
 ```
@@ -85,7 +85,7 @@ Here is a simple example of how to send an event at the click of a button using 
 ```HTML
 <button id="button">Send Event</button>
 
-<script type="text/javascript">
+<script>
     // Wait until the page has finished loading before adding the event listener.
     document.addEventListener("DOMContentLoaded", () => {
         let clicks = 1;
@@ -124,7 +124,7 @@ Here is an example of how you can use events to track form submissions. Note tha
     <input type="submit" value="Submit" />
 </form>
 
-<script type="text/javascript">
+<script>
     // Wait until the page has fully loaded.
     document.addEventListener("DOMContentLoaded", () => {
         // Get the form using the id attribute and add a submission event handler.

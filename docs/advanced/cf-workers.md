@@ -69,26 +69,22 @@ Note that you need to use the URL of your worker and make sure that the id attri
 
 ```html
 <!-- The new pirsch.js uses p.js and you'll have to add the data-endpoint attribute. -->
-<script defer type="text/javascript"
-    src="https://round-hill-c3a4.your-account.workers.dev/static/files/p.js"
+<script defer src="https://round-hill-c3a4.your-account.workers.dev/static/files/p.js"
     id="pirschjs"
     data-endpoint="https://round-hill-c3a4.your-account.workers.dev/p/pv"></script>
 
 <!-- The new pirsch-events.js uses ev.js and you'll have to add the data-endpoint attribute. -->
-<script defer type="text/javascript"
-    src="https://round-hill-c3a4.your-account.workers.dev/static/files/ev.js"
+<script defer src="https://round-hill-c3a4.your-account.workers.dev/static/files/ev.js"
     id="pirscheventsjs"
     data-endpoint="https://round-hill-c3a4.your-account.workers.dev/p/e"></script>
 
 <!-- The new pirsch-sessions.js uses ses.js and you'll have to add the data-endpoint attribute. -->
-<script defer type="text/javascript"
-    src="https://round-hill-c3a4.your-account.workers.dev/static/files/ses.js"
+<script defer src="https://round-hill-c3a4.your-account.workers.dev/static/files/ses.js"
     id="pirschsessionsjs"
     data-endpoint="https://round-hill-c3a4.your-account.workers.dev/p/s"></script>
 
 <!-- The new pirsch-extended.js uses ext.js and you'll have to add the data-hit-endpoint and data-event-endpoint attributes. -->
-<script defer type="text/javascript"
-    src="https://round-hill-c3a4.your-account.workers.dev/static/files/ext.js"
+<script defer src="https://round-hill-c3a4.your-account.workers.dev/static/files/ext.js"
     id="pirschextendedjs"
     data-hit-endpoint="https://round-hill-c3a4.your-account.workers.dev/p/pv"
     data-event-endpoint="https://round-hill-c3a4.your-account.workers.dev/p/e"></script>
@@ -111,8 +107,7 @@ Under the **Triggers** tab, you can either define a custom domain or change the 
 If you changed the route to your own domain, you can update the scripts and make the paths relative, like this.
 
 ```html
-<script defer type="text/javascript"
-    src="/static/files/ext.js"
+<script defer src="/static/files/ext.js"
     id="pirschextendedjs"
     data-hit-endpoint="/p/pv"
     data-event-endpoint="/p/e"></script>

@@ -13,7 +13,7 @@ Tracking outbound link clicks requires adding the `pirsch-extended.js` script to
 Navigate to the settings page in the dashboard and select the **Integration** tab. Copy the code snippet for your domain and add it to the `head' section of each page you want to track outbound links on. Here is a simple example of what it will look like. You can use the advanced options on the settings page to customize the snippet.
 
 ```html
-<script defer type="text/javascript" src="https://api.pirsch.io/pirsch-extended.js"
+<script defer src="https://api.pirsch.io/pirsch-extended.js"
     id="pirschextendedjs"
     data-code="zddEQ4e6QGDno9GCe6dofGgWARPEyJWt"></script>
 ```
@@ -33,7 +33,7 @@ Click an item in the details panel to filter the dashboard. The **Event Pages** 
 You can rename the event if you wish by adding the `data-outbound-link-event-name` parameter to the script snippet. Here is an example that changes the name to `Outbound`.
 
 ```html
-<script defer type="text/javascript" src="https://api.pirsch.io/pirsch-extended.js"
+<script defer src="https://api.pirsch.io/pirsch-extended.js"
     id="pirschextendedjs"
     data-code="zddEQ4e6QGDno9GCe6dofGgWARPEyJWt"
     data-outbound-link-event-name="Outbound"></script>
