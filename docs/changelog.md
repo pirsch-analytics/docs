@@ -12,6 +12,8 @@ Release: unreleased
 * added icon for the Whale browser
 * added domain ID to client settings to make it easier to copy
 * added display name for dashboards
+* added automatic deletion of outdated Postgres backups
+* added path suffix, title prefix, title suffix
 * removed `type="text/javascript"` from scripts
 * updated dependencies
 
