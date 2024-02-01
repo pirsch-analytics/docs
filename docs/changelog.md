@@ -15,6 +15,7 @@ Release: unreleased
 * added automatic deletion of outdated Postgres backups
 * added path suffix, title prefix, title suffix
 * removed `type="text/javascript"` from scripts
+* fixed date from string parameter
 * updated dependencies
 
 ## 2.1.32
