@@ -14,6 +14,7 @@ Release: unreleased
 * added display name for dashboards
 * added automatic deletion of outdated Postgres backups
 * added path suffix, title prefix, title suffix
+* added hint if a dashboard does not belong to an account with an active subscription
 * removed `type="text/javascript"` from scripts
 * fixed date from string parameter
 * updated dependencies
