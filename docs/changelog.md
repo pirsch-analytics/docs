@@ -15,8 +15,10 @@ Release: unreleased
 * added automatic deletion of outdated Postgres backups
 * added path suffix, title prefix, title suffix
 * added hint if a dashboard does not belong to an account with an active subscription
+* added Fathom Analytics import
 * removed `type="text/javascript"` from scripts
 * fixed date from string parameter
+* fixed error handling showing generic "An error occurred" for field validation errors
 * updated dependencies
 
 ## 2.1.32
