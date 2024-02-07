@@ -215,6 +215,7 @@ The following list contains all possible filter options. Only the required field
 | utm_term | no | search terms | The UTM term. |
 | custom_metric_type | no | integer | The custom metric type used to aggregate statistics. This will be used to parse the `custom_metric_key` event metadata key. It can be either `float` or `integer`. |
 | custom_metric_key | no | integer | The custom metric key used to aggregate statistics. This will be used to parse the an event metadata value. Used in combination with the `custom_metric_type`. |
+| offset | no | 0 | Sets the offset for the result set. |
 | limit | no | 20 | Limits the number of results, note that this is hard limited to 100. |
 | include_avg_time_on_page | no | true | Set to true, to include the average time on page when reading page statistics. |
 | sort | no | visitors | Sort results by given field. This is only available for pages, entry/exit pages, referrers, UTM statistics, conversion goals, events, demographics, and device statistics. |
