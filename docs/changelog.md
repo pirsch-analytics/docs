@@ -4,6 +4,8 @@
 
 Release: unreleased
 
+* added comparison mode for total numbers and graphs
+* added comparison settings to views
 * added an event metadata limit of 20 key-value pairs
 * added an event metadata key length limit of 100
 * added an event metadata value length limit of 2000
@@ -19,6 +21,8 @@ Release: unreleased
 * removed `type="text/javascript"` from scripts
 * fixed date from string parameter
 * fixed error handling showing generic "An error occurred" for field validation errors
+* fixed endless loop on token refresh
+* fixed time range selection using view
 * updated dependencies
 
 ## 2.1.32
