@@ -23,6 +23,8 @@ Release: unreleased
 * fixed error handling showing generic "An error occurred" for field validation errors
 * fixed endless loop on token refresh
 * fixed time range selection using view
+* fixed updating theme list when the organization is updated
+* fixed removing theme when the organization is changed
 * updated dependencies
 
 ## 2.1.32
