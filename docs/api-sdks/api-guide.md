@@ -126,7 +126,9 @@ Don't forget to set the access token or access key in the `Authorization` header
         "settings": {},
         "theme_settings": {
             // key value pairs
-        }
+        },
+        "display_name": "My Website",
+        "subscription_active": true
     }
 ]
 ```
@@ -161,7 +163,11 @@ Let's send a simple page view. This is usually done from your server ([server-si
     "title":                        "Page title (optional)",
     "referrer" :                    "Referer header (optional)",
     "screen_width":                 1920,
-    "screen_height":                1080
+    "screen_height":                1080,
+    "tags": {
+        "author": "John",
+        "post": "My first blogpost"
+    }
 }
 ```
 :::
@@ -193,7 +199,9 @@ $request = array(
     'sec_ch_viewport_width' => $_SERVER['Sec-CH-Viewport-Width'],
 
     // Set the referrer. Maybe from a query parameter, like: ?ref=My+Referrer
-    'referrer' => $_SERVER['HTTP_REFERER']
+    'referrer' => $_SERVER['HTTP_REFERER'],
+
+    // Other optional fields...
 );
 
 // Use $request to send the data to Pirsch.
