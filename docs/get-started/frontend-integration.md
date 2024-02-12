@@ -80,7 +80,7 @@ Here is an example:
     data-disable-query></script>
 ```
 
-## Adding a Suffix/Prefix to the Path Title
+## Adding a Suffix/Prefix to the Path or Title
 
 It's possible to alter the page path and/or title. For example, setting the `data-path-prefix` on the script to `/blog` and visiting your website on `/article/1` would be displayed as `/blog/article/1` on the dashboard.
 

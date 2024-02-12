@@ -29,7 +29,7 @@ The import will run in the background and take a while to complete. Note that yo
 
 ## Failed Import
 
-Should you receive an email telling you that your import failed, you can delete the incompletely imported statistics (under **Danger Zone**) and try again. We recommend importing your statistics in smaller increments in this case, or otherwise our import or Google will cancel out if it takes too long.
+If you receive an email telling you that your import has failed, you can delete the incompletely imported statistics (under **Danger Zone**) and try again. In this case, we recommend that you import your statistics in smaller increments.
 
 ## Deleting Imported Statistics
 
