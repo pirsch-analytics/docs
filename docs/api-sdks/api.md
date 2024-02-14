@@ -248,8 +248,12 @@ GET /api/v1/statistics/options/utm/medium
 GET /api/v1/statistics/options/utm/campaign
 GET /api/v1/statistics/options/utm/content
 GET /api/v1/statistics/options/utm/term
+GET /api/v1/statistics/options/tag
+GET /api/v1/statistics/options/tag/value
 ```
 :::
+
+`/api/v1/statistics/options/tag/value` requires exactly one tag to be set in the filter.
 
 It's possible to use an access code by setting the `access` query parameter.
 
@@ -939,6 +943,49 @@ Return the active visitors for the last minute.
         "visitors": 42,
         "relative_visitors": 0.24,
         "screen_class": "XXL"
+    },
+    // ...
+]
+```
+:::
+
+### Tags
+
+This endpoint returns a list of tag keys. To break down a single tag, use `/api/v1/statistics/tag/details`.
+
+`GET /api/v1/statistics/tags`
+
+::: details EXAMPLE RESPONSE
+```JSON
+[
+    {
+        "key": "author",
+	    "visitors": 42,
+	    "views": 57,
+	    "relative_visitors": 0.24,
+	    "relative_views": 0.35
+    },
+    // ...
+]
+```
+:::
+
+### Tag Breakdown
+
+This endpoint returns a breakdown for a single tag.
+
+`GET /api/v1/statistics/tag/details`
+
+::: details EXAMPLE RESPONSE
+```JSON
+[
+    {
+        "key": "author",
+        "value": "Alice",
+	    "visitors": 42,
+	    "views": 57,
+	    "relative_visitors": 0.24,
+	    "relative_views": 0.35
     },
     // ...
 ]

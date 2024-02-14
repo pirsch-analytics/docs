@@ -2,7 +2,7 @@
 
 ## 2.2.0
 
-Release: unreleased
+Release: 2024-02-14
 
 * added comparison mode for total numbers and graphs
 * added comparison settings to views
