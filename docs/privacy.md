@@ -41,7 +41,7 @@ You are in control of the data we collect for you. You can delete all or part of
 
 We provide a Data Processing Agreement (DPA) or in German "Vertrag zur Auftragsverarbeitung", which ensures that companies handle all data of EU citizens in accordance with the GDPR. It's a contract between the data processor (us) and the data controller (you).
 
-You can download and sign the Data Processing Agreement yourself. You can download and sign the latest version in [English](https://pirsch.io/static/files/Data%20Processing%20Agreement%20-%20Pirsch%20Analytics.pdf) or [German](https://pirsch.io/static/files/Vertrag%20zur%20Auftragsverarbeitung%20-%20Pirsch%20Analytics.pdf). We recommend anyone who runs a business within the European Union to sign it.
+You can download and sign the latest version in [English](https://pirsch.io/static/files/Data%20Processing%20Agreement%20-%20Pirsch%20Analytics.pdf) or [German](https://pirsch.io/static/files/Vertrag%20zur%20Auftragsverarbeitung%20-%20Pirsch%20Analytics.pdf). We recommend anyone who runs a business within the European Union to sign it.
 
 ## Privacy Policy Template
 
