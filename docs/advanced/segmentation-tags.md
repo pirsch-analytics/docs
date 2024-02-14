@@ -16,6 +16,13 @@ Tags are a Pirsch Plus feature. If you do not have a Pirsch Plus subscription, t
 You must ensure that no [Personally Identifiable Information (PII)](https://en.wikipedia.org/wiki/Personal_data) is sent within a metadata field. All other information is anonymized, as is the case for page views. PII includes any information that can be used to uniquely identify an individual, such as the full name, email address, phone or credit card number, etc.
 :::
 
+## Limits
+
+There are limits to how many tags you can send and how they are structured:
+
+* You can send up to 20 tags
+* The keys and values can be up to 50 characters each
+
 ## Tracking Tags
 
 Before you can use tags in the dashboard, you need to attach them to page views and events. In this section, you'll learn how to do this on your page using JavaScript and from your server using the API.
