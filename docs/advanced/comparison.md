@@ -4,7 +4,7 @@ Comparing statistics over time provides valuable insights. We made it easy by of
 
 ## Comparing Two Periods
 
-To compare periods, first select the current period you want to view from the date selection drop-down list. You can also use the keyboard shortcuts (to the right of the period) to select a period, or use the arrow keys and press Enter. In the screenshot below, it's set to the last 30 days.
+To compare periods, first select the current period you want to view from the date selection drop-down list. You can also use the keyboard shortcuts (to the right of the period) to select a period, or use the arrow keys and press `Enter`. In the screenshot below, it's set to the last 30 days.
 
 ![Comparison Current Period](../static/advanced/comparison-current.png)
 
