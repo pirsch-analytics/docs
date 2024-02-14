@@ -57,7 +57,11 @@ This endpoint is used to send page views to Pirsch. It requires you to send info
     "title":                        "Page title (optional)",
     "referrer" :                    "Referer header (optional)",
     "screen_width":                 1920,
-    "screen_height":                1080
+    "screen_height":                1080,
+    "tags": {
+        "author": "John",
+        "post": "My first blogpost"
+    }
 }
 ```
 :::
@@ -198,7 +202,7 @@ The following list contains all possible filter options. Only the required field
 | pattern | no | (?i)^\\/path/[^\\/]+$ | A [regular expression](https://github.com/google/re2/wiki/Syntax) to filter and group pages. |
 | event | no | Button clicked | The name of an event to filter for. |
 | event_meta_key | no | Clicks | The event meta key to filter for. This field is used to break down a single event. |
-| meta_(key) | no | `meta_key0=value0&meta_key1=value1` | The event metadata key and values to filter for. Multiple keys can be set by prefixing them using `meta_` and appending them to the URL. Only events with all key-value pairs is returned. |
+| meta_(key) | no | `meta_key0=value0&meta_key1=value1` | The event metadata key and values to filter for. Multiple keys can be set by prefixing them using `meta_` and appending them to the URL. Only events with all key-value pairs are returned. |
 | language | no | en | ISO-639-1 language code, like en for English. |
 | country | no | jp | ISO-3166 Alpha-2 country code, like jp for Japan. |
 | city | no | London | Name of a city. |
@@ -215,6 +219,8 @@ The following list contains all possible filter options. Only the required field
 | utm_term | no | search terms | The UTM term. |
 | custom_metric_type | no | integer | The custom metric type used to aggregate statistics. This will be used to parse the `custom_metric_key` event metadata key. It can be either `float` or `integer`. |
 | custom_metric_key | no | integer | The custom metric key used to aggregate statistics. This will be used to parse the an event metadata value. Used in combination with the `custom_metric_type`. |
+| tag | no | author | The tag key to filter for. This field is used to break down a single tag. |
+| tag_(key) | no | `tag_key0=value0&tag_key1=value1` | The tag key and values to filter for. Multiple keys can be set by prefixing them using `tag_` and appending them to the URL. Only results with all key-value pairs are returned. |
 | offset | no | 0 | Sets the offset for the result set. |
 | limit | no | 20 | Limits the number of results, note that this is hard limited to 100. |
 | include_avg_time_on_page | no | true | Set to true, to include the average time on page when reading page statistics. |
@@ -242,8 +248,12 @@ GET /api/v1/statistics/options/utm/medium
 GET /api/v1/statistics/options/utm/campaign
 GET /api/v1/statistics/options/utm/content
 GET /api/v1/statistics/options/utm/term
+GET /api/v1/statistics/options/tag
+GET /api/v1/statistics/options/tag/value
 ```
 :::
+
+`/api/v1/statistics/options/tag/value` requires exactly one tag to be set in the filter.
 
 It's possible to use an access code by setting the `access` query parameter.
 
@@ -939,6 +949,49 @@ Return the active visitors for the last minute.
 ```
 :::
 
+### Tags
+
+This endpoint returns a list of tag keys. To break down a single tag, use `/api/v1/statistics/tag/details`.
+
+`GET /api/v1/statistics/tags`
+
+::: details EXAMPLE RESPONSE
+```JSON
+[
+    {
+        "key": "author",
+	    "visitors": 42,
+	    "views": 57,
+	    "relative_visitors": 0.24,
+	    "relative_views": 0.35
+    },
+    // ...
+]
+```
+:::
+
+### Tag Breakdown
+
+This endpoint returns a breakdown for a single tag.
+
+`GET /api/v1/statistics/tag/details`
+
+::: details EXAMPLE RESPONSE
+```JSON
+[
+    {
+        "key": "author",
+        "value": "Alice",
+	    "visitors": 42,
+	    "views": 57,
+	    "relative_visitors": 0.24,
+	    "relative_views": 0.35
+    },
+    // ...
+]
+```
+:::
+
 ### Keywords
 
 This endpoints requires the [Google Search Console integration](/integrations/search-console).
@@ -1011,7 +1064,9 @@ Don't forget to set the access token or access key in the `Authorization` header
         "settings": {},
         "theme_settings": {
             // key value pairs
-        }
+        },
+        "display_name": "My Website",
+        "subscription_active": true
     }
 ]
 ```
@@ -1028,7 +1083,9 @@ This endpoint adds a new domain.
 {
     "hostname": "example.com",
     "subdomain": "example",
-    "timezone": "Europe/Berlin"
+    "timezone": "Europe/Berlin",
+    "organization_id": null,
+    "theme_id": null
 }
 ```
 :::
@@ -1039,10 +1096,11 @@ This endpoint adds a new domain.
     "id": "A5kgYzK14m",
     "def_time": "2021-05-22T10:11:12.123456Z",
     "mod_time": "2021-05-22T10:11:12.123456Z",
-    "user_id": "04jmfg0",
+    "user_id": "pzy1bjD1lv",
+    "organization_id": null,
     "hostname": "example.com",
     "subdomain": "example",
-    "identification_code": "...",
+    "identification_code": "oSdiAe...",
     "public": false,
     "google_user_id": null,
     "google_user_email": null,
@@ -1050,17 +1108,23 @@ This endpoint adds a new domain.
     "new_owner": null,
     "timezone": "Europe/Berlin",
     "group_by_title": false,
-    "user_role": "Owner",
     "active_visitors_seconds": 600,
     "disable_scripts": false,
     "statistics_start": null,
     "imported_statistics": false,
-    "metadata": {
-        // generic object
-    },
-    "settings": {
+    "metadata": {},
+    "theme_id": "x98y1bjAm72",
+    "theme": {
         // key value pairs
-    }
+    },
+    "custom_domain": "my.custom-domain.com",
+    "user_role": "Owner", // Admin, Viewer
+    "settings": {},
+    "theme_settings": {
+        // key value pairs
+    },
+    "display_name": "My Website",
+    "subscription_active": true
 }
 ```
 :::
@@ -1088,11 +1152,11 @@ GET /api/v1/domain?access=03kDM6o...
     "id": "A5kgYzK14m",
     "def_time": "2021-05-22T10:11:12.123456Z",
     "mod_time": "2021-05-22T10:11:12.123456Z",
-    "user_id": "04jmfg0",
-    "organization_id": "0do3kD3",
+    "user_id": "pzy1bjD1lv",
+    "organization_id": null,
     "hostname": "example.com",
     "subdomain": "example",
-    "identification_code": "...",
+    "identification_code": "oSdiAe...",
     "public": false,
     "google_user_id": null,
     "google_user_email": null,
@@ -1104,21 +1168,19 @@ GET /api/v1/domain?access=03kDM6o...
     "disable_scripts": false,
     "statistics_start": null,
     "imported_statistics": false,
-    "metadata": {
-        // generic object
-    },
-    "theme_id": null,
+    "metadata": {},
+    "theme_id": "x98y1bjAm72",
     "theme": {
         // key value pairs
     },
-    "custom_domain": "my-domain.com",
-    "user_role": "Owner",
-    "settings": {
+    "custom_domain": "my.custom-domain.com",
+    "user_role": "Owner", // Admin, Viewer
+    "settings": {},
+    "theme_settings": {
         // key value pairs
     },
-    "theme_settings": {
-        // key value pairs applied to the dashboard
-    }
+    "display_name": "My Website",
+    "subscription_active": true
 }
 ```
 :::
@@ -2148,10 +2210,13 @@ This endpoint returns a list of views for a given domain.
         "from": "2022-01-02",
         "to": "2022-03-04",
         "period": 5,
+        "compare": null, // previous, year, custom
+        "compare_from": null, // date
+        "compare_to": null, // date
+        "compare_weekday": true,
         "path": ["/sample/path"],
         "entry_path": null,
         "exit_path": null,
-        "path_pattern": null,
         "pattern": null,
         "language": null,
         "country": null,
@@ -2167,9 +2232,12 @@ This endpoint returns a list of views for a given domain.
         "utm_campaign": null,
         "utm_content": null,
         "utm_term": null,
-        "event": null,
-        "event_meta_key": null,
-        "event_meta_value": null,
+        "event": ["event"],
+        "event_meta_key": ["meta_key"],
+        "event_meta_value": ["meta_value"],
+        "tag": ["tag"],
+        "tag_key": ["tag_key"],
+        "tag_value": ["tag_value"]
     },
     // ...
 ]
@@ -2186,17 +2254,21 @@ This endpoint creates a new view or updates an existing view. It updates an exis
 ```JSON
 {
     "id": "Jk49fgm38",
+    "def_time": "2021-05-22T10:11:12.123456Z",
+    "mod_time": "2021-05-22T10:11:12.123456Z",
     "domain_id": "A5kgYzK14m",
+    "user_id": "94jO3jDM2",
     "name": "My View",
-    "public": true,
-    "overwrite": true,
     "from": "2022-01-02",
     "to": "2022-03-04",
     "period": 5,
+    "compare": null, // previous, year, custom
+    "compare_from": null, // date
+    "compare_to": null, // date
+    "compare_weekday": true,
     "path": ["/sample/path"],
     "entry_path": null,
     "exit_path": null,
-    "path_pattern": null,
     "pattern": null,
     "language": null,
     "country": null,
@@ -2212,9 +2284,12 @@ This endpoint creates a new view or updates an existing view. It updates an exis
     "utm_campaign": null,
     "utm_content": null,
     "utm_term": null,
-    "event": null,
-    "event_meta_key": null,
-    "event_meta_value": null,
+    "event": ["event"],
+    "event_meta_key": ["meta_key"],
+    "event_meta_value": ["meta_value"],
+    "tag": ["tag"],
+    "tag_key": ["tag_key"],
+    "tag_value": ["tag_value"]
 }
 ```
 :::
@@ -2231,10 +2306,13 @@ This endpoint creates a new view or updates an existing view. It updates an exis
     "from": "2022-01-02",
     "to": "2022-03-04",
     "period": 5,
+    "compare": null, // previous, year, custom
+    "compare_from": null, // date
+    "compare_to": null, // date
+    "compare_weekday": true,
     "path": ["/sample/path"],
     "entry_path": null,
     "exit_path": null,
-    "path_pattern": null,
     "pattern": null,
     "language": null,
     "country": null,
@@ -2250,9 +2328,12 @@ This endpoint creates a new view or updates an existing view. It updates an exis
     "utm_campaign": null,
     "utm_content": null,
     "utm_term": null,
-    "event": null,
-    "event_meta_key": null,
-    "event_meta_value": null,
+    "event": ["event"],
+    "event_meta_key": ["meta_key"],
+    "event_meta_value": ["meta_value"],
+    "tag": ["tag"],
+    "tag_key": ["tag_key"],
+    "tag_value": ["tag_value"]
 }
 ```
 :::

@@ -80,9 +80,9 @@ Here is an example:
     data-disable-query></script>
 ```
 
-## Adding a Path Prefix
+## Adding a Suffix/Prefix to the Path or Title
 
-It's possible to alter the page path. For example, setting the `data-path-prefix` on the script to `/blog` and visiting your website on `/article/1` would be displayed as `/blog/article/1` on the dashboard.
+It's possible to alter the page path and/or title. For example, setting the `data-path-prefix` on the script to `/blog` and visiting your website on `/article/1` would be displayed as `/blog/article/1` on the dashboard.
 
 Here is how that would look like for the script:
 
@@ -93,7 +93,14 @@ Here is how that would look like for the script:
     data-path-prefix="/blog"></script>
 ```
 
-Please not that the `data-path-prefix` attribute interacts with the `data-domain` attribute used to create [rollup views](/advanced/domains-rollup.md).
+To add a prefix or suffix, or to change the page title (displayed in the browser tab), add one of the following attributes:
+
+* `data-path-prefix` adds a path prefix
+* `data-path-suffix` adds a path suffix
+* `data-title-prefix` adds a path prefix
+* `data-title-suffix` adds a path suffix
+
+Please not that the attributes interacts with the `data-domain` attribute used to create [rollup views](/advanced/domains-rollup.md).
 
 ## Ignoring Your Own Page Views
 

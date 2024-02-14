@@ -12,6 +12,16 @@ Events count towards your billable monthly page views.
 You must ensure that no [Personally Identifiable Information (PII)](https://en.wikipedia.org/wiki/Personal_data) is sent within a metadata field. All other information is anonymized, as is the case for page views. PII includes any information that can be used to uniquely identify an individual, such as the full name, email address, phone or credit card number, etc.
 :::
 
+## Limits
+
+There are limits to how many events you can send and how they are structured:
+
+* You can send up to 20 metadata key-value pairs
+* The metadata key can be up to 100 characters long
+* The metadata value can be up to 2000 characters long
+
+Note that [tags](../advanced/segmentation-tags) are automatically attached to events if you use the JavaScript snippet integration. These also count towards the limits.
+
 ## Creating Events
 
 Events are automatically created and added to your dashboard when you send them. They can be sent from your website using JavaScript, or from your backend using our [API](/api-sdks/api) or one of our [SDKs](/api-sdks/sdks).

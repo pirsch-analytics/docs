@@ -44,6 +44,7 @@ export default {
                     {text: "Server-Side Integration", link: "/get-started/backend-integration"},
                     {text: "Client Hints", link: "/get-started/client-hints"},
                     {text: "Google Analytics Import", link: "/get-started/ga-import"},
+                    {text: "Fathom Analytics Import", link: "/get-started/fathom-import"},
                     {text: "Troubleshooting", link: "/get-started/troubleshooting"}
                 ]
             },
@@ -70,6 +71,8 @@ export default {
                     {text: "Tracking Outbound Links", link: "/advanced/outbound-links"},
                     {text: "Tracking File Downloads", link: "/advanced/file-downloads"},
                     {text: "Tracking 404 Errors", link: "/advanced/not-found-tracking"},
+                    {text: "Segmentation and A/B Testing", link: "/advanced/segmentation-tags"},
+                    {text: "Comparing Statistics", link: "/advanced/comparison"},
                     {text: "Additional Domains and Rollup Views", link: "/advanced/domains-rollup"},
                     {text: "Extending Sessions", link: "/advanced/sessions"},
                     {text: "Proxying the Scripts", link: "/advanced/proxy"},

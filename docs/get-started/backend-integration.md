@@ -70,7 +70,10 @@ Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI...
 	"sec_ch_ua_platform_version":   "Sec-CH-UA-Platform-Version header (optional)",
 	"sec_ch_width":                 "Sec-CH-Width header (optional)",
     "sec_ch_viewport_width":        "Sec-CH-Viewport-Width header (optional)",
-    "referrer" :                    "Referer header (optional)"
+    "referrer" :                    "Referer header (optional)",
+    "tags": {
+        "key": "value (optional)"
+    }
 }
 ```
 

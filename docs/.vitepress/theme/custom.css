@@ -62,6 +62,7 @@
     --docsearch-container-background: rgba(0,0,0,.5);
 
     --vp-custom-block-info-bg: transparent;
+    --vp-custom-block-info-border: var(--vp-c-divider);
     --vp-custom-block-tip-border: var(--green);
     --vp-custom-block-tip-text: var(--green);
     --vp-custom-block-tip-bg: transparent;
@@ -121,6 +122,10 @@ html {
     font-weight: 500 !important;
 }
 
+.vp-doc a {
+    text-decoration: none !important;
+}
+
 .VPNavBar .title, .vp-doc h2, .prev-next, .pager-link, .has-outline .content, .group + .group, .VPSwitch, .VPNavScreenMenuLink, .link {
     border-width: 2px !important;
 }
@@ -136,10 +141,13 @@ html {
     border-radius: 12px !important;
 }
 
-.VPLink.link {
+.VPLink.pager-link {
     display: flex !important;
+    justify-content: space-between !important;
     align-items: center !important;
     flex-grow: 0 !important;
+    gap: 12px !important;
+    text-align: left !important;
 }
 
 .vp-doc .header-anchor {
