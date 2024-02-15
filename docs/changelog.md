@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.2.1
+
+Release: 2024-02-15
+
+* fixed reading client plus subscription status
+* fixed reading event breakdown
+* updated dependencies
+
 ## 2.2.0
 
 Release: 2024-02-14
