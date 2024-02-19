@@ -1,5 +1,14 @@
 # Changelog
 
+## 2.2.2
+
+Release: 2024-02-16
+
+* pre-select active entry in time range and comparison filter
+* fixed time on page in CSV exports
+* fixed styling for tabs inside dialogues
+* fixed single date selection after dashboard refresh
+
 ## 2.2.1
 
 Release: 2024-02-15
