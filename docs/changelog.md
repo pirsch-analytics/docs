@@ -1,5 +1,15 @@
 # Changelog
 
+## 2.2.3
+
+Release: 2024-02-20
+
+* added a fixed limit to the number of filter options that are returned
+* improved browser and OS parsing
+* fixed resetting page view counter when re-activating subscriptions
+* fixed mime types for service worker js and favicon.ico
+* updated dependencies
+
 ## 2.2.2
 
 Release: 2024-02-16
