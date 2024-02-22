@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.2.4
+
+Release: unreleased
+
+* added pirschInit function to allow asynchronous initalization of the snippet
+
 ## 2.2.3
 
 Release: 2024-02-20
