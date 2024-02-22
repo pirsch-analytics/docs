@@ -2,7 +2,7 @@
 
 ## 2.2.4
 
-Release: unreleased
+Release: 2024-02-22
 
 * added pirschInit function to allow asynchronous initalization of the snippet
 * fixed tag keys for events
