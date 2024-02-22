@@ -102,6 +102,22 @@ To add a prefix or suffix, or to change the page title (displayed in the browser
 
 Please not that the attributes interacts with the `data-domain` attribute used to create [rollup views](/advanced/domains-rollup.md).
 
+## Initializing pirsch-extended.js Manually
+
+`pirsch-extended.js` automatically tracks outbound link clicks, file downloads and more. If you load the script dynamically (i.e. construct the script via JavaScript and place it on your site), you may need to manually call the init function to initialize the events. Here is an example:
+
+```js
+// Construct the snippet.
+const snippet = document.createElement("script");
+snippet.src = "https://api.pirsch.io/pirsch-extended.js";
+snippet.id = "pirschextendedjs";
+snippet.setAttribute("data-code", "YOUR_IDENTIFICATION_CODE");
+
+// Add the snippet to the site and init Pirsch.
+document.body.appendChild(snippet);
+snippet.addEventListener("load", () => pirschInit());
+```
+
 ## Ignoring Your Own Page Views
 
 You can disable this integration by setting the DNT (Do Not Track) header to `1` in your browser, or by adding a value called `disable_pirsch` to your local storage.
