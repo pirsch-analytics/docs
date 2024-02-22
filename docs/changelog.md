@@ -5,6 +5,7 @@
 Release: unreleased
 
 * added pirschInit function to allow asynchronous initalization of the snippet
+* fixed tag keys for events
 
 ## 2.2.3
 
