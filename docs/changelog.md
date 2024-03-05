@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.3.0
+
+Release: unreleased
+
+* only provide a single consolidated script instead of multiple variations
+* improved setting descriptions
+* updated dependencies
+
 ## 2.2.4
 
 Release: 2024-02-22
