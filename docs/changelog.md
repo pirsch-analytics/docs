@@ -4,6 +4,7 @@
 
 Release: unreleased
 
+* added option to delete events only
 * only provide a single consolidated script instead of multiple variations
 * improved setting descriptions
 * updated dependencies
