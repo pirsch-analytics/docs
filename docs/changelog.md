@@ -5,8 +5,10 @@
 Release: unreleased
 
 * added option to delete events only
+* added traffic spike notifications
 * only provide a single consolidated script instead of multiple variations
 * improved setting descriptions
+* fixed missing triggers for mod_time
 * updated dependencies
 
 ## 2.2.4
