@@ -8,6 +8,7 @@ Release: unreleased
 * added traffic spike notifications
 * only provide a single consolidated script instead of multiple variations
 * improved setting descriptions
+* improved email reports
 * fixed missing triggers for mod_time
 * updated dependencies
 
