@@ -6,9 +6,11 @@ Release: unreleased
 
 * added option to delete events only
 * added traffic spike notifications
+* added traffic warning notifications
 * only provide a single consolidated script instead of multiple variations
 * improved setting descriptions
 * fixed missing triggers for mod_time
+* fixed sending conversion goal notifications to organization members
 * updated dependencies
 
 ## 2.2.4
