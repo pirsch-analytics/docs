@@ -7,6 +7,7 @@ Release: unreleased
 * added option to delete events only
 * added traffic spike notifications
 * added traffic warning notifications
+* added graphs in background to overview
 * only provide a single consolidated script instead of multiple variations
 * improved setting descriptions
 * improved email reports
