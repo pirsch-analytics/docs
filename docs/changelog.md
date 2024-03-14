@@ -9,6 +9,7 @@ Release: unreleased
 * added traffic warning notifications
 * only provide a single consolidated script instead of multiple variations
 * improved setting descriptions
+* improved email reports
 * fixed missing triggers for mod_time
 * fixed sending conversion goal notifications to organization members
 * updated dependencies
