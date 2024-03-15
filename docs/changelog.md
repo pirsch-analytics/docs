@@ -8,11 +8,16 @@ Release: unreleased
 * added traffic spike notifications
 * added traffic warning notifications
 * added graphs in background to overview
+* added viewing individual sessions
 * only provide a single consolidated script instead of multiple variations
 * improved setting descriptions
 * improved email reports
+* optimized loading dashboard data
+* optimized loading domain on overview
+* keep filter settings when changing pages
 * fixed missing triggers for mod_time
 * fixed sending conversion goal notifications to organization members
+* fixed clearing comparision when switching domain on overview
 * updated dependencies
 
 ## 2.2.4
