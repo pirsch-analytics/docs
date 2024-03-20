@@ -7,6 +7,7 @@ Release: unreleased
 * added option to delete events only
 * added traffic spike notifications
 * added traffic warning notifications
+* added webhooks
 * added graphs in background to overview
 * added viewing individual sessions
 * added "contains" filter for event meta values
