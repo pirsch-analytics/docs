@@ -10,6 +10,7 @@ Release: unreleased
 * added graphs in background to overview
 * added viewing individual sessions
 * added "contains" filter for event meta values
+* added graphs for minute-based statistics
 * only provide a single consolidated script instead of multiple variations
 * improved setting descriptions
 * improved email reports
