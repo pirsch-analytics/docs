@@ -21,6 +21,7 @@ Release: unreleased
 * fixed missing triggers for mod_time
 * fixed sending conversion goal notifications to organization members
 * fixed clearing comparision when switching domain on overview
+* fixed comparison selection for views
 * updated dependencies
 
 ## 2.2.4
