@@ -20,6 +20,19 @@ To test the script, navigate to your website and open the network tab of the dev
 
 If not, check the identification code and domain you've configured. Also make sure you haven't sent the **Do Not Track** (DNT) HTTP header, set the `disable_pirsch` option in your localStorage, or added the script to your site more than once.
 
+## Ensure That You Have Installed the Right Script
+
+::: info
+Since Pirsch version 2.3 there is only one consolidated script (`pa.js`). If you installed Pirsch before the update, you may encounter the problem described below.
+:::
+
+There are a number of different scripts that provide different functionalities. Not all of them track page views. So if you don't see visitors in your dashboard, make sure you have the right scripts installed:
+
+* `pirsch-extended.js` and `pa.js` provide all the features, you don't need anything else and page views will be collected automatically.
+* `pirsch.js` only tracks page views. Custom events and other features are not supported.
+* `pirsch-events.js` only tracks events triggered by JavaScript, page views are not collected.
+* `pirsch-sessions.js` automatically extends the lifetime of sessions and does not track page views.
+
 ## Test the Servers-side Integration
 
 To test the [server-side integration](/get-started/backend-integration), log any errors returned by the Pirsch API that don't have the HTTP status codes 200 (ok) or 401 (unauthorised). The body of the response will include error and validation messages.

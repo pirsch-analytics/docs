@@ -74,6 +74,7 @@ export default {
                     {text: "Segmentation and A/B Testing", link: "/advanced/segmentation-tags"},
                     {text: "Comparing Statistics", link: "/advanced/comparison"},
                     {text: "Additional Domains and Rollup Views", link: "/advanced/domains-rollup"},
+                    {text: "Webhooks", link: "/advanced/webhooks"},
                     {text: "Extending Sessions", link: "/advanced/sessions"},
                     {text: "Proxying the Scripts", link: "/advanced/proxy"},
                     {text: "Proxying Through Cloudflare Workers", link: "/advanced/cf-workers"},

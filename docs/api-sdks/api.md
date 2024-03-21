@@ -1017,6 +1017,29 @@ We recommend using the Search Console API directly instead of calling it through
 ```
 :::
 
+### Deleting Statistics
+
+This endpoint deletes data asynchronously for given domain ID and dates.
+
+The kind can be left empty to delete everything or set to:
+
+* `all` to delete statistics collected by Pirsch (excluding imported statistics)
+* `events` to only delete events or
+* `imported` to only delete imported statistics
+
+`DELETE /api/v1/statistics`
+
+::: details EXAMPLE REQUEST
+```JSON
+{
+    "id": "A5kgYzK14m",
+	"kind": "",
+	"from": "2024-01-01",
+	"to": "2024-02-15"
+}
+```
+:::
+
 ## Managing Domains
 
 Domains can be managed by creating a user client (on the account settings page).

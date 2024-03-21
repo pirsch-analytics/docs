@@ -4,8 +4,24 @@
 
 Release: unreleased
 
+* added option to delete events only
+* added traffic spike notifications
+* added traffic warning notifications
+* added webhooks
+* added graphs in background to overview
+* added viewing individual sessions
+* added "contains" filter for event meta values
+* added graphs for minute-based statistics
 * only provide a single consolidated script instead of multiple variations
 * improved setting descriptions
+* improved email reports
+* optimized loading dashboard data
+* optimized loading domain on overview
+* keep filter settings when changing pages
+* fixed missing triggers for mod_time
+* fixed sending conversion goal notifications to organization members
+* fixed clearing comparision when switching domain on overview
+* fixed comparison selection for views
 * updated dependencies
 
 ## 2.2.4
