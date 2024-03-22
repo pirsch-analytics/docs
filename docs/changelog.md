@@ -8,6 +8,13 @@ Release: unreleased
 * improved setting descriptions
 * updated dependencies
 
+## 2.2.5
+
+Release: 2024-03-22
+
+* fixed dates in time range filter
+* fixed referrer panel duplicating entries
+
 ## 2.2.4
 
 Release: 2024-02-22
