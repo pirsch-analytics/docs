@@ -22,6 +22,7 @@ Release: unreleased
 * fixed sending conversion goal notifications to organization members
 * fixed clearing comparision when switching domain on overview
 * fixed comparison selection for views
+* fixed removing time range keyboard shortcuts event handler on pages other than the dashboard/sessions
 * updated dependencies
 
 ## 2.2.5
