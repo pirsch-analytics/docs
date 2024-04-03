@@ -23,6 +23,7 @@ Release: unreleased
 * fixed clearing comparision when switching domain on overview
 * fixed comparison selection for views
 * fixed removing time range keyboard shortcuts event handler on pages other than the dashboard/sessions
+* fixed branding and theme colors in email reports
 * updated dependencies
 
 ## 2.2.5
