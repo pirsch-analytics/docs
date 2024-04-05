@@ -43,9 +43,9 @@ Click an entry in the details view to filter the dashboard. The **Event Pages** 
 
 ## Ignoring File Downloads
 
-You can ignore individual file downloads by setting either the `pirsch-ignore` HTML parameter or `pirsch-ignore` CSS class. Clicking the links below won't trigger a file download event.
+You can ignore individual file downloads by setting either the `data-pirsch-ignore` HTML parameter or `pirsch-ignore` CSS class. Clicking the links below won't trigger a file download event.
 
 ```html
-<a href="https://yourdomain.com/example.pdf" pirsch-ignore>Outbound Links</a>
+<a href="https://yourdomain.com/example.pdf" data-pirsch-ignore>Outbound Links</a>
 <a href="https://yourdomain.com/example.pdf" class="pirsch-ignore">Outbound Links</a>
 ```

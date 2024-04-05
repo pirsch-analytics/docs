@@ -41,9 +41,9 @@ You can rename the event if you wish by adding the `data-outbound-link-event-nam
 
 ## Ignoring Links
 
-You can ignore individual links by setting either the `pirsch-ignore' HTML parameter or the `pirsch-ignore' CSS class. Clicking on the links below won't trigger an outbound link event.
+You can ignore individual links by setting either the `data-pirsch-ignore' HTML parameter or the `pirsch-ignore' CSS class. Clicking on the links below won't trigger an outbound link event.
 
 ```html
-<a href="https://example.com" pirsch-ignore>Outbound Links</a>
+<a href="https://example.com" data-pirsch-ignore>Outbound Links</a>
 <a href="https://example.com" class="pirsch-ignore">Outbound Links</a>
 ```
