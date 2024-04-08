@@ -25,6 +25,7 @@ Release: unreleased
 * fixed comparison selection for views
 * fixed removing time range keyboard shortcuts event handler on pages other than the dashboard/sessions
 * fixed branding and theme colors in email reports
+* fixed joining events when grouping by hours/minutes
 * updated dependencies
 
 ## 2.2.5
