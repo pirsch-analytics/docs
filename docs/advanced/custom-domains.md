@@ -47,16 +47,11 @@ We automatically request an SSL certificate for your domain the first time you v
 
 ## Serving Scripts on Your Own Domain
 
-If you have configured a custom domain, the script snippets on the **Integration** settings page will use your domain.
+If you have configured a custom domain, the script snippet on the **Integration** settings page will use your domain.
 
 ![Custom Domain Snippets](../static/advanced/custom-domain-snippets.png)
 
-The files can now be served from your own domain. The names are truncated to avoid being blocked by ad blockers.
-
-* `pirsch.js` is shortened to `p.js`
-* `pirsch-events.js` is shortened to `e.js`
-* `pirsch-sessions.js` is shortened to `s.js`
-* `pirsch-extended.js` is shortened to `ext.js`
+The snippet can now be served from your own domain. Replace `api.pirsch.io` with your own domain in the `src` attribute.
 
 Additionally, the script now uses different endpoints (`data-hit-endpoint`, `data-event-endpoint`, `data-session-endpoint`) so that requests aren't made directly to `pirsch.io`.
 

@@ -23,7 +23,7 @@ export default {
         ["meta", {name: "og:image", content: "https://docs.pirsch.io/twitter-card.png"}],
         ["meta", {name: "og:type", content: "article"}],
         ["link", {rel: "shortcut icon", type: "image/png", href: "/favicon.png"}],
-        ["script", {defer: true, type: "text/javascript", src: "https://api.pirsch.io/pirsch-extended.js", id: "pirschextendedjs", "data-code": "6V8bSjEHJ19PK2hVxaaqJhItHUpSUekW"}]
+        ["script", {defer: true, type: "text/javascript", src: "https://api.pirsch.io/pa.js", id: "pianjs", "data-code": "6V8bSjEHJ19PK2hVxaaqJhItHUpSUekW"}]
     ],
     themeConfig: {
         logo: "/logo.png",

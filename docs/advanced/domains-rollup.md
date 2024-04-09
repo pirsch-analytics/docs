@@ -17,8 +17,8 @@ Duplicate page views and events count towards your monthly limit.
 Let's say you have your top-level domain **example.com** and a subdomain **sub.example.com** and you want to track both websites on a single dashboard. In this case, create a dashboard for **example.com** and add an additional domain **sub.example.com** (wildcards with asterisks * also work). Now you can add the JS snippet to both sites using the same identification code.
 
 ```html
-<script defer src="https://api.pirsch.io/pirsch.js" 
-    id="pirschjs" 
+<script defer src="https://api.pirsch.io/pa.js" 
+    id="pianjs" 
     data-code="example-com-identification-code-here"></script>
 ```
 
@@ -29,8 +29,8 @@ The second use case for additional domains is to send statistics to multiple das
 Once you have configured the additional domain, you can send statistics from **example.com** to **rollup.example.com** as follows.
 
 ```html
-<script defer src="https://api.pirsch.io/pirsch.js" 
-    id="pirschjs" 
+<script defer src="https://api.pirsch.io/pa.js" 
+    id="pianjs" 
     data-code="example-com-identification-code-here"
     data-domain="rollup.example.com"></script>
 ```
@@ -42,8 +42,8 @@ To send statistics to more than one additional dashboard, you can comma-separate
 Like any other Pirsch dashboard, rollup views group pages by path. This means that if you have duplicate paths on multiple domains, they will appear as the same page. To change this, you can add different prefixes to the path for each domain using the `data-path-prefix` attribute. Here is an example.
 
 ```html
-<script defer src="https://api.pirsch.io/pirsch.js" 
-    id="pirschjs" 
+<script defer src="https://api.pirsch.io/pa.js" 
+    id="pianjs" 
     data-code="example-com-identification-code-here"
     data-domain="first.example.com,second.example.com"
     data-path-prefix="/one,/two"></script>

@@ -20,7 +20,7 @@ This is how the page looks in the Designer.
 
 Before we can integrate Pirsch with Webflow, you will need to set up a dashboard on Pirsch. If you're testing your Webflow site, please use the test domain (`something.webflow.io`). If you're using a custom domain, use that instead. The domain on the Pirsch dashboard must match your Webflow domain. You can also use [additional domains](/advanced/domains-rollup.md) to set up both at the same time. The domain can later be changed in the settings if needed.
 
-Once the dashboard has been created, copy your personal code snippet from the [integration settings](https://dashboard.pirsch.io/settings/integration) or select it from the confirmation page. We recommend the extended script to enable all features, including event tracking.
+Once the dashboard has been created, copy your personal code snippet from the [integration settings](https://dashboard.pirsch.io/settings/integration) or select it from the confirmation page.
 
 In your Webflow project, go to **Site settings** > **Custom code**. You can open it from the dashboard (three dots) or from the top left menu.
 
@@ -48,7 +48,7 @@ Click the Settings tab on the right and open the **Custom attributes** section.
 
 ![Webflow Custom Attributes Details](/static/integrations/webflow/webflow-custom-attributes-small.png)
 
-Click the **+** sign to add an attribute for the event name, and additional metadata attributes if needed. The event name must always be present, the metadata fields are optional. In this example we set the `pirsch-event` name to `Visit Pirsch Button` and add a metadata attribute with the name `type` and the value `primary`. Metadata attributes must have the prefix `pirsch-meta-`.
+Click the **+** sign to add an attribute for the event name, and additional metadata attributes if needed. The event name must always be present, the metadata fields are optional. In this example we set the `data-pirsch-event` name to `Visit Pirsch Button` and add a metadata attribute with the name `type` and the value `primary`. Metadata attributes must have the prefix `data-pirsch-meta-`.
 
 And that's it! After publishing the changes, clicking the button on the page after publishing the changes will now fire an event. For more advanced use cases, see the [events article](/advanced/events.md).
 

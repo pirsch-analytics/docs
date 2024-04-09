@@ -24,18 +24,9 @@ Note that only page views for the hostname you enter will be accepted. A pagevie
 
 You can also create [rollup views](/advanced/domains-rollup) to combine data from multiple sites.
 
-The script also tracks programmatic URL changes by default. This is useful if your site is a single page application (SPA) or if you use anchors. You can disable this behavior by adding the `data-disable-history` parameter to the script. This also works for the `pirsch-extended.js` script. Certain features might not work on SPAs. [Check the troubleshooting article](/get-started/troubleshooting) to learn more.
+The script also tracks programmatic URL changes by default. This is useful if your site is a single page application (SPA) or if you use anchors. You can disable this behavior by adding the `data-disable-history` parameter to the script. Certain features might not work on SPAs. [Check the troubleshooting article](/get-started/troubleshooting) to learn more.
 
 Client Hints improve the accuracy of the statistics collected for you. Make sure to [forward them](/get-started/client-hints) to our service.
-
-## Choosing a Scripts
-
-There are currently four scripts, each with a different purpose.
-
-* `pirsch-extended.js` is the full integration and combines all the other scripts. It automatically tracks outbound link clicks, file downloads, and allows tracking of custom events through HTML, CSS, and JavaScript.
-* `pirsch.js` is the basic integration and **only** tracks page views.
-* `pirsch-events.js` tracks **only** programmatic events through JavaScript. This is usually combined with `pirsch.js` so that you have two very lightweight scripts on your site.
-* `pirsch-sessions.js` automatically renews sessions. This can be useful for long running sessions without page switching.
 
 ## Testing the Integration
 
@@ -46,8 +37,8 @@ Please refer to the [troubleshooting article](/get-started/troubleshooting).
 The snippet provides a very flexible way to include or exclude pages. You can exclude one or more pages by specifying the `data-exclude` attribute. The content is a list of regular expressions used to filter pages.
 
 ```html
-<script defer src="https://api.pirsch.io/pirsch.js" 
-    id="pirschjs" 
+<script defer src="https://api.pirsch.io/pa.js" 
+    id="pianjs" 
     data-code="YOUR_IDENTIFICATION_CODE"
     data-exclude="\/exact\/match,\/exclude\/page\/(en|de)\/.*"></script>
 ```
@@ -66,16 +57,16 @@ It's possible to enable or disable certain features of the scripts. To enable or
 * `data-disable-referrer` will removes the referrer.
 * `data-disable-resolution` removes the screen resolution (width and height).
 * `data-disable-history` disables the tracking of programmatic URL changes as page views (like PWAs for example).
-* `data-disable-page-views` disables the collection of page views (`pirsch-extended.js` only).
-* `data-disable-outbound-links` disables the tracking of outbound link clicks (`pirsch-extended.js` only).
-* `data-disable-downloads` disables the tracking of file downloads (`pirsch-extended.js` only).
-* `data-enable-sessions` enables [session extension](/advanced/sessions) (`pirsch-extended.js` only).
+* `data-disable-page-views` disables the collection of page views.
+* `data-disable-outbound-links` disables the tracking of outbound link clicks.
+* `data-disable-downloads` disables the tracking of file downloads.
+* `data-enable-sessions` enables [session extension](/advanced/sessions).
 
 Here is an example:
 
 ```html
-<script defer src="https://api.pirsch.io/pirsch.js" 
-    id="pirschjs" 
+<script defer src="https://api.pirsch.io/pa.js" 
+    id="pianjs" 
     data-code="YOUR_IDENTIFICATION_CODE"
     data-disable-query></script>
 ```
@@ -87,8 +78,8 @@ It's possible to alter the page path and/or title. For example, setting the `dat
 Here is how that would look like for the script:
 
 ```html
-<script defer src="https://api.pirsch.io/pirsch.js" 
-    id="pirschjs" 
+<script defer src="https://api.pirsch.io/pa.js" 
+    id="pianjs" 
     data-code="YOUR_IDENTIFICATION_CODE"
     data-path-prefix="/blog"></script>
 ```
@@ -102,15 +93,15 @@ To add a prefix or suffix, or to change the page title (displayed in the browser
 
 Please not that the attributes interacts with the `data-domain` attribute used to create [rollup views](/advanced/domains-rollup.md).
 
-## Initializing pirsch-extended.js Manually
+## Initializing the Script Manually
 
-`pirsch-extended.js` automatically tracks outbound link clicks, file downloads and more. If you load the script dynamically (i.e. construct the script via JavaScript and place it on your site), you may need to manually call the init function to initialize the events. Here is an example:
+The script automatically tracks outbound link clicks, file downloads and more. If you load the script dynamically (i.e. construct the script via JavaScript and place it on your site), you may need to manually call the init function to initialize the events. Here is an example:
 
 ```js
 // Construct the snippet.
 const snippet = document.createElement("script");
-snippet.src = "https://api.pirsch.io/pirsch-extended.js";
-snippet.id = "pirschextendedjs";
+snippet.src = "https://api.pirsch.io/pa.js";
+snippet.id = "pianjs";
 snippet.setAttribute("data-code", "YOUR_IDENTIFICATION_CODE");
 
 // Add the snippet to the site and init Pirsch.
@@ -129,8 +120,8 @@ For the latter option, open the developer tools (usually F12 or `Ctrl + Shift + 
 The scripts will ignore any requests made on localhost. If you want to override this behavior, e.g. for testing, you can add the `data-dev` attribute. The host names must match. If you are testing on localhost, rewrite the hostname with the `data-dev' attribute like this
 
 ```html
-<script defer src="https://api.pirsch.io/pirsch.js" 
-    id="pirschjs" 
+<script defer src="https://api.pirsch.io/pa.js" 
+    id="pianjs" 
     data-code="YOUR_IDENTIFICATION_CODE"
     data-dev="example.com"></script>
 ```
@@ -142,8 +133,8 @@ In this case, the hostname you've configured on the Dashboard is `example.com`. 
 Your site is identified by the host name from which the request is made and an identification code. The identification code must be placed inside the JavaScript snippet. If you ever need to recreate the code, go to the Settings page for your site and generate a new one. You'll then need to replace the old code.
 
 ```html
-<script defer src="https://api.pirsch.io/pirsch.js" 
-    id="pirschjs" 
+<script defer src="https://api.pirsch.io/pa.js" 
+    id="pianjs" 
     data-code="YOUR_IDENTIFICATION_CODE"></script>
 ```
 

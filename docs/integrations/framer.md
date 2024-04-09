@@ -14,7 +14,7 @@ This is how the page looks in the Designer.
 
 Before we can integrate Pirsch with Framer, you will need to set up a dashboard on Pirsch. If you're testing your Framer site, please use the test domain (`something.framer.app`). If you're using a custom domain, use that instead. The domain on the Pirsch dashboard must match your Framer domain. You can also use [additional domains](/advanced/domains-rollup.md) to set up both at the same time. The domain can later be changed in the settings if needed.
 
-Once the dashboard has been created, copy your personal code snippet from the [integration settings](https://dashboard.pirsch.io/settings/integration) or select it from the confirmation page. We recommend the extended script to enable all features, including event tracking.
+Once the dashboard has been created, copy your personal code snippet from the [integration settings](https://dashboard.pirsch.io/settings/integration) or select it from the confirmation page.
 
 In your Framer project, go to **Site Settings** > **General** and scroll down to the **Custom Code** section. You can open it in the top right corner of the Designer by clicking the gear icon.
 
@@ -71,7 +71,7 @@ First, copy the script below into the **body tag** section of the general settin
 </script>
 ```
 
-The script will select all elements on the page with the `data-pirsch-event` attribute and attach a click event to them. When the element is clicked, an event is fired and sent to Pirsch. The extended script supports the `pirsch-event` HTML attribute out of the box, but Framer doesn't allow attributes that don't start with `data-` or are regular HTML attributes like `id`.
+The script will select all elements on the page with the `data-pirsch-event` attribute and attach a click event to them. When the element is clicked, an event is fired and sent to Pirsch. Framer doesn't allow attributes that don't start with `data-` or are regular HTML attributes like `id`.
 
 The above script also supports metadata. You can add any `data-pirsch-meta-KEY="VALUE"` attribute you like.
 
