@@ -12,7 +12,7 @@ Release: 2024-04-11
 * added viewing individual sessions
 * added "contains" filter for event meta values
 * added graphs for minute-based statistics
-* added data prefix to HTML attributes to ignore pirsch link clicks and for custom events + meta data
+* added data prefix to HTML attributes to ignore pirsch link clicks and for custom events + metadata
 * only provide a single consolidated script instead of multiple variations
 * improved setting descriptions
 * improved email reports
