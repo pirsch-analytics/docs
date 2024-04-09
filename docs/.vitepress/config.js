@@ -75,6 +75,8 @@ export default {
                     {text: "Comparing Statistics", link: "/advanced/comparison"},
                     {text: "Additional Domains and Rollup Views", link: "/advanced/domains-rollup"},
                     {text: "Webhooks", link: "/advanced/webhooks"},
+                    {text: "Traffic Spike Notifications", link: "/advanced/traffic-spike"},
+                    {text: "Traffic Alerts", link: "/advanced/traffic-alerts"},
                     {text: "Extending Sessions", link: "/advanced/sessions"},
                     {text: "Proxying the Scripts", link: "/advanced/proxy"},
                     {text: "Proxying Through Cloudflare Workers", link: "/advanced/cf-workers"},
