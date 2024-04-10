@@ -2213,6 +2213,71 @@ This endpoint deletes an email report.
 
 `DELETE /api/v1/report?id=A5kgYzK14m`
 
+## Managing Webhooks
+
+### Listing Webhooks
+
+This endpoint lists all webhooks.
+
+`GET /api/v1/webhook?domain_id=0DJ0mo934`
+
+::: details EXAMPLE RESPONSE
+```JSON
+[
+    {
+        "id": "A5kgYzK14m",
+        "def_time": "2021-05-22T10:11:12.123456Z",
+        "mod_time": "2021-05-22T10:11:12.123456Z",
+        "domain_id": "0DJ0mo934",
+	    "description": "Description",
+	    "event": "event_name",
+	    "endpoint": "https://example.com/api/webhook",
+	    "active": true
+    },
+    // ...
+]
+```
+:::
+
+### Creating/Updating Webhooks
+
+This endpoint creates or updates a webhook. Updating an exising webhooks, even if no fields are changed, will activate it again if it has been disabled due to failed requests.
+
+`POST /api/v1/webhook`
+
+::: details EXAMPLE REQUEST
+```JSON
+{
+    "id": "A5kgYzK14m", // updates the webhook if set
+    "domain_id": "0DJ0mo934",
+    "description": "Description",
+    "event": "event_name",
+    "endpoint": "https://example.com/api/webhook"
+}
+```
+:::
+
+::: details EXAMPLE RESPONSE
+```JSON
+{
+    "id": "A5kgYzK14m",
+    "def_time": "2021-05-22T10:11:12.123456Z",
+    "mod_time": "2021-05-22T10:11:12.123456Z",
+    "domain_id": "0DJ0mo934",
+    "description": "Description",
+    "event": "event_name",
+    "endpoint": "https://example.com/api/webhook",
+    "active": true
+}
+```
+:::
+
+### Deleting Webhooks
+
+This endpoint will delete a webhook.
+
+`DELETE /api/v1/webhook?id=A5kgYzK14m`
+
 ## Managing Conversion Goals
 
 ### Listing Conversion Goals
