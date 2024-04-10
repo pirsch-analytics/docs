@@ -8,7 +8,7 @@ You can use Google Tag Manager (GTM) to add the Pirsch snippet to your website.
 4. Next click on **Choose a trigger to make this tag fire** and select **All pages** (or filter the pages you want to use the script on)
 5. To finish the setup, click **Save**, **Submit** (top right corner) and **Publish**.
 
-After you finished the setup, you can test the integration as described [here] (/get-started/frontend-integration#test-the-integration).
+After you finished the setup, you can test the integration as described [here](/get-started/frontend-integration#test-the-integration).
 
 Should GTM strip the parameters from the snippet. You can try [dynamically creating and embedding the snippet](https://support.google.com/tagmanager/thread/18040523/what-attributes-are-preserved-on-custom-html-tags-and-what-attributes-are-stripped?hl=en).
 
