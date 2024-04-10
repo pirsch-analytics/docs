@@ -23,7 +23,7 @@ export default {
         ["meta", {name: "og:image", content: "https://docs.pirsch.io/twitter-card.png"}],
         ["meta", {name: "og:type", content: "article"}],
         ["link", {rel: "shortcut icon", type: "image/png", href: "/favicon.png"}],
-        ["script", {defer: true, type: "text/javascript", src: "https://api.pirsch.io/pirsch-extended.js", id: "pirschextendedjs", "data-code": "6V8bSjEHJ19PK2hVxaaqJhItHUpSUekW"}]
+        ["script", {defer: true, type: "text/javascript", src: "https://api.pirsch.io/pa.js", id: "pianjs", "data-code": "6V8bSjEHJ19PK2hVxaaqJhItHUpSUekW"}]
     ],
     themeConfig: {
         logo: "/logo.png",
@@ -74,6 +74,9 @@ export default {
                     {text: "Segmentation and A/B Testing", link: "/advanced/segmentation-tags"},
                     {text: "Comparing Statistics", link: "/advanced/comparison"},
                     {text: "Additional Domains and Rollup Views", link: "/advanced/domains-rollup"},
+                    {text: "Webhooks", link: "/advanced/webhooks"},
+                    {text: "Traffic Spike Notifications", link: "/advanced/traffic-spike"},
+                    {text: "Traffic Alerts", link: "/advanced/traffic-alerts"},
                     {text: "Extending Sessions", link: "/advanced/sessions"},
                     {text: "Proxying the Scripts", link: "/advanced/proxy"},
                     {text: "Proxying Through Cloudflare Workers", link: "/advanced/cf-workers"},

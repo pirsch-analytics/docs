@@ -68,24 +68,9 @@ The last step is to add the JavaScript snippet to your site. In case you've alre
 Note that you need to use the URL of your worker and make sure that the id attribute is set correctly.
 
 ```html
-<!-- The new pirsch.js uses p.js and you'll have to add the data-endpoint attribute. -->
-<script defer src="https://round-hill-c3a4.your-account.workers.dev/static/files/p.js"
-    id="pirschjs"
-    data-endpoint="https://round-hill-c3a4.your-account.workers.dev/p/pv"></script>
-
-<!-- The new pirsch-events.js uses ev.js and you'll have to add the data-endpoint attribute. -->
-<script defer src="https://round-hill-c3a4.your-account.workers.dev/static/files/ev.js"
-    id="pirscheventsjs"
-    data-endpoint="https://round-hill-c3a4.your-account.workers.dev/p/e"></script>
-
-<!-- The new pirsch-sessions.js uses ses.js and you'll have to add the data-endpoint attribute. -->
-<script defer src="https://round-hill-c3a4.your-account.workers.dev/static/files/ses.js"
-    id="pirschsessionsjs"
-    data-endpoint="https://round-hill-c3a4.your-account.workers.dev/p/s"></script>
-
-<!-- The new pirsch-extended.js uses ext.js and you'll have to add the data-hit-endpoint and data-event-endpoint attributes. -->
-<script defer src="https://round-hill-c3a4.your-account.workers.dev/static/files/ext.js"
-    id="pirschextendedjs"
+<!-- You'll have to add the data-hit-endpoint and data-event-endpoint attributes. -->
+<script defer src="https://round-hill-c3a4.your-account.workers.dev/static/files/pa.js"
+    id="pianjs"
     data-hit-endpoint="https://round-hill-c3a4.your-account.workers.dev/p/pv"
     data-event-endpoint="https://round-hill-c3a4.your-account.workers.dev/p/e"></script>
 ```

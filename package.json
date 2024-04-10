@@ -26,7 +26,7 @@
   "homepage": "https://github.com/pirsch-analytics/docs#readme",
   "devDependencies": {
     "sitemap": "^7.1.1",
-    "vitepress": "^1.0.0-rc.42",
-    "vue": "^3.4.18"
+    "vitepress": "^1.1.0",
+    "vue": "^3.4.21"
   }
 }

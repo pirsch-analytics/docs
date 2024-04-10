@@ -28,31 +28,11 @@ Events are automatically created and added to your dashboard when you send them.
 
 ## Sending Events From Your Website
 
-Before you can send your first event, you need to add the `pirsch-events.js` or `pirsch-extended.js` JavaScript snippet to your website. They're different from the regular `pirsch.js` to reduce page load and keep the scripts lightweight.
+Before you can send your first event, you need to add the `ps.js` JavaScript snippet to your website.
 
-Navigate to the settings page on the dashboard and select the **Integration** tab. Copy the code snippet for your domain and add it to the `head` section of each page you want to send events from. The snippet looks like this:
-
-```HTML
-<script defer src="https://api.pirsch.io/pirsch-events.js"
-    id="pirscheventsjs"
-    data-code="IDENTIFICATION_CODE"></script>
-```
-
-The `data-code` is the identification code for your domain. If you reset it, you also need to replace it in the snippet.
-
-The `data-exclude` and `data-include` attributes from the regular `pirsch.js` can also be used for the event snippet. Please refer to the [website integration](/get-started/frontend-integration) for details.
-
-`pirsch-extended.js` is a lot more powerful and provides automatic tracking of [outbound link clicks](/advanced/outbound-links) and [file downloads](/advanced/file-downloads). It also allows you to track events using HTML attributes and CSS class names. Please refer to the examples below to decide which one to use.
-
-::: info
-`pirsch-events.js` **can't** be used as a replacement for the regular `pirsch.js`. It can only be used to send events programmatically. `pirsch.js` is still required to send page views. However, `pirsch-extended.js` provides all features, so you can use it to replace the other scripts.
-:::
+The `data-exclude` and `data-include` attributes can be used to ignore events on certain pages. Please refer to the [website integration](/get-started/frontend-integration) for details.
 
 ### Example 1: Using CSS Classes
-
-::: info
-The `pirsch-extended.js` script is required to use this feature.
-:::
 
 If you don't have access to the HTML of your website and cannot or don't want to use JavaScript, adding CSS classes is the easiest way to add event tracking. The downside is that only click events are supported at the moment. The example below will trigger an event when the button is clicked.
 
@@ -70,23 +50,19 @@ You can add as many `pirsch-meta-<Key>=<Value>` classes as you want. They'll be 
 
 ### Example 2: Using HTML Attributes
 
-::: info
-The `pirsch-extended.js` script is required to use this feature.
-:::
-
 If you have access to the HTML of your website, adding attributes is an easy way to add event tracking. The downside is that only click events are supported at the moment. The example below will trigger an event when the button is clicked.
 
 ```HTML
-<button pirsch-event="Event Name" pirsch-meta-key="Meta Value" pirsch-duration="32">
+<button data-pirsch-event="Event Name" data-pirsch-meta-key="Meta Value" data-pirsch-duration="32">
     Button
 </button>
 ```
 
-The event name is set by adding the `pirsch-event="<Name>"` attribute.
+The event name is set by adding the `data-pirsch-event="<Name>"` attribute.
 
-You can add as many `pirsch-meta-<Key>="<Value>"` parameters as you want. They'll be attached as metadata to the event.
+You can add as many `data-pirsch-meta-<Key>="<Value>"` parameters as you want. They'll be attached as metadata to the event.
 
-`pirsch-duration="<Number>"` can be used to send a number that the average of will be displayed on the events details panel.
+`data-pirsch-duration="<Number>"` can be used to send a number that the average of will be displayed on the events details panel.
 
 ### Example 3: Using JavaScript
 

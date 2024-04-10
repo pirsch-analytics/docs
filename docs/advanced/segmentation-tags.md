@@ -32,16 +32,16 @@ Before you can use tags in the dashboard, you need to attach them to page views 
 You can send tags from your website by adding them to the JavaScript snippet. By default, the snippet looks like this:
 
 ```html
-<script defer type="text/javascript" src="https://api.pirsch.io/pirsch-extended.js"
-    id="pirschextendedjs"
+<script defer type="text/javascript" src="https://api.pirsch.io/pa.js"
+    id="pianjs"
     data-code="identification_code"></script>
 ```
 
 To add tags, simply add attributes to the HTML `script` tag.
 
 ```html
-<script defer type="text/javascript" src="https://api.pirsch.io/pirsch-extended.js"
-    id="pirschextendedjs"
+<script defer type="text/javascript" src="https://api.pirsch.io/pa.js"
+    id="pianjs"
     data-code="identification_code"
     data-tag-author="John"
     data-tag="food,vegetarian"></script>
@@ -64,8 +64,8 @@ For A/B testing and the like, we recommend setting the tags programmatically. Wi
 **PHP**
 
 ```php
-<script defer type="text/javascript" src="https://api.pirsch.io/pirsch-extended.js"
-    id="pirschextendedjs"
+<script defer type="text/javascript" src="https://api.pirsch.io/pa.js"
+    id="pianjs"
     data-code="identification_code"
     <?php
         // Conditionally add the author tag.
@@ -80,8 +80,8 @@ For A/B testing and the like, we recommend setting the tags programmatically. Wi
 
 ```js
 const snippet = document.createElement("script");
-snippet.src = "https://api.pirsch.io/pirsch-extended.js";
-snippet.id = "pirschextendedjs";
+snippet.src = "https://api.pirsch.io/pa.js";
+snippet.id = "pianjs";
 snippet.setAttribute("data-code", "identification_code");
 
 // Conditionally add the author tag.

@@ -2,10 +2,30 @@
 
 ## 2.3.0
 
-Release: unreleased
+Release: 2024-04-11
 
+* added option to delete events only
+* added traffic spike notifications
+* added traffic warning notifications
+* added webhooks
+* added graphs in background to overview
+* added viewing individual sessions
+* added "contains" filter for event meta values
+* added graphs for minute-based statistics
+* added data prefix to HTML attributes to ignore pirsch link clicks and for custom events + metadata
 * only provide a single consolidated script instead of multiple variations
 * improved setting descriptions
+* improved email reports
+* optimized loading dashboard data
+* optimized loading domain on overview
+* keep filter settings when changing pages
+* fixed missing triggers for mod_time
+* fixed sending conversion goal notifications to organization members
+* fixed clearing comparision when switching domain on overview
+* fixed comparison selection for views
+* fixed removing time range keyboard shortcuts event handler on pages other than the dashboard/sessions
+* fixed branding and theme colors in email reports
+* fixed joining events when grouping by hours/minutes
 * updated dependencies
 
 ## 2.2.5
