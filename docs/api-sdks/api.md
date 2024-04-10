@@ -193,6 +193,8 @@ The following list contains all possible filter options. Only the required field
 | id | yes | A5kgYzK14m | The domain ID. Use the list endpoint to get the domain ID for the client. |
 | from | yes | 2021-05-08 | YYYY-MM-DD |
 | to | yes | 2021-05-15 | YYYY-MM-DD |
+| from_time | no | 12:34 | Sets the start time to group results by minute in the format of HH:MM. This only applies if the start and end date (to and from) are equal. |
+| to_time | no | 15:07 | Sets the end time to group results by minute in the format of HH:MM. This only applies if the start and end date (to and from) are equal. |
 | tz | no | Europe/Berlin | The time zone. If not set, the default time zone for the dashboard is used. |
 | start | no | 600 | Queries data for the past seconds (10 minutes in this example). The date range filters is ignored if set. The maximum is one hour (3600 seconds). |
 | scale | no | week | The scale to group results. Can either be day (default), week, month, or year. |
@@ -221,6 +223,8 @@ The following list contains all possible filter options. Only the required field
 | custom_metric_key | no | integer | The custom metric key used to aggregate statistics. This will be used to parse the an event metadata value. Used in combination with the `custom_metric_type`. |
 | tag | no | author | The tag key to filter for. This field is used to break down a single tag. |
 | tag_(key) | no | `tag_key0=value0&tag_key1=value1` | The tag key and values to filter for. Multiple keys can be set by prefixing them using `tag_` and appending them to the URL. Only results with all key-value pairs are returned. |
+| visitor_id | no | 1234... | Sets the visitor ID to return details for a single session. The `session_id` must also be set. |
+| session_id | no | 1234... | Sets the session ID to return details for a single session. The `visitor_id` must also be set. |
 | offset | no | 0 | Sets the offset for the result set. |
 | limit | no | 20 | Limits the number of results, note that this is hard limited to 100. |
 | include_avg_time_on_page | no | true | Set to true, to include the average time on page when reading page statistics. |
@@ -283,6 +287,20 @@ This endpoint returns basic statistics and the number of members for given domai
     "views": 102,
     "visitor_growth": 0.02,
     "views_growth": 0.23,
+    "visitors_time_series": [
+        {
+            "day": "2024-04-10T00:00:00Z",
+            "visitors": 42,
+            "views": 57,
+            "sessions": 48,
+            "bounces": 22,
+            "bounce_rate": 0.5312,
+            "cr": 0,
+            "custom_metric_avg": 0,
+            "custom_metric_total": 0
+        },
+        // ...
+    ],
     "member": 4
 }
 ```
@@ -772,6 +790,40 @@ Return the active visitors for the last minute.
 ```
 :::
 
+### Visitors by Minute
+
+`GET /api/v1/statistics/minutes`
+
+::: details EXAMPLE RESPONSE
+```JSON
+[
+    {
+        "minute": 0,
+        "visitors": 42,
+        "views": 56,
+        "sessions": 48,
+        "bounces": 23,
+        "bounce_rate": 0.4791,
+        "cr": 0.25,
+        "custom_metric_avg": 42.1,
+        "custom_metric_total": 598
+    },
+    {
+        "minute": 1,
+        "visitors": 29,
+        "views": 52,
+        "sessions": 21,
+        "bounces": 19,
+        "bounce_rate": 0.3219,
+        "cr": 0.25,
+        "custom_metric_avg": 42.1,
+        "custom_metric_total": 598
+    },
+    // ...
+]
+```
+:::
+
 ### Languages
 
 `GET /api/v1/statistics/language`
@@ -986,6 +1038,129 @@ This endpoint returns a breakdown for a single tag.
 	    "views": 57,
 	    "relative_visitors": 0.24,
 	    "relative_views": 0.35
+    },
+    // ...
+]
+```
+:::
+
+### Sessions
+
+This endpoint returns a list of sessions for the given filter. The `visitor_id` is a string, as the number is too big for JavaScript/JSON (unsigned integer 64 bit).
+
+`GET /api/v1/statistics/session/list`
+
+::: details EXAMPLE RESPONSE
+```JSON
+[
+    {
+	    "visitor_id": "12345...",
+	    "session_id": 12345,
+	    "time": "2024-04-10T15:16:56Z",
+	    "start": "2024-04-10T15:03:31Z",
+	    "duration_seconds": 42,
+	    "entry_path": "/",
+	    "exit_path": "/pricing",
+	    "page_views": 4,
+	    "is_bounce": false,
+	    "entry_title": "Home",
+	    "exit_title": "Pricing",
+	    "language": "en",
+	    "country_code": "us",
+	    "city": "San Francisco",
+	    "referrer": "https://google.com",
+	    "referrer_name": "Google",
+	    "referrer_icon": "",
+	    "os": "Windows",
+	    "os_version": "11.0",
+	    "browser": "Firefox",
+	    "browser_version": "124.0",
+	    "desktop": true,
+	    "mobile": false,
+	    "screen_class": "XXL",
+	    "utm_source": "",
+	    "utm_medium": "",
+	    "utm_campaign": "",
+	    "utm_content": "",
+	    "utm_term": "",
+	    "extended": 0
+    },
+    // ...
+]
+```
+:::
+
+### Session Breakdown
+
+This endpoint breaks down a single session and returns all page views and events in chronological order. The `visitor_id` and `session_id` for the filter must both be set.
+
+`GET /api/v1/statistics/session/details`
+
+::: details EXAMPLE RESPONSE
+```JSON
+[
+    {
+	    "page_view": {
+	        "visitor_id": 12345,
+	        "session_id": 12345,
+	        "time": "2024-04-10T15:16:56Z",
+	        "duration_seconds": 0,
+	        "path": "/",
+	        "title": "Home",
+	        "language": "en",
+	        "country_code": "us",
+	        "city": "San Francisco",
+	        "referrer": "https://google.com",
+	        "referrer_name": "Google",
+	        "referrer_icon": "",
+	        "os": "Windows",
+	        "os_version": "11.0",
+            "browser": "Firefox",
+            "browser_version": "124.0",
+            "desktop": true,
+            "mobile": false,
+            "screen_class": "XXL",
+            "utm_source": "",
+            "utm_medium": "",
+            "utm_campaign": "",
+            "utm_content": "",
+            "utm_term": "",
+	        "tag_keys": ["author", "abtest"],
+	        "tag_values": ["John", "a"]
+        },
+	    "event": null
+    },
+    {
+	    "page_view": null,
+	    "event": {
+            "visitor_id": 12345,
+	        "session_id": 12345,
+	        "time": "2024-04-10T15:16:56Z",
+            "name": "event",
+            "meta_keys": ["key"],
+            "meta_values": ["value"],
+            "duration_seconds": 42,
+            "path": "/",
+	        "title": "Home",
+	        "language": "en",
+	        "country_code": "us",
+	        "city": "San Francisco",
+            "referrer": "https://google.com",
+	        "referrer_name": "Google",
+	        "referrer_icon": "",
+	        "os": "Windows",
+	        "os_version": "11.0",
+            "browser": "Firefox",
+            "browser_version": "124.0",
+            "desktop": true,
+            "mobile": false,
+            "screen_class": "XXL",
+            "utm_source": "",
+            "utm_medium": "",
+            "utm_campaign": "",
+            "utm_content": "",
+            "utm_term": ""
+        }
     },
     // ...
 ]
@@ -2232,6 +2407,8 @@ This endpoint returns a list of views for a given domain.
         "name": "My View",
         "from": "2022-01-02",
         "to": "2022-03-04",
+        "from_time": "14:56",
+	    "to_time": "15:07",
         "period": 5,
         "compare": null, // previous, year, custom
         "compare_from": null, // date
@@ -2260,7 +2437,9 @@ This endpoint returns a list of views for a given domain.
         "event_meta_value": ["meta_value"],
         "tag": ["tag"],
         "tag_key": ["tag_key"],
-        "tag_value": ["tag_value"]
+        "tag_value": ["tag_value"],
+        "visitor_id": 12345,
+	    "session_id": 12345
     },
     // ...
 ]
@@ -2284,6 +2463,8 @@ This endpoint creates a new view or updates an existing view. It updates an exis
     "name": "My View",
     "from": "2022-01-02",
     "to": "2022-03-04",
+    "from_time": "14:56",
+    "to_time": "15:07",
     "period": 5,
     "compare": null, // previous, year, custom
     "compare_from": null, // date
@@ -2312,7 +2493,9 @@ This endpoint creates a new view or updates an existing view. It updates an exis
     "event_meta_value": ["meta_value"],
     "tag": ["tag"],
     "tag_key": ["tag_key"],
-    "tag_value": ["tag_value"]
+    "tag_value": ["tag_value"],
+    "visitor_id": 12345,
+    "session_id": 12345
 }
 ```
 :::
@@ -2328,6 +2511,8 @@ This endpoint creates a new view or updates an existing view. It updates an exis
     "name": "My View",
     "from": "2022-01-02",
     "to": "2022-03-04",
+    "from_time": "14:56",
+    "to_time": "15:07",
     "period": 5,
     "compare": null, // previous, year, custom
     "compare_from": null, // date
@@ -2356,7 +2541,9 @@ This endpoint creates a new view or updates an existing view. It updates an exis
     "event_meta_value": ["meta_value"],
     "tag": ["tag"],
     "tag_key": ["tag_key"],
-    "tag_value": ["tag_value"]
+    "tag_value": ["tag_value"],
+    "visitor_id": 12345,
+    "session_id": 12345
 }
 ```
 :::
