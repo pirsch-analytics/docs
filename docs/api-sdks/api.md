@@ -1926,7 +1926,7 @@ This endpoint deletes an alternative domain by ID.
 
 `DELETE /api/v1/domain/alternative?id=A5kgYzK14m`
 
-## Managing snippets
+## Managing Snippets
 
 The snippets can be customized for advanced usage. There are two snippet configurations: `page view` and `event`.
 
@@ -2277,6 +2277,68 @@ This endpoint creates or updates a webhook. Updating an exising webhooks, even i
 This endpoint will delete a webhook.
 
 `DELETE /api/v1/webhook?id=A5kgYzK14m`
+
+## Managing Traffic Spike Notifications
+
+### Enabling/Disabling Traffic Spike Notifications
+
+This endpoint will toggle traffic spike notifications.
+
+`PUT /api/v1/traffic/spike`
+
+::: details EXAMPLE REQUEST
+```JSON
+{
+    "domain_id": "0DJ0mo934"
+}
+```
+:::
+
+### Configuring Traffic Spike Notifications
+
+This endpoint will configure traffic spike notifications. Don't forget to enable them using the endpoint above. `threshold` is the number of unique visitors that need to be on the site at the same time to trigger the warning.
+
+`POST /api/v1/traffic/spike`
+
+::: details EXAMPLE REQUEST
+```JSON
+{
+    "domain_id": "0DJ0mo934",
+    "threshold": 100
+}
+```
+:::
+
+## Managing Traffic Warnings
+
+### Enabling/Disabling Traffic Warnings
+
+This endpoint will toggle traffic warnings.
+
+`PUT /api/v1/traffic/warning`
+
+::: details EXAMPLE REQUEST
+```JSON
+{
+    "domain_id": "0DJ0mo934"
+}
+```
+:::
+
+### Configuring Traffic Warnings
+
+This endpoint will configure traffic warnings. Don't forget to enable them using the endpoint above. `threshold` is the number of days that might pass before a notification is send.
+
+`POST /api/v1/traffic/warning`
+
+::: details EXAMPLE REQUEST
+```JSON
+{
+    "domain_id": "0DJ0mo934",
+    "threshold": 5
+}
+```
+:::
 
 ## Managing Conversion Goals
 
