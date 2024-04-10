@@ -37,17 +37,14 @@ Adjust the script and endpoint paths to your liking. These will later be used to
 Here is an example of how you could change them.
 
 ```js
-const scriptPath = "/static/files/p.js";
-const eventScriptPath = "/static/files/ev.js";
-const extendedScriptPath = "/static/files/ext.js";
-const sessionScriptPath = "/static/files/ses.js";
+const scriptPath = "/static/files/pa.js";
 
 const pageViewPath = "/p/pv";
 const eventPath = "/p/e";
 const sessionPath = "/p/s";
 ```
 
-In this case, the JavaScript files (like `pirsch.js`) will be served from the `/static/files` directory, while the page view, event, and session requests will be sent to `/p/pv`, `/p/e`, and `/p/s`.
+In this case, the JavaScript file (`pa.js`) will be served from the `/static/files` directory, while the page view, event, and session requests will be sent to `/p/pv`, `/p/e`, and `/p/s`.
 
 You can also adjust the `Access-Control-Allow-Origin` if you like. Usually, allowing all sources `*` is good enough.
 
@@ -72,7 +69,8 @@ Note that you need to use the URL of your worker and make sure that the id attri
 <script defer src="https://round-hill-c3a4.your-account.workers.dev/static/files/pa.js"
     id="pianjs"
     data-hit-endpoint="https://round-hill-c3a4.your-account.workers.dev/p/pv"
-    data-event-endpoint="https://round-hill-c3a4.your-account.workers.dev/p/e"></script>
+    data-event-endpoint="https://round-hill-c3a4.your-account.workers.dev/p/e"
+    data-session-endpoint="https://round-hill-c3a4.your-account.workers.dev/p/s"></script>
 ```
 
 Of course, you can still use the other options available when adding the snippet, like excluding and including pages.
@@ -92,8 +90,9 @@ Under the **Triggers** tab, you can either define a custom domain or change the 
 If you changed the route to your own domain, you can update the scripts and make the paths relative, like this.
 
 ```html
-<script defer src="/static/files/ext.js"
-    id="pirschextendedjs"
+<script defer src="/static/files/pa.js"
+    id="pianjs"
     data-hit-endpoint="/p/pv"
-    data-event-endpoint="/p/e"></script>
+    data-event-endpoint="/p/e"
+    data-session-endpoint="/p/s"></script>
 ```
