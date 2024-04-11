@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.3.1
+
+Release: 2024-04-11
+
+* fixed traffic spike alert unique visitor count
+* fixed blog article head title and meta description
+* updated dependencies
+
 ## 2.3.0
 
 Release: 2024-04-11
