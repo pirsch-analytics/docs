@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.3.2
+
+Release: 2024-04-12
+
+* fixed filter for session breakdown
+* updated dependencies
+
 ## 2.3.1
 
 Release: 2024-04-11
