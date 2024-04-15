@@ -5,6 +5,8 @@
 Release: 2024-04-15
 
 * improved logging bot traffic
+* improved HTTP file caching
+* always show organization and dashboard invitations (including custom domains)
 * fixed reading overview statistics for imported data
 * fixed default white favicon for referrers
 * fixed updating website templates
