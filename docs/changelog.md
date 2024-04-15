@@ -1,5 +1,17 @@
 # Changelog
 
+## 2.3.3
+
+Release: 2024-04-15
+
+* improved logging bot traffic
+* fixed reading overview statistics for imported data
+* fixed default white favicon for referrers
+* fixed updating website templates
+* fixed and improved Fathom import with sub directories
+* fixed missing event name in session view
+* updated dependencies
+
 ## 2.3.2
 
 Release: 2024-04-12
