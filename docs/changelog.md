@@ -12,6 +12,7 @@ Release: 2024-04-15
 * fixed updating website templates
 * fixed and improved Fathom import with sub directories
 * fixed missing event name in session view
+* fixed traffic alert threshold
 * updated dependencies
 
 ## 2.3.2
