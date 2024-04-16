@@ -1,5 +1,14 @@
 # Changelog
 
+## 2.3.4
+
+Release: 2024-04-16
+
+* fixed component import
+* fixed snippet configuration labels
+* fixed snippet configuration endpoints being empty
+* fixed calculating period for cached filters
+
 ## 2.3.3
 
 Release: 2024-04-15
