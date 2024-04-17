@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.3.6
+
+Release: 2024-04-17
+
+* fixed null filter
+* fixed filtering for hour
+
 ## 2.3.5
 
 Release: 2024-04-17
