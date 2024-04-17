@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.3.5
+
+Release: 2024-04-17
+
+* fixed live view
+* fixed query parameters not overwriting cached filter settings
+* fixed updating query parameters twice
+
 ## 2.3.4
 
 Release: 2024-04-16
