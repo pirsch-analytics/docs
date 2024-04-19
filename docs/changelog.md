@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.3.8
+
+Release: 2024-04-19
+
+* website CMS update
+
 ## 2.3.7
 
 Release: 2024-04-17
