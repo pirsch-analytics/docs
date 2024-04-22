@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.3.9
+
+Release: 2024-04-22
+
+* fixed comparing to previous period without matching weekday
+
 ## 2.3.8
 
 Release: 2024-04-19
