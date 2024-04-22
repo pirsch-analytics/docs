@@ -4,7 +4,9 @@
 
 Release: 2024-04-22
 
+* added combining path and event filter for conversion goals if not configured
 * fixed comparing to previous period without matching weekday
+* fixed resetting fields in conversion goal dialog
 
 ## 2.3.8
 
