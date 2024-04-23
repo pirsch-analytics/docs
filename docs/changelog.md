@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.3.10
+
+Release: 2024-04-23
+
+* improved ClickHouse backups
+* updated dependencies
+
 ## 2.3.9
 
 Release: 2024-04-22
