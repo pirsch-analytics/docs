@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.3.11
+
+Release: 2024-04-24
+
+* fixed cookie expiry for the dashboard
+* fixed signing out if the refresh token is expired
+
 ## 2.3.10
 
 Release: 2024-04-23
