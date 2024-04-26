@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.4.0
+
+Release: unreleased
+
+* added TXT verification for custom domains
+* added check to ensure a custom domain is not in use
+
 ## 2.3.11
 
 Release: 2024-04-24
