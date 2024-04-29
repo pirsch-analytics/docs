@@ -6,6 +6,14 @@ Release: unreleased
 
 * added TXT verification for custom domains
 * added check to ensure a custom domain is not in use
+* added auto join feature to automatically add users on sign up to organizations
+
+## 2.3.12
+
+Release: 2024-04-29
+
+* added max value to chart y axis
+* removed HTTP caching from index for dashboard
 
 ## 2.3.11
 
