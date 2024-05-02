@@ -9,6 +9,7 @@ Release: unreleased
 * added auto join feature to automatically add users on sign up to organizations
 * added number of events to events panel on hover
 * added IP address, hostname, country, and path traffic filters
+* fixed public access to webhook configuration
 
 ## 2.3.12
 
