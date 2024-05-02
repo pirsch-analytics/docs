@@ -7,6 +7,8 @@ Release: unreleased
 * added TXT verification for custom domains
 * added check to ensure a custom domain is not in use
 * added auto join feature to automatically add users on sign up to organizations
+* added number of events to events panel on hover
+* added IP address, hostname, country, and path traffic filters
 
 ## 2.3.12
 
