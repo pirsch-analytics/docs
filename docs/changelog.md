@@ -10,6 +10,7 @@ Release: unreleased
 * added number of events to events panel on hover
 * added IP address, hostname, country, and path traffic filters
 * fixed public access to webhook configuration
+* fixed missing cache for alternative hostnames for events
 
 ## 2.3.12
 
