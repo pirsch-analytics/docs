@@ -12,6 +12,7 @@ Release: unreleased
 * added more links to documentation on settings page
 * fixed public access to webhook configuration
 * fixed missing cache for alternative hostnames for events
+* fixed missing locks for settings
 
 ## 2.3.12
 
