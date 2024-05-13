@@ -14,6 +14,15 @@ Release: unreleased
 * fixed missing cache for alternative hostnames for events
 * fixed missing locks for settings
 
+## 2.3.13
+
+Release: 2024-05-13
+
+* added Plausible Analytics import
+* improved Fathom Analytics import
+* fixed grouping weeks/months/years if period is exactly specified as one week/month/year
+* updated dependencies
+
 ## 2.3.12
 
 Release: 2024-04-29
