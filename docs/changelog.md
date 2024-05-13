@@ -13,6 +13,12 @@ Release: unreleased
 * fixed public access to webhook configuration
 * fixed missing cache for alternative hostnames for events
 
+## 2.3.14
+
+Release: 2024-05-13
+
+* fixed grouping weeks/months/years if period is exactly specified as one week/month/year
+
 ## 2.3.13
 
 Release: 2024-05-13
