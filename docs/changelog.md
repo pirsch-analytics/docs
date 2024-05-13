@@ -14,6 +14,12 @@ Release: unreleased
 * fixed missing cache for alternative hostnames for events
 * fixed missing locks for settings
 
+## 2.3.14
+
+Release: 2024-05-13
+
+* fixed grouping weeks/months/years if period is exactly specified as one week/month/year
+
 ## 2.3.13
 
 Release: 2024-05-13
