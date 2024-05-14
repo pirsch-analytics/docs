@@ -13,6 +13,15 @@ Release: unreleased
 * fixed public access to webhook configuration
 * fixed missing cache for alternative hostnames for events
 
+## 2.3.15
+
+Release: 2024-05-14
+
+* improved Fathom and Plausible import UI
+* fixed Plausible import CORS error
+* fixed Plausible import email confirmation
+* fixed comparison mode max value in graph
+
 ## 2.3.14
 
 Release: 2024-05-13
