@@ -38,7 +38,6 @@ POST https://api.pirsch.io/api/v1/session
 
 {
     "ip":                           "123.456.789.0",
-    "dnt":                          "DNT header (optional)",
     "user_agent":                   "User-Agent header",
     "sec_ch_ua":                    "Sec-CH-UA header (optional)",
 	"sec_ch_ua_mobile":             "Sec-CH-UA-Mobile header (optional)",

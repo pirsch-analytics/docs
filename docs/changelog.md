@@ -14,6 +14,23 @@ Release: unreleased
 * fixed missing cache for alternative hostnames for events
 * fixed missing locks for settings
 
+## 2.3.16
+
+Release: 2024-05-15
+
+* removed DNT
+* moved Plus subscription box up
+* updated dependencies
+
+## 2.3.15
+
+Release: 2024-05-14
+
+* improved Fathom and Plausible import UI
+* fixed Plausible import CORS error
+* fixed Plausible import email confirmation
+* fixed comparison mode max value in graph
+
 ## 2.3.14
 
 Release: 2024-05-13
