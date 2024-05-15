@@ -13,6 +13,14 @@ Release: unreleased
 * fixed public access to webhook configuration
 * fixed missing cache for alternative hostnames for events
 
+## 2.3.16
+
+Release: 2024-05-15
+
+* removed DNT
+* moved Plus subscription box up
+* updated dependencies
+
 ## 2.3.15
 
 Release: 2024-05-14

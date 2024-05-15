@@ -45,7 +45,6 @@ This endpoint is used to send page views to Pirsch. It requires you to send info
 {
     "url":                          "https://example.com/full/url?including=parameters",
     "ip":                           "123.456.789.0",
-    "dnt":                          "DNT header (optional)",
     "user_agent":                   "User-Agent header",
     "accept_language":              "Accept-Language header (optional)",
     "sec_ch_ua":                    "Sec-CH-UA header (optional)",
@@ -65,8 +64,6 @@ This endpoint is used to send page views to Pirsch. It requires you to send info
 }
 ```
 :::
-
-One small tweak you can make is to check the `DNT` (Do Not Track) header before sending the request. Check if the header is set to `1`, if true you can ignore the request, otherwise send it.
 
 It's possible to send multiple page views at once. If you use the batch endpoint, make sure the page views are in order, otherwise they throw off your statistics. This works well for sites that run on a single server where you can buffer page views.
 
@@ -108,7 +105,6 @@ Fields with underscores are comments.
     "_hit":                         "The fields below are the same as for hits.",
     "url":                          "https://example.com/full/url?including=parameters",
     "ip":                           "123.456.789.0",
-    "dnt":                          "DNT header (optional)",
     "user_agent":                   "User-Agent header",
     "accept_language":              "Accept-Language header (optional)",
     "sec_ch_ua":                    "Sec-CH-UA header (optional)",
@@ -151,7 +147,6 @@ This endpoint is used to **manually** keep sessions alive. A session is normally
 ```JSON
 {
     "ip":                           "123.456.789.0",
-    "dnt":                          "DNT header (optional)",
     "user_agent":                   "User-Agent header",
     "sec_ch_ua":                    "Sec-CH-UA header (optional)",
 	"sec_ch_ua_mobile":             "Sec-CH-UA-Mobile header (optional)",

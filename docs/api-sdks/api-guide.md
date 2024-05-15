@@ -151,7 +151,6 @@ Let's send a simple page view. This is usually done from your server ([server-si
 {
     "url":                          "https://example.com/full/url?including=parameters",
     "ip":                           "123.456.789.0",
-    "dnt":                          "DNT header (optional)",
     "user_agent":                   "User-Agent header",
     "accept_language":              "Accept-Language header (optional)",
     "sec_ch_ua":                    "Sec-CH-UA header (optional)",
@@ -206,8 +205,6 @@ $request = array(
 
 // Use $request to send the data to Pirsch.
 ```
-
-One small tweak you can make is to check the `DNT` (Do Not Track) header before sending the request. Check if the header is set to `1`, if it is you can drop the request.
 
 If your server is behind a load balancer or proxy, make sure you are using the correct header for the IP address. Most proxies set the `X-Forwarded-IP` header, which contains the real IP. You'll probably need to extract it by parsing the header.
 

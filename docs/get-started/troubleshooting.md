@@ -18,7 +18,7 @@ To test the script, navigate to your website and open the network tab of the dev
 
 ![Developer Tools](../static/get-started/network-tab.png)
 
-If not, check the identification code and domain you've configured. Also make sure you haven't sent the **Do Not Track** (DNT) HTTP header, set the `disable_pirsch` option in your localStorage, or added the script to your site more than once.
+If not, check the identification code and domain you've configured. Also make sure you haven't set the `disable_pirsch` option in your localStorage, or added the script to your site more than once.
 
 ## Ensure That You Have Installed the Right Script
 
@@ -65,7 +65,7 @@ We block certain IP addresses, so if your service is behind a load balancer or p
 
 If you don't see your visits on your dashboard immediately, don't worry. There is usually a small delay of a few seconds as we cache page visits before writing them to the database.
 
-In case you don't see your visits appearing after a small delay, make sure you didn't [disable Pirsch](/get-started/frontend-integration#ignoring-your-own-page-views), have an ad blocker active, a VPN, or modified your DNT or User-Agent headers. In rare cases, your page views might be blocked by our bot filter. Try a different device on a different network in that case.
+In case you don't see your visits appearing after a small delay, make sure you didn't [disable Pirsch](/get-started/frontend-integration#ignoring-your-own-page-views) nor have an ad blocker or a VPN active. In rare cases, your page views might be blocked by our bot filter. Try a different device on a different network in that case.
 
 ## Script Features Are Not Being Tracked (Outbound Link Clicks, File Downloads, Custom Events)
 
