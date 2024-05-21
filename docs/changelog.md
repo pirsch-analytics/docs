@@ -11,9 +11,12 @@ Release: unreleased
 * added IP address, hostname, country, and path traffic filters
 * added more links to documentation on settings page
 * added regions
+* added hiding copyright and dark/light mode toggle to themes
 * fixed public access to webhook configuration
 * fixed missing cache for alternative hostnames for events
 * fixed missing locks for settings
+* fixed theme settings
+* fixed title color for chart tooltips
 
 ## 2.3.16
 
