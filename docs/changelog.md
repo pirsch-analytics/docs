@@ -2,7 +2,7 @@
 
 ## 2.4.0
 
-Release: unreleased
+Release: 2024-05-21
 
 * added TXT verification for custom domains
 * added check to ensure a custom domain is not in use
@@ -12,6 +12,7 @@ Release: unreleased
 * added more links to documentation on settings page
 * added regions
 * added hiding copyright and dark/light mode toggle to themes
+* added country and live map
 * fixed public access to webhook configuration
 * fixed missing cache for alternative hostnames for events
 * fixed missing locks for settings

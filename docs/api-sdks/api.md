@@ -239,6 +239,7 @@ GET /api/v1/statistics/options/page
 GET /api/v1/statistics/options/referrer
 GET /api/v1/statistics/options/event
 GET /api/v1/statistics/options/country
+GET /api/v1/statistics/options/region
 GET /api/v1/statistics/options/city
 GET /api/v1/statistics/options/language
 GET /api/v1/statistics/options/metadata
@@ -746,6 +747,14 @@ Return the active visitors for the last minute.
         },
         // ...
     ],
+    "countries": [
+        {
+            "visitors": 42,
+            "relative_visitors": 0.24,
+            "country_code": "jp"
+        },
+        // ...
+    ],
     "visitors": 298
 }
 ```
@@ -938,7 +947,25 @@ Return the active visitors for the last minute.
     {
         "visitors": 42,
         "relative_visitors": 0.24,
-        "country": "jp"
+        "country_code": "jp"
+    },
+    // ...
+]
+```
+:::
+
+### Region
+
+`GET /api/v1/statistics/region`
+
+::: details EXAMPLE RESPONSE
+```JSON
+[
+    {
+        "visitors": 42,
+        "relative_visitors": 0.24,
+        "country_code": "jp",
+        "region": "Tokyo"
     },
     // ...
 ]
@@ -955,6 +982,8 @@ Return the active visitors for the last minute.
     {
         "visitors": 42,
         "relative_visitors": 0.24,
+        "country_code": "jp",
+        "region": "Tokyo",
         "city": "London"
     },
     // ...
@@ -2273,6 +2302,69 @@ This endpoint will delete a webhook.
 
 `DELETE /api/v1/webhook?id=A5kgYzK14m`
 
+## Managing Traffic Filters
+
+### Listing Filters
+
+This endpoint lists all traffic filters.
+
+`GET /api/v1/filter?domain_id=0DJ0mo934`
+
+::: details EXAMPLE RESPONSE
+```JSON
+[
+    {
+        "id": "A5kgYzK14m",
+        "def_time": "2021-05-22T10:11:12.123456Z",
+        "mod_time": "2021-05-22T10:11:12.123456Z",
+        "domain_id": "0DJ0mo934",
+	    "type": "ip",
+	    "description": "IP Address Filter",
+	    "filter": "89.56.99.71"
+    },
+    // ...
+]
+```
+:::
+
+### Creating/Updating Traffic Filters
+
+This endpoint creates or updates a traffic filter.
+
+`POST /api/v1/filter`
+
+::: details EXAMPLE REQUEST
+```JSON
+{
+    "id": "A5kgYzK14m", // updates the filter if set
+    "domain_id": "0DJ0mo934",
+    "type": "ip",
+    "description": "Description",
+	"filter": "89.56.99.71"
+}
+```
+:::
+
+::: details EXAMPLE RESPONSE
+```JSON
+{
+    "id": "A5kgYzK14m",
+    "def_time": "2021-05-22T10:11:12.123456Z",
+    "mod_time": "2021-05-22T10:11:12.123456Z",
+    "domain_id": "0DJ0mo934",
+    "type": "ip",
+    "description": "IP Address Filter",
+    "filter": "89.56.99.71"
+}
+```
+:::
+
+### Deleting a Traffic Filter
+
+This endpoint deletes a traffic filter.
+
+`DELETE /api/v1/filter?id=A5kgYzK14m`
+
 ## Managing Traffic Spike Notifications
 
 ### Enabling/Disabling Traffic Spike Notifications
@@ -2828,6 +2920,27 @@ This endpoint adds an existing domain to an organization.
 This endpoint removes a domain from given organization.
 
 `DELETE /api/v1/organization/domain?id=Jk49fgm38&domain_id=93ODk5o1sL`
+
+### Adding Auto-Join Hostnames
+
+This endpoint will add a hostname to automatically join members using an email address with the hostname for sign up.
+
+`POST /api/v1/organization/autojoin`
+
+::: details EXAMPLE REQUEST
+```JSON
+{
+    "id": "Jk49fgm38",
+    "auto_join": ["example.com"]
+}
+```
+:::
+
+### Removing an Auto-Join Hostname
+
+This endpoint will remove a hostname from the auto-join list.
+
+`DELETE /api/v1/organization/autojoin?id=Jk49fgm38&auto_join=example.com`
 
 ## Managing Themes
 
