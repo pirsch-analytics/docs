@@ -46,6 +46,7 @@ export default {
                     {text: "Google Analytics Import", link: "/get-started/ga-import"},
                     {text: "Plausible Analytics Import", link: "/get-started/plausible-import"},
                     {text: "Fathom Analytics Import", link: "/get-started/fathom-import"},
+                    {text: "Exporting Statistics", link: "/get-started/export"},
                     {text: "Troubleshooting", link: "/get-started/troubleshooting"}
                 ]
             },
