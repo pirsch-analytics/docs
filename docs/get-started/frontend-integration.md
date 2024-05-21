@@ -111,9 +111,7 @@ snippet.addEventListener("load", () => pirschInit());
 
 ## Ignoring Your Own Page Views
 
-You can disable the integration by by adding a variable called `disable_pirsch` to your local storage. The value can be anything.
-
-For the latter option, open the developer tools (usually F12 or `Ctrl + Shift + I`) in your browser and navigate to the **web storage** tab. Click on **local storage** and add a new value `disable_pirsch` and `1` as the value. After reloading the page, no page views or events (if you also use the event script) should be sent to Pirsch.
+Please see the [traffic filter article](/advanced/traffic-filter.md). Disabling Pirsch on the client side is the simplest solution.
 
 ## Testing Pirsch Locally
 

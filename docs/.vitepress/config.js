@@ -46,6 +46,7 @@ export default {
                     {text: "Google Analytics Import", link: "/get-started/ga-import"},
                     {text: "Plausible Analytics Import", link: "/get-started/plausible-import"},
                     {text: "Fathom Analytics Import", link: "/get-started/fathom-import"},
+                    {text: "Exporting Statistics", link: "/get-started/export"},
                     {text: "Troubleshooting", link: "/get-started/troubleshooting"}
                 ]
             },
@@ -76,6 +77,8 @@ export default {
                     {text: "Comparing Statistics", link: "/advanced/comparison"},
                     {text: "Additional Domains and Rollup Views", link: "/advanced/domains-rollup"},
                     {text: "Webhooks", link: "/advanced/webhooks"},
+                    {text: "Email Reports", link: "/advanced/email-reports"},
+                    {text: "Traffic Filter", link: "/advanced/traffic-filter"},
                     {text: "Traffic Spike Notifications", link: "/advanced/traffic-spike"},
                     {text: "Traffic Alerts", link: "/advanced/traffic-alerts"},
                     {text: "Extending Sessions", link: "/advanced/sessions"},

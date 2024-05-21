@@ -10,6 +10,12 @@ The dashboard and scripts can be served from your own domain. Combined with [the
 
 Custom domains can be configured on the **General** settings page of your dashboard. You will need an **unused** domain to serve the dashboard and scripts. This can be a subdomain like `dashboard.custom-domain.com` or any other unused top level/subdomain you have. **You must use a separate domain for each dashboard. Using a single domain to host multiple dashboards, as we do on dashboard.pirsch.io, is not currently supported.**.
 
+Before you can add your custom domain, you must confirm ownership. Add the TXT record shown below the input field and add it to your DNS configuration.
+
+![Custom Domain Settings TXT Record](../static/advanced/custom-domain-settings-txt.png)
+
+After the TXT record is propagated, you can proceed.
+
 ![Custom Domain Settings](../static/advanced/custom-domain-settings.png)
 
 After entering your domain, click **Save** and copy the DNS records that appear below. Create four new records for your domain.
