@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.4.1
+
+Release: 2024-05-24
+
+* added filter country code validation
+* fixed event names in snippet configuration
+* updated dependencies
+
 ## 2.4.0
 
 Release: 2024-05-21
