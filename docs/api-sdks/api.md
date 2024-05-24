@@ -2065,8 +2065,12 @@ Scopes can grant read or write access. The table below shows the possible values
 | - | - | - |
 | hit | | x |
 | event | | x |
+| session | | x |
 | statistics | x | |
 | domains | x | x |
+| organizations | x | x |
+| themes | x | x |
+| billing | x | |
 
 The `domains` scope has two different meanings, depending on whether it's used for a domain or a user client:
 
