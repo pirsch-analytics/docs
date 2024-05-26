@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.4.2
+
+Release: 2024-05-26
+
+* fixed release
+
 ## 2.4.1
 
 Release: 2024-05-24
