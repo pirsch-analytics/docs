@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.4.3
+
+Release: 2024-05-27
+
+* fixed creating dashboard with non-ASCII characters in hostname
+* improved bot filter
+* updated dependencies
+
 ## 2.4.2
 
 Release: 2024-05-26
