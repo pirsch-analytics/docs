@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.4.4
+
+Release: 2024-06-03
+
+* added graph y-axis maximum value to modal dialogs
+* fixed graph y-axis maximum value when chaning filters
+* updated dependencies
+
 ## 2.4.3
 
 Release: 2024-05-27
