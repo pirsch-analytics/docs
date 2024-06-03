@@ -10,7 +10,7 @@ This is how the page looks in the Designer.
 
 ![Framer Designer](/static/integrations/framer/framer-designer.png)
 
-## Adding a Script to Framer
+## Adding the Script to Framer
 
 Before we can integrate Pirsch with Framer, you will need to set up a dashboard on Pirsch. If you're testing your Framer site, please use the test domain (`something.framer.app`). If you're using a custom domain, use that instead. The domain on the Pirsch dashboard must match your Framer domain. You can also use [additional domains](/advanced/domains-rollup.md) to set up both at the same time. The domain can later be changed in the settings if needed.
 

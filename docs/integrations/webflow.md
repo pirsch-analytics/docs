@@ -16,7 +16,7 @@ This is how the page looks in the Designer.
 
 ![Webflow Designer](/static/integrations/webflow/webflow-designer.png)
 
-## Adding a Script to Webflow
+## Adding the Script to Webflow
 
 Before we can integrate Pirsch with Webflow, you will need to set up a dashboard on Pirsch. If you're testing your Webflow site, please use the test domain (`something.webflow.io`). If you're using a custom domain, use that instead. The domain on the Pirsch dashboard must match your Webflow domain. You can also use [additional domains](/advanced/domains-rollup.md) to set up both at the same time. The domain can later be changed in the settings if needed.
 
