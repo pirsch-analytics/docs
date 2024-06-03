@@ -52,7 +52,7 @@ Click the **+** sign to add an attribute for the event name, and additional meta
 
 And that's it! After publishing the changes, clicking the button on the page after publishing the changes will now fire an event. For more advanced use cases, see the [events article](/advanced/events.md).
 
-## Analyzing the Traffic
+## Analyzing the Data
 
 Once you have integrated Pirsch into your Webflow site and published the changes, we will start collecting data. It may take a few minutes for the first page views and events to show up on your dashboard.
 

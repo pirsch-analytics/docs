@@ -107,7 +107,19 @@ Finally, close the file and select it in the **Code Overrides** section. Under *
 
 And that's it! After publishing the changes, clicking the button on the page after publishing the changes will now fire an event. For more advanced use cases, see the [events article](/advanced/events.md).
 
-## Analyzing the Traffic
+## Testing the Integration
+
+Once you have added and published your custom code snippet, you can reload your website. To test that Pirsch is working as expected, you can open the browser's Network tab from the Developer Tools (usually `Cmd/Ctrl + Shift + I` or `F12`). You should see one request to load the script, one to view the page, and one when you click the button.
+
+![Framer Integration Test](/static/integrations/framer/framer-demo.png)
+
+Here is an enlarged view of the network tab.
+
+![Framer Integration Test](/static/integrations/framer/framer-demo-network.png)
+
+The first request loads the script. The second one tracks the page view. The last two are only displayed when you click on the button. All of them should show a status code of 200. If you select one, you can see the request and response data. For the event, this will be what you configured in the Designer.
+
+## Analyzing the Data
 
 Once you have integrated Pirsch into your Framer site and published the changes, we will start collecting data. It may take a few minutes for the first page views and events to show up on your dashboard.
 
@@ -120,15 +132,3 @@ The metadata for the button can be viewed in the Event Details dialog (click the
 ![Pirsch Dashboard Events](/static/integrations/framer/framer-pirsch-dashboard-event.png)
 
 As you can see, the event will have the `type` set to `primary`. The `Outbound Link Click` is also tracked if you set the button as a link.
-
-## Testing the Integration
-
-Once you have added and published your custom code snippet, you can reload your website. To test that Pirsch is working as expected, you can open the browser's Network tab from the Developer Tools (usually `Cmd/Ctrl + Shift + I` or `F12`). You should see one request to load the script, one to view the page, and one when you click the button.
-
-![Framer Integration Test](/static/integrations/framer/framer-demo.png)
-
-Here is an enlarged view of the network tab.
-
-![Framer Integration Test](/static/integrations/framer/framer-demo-network.png)
-
-The first request loads the script. The second one tracks the page view. The last two are only displayed when you click on the button. All of them should show a status code of 200. If you select one, you can see the request and response data. For the event, this will be what you configured in the Designer.
