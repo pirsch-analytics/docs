@@ -4,6 +4,7 @@
 
 Release: 2024-06-03
 
+* added GoeDB and Udger proxy
 * added graph y-axis maximum value to modal dialogs
 * fixed graph y-axis maximum value when chaning filters
 * updated dependencies
