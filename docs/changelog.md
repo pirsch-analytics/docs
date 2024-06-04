@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.4.5
+
+Release: 2024-06-04
+
+* fixed owner when creating dashboard belonging to organization
+* fixed transfering ownership when changing the organization for a dashboard
+* fixed listing organizations for members with viewer permission when adding a dashboard
+
 ## 2.4.4
 
 Release: 2024-06-03
