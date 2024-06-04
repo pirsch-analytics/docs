@@ -83,7 +83,13 @@ If you expand the panel, you can see the meta data for the event.
 
 ## Tracking Form Submissions
 
-*WIP*
+Tracking forms can be achieved through custom events and a bit of JavaScript on your site. In this example we'll be using the newsletter sign up at the bottom of the page.
+
+First, open the browser developer tools to find the ID of the form you would like to track.
+
+![Tracking Forms](/static/integrations/shopify/tracking-forms.png)
+
+In this case the ID is `ContactFooter`. Now open the `theme.liquid` file from the theme code settings and paste the code right before the closing `</body>` tag. The code can be opened from the same settings you used to install the JavaScript snippet.
 
 ```js
 <script>
@@ -121,18 +127,40 @@ If you expand the panel, you can see the meta data for the event.
 </script>
 ```
 
+Here is how that would look like in the editor.
+
+![Tracking Forms Code](/static/integrations/shopify/tracking-forms-code.png)
+
+The script has a list of selectors at the top. You can add more entries to it if you would like to track other forms as well. A selector starting with `#` will look for an ID. You can use any selector supported by `document.querySelector` (learn more about that [here](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)).
+
+It will then go through all selectors and look for the element on the page. If it's present and of type `FORM`, it will attach an event listener to send a custom event to Pirsch anytime it is submitted. The script will automatically pick up all input fields in the form, unless they are hidden or of type `password`.
+
+Once added, save the changes and reload your shop page to test the integration. After submitting the newsletter sign up form, you should see an event on your Pirsch dashboard.
+
+![Tracking Forms Details](/static/integrations/shopify/tracking-forms-details.png)
+
+Please note that the script only supports forms as it is right now. You can add more handlers if you want, like for links or other elements on your page.
+
 ## Tracking Sales and Revenue
 
-*WIP*
+Tracking sales and revenue works by sending a custom event to Pirsch every time a customer makes a purchase and setting up a conversion goal on the dashboard. Let's first take a look at the custom event implementation.
 
-https://shopify.dev/docs/api/web-pixels-api/standard-events/checkout_completed
+### Adding the Event
+
+To add the event, you'll first need to add the JavaScript script snippet to the checkout pages. This is the same process as in the [setup](/integrations/shopify#adding-the-snippet-to-the-checkout).
+
+::: danger
+If you include [Personally Identifiable Information (PII)](https://en.wikipedia.org/wiki/Personal_data) within the metadata fields, you will need to ask for consent. In this example the email address and order ID would count as PII.
+:::
+
+Additionally, you also need to add a *Shopify Pixel* event. For the checkout, this is [`checkout_completed`](https://shopify.dev/docs/api/web-pixels-api/standard-events/checkout_completed). Use the code below to add a handler. For completnes, it also includes the script snippet. Don't forget to replace the identification code with your own.
 
 ```js
 const script = document.createElement("script");
 script.setAttribute("src", "https://api.pirsch.io/pa.js");
 script.setAttribute("id", "pianjs");
 script.setAttribute("async", "");
-script.setAttribute("data-code", "sgZ4FLnnijhUCuZ8vHUfdLLyqpCDMEnO");
+script.setAttribute("data-code", "YOUR_IDENTIFICATION_CODE");
 document.head.appendChild(script);
 
 analytics.subscribe("checkout_completed", event => {
@@ -150,6 +178,22 @@ analytics.subscribe("checkout_completed", event => {
 });
 ```
 
-## Analyzing the Data
+After the code has been added and saved, go to your shop and make a test order. On the confirmation page, you should see the event being send to Pirsch in the network tab of the browser developer tools.
 
-Once you have integrated Pirsch into your Shopify shop and published the changes, we will start collecting data. It may take a few minutes for the first page views and events to show up on your dashboard.
+![Tracking Checkout Success](/static/integrations/shopify/tracking-checkout-success.png)
+
+### Setting up the Conversion Goal
+
+After the purchases are tracked through custom events, you can see them appearing on the dashboard.
+
+![Tracking Checkout Details](/static/integrations/shopify/tracking-checkout-details.png)
+
+To track revenue over time, you can set up a conversion goal. In the conversion goals panel click the **+** icon in the top right corner. Enter a name and the **Custom Metric** details. The event name is `Purchase`, for the event meta key enter `currency` and enter your desired currency (`EUR` in this case). For the custom metric key enter `amount` and select `Decimal` for the type. Save the goal.
+
+![Conversion Goal](/static/integrations/shopify/conversion-goal-settings.png)
+
+You should now see your test purchase appearing as `1` in the panel. If you click the goal, the graphs include the total and average revenue over time.
+
+![Conversion Goal](/static/integrations/shopify/conversion-goal.png)
+
+Of course, you can add more filters to get deeper insights, like ad campaign attribution.
