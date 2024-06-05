@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.4.x
+
+Release: unreleased
+
+* replaced neighbor function with window functions
+* updated dependencies
+
 ## 2.4.6
 
 Release: 2024-06-05
