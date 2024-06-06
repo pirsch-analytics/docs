@@ -6,7 +6,14 @@ Release: unreleased
 
 * added filtering by country by clicking on map
 * added past hour period and shortcut
+* updated dependencies
+
+## 2.4.7
+
+Release: 2024-06-06
+
 * replaced neighbor function with window functions
+* fixed hostname in canonical link
 * updated dependencies
 
 ## 2.4.6
