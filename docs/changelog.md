@@ -4,6 +4,8 @@
 
 Release: unreleased
 
+* added filtering by country by clicking on map
+* added past hour period and shortcut
 * replaced neighbor function with window functions
 * updated dependencies
 
