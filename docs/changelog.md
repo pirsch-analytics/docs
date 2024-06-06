@@ -12,6 +12,7 @@ Release: unreleased
 
 Release: 2024-06-06
 
+* improved text overflow when grouping pages by title
 * replaced neighbor function with window functions
 * fixed hostname in canonical link
 * updated dependencies
