@@ -8,6 +8,12 @@ Release: unreleased
 * added past hour period and shortcut
 * updated dependencies
 
+## 2.4.8
+
+Release: 2024-06-06
+
+* fixed deleting organizations with open invitations
+
 ## 2.4.7
 
 Release: 2024-06-06
