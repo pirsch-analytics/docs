@@ -6,6 +6,7 @@ Release: unreleased
 
 * added filtering by country by clicking on map
 * added past hour period and shortcut
+* added i18n for dashboard and language configuration for accounts
 * updated dependencies
 
 ## 2.4.8
