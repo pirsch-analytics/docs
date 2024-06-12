@@ -9,6 +9,12 @@ Release: unreleased
 * added i18n for dashboard and language configuration for accounts
 * updated dependencies
 
+## 2.4.9
+
+Release: 2024-06-12
+
+* fixed accessing sessions on shared dashboards
+
 ## 2.4.8
 
 Release: 2024-06-06
