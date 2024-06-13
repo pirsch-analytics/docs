@@ -76,12 +76,16 @@ In case of an error, Pirsch returns a JSON object in the body describing the pro
     },
     "error": [
         "error message"
-    ]
+    ],
+    "context": {
+        "key": "value"
+    }
 }
 ```
 
 * `validation` lists errors related to parameters
 * `error` lists general errors, like when an object can't be found. There is usually only one error message
+* `context` gives context information. This is a key-value list where the value can be a string, number, array, or any other valid JSON type
 
 ### Getting the Domain ID
 

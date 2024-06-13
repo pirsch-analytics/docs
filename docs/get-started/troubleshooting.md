@@ -44,7 +44,10 @@ To test the [server-side integration](/get-started/backend-integration), log any
     },
     "error": [
         "error message"
-    ]
+    ],
+    "context": {
+        "key": "value"
+    }
 }
 ```
 
