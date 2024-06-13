@@ -10,7 +10,17 @@ You can use Google Tag Manager (GTM) to add the Pirsch snippet to your website.
 
 After you finished the setup, you can test the integration as described [here](/get-started/frontend-integration#test-the-integration).
 
-Should GTM strip the parameters from the snippet. You can try [dynamically creating and embedding the snippet](https://support.google.com/tagmanager/thread/18040523/what-attributes-are-preserved-on-custom-html-tags-and-what-attributes-are-stripped?hl=en).
+Should GTM strip the parameters from the snippet. You can try [dynamically creating and embedding the snippet](https://support.google.com/tagmanager/thread/18040523/what-attributes-are-preserved-on-custom-html-tags-and-what-attributes-are-stripped?hl=en). Here is an example:
+
+```js
+const script = document.createElement("script");
+script.src = "https://api.pirsch.io/pa.js";
+script.id = "pianjs";
+script.setAttribute("data-code", "YOUR_IDENTIFICATION_CODE");
+document.body.appendChild(script);
+```
+
+This will dynamically create the snippet and add it to the `body` tag of your site.
 
 ## Considerations When Using the Tag Manager
 

@@ -21,3 +21,9 @@ Yes, but they are vulnerable to IP spoofing. We checked.
 Yes, you can host Pirsch yourself by purchasing an [Enterprise License](https://pirsch.io/pricing). Pricing depends on your size and needs, as it involves setting up a license agreement and requires more support from our side. [Contact us](mailto:support@pirsch.io) to discuss your requirements.
 
 We recommend the SaaS plan for smaller companies or personal projects.
+
+## Tracking Page Views via API Returns 200, but No Data Appears on the Dashboard?
+
+If you're tracking page views and events via the API and you receive an HTTP status code of 200 (OK), it doesn't necessarily mean that we've actually saved the page view or event. The tracking endpoints always return a status code of 200 (unless you pass invalid or incorrect data, such as an invalid access key), so we don't provide a method to learn how to bypass our bot filtering.
+
+Requests accepted by these endpoints are processed asynchronously and may be dropped if we think it's a bot request. When testing, make sure you're not behind a VPN or proxy, and that you have a proper user-agent configured in your browser.
