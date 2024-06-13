@@ -1,6 +1,6 @@
 # Changelog
 
-## 2.4.x
+## 2.5.0
 
 Release: unreleased
 
