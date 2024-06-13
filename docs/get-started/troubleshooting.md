@@ -70,6 +70,12 @@ If you don't see your visits on your dashboard immediately, don't worry. There i
 
 In case you don't see your visits appearing after a small delay, make sure you didn't [disable Pirsch](/get-started/frontend-integration#ignoring-your-own-page-views) nor have an ad blocker or a VPN active. In rare cases, your page views might be blocked by our bot filter. Try a different device on a different network in that case.
 
+## Tracking Page Views via API Returns 200, but No Data Appears on the Dashboard?
+
+If you're tracking page views and events via the API and you receive an HTTP status code of 200 (OK), it doesn't necessarily mean that we've actually saved the page view or event. The tracking endpoints always return a status code of 200 (unless you pass invalid or incorrect data, such as an invalid access key), so we don't provide a method to learn how to bypass our bot filtering.
+
+Requests accepted by these endpoints are processed asynchronously and may be dropped if we think it's a bot request. When testing, make sure you're not behind a VPN or proxy, and that you have a proper user-agent configured in your browser.
+
 ## Script Features Are Not Being Tracked (Outbound Link Clicks, File Downloads, Custom Events)
 
 When running the `pirsch-extended.js` or `pirsch-events.js` script in combination with a Single Page Application (SPA) built with frameworks like React, Vue, Angular, Svelte, etc. to track outbound link clicks, file downloads, or custom events, you may run into the problem that certain features do not work.
