@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.5.1
+
+Release: 2024-06-15
+
+* fixed copyright on login
+* improved translation
+
 ## 2.5.0
 
 Release: 2024-06-15
