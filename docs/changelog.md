@@ -2,7 +2,7 @@
 
 ## 2.5.0
 
-Release: unreleased
+Release: 2024-06-15
 
 * added filtering by country by clicking on map
 * added past hour period and shortcut
