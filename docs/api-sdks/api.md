@@ -182,6 +182,8 @@ The following endpoints can be used to read statistics from Pirsch. To receive d
 
 The following list contains all possible filter options. Only the required fields need to be set when making a request. Set the fields using URL query parameters, such as `?from=2021-05-08&to=2021-05-15&language=en`.
 
+You can test whether a value is not present in the result set by prepending it with the `!` prefix, such as `?path=!/home`. To test whether a value contains a string, prefix it with `~`, such as `?path=~blog`. To test whether a value does not contain a string by prepending the `^` prefix, such as `?path=^blog`.
+
 ::: details FILTER OPTIONS
 | Parameter | Required | Example | Format/Description |
 | - | - | - | - |

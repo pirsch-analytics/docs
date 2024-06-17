@@ -2,10 +2,11 @@
 
 ## 2.5.2
 
-Release: unreleased
+Release: 2024-06-17
 
 * added page view tags to session view
 * added more configuration options to create dashboard API
+* added "not contains" filter option
 * fixed missing translations
 * fixed filter excluding countries
 * updated dependencies
