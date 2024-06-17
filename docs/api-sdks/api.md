@@ -1296,7 +1296,7 @@ Don't forget to set the access token or access key in the `Authorization` header
 
 ### Creating a Domain
 
-This endpoint adds a new domain.
+This endpoint adds a new domain. Only the `hostname`, `subdomain`, and `timezone` are required. The other fields are optional and can be changed later using other API endpoints. They are just here to set some configuration options when creating the dashboard instead of requiring multiple API requests.
 
 `POST /api/v1/domain`
 
@@ -1307,7 +1307,14 @@ This endpoint adds a new domain.
     "subdomain": "example",
     "timezone": "Europe/Berlin",
     "organization_id": null,
-    "theme_id": null
+    "theme_id": null,
+    "public": false,
+	"group_by_title": false,
+	"active_visitors_seconds": 0,
+	"disable_scripts": false,
+	"display_name": "",
+	"traffic_spike_threshold": 0,
+	"traffic_warning_threshold_days": 0
 }
 ```
 :::

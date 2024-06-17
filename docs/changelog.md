@@ -5,6 +5,7 @@
 Release: unreleased
 
 * added page view tags to session view
+* added more configuration options to create dashboard API
 * fixed missing translations
 * fixed filter excluding countries
 * updated dependencies
