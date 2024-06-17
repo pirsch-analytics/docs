@@ -1,5 +1,14 @@
 # Changelog
 
+## 2.5.2
+
+Release: unreleased
+
+* added page view tags to session view
+* fixed missing translations
+* fixed filter excluding countries
+* updated dependencies
+
 ## 2.5.1
 
 Release: 2024-06-15
