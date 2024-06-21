@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.5.3
+
+Release: 2024-06-21
+
+* fixed updating subscription plan during free trial
+
 ## 2.5.2
 
 Release: 2024-06-17
