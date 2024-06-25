@@ -1,5 +1,14 @@
 # Changelog
 
+## 2.5.4
+
+Release: 2024-06-25
+
+* do not show menu on public dashboards that are unavailable
+* fixed overview showing up on public dashboard if signed in
+* fixed Plus features not being available for organization admins
+* updated dependencies
+
 ## 2.5.3
 
 Release: 2024-06-21
