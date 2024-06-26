@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.6.0
+
+Release: unreleased
+
+* added funnel
+* fixed missing database triggers
+* updated dependencies
+
 ## 2.5.4
 
 Release: 2024-06-25
