@@ -25,3 +25,4 @@ There are additional parameters to modify the user interface.
 
 * `ui=hide` will hide the Pirsch header and footer, leaving you with a cleaner dashboard
 * `mode=dark` or `mode=light` sets the dark or light mode for the dashboard. This will override the user's system settings
+* `lang=ja` will set the dashboard language. Provide an ISO code. Currently supported are: en, de, es, fr, nl, it, pt, ja
