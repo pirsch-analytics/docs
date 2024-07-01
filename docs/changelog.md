@@ -11,6 +11,14 @@ Release: unreleased
 * fixed missing database triggers
 * updated dependencies
 
+## 2.5.5
+
+Release: 2024-07-01
+
+* allow organization admins to change all dashboard settings
+* fixed allowing organization admins to use Pirsch Plus features
+* fixed Pirsch Plus hint
+
 ## 2.5.4
 
 Release: 2024-06-25
