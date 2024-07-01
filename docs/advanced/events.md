@@ -113,8 +113,17 @@ Here is an example of how you can use events to track form submissions. Note tha
 <script>
     // Wait until the page has fully loaded.
     document.addEventListener("DOMContentLoaded", () => {
+        // We prevent the form submission first, to allow the event to being tracked.
+        let preventSubmission = true;
+
         // Get the form using the id attribute and add a submission event handler.
         document.getElementById("form").addEventListener("submit", e => {
+            // Prevent on submit. We will re-trigger the event after the Pirsch event has been submitted.
+            if (preventSubmission) {
+                e.preventDefault();
+                preventSubmission = false;
+            }
+
             // Get the input field.
             const input = document.getElementById("message");
 
@@ -123,6 +132,14 @@ Here is an example of how you can use events to track form submissions. Note tha
                 meta: {
                     message: input.value
                 }
+            })
+            .then(() => {
+                // On success, re-trigger the event to submit the form.
+                e.target.submit();
+            })
+            .catch(() => {
+                // On error, re-trigger the event to submit the form.
+                e.target.submit();
             });
         });
     });
