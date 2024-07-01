@@ -14,12 +14,7 @@ The *Public Access* and *Access Links* sections both allow anyone to access your
 
 If you don't want to send out links or make your dashboard public to anyone, you can invite members instead. Click *Invite Member* to add new members to your website and enter all email addresses you would like to invite. The invited members will have to create an account for Pirsch if they don't already have one and accept the invitation.
 
-After the members joined, they will be able to view all statistics without modifing settings. You can change the member role to give them administrative access to your dashboard, including:
-
-* Managing members (not including themselves or you, the owner)
-* Managing access links
-* Resetting the identification code
-* Managing clients
+After the members joined, they will be able to view all statistics without modifing settings. You can change the member role to give them administrative access to your dashboard. Making a member admin privileged will give them access to all features. Including destructive actions.
 
 To remove a member, just click on the trash icon.
 

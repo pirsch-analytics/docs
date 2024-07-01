@@ -18,6 +18,9 @@ Release: 2024-07-01
 * allow organization admins to change all dashboard settings
 * fixed allowing organization admins to use Pirsch Plus features
 * fixed Pirsch Plus hint
+* fixed Pirsch Plus check for themes
+* fixed permissions when moving dashboard to organization
+* fixed copyright
 
 ## 2.5.4
 
