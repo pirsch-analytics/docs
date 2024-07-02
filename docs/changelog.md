@@ -4,8 +4,8 @@
 
 Release: unreleased
 
-* added funnel
-* added dropdown to add dashboards and organizations
+* added funnels
+* added dropdown to add dashboards, organizations, and funnels
 * added language switch and query parameter
 * added more icons to open domains
 * fixed missing database triggers
