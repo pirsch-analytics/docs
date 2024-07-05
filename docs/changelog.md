@@ -9,6 +9,8 @@ Release: unreleased
 * added language switch and query parameter
 * added more icons to open domains
 * fixed missing database triggers
+* fixed permissions to view specific parts of the UI on public and custom dashboards
+* fixed removing filters when there is a filter of the same type
 * updated dependencies
 
 ## 2.5.5
