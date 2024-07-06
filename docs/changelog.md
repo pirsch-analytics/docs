@@ -8,6 +8,7 @@ Release: unreleased
 * added dropdown to add dashboards, organizations, and funnels
 * added language switch and query parameter
 * added more icons to open domains
+* improved referrer titles in panel and details view
 * fixed missing database triggers
 * fixed permissions to view specific parts of the UI on public and custom dashboards
 * fixed removing filters when there is a filter of the same type
