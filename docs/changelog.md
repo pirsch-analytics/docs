@@ -2,7 +2,7 @@
 
 ## 2.6.0
 
-Release: unreleased
+Release: 2024-07-07
 
 * added funnels
 * added dropdown to add dashboards, organizations, and funnels
@@ -12,6 +12,7 @@ Release: unreleased
 * fixed missing database triggers
 * fixed permissions to view specific parts of the UI on public and custom dashboards
 * fixed removing filters when there is a filter of the same type
+* fixed missing translations
 * updated dependencies
 
 ## 2.5.5
