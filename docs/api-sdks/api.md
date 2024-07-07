@@ -1070,6 +1070,45 @@ This endpoint returns a breakdown for a single tag.
 ```
 :::
 
+### Funnels
+
+This endpoint returns a funnel including its definition and data for the selected period. Other filter parameters do not have an effect on it.
+
+Funnels need to be definied before they can be queried. The `funnel_id` query parameter must be set in addition to the filter period and domain ID.
+
+`GET /api/v1/statistics/funnel`
+
+::: details EXAMPLE RESPONSE
+```JSON
+{
+    "definition": {
+        // see "Managing Funnels"
+    },
+	"data": [
+        {
+            "step": 1,
+            "visitors": 123,
+            "relative_visitors": 1,
+            "previous_visitors": 0,
+            "relative_previous_visitors": 0,
+            "dropped": 0,
+            "drop_off": 0
+        },
+        {
+            "step": 2,
+            "visitors": 50,
+            "relative_visitors": 0.43,
+            "previous_visitors": 123,
+            "relative_previous_visitors": 1,
+            "dropped": 73,
+            "drop_off": 0.57
+        },
+        // ...
+    ]
+}
+```
+:::
+
 ### Sessions
 
 This endpoint returns a list of sessions for the given filter. The `visitor_id` is a string, as the number is too big for JavaScript/JSON (unsigned integer 64 bit).
@@ -2613,6 +2652,126 @@ This endpoint tests whether a regular expression is valid for a conversion goal.
 :::
 
 An error is returned if the expression is invalid. Otherwise, it returns if the regular expression matches the pattern.
+
+## Managing Funnels
+
+### Listing Funnels
+
+This endpoint lists all funnels.
+
+`GET /api/v1/funnel?id=0DJ0mo934`
+
+::: details EXAMPLE RESPONSE
+```JSON
+[
+    {
+        "id": "A5kgYzK14m",
+        "def_time": "2021-05-22T10:11:12.123456Z",
+        "mod_time": "2021-05-22T10:11:12.123456Z",
+        "domain_id": "0DJ0mo934",
+        "name": "Funnel",
+        "steps": [
+            {
+                "id": "i4OMo204x",
+                "def_time": "2021-05-22T10:11:12.123456Z",
+                "mod_time": "2021-05-22T10:11:12.123456Z",
+                "funnel_id": "A5kgYzK14m",
+                "name": "Step 1",
+                "step": 0, // starting at 0
+                "filter": {
+                    "path": [ /*...*/ ],
+                    "entry_path": [ /*...*/ ],
+                    "exit_path": [ /*...*/ ],
+                    "path_pattern": [ /*...*/ ],
+                    "path_regex": [ /*...*/ ],
+                    "language": [ /*...*/ ],
+                    "country": [ /*...*/ ],
+                    "region": [ /*...*/ ],
+                    "city": [ /*...*/ ],
+                    "referrer": [ /*...*/ ],
+                    "referrer_name": [ /*...*/ ],
+                    "os": [ /*...*/ ],
+                    "os_version": [ /*...*/ ],
+                    "browser": [ /*...*/ ],
+                    "browser_version": [ /*...*/ ],
+                    "platform": "desktop", // desktop, mobile
+                    "screen_class": [ /*...*/ ],
+                    "utm_source": [ /*...*/ ],
+                    "utm_medium": [ /*...*/ ],
+                    "utm_campaign": [ /*...*/ ],
+                    "utm_content": [ /*...*/ ],
+                    "utm_term": [ /*...*/ ],
+                    "tags": { /* key-value pairs */ },
+                    "tag": [ /*...*/ ],
+                    "event_name": [ /*...*/ ],
+                    "event_meta_key": [ /*...*/ ],
+                    "event_meta": : { /* key-value pairs */ }
+                }
+            },
+            // ...
+        ]
+    },
+    // ...
+]
+```
+:::
+
+### Creating and Updating a Funnel
+
+This endpoint creates or updates a funnel. If the ID is set, the funnel will be updated, otherwise a new funnel is created.
+
+`POST /api/v1/funnel`
+
+::: details EXAMPLE REQUEST
+```JSON
+{
+    "domain_id": "0DJ0mo934",
+    "id": "A5kgYzK14m", // optional
+    "name": "Funnel",
+    "steps": [
+        {
+            "name": "Step 1",
+            "filter": {
+                // filter fields
+            }
+        },
+        // ...
+    ]
+}
+```
+:::
+
+::: details EXAMPLE RESPONSE
+```JSON
+{
+    "id": "A5kgYzK14m",
+    "def_time": "2021-05-22T10:11:12.123456Z",
+    "mod_time": "2021-05-22T10:11:12.123456Z",
+    "domain_id": "0DJ0mo934",
+    "name": "Funnel",
+    "steps": [
+        {
+            "id": "i4OMo204x",
+            "def_time": "2021-05-22T10:11:12.123456Z",
+            "mod_time": "2021-05-22T10:11:12.123456Z",
+            "funnel_id": "A5kgYzK14m",
+            "name": "Step 1",
+            "step": 0, // starting at 0
+            "filter": {
+                // filter fields
+            }
+        },
+        // ...
+    ]
+}
+```
+:::
+
+### Deleting a Funnel
+
+This endpoint deletes a funnel.
+
+`DELETE /api/v1/funnel?id=A5kgYzK14m`
 
 ## Managing Views
 
