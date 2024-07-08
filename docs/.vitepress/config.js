@@ -75,6 +75,7 @@ export default {
                     {text: "Tracking File Downloads", link: "/advanced/file-downloads"},
                     {text: "Tracking 404 Errors", link: "/advanced/not-found-tracking"},
                     {text: "Segmentation and A/B Testing", link: "/advanced/segmentation-tags"},
+                    {text: "Multi-Step Funnels", link: "/advanced/funnels"},
                     {text: "Comparing Statistics", link: "/advanced/comparison"},
                     {text: "Additional Domains and Rollup Views", link: "/advanced/domains-rollup"},
                     {text: "Webhooks", link: "/advanced/webhooks"},

@@ -1,6 +1,6 @@
 # Enabling Client Hints
 
-Client Hints are a modern replacement for the user agent to tell a website about a visitor's browser and operating system. We use client Hints to detect the browser and operating system more reliably than it would be possible with the User-Agent alone. For example, Windows 11 can only be detected using Client Hints.
+Client Hints are a modern replacement for the User-Agent header to inform a website about a visitor's browser and operating system. We use Client Hints to detect the browser and operating system more reliably than it would be possible using the User-Agent header alone. For example, Windows 11 can only be detected using Client Hints.
 
 To improve the accuracy of your data on Pirsch, we recommend that you explicitly request Client Hints from the visitor's browser and forward them to our service or your proxy.
 
