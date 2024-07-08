@@ -2,7 +2,7 @@
 
 ## 2.6.0
 
-Release: 2024-07-07
+Release: 2024-07-08
 
 * added funnels
 * added dropdown to add dashboards, organizations, and funnels
@@ -13,6 +13,7 @@ Release: 2024-07-07
 * fixed permissions to view specific parts of the UI on public and custom dashboards
 * fixed removing filters when there is a filter of the same type
 * fixed missing translations
+* fixed filtering for unknown platform and screen resolution
 * updated dependencies
 
 ## 2.5.5
