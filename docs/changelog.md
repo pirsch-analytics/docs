@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.6.2
+
+Release: 2024-07-09
+
+* fixed funnels path
+* fixed loading funnels on domain switch
+* fixed returning Pirsch Plus when creating a new dashboard
+
 ## 2.6.1
 
 Release: 2024-07-09
