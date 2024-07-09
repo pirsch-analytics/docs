@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.6.1
+
+Release: 2024-07-09
+
+* fixed funnels in app navigation
+
 ## 2.6.0
 
 Release: 2024-07-09
