@@ -2,7 +2,7 @@
 
 ## 2.6.0
 
-Release: 2024-07-08
+Release: 2024-07-09
 
 * added funnels
 * added dropdown to add dashboards, organizations, and funnels

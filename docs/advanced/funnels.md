@@ -2,7 +2,7 @@
 
 Multi-step marketing funnels allow you to track your visitors' journey until they complete a conversion. You can define up to eight steps, each consisting of one or more filter options. These include pages, page patterns, custom events, tags, and all the other options you're used to in the dashboard. You'll be able to see how many visitors dropped off in each step, the conversion rate of each step, and the total conversion rate.
 
-*WIP Screenshot*
+![Funnel](../static/advanced/funnel/funnel.png)
 
 Here are a few examples for funnels:
 
@@ -18,11 +18,9 @@ Funnels are a Pirsch Plus feature.
 
 Funnels must be created in advance on the dashboard or via the [API](/api-sdks/api#managing-funnels). To create a new funnel, navigate to the funnel page and click **Add Funnel**. A dialog will appear where you can choose a name and add up to eight steps.
 
-*WIP Screenshot
+![Funnel Dialog](../static/advanced/funnel/funnel-creation.png)
 
 For each step, enter a meaningful name and add the filter options you want. For example, you can set up the first step as an entry page that refers to a specific landing page targeted by an ad campaign. You can also add multiple fields to a single step to further segment the funnel and use operators, just like on the dashboard. For example, in addition to the entry page, you could also add the UTM campaign parameter. Next, set the filters for the other steps.
-
-*WIP Screenshot*
 
 Each step in the funnel only considers visitors from the previous step, but it doesn't matter if you have steps in between. Here is an example of what this means:
 
@@ -43,7 +41,7 @@ Once you've created your first funnel, it will immediately start collecting data
 
 The first step will always show 100%. This is the base line. On the following steps, hover your mouse over to see the statistics.
 
-*WIP Screenshot*
+![Funnel Tooltip](../static/advanced/funnel/funnel-tooltip.png)
 
 ## Deleting, Copying, and Locking a Funnel
 
