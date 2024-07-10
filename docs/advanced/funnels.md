@@ -39,9 +39,7 @@ Once you've created your first funnel, it will immediately start collecting data
 * The absolute and relative number of visitors left per step
 * The drop-off rate and the absolute number of visitors dropping off each step from the previous step
 
-The first step will always show 100%. This is the base line. On the following steps, hover your mouse over to see the statistics.
-
-![Funnel Tooltip](../static/advanced/funnel/funnel-tooltip.png)
+The first step will always show 100%. This is the base line.
 
 ## Deleting, Copying, and Locking a Funnel
 

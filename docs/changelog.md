@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.6.3
+
+Release: 2024-07-10
+
+* flipped funnel chart
+* fixed updating multiple funnels on period change
+
 ## 2.6.2
 
 Release: 2024-07-09
