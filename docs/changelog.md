@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.6.4
+
+Release: 2024-07-30
+
+* added reason for bot traffic
+* updated dependencies
+
 ## 2.6.3
 
 Release: 2024-07-10
