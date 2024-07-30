@@ -1,5 +1,15 @@
 # Changelog
 
+## 2.7.0
+
+Release: unreleased
+
+* added Google Analytics 4 data import
+* improved imported statistics performance
+* improved imported statistics accuracy
+* improved theme setting error messages
+* updated dependencies
+
 ## 2.6.5
 
 Release: 2024-07-30
