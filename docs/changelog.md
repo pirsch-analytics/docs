@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.6.5
+
+Release: 2024-07-30
+
+* updated core
+
 ## 2.6.4
 
 Release: 2024-07-30
