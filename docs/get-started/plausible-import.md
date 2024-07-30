@@ -10,6 +10,18 @@ There are limitations on what you can do with imported statistics. Please refer 
 
 To import your data from Plausible Analytics, you must first export a `.zip` file containing the exported statistics as CSVs. You can learn how to do this from their [docs](https://plausible.io/docs/export-stats#export-all-stats-to-date).
 
+The file structure looks like this:
+
+* imported_browsers
+* imported_devices
+* imported_entry_pages
+* imported_exit_pages
+* imported_locations
+* imported_operating_systems
+* imported_pages
+* imported_sources
+* imported_visitors
+
 After you have set up your site on Pirsch, go to **Import / Export** in the settings, scroll down to the **Plausible Analytics Import** section, select the `.zip` file and click import.
 
 That's all you need to do! The import will run in the background and you'll receive an email when it's finished. You'll also be notified if there's an error. Please keep in mind that the upload limit is 100 MB and you can split the files if that's not enough for you.
