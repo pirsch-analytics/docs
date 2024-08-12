@@ -8,6 +8,8 @@ Release: unreleased
 * improved imported statistics performance
 * improved imported statistics accuracy
 * improved theme setting error messages
+* improved bot filter
+* fixed filter dialog title
 * updated dependencies
 
 ## 2.6.5
