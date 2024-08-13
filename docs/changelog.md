@@ -4,12 +4,16 @@
 
 Release: unreleased
 
-* added Google Analytics 4 data import
+* added Google Analytics 4 import
 * improved imported statistics performance
 * improved imported statistics accuracy
 * improved theme setting error messages
 * improved bot filter
+* close modal on mouse down instead of click
+* close period selection on mouse down instead of click
 * fixed filter dialog title
+* fixed Plus header on funnel page
+* fixed loading event meta data
 * updated dependencies
 
 ## 2.6.5
