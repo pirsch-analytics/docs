@@ -14,6 +14,8 @@ Release: unreleased
 * fixed filter dialog title
 * fixed Plus header on funnel page
 * fixed loading event meta data
+* fixed relative visitor calculation for platform
+* fixed deleting views for non-admin users
 * updated dependencies
 
 ## 2.6.5
