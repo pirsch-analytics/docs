@@ -11,6 +11,10 @@ Unfortunately, there are limitations when using Pirsch with imported statistics.
 * We cannot show hourly statistics for a single day.
 * It is not possible to export data imported from Google Analytics.
 
+::: info
+The Google Analytics 4 reporting API does not currently support exit pages. Therefore, the exit page panel will be empty for imported stats.
+:::
+
 ## Import
 
 ::: info
