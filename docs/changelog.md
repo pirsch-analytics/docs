@@ -2,13 +2,14 @@
 
 ## 2.7.0
 
-Release: unreleased
+Release: 2024-08-16
 
 * added Google Analytics 4 import
 * improved imported statistics performance
 * improved imported statistics accuracy
 * improved theme setting error messages
 * improved bot filter
+* improved editing filter parameters
 * close modal on mouse down instead of click
 * close period selection on mouse down instead of click
 * fixed filter dialog title
@@ -16,6 +17,7 @@ Release: unreleased
 * fixed loading event meta data
 * fixed relative visitor calculation for platform
 * fixed deleting views for non-admin users
+* fixed autocomplete for filter parameters
 * updated dependencies
 
 ## 2.6.5
