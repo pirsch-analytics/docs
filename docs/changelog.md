@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.7.1
+
+Release: 2024-08-17
+
+* fixed min date for Google Analytics import
+
 ## 2.7.0
 
 Release: 2024-08-16
