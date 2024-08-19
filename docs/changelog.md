@@ -1,5 +1,14 @@
 # Changelog
 
+## 2.7.2
+
+Release: 2024-08-19
+
+* added bounce rate for pages and referrers when filtering for an event
+* added bounce rate graph when filtering for an event
+* fixed a type error when reading views and bounces
+* fixed property ID for GA4 imports
+
 ## 2.7.1
 
 Release: 2024-08-17
