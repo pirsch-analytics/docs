@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.7.3
+
+Release: 2024-08-19
+
+* added maximum import retries for GA API requests
+
 ## 2.7.2
 
 Release: 2024-08-19
