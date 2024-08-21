@@ -1,5 +1,14 @@
 # Changelog
 
+## 2.7.4
+
+Release: 2024-08-21
+
+* improvements to database schema
+* ignore S3 errors when a user picture could not be found
+* fixed missing translations for error message component
+* updated dependencies
+
 ## 2.7.3
 
 Release: 2024-08-19
