@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.7.5
+
+Release: 2024-08-22
+
+* fixed page view limit calculation for multiple domains
+
 ## 2.7.4
 
 Release: 2024-08-21
