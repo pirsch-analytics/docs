@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.7.6
+
+Release: 2024-08-22
+
+* improved path filter documentation
+
 ## 2.7.5
 
 Release: 2024-08-22

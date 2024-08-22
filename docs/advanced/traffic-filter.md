@@ -26,7 +26,19 @@ Wildcards are supported. You can use an asterisk (`*`) to replace any part of th
 
 ## Filtering Pages and Page Sections
 
-To filter for a page or page sections, navigate to the **Filter** settings page and click **Add Filter** in the **Page Filter** section. Enter the path and click save. You can enter an exact path or use an asterisk (*) wildcard to match any path. For example, `/path` will filter all traffic on `/path`, while `/blog/*` will filter all traffic on the blog section, such as `/blog/my-article`.
+To filter for a page or page sections, navigate to the **Filter** settings page and click **Add Filter** in the **Page Filter** section. Enter the path and click save. You can enter an exact path or use single or double asterisks (*) to match a path.
+
+You can use single or double asterisks as wildcards for parts of the path. A single asterisk is used as a wildcard for a single part of the path. It matches anything that is not a forward slash (with a length of zero or more). Double asterisks are used to match multiple parts of the path, including slashes (with a length of zero or more). Here are a few examples:
+
+| Pattern | Description |
+| - | - |
+| `/` | Exact match. |
+| `/home` | Exact match. |
+| `/**` | Matches all paths. |
+| `/blog/*` | Matches the pages below `/blog`, like `/blog/article`, but not `/blog/article/first`. |
+| `/blog/**` | Matches all pages below `/blog`, like `/blog/article` and `/blog/article/first`. |
+| `/blog/*/first` | Matches all pages below `/blog` that end with `/first` with one part in between, like `/blog/article/first`, but not `/blog/page/first` or `/blog/some/page/first`. |
+| `/blog/**/first` | Matches all pages below `/blog` that end with `/first` with one or more parts in between, like `/blog/article/first` or `/blog/some/page/first`, but not `/blog/some/page/second`. |
 
 ## Filtering Countries
 
