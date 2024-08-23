@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.7.7
+
+Release: 2024-08-23
+
+* fixed missing endpoint scopes to list funnel
+
 ## 2.7.6
 
 Release: 2024-08-22
