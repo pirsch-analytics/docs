@@ -19,23 +19,25 @@ Let's say you have your top-level domain **example.com** and a subdomain **sub.e
 ```html
 <script defer src="https://api.pirsch.io/pa.js" 
     id="pianjs" 
-    data-code="example-com-identification-code-here"></script>
+    data-code="example-com-identification-code"></script>
 ```
 
 ### Sending Statistics to Multiple Dashboards
 
-The second use case for additional domains is to send statistics to multiple dashboards. This allows you to create rollup views for two websites, each with its own dashboard. Each dashboard you send traffic to requires an additional domain. For example, if you make an additional request from **example.com** to **rollup.example.com**, you will need to add **example.com** to your **rollup.example.com** dashboard.
+The second use case for additional domains is to send statistics to multiple dashboards. This allows you to create rollup views for multiple websites. Each dashboard you send traffic to requires an additional domain. For example, if you make an additional request from **example.com** to **rollup.example.com**, you will need to add **example.com** to your **rollup.example.com** dashboard.
 
 Once you have configured the additional domain, you can send statistics from **example.com** to **rollup.example.com** as follows.
 
 ```html
 <script defer src="https://api.pirsch.io/pa.js" 
     id="pianjs" 
-    data-code="example-com-identification-code-here"
-    data-domain="rollup.example.com"></script>
+    data-code="example-com-identification-code"
+    data-domain="rollup.example.com:rollup-example-com-identification-code"></script>
 ```
 
-To send statistics to more than one additional dashboard, you can comma-separate the list, e.g. `data-domain="rollup.example.com,my-website.com"`.
+`data-domain` requires the hostname of the rollup view, as well as the identification code of that dashboard, separated by `:`.
+
+To send statistics to more than one additional dashboard, you can comma-separate the list, e.g. `data-domain="rollup.example.com:code,my-website.com:code"`.
 
 ### Changing the Path
 
@@ -44,8 +46,8 @@ Like any other Pirsch dashboard, rollup views group pages by path. This means th
 ```html
 <script defer src="https://api.pirsch.io/pa.js" 
     id="pianjs" 
-    data-code="example-com-identification-code-here"
-    data-domain="first.example.com,second.example.com"
+    data-code="example-com-identification-code"
+    data-domain="first.example.com:code,second.example.com:code"
     data-path-prefix="/one,/two"></script>
 ```
 

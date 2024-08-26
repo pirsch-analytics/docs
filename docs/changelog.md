@@ -1,5 +1,18 @@
 # Changelog
 
+## 2.8.0
+
+Release: unreleased
+
+* BREAKING: fixed configuring hostname alternative (the identfication code is now required for roll-up views!)
+
+## 2.7.8
+
+Release: 2024-08-27
+
+* tracking optimizations
+* updated scripts to support identification in rollup views, although they are not used yet
+
 ## 2.7.7
 
 Release: 2024-08-23
