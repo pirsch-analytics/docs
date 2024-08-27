@@ -11,7 +11,9 @@ Release: unreleased
 Release: 2024-08-27
 
 * tracking optimizations
+* data aggregation optimizations
 * updated scripts to support identification in rollup views, although they are not used yet
+* updated dependencies
 
 ## 2.7.7
 
