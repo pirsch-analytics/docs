@@ -6,6 +6,12 @@ Release: unreleased
 
 * BREAKING: fixed configuring hostname alternative (the identfication code is now required for roll-up views!)
 
+## 2.7.9
+
+Release: 2024-08-28
+
+* updated custom domain IP addresses
+
 ## 2.7.8
 
 Release: 2024-08-27
