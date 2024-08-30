@@ -106,7 +106,11 @@ snippet.setAttribute("data-code", "YOUR_IDENTIFICATION_CODE");
 
 // Add the snippet to the site and init Pirsch.
 document.body.appendChild(snippet);
-snippet.addEventListener("load", () => pirschInit());
+document.addEventListener("readystatechange", () => {
+    if (document.readyState === "complete") {
+        pirschInit();
+    }
+});
 ```
 
 ## Ignoring Your Own Page Views

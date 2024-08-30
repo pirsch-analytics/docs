@@ -22,7 +22,11 @@ After you have added the script, trigger the 404 error event. You need to do thi
 
 ```html
 <script>
-    document.addEventListener("load", () => pirschNotFound());
+    document.addEventListener("readystatechange", () => {
+        if (document.readyState === "complete") {
+            pirschNotFound();
+        }
+    });
 </script>
 ```
 
