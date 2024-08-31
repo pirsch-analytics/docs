@@ -55,6 +55,7 @@ export default {
                 items: [
                     {text: "Caddy", link: "/integrations/caddy"},
                     {text: "Docusaurus", link: "/integrations/docusaurus"},
+                    {text: "FilamentPHP", link: "/integrations/filament"},
                     {text: "Framer", link: "/integrations/framer"},
                     {text: "Gatsby", link: "/integrations/gatsby"},
                     {text: "Google Search Console", link: "/integrations/search-console"},
