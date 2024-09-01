@@ -6,6 +6,15 @@ Release: unreleased
 
 * BREAKING: fixed configuring hostname alternative (the identfication code is now required for roll-up views!)
 
+## 2.7.10
+
+Relesae: 2024-09-01
+
+* added password check when updating email address
+* fixed logo, buttons, copyright, dark mode, and language switch flashing when loading a dashboard with custom theme
+* fixed trying to sign out user on public dashboard with access code
+* improved logging
+
 ## 2.7.9
 
 Release: 2024-08-28
