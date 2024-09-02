@@ -24,6 +24,21 @@ The dialog that appears after the client is created shows the client ID and the 
 
 Once you have obtained a client ID + secret or an access key, you can start using the API.
 
+### Rate Limits
+
+The following limitations must be considered when using the API:
+
+* All security-related endpoints (login, password reset, etc.) have a rate limit of 10 requests per minute.
+* All non-security configuration endpoints (adding email reports and the like) have a rate limit of 60 requests per minute.
+* All statistics, data collection, and related endpoints (sending page views, reading visitors, referrers, funnels, views, etc.) currently have no rate limit. However, this may change in the future.
+
+It is highly unlikely that you will hit the rate limit. Especially since we currently don't enforce a limit for reading statistics. However, if you do run into it, you can check the following headers to make sure you stay within the limits:
+
+* X-RateLimit-Limit: is the absolute maximum number of requests per minute.
+* X-RateLimit-Remaining: the number of requests per minute remaining (sliding window)
+* X-RateLimit-Reset: a timestamp when the limit will be reset
+* Retry-After: the time to retry the request if you hit the limit
+
 ### Getting an Access Token
 
 If you are using the `oAuth` client type, you must obtain an access token before making any subsequent API requests. The access token must be sent with each request in the `Authorization` header in the format `Bearer <token>`. If you receive a 401 (unauthorized) status code, you'll need to request a new token and try again. The `expires_at` timezone is set to UTC.
@@ -58,8 +73,8 @@ Keep the access token in a safe place. The token will remain valid until `expire
 
 There are two sample requests in this section:
 
-* Send a page view
-* Read statistics
+* Sending a page view
+* Reading statistics
 
 See the [API reference](/api-sdks/api) for a list of available endpoints.
 

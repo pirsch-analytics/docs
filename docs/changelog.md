@@ -6,6 +6,13 @@ Release: unreleased
 
 * BREAKING: fixed configuring hostname alternative (the identfication code is now required for roll-up views!)
 
+## 2.7.11
+
+Release: 2024-09-02
+
+* added rate limiting for all endpoints that do not deal with data ingress, statistics, and aquiring an access token
+* updated dependencies
+
 ## 2.7.10
 
 Relesae: 2024-09-01
