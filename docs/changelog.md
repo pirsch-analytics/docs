@@ -6,6 +6,14 @@ Release: unreleased
 
 * BREAKING: fixed configuring hostname alternative (the identfication code is now required for roll-up views!)
 
+## 2.7.12
+
+Release: 2024-09-03
+
+* added tooltips for growth and funnel data
+* fixed period for overview
+* fixed missing field in page view, event, and session parameter validation
+
 ## 2.7.11
 
 Release: 2024-09-02
