@@ -6,6 +6,15 @@ Release: unreleased
 
 * BREAKING: fixed configuring hostname alternative (the identfication code is now required for roll-up views!)
 
+## 2.7.13
+
+Release: 2024-09-05
+
+* improved Arc detection
+* improved error messages
+* fixed Japanese error message translations
+* updated dependencies
+
 ## 2.7.12
 
 Release: 2024-09-03
