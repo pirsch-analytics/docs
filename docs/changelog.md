@@ -5,6 +5,10 @@
 Release: unreleased
 
 * BREAKING: fixed configuring hostname alternative (the identfication code is now required for roll-up views!)
+* added tracking hostnames by default
+* added hostname panel and filtering
+* added visitors by weekday and hour panel
+* updated dependencies
 
 ## 2.7.13
 
