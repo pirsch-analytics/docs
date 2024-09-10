@@ -499,6 +499,28 @@ Which time component is set depends on the `scale` filter. Setting it to `day` (
 ```
 :::
 
+### Hostnames
+
+`GET /api/v1/statistics/hostname`
+
+::: details EXAMPLE RESPONSE
+```JSON
+[
+    {
+        "hostname": "example.com",
+        "visitors": 42,
+        "views": 56,
+        "sessions": 48,
+        "bounces": 23,
+        "relative_visitors": 0.342,
+        "relative_views": 0.298,
+        "bounce_rate": 0.765
+    },
+    // ...
+]
+```
+:::
+
 ### Pages
 
 `GET /api/v1/statistics/page`
@@ -824,6 +846,36 @@ Return the active visitors for the last minute.
         "cr": 0.25,
         "custom_metric_avg": 42.1,
         "custom_metric_total": 598
+    },
+    // ...
+]
+```
+:::
+
+### Visitors by Weekday and Time
+
+This endpoint returns visitors grouped by weekday and the full hour. Monday is `0`.
+
+`GET /api/v1/statistics/weekdays`
+
+::: details EXAMPLE RESPONSE
+```JSON
+[
+    {
+        "weekday": 0,
+        "hour": 0,
+        "visitors": 42,
+        "views": 56,
+        "sessions": 48,
+        "bounces": 23
+    },
+    {
+        "weekday": 0,
+        "hour": 1,
+        "visitors": 22,
+        "views": 31,
+        "sessions": 24,
+        "bounces": 5
     },
     // ...
 ]

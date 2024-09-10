@@ -8,6 +8,7 @@ Release: unreleased
 * added tracking hostnames by default
 * added hostname panel and filtering
 * added visitors by weekday and hour panel
+* fixed storing milliseconds
 * updated dependencies
 
 ## 2.7.13
