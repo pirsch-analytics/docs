@@ -237,6 +237,7 @@ The following endpoints return available filtering options for a time period. Fo
 ::: details FILTER OPTIONS
 ```
 GET /api/v1/statistics/options/referrer/name
+GET /api/v1/statistics/options/hostname
 GET /api/v1/statistics/options/page
 GET /api/v1/statistics/options/referrer
 GET /api/v1/statistics/options/event
