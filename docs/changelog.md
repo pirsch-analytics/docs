@@ -8,6 +8,7 @@ Release: unreleased
 * added tracking hostnames by default
 * added hostname panel and filtering
 * added visitors by weekday and hour panel
+* added applying filter to first funnel step
 * fixed storing milliseconds
 * updated dependencies
 
