@@ -7,6 +7,7 @@ Release: unreleased
 * BREAKING: fixed configuring hostname alternative (the identfication code is now required for roll-up views!)
 * added tracking hostnames by default
 * added hostname panel and filtering
+* added hostnames to page results (including entry, exit, and event pages)
 * added visitors by weekday and hour panel
 * added applying filter to first funnel step
 * fixed storing milliseconds
