@@ -10,7 +10,12 @@ Release: unreleased
 * added hostnames to page results (including entry, exit, and event pages)
 * added visitors by weekday and hour panel
 * added applying filter to first funnel step
+* added pattern to filter selection
+* added expiration date for access links
+* added access links to email reports
+* added sorting entry/exit page results by entry/exit rate
 * fixed storing milliseconds
+* fixed patterns starting with special filter characters
 * updated dependencies
 
 ## 2.7.13

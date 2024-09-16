@@ -1711,7 +1711,8 @@ This endpoint lists all access links.
         "mod_time": "2021-05-22T10:11:12.123456Z",
         "domain_id": "A5kgYzK14m",
         "code": "...",
-        "description": "..."
+        "description": "...",
+        "valid_until": "2021-06-01T00:00:00.000000Z"
     },
     // ...
 ]
@@ -1796,7 +1797,7 @@ This endpoint checks whether a custom domain exists already. A custom domain can
 
 ### Creating an Access Link
 
-This endpoint creates a new access link.
+This endpoint creates a new access link. You can leave the `valid_until` date empty if you don't want the link to expire.
 
 `POST /api/v1/domain/link`
 
@@ -1804,7 +1805,8 @@ This endpoint creates a new access link.
 ```JSON
 {
     "domain_id": "A5kgYzK14m",
-    "description": "..."
+    "description": "...",
+    "valid_until": "2024-10-01T00:00:00.000000Z"
 }
 ```
 :::
@@ -1824,7 +1826,7 @@ This endpoint creates a new access link.
 
 ### Updating an Access Link
 
-This endpoint updates an existing access link.
+This endpoint updates an existing access link. You can leave the `valid_until` date empty if you don't want the link to expire.
 
 `PUT /api/v1/domain/link`
 
@@ -1832,7 +1834,8 @@ This endpoint updates an existing access link.
 ```JSON
 {
     "id": "A5kgYzK14m",
-    "description": "..."
+    "description": "...",
+    "valid_until": "2024-10-01T00:00:00.000000Z"
 }
 ```
 :::
