@@ -14,6 +14,7 @@ Release: unreleased
 * added expiration date for access links
 * added access links to email reports
 * added sorting entry/exit page results by entry/exit rate
+* added comparison mode for funnel
 * fixed storing milliseconds
 * fixed patterns starting with special filter characters
 * updated dependencies
