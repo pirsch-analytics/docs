@@ -15,8 +15,10 @@ Release: unreleased
 * added access links to email reports
 * added sorting entry/exit page results by entry/exit rate
 * added comparison mode for funnel
+* added conversion rate graph for goals
 * fixed storing milliseconds
 * fixed patterns starting with special filter characters
+* fixed resetting active chart when removing path/pattern filter
 * updated dependencies
 
 ## 2.7.13
