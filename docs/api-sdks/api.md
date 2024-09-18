@@ -3285,9 +3285,10 @@ This endpoint returns the import job, if any, for the specified domain.
 
 ### Canceling an Import Job
 
-This endpoint cancels the import job for given domain.
+These endpoints cancels the import job for given domain, no matter if they are for Google Analytics, Plausible, or Fathom.
 
-`DELTE /api/v1/google/import/job?domain_id=A5kgYzK14m`
+`DELETE /api/v1/import?domain_id=A5kgYzK14m`
+`DELETE /api/v1/google/import/job?domain_id=A5kgYzK14m`
 
 ### Listing Google Analytics Profiles
 
