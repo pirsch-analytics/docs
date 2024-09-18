@@ -3263,8 +3263,9 @@ DELETE /api/v1/theme/file?domain_id=93ODk5o1sL&file=favicon
 
 ### Getting an Import Job
 
-This endpoint returns the import job, if any, for the specified domain.
+These endpoints returns the import job, if any, for the specified domain, no matter if they are for Google Analytics, Plausible, or Fathom.
 
+`GET /api/v1/import?domain_id=A5kgYzK14m`
 `GET /api/v1/google/import/job?domain_id=A5kgYzK14m`
 
 ::: details EXAMPLE RESPONSE
