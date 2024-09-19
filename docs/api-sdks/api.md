@@ -3259,11 +3259,11 @@ DELETE /api/v1/theme/file?theme_id=Jk49fgm38&file=logo_light
 DELETE /api/v1/theme/file?domain_id=93ODk5o1sL&file=favicon
 ```
 
-## Importing Data from Google Universal Analytics
+## Importing Data from Google Universal Analytics, Plausible, Fathom
 
 ### Getting an Import Job
 
-These endpoints returns the import job, if any, for the specified domain, no matter if they are for Google Analytics, Plausible, or Fathom.
+These endpoints returns the import job, if any, for the specified domain, no matter if they are for Google Analytics, Plausible, or Fathom. The type can be `ga`, `plausible`, or `fathom`.
 
 `GET /api/v1/import?domain_id=A5kgYzK14m`
 `GET /api/v1/google/import/job?domain_id=A5kgYzK14m`
@@ -3275,6 +3275,7 @@ These endpoints returns the import job, if any, for the specified domain, no mat
     "def_time": "2021-05-22T10:11:12.123456Z",
     "mod_time": "2021-05-22T10:11:12.123456Z",
     "domain_id": "A5kgYzK14m",
+    "type": "ga",
 	"google_user_id": "...",
 	"google_user_email": "...",
 	"domain": null,
@@ -3309,7 +3310,7 @@ This endpoint lists available profiles (views) for the connected Google Account.
 ```
 :::
 
-### Starting the Import
+### Starting the Import (Google Analytics)
 
 This endpoint starts the import after connecting the dashboard to your Google account.
 
@@ -3333,11 +3334,43 @@ This endpoint starts the import after connecting the dashboard to your Google ac
     "def_time": "2021-05-22T10:11:12.123456Z",
     "mod_time": "2021-05-22T10:11:12.123456Z",
     "domain_id": "A5kgYzK14m",
+    "type": "ga",
 	"google_user_id": "...",
 	"google_user_email": "...",
 	"domain": "<GA view ID>",
     "from": "2022-01-01",
 	"to": "2022-08-01"
+}
+```
+:::
+
+### Starting the Import (Plausible, Fathom)
+
+This endpoint starts the import for Plausible and Fathom. The body is multi-part encoded to include the zip file.
+
+`POST /api/v1/import/fathom`
+`POST /api/v1/import/plausible`
+
+::: details EXAMPLE REQUEST
+```
+domain="A5kgYzK14m"
+file=<data>
+```
+:::
+
+::: details EXAMPLE RESPONSE
+```JSON
+{
+    "id": "Jk49fgm38",
+    "def_time": "2021-05-22T10:11:12.123456Z",
+    "mod_time": "2021-05-22T10:11:12.123456Z",
+    "domain_id": "A5kgYzK14m",
+    "type": "plausible",
+	"google_user_id": "",
+	"google_user_email": "",
+	"domain": "",
+    "from": "",
+	"to": ""
 }
 ```
 :::

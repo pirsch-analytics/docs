@@ -16,6 +16,7 @@ Release: unreleased
 * added sorting entry/exit page results by entry/exit rate
 * added comparison mode for funnel
 * added conversion rate graph for goals
+* improved Plausible and Fathom imports
 * fixed storing milliseconds
 * fixed patterns starting with special filter characters
 * fixed resetting active chart when removing path/pattern filter
