@@ -2,7 +2,7 @@
 
 ## 2.8.0
 
-Release: unreleased
+Release: 2024-09-26
 
 * BREAKING: fixed configuring hostname alternative (the identfication code is now required for roll-up views!)
 * added tracking hostnames by default
@@ -20,6 +20,7 @@ Release: unreleased
 * fixed storing milliseconds
 * fixed patterns starting with special filter characters
 * fixed resetting active chart when removing path/pattern filter
+* fixed nil pointer reading user pictures
 * updated dependencies
 
 ## 2.7.13
