@@ -15,7 +15,7 @@ Should GTM strip the parameters from the snippet. You can try [dynamically creat
 ```js
 <script>
 (function() {
-    const script = document.createElement("script");
+    var script = document.createElement("script");
     script.src = "https://api.pirsch.io/pa.js";
     script.id = "pianjs";
     script.setAttribute("data-code", "YOUR_IDENTIFICATION_CODE");
