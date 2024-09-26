@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.8.1
+
+Release: 2024-09-26
+
+* fixed weekday label
+* fixed reading non existing object from S3
+* updated dependencies
+
 ## 2.8.0
 
 Release: 2024-09-26
