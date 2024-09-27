@@ -1315,6 +1315,39 @@ We recommend using the Search Console API directly instead of calling it through
 ```
 :::
 
+### Exporting Statistics to CSV
+
+This endpoint exports a selection of statistics to CSV inside a zip file.
+
+`GET /api/v1/statistics`
+
+The query parameters are:
+
+| Parameter | Required | Format |
+| - | - | - |
+| id | Yes | String |
+| access | No | Access key. |
+| from | Yes | YYYY-MM-DD |
+| to | Yes | YYYY-MM-DD |
+| visitors | No | `true` or `1` |
+| pages | No | `true` or `1` |
+| session_duration | No | `true` or `1` |
+| growth | No | `true` or `1` |
+| languages | No | `true` or `1` |
+| referrer | No | `true` or `1` |
+| os | No | `true` or `1` |
+| browser | No | `true` or `1` |
+| country | No | `true` or `1` |
+| region | No | `true` or `1` |
+| city | No | `true` or `1` |
+| platform | No | `true` or `1` |
+| screen | No | `true` or `1` |
+| utm | No | `true` or `1` |
+| conversion_goals | No | `true` or `1` |
+| events | No | `true` or `1` |
+| tags | No | `true` or `1` |
+| hostname | No | `true` or `1` |
+
 ### Deleting Statistics
 
 This endpoint deletes data asynchronously for given domain ID and dates.

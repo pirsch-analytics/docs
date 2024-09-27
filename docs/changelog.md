@@ -1,5 +1,14 @@
 # Changelog
 
+## 2.8.2
+
+Release: 2024-09-27
+
+* added missing identification code hint on script snippet configuration
+* added region, city, tags, and hostnames to CSV export
+* fixed exporting page views to CSV with a lot of different paths
+* updated dependencies
+
 ## 2.8.1
 
 Release: 2024-09-26
