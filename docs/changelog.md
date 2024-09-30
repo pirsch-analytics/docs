@@ -1,5 +1,14 @@
 # Changelog
 
+## 2.8.3
+
+Release: 2024-09-30
+
+* fixed reading entry/exit pages for a lot of pages
+* fixed regex filter for imported statistics and platforms
+* fixed uppercase/lowercase hostname configuration
+* updated dependencies
+
 ## 2.8.2
 
 Release: 2024-09-27
