@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.8.4
+
+Release: 2024-10-01
+
+* fixed hostname not being set for server-side tracking via API
+
 ## 2.8.3
 
 Release: 2024-09-30
