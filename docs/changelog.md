@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.8.5
+
+Release: 2024-10-02
+
+* switched from AWS S3 to Hetzner Object Storage
+
 ## 2.8.4
 
 Release: 2024-10-01
