@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.8.6
+
+Release: 2024-10-04
+
+* fixed number of events when filtering for a path or regex
+
 ## 2.8.5
 
 Release: 2024-10-02
