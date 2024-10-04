@@ -4,6 +4,9 @@
 
 Release: 2024-10-04
 
+* added options to disable funnels and sessions page
+* moved event pages to events panel
+* fixed hostname in path, entry, and exit panel
 * fixed number of events when filtering for a path or regex
 
 ## 2.8.5
