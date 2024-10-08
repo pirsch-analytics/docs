@@ -1,5 +1,14 @@
 # Changelog
 
+## 2.8.7
+
+Release: 2024-10-08
+
+* removed hostname fallback
+* fixed including VPNs if they're also part of a data center IP range
+* fixed email report charts
+* updated dependencies
+
 ## 2.8.6
 
 Release: 2024-10-04
