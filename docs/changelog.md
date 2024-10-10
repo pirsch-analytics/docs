@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.8.8
+
+Release: unreleased
+
+* updated dependencies
+
 ## 2.8.7
 
 Release: 2024-10-08
