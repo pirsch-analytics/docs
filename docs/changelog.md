@@ -4,6 +4,7 @@
 
 Release: unreleased
 
+* improved Italian translations
 * updated dependencies
 
 ## 2.8.7
