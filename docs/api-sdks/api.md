@@ -530,7 +530,6 @@ Which time component is set depends on the `scale` filter. Setting it to `day` (
 ```JSON
 [
     {
-        "hostname": "example.com",
         "path": "/home",
         "title": "Home",
         "visitors": 42,
@@ -555,7 +554,6 @@ Which time component is set depends on the `scale` filter. Setting it to `day` (
 ```JSON
 [
     {
-        "hostname": "example.com",
         "path": "/home",
         "title": "Home",
         "visitors": 42,
@@ -577,7 +575,6 @@ Which time component is set depends on the `scale` filter. Setting it to `day` (
 ```JSON
 [
     {
-        "hostname": "example.com",
         "path": "/bye",
         "title": "Bye",
         "visitors": 42,
@@ -600,7 +597,6 @@ This endpoint returns all pages on which an event was triggered. It requires the
 ```JSON
 [
     {
-        "hostname": "example.com",
         "path": "/home",
         "title": "Home",
         "visitors": 42,
@@ -771,7 +767,6 @@ Return the active visitors for the last minute.
 {
     "stats": [
         {
-            "hostname": "example.com",
             "path": "/home",
             "visitors": 42
         },

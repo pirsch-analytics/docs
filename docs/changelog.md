@@ -2,13 +2,14 @@
 
 ## 2.8.8
 
-Release: unreleased
+Release: 2024-10-18
 
 * improved Italian translations
 * improved subscription process
 * fixed saving email log entries
 * fixed clearing live updates when user isn't set yet on load
 * fixed showing subscription warning on billing page
+* fixed duplicate path entries (pages, entry pages, exit pages, event pages, active visitors)
 * updated dependencies
 
 ## 2.8.7
