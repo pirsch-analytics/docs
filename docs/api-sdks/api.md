@@ -1130,9 +1130,9 @@ This endpoint returns a breakdown for a single tag.
 
 ### Funnels
 
-This endpoint returns a funnel including its definition and data for the selected period. Other filter parameters do not have an effect on it.
+This endpoint returns a funnel including its definition and data for the selected period and filter. The filter is applied to the first step and therefore to all subsequent steps.
 
-Funnels need to be definied before they can be queried. The `funnel_id` query parameter must be set in addition to the filter period and domain ID.
+Funnels must be defined before they can be queried. The `funnel_id` query parameter must be set in addition to the filter period and domain ID.
 
 `GET /api/v1/statistics/funnel`
 
