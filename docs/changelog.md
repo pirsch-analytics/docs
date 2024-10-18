@@ -5,6 +5,10 @@
 Release: unreleased
 
 * improved Italian translations
+* improved subscription process
+* fixed saving email log entries
+* fixed clearing live updates when user isn't set yet on load
+* fixed showing subscription warning on billing page
 * updated dependencies
 
 ## 2.8.7
