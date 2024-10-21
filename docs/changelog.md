@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.8.9
+
+Release: 2024-10-21
+
+* fixed opening pages from panel
+
 ## 2.8.8
 
 Release: 2024-10-18
