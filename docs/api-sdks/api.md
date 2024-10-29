@@ -195,6 +195,7 @@ You can test whether a value is not present in the result set by prepending it w
 | tz | no | Europe/Berlin | The time zone. If not set, the default time zone for the dashboard is used. |
 | start | no | 600 | Queries data for the past seconds (10 minutes in this example). The date range filters is ignored if set. The maximum is one hour (3600 seconds). |
 | scale | no | week | The scale to group results. Can either be day (default), week, month, or year. |
+| hostname | no | example.com | The hostname for the website. Usually only useful when creating a rollup view with multiple hostnames. |
 | path | no | /home | The page path. |
 | entry_path | no | /home | The entry page path. |
 | exit_path | no | /yte | The exit page path. |
