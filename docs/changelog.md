@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.8.10
+
+Release: 2024-10-30
+
+* added configuration to set the page view limit per session individually per client
+* improved billing page
+* updated dependencies
+
 ## 2.8.9
 
 Release: 2024-10-21
