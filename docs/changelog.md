@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.8.11
+
+Release: 2024-11-06
+
+* added ClickHouse replication
+* updated dependencies
+
 ## 2.8.10
 
 Release: 2024-10-30
