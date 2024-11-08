@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.8.13
+
+Release: 2024-11-08
+
+* improved captcha
+* updated dependencies
+
 ## 2.8.12
 
 Release: 2024-11-08
