@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.8.12
+
+Release: 2024-11-08
+
+* switched to locally hosted captcha solution
+
 ## 2.8.11
 
 Release: 2024-11-06
