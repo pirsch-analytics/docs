@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.8.14
+
+Release: 2024-11-15
+
+* fixed country filter
+* fixed translating validation errors
+* updated dependencies
+
 ## 2.8.13
 
 Release: 2024-11-08
