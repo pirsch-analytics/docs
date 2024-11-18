@@ -1,5 +1,14 @@
 # Changelog
 
+## 2.9.0
+
+Release: unreleased
+
+* added closing filters one ESC key
+* added period setting to overview
+* added custom tooltip including growth to charts
+* updated dependencies
+
 ## 2.8.13
 
 Release: 2024-11-08
