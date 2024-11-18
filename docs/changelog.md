@@ -7,6 +7,8 @@ Release: unreleased
 * added closing filters one ESC key
 * added period setting to overview
 * added custom tooltip including growth to charts
+* added settings and upgrade buttons to page view limit warning email
+* added number formatting to emails
 * updated dependencies
 
 ## 2.8.14
