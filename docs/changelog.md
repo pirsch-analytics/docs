@@ -11,6 +11,12 @@ Release: unreleased
 * added number formatting to emails
 * updated dependencies
 
+## 2.8.15
+
+Release: 2025-11-19
+
+* improved Enterprise white-labeling
+
 ## 2.8.14
 
 Release: 2024-11-15
