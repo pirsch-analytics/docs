@@ -9,6 +9,8 @@ Release: unreleased
 * added custom tooltip including growth to charts
 * added settings and upgrade buttons to page view limit warning email
 * added number formatting to emails
+* added customization for email reports (graph, summary, pages, referrer, events)
+* fixed chart in daily email reports
 * updated dependencies
 
 ## 2.8.15

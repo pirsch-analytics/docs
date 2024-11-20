@@ -2323,7 +2323,12 @@ This endpoint creates a new email report.
     "domain_id": "0DJ0mo934",
     "emails": ["member@foo.com", "member@bar.com"],
     "interval": 1, // weeks or 0 for daily
-    "link_to": "dashboard" // empty/dashboard, public, custom
+    "link_to": "dashboard", // empty/dashboard, public, custom
+    "visitor_graph": true,
+    "summary": true,
+	"top_pages": true,
+	"top_referrer": true,
+	"top_events": true
 }
 ```
 :::
@@ -2339,6 +2344,11 @@ This endpoint creates a new email report.
         "email": "...",
         "interval": 1,
         "link_to": "dashboard",
+        "visitor_graph": true,
+        "summary": true,
+        "top_pages": true,
+        "top_referrer": true,
+        "top_events": true,
         "next_report": "2021-05-22T10:11:12.123456Z"
     },
     // ...
@@ -2357,7 +2367,12 @@ This endpoint updates an existing email report.
 {
     "id": "A5kgYzK14m",
     "interval": 4, // weeks or 0 for daily
-    "link_to": "public" // empty/dashboard, public, custom
+    "link_to": "public", // empty/dashboard, public, custom
+    "visitor_graph": true,
+    "summary": true,
+	"top_pages": true,
+	"top_referrer": true,
+	"top_events": true
 }
 ```
 :::
@@ -2372,6 +2387,11 @@ This endpoint updates an existing email report.
     "email": "...",
     "interval": 4,
     "link_to": "public",
+    "visitor_graph": true,
+    "summary": true,
+	"top_pages": true,
+	"top_referrer": true,
+	"top_events": true,
     "next_report": "2021-05-22T10:11:12.123456Z"
 }
 ```
