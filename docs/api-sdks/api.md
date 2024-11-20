@@ -1750,6 +1750,59 @@ This endpoint lists all access links.
 The code can be used to create a URL with read-only access to a domain. To do that, replace `<subdomain>` and `<code` for the domain in the following URL: `https://<subdomain>.pirsch.io/?access=<code>`
 :::
 
+### Creating an Access Link
+
+This endpoint creates a new access link. You can leave the `valid_until` date empty if you don't want the link to expire.
+
+`POST /api/v1/domain/link`
+
+::: details EXAMPLE REQUEST
+```JSON
+{
+    "domain_id": "A5kgYzK14m",
+    "description": "...",
+    "valid_until": "2024-10-01T00:00:00.000000Z"
+}
+```
+:::
+
+::: details EXAMPLE RESPONSE
+```JSON
+{
+    "id": "A5kgYzK14m",
+    "def_time": "2021-05-22T10:11:12.123456Z",
+    "mod_time": "2021-05-22T10:11:12.123456Z",
+    "domain_id": "A5kgYzK14m",
+    "code": "...",
+    "description": "..."
+}
+```
+:::
+
+### Updating an Access Link
+
+This endpoint updates an existing access link. You can leave the `valid_until` date empty if you don't want the link to expire.
+
+`PUT /api/v1/domain/link`
+
+::: details EXAMPLE REQUEST
+```JSON
+{
+    "id": "A5kgYzK14m",
+    "description": "...",
+    "valid_until": "2024-10-01T00:00:00.000000Z"
+}
+```
+:::
+
+### Deleting an Access Link
+
+This endpoint deletes an access link.
+
+`DELETE /api/v1/domain/link?id=0DJ0mo934`
+
+## Managing Dashboard Theme Settings
+
 ### Set Base Theme
 
 This endpoint sets the base theme for a dashboard. The settings from the theme will be overwritten by specific settings for the dashboard.
@@ -1803,6 +1856,8 @@ data: JSON {
 ```
 :::
 
+## Managing Custom Domains
+
 ### Set a Custom Domain
 
 This endpoint updates the custom domain for given dashboard.
@@ -1823,57 +1878,6 @@ This endpoint updates the custom domain for given dashboard.
 This endpoint checks whether a custom domain exists already. A custom domain can only be used for a single dashboard.
 
 `GET /api/v1/domain/custom?domain=my-domain.com`
-
-### Creating an Access Link
-
-This endpoint creates a new access link. You can leave the `valid_until` date empty if you don't want the link to expire.
-
-`POST /api/v1/domain/link`
-
-::: details EXAMPLE REQUEST
-```JSON
-{
-    "domain_id": "A5kgYzK14m",
-    "description": "...",
-    "valid_until": "2024-10-01T00:00:00.000000Z"
-}
-```
-:::
-
-::: details EXAMPLE RESPONSE
-```JSON
-{
-    "id": "A5kgYzK14m",
-    "def_time": "2021-05-22T10:11:12.123456Z",
-    "mod_time": "2021-05-22T10:11:12.123456Z",
-    "domain_id": "A5kgYzK14m",
-    "code": "...",
-    "description": "..."
-}
-```
-:::
-
-### Updating an Access Link
-
-This endpoint updates an existing access link. You can leave the `valid_until` date empty if you don't want the link to expire.
-
-`PUT /api/v1/domain/link`
-
-::: details EXAMPLE REQUEST
-```JSON
-{
-    "id": "A5kgYzK14m",
-    "description": "...",
-    "valid_until": "2024-10-01T00:00:00.000000Z"
-}
-```
-:::
-
-### Deleting an Access Link
-
-This endpoint deletes an access link.
-
-`DELETE /api/v1/domain/link?id=0DJ0mo934`
 
 ## Managing Members and Permissions
 
