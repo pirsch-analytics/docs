@@ -13,9 +13,17 @@ Release: unreleased
 * fixed chart in daily email reports
 * updated dependencies
 
+## 2.8.16
+
+Release: 2024-11-22
+
+* fixed add funnel in dropdown when not an admin
+* fixed add organization in dropdown when not on a Plus subscription
+* fixed displaying access denied errors
+
 ## 2.8.15
 
-Release: 2025-11-19
+Release: 2024-11-19
 
 * improved Enterprise white-labeling
 
