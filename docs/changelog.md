@@ -11,6 +11,7 @@ Release: unreleased
 * added number formatting to emails
 * added customization for email reports (graph, summary, pages, referrer, events)
 * fixed chart in daily email reports
+* fixed missing countries on map
 * updated dependencies
 
 ## 2.8.16
