@@ -10,6 +10,9 @@ Release: unreleased
 * added settings and upgrade buttons to page view limit warning email
 * added number formatting to emails
 * added customization for email reports (graph, summary, pages, referrer, events)
+* added anonymous gclid and msclkid tracking
+* added source attribution channels
+* improved bot filtering
 * fixed chart in daily email reports
 * fixed missing countries on map
 * updated dependencies
