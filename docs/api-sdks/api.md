@@ -208,6 +208,7 @@ You can test whether a value is not present in the result set by prepending it w
 | city | no | London | Name of a city. |
 | referrer | no | https://referring-website.com/ | The referrer, usually a URL or name (note that the Pirsch dashboard does trim the protocol). |
 | referrer_name | no | referring-website.com | The referrer name, usually the hostname. |
+| channel | no | Paid Search | The traffic channel. These are the same as on [Google Analytics 4](https://support.google.com/analytics/answer/9756891?hl=en). |
 | os | no | Windows | The operating system. |
 | browser | no | Firefox | The browser. |
 | platform | no | desktop | The platform, desktop, mobile, or unknown (not set). |
@@ -241,6 +242,7 @@ GET /api/v1/statistics/options/referrer/name
 GET /api/v1/statistics/options/hostname
 GET /api/v1/statistics/options/page
 GET /api/v1/statistics/options/referrer
+GET /api/v1/statistics/options/channel
 GET /api/v1/statistics/options/event
 GET /api/v1/statistics/options/country
 GET /api/v1/statistics/options/region
@@ -915,6 +917,28 @@ This endpoint returns visitors grouped by weekday and the full hour. Monday is `
         "visitors": 42,
         "sessions": 123,
         "relative_visitors": 0.256,
+        "bounces": 21,
+        "bounce_rate": 0.5
+    },
+    // ...
+]
+```
+:::
+
+### Channel
+
+`GET /api/v1/statistics/channel`
+
+::: details EXAMPLE RESPONSE
+```JSON
+[
+    {
+        "channel": "Paid Search",
+        "visitors": 42,
+        "views": 67,
+        "sessions": 123,
+        "relative_visitors": 0.256,
+        "relative_views": 0.221,
         "bounces": 21,
         "bounce_rate": 0.5
     },
@@ -1666,7 +1690,7 @@ This endpoint changes the time zone for the dashboard.
 ```
 :::
 
-### Updating the metadata field.
+### Updating the metadata field
 
 This endpoint will update the metadata field. The field can be used to store user defined tags or configuration. Do what you want with it.
 
@@ -1679,6 +1703,20 @@ This endpoint will update the metadata field. The field can be used to store use
     "metadata": {
         // generic object
     }
+}
+```
+:::
+
+### Toggling noindex
+
+This endpoint will toggle the noindex meta element for your public dashboard. When turned on, the dashboard won't be indexed by search engines.
+
+`PUT /api/v1/domain/noindex`
+
+::: details EXAMPLE REQUEST
+```JSON
+{
+    "domain_id": "A5kgYzK14m"
 }
 ```
 :::

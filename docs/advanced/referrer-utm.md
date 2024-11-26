@@ -41,3 +41,7 @@ A UTM parameter is added to a link in the same way as referrers, as described ab
 ### UTM Term
 
 **utm_term** is only relevant for paid ads and is used to filter for search terms used by visitors.
+
+## Google Click Identifier (GCLID) And Microsoft Click ID (MSCLKID)
+
+The Google Click Identifier (gclid) and Microsoft Click ID (msclkid) are parameters added by Google Search and Bing respectively. They are encrypted identifiers used to link clicks and paid ads. Only Google and Microsoft can properly decode them, but Pirsch displays them as `(gclid)` and `(msclkid)` on the dashboard, giving you a better understanding of how many times an ad has been clicked on Google or Bing. Of course, we don't store the original encrypted ID and replace it with the generic strings mentioned above.
