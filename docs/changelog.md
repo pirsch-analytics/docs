@@ -2,7 +2,7 @@
 
 ## 2.9.0
 
-Release: unreleased
+Release: 2024-11-26
 
 * added closing filters one ESC key
 * added period setting to overview
@@ -12,6 +12,7 @@ Release: unreleased
 * added customization for email reports (graph, summary, pages, referrer, events)
 * added anonymous gclid and msclkid tracking
 * added source attribution channels
+* added option to disable search engine indexing for custom domains
 * improved bot filtering
 * fixed chart in daily email reports
 * fixed missing countries on map
