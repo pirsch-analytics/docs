@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.9.1
+
+Release: 2024-11-27
+
+* fixed tooltip text color in light mode
+* fixed sorting cities with non-ASCII characters in name
+
 ## 2.9.0
 
 Release: 2024-11-26
