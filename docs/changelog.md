@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.9.2
+
+Release: 2024-12-02
+
+* added theme option to hide the logo
+* fixed chart tooltip on mobile
+
 ## 2.9.1
 
 Release: 2024-11-27
