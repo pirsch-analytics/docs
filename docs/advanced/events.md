@@ -28,7 +28,7 @@ Events are automatically created and added to your dashboard when you send them.
 
 ## Sending Events From Your Website
 
-Before you can send your first event, you need to add the `ps.js` JavaScript snippet to your website.
+Before you can send your first event, you need to add the `pa.js` JavaScript snippet to your website.
 
 The `data-exclude` and `data-include` attributes can be used to ignore events on certain pages. Please refer to the [website integration](/get-started/frontend-integration) for details.
 
