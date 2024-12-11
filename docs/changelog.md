@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.9.3
+
+Release: 2024-12-11
+
+* fixed subscription update webhook
+* updated dependencies
+
 ## 2.9.2
 
 Release: 2024-12-02
