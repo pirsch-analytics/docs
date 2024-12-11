@@ -8,6 +8,7 @@ A few places to get you started quickly:
 
 * [Add Pirsch to your website](/get-started/frontend-integration)
 * [Add Pirsch to your server](/get-started/backend-integration)
+* [Learn what the statistics mean](/get-started/statistics)
 * [Troubleshooting](/get-started/troubleshooting)
 * [Use UTM parameters for ad attribution](/advanced/referrer-utm)
 * [Track custom events](/advanced/events)

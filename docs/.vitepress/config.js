@@ -42,10 +42,11 @@ export default {
                 items: [
                     {text: "Website Integration", link: "/get-started/frontend-integration"},
                     {text: "Server-Side Integration", link: "/get-started/backend-integration"},
-                    {text: "Client Hints", link: "/get-started/client-hints"},
+                    {text: "Client Hints Integration", link: "/get-started/client-hints"},
                     {text: "Google Analytics Import", link: "/get-started/ga-import"},
                     {text: "Plausible Analytics Import", link: "/get-started/plausible-import"},
                     {text: "Fathom Analytics Import", link: "/get-started/fathom-import"},
+                    {text: "Statistics Explained", link: "/get-started/statistics"},
                     {text: "Exporting Statistics", link: "/get-started/export"},
                     {text: "Troubleshooting", link: "/get-started/troubleshooting"}
                 ]
