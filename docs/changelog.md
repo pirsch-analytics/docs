@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.9.4
+
+Release: 2024-12-16
+
+* allow overriding the include_title option in the filter
+* updated dependencies
+
 ## 2.9.3
 
 Release: 2024-12-11

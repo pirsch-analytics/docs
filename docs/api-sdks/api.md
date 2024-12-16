@@ -227,6 +227,7 @@ You can test whether a value is not present in the result set by prepending it w
 | offset | no | 0 | Sets the offset for the result set. |
 | limit | no | 20 | Limits the number of results, note that this is hard limited to 100. |
 | include_avg_time_on_page | no | true | Set to true, to include the average time on page when reading page statistics. |
+| include_title | no | true | Overrides the group by title option from the dashboard settings. If set to true, pages will be grouped by title and path rather than path only. |
 | sort | no | visitors | Sort results by given field. This is only available for pages, entry/exit pages, referrers, UTM statistics, conversion goals, events, demographics, and device statistics. |
 | direction | no | desc | Sort results in ascending (asc) or descending (desc) order. This is only available for pages, entry/exit pages, referrers, UTM statistics, conversion goals, events, demographics, and device statistics. |
 | search | no | /home | Search the primary field for given string (contains). For pages this is the path, for browsers the browser name, and so on. This is only available for pages, entry/exit pages, referrers, UTM statistics, conversion goals, events, demographics, and device statistics. |
