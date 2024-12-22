@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.9.5
+
+Release: 2024-12-22
+
+* added individual funnel step limit
+
 ## 2.9.4
 
 Release: 2024-12-16
