@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.9.6
+
+Release: 2024-12-22
+
+* fixed funnel step limit on dashboard
+
 ## 2.9.5
 
 Release: 2024-12-22
