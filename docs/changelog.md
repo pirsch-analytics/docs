@@ -1,5 +1,14 @@
 # Changelog
 
+## 2.9.7
+
+Release: 2025-01-02
+
+* fixed number formatting in graph tooltip
+* fixed error when adding new step to existing funnel
+* fixed funnels including identical steps
+* fixed last month period in January
+
 ## 2.9.6
 
 Release: 2024-12-22
