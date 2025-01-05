@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.9.8
+
+Release: 2025-01-05
+
+* fixed (unexploited) security issues with API
+
 ## 2.9.7
 
 Release: 2025-01-02
