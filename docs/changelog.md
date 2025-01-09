@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.10.0
+
+Release: unreleased
+
+* added URL shortener
+* updated dependencies
+
 ## 2.9.8
 
 Release: 2025-01-05
