@@ -5,6 +5,7 @@
 Release: unreleased
 
 * added URL shortener
+* added tags to organize funnels
 * updated dependencies
 
 ## 2.9.9
