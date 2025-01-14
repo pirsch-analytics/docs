@@ -12,6 +12,8 @@ Release: unreleased
 Release: 2025-01-14
 
 * added search parameter to reading domains, funnels, conversion goals, organizations, organization domains, themes, and views
+* improved subdomain hint when adding a website
+* fixed lock dialog opening/closing funnels
 
 ## 2.9.8
 
