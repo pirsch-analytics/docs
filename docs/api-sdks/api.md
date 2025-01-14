@@ -1519,9 +1519,10 @@ This endpoint deletes a domain.
 
 ### Listing Domains
 
-This endpoint is described in more detail in the [Statistics section](/api-sdks/api#getting-the-domain-id). It returns all domains for a user client or a specific domain for the ID, subdomain, custom domain, or access code.
+This endpoint is described in more detail in the [Statistics section](/api-sdks/api#getting-the-domain-id). It returns all domains for a user client or a specific domain for the ID, subdomain, custom domain, or access code. The optional `search` parameter can be used to filter the result set by the hostname.
 
 ```
+GET /api/v1/domain?search=hostname
 GET /api/v1/domain?id=A5kgYzK14m
 GET /api/v1/domain?subdomain=example
 GET /api/v1/domain?domain=my-domain.com
@@ -2636,9 +2637,9 @@ This endpoint will configure traffic warnings. Don't forget to enable them using
 
 ### Listing Conversion Goals
 
-This endpoint lists all conversion goals.
+This endpoint lists all conversion goals. The optional `search` parameter can be used to filter the result set by the conversion goal name.
 
-`GET /api/v1/goal?id=0DJ0mo934`
+`GET /api/v1/goal?id=0DJ0mo934&search=name`
 
 ::: details EXAMPLE RESPONSE
 ```JSON
@@ -2810,9 +2811,9 @@ An error is returned if the expression is invalid. Otherwise, it returns if the 
 
 ### Listing Funnels
 
-This endpoint lists all funnels.
+This endpoint lists all funnels. The optional `search` parameter can be used to filter the result set by the funnel name.
 
-`GET /api/v1/funnel?id=0DJ0mo934`
+`GET /api/v1/funnel?id=0DJ0mo934&search=Funnel`
 
 ::: details EXAMPLE RESPONSE
 ```JSON
@@ -2930,9 +2931,9 @@ This endpoint deletes a funnel.
 
 ### Listing Views
 
-This endpoint returns a list of views for a given domain.
+This endpoint returns a list of views for a given domain. The search parameter is optional and filters for the view name.
 
-`GET /api/v1/view?domain_id=A5kgYzK14m`
+`GET /api/v1/view?domain_id=A5kgYzK14m?search=My View`
 
 ::: details EXAMPLE RESPONSE
 ```JSON
@@ -3097,9 +3098,9 @@ This endpoint deletes a view.
 
 ### Listing Organizations
 
-This endpoint lists all organizations the user belongs to or is the owner of.
+This endpoint lists all organizations the user belongs to or is the owner of. The optional `search` parameter can be used to filter the result set by the organization name.
 
-`GET /api/v1/organization`
+`GET /api/v1/organization?search=Organization`
 
 ::: details EXAMPLE RESPONSE
 ```JSON
@@ -3205,9 +3206,9 @@ This endpoint will set the default theme for given organization. The default the
 
 ### Listing Domains
 
-This endpoint will list all domains belonging to an organization.
+This endpoint will list all domains belonging to an organization. The optional `search` parameter can be used to filter the result set by the hostname.
 
-`GET /api/v1/organization/domain?id=Jk49fgm38`
+`GET /api/v1/organization/domain?id=Jk49fgm38&search=hostname`
 
 ::: details EXAMPLE RESPONSE
 ```JSON
@@ -3318,10 +3319,11 @@ If neither the `domain_id` nor the `organization_id` are set, the theme will be 
 
 ### Listing Themes
 
-This endpoint lists themes for the user, an organization, a subdomain, or a custom domain. If `include_organizations` is set to `true`, the list will contain all themes the user has directly or indirectly access to.
+This endpoint lists themes for the user, an organization, a subdomain, or a custom domain. If `include_organizations` is set to `true`, the list will contain all themes the user has directly or indirectly access to. The optional `search` parameter can be used to filter the result set by the theme name.
 
 ```
 GET /api/v1/theme
+GET /api/v1/theme?search=name
 GET /api/v1/theme?include_organizations=true
 GET /api/v1/theme?organization_id=Jk49fgm38
 GET /api/v1/theme?subdomain=sub

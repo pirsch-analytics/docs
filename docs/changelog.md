@@ -7,6 +7,12 @@ Release: unreleased
 * added URL shortener
 * updated dependencies
 
+## 2.9.9
+
+Release: 2025-01-14
+
+* added search parameter to reading domains, funnels, conversion goals, organizations, organization domains, themes, and views
+
 ## 2.9.8
 
 Release: 2025-01-05
