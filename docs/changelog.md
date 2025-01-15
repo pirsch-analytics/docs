@@ -8,6 +8,13 @@ Release: unreleased
 * added tags to organize funnels
 * updated dependencies
 
+## 2.9.10
+
+Release: 2025-01-15
+
+* fixed numbers in chart tooltip when comparing periods
+* fixed growth calculation in chart tooltip
+
 ## 2.9.9
 
 Release: 2025-01-14
