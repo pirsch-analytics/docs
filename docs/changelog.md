@@ -2,10 +2,11 @@
 
 ## 2.10.0
 
-Release: unreleased
+Release: 2025-01-19
 
 * added URL shortener
 * added tags to organize funnels
+* fixed growth arrow
 * updated dependencies
 
 ## 2.9.10
