@@ -1,5 +1,9 @@
 # Changelog
 
+Release: 2025-01-19
+
+* fixed listing funnels without tags
+
 ## 2.10.0
 
 Release: 2025-01-19
