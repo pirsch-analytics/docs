@@ -76,6 +76,7 @@ export default {
                     {text: "Tracking Outbound Links", link: "/advanced/outbound-links"},
                     {text: "Tracking File Downloads", link: "/advanced/file-downloads"},
                     {text: "Tracking 404 Errors", link: "/advanced/not-found-tracking"},
+                    {text: "URL Shortener", link: "/advanced/url-shortener"},
                     {text: "Segmentation and A/B Testing", link: "/advanced/segmentation-tags"},
                     {text: "Multi-Step Funnels", link: "/advanced/funnels"},
                     {text: "Comparing Statistics", link: "/advanced/comparison"},

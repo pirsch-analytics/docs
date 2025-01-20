@@ -2,6 +2,10 @@
 
 Pirsch supports special URL query parameters to improve the quality of your statistics. They can be used to reduce the number of **unknown** referrers on the dashboard and to track your paid or unpaid marketing campaigns.
 
+::: info
+You can track inbound links reliably using our built-in [URL shortener](/advanced/url-shortener).
+:::
+
 ## Setting the Referrer
 
 The following parameters can be added to a link to set the referrer:
