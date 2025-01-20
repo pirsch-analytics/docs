@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.10.2
+
+Release: 2025-01-20
+
+* fixed attaching UTM parameters to URL shortener
+
+## 2.10.1
+
 Release: 2025-01-19
 
 * fixed listing funnels without tags
