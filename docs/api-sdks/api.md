@@ -2652,6 +2652,7 @@ This endpoint lists all conversion goals. The optional `search` parameter can be
         "name": "...",
         "path_pattern": "...", // regex, null if not set
         "pattern": "/checkout/**", // or null if not set
+        "tags": ["blog", "author=John"],
         "event_name": "event", // or null if not set
         "event_meta_key": "currency", // or null if not set
         "event_meta_value": "USD", // or null if not set
@@ -2683,6 +2684,7 @@ Either the `path_pattern` and/or event fields must be set.
     "domain_id": "0DJ0mo934",
     "name": "...",
     "path_pattern": "/checkout/**", // or null
+    "tags": ["blog", "author=John"],
     "event_name": "event", // or null
     "event_meta_key": "currency", // or null
     "event_meta_value": "USD", // or null
@@ -2708,6 +2710,7 @@ Either the `path_pattern` and/or event fields must be set.
     "name": "...",
     "path_pattern": "...", // regex or null if not set
     "pattern": "/checkout/**", // or null if not set
+    "tags": ["blog", "author=John"],
     "event_name": "event", // or null if not set
     "event_meta_key": "currency", // or null if not set
     "event_meta_value": "USD", // or null if not set
@@ -2736,6 +2739,7 @@ This endpoint updates an existing converion goal.
     "domain_id": "0DJ0mo934",
     "name": "...",
     "path_pattern": "/checkout/**", // or null
+    "tags": ["blog", "author=John"],
     "event_name": "event", // or null
     "event_meta_key": "currency", // or null
     "event_meta_value": "USD", // or null
@@ -2761,6 +2765,7 @@ This endpoint updates an existing converion goal.
     "name": "...",
     "path_pattern": "...", // regex or null if not set
     "pattern": "/checkout/**", // or null if not set
+    "tags": ["blog", "author=John"],
     "event_name": "event", // or null if not set
     "event_meta_key": "currency", // or null if not set
     "event_meta_value": "USD", // or null if not set

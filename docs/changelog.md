@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.10.3
+
+Release: unreleased
+
+* added tags to conversion goals
+* fixed creating conversion goals with pattern that already exists but different event name
+* updated dependencies
+
 ## 2.10.2
 
 Release: 2025-01-20
