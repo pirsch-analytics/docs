@@ -2,7 +2,7 @@
 
 ## 2.10.3
 
-Release: unreleased
+Release: 2025-01-28
 
 * added tags to conversion goals
 * fixed creating conversion goals with pattern that already exists but different event name
