@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.10.4
+
+Release: 2025-01-29
+
+* added option to disable docs links (Enterprise)
+* updated dependencies
+
 ## 2.10.3
 
 Release: 2025-01-28
