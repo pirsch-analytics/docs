@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.10.5
+
+Release: 2025-01-31
+
+* fixed missing API scopes
+
 ## 2.10.4
 
 Release: 2025-01-29
