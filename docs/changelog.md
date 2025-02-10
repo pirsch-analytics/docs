@@ -1,5 +1,16 @@
 # Changelog
 
+## 2.10.6
+
+Release: 2025-02-10
+
+* added conversion rate for all filter fields
+* improved bot filters
+* improved OS and OS version mapping
+* fixed reading imported statistics with platform filter
+* fixed missing conversion rate graph on mobile
+* updated dependencies
+
 ## 2.10.5
 
 Release: 2025-01-31
