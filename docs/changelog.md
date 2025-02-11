@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.10.7
+
+Release: 2025-02-12
+
+* always store a page view, even if bounced
+* fixed time on page when first page is reloaded multiple times
+
 ## 2.10.6
 
 Release: 2025-02-10
