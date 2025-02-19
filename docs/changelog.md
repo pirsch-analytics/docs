@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.10.8
+
+Release: 2025-02-19
+
+* improved importer (GA, Plausible, Fathom)
+* fixed long running import jobs
+* updated dependencies
+
 ## 2.10.7
 
 Release: 2025-02-12
