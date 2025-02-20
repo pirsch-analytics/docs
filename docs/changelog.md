@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.10.9
+
+Release: 2025-02-20
+
+* added block list for auto-join feature in organizations to exclude common email providers
+* prevent running deletion process again if it hasn't finished
+* updated dependencies
+
 ## 2.10.8
 
 Release: 2025-02-19
