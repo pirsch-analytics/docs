@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.10.10
+
+Release: 2025-02-23
+
+* fixed storing a page view for an event if the session hasn't been created yet
+* updated dependencies
+
 ## 2.10.9
 
 Release: 2025-02-20
