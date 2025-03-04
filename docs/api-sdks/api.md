@@ -279,7 +279,7 @@ It's possible to use an access code by setting the `access` query parameter.
 
 ### Overview
 
-This endpoint returns basic statistics and the number of members for given domain ID. The results are cached.
+This endpoint returns basic statistics and the number of members for given domain ID. The results are cached. **Filters do not apply to this endpoint!**
 
 `GET /api/v1/statistics/overview?id=A5kgYzK14m`
 
@@ -460,7 +460,7 @@ This endpoint returns the total number of visitors, views, sessions, bounces, bo
 
 ### Total Visitors, Page Views, and Members
 
-This endpoint returns the total number of visitors, page views, and team members. Responses are cached for up to 30 minutes.
+This endpoint returns the total number of visitors, page views, and team members. Responses are cached for up to 30 minutes. **Filters do not apply to this endpoint!**
 
 `GET /api/v1/statistics/overview`
 
