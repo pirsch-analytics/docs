@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.10.11
+
+Release: 2025-03-06
+
+* fixed undefined hostname in live view links
+* fixed disabling filter and view selection if period contains imported data
+* updated dependencies
+
 ## 2.10.10
 
 Release: 2025-02-23
