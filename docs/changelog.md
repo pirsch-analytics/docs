@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.10.12
+
+Release: 2025-03-11
+
+* fixed delete on cluster for statistics
+* updated dependencies
+
 ## 2.10.11
 
 Release: 2025-03-06
