@@ -1,5 +1,14 @@
 # Changelog
 
+## 2.11.0
+
+Release: unreleased
+
+* added custom tags to graphs
+* renamed "includes" and "excludes" to "contains" and "not contains" for filters
+* include year for the date in session cards
+* hide exit path on session card if the session has bounced
+
 ## 2.10.12
 
 Release: 2025-03-11
