@@ -9,6 +9,14 @@ Release: unreleased
 * include year for the date in session cards
 * hide exit path on session card if the session has bounced
 
+## 2.10.13
+
+Release: unreleased
+
+* added email to checkout
+* auto-select currency on checkout based on customer location
+* removed option to select currency on checkout
+
 ## 2.10.12
 
 Release: 2025-03-11
