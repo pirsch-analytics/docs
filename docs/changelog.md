@@ -11,7 +11,7 @@ Release: unreleased
 
 ## 2.10.13
 
-Release: unreleased
+Release: 2025-03-19
 
 * added email to checkout
 * auto-select currency on checkout based on customer location
