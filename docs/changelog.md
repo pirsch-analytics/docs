@@ -5,9 +5,11 @@
 Release: unreleased
 
 * added custom tags to graphs
+* added creation of conversion goals from drop down at top
 * renamed "includes" and "excludes" to "contains" and "not contains" for filters
 * include year for the date in session cards
 * hide exit path on session card if the session has bounced
+* fixed opening dialogs from the top drop-down menu when switching pages
 
 ## 2.10.13
 
