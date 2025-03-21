@@ -10,6 +10,8 @@ Release: unreleased
 * include year for the date in session cards
 * hide exit path on session card if the session has bounced
 * fixed opening dialogs from the top drop-down menu when switching pages
+* upgraded AWS SDK
+* updated dependencies
 
 ## 2.10.13
 
