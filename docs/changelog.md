@@ -13,6 +13,12 @@ Release: unreleased
 * upgraded AWS SDK
 * updated dependencies
 
+## 2.10.14
+
+Release: 2025-03-23
+
+* fixed extracting hostname from URL on API
+
 ## 2.10.13
 
 Release: 2025-03-19
