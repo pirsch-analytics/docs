@@ -1352,6 +1352,8 @@ The query parameters are:
 | to | Yes | YYYY-MM-DD |
 | visitors | No | `true` or `1` |
 | pages | No | `true` or `1` |
+| entry_pages | No | `true` or `1` |
+| exit_pages | No | `true` or `1` |
 | session_duration | No | `true` or `1` |
 | growth | No | `true` or `1` |
 | languages | No | `true` or `1` |

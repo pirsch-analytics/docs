@@ -13,6 +13,12 @@ Release: unreleased
 * upgraded AWS SDK
 * updated dependencies
 
+## 2.10.15
+
+Release: 2025-03-25
+
+* added entry/exit pages to CSV export
+
 ## 2.10.14
 
 Release: 2025-03-23
