@@ -7,6 +7,7 @@ Release: unreleased
 * added custom tags to graphs
 * added creation of conversion goals from drop down at top
 * added neutral title and meta information for dashboards on custom domains
+* added loading filter options when searching
 * renamed "includes" and "excludes" to "contains" and "not contains" for filters
 * include year for the date in session cards
 * hide exit path on session card if the session has bounced

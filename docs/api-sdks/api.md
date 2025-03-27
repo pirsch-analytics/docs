@@ -262,7 +262,7 @@ GET /api/v1/statistics/options/tag/value
 
 `/api/v1/statistics/options/tag/value` requires exactly one tag to be set in the filter.
 
-It's possible to use an access code by setting the `access` query parameter.
+It's possible to use an access code by setting the `access` query parameter. The results can be filtered by appending the `search` query parameter.
 
 `GET /api/v1/statistics/options/page?id=A5kgYzK14m&from=2022-02-01&to=2022-03-27`
 
