@@ -1394,7 +1394,7 @@ The kind can be left empty to delete everything or set to:
 ```
 :::
 
-## Managing Domains
+## Domains
 
 Domains can be managed by creating a user client (on the account settings page).
 
@@ -1765,7 +1765,7 @@ This endpoint toggles displaying the dashboard at full width.
 
 `POST /api/v1/user/fullwidth`
 
-## Managing Access Links
+# Access Links
 
 ### Listing Access Links
 
@@ -1843,7 +1843,7 @@ This endpoint deletes an access link.
 
 `DELETE /api/v1/domain/link?id=0DJ0mo934`
 
-## Managing Dashboard Theme Settings
+## Dashboard Theme Settings
 
 ### Set Base Theme
 
@@ -1898,7 +1898,7 @@ data: JSON {
 ```
 :::
 
-## Managing Custom Domains
+## Custom Domains
 
 ### Set a Custom Domain
 
@@ -1921,7 +1921,7 @@ This endpoint checks whether a custom domain exists already. A custom domain can
 
 `GET /api/v1/domain/custom?domain=my-domain.com`
 
-## Managing Members and Permissions
+## Members and Permissions
 
 ### Listing Members
 
@@ -2058,7 +2058,7 @@ This endpoint will accept an invitation for the currently signed in user.
 ```
 :::
 
-## Managing Alternative Domains
+## Alternative Domains
 
 Alternative domains allow you to add additional traffic sources. By default, Pirsch will block a request that doesn't come from the domain configured on the dashboard. For example, if you want to create a roll-up view, you will need to add any domain that could send traffic to the dashboard as an additional domain.
 
@@ -2134,7 +2134,7 @@ This endpoint deletes an alternative domain by ID.
 
 `DELETE /api/v1/domain/alternative?id=A5kgYzK14m`
 
-## Managing Snippets
+## Snippets
 
 The snippets can be customized for advanced usage. There are two snippet configurations: `page view` and `event`.
 
@@ -2183,7 +2183,7 @@ This endpoint returns the snippet details for a domain and type. The type can be
 ```
 :::
 
-## Managing Clients
+## Clients
 
 It's possible to manage domain clients with a user client.
 
@@ -2325,7 +2325,7 @@ This endpoint deletes a client.
 
 `DELETE /api/v1/client?id=A5kgYzK14m`
 
-## Managing Email Reports
+## Email Reports
 
 ### Listing Email Reports
 
@@ -2445,7 +2445,7 @@ This endpoint deletes an email report.
 
 `DELETE /api/v1/report?id=A5kgYzK14m`
 
-## Managing Webhooks
+## Webhooks
 
 ### Listing Webhooks
 
@@ -2510,7 +2510,7 @@ This endpoint will delete a webhook.
 
 `DELETE /api/v1/webhook?id=A5kgYzK14m`
 
-## Managing Traffic Filters
+## Traffic Filters
 
 ### Listing Filters
 
@@ -2573,7 +2573,7 @@ This endpoint deletes a traffic filter.
 
 `DELETE /api/v1/filter?id=A5kgYzK14m`
 
-## Managing Traffic Spike Notifications
+## Traffic Spike Notifications
 
 ### Enabling/Disabling Traffic Spike Notifications
 
@@ -2604,7 +2604,7 @@ This endpoint will configure traffic spike notifications. Don't forget to enable
 ```
 :::
 
-## Managing Traffic Warnings
+## Traffic Warnings
 
 ### Enabling/Disabling Traffic Warnings
 
@@ -2635,7 +2635,7 @@ This endpoint will configure traffic warnings. Don't forget to enable them using
 ```
 :::
 
-## Managing Conversion Goals
+## Conversion Goals
 
 ### Listing Conversion Goals
 
@@ -2814,7 +2814,7 @@ This endpoint tests whether a regular expression is valid for a conversion goal.
 
 An error is returned if the expression is invalid. Otherwise, it returns if the regular expression matches the pattern.
 
-## Managing Funnels
+## Funnels
 
 ### Listing Funnels
 
@@ -2934,7 +2934,184 @@ This endpoint deletes a funnel.
 
 `DELETE /api/v1/funnel?id=A5kgYzK14m`
 
-## Managing Views
+### Listing Funnel Tags
+
+This endpoint lists all funnel tags. The optional `search` parameter can be used to filter the result set.
+
+`GET /api/v1/funnel/tags?id=0DJ0mo934&search=test`
+
+::: details EXAMPLE RESPONSE
+```JSON
+[
+    "test_tag",
+    "test"
+]
+```
+:::
+
+## Short Links
+
+### Listing Short Links
+
+This endpoint lists all short links. The optional `search` parameter can be used to filter the result set by the name.
+
+`GET /api/v1/link?id=0DJ0mo934&search=Name`
+
+::: details EXAMPLE RESPONSE
+```JSON
+[
+    {
+        "id": "A5kgYzK14m",
+        "def_time": "2025-03-22T10:11:12.123456Z",
+        "mod_time": "2025-03-22T10:11:12.123456Z",
+        "domain_id": "0DJ0mo934",
+        "name": "Name",
+        "event_name": "Link: Name",
+	    "referrer": "https://referrer.com",
+	    "utm_source": "Source",
+	    "utm_medium": "Medium",
+	    "utm_campaign": "Campaign",
+	    "utm_term": "Term",
+        "utm_content": "Content",
+	    "expires_at": "2025-06-10T10:11:12.123456Z",
+	    "expired_url": "https://example.com",
+	    "webhook_id": "m41KzYgk5A",
+	    "title": "Meta Title",
+	    "description": "Meta Description",
+	    "image": "https://example.com/thumbnail.png",
+	    "allow_indexing": true,
+	    "tags": ["foo", "bar"],
+	    "has_password": true,
+	    "webhook_endpoint": "https://example.com/webhook",
+	    "urls": [
+            {
+                "id": "349oUHD2",
+                "def_time": "2025-03-22T10:11:12.123456Z",
+                "mod_time": "2025-03-22T10:11:12.123456Z",
+                "link_id": "A5kgYzK14m",
+                "url": "https://example.com/target",
+	            "country": "gb",
+	            "language": "en",
+	            "os": "Windows"
+            },
+            // ...
+        ]
+    },
+    // ...
+]
+```
+:::
+
+### Creating and Updating a Short Link
+
+This endpoint creates or updates a short link. If the ID is set, the link will be updated, otherwise a new link is created.
+
+`POST /api/v1/link`
+
+::: details EXAMPLE REQUEST
+```JSON
+{
+    "domain_id": "0DJ0mo934",
+    "id": "A5kgYzK14m", // optional
+    "name": "Name",
+    "event_name": "Link: Name",
+    "referrer": "https://referrer.com",
+    "utm_source": "Source",
+    "utm_medium": "Medium",
+    "utm_campaign": "Campaign",
+    "utm_term": "Term",
+    "utm_content": "Content",
+    "expires_at": "2025-06-10T10:11:12.123456Z",
+    "expired_url": "https://example.com",
+    "password": "password",
+    "clear_password": false,
+    "webhook_endpoint": "https://example.com/webhook",
+    "title": "Meta Title",
+    "description": "Meta Description",
+    "image": "https://example.com/thumbnail.png",
+    "allow_indexing": true,
+    "tags": ["foo", "bar"],
+    "urls": [
+        {
+            "id": "349oUHD2",
+            "def_time": "2025-03-22T10:11:12.123456Z",
+            "mod_time": "2025-03-22T10:11:12.123456Z",
+            "link_id": "A5kgYzK14m",
+            "url": "https://example.com/target",
+            "country": "gb",
+            "language": "en",
+            "os": "Windows"
+        },
+        // ...
+    ]
+}
+```
+:::
+
+::: details EXAMPLE RESPONSE
+```JSON
+{
+    "id": "A5kgYzK14m",
+    "def_time": "2025-03-22T10:11:12.123456Z",
+    "mod_time": "2025-03-22T10:11:12.123456Z",
+    "domain_id": "0DJ0mo934",
+    "name": "Name",
+    "event_name": "Link: Name",
+    "referrer": "https://referrer.com",
+    "utm_source": "Source",
+    "utm_medium": "Medium",
+    "utm_campaign": "Campaign",
+    "utm_term": "Term",
+    "utm_content": "Content",
+    "expires_at": "2025-06-10T10:11:12.123456Z",
+    "expired_url": "https://example.com",
+    "webhook_id": "m41KzYgk5A",
+    "title": "Meta Title",
+    "description": "Meta Description",
+    "image": "https://example.com/thumbnail.png",
+    "allow_indexing": true,
+    "tags": ["foo", "bar"],
+    "has_password": true,
+    "webhook_endpoint": "https://example.com/webhook",
+    "urls": [
+        {
+            "id": "349oUHD2",
+            "def_time": "2025-03-22T10:11:12.123456Z",
+            "mod_time": "2025-03-22T10:11:12.123456Z",
+            "link_id": "A5kgYzK14m",
+            "url": "https://example.com/target",
+            "country": "gb",
+            "language": "en",
+            "os": "Windows"
+        },
+        // ...
+    ]
+}
+```
+:::
+
+### Deleting a Short Link
+
+This endpoint deletes a short link.
+
+`DELETE /api/v1/link?id=A5kgYzK14m`
+
+### Listing Short Link Tags
+
+This endpoint lists all short link tags. The optional `search` parameter can be used to filter the result set.
+
+`GET /api/v1/link/tags?id=0DJ0mo934&search=test`
+
+::: details EXAMPLE RESPONSE
+```JSON
+[
+    "test_tag",
+    "test"
+]
+```
+:::
+
+## Views
 
 ### Listing Views
 
@@ -3101,7 +3278,7 @@ This endpoint deletes a view.
 
 `DELETE /api/v1/view?id=Jk49fgm38`
 
-## Managing Organizations
+## Organizations
 
 ### Listing Organizations
 
@@ -3275,7 +3452,7 @@ This endpoint will remove a hostname from the auto-join list.
 
 `DELETE /api/v1/organization/autojoin?id=Jk49fgm38&auto_join=example.com`
 
-## Managing Themes
+## Themes
 
 Themes can either belong to a user or an organization. They are also used on domains to overwrite settings.
 
