@@ -9,6 +9,8 @@ Release: unreleased
 * added neutral title and meta information for dashboards on custom domains
 * added loading filter options when searching
 * added filtering funnels and short links by tags
+* added traffic source channel for AI
+* added DuckDuckGo browser detection and icon
 * renamed "includes" and "excludes" to "contains" and "not contains" for filters
 * include year for the date in session cards
 * hide exit path on session card if the session has bounced

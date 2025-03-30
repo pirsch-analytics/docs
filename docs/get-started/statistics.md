@@ -250,6 +250,22 @@ OR
 
 Source exactly matches "firebase"
 
+#### AI
+
+Artificial Intelligence (AI) is inferred from the referrer or UTM source from the following list. Note that requests made directly by AI are ignored as non-human traffic.
+
+```
+perplexity.ai
+openai.com
+anthropic.com
+bard.google.com
+cohere.com
+meta.ai
+ai.meta.com
+jasper.ai
+mistral.ai
+```
+
 ### Referrers
 
 Referrers are the statistics for the referring site. The data is extracted from the `Referers` (with a *r*) HTTP header and may not be set by the browser. In these cases it will be listed as unknown.
