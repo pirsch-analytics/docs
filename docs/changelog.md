@@ -19,6 +19,13 @@ Release: unreleased
 * upgraded AWS SDK
 * updated dependencies
 
+## 2.10.16
+
+Release: 2025-04-02
+
+* fixed handling unknown price IDs for legacy pricing in webhooks
+* updated dependencies
+
 ## 2.10.15
 
 Release: 2025-03-25
