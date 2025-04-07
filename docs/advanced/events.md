@@ -32,6 +32,8 @@ Before you can send your first event, you need to add the `pa.js` JavaScript sni
 
 The `data-exclude` and `data-include` attributes can be used to ignore events on certain pages. Please refer to the [website integration](/get-started/frontend-integration) for details.
 
+Please note that firing an event immediately on page load can result in duplicate sessions. See the [example below](/advanced/events#example-5-tracking-an-event-on-page-load) for details.
+
 ### Example 1: Using CSS Classes
 
 If you don't have access to the HTML of your website and cannot or don't want to use JavaScript, adding CSS classes is the easiest way to add event tracking. The downside is that only click events are supported at the moment. The example below will trigger an event when the button is clicked.
@@ -147,6 +149,31 @@ Here is an example of how you can use events to track form submissions. Note tha
 ```
 
 The script adds an event listener to the form. When it is submitted, an event is sent to Pirsch, including the message entered by the user as metadata.
+
+### Example 5: Tracking an Event on Page Load
+
+Tracking an event on page load requires delaying the event for a few milliseconds, otherwise it would collide with the page view. Triggering an event for a visitor who doesn't already have a session will create a new session. If the page view is sent at the same time, two sessions are immediately created for the same visitor. To avoid this problem, a short delay should be added.
+
+A better solution would be to append the required metadata fields to the page view itself using [tags](/advanced/segmentation-tags).
+
+Here is an example of a delayed event. 200 milliseconds should be fine in most cases.
+
+```HTML
+<script>
+    // Wait until the page has fully loaded.
+    document.addEventListener("DOMContentLoaded", () => {
+        // Set a 200 millisecond timeout before triggering the event.
+        setTimeout(() => {
+            // Send the event to Pirsch.
+            pirsch("Page Load Event", {
+                meta: {
+                    some: "thing"
+                }
+            });
+        }, 200);
+    });
+</script>
+```
 
 ### More Examples
 
