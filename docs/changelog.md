@@ -2,7 +2,7 @@
 
 ## 2.11.0
 
-Release: unreleased
+Release: 2025-04-07
 
 * added custom tags to graphs
 * added creation of conversion goals from drop down at top
@@ -11,6 +11,8 @@ Release: unreleased
 * added filtering funnels and short links by tags
 * added traffic source channel for AI
 * added DuckDuckGo browser detection and icon
+* added labels for the hour currently viewed
+* the arrows for the period now also work for full hours
 * renamed "includes" and "excludes" to "contains" and "not contains" for filters
 * include year for the date in session cards
 * hide exit path on session card if the session has bounced
