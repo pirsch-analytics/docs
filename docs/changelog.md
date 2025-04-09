@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.11.1
+
+Release: 2025-04-09
+
+* improved logging
+* improved dashboard auth handling
+* fixed sending email reports
+
 ## 2.11.0
 
 Release: 2025-04-07
