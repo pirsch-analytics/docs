@@ -7,6 +7,7 @@ Release: 2025-04-09
 * improved logging
 * improved dashboard auth handling
 * fixed sending email reports
+* updated dependencies
 
 ## 2.11.0
 
