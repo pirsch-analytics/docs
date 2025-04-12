@@ -20,36 +20,6 @@ To remove a member, just click on the trash icon.
 
 ![Access Management](../static/advanced/settings-access.png)
 
-## Organizations
+## Teams
 
-::: info
-Organizations are a Pirsch Plus feature.
-:::
-
-Organizations allow you to group dashboards, provide access to team members and customers, and apply [themes](/advanced/theme).
-
-![Organization](../static/advanced/organization.png)
-
-They can be accessed from the user menu in the top right corner.
-
-Each member has a role, which can be either Owner (you), Administrator, or Viewer. The Owner requires an active subscription. Administrators can add sites and manage settings on your behalf. They can use themes assigned to the organization. Viewers have read access to all sites belonging to the organization and are useful if you have clients with multiple sites, for example.
-
-You can have members join your organizations automatically by adding an auto-join domain. Team members who have the host name in their e-mail address (for example, `@microsoft.com`) are automatically added to your organization when they sign up.
-
-Organization are **not** white-labeled. Unlike invitations to dashboards, members must have an account on Pirsch. Only direct invitations to dashboards are themed and will use the custom domain if configured.
-
-### When to Use an Organization
-
-You can use an organization to manage your dashboards in the following cases:
-
-* Team members need to be able to create dashboards on your behalf and add them to your subscription. Only sites that belong to an account with an active subscription will be tracked, and your team members don't need individual subscriptions.
-* Resell our service to your clients and give them access to one or more dashboards
-* You want to share a base theme with all your clients
-* Eliminate the need to assign team members to each dashboard individually
-* Have team members automatically join your organization based on their email address
-
-### Overwrite Settings
-
-It's possible to override organizational settings. For example, if a team member who is added to a dashboard is also added to the organization to which the dashboard belongs, the dashboard permissions will override the organization settings.
-
-You can also override the basic theme settings on the [themes settings page](/advanced/theme).
+Please refer to the [teams article](/advanced/teams).

@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.11.2
+
+Release: 2025-04-12
+
+* renamed organizations to teams
+* fixed adding hostnames error when list is empty
+* updated dependencies
+
 ## 2.11.1
 
 Release: 2025-04-09

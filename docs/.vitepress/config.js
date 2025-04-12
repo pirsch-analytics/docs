@@ -68,31 +68,41 @@ export default {
                 ]
             },
             {
-                text: "Advanced",
+                text: "Tracking",
                 items: [
                     {text: "Referrer and UTM Parameters", link: "/advanced/referrer-utm"},
-                    {text: "Tracking Conversion Goals", link: "/advanced/conversion-goals"},
-                    {text: "Tracking Events", link: "/advanced/events"},
-                    {text: "Tracking Outbound Links", link: "/advanced/outbound-links"},
-                    {text: "Tracking File Downloads", link: "/advanced/file-downloads"},
-                    {text: "Tracking 404 Errors", link: "/advanced/not-found-tracking"},
-                    {text: "URL Shortener", link: "/advanced/url-shortener"},
+                    {text: "Conversion Goals", link: "/advanced/conversion-goals"},
+                    {text: "Events", link: "/advanced/events"},
+                    {text: "Outbound Links", link: "/advanced/outbound-links"},
+                    {text: "File Downloads", link: "/advanced/file-downloads"},
+                    {text: "404 Errors", link: "/advanced/not-found-tracking"},
                     {text: "Segmentation and A/B Testing", link: "/advanced/segmentation-tags"},
                     {text: "Multi-Step Funnels", link: "/advanced/funnels"},
-                    {text: "Comparing Statistics", link: "/advanced/comparison"},
+                    {text: "Extending Sessions", link: "/advanced/sessions"},
+                    {text: "Proxying the Scripts", link: "/advanced/proxy"},
+                    {text: "Proxying Through Cloudflare Workers", link: "/advanced/cf-workers"}
+                ]
+            },
+            {
+                text: "Settings",
+                items: [
                     {text: "Additional Domains and Rollup Views", link: "/advanced/domains-rollup"},
                     {text: "Webhooks", link: "/advanced/webhooks"},
                     {text: "Email Reports", link: "/advanced/email-reports"},
                     {text: "Traffic Filter", link: "/advanced/traffic-filter"},
                     {text: "Traffic Spike Notifications", link: "/advanced/traffic-spike"},
                     {text: "Traffic Alerts", link: "/advanced/traffic-alerts"},
-                    {text: "Extending Sessions", link: "/advanced/sessions"},
-                    {text: "Proxying the Scripts", link: "/advanced/proxy"},
-                    {text: "Proxying Through Cloudflare Workers", link: "/advanced/cf-workers"},
                     {text: "Access Management", link: "/advanced/access"},
-                    {text: "Embedding the Dashboard", link: "/advanced/embedding"},
+                    {text: "Teams", link: "/advanced/teams"},
                     {text: "Theming", link: "/advanced/theme"},
                     {text: "Custom Domains", link: "/advanced/custom-domains"}
+                ]
+            },
+            {
+                text: "Features",
+                items: [
+                    {text: "URL Shortener", link: "/advanced/url-shortener"},
+                    {text: "Comparing Statistics", link: "/advanced/comparison"}
                 ]
             },
             {
