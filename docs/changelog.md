@@ -1,5 +1,18 @@
 # Changelog
 
+## 2.11.3
+
+Release: 2025-04-20
+
+* added Bluesky referrer group
+* added Viewport-Width and Width header to get screen class
+* improved bot filter
+* updated and improved channel attribution list
+* fixed organic search traffic attribution
+* fixed metric translation
+* fixed buttons disappearing on the team page when changing the team name
+* updated dependencies
+
 ## 2.11.2
 
 Release: 2025-04-12
