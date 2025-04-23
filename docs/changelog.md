@@ -5,6 +5,7 @@
 Release: 2025-04-23
 
 * fixed assigning some AI referrers/sources to channel
+* updated dependencies
 
 ## 2.11.3
 
