@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.11.4
+
+Release: 2025-04-23
+
+* fixed assigning some AI referrers/sources to channel
+
 ## 2.11.3
 
 Release: 2025-04-20
