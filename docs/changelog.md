@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.11.5
+
+Release: 2025-04-25
+
+* fixed Caddy custom domain validation
+* updated dependencies
+
 ## 2.11.4
 
 Release: 2025-04-23
