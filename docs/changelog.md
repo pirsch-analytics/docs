@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.11.6
+
+Release: 2025-04-29
+
+* fixed Android WebView being filtered
+* updated dependencies
+
 ## 2.11.5
 
 Release: 2025-04-25
