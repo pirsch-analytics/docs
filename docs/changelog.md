@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.12.0
+
+Release: unreleased
+
+* added non-interactive events
+* updated dependencies
+
 ## 2.11.6
 
 Release: 2025-04-29

@@ -30,6 +30,8 @@ After you have added the script, trigger the 404 error event. You need to do thi
 </script>
 ```
 
+The event will be tracked as non-interactive. This means that the sessions will continue to be counted as bounced.
+
 ## Analyzing 404 Error Pages on Your Dashboard
 
 404 error pages will be tracked as events on your dashboard. By default, they will be displayed as **404 Page Not Found**, but you can change that by setting the `data-not-found-event-name` parameter. Expanding the event will reveal the pages that couldn't be found.

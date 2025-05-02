@@ -26,6 +26,8 @@ Note that [tags](../advanced/segmentation-tags) are automatically attached to ev
 
 Events are automatically created and added to your dashboard when you send them. They can be sent from your website using JavaScript, or from your backend using our [API](/api-sdks/api) or one of our [SDKs](/api-sdks/sdks).
 
+By default, an event counts as an interaction, which marks the session as not bounced. You can change this by adding the `non_interactive` parameter.
+
 ## Sending Events From Your Website
 
 Before you can send your first event, you need to add the `pa.js` JavaScript snippet to your website.
@@ -39,7 +41,8 @@ Please note that firing an event immediately on page load can result in duplicat
 If you don't have access to the HTML of your website and cannot or don't want to use JavaScript, adding CSS classes is the easiest way to add event tracking. The downside is that only click events are supported at the moment. The example below will trigger an event when the button is clicked.
 
 ```HTML
-<button class="pirsch-event=Event+Name pirsch-meta-key=Meta+Value pirsch-duration=32">
+<!-- pirsch-non-interactive is optional and will make the session count as bounced, even if the event is triggered. -->
+<button class="pirsch-event=Event+Name pirsch-meta-key=Meta+Value pirsch-duration=32 pirsch-non-interactive">
     Button
 </button>
 ```
@@ -55,7 +58,8 @@ You can add as many `pirsch-meta-<Key>=<Value>` classes as you want. They'll be 
 If you have access to the HTML of your website, adding attributes is an easy way to add event tracking. The downside is that only click events are supported at the moment. The example below will trigger an event when the button is clicked.
 
 ```HTML
-<button data-pirsch-event="Event Name" data-pirsch-meta-key="Meta Value" data-pirsch-duration="32">
+<!-- data-pirsch-non-interactive is optional and will make the session count as bounced, even if the event is triggered. -->
+<button data-pirsch-event="Event Name" data-pirsch-meta-key="Meta Value" data-pirsch-duration="32" data-pirsch-non-interactive>
     Button
 </button>
 ```
@@ -85,7 +89,9 @@ Here is a simple example of how to send an event at the click of a button using 
                 duration: 42,
                 meta: {
                     Clicks: clicks
-                }
+                },
+                // non_interactive is optional and will make the session count as bounced, even if the event is triggered.
+                // non_interactive: true
             }).then(() => {
                 clicks++;
             }).catch(e => {
@@ -169,6 +175,8 @@ Here is an example of a delayed event. 200 milliseconds should be fine in most c
                 meta: {
                     some: "thing"
                 }
+                // non_interactive is optional and will make the session count as bounced, even with the event triggered.
+                non_interactive: true
             });
         }, 200);
     });

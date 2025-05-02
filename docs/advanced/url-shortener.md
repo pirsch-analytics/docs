@@ -2,7 +2,7 @@
 
 Pirsch has an integrated URL shortener. Unlike other URL shorteners, it's directly connected to your dashboard, creating sessions on redirection and guaranteeing that the source (referrer and UTM parameters) is reliably tracked. Tracking parameters do not rely on the link being forwarded correctly using query parameters, which are often stripped by ad blockers.
 
-The data is tracked as custom events, making it convenient to access.
+The data is tracked as a non-interactive custom events, making it convenient to access. Non-interactive means that the sessions will continue to be counted as bounced.
 
 ## Features
 

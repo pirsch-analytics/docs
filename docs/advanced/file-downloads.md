@@ -18,6 +18,8 @@ Navigate to the settings page on the dashboard and select the **Integration** ta
 
 The script will also track outbound links by default. If you don't want this behaviour, you can disable it by adding the `data-disable-outbound-links` parameter.
 
+The event will be tracked as non-interactive. This means that the sessions will continue to be counted as bounced.
+
 A lot of file formats will be tracked by default, but you can extend it by adding the `data-download-extensions` parameter. Here is an example on how you would add `.tar` and `.ttf` files.
 
 ```html

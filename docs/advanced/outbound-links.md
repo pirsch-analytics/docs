@@ -18,6 +18,8 @@ Navigate to the settings page in the dashboard and select the **Integration** ta
 
 The script will also track file downloads by default. If you don't want this behavior, you can disable it by adding the `data-disable-downloads' parameter.
 
+The event will be tracked as non-interactive. This means that the sessions will continue to be counted as bounced.
+
 ## Analyzing Outbound Link Clicks on Your Dashboard
 
 External link clicks are tracked as events. By default, they are displayed as **Outbound Link Click**. Expanding the event will show you the external links that your visitors clicked.

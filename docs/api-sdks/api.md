@@ -102,6 +102,8 @@ Fields with underscores are comments.
         "key":             "value",
         "metadata fields": "are optional"
     },
+    "_non_interactive":             "Sets the event to be non-interactive, keeping the session bounced.",
+    "non_interactive":              true,
     "_hit":                         "The fields below are the same as for hits.",
     "url":                          "https://example.com/full/url?including=parameters",
     "ip":                           "123.456.789.0",
