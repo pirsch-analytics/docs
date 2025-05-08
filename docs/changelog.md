@@ -9,6 +9,7 @@ Release: unreleased
 * added going back to the day graph when selecting an hour
 * added autocompletion for funnels and conversion goals
 * added browser and OS filter options
+* added weekday configuration to start week on Monday or Sunday
 * removed filter parameters options cache to load when clearing the input
 * updated dependencies
 
