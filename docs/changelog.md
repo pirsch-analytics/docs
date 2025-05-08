@@ -7,6 +7,9 @@ Release: unreleased
 * added non-interactive events
 * added more dashboard customization options
 * added going back to the day graph when selecting an hour
+* added autocompletion for funnels and conversion goals
+* added browser and OS filter options
+* removed filter parameters options cache to load when clearing the input
 * updated dependencies
 
 ## 2.11.6

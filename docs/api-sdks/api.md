@@ -251,6 +251,9 @@ GET /api/v1/statistics/options/country
 GET /api/v1/statistics/options/region
 GET /api/v1/statistics/options/city
 GET /api/v1/statistics/options/language
+GET /api/v1/statistics/options/browser
+GET /api/v1/statistics/options/os
+GET /api/v1/statistics/options/metadata/keys
 GET /api/v1/statistics/options/metadata
 GET /api/v1/statistics/options/utm/source
 GET /api/v1/statistics/options/utm/medium
