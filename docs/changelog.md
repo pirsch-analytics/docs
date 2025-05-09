@@ -11,6 +11,7 @@ Release: unreleased
 * added browser and OS filter options
 * added weekday configuration to start week on Monday or Sunday
 * removed filter parameters options cache to load when clearing the input
+* fixed nil pointer when merging filters
 * updated dependencies
 
 ## 2.11.6
