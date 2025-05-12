@@ -10,8 +10,10 @@ Release: unreleased
 * added autocompletion for funnels and conversion goals
 * added browser and OS filter options
 * added weekday configuration to start week on Monday or Sunday
+* improved bot filtering
 * removed filter parameters options cache to load when clearing the input
 * fixed nil pointer when merging filters
+* fixed loading more data button
 * updated dependencies
 
 ## 2.11.6
