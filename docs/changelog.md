@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.12.1
+
+Release: 2025-05-21
+
+* fixed automatic update of the IP blacklist
+
 ## 2.12.0
 
 Release: 2025-05-21
