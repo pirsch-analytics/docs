@@ -2,7 +2,7 @@
 
 ## 2.12.0
 
-Release: unreleased
+Release: 2025-05-21
 
 * added non-interactive events
 * added more dashboard customization options
@@ -10,7 +10,11 @@ Release: unreleased
 * added autocompletion for funnels and conversion goals
 * added browser and OS filter options
 * added weekday configuration to start week on Monday or Sunday
+* added docs links to empty pages (no dashboard, funnel, or link)
 * improved bot filtering
+* improved query performance
+* improved theme setting descriptions
+* removed the comparison mode custom range filter limitation
 * removed filter parameters options cache to load when clearing the input
 * fixed nil pointer when merging filters
 * fixed loading more data button
