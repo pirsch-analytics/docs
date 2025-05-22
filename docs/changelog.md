@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.12.2
+
+Release: 2025-05-22
+
+* fixed missing date range limitation for IP blacklist
+
 ## 2.12.1
 
 Release: 2025-05-21
