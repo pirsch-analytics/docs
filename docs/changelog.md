@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.12.3
+
+Release: 2025-05-25
+
+* fixed showing annotations button for viewers
+* fixed Stripe checkout session
+
 ## 2.12.2
 
 Release: 2025-05-22
