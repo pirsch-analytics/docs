@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.12.4
+
+Release: 2025-06-18
+
+* fixed missing data-download-extensions and data-disable-history for snippet integration
+* fixed translations
+* updated dependencies
+
 ## 2.12.3
 
 Release: 2025-05-25
