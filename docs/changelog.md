@@ -2,7 +2,7 @@
 
 ## 2.12.4
 
-Release: 2025-06-18
+Release: unreleased
 
 * fixed missing data-download-extensions and data-disable-history for snippet integration
 * fixed translations
