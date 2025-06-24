@@ -2,10 +2,13 @@
 
 ## 2.12.4
 
-Release: unreleased
+Release: 2025-06-24
 
+* added autocompletion to links dialog
 * fixed missing data-download-extensions and data-disable-history for snippet integration
 * fixed translations
+* fixed missing filters for link statistics
+* fixed separator for conversion goal regex
 * updated dependencies
 
 ## 2.12.3
