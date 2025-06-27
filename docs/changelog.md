@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.12.5
+
+Release: 2025-06-27
+
+* added the option to strip the anchor from a URL to the snippet
+* updated dependencies
+
 ## 2.12.4
 
 Release: 2025-06-24
