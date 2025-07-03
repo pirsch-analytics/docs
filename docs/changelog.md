@@ -4,7 +4,7 @@
 
 Release: 2025-07-03
 
-* updated dependencies 
+* updated dependencies
 
 ## 2.12.5
 
