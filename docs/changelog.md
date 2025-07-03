@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.12.6
+
+Release: 2025-07-03
+
+* updated dependencies 
+
 ## 2.12.5
 
 Release: 2025-06-27
