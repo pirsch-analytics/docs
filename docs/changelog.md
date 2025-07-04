@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.12.7
+
+Release: 2025-07-04
+
+* fixed saving views with hostname and channel
+* fixed conversion goal styling when editing existing goal
+
 ## 2.12.6
 
 Release: 2025-07-03
