@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.12.8
+
+Release: 2025-07-11
+
+* fixed filtering by conversion goal path patterns
+* updated dependencies
+
 ## 2.12.7
 
 Release: 2025-07-04
