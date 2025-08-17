@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.12.9
+
+Release: 2025-08-17
+
+* fixed empty referrers in CSV export if only the name is set
+* updated dependencies
+
 ## 2.12.8
 
 Release: 2025-07-11
