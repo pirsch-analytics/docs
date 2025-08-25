@@ -57,6 +57,7 @@ This endpoint is used to send page views to Pirsch. It requires you to send info
     "referrer" :                    "Referer header (optional)",
     "screen_width":                 1920,
     "screen_height":                1080,
+    "disable_bot_filter":           false,
     "tags": {
         "author": "John",
         "post": "My first blogpost"
@@ -64,6 +65,8 @@ This endpoint is used to send page views to Pirsch. It requires you to send info
 }
 ```
 :::
+
+If you wish, you can disable the bot filters. However, we do not recommend this. If you are tracking an application in a well-controlled environment though, you might be able to prevent some false positives by setting the option to `true`.
 
 It's possible to send multiple page views at once. If you use the batch endpoint, make sure the page views are in order, otherwise they throw off your statistics. This works well for sites that run on a single server where you can buffer page views.
 
@@ -118,10 +121,13 @@ Fields with underscores are comments.
     "title":                        "Page title (optional)",
     "referrer" :                    "Referer header (optional)",
     "screen_width":                 1920,
-    "screen_height":                1080
+    "screen_height":                1080,
+    "disable_bot_filter":           false
 }
 ```
 :::
+
+If you wish, you can disable the bot filters. However, we do not recommend this. If you are tracking an application in a well-controlled environment though, you might be able to prevent some false positives by setting the option to `true`.
 
 It's possible to send multiple events at once. If you use the batch endpoint, make sure the events are in order or they throw off your statistics. This works well for sites that run on a single server where you can buffer events.
 
@@ -155,10 +161,13 @@ This endpoint is used to **manually** keep sessions alive. A session is normally
 	"sec_ch_ua_platform":           "Sec-CH-UA-Platform header (optional)",
 	"sec_ch_ua_platform_version":   "Sec-CH-UA-Platform-Version header (optional)",
 	"sec_ch_width":                 "Sec-CH-Width header (optional)",
-    "sec_ch_viewport_width":        "Sec-CH-Viewport-Width header (optional)"
+    "sec_ch_viewport_width":        "Sec-CH-Viewport-Width header (optional)",
+    "disable_bot_filter":           false
 }
 ```
 :::
+
+If you wish, you can disable the bot filters. However, we do not recommend this. If you are tracking an application in a well-controlled environment though, you might be able to prevent some false positives by setting the option to `true`.
 
 It's possible to send multiple requests at once. If you use the batch endpoint, make sure the updates are in order or they throw off your statistics. This works well for sites that run on a single server where you can buffer requests.
 

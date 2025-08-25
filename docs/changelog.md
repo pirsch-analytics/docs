@@ -1,5 +1,16 @@
 # Changelog
 
+## 2.12.10
+
+Release: 2025-08-25
+
+* added noindex to public access settings
+* added UTM and referrer parameters to link shortener redirect URL
+* added the option to disable the bot filters entirely via API
+* improved bot filtering
+* fixed Dutch translations
+* updated dependencies
+
 ## 2.12.9
 
 Release: 2025-08-17

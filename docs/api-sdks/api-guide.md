@@ -185,12 +185,13 @@ Let's send a simple page view. This is usually done from your server ([server-si
     "tags": {
         "author": "John",
         "post": "My first blogpost"
-    }
+    },
+    "disable_bot_filter": false
 }
 ```
 :::
 
-As you can see, you need to send information about the request made by the visitor. Your server basically acts as a proxy, forwarding the same information we receive when using the JavaScript snippets that request our service directly.
+As you can see, you need to send us information about the visitor's request. Your server essentially acts as a proxy, forwarding the same information that we receive when the JavaScript snippets request our service directly. If you wish, you can disable the bot filters. However, we do not recommend this. If you are tracking an application in a well-controlled environment though, you might be able to prevent some false positives by setting the option to `true`.
 
 How you get these fields depends on your framework and programming language. Here is a simple example for PHP.
 
