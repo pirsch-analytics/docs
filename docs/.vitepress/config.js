@@ -54,6 +54,7 @@ export default {
             {
                 text: "Integrations",
                 items: [
+                    {text: "Analytics Abstraction Layer", link: "/integrations/analytics"},
                     {text: "Caddy", link: "/integrations/caddy"},
                     {text: "Docusaurus", link: "/integrations/docusaurus"},
                     {text: "FilamentPHP", link: "/integrations/filament"},
