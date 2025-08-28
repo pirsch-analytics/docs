@@ -5,6 +5,7 @@
 Release: unreleased
 
 * added sorting page views, events, and session updates on batch insert
+* improved Dutch translations
 
 ## 2.12.10
 
