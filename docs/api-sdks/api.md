@@ -68,7 +68,7 @@ This endpoint is used to send page views to Pirsch. It requires you to send info
 
 If you wish, you can disable the bot filters. However, we do not recommend this. If you are tracking an application in a well-controlled environment though, you might be able to prevent some false positives by setting the option to `true`.
 
-It's possible to send multiple page views at once. If you use the batch endpoint, make sure the page views are in order, otherwise they throw off your statistics. This works well for sites that run on a single server where you can buffer page views.
+It's possible to send multiple page views at once. This works well for sites that run on a single server where you can buffer page views.
 
 `POST https://api.pirsch.io/api/v1/hit/batch`
 
@@ -129,7 +129,7 @@ Fields with underscores are comments.
 
 If you wish, you can disable the bot filters. However, we do not recommend this. If you are tracking an application in a well-controlled environment though, you might be able to prevent some false positives by setting the option to `true`.
 
-It's possible to send multiple events at once. If you use the batch endpoint, make sure the events are in order or they throw off your statistics. This works well for sites that run on a single server where you can buffer events.
+It's possible to send multiple events at once. This works well for sites that run on a single server where you can buffer events.
 
 `POST https://api.pirsch.io/api/v1/event/batch`
 
@@ -169,7 +169,7 @@ This endpoint is used to **manually** keep sessions alive. A session is normally
 
 If you wish, you can disable the bot filters. However, we do not recommend this. If you are tracking an application in a well-controlled environment though, you might be able to prevent some false positives by setting the option to `true`.
 
-It's possible to send multiple requests at once. If you use the batch endpoint, make sure the updates are in order or they throw off your statistics. This works well for sites that run on a single server where you can buffer requests.
+It's possible to send multiple requests at once. This works well for sites that run on a single server where you can buffer requests.
 
 `POST https://api.pirsch.io/api/v1/session/batch`
 
