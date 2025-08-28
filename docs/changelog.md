@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.12.11
+
+Release: unreleased
+
+* added sorting page views, events, and session updates on batch insert
+
 ## 2.12.10
 
 Release: 2025-08-25
