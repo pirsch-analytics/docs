@@ -5,7 +5,10 @@
 Release: unreleased
 
 * added sorting page views, events, and session updates on batch insert
+* added teams page link to dashboard
+* added updating filter value on enter
 * improved Dutch translations
+* updated Altcha verification
 
 ## 2.12.10
 
