@@ -2,7 +2,7 @@
 
 ## 2.12.11
 
-Release: unreleased
+Release: 2025-08-29
 
 * added sorting page views, events, and session updates on batch insert
 * added teams page link to dashboard
