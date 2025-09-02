@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.12.12
+
+Release: 2025-09-02
+
+* fixed URL shortener removing query parameters
+
 ## 2.12.11
 
 Release: 2025-08-29
