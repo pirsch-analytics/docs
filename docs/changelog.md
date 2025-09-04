@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.12.13
+
+Release: 2025-09-04
+
+* fixed team page link on public dashboards
+
 ## 2.12.12
 
 Release: 2025-09-02
