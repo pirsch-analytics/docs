@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.12.14
+
+Release: 2025-09-09
+
+* improved bot filter
+* updated dependencies
+
 ## 2.12.13
 
 Release: 2025-09-04
