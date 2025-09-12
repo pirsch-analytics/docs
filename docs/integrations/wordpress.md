@@ -1,32 +1,29 @@
 # WordPress
 
-## Using the Plugin (Backend Integration)
-
-[The plugin](https://wordpress.org/plugins/pirsch-analytics/#description) provides an easy way to integrate Pirsch into WordPress. It doesn't use JavaScript and works from your server. This is the [recommended approach](/get-started/backend-integration). For script integration, see below.
-
-::: info
-The plugin is triggered on every page visit. Some caching plugins may block it from running. If you don't receive traffic after installing and enabling the Pirsch plugin, please try disabling your cache or switching to the JavaScript snippet.
-:::
-
-To install the plugin, go to the Plugins page in your WordPress admin dashboard and click on **Install** next to the title. Search for "Pirsch Analytics" and click **Install** for the plugin. Once installed, click **Activate** and navigate to **Tools** -> **Pirsch Analytics** from the left hand menu. This will take you to the settings page.
-
 ![WordPress Plugin](../static/integrations/wp/wordpress.png)
 
-Enter the hostname you used to set up the website on the Pirsch dashboard and the client ID and/or secret. You can create new clients for your website in the [Settings page](/get-started/backend-integration#creating-a-client). We recommend that you use an **Access Token** instead of an oAuth client, as this avoids unnecessary roundtrips.
+## Using the Plugin (Backend Integration)
 
-After you click *Save*, Pirsch will start collecting statistics for your site.
+[The plugin](https://wordpress.org/plugins/pirsch-analytics/#description) provides an easy way to integrate Pirsch into WordPress. It doesn't use JavaScript and works from your server. This is the [recommended approach](/get-started/backend-integration). You can still optionally add the JavaScript snippet to track custom events from your website.
+
+To install the plugin, go to the Plugins page in your WordPress dashboard and click on **Install** next to the title. Search for "Pirsch Analytics" and click **Install** for the plugin.
+
+Once installed, click **Activate** and navigate to **Tools** > **Pirsch Analytics** from the left hand menu. This will take you to the settings page.
+
+![WordPress Plugin Settings](../static/integrations/wp/wordpress-settings.png)
+
+Create and enter an access key for your dashboard. You can create new clients on the [integration settings page](/get-started/backend-integration#creating-a-client). After you click *Save*, Pirsch will start collecting statistics for your site.
 
 There are a few optional fields you can configure to fine-tune the integration.
 
-* The base URL can be set if you are using our [proxy](/advanced/proxy).
-* The header can be set to extract the IP address from if your server is behind a proxy or load balancer.
-* The path filter can be used to exclude pages using regular expressions.
-
-## Installing the Script (Frontend Integration)
-
-To add the JavaScript snippet to your WordPress website, install the Insert Headers and Footers plugin. Navigate to the settings page of the plugin and paste the snippet into the `<header>` section and save.
-
-The snippet can be found on the Settings page of your dashboard.
+* An embed URL to display the dashboard in WordPress. You can create a private access link on the [access settings page](https://docs.pirsch.io/advanced/access)
+* The header can be set to extract the IP address from if your server is behind a proxy or load balancer
+* The path filter can be used to exclude pages using regular expressions. You need to enter one filter per line. A regular expression must start with the keyword `regex:`, like `regex:^\/filter\/.*$` for example
+* Disable tracking disables the entire tracking on the page
+* Disable tracking for WP users let's you exclude signed in users from the statistics
+* The identification code is required if you would also like to add the JavaScript snippet. The code can be found on the [integration settings page](/get-started/backend-integration#creating-a-client)
+* Add JS snippet will enable the snippet on your site
+* Disable page views disables the script from collecting page views. **This must be set if you combine it with the access key, or otherwise page views will be duplicated**
 
 ## Permalink Settings
 
