@@ -91,7 +91,7 @@ To add a prefix or suffix, or to change the page title (displayed in the browser
 * `data-title-prefix` adds a path prefix
 * `data-title-suffix` adds a path suffix
 
-Please not that the attributes interacts with the `data-domain` attribute used to create [rollup views](/advanced/domains-rollup.md).
+Please note that the attributes interact with the `data-domain` attribute used to create [rollup views](/advanced/domains-rollup.md).
 
 ## Initializing the Script Manually
 
