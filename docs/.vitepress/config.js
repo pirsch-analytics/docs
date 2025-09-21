@@ -104,7 +104,8 @@ export default {
                 text: "Features",
                 items: [
                     {text: "URL Shortener", link: "/advanced/url-shortener"},
-                    {text: "Comparing Statistics", link: "/advanced/comparison"}
+                    {text: "Comparing Statistics", link: "/advanced/comparison"},
+                    {text: "Embedding the Dashboard", link: "/advanced/embedding"}
                 ]
             },
             {
