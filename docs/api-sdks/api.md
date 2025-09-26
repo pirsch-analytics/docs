@@ -2384,7 +2384,8 @@ This endpoint creates a new email report.
     "summary": true,
 	"top_pages": true,
 	"top_referrer": true,
-	"top_events": true
+	"top_events": true,
+    "hide_dashboard_button": true
 }
 ```
 :::
@@ -2405,6 +2406,7 @@ This endpoint creates a new email report.
         "top_pages": true,
         "top_referrer": true,
         "top_events": true,
+        "hide_dashboard_button": true,
         "next_report": "2021-05-22T10:11:12.123456Z"
     },
     // ...
@@ -2428,7 +2430,8 @@ This endpoint updates an existing email report.
     "summary": true,
 	"top_pages": true,
 	"top_referrer": true,
-	"top_events": true
+	"top_events": true,
+    "hide_dashboard_button": true
 }
 ```
 :::
@@ -2448,6 +2451,7 @@ This endpoint updates an existing email report.
 	"top_pages": true,
 	"top_referrer": true,
 	"top_events": true,
+    "hide_dashboard_button": true,
     "next_report": "2021-05-22T10:11:12.123456Z"
 }
 ```

@@ -1,5 +1,14 @@
 # Changelog
 
+## 2.13.0
+
+Release: unreleased
+
+* added the option to hide the visited dashboard button within email reports
+* fixed missing translations
+* fixed Google Analytics import description
+* updated dependencies
+
 ## 2.12.14
 
 Release: 2025-09-09
