@@ -8,6 +8,7 @@ Release: unreleased
 * allow transfering dashboards to users without an active subscription
 * fixed missing translations
 * fixed Google Analytics import description
+* fixed validating annotation date and time for various timezones
 * updated dependencies
 
 ## 2.12.14
