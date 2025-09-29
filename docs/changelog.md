@@ -5,6 +5,7 @@
 Release: unreleased
 
 * added the option to hide the visited dashboard button within email reports
+* allow transfering dashboards to users without an active subscription
 * fixed missing translations
 * fixed Google Analytics import description
 * updated dependencies
