@@ -9,6 +9,8 @@ Release: unreleased
 * fixed missing translations
 * fixed Google Analytics import description
 * fixed validating annotation date and time for various timezones
+* fixed period up button starting at 23:00
+* fixed selecting 00:00 on hourly period
 * updated dependencies
 
 ## 2.12.14
