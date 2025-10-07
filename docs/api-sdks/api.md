@@ -1779,6 +1779,12 @@ This endpoint toggles displaying the dashboard at full width.
 
 `POST /api/v1/user/fullwidth`
 
+### Toggle Color Blind Mode
+
+This endpoint toggles displaying the dashboard in color blind mode.
+
+`POST /api/v1/user/colorblind`
+
 # Access Links
 
 ### Listing Access Links
