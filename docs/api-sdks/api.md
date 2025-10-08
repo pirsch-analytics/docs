@@ -1739,9 +1739,227 @@ This endpoint will toggle the noindex meta element for your public dashboard. Wh
 ```
 :::
 
+## User
+
+### Reading the Account Details
+
+This endpoint returns the account details for the logged in user. This action requires a client created for the user (from the account settings page).
+
+`GET /api/v1/user`
+
+### Toggle Marketing Emails
+
+This endpoint toggles whether the user accepts marketing emails. This action requires a client created for the user (from the account settings page).
+
+`POST /api/v1/user/marketing`
+
+### Change the Default Time Period
+
+This endpoint changes the default time period. This action requires a client created for the user (from the account settings page).
+
+`POST /api/v1/user/filter`
+
+::: details EXAMPLE REQUEST
+```JSON
+{
+    "default_time_range": "7d"
+}
+```
+:::
+
+The default time range can be one of the following values:
+
+```
+live
+today
+yesterday
+month
+last_month
+7d
+14d
+30d
+90d
+180d
+365d
+```
+
+### Change the Full Name
+
+This endpoint changes the user's full name. This action requires a client created for the user (from the account settings page).
+
+`POST /api/v1/user/name`
+
+::: details EXAMPLE REQUEST
+```JSON
+{
+    "full_name": "Full Name"
+}
+```
+:::
+
+### Change the Password
+
+This endpoint changes the user's password. This action requires a client created for the user (from the account settings page).
+
+`POST /api/v1/user/password`
+
+::: details EXAMPLE REQUEST
+```JSON
+{
+    "current_password": "current password",
+    "password": "new password",
+    "confirm_password": "new password"
+}
+```
+:::
+
+### Change the Email Address
+
+This endpoint changes the user's email address. This action requires a client created for the user (from the account settings page).
+
+`POST /api/v1/user/email`
+
+::: details EXAMPLE REQUEST
+```JSON
+{
+    "email": "new@address.com",
+	"password": "password"
+}
+```
+:::
+
+### Confirm the Email Address
+
+This endpoint confirms the user's news email address. This endpoint requires no authentication.
+
+`POST /api/v1/user/email`
+
+::: details EXAMPLE REQUEST
+```JSON
+{
+    "code": "confirmation code"
+}
+```
+:::
+
+### Change the Picture
+
+This endpoint changes the user's picture (multipart encoded). This action requires a client created for the user (from the account settings page).
+
+`POST /api/v1/user/picture`
+
+::: details EXAMPLE REQUEST
+```
+file: <picture data>
+```
+:::
+
+### Remove the Picture
+
+This endpoint deletes the user's picture. This action requires a client created for the user (from the account settings page).
+
+`DELETE /api/v1/user/picture`
+
+### Change the Language
+
+This endpoint changes the user interface language for the user. This action requires a client created for the user (from the account settings page).
+
+`POST /api/v1/user/language`
+
+::: details EXAMPLE REQUEST
+```JSON
+{
+    "language": "en"
+}
+```
+:::
+
+### Delete the Account
+
+This endpoint deletes the entire user account after a one week grace time, including all dashboards belonging to it. This action requires a client created for the user (from the account settings page).
+
+`POST /api/v1/user/account`
+
+::: details EXAMPLE REQUEST
+```JSON
+{
+    "message": "Optional message for us",
+    "password": "password"
+}
+```
+:::
+
+### Cancel the Account Deletion
+
+This endpoint cancels the account deletion. This action requires a client created for the user (from the account settings page).
+
+`DELETE /api/v1/user/account`
+
+### Reading the News
+
+This endpoint returns the unread news for the user. This action requires a client created for the user (from the account settings page).
+
+`GET /api/v1/user/news`
+
+::: details EXAMPLE RESPONSE
+```JSON
+[
+    {
+        "news": 42,
+	    "date": "2021-05-22T10:11:12.123456Z",
+	    "version": "2.3.4",
+	    "headline": "Headline"
+	    "content": "<p>HTML content</p>"
+    },
+    // ...
+]
+```
+:::
+
+### Updating the News
+
+This endpoint updates the last news read for the user. This action requires a client created for the user (from the account settings page).
+
+`POST /api/v1/user/news`
+
+::: details EXAMPLE REQUEST
+```JSON
+{
+    "news": 43
+}
+```
+:::
+
+### Reading the Affiliate Rewards
+
+This endpoint returns the affiliate rewards for the user. This action requires a client created for the user (from the account settings page).
+
+`GET /api/v1/user/rewards`
+
+::: details EXAMPLE RESPONSE
+```JSON
+[
+    {
+        "sum": 543,
+	    "count": 42,
+	    "rewards": [
+            {
+                "id": "A5kgYzK14m",
+                "def_time": "2021-05-22T10:11:12.123456Z",
+                "mod_time": "2021-05-22T10:11:12.123456Z",
+                "user_id": "X5kpUzL99d",
+	            "amount": 98
+            },
+            // ...
+        ]
+    }
+]
+```
+:::
+
 ### Setting a Domain as Favorite
 
-This endpoint sets one of your domains as a favorite. This requires a user client.
+This endpoint sets one of your domains as a favorite. This action requires a client created for the user (from the account settings page).
 
 `POST /api/v1/user/favorite`
 
@@ -1755,7 +1973,7 @@ This endpoint sets one of your domains as a favorite. This requires a user clien
 
 ### Pinning a Domain
 
-This endpoint pins a domain. This requires a user client.
+This endpoint pins a domain. This action requires a client created for the user (from the account settings page).
 
 `POST /api/v1/user/pin`
 
@@ -1769,23 +1987,29 @@ This endpoint pins a domain. This requires a user client.
 
 ### Showing Active Visitors in the Page Title
 
-This endpoint toggles whether or not to display active visitors in the page title (tab).
+This endpoint toggles whether or not to display active visitors in the page title (tab). This action requires a client created for the user (from the account settings page).
 
 `POST /api/v1/user/active`
 
 ### Toggle Full Width
 
-This endpoint toggles displaying the dashboard at full width.
+This endpoint toggles displaying the dashboard at full width. This action requires a client created for the user (from the account settings page).
 
 `POST /api/v1/user/fullwidth`
 
+### Toggle Dark Mode
+
+This endpoint toggles displaying the dashboard in dark mode. This action requires a client created for the user (from the account settings page).
+
+`POST /api/v1/user/darkmode`
+
 ### Toggle Color Blind Mode
 
-This endpoint toggles displaying the dashboard in color blind mode.
+This endpoint toggles displaying the dashboard in color blind mode. This action requires a client created for the user (from the account settings page).
 
 `POST /api/v1/user/colorblind`
 
-# Access Links
+## Access Links
 
 ### Listing Access Links
 
