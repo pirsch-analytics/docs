@@ -242,6 +242,7 @@ You can test whether a value is not present in the result set by prepending it w
 | sort | no | visitors | Sort results by given field. This is only available for pages, entry/exit pages, referrers, UTM statistics, conversion goals, events, demographics, and device statistics. |
 | direction | no | desc | Sort results in ascending (asc) or descending (desc) order. This is only available for pages, entry/exit pages, referrers, UTM statistics, conversion goals, events, demographics, and device statistics. |
 | search | no | /home | Search the primary field for given string (contains). For pages this is the path, for browsers the browser name, and so on. This is only available for pages, entry/exit pages, referrers, UTM statistics, conversion goals, events, demographics, and device statistics. |
+| keyword | no | keyword | A Google Search Console keyword. Only used when reading the pages for a specified keyword. |
 :::
 
 ### Filter Options
@@ -1325,7 +1326,7 @@ This endpoint breaks down a single session and returns all page views and events
 ```
 :::
 
-### Keywords
+### Google Search Console Keywords
 
 This endpoints requires the [Google Search Console integration](/integrations/search-console).
 
@@ -1340,6 +1341,31 @@ We recommend using the Search Console API directly instead of calling it through
 [
     {
         "keys": ["key", "word"],
+        "clicks": 456,
+        "impressions": 920,
+        "ctr": 0.49,
+        "position": 4
+    },
+    // ...
+]
+```
+:::
+
+### Google Search Console Pages
+
+This endpoints requires the [Google Search Console integration](/integrations/search-console).
+
+::: info
+We recommend using the Search Console API directly instead of calling it through Pirsch.
+:::
+
+`GET /api/v1/statistics/pages?keyword=keyword`
+
+::: details EXAMPLE RESPONSE
+```JSON
+[
+    {
+        "keys": ["keyword", "https//full-url.com/path"],
         "clicks": 456,
         "impressions": 920,
         "ctr": 0.49,

@@ -6,6 +6,8 @@ Release: unreleased
 
 * added the option to hide the visited dashboard button within email reports
 * added color blind mode
+* added filtering pages by Google Search Console keyword
+* added keyword filter to Google Search Console
 * allow transfering dashboards to users without an active subscription
 * fixed missing translations
 * fixed Google Analytics import description
