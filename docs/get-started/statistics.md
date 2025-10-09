@@ -347,3 +347,7 @@ Please see [this](/advanced/funnels) article to learn more.
 Sessions show individual visitor sessions. This is useful for debugging and identifying problems on your site. For example, if visitors are not completing orders, you can see which pages were visited and what events were triggered to identify a common problem on your site that is preventing visitors from completing orders.
 
 The dashboard only shows a limited number of sessions, so you'll need to break down the number of visitors. You can do this by adding filters or selecting a shorter time period.
+
+### Keywords
+
+Keywords are the keywords used by visitors to find your website on Google. These are pulled from the Google Search Console if you have [set it up](/integrations/search-console).

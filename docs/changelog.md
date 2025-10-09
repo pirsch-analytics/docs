@@ -2,7 +2,7 @@
 
 ## 2.13.0
 
-Release: unreleased
+Release: 2025-10-09
 
 * added the option to hide the visited dashboard button within email reports
 * added color blind mode

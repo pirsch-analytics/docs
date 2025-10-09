@@ -16,3 +16,5 @@ Before you can use the integration, add your website to Search Console and verif
 If you don't see any data, please wait a few hours. The Search Console data is not updated in real time and it may take a while before you see the results.
 
 If you want to remove the integration, click on **Unlink Account**.
+
+Once active, you can filter for keywords on the dashboard by clicking an entry in the list within the panel. Note that we do not know which sessions a keyword belongs to, so we'll apply the pages viewed using that keyword to the filter instead.
