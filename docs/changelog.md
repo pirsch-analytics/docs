@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.13.1
+
+Release: 2025-10-14
+
+* revert dashboard date function changes
+
 ## 2.13.0
 
 Release: 2025-10-09
