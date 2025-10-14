@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.13.2
+
+Release: 2025-10-14
+
+* fixed date selection from chart
+
 ## 2.13.1
 
 Release: 2025-10-14
