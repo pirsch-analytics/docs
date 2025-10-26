@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.13.3
+
+Release: 2025-10-26
+
+* fixed returning early on batch inserts due to a filter policy
+* fixed an error on public dashboards
+* updated dependencies
+
 ## 2.13.2
 
 Release: 2025-10-14
