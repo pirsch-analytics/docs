@@ -1,5 +1,14 @@
 # Changelog
 
+## 2.13.4
+
+Release: 2025-10-28
+
+* optimized page views and events batch endpoints
+* fixed period past hour filter on refresh
+* fixed period JS errors on refresh
+* updated dependencies
+
 ## 2.13.3
 
 Release: 2025-10-26
