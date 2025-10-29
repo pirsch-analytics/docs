@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.13.5
+
+Release: 2025-10-29
+
+* fixed disable_bot_filter parameter for batch processing
+* fixed matching day in comparison mode
+
 ## 2.13.4
 
 Release: 2025-10-28
