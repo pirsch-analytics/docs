@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.13.6
+
+Release: 2025-11-01
+
+* added custom hourly CSV export for Enterprise clients
+* added configuration prefixes for Enterprise clients
+* updated dependencies
+
 ## 2.13.5
 
 Release: 2025-10-29
