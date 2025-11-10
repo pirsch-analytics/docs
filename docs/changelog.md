@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.13.7
+
+Release: 2025-11-10
+
+* fixed date parameter timezone parsing
+* fixed comparison mode period calculation
+* updated dependencies
+
 ## 2.13.6
 
 Release: 2025-11-01
