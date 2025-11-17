@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.13.8
+
+Release: 2025-11-17
+
+* added IP address network filter
+* added 365 days filter to overview
+* updated dependencies
+
 ## 2.13.7
 
 Release: 2025-11-10
