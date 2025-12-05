@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.13.9
+
+Release: 2025-12-05
+
+* optimized Plausible and Fathom importer
+* updated dependencies
+
 ## 2.13.8
 
 Release: 2025-11-17
