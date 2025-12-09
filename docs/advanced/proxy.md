@@ -33,3 +33,5 @@ The [Go server](https://github.com/pirsch-analytics/pirsch-go-proxy) is suitable
 See the readme on GitHub for details and installation instructions.
 
 You can also set up [Cloudflare Workers](https://workers.cloudflare.com/) to do the job. They are free for up to 100,000 requests per day. The instructions for the setup can be found [here](../advanced/cf-workers).
+
+There is also a [community provided integration for Astro](/integrations/astro) which acts as a proxy.
