@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.13.10
+
+Release: 2025-12-20
+
+* updated core
+* updated dependencies
+
 ## 2.13.9
 
 Release: 2025-12-05

@@ -100,7 +100,7 @@ Fields with underscores are comments.
     "event_name":       "Button Clicked",
     "_duration":        "event_duration is an optional number of seconds.",
     "event_duration":   42,
-    "_metadata":        "event_meta is a single dimension object of scalar values (strings, numbers, and booleans).",
+    "_metadata":        "event_meta is a single dimension object of string values.",
     "event_meta": {
         "key":             "value",
         "metadata fields": "are optional"
