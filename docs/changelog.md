@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.13.11
+
+Release: 2026-01-09
+
+* updated core
+* updated dependencies
+
 ## 2.13.10
 
 Release: 2025-12-20
