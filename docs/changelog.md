@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.13.12
+
+Release: 2026-01-20
+
+* added Gemini to AI channel
+* updated dependencies
+
 ## 2.13.11
 
 Release: 2026-01-09
