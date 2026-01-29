@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.14.0
+
+Release: unreleased
+
+* added email report logo width customization to themes
+* added dashboard display name to email reports if available
+* updated dependencies
+
 ## 2.13.12
 
 Release: 2026-01-20
