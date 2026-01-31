@@ -2,10 +2,15 @@
 
 ## 2.14.0
 
-Release: unreleased
+Release: 2026-01-31
 
 * added email report logo width customization to themes
 * added dashboard display name to email reports if available
+* added search for page titles (including entry, exit, and event pages)
+* moved channels to referrer panel
+* moved UTM information to new panel
+* improved referrer extraction
+* fixed page title styling in panel
 * updated dependencies
 
 ## 2.13.12
