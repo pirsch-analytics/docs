@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.14.1
+
+Release: 2026-02-01
+
+* prefer theme title over display name for email report subjects
+
 ## 2.14.0
 
 Release: 2026-01-31
