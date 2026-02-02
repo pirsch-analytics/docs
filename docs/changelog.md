@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.14.2
+
+Release: 2026-02-02
+
+* fixed filtering from table view if pages are grouped by title
+
 ## 2.14.1
 
 Release: 2026-02-01
