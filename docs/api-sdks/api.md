@@ -2635,6 +2635,7 @@ This endpoint creates a new email report.
     "domain_id": "0DJ0mo934",
     "emails": ["member@foo.com", "member@bar.com"],
     "interval": 1, // weeks or 0 for daily
+    "start_date": "2026-02-16", // first report will be send out on this date, or null
     "link_to": "dashboard", // empty/dashboard, public, custom
     "visitor_graph": true,
     "summary": true,

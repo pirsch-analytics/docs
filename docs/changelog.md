@@ -1,5 +1,14 @@
 # Changelog
 
+## 2.14.3
+
+Release: 2026-02-11
+
+* added start date to email reports
+* updated Fathom Analytics importer
+* updated to Go 1.26
+* updated dependencies
+
 ## 2.14.2
 
 Release: 2026-02-02
