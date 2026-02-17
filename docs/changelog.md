@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.14.4
+
+Release: 2026-02-17
+
+* fixed email reports start date error message
+* updated dependencies
+
 ## 2.14.3
 
 Release: 2026-02-11
