@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.15.5
+
+Release: 2026-02-18
+
+* increased rate limit
+
 ## 2.14.4
 
 Release: 2026-02-17
