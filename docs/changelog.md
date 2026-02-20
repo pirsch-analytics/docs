@@ -1,6 +1,17 @@
 # Changelog
 
-## 2.15.5
+## 2.14.6
+
+Release: 2026-02-20
+
+* added tag value filter when filtering for a tag key
+* added reply to option to email reports
+* added the option to hide optional links in email reports
+* fixed keyword filter in filter selection dropdown
+* fixed error message when editing email reports
+* updated dependencies
+
+## 2.14.5
 
 Release: 2026-02-18
 

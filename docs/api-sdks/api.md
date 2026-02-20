@@ -2634,6 +2634,7 @@ This endpoint creates a new email report.
 {
     "domain_id": "0DJ0mo934",
     "emails": ["member@foo.com", "member@bar.com"],
+    "reply_to": "replyto@example.com",
     "interval": 1, // weeks or 0 for daily
     "start_date": "2026-02-16", // first report will be send out on this date, or null
     "link_to": "dashboard", // empty/dashboard, public, custom
@@ -2656,6 +2657,7 @@ This endpoint creates a new email report.
         "mod_time": "2021-05-22T10:11:12.123456Z",
         "domain_id": "0DJ0mo934",
         "email": "...",
+        "reply_to": "replyto@example.com",
         "interval": 1,
         "link_to": "dashboard",
         "visitor_graph": true,
@@ -2681,6 +2683,7 @@ This endpoint updates an existing email report.
 ```JSON
 {
     "id": "A5kgYzK14m",
+    "reply_to": "replyto@example.com",
     "interval": 4, // weeks or 0 for daily
     "link_to": "public", // empty/dashboard, public, custom
     "visitor_graph": true,
@@ -2701,6 +2704,7 @@ This endpoint updates an existing email report.
     "mod_time": "2021-05-22T10:11:12.123456Z",
     "domain_id": "0DJ0mo934",
     "email": "...",
+    "reply_to": "replyto@example.com",
     "interval": 4,
     "link_to": "public",
     "visitor_graph": true,
