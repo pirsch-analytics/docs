@@ -1,5 +1,17 @@
 # Changelog
 
+## 2.14.7
+
+Release: 2026-03-02
+
+* added settings to dashboard creation
+* added an option to hide the UTM parameters panel
+* added expiration time to access links
+* check if localStorage exists before accessing it
+* fixed client ID and secret modal dialog styling
+* fixed missing translation
+* updated dependencies
+
 ## 2.14.6
 
 Release: 2026-02-20

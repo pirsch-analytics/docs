@@ -1478,7 +1478,9 @@ Don't forget to set the access token or access key in the `Authorization` header
         },
         "custom_domain": "my.custom-domain.com",
         "user_role": "Owner", // Admin, Viewer
-        "settings": {},
+        "settings": {
+            // key value pairs (see create domain)
+        },
         "theme_settings": {
             // key value pairs
         },
@@ -1509,7 +1511,47 @@ This endpoint adds a new domain. Only the `hostname`, `subdomain`, and `timezone
 	"disable_scripts": false,
 	"display_name": "",
 	"traffic_spike_threshold": 0,
-	"traffic_warning_threshold_days": 0
+	"traffic_warning_threshold_days": 0,
+    "settings": {
+        "active": true,
+        "active_public": true,
+        "funnels": true,
+        "funnels_public": true,
+        "sessions": true,
+        "sessions_public": true,
+        "links": true,
+        "links_public": true,
+        "graphs": true,
+        "graphs_public": true,
+        "pages": true,
+        "pages_public": true,
+        "sources": true,
+        "sources_public": true,
+        "goals": true,
+        "goals_public": true,
+        "events": true,
+        "events_public": true,
+        "location": true,
+        "location_public": true,
+        "devices": true,
+        "devices_public": true,
+        "weekdays": true,
+        "weekdays_public": true,
+        "keywords": true,
+        "keywords_public": true,
+        "nav_reload": true,
+        "nav_reload_public": true,
+        "nav_filter": true,
+        "nav_filter_public": true,
+        "nav_views": true,
+        "nav_views_public": true,
+        "nav_period": true,
+        "nav_period_public": true,
+        "nav_comparison": true,
+        "nav_comparison_public": true,
+        "nav_period_live": true,
+        "nav_period_live_public": true
+    }
 }
 ```
 :::
@@ -1543,7 +1585,9 @@ This endpoint adds a new domain. Only the `hostname`, `subdomain`, and `timezone
     },
     "custom_domain": "my.custom-domain.com",
     "user_role": "Owner", // Admin, Viewer
-    "settings": {},
+    "settings": {
+        // key value pairs (see create domain)
+    },
     "theme_settings": {
         // key value pairs
     },
@@ -1600,7 +1644,9 @@ GET /api/v1/domain?access=03kDM6o...
     },
     "custom_domain": "my.custom-domain.com",
     "user_role": "Owner", // Admin, Viewer
-    "settings": {},
+    "settings": {
+        // key value pairs (see create domain)
+    },
     "theme_settings": {
         // key value pairs
     },
@@ -1774,7 +1820,7 @@ This endpoint updates the settings for the dashboard.
 {
     "domain_id": "A5kgYzK14m",
     "settings": {
-        // ...
+        // key value pairs (see create domain)
     }
 }
 ```
