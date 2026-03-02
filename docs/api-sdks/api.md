@@ -1662,6 +1662,21 @@ This endpoint updates the subdomain for your dashboard (on `your-sub-domain.pirs
 ```
 :::
 
+### Updating the Display Name
+
+This endpoint updates the display name for your dashboard.
+
+`POST /api/v1/domain/name`
+
+::: details EXAMPLE REQUEST
+```JSON
+{
+    "domain_id": "A5kgYzK14m",
+    "display_name": "New Display Name"
+}
+```
+:::
+
 ### Toggle the Visiblity of Your Dashboard
 
 This endpoint toggles the visibility of your dashboard from private to public or vice versa.
@@ -1704,6 +1719,20 @@ This endpoint toggles if statistics are grouped by page title.
 ```
 :::
 
+### Toggle Starting the Week on Sunday
+
+This endpoint toggles if statistics should start on Sunday or Monday.
+
+`POST /api/v1/domain/start-week-sunday`
+
+::: details EXAMPLE REQUEST
+```JSON
+{
+    "domain_id": "A5kgYzK14m"
+}
+```
+:::
+
 ### Changing the Active Visitors Time
 
 This endpoint changes the time in seconds that visitors are considered active on your site.
@@ -1734,7 +1763,24 @@ This endpoint changes the time zone for the dashboard.
 ```
 :::
 
-### Updating the metadata field
+### Updating the Settings
+
+This endpoint updates the settings for the dashboard.
+
+`POST /api/v1/domain/settings`
+
+::: details EXAMPLE REQUEST
+```JSON
+{
+    "domain_id": "A5kgYzK14m",
+    "settings": {
+        // ...
+    }
+}
+```
+:::
+
+### Updating the Metadata Field
 
 This endpoint will update the metadata field. The field can be used to store user defined tags or configuration. Do what you want with it.
 
