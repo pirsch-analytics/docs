@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.14.8
+
+Release: 2026-03-03
+
+* fixed deleting accounts with pinned dashboards
+
 ## 2.14.7
 
 Release: 2026-03-02
