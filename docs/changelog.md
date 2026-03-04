@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.14.9
+
+Release: 2026-03-04
+
+* updated referrer blacklist
+
 ## 2.14.8
 
 Release: 2026-03-03
