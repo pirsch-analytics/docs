@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.14.10
+
+Release: unreleased
+
+* fixed reporting graph max width
+* updated dependencies
+
 ## 2.14.9
 
 Release: 2026-03-04
