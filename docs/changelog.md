@@ -2,8 +2,9 @@
 
 ## 2.14.10
 
-Release: unreleased
+Release: 2026-04-26
 
+* improved bot filters
 * fixed reporting graph max width
 * updated dependencies
 
