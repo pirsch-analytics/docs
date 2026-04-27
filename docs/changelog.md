@@ -1,5 +1,7 @@
 # Changelog
 
+## 2.14.11
+
 Release: 2026-04-27
 
 * fixed filtering bot requests using the referrer parameter
