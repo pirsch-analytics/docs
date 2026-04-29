@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.14.12
+
+Release: 2026-04-29
+
+* improved bot filters
+
 ## 2.14.11
 
 Release: 2026-04-27
