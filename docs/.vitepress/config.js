@@ -58,6 +58,7 @@ export default {
                     {text: "Astro", link: "/integrations/astro"},
                     {text: "Caddy", link: "/integrations/caddy"},
                     {text: "Docusaurus", link: "/integrations/docusaurus"},
+                    {text: "DotNest", link: "/integrations/dotnest"},
                     {text: "FilamentPHP", link: "/integrations/filament"},
                     {text: "Framer", link: "/integrations/framer"},
                     {text: "Gatsby", link: "/integrations/gatsby"},
