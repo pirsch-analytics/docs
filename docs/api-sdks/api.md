@@ -70,6 +70,12 @@ If you wish, you can disable the bot filters. However, we do not recommend this.
 
 It's possible to send multiple page views at once. This works well for sites that run on a single server where you can buffer page views.
 
+::: danger
+While it's possible to send data out of order, a few fields can no longer be calculated correctly if you do. This includes the session duration and the time on page!
+
+To ensure the statistics are correct, please sort the page views in between requests before sending them to us. We'll sort them within a single batch request however.
+:::
+
 `POST https://api.pirsch.io/api/v1/hit/batch`
 
 ::: details EXAMPLE REQUEST
