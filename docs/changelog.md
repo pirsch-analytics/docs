@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.14.13
+
+Release: unreleased
+
+* fixed broken Google Tag Manager integration link
+* fixed href null check in pa.js
+
 ## 2.14.12
 
 Release: 2026-04-29
