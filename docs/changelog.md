@@ -2,11 +2,16 @@
 
 ## 2.14.13
 
-Release: unreleased
+Release: 2026-05-18
 
 * added tracking custom events via HTML meta tags
+* improved graphs background color on overview
+* improved day filter by making it less jumpy
 * fixed broken Google Tag Manager integration link
 * fixed href null check in pa.js
+* fixed scaling bounce rate graph
+* fixed going back up to to day if the past hour is selected
+* fixed right arrow for hours
 
 ## 2.14.12
 
