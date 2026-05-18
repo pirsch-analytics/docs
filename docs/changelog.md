@@ -4,6 +4,7 @@
 
 Release: unreleased
 
+* added tracking custom events via HTML meta tags
 * fixed broken Google Tag Manager integration link
 * fixed href null check in pa.js
 

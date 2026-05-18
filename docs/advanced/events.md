@@ -183,6 +183,37 @@ Here is an example of a delayed event. 200 milliseconds should be fine in most c
 </script>
 ```
 
+### Example 6: Tracking Events via Meta Tags
+
+It's possible to attach events via meta tags. This often allows configuring your own events without the need to add additional JavaScript to your page. Here is an example.
+
+```HTML
+<head>
+    <title>Demo</title>
+    <!-- Other stuff inside your HTML <head> section. -->
+    <!-- ... -->
+
+    <meta name="pirsch-event"
+        data-pirsch-selector=".pirsch-meta-event"
+        data-pirsch-event="Meta Event"
+        data-pirsch-trigger="click"
+        data-pirsch-meta-key="value"
+        data-pirsch-meta-foo="bar"
+        data-pirsch-non-interactive />
+</head>
+
+<!-- Inside the body tag, add a button with the selector configured above (class="pirsch-meta-event" in this case). -->
+<button class="pirsch-meta-event">Click Me</button>
+```
+
+The `meta` tag needs to be placed inside the `<head>` section, like any other meta tag. The `name` attribute must be set to `pirsch-event`. The event name `data-pirsch-event` and selector `data-pirsch-selector` are mandatory. The selector will be used to find the elements on page which this event should be attached to (using `document.querySelectorAll("your-selector")`).
+
+You can configure a trigger `data-pirsch-trigger`. It will be set to `click` by default. You can use any other event trigger as described [here](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener).
+
+`data-pirsch-non-interactive` will mark the event as non-interactive.
+
+To attach meta data, you can add `data-pirsch-meta-key="value"` attributes. The part after `data-pirsch-meta-` will be used as the key. So, for the example above, two meta data fields will be attached: `key=value` and `foo=bar`.
+
 ### More Examples
 
 We have a demo repository on [GitHub](https://github.com/pirsch-analytics/demo) that shows different ways to integrate and use Pirsch. It also includes more advanced examples, such as tracking the play time of Vimeo and YouTube videos.
