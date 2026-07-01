@@ -1,4 +1,4 @@
-# API
+# API v1
 
 This document describes the API endpoints used to interact with Pirsch. The easiest way to get started is to use one of the client SDKs. If you're looking for how to integrate Pirsch into your backend to collect traffic, please see the [server-side integration](/get-started/backend-integration).
 

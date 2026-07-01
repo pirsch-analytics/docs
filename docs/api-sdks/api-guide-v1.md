@@ -1,4 +1,4 @@
-# API Guide
+# API Guide v1
 
 In this guide you'll learn how to use the API. The full reference can be found [here](/api-sdks/api).
 
