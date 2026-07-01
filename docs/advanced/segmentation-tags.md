@@ -1,6 +1,6 @@
 # Tag-Based Segmentation and A/B Testing
 
-You can attach custom properties (called tags) to page views and events. Tags allow you to segment your audience based on data that we do not automatically collect. Tags are attached to events as custom properties when you use the JavaScript snippet, or they can be set on page views and events through the server-side API integration.
+You can attach custom properties (called tags) to page views and events. Tags allow you to segment your audience based on data that we do not automatically collect. They can be attached via the JavaScript snippet or API. **If you attach tags to a custom event, they will be stored as metadata fields.**
 
 Here are some examples of what you can do with tags:
 
