@@ -113,8 +113,10 @@ export default {
             {
                 text: "API and SDKs",
                 items: [
-                    {text: "API Guide", link: "/api-sdks/api-guide"},
-                    {text: "API", link: "/api-sdks/api"},
+                    {text: "API Guide v2", link: "/api-sdks/api-guide"},
+                    { text: "API v2", link: "/api-sdks/api" },
+                    {text: "API Guide v1", link: "/api-sdks/api-guide-v1"},
+                    {text: "API v1", link: "/api-sdks/api-v1"},
                     {text: "SDKs", link: "/api-sdks/sdks"}
                 ]
             },
