@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.14.14
+
+Release: unreleased
+
+* fixed initializing default time period from user settings
+* changed default period to past week
+
 ## 2.14.13
 
 Release: 2026-05-18
