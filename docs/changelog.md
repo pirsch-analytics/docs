@@ -6,6 +6,7 @@ Release: unreleased
 
 * fixed initializing default time period from user settings
 * changed default period to past week
+* updated dependencies
 
 ## 2.14.13
 
