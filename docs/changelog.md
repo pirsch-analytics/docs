@@ -2,9 +2,12 @@
 
 ## 2.14.14
 
-Release: unreleased
+Release: 2026-07-09
 
+* added billing cycle reset date to limit reached email
 * fixed initializing default time period from user settings
+* fixed access link for daily email reports
+* fixed keywords not matching the keywords displayed on the GSC dashboard
 * changed default period to past week
 * updated dependencies
 
