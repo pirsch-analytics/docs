@@ -1491,7 +1491,10 @@ Don't forget to set the access token or access key in the `Authorization` header
             // key value pairs
         },
         "display_name": "My Website",
-        "subscription_active": true
+        "pinned": true,
+        "free_trial": false,
+        "subscription_active": true,
+        "subscription_plus": true
     }
 ]
 ```

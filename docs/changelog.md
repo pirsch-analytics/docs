@@ -1,5 +1,15 @@
 # Changelog
 
+## 2.14.15
+
+Release: 2026-07-10
+
+* added email address block list for sign up
+* updated Stripe tax integration
+* updated the link shortener to be no longer available during the free-trial
+* fixed redirect password page
+* updated npm dependencies
+
 ## 2.14.14
 
 Release: 2026-07-09
