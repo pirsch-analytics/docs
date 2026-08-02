@@ -65,6 +65,7 @@ export default {
                     {text: "Google Search Console", link: "/integrations/search-console"},
                     {text: "Google Tag Manager", link: "/integrations/tag-manager"},
                     {text: "Laravel", link: "/integrations/laravel"},
+                    {text: "MCP", link: "/integrations/mcp"},
                     {text: "Shopify", link: "/integrations/shopify"},
                     {text: "Strapi", link: "/integrations/strapi"},
                     {text: "Webflow", link: "/integrations/webflow"},
@@ -117,8 +118,7 @@ export default {
                     { text: "API v2", link: "/api-sdks/api" },
                     {text: "API Guide v1", link: "/api-sdks/api-guide-v1"},
                     {text: "API v1", link: "/api-sdks/api-v1"},
-                    {text: "SDKs", link: "/api-sdks/sdks"},
-                    {text: "MCP", link: "/api-sdks/mcp"}
+                    {text: "SDKs", link: "/api-sdks/sdks"}
                 ]
             },
             {
