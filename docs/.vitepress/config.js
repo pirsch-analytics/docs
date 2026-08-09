@@ -65,6 +65,7 @@ export default {
                     {text: "Google Search Console", link: "/integrations/search-console"},
                     {text: "Google Tag Manager", link: "/integrations/tag-manager"},
                     {text: "Laravel", link: "/integrations/laravel"},
+                    {text: "MCP", link: "/integrations/mcp"},
                     {text: "Shopify", link: "/integrations/shopify"},
                     {text: "Strapi", link: "/integrations/strapi"},
                     {text: "Webflow", link: "/integrations/webflow"},
