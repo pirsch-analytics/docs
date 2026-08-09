@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.14.16
+
+Release: 2026-08-09
+
+* improved registration bot protection
+
 ## 2.14.15
 
 Release: 2026-07-10
