@@ -1,5 +1,18 @@
 # Changelog
 
+## 2.14.19
+
+Release: 2026-10-13
+
+* updated User-Agent and referrer bot filters
+* updated dependencies
+
+## 2.14.18
+
+Release: 2026-09-30
+
+* fixed bot filters by known IP ranges
+
 ## 2.14.17
 
 Release: 2026-08-09
