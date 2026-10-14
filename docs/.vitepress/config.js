@@ -1,6 +1,7 @@
 import { createWriteStream } from "node:fs";
 import { resolve } from "node:path";
 import { SitemapStream } from "sitemap";
+import llmstxt from "vitepress-plugin-llms";
 
 const links = [];
 
@@ -156,5 +157,8 @@ export default {
         links.forEach((link) => sitemap.write(link));
         sitemap.end();
         await new Promise((r) => writeStream.on("finish", r));
+    },
+    vite: {
+        plugins: [llmstxt()]
     }
 }
