@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.14.20
+
+Release: 2026-10-14
+
+* fixed non_interactive in 404 page not found event function
+* fixed non_interactive parameter for custom events
+
 ## 2.14.19
 
 Release: 2026-10-13
