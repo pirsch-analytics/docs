@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.14.22
+
+Release: 2026-10-30
+
+* fixed hostname whitelist filter
+
 ## 2.14.21
 
 Release: 2026-10-14
