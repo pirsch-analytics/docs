@@ -1,5 +1,23 @@
 # Changelog
 
+## 3.0.0
+
+Release: 2026-11-21
+
+This major update is a rewrite of the entire core. A non-exhaustive list of important changes include:
+
+* added native ClickHouse client support
+* added JSON metadata support to events
+* added new ingestion system
+* added new reporting system
+* use map instead of two arrays for tags on page views
+* improved batch inserts
+* improved bot filter
+* improved request logging
+* removed duration_seconds field
+* fixed memory session cache not overwriting sessions
+* updated dependencies
+
 ## 2.14.22
 
 Release: 2026-10-30
