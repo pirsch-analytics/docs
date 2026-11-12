@@ -18,7 +18,7 @@ The date ensures that visitors can only be recognized for up to 24 hours, making
 
 Pirsch collects and stores the following data points, depending on the integration you are using ([frontend](/get-started/frontend-integration) or [backend](/get-started/backend-integration)):
 
-* User-Agent header (separate from a page view for up to three months)
+* User-Agent header (separate from a page view for up to 30 days)
 * Visited page (only the path, not the full URL)
 * Referrer
 * UTM source, campaign, medium, content, term
