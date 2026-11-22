@@ -1,5 +1,12 @@
 # Changelog
 
+## 3.0.1
+
+Release: 2026-11-22
+
+* fixed reading event pages with title
+* updated dependencies
+
 ## 3.0.0
 
 Release: 2026-11-21
