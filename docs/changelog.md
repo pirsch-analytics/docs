@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.0.2
+
+Release: 2026-11-22
+
+* fixed ingestion pipeline to support bot analysis
+
 ## 3.0.1
 
 Release: 2026-11-22
