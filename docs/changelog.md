@@ -1,5 +1,14 @@
 # Changelog
 
+## 3.0.3
+
+Release: 2026-11-23
+
+* fixed filtering for "null"
+* fixed conversion error when filtering by event metadata value
+* fixed sorting and merging with imported statistics if the column isn't available
+* fixed incompatible filters in funnel steps (like event name + path)
+
 ## 3.0.2
 
 Release: 2026-11-22
