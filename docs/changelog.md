@@ -1,5 +1,13 @@
 # Changelog
 
+## 3.0.4
+
+Release: 2026-11-24
+
+* fixed rejection of spaces in metadata keys
+* fixed reading zero literals for imported statistics
+* fixed filtering country options
+
 ## 3.0.3
 
 Release: 2026-11-23
