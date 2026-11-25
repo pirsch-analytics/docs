@@ -1,5 +1,12 @@
 # Changelog
 
+## 3.0.5
+
+Release: 2026-11-25
+
+* fixed gad_* parameters overwriting UTM parameters
+* fixed reading event metadata with keys that consist only of digits
+
 ## 3.0.4
 
 Release: 2026-11-24
