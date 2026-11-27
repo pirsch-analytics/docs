@@ -1,5 +1,13 @@
 # Changelog
 
+## 3.0.6
+
+Release: 2026-11-27
+
+* added filter step based on the MaxMind GeoLite2 ASN database
+* added filter step based on open-source IP ranges
+* updated dependencies
+
 ## 3.0.5
 
 Release: 2026-11-25
